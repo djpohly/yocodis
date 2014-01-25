@@ -1,0 +1,8 @@
+0x000aecdd    224d800a     jsr 0x0a804d
+0x000aece1    ad2401       lda 0x0124
+0x000aece4    d009         bne 0x0aecef
+0x000aece6    a95a00       lda #0x005a
+0x000aece9    855c         sta 0x5c
+0x000aeceb    e220         sep #0x20
+0x000aeced    e647         inc 0x47
+0x000aecef    60           rts

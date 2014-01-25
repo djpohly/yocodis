@@ -1,0 +1,7 @@
+0x000aed1f    a5bb         lda 0xbb
+0x000aed21    298010       and #0x1080
+0x000aed24    f00b         beq 0x0aed31
+0x000aed26    e647         inc 0x47
+0x000aed28    a91300       lda #0x0013
+0x000aed2b    2230820d     jsr 0x0d8230
+0x000aed2f    8020         bra 0x0aed51

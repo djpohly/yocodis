@@ -1,0 +1,9 @@
+0x000aec20    2246ef0a     jsr 0x0aef46
+0x000aec24    225a8a0a     jsr 0x0a8a5a
+0x000aec28    224d800a     jsr 0x0a804d
+0x000aec2c    2046f6       jsr 0xf646
+0x000aec2f    ad7803       lda 0x0378
+0x000aec32    0a           asl a
+0x000aec33    aa           tax
+0x000aec34    e220         sep #0x20
+0x000aec36    7c39ec       jmp (0xec39,x)

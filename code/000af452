@@ -1,0 +1,8 @@
+0x000af452    c220         rep #0x20
+0x000af454    a504         lda 0x04
+0x000af456    38           sec
+0x000af457    e90400       sbc #0x0004
+0x000af45a    8504         sta 0x04
+0x000af45c    c61c         dec 0x1c
+0x000af45e    d0bf         bne 0x0af41f
+0x000af460    8005         bra 0x0af467

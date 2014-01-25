@@ -1,0 +1,4 @@
+0x000ae8b0    ad4201       lda 0x0142
+0x000ae8b3    d004         bne 0x0ae8b9
+0x000ae8b5    a98000       lda #0x0080
+0x000ae8b8    60           rts

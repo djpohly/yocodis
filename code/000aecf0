@@ -1,0 +1,2 @@
+0x000aecf0    224d800a     jsr 0x0a804d
+0x000aecf4    4c62e9       jmp 0xe962

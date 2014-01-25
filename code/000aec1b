@@ -1,0 +1,2 @@
+0x000aec1b    224d800a     jsr 0x0a804d
+0x000aec1f    60           rts

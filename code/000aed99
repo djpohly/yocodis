@@ -1,0 +1,8 @@
+0x000aed99    20cbf9       jsr 0xf9cb
+0x000aed9c    224d800a     jsr 0x0a804d
+0x000aeda0    e220         sep #0x20
+0x000aeda2    a562         lda 0x62
+0x000aeda4    d006         bne 0x0aedac
+0x000aeda6    a993         lda #0x93
+0x000aeda8    22758b00     jsr 0x008b75
+0x000aedac    60           rts

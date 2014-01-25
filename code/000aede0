@@ -1,0 +1,10 @@
+0x000aede0    ad0c01       lda 0x010c
+0x000aede3    0d1401       ora 0x0114
+0x000aede6    d00f         bne 0x0aedf7
+0x000aede8    9c3a01       stz 0x013a
+0x000aedeb    e220         sep #0x20
+0x000aeded    a982         lda #0x82
+0x000aedef    22fb810d     jsr 0x0d81fb
+0x000aedf3    a90a         lda #0x0a
+0x000aedf5    8547         sta 0x47
+0x000aedf7    60           rts

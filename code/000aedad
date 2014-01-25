@@ -1,0 +1,9 @@
+0x000aedad    a90600       lda #0x0006
+0x000aedb0    2005f5       jsr 0xf505
+0x000aedb3    a90400       lda #0x0004
+0x000aedb6    855c         sta 0x5c
+0x000aedb8    e220         sep #0x20
+0x000aedba    a91a         lda #0x1a
+0x000aedbc    2230820d     jsr 0x0d8230
+0x000aedc0    e647         inc 0x47
+0x000aedc2    60           rts

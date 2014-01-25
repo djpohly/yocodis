@@ -1,0 +1,14 @@
+0x000aeea7    ad3e01       lda 0x013e
+0x000aeeaa    1a           inc a
+0x000aeeab    c90a00       cmp #0x000a
+0x000aeeae    9006         bcc 0x0aeeb6
+0x000aeeb0    ee3c01       inc 0x013c
+0x000aeeb3    a90000       lda #0x0000
+0x000aeeb6    8d3e01       sta 0x013e
+0x000aeeb9    ad3c01       lda 0x013c
+0x000aeebc    c90a00       cmp #0x000a
+0x000aeebf    b009         bcs 0x0aeeca
+0x000aeec1    2279f702     jsr 0x02f779
+0x000aeec5    e220         sep #0x20
+0x000aeec7    e647         inc 0x47
+0x000aeec9    60           rts

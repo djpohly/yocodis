@@ -1,0 +1,10 @@
+0x000aef46    08           php
+0x000aef47    c220         rep #0x20
+0x000aef49    220d9a0a     jsr 0x0a9a0d
+0x000aef4d    9c0005       stz 0x0500
+0x000aef50    ad7803       lda 0x0378
+0x000aef53    29ff00       and #0x00ff
+0x000aef56    0a           asl a
+0x000aef57    aa           tax
+0x000aef58    f45def       pea 0xef5d
+0x000aef5b    7c60ef       jmp (0xef60,x)

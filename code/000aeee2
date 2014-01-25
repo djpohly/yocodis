@@ -1,0 +1,9 @@
+0x000aeee2    ad1401       lda 0x0114
+0x000aeee5    d011         bne 0x0aeef8
+0x000aeee7    a99003       lda #0x0390
+0x000aeeea    8dac11       sta 0x11ac
+0x000aeeed    22c2f302     jsr 0x02f3c2
+0x000aeef1    ee1401       inc 0x0114
+0x000aeef4    e220         sep #0x20
+0x000aeef6    e647         inc 0x47
+0x000aeef8    60           rts

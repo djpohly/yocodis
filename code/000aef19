@@ -1,0 +1,6 @@
+0x000aef19    a91e00       lda #0x001e
+0x000aef1c    855c         sta 0x5c
+0x000aef1e    e220         sep #0x20
+0x000aef20    a92d         lda #0x2d
+0x000aef22    8547         sta 0x47
+0x000aef24    60           rts

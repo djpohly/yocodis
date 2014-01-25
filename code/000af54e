@@ -1,0 +1,115 @@
+0x000af54e    aff0007f     lda 0x7f00f0
+0x000af552    38           sec
+0x000af553    e920         sbc #0x20
+0x000af555    4a           lsr a
+0x000af556    4a           lsr a
+0x000af557    4a           lsr a
+0x000af558    4a           lsr a
+0x000af559    8d0242       sta 0x4202
+0x000af55c    ad4808       lda 0x0848
+0x000af55f    8d0342       sta 0x4203
+0x000af562    08           php
+0x000af563    28           plp
+0x000af564    aff0007f     lda 0x7f00f0
+0x000af568    38           sec
+0x000af569    ed1642       sbc 0x4216
+0x000af56c    8df003       sta 0x03f0
+0x000af56f    a9b8         lda #0xb8
+0x000af571    38           sec
+0x000af572    eff1007f     sbc 0x7f00f1
+0x000af576    4a           lsr a
+0x000af577    4a           lsr a
+0x000af578    4a           lsr a
+0x000af579    4a           lsr a
+0x000af57a    8534         sta 0x34
+0x000af57c    8d0242       sta 0x4202
+0x000af57f    ad4808       lda 0x0848
+0x000af582    8d0342       sta 0x4203
+0x000af585    08           php
+0x000af586    28           plp
+0x000af587    aff1007f     lda 0x7f00f1
+0x000af58b    18           clc
+0x000af58c    6d1642       adc 0x4216
+0x000af58f    8df103       sta 0x03f1
+0x000af592    a908         lda #0x08
+0x000af594    38           sec
+0x000af595    ed6003       sbc 0x0360
+0x000af598    8d0242       sta 0x4202
+0x000af59b    ad4808       lda 0x0848
+0x000af59e    8d0342       sta 0x4203
+0x000af5a1    08           php
+0x000af5a2    28           plp
+0x000af5a3    9c0442       stz 0x4204
+0x000af5a6    ad1642       lda 0x4216
+0x000af5a9    8d0542       sta 0x4205
+0x000af5ac    ad6003       lda 0x0360
+0x000af5af    3a           dec a
+0x000af5b0    8d0642       sta 0x4206
+0x000af5b3    08           php
+0x000af5b4    28           plp
+0x000af5b5    08           php
+0x000af5b6    28           plp
+0x000af5b7    c220         rep #0x20
+0x000af5b9    ad1442       lda 0x4214
+0x000af5bc    18           clc
+0x000af5bd    690010       adc #0x1000
+0x000af5c0    8534         sta 0x34
+0x000af5c2    ad6003       lda 0x0360
+0x000af5c5    0a           asl a
+0x000af5c6    8536         sta 0x36
+0x000af5c8    a20000       ldx #0x0000
+0x000af5cb    8a           txa
+0x000af5cc    8538         sta 0x38
+0x000af5ce    eb           swa
+0x000af5cf    29ff00       and #0x00ff
+0x000af5d2    9d4003       sta 0x0340,x
+0x000af5d5    a538         lda 0x38
+0x000af5d7    18           clc
+0x000af5d8    6534         adc 0x34
+0x000af5da    e8           inx
+0x000af5db    e8           inx
+0x000af5dc    e436         cpx 0x36
+0x000af5de    90ec         bcc 0x0af5cc
+0x000af5e0    e220         sep #0x20
+0x000af5e2    a908         lda #0x08
+0x000af5e4    38           sec
+0x000af5e5    ed6203       sbc 0x0362
+0x000af5e8    8d0242       sta 0x4202
+0x000af5eb    ad4808       lda 0x0848
+0x000af5ee    8d0342       sta 0x4203
+0x000af5f1    08           php
+0x000af5f2    28           plp
+0x000af5f3    9c0442       stz 0x4204
+0x000af5f6    ad1642       lda 0x4216
+0x000af5f9    8d0542       sta 0x4205
+0x000af5fc    ad6203       lda 0x0362
+0x000af5ff    3a           dec a
+0x000af600    8d0642       sta 0x4206
+0x000af603    08           php
+0x000af604    28           plp
+0x000af605    08           php
+0x000af606    28           plp
+0x000af607    c220         rep #0x20
+0x000af609    ad1442       lda 0x4214
+0x000af60c    18           clc
+0x000af60d    690010       adc #0x1000
+0x000af610    8534         sta 0x34
+0x000af612    ad6203       lda 0x0362
+0x000af615    0a           asl a
+0x000af616    8536         sta 0x36
+0x000af618    a20000       ldx #0x0000
+0x000af61b    8a           txa
+0x000af61c    8538         sta 0x38
+0x000af61e    eb           swa
+0x000af61f    29ff00       and #0x00ff
+0x000af622    9d5003       sta 0x0350,x
+0x000af625    a538         lda 0x38
+0x000af627    18           clc
+0x000af628    6534         adc 0x34
+0x000af62a    e8           inx
+0x000af62b    e8           inx
+0x000af62c    e436         cpx 0x36
+0x000af62e    90ec         bcc 0x0af61c
+0x000af630    ce4808       dec 0x0848
+0x000af633    28           plp
+0x000af634    60           rts

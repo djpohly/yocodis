@@ -1,0 +1,10 @@
+0x000af91a    08           php
+0x000af91b    c220         rep #0x20
+0x000af91d    a55c         lda 0x5c
+0x000af91f    d014         bne 0x0af935
+0x000af921    ad8409       lda 0x0984
+0x000af924    cd8209       cmp 0x0982
+0x000af927    9003         bcc 0x0af92c
+0x000af929    28           plp
+0x000af92a    38           sec
+0x000af92b    60           rts

@@ -1,0 +1,20 @@
+0x000ae8b9    ad3c01       lda 0x013c
+0x000ae8bc    0a           asl a
+0x000ae8bd    0a           asl a
+0x000ae8be    6d3c01       adc 0x013c
+0x000ae8c1    0a           asl a
+0x000ae8c2    6d3e01       adc 0x013e
+0x000ae8c5    8d0442       sta 0x4204
+0x000ae8c8    e220         sep #0x20
+0x000ae8ca    a909         lda #0x09
+0x000ae8cc    8d0642       sta 0x4206
+0x000ae8cf    08           php
+0x000ae8d0    28           plp
+0x000ae8d1    08           php
+0x000ae8d2    28           plp
+0x000ae8d3    c220         rep #0x20
+0x000ae8d5    ad1642       lda 0x4216
+0x000ae8d8    0a           asl a
+0x000ae8d9    aa           tax
+0x000ae8da    bfdfe80a     lda 0x0ae8df,x
+0x000ae8de    60           rts

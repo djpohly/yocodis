@@ -1,0 +1,33 @@
+0x000af462    9e0003       stz 0x0300,x
+0x000af465    e8           inx
+0x000af466    e8           inx
+0x000af467    e04000       cpx #0x0040
+0x000af46a    90f6         bcc 0x0af462
+0x000af46c    060a         asl 0x0a
+0x000af46e    060c         asl 0x0c
+0x000af470    a20000       ldx #0x0000
+0x000af473    8a           txa
+0x000af474    18           clc
+0x000af475    9d4003       sta 0x0340,x
+0x000af478    691000       adc #0x0010
+0x000af47b    e8           inx
+0x000af47c    e8           inx
+0x000af47d    e40a         cpx 0x0a
+0x000af47f    90f4         bcc 0x0af475
+0x000af481    090080       ora #0x8000
+0x000af484    e01000       cpx #0x0010
+0x000af487    90ec         bcc 0x0af475
+0x000af489    a20000       ldx #0x0000
+0x000af48c    8a           txa
+0x000af48d    18           clc
+0x000af48e    9d5003       sta 0x0350,x
+0x000af491    691000       adc #0x0010
+0x000af494    e8           inx
+0x000af495    e8           inx
+0x000af496    e40c         cpx 0x0c
+0x000af498    90f4         bcc 0x0af48e
+0x000af49a    090080       ora #0x8000
+0x000af49d    e01000       cpx #0x0010
+0x000af4a0    90ec         bcc 0x0af48e
+0x000af4a2    28           plp
+0x000af4a3    60           rts

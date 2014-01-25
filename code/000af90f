@@ -1,0 +1,6 @@
+0x000af90f    08           php
+0x000af910    c220         rep #0x20
+0x000af912    9cc601       stz 0x01c6
+0x000af915    9cc801       stz 0x01c8
+0x000af918    28           plp
+0x000af919    60           rts
