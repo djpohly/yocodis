@@ -1,0 +1,12 @@
+0x000ad64f    a558         lda 0x58
+0x000ad651    290300       and #0x0003
+0x000ad654    d00c         bne 0x0ad662
+0x000ad656    a0c001       ldy #0x01c0
+0x000ad659    202eb6       jsr 0xb62e
+0x000ad65c    a0e001       ldy #0x01e0
+0x000ad65f    202eb6       jsr 0xb62e
+0x000ad662    ae0005       ldx 0x0500
+0x000ad665    de6209       dec 0x0962,x
+0x000ad668    d003         bne 0x0ad66d
+0x000ad66a    fe6009       inc 0x0960,x
+0x000ad66d    60           rts
