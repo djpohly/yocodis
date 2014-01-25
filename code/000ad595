@@ -1,0 +1,7 @@
+0x000ad595    ae0005       ldx 0x0500
+0x000ad598    de6209       dec 0x0962,x
+0x000ad59b    d003         bne 0x0ad5a0
+0x000ad59d    fe6009       inc 0x0960,x
+0x000ad5a0    a0c000       ldy #0x00c0
+0x000ad5a3    206ed6       jsr 0xd66e
+0x000ad5a6    60           rts
