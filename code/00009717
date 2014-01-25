@@ -1,0 +1,19 @@
+0x00009717    08           php
+0x00009718    da           phx
+0x00009719    c220         rep #0x20
+0x0000971b    8a           txa
+0x0000971c    29ff00       and #0x00ff
+0x0000971f    4a           lsr a
+0x00009720    4a           lsr a
+0x00009721    4a           lsr a
+0x00009722    48           pha
+0x00009723    98           tya
+0x00009724    29f800       and #0x00f8
+0x00009727    0a           asl a
+0x00009728    0a           asl a
+0x00009729    0301         ora 0x01,s
+0x0000972b    0a           asl a
+0x0000972c    fa           plx
+0x0000972d    fa           plx
+0x0000972e    28           plp
+0x0000972f    6b           rtl

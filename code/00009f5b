@@ -1,0 +1,11 @@
+0x00009f5b    a55c         lda 0x5c
+0x00009f5d    d015         bne 0x009f74
+0x00009f5f    ad4808       lda 0x0848
+0x00009f62    1a           inc a
+0x00009f63    c90400       cmp #0x0004
+0x00009f66    b00d         bcs 0x009f75
+0x00009f68    8d4808       sta 0x0848
+0x00009f6b    a90001       lda #0x0100
+0x00009f6e    8d4a08       sta 0x084a
+0x00009f71    ce4608       dec 0x0846
+0x00009f74    60           rts
