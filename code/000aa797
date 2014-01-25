@@ -1,0 +1,8 @@
+0x000aa797    b9d303       lda 0x03d3,y
+0x000aa79a    38           sec
+0x000aa79b    e904         sbc #0x04
+0x000aa79d    99d303       sta 0x03d3,y
+0x000aa7a0    b9d003       lda 0x03d0,y
+0x000aa7a3    1a           inc a
+0x000aa7a4    99d003       sta 0x03d0,y
+0x000aa7a7    60           rts

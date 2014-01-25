@@ -1,0 +1,8 @@
+0x000aa77c    b9d203       lda 0x03d2,y
+0x000aa77f    18           clc
+0x000aa780    6904         adc #0x04
+0x000aa782    99d203       sta 0x03d2,y
+0x000aa785    b9d003       lda 0x03d0,y
+0x000aa788    1a           inc a
+0x000aa789    99d003       sta 0x03d0,y
+0x000aa78c    60           rts
