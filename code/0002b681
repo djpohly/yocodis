@@ -1,0 +1,6 @@
+0x0002b681    2038bc       jsr 0xbc38
+0x0002b684    ad4608       lda 0x0846
+0x0002b687    1006         bpl 0x02b68f
+0x0002b689    9c4608       stz 0x0846
+0x0002b68c    ee7610       inc 0x1076
+0x0002b68f    60           rts

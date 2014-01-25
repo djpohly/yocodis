@@ -1,0 +1,5 @@
+0x0002b690    2058be       jsr 0xbe58
+0x0002b693    ad4608       lda 0x0846
+0x0002b696    1003         bpl 0x02b69b
+0x0002b698    ee7610       inc 0x1076
+0x0002b69b    60           rts

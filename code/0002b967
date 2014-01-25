@@ -1,0 +1,7 @@
+0x0002b967    e220         sep #0x20
+0x0002b969    adb410       lda 0x10b4
+0x0002b96c    c921         cmp #0x21
+0x0002b96e    9007         bcc 0x02b977
+0x0002b970    9cbb10       stz 0x10bb
+0x0002b973    ee7610       inc 0x1076
+0x0002b976    60           rts

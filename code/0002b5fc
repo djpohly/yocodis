@@ -1,0 +1,5 @@
+0x0002b5fc    a59d         lda 0x9d
+0x0002b5fe    898010       bit #0x1080
+0x0002b601    f003         beq 0x02b606
+0x0002b603    ee7610       inc 0x1076
+0x0002b606    60           rts

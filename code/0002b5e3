@@ -1,0 +1,5 @@
+0x0002b5e3    e220         sep #0x20
+0x0002b5e5    a562         lda 0x62
+0x0002b5e7    d003         bne 0x02b5ec
+0x0002b5e9    ee7610       inc 0x1076
+0x0002b5ec    60           rts
