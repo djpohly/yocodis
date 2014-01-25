@@ -1,0 +1,13 @@
+0x000ac9c8    a00600       ldy #0x0006
+0x000ac9cb    ae0005       ldx 0x0500
+0x000ac9ce    bd2209       lda 0x0922,x
+0x000ac9d1    290300       and #0x0003
+0x000ac9d4    c90200       cmp #0x0002
+0x000ac9d7    9008         bcc 0x0ac9e1
+0x000ac9d9    a558         lda 0x58
+0x000ac9db    291000       and #0x0010
+0x000ac9de    f001         beq 0x0ac9e1
+0x000ac9e0    c8           iny
+0x000ac9e1    98           tya
+0x000ac9e2    9d2609       sta 0x0926,x
+0x000ac9e5    60           rts
