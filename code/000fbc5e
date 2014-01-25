@@ -1,0 +1,7 @@
+0x000fbc5e    ea           nop
+0x000fbc5f    ea           nop
+0x000fbc60    ea           nop
+0x000fbc61    ea           nop
+0x000fbc62    ad261f       lda 0x1f26
+0x000fbc65    22fb810d     jsr 0x0d81fb
+0x000fbc69    60           rts

@@ -1,0 +1,14 @@
+0x000fbb64    20aebc       jsr 0xbcae
+0x000fbb67    a59d         lda 0x9d
+0x000fbb69    290080       and #0x8000
+0x000fbb6c    d014         bne 0x0fbb82
+0x000fbb6e    a59d         lda 0x9d
+0x000fbb70    294000       and #0x0040
+0x000fbb73    f018         beq 0x0fbb8d
+0x000fbb75    ea           nop
+0x000fbb76    ea           nop
+0x000fbb77    ea           nop
+0x000fbb78    ea           nop
+0x000fbb79    ad281f       lda 0x1f28
+0x000fbb7c    2230820d     jsr 0x0d8230
+0x000fbb80    800b         bra 0x0fbb8d
