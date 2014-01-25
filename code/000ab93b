@@ -1,0 +1,8 @@
+0x000ab93b    229d9a0a     jsr 0x0a9a9d
+0x000ab93f    e220         sep #0x20
+0x000ab941    a564         lda 0x64
+0x000ab943    29f0         and #0xf0
+0x000ab945    c9e0         cmp #0xe0
+0x000ab947    b004         bcs 0x0ab94d
+0x000ab949    20cac8       jsr 0xc8ca
+0x000ab94c    60           rts

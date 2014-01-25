@@ -1,0 +1,7 @@
+0x000acb0c    a20000       ldx #0x0000
+0x000acb0f    ac5c09       ldy 0x095c
+0x000acb12    cc5c0a       cpy 0x0a5c
+0x000acb15    f006         beq 0x0acb1d
+0x000acb17    b003         bcs 0x0acb1c
+0x000acb19    a20001       ldx #0x0100
+0x000acb1c    60           rts

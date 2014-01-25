@@ -1,0 +1,27 @@
+0x000abab3    20e3d4       jsr 0xd4e3
+0x000abab6    224d800a     jsr 0x0a804d
+0x000ababa    202fb8       jsr 0xb82f
+0x000ababd    eb           swa
+0x000ababe    c5e6         cmp 0xe6
+0x000abac0    f008         beq 0x0abaca
+0x000abac2    eb           swa
+0x000abac3    2041b8       jsr 0xb841
+0x000abac6    2200800d     jsr 0x0d8000
+0x000abaca    ad5201       lda 0x0152
+0x000abacd    1028         bpl 0x0abaf7
+0x000abacf    add601       lda 0x01d6
+0x000abad2    d023         bne 0x0abaf7
+0x000abad4    adfa00       lda 0x00fa
+0x000abad7    29ff00       and #0x00ff
+0x000abada    f007         beq 0x0abae3
+0x000abadc    a98800       lda #0x0088
+0x000abadf    22fb810d     jsr 0x0d81fb
+0x000abae3    a90040       lda #0x4000
+0x000abae6    0c4409       tsb 0x0944
+0x000abae9    0c440a       tsb 0x0a44
+0x000abaec    e220         sep #0x20
+0x000abaee    eb           swa
+0x000abaef    8d7203       sta 0x0372
+0x000abaf2    8d7204       sta 0x0472
+0x000abaf5    e647         inc 0x47
+0x000abaf7    60           rts

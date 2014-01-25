@@ -1,0 +1,15 @@
+0x000ab9c1    a20001       ldx #0x0100
+0x000ab9c4    8e0005       stx 0x0500
+0x000ab9c7    20f0cb       jsr 0xcbf0
+0x000ab9ca    9c0005       stz 0x0500
+0x000ab9cd    20f0cb       jsr 0xcbf0
+0x000ab9d0    a95000       lda #0x0050
+0x000ab9d3    cd4009       cmp 0x0940
+0x000ab9d6    d00e         bne 0x0ab9e6
+0x000ab9d8    cd400a       cmp 0x0a40
+0x000ab9db    d009         bne 0x0ab9e6
+0x000ab9dd    ad2401       lda 0x0124
+0x000ab9e0    d004         bne 0x0ab9e6
+0x000ab9e2    e220         sep #0x20
+0x000ab9e4    e647         inc 0x47
+0x000ab9e6    60           rts

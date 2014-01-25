@@ -1,0 +1,18 @@
+0x000abb4e    224d800a     jsr 0x0a804d
+0x000abb52    ad2401       lda 0x0124
+0x000abb55    d021         bne 0x0abb78
+0x000abb57    20bcca       jsr 0xcabc
+0x000abb5a    200ccb       jsr 0xcb0c
+0x000abb5d    8a           txa
+0x000abb5e    3006         bmi 0x0abb66
+0x000abb60    a90200       lda #0x0002
+0x000abb63    9d2409       sta 0x0924,x
+0x000abb66    200ccb       jsr 0xcb0c
+0x000abb69    9b           txy
+0x000abb6a    3003         bmi 0x0abb6f
+0x000abb6c    fe0e09       inc 0x090e,x
+0x000abb6f    a93200       lda #0x0032
+0x000abb72    855c         sta 0x5c
+0x000abb74    e220         sep #0x20
+0x000abb76    e647         inc 0x47
+0x000abb78    60           rts

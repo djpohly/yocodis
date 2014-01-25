@@ -1,0 +1,7 @@
+0x000ab841    08           php
+0x000ab842    e220         sep #0x20
+0x000ab844    c941         cmp #0x41
+0x000ab846    9002         bcc 0x0ab84a
+0x000ab848    64e6         stz 0xe6
+0x000ab84a    28           plp
+0x000ab84b    60           rts

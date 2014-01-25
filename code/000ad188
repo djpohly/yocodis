@@ -1,0 +1,51 @@
+0x000ad188    08           php
+0x000ad189    c220         rep #0x20
+0x000ad18b    a97e00       lda #0x007e
+0x000ad18e    85dc         sta 0xdc
+0x000ad190    a90a00       lda #0x000a
+0x000ad193    85d8         sta 0xd8
+0x000ad195    a90202       lda #0x0202
+0x000ad198    85de         sta 0xde
+0x000ad19a    a92843       lda #0x4328
+0x000ad19d    85da         sta 0xda
+0x000ad19f    a9000c       lda #0x0c00
+0x000ad1a2    85e0         sta 0xe0
+0x000ad1a4    a20000       ldx #0x0000
+0x000ad1a7    da           phx
+0x000ad1a8    bd500a       lda 0x0a50,x
+0x000ad1ab    d003         bne 0x0ad1b0
+0x000ad1ad    a20600       ldx #0x0006
+0x000ad1b0    bffad10a     lda 0x0ad1fa,x
+0x000ad1b4    85d6         sta 0xd6
+0x000ad1b6    22b48e00     jsr 0x008eb4
+0x000ad1ba    a5da         lda 0xda
+0x000ad1bc    18           clc
+0x000ad1bd    690400       adc #0x0004
+0x000ad1c0    85da         sta 0xda
+0x000ad1c2    fa           plx
+0x000ad1c3    e8           inx
+0x000ad1c4    e8           inx
+0x000ad1c5    e00600       cpx #0x0006
+0x000ad1c8    90dd         bcc 0x0ad1a7
+0x000ad1ca    a90c43       lda #0x430c
+0x000ad1cd    85da         sta 0xda
+0x000ad1cf    a20000       ldx #0x0000
+0x000ad1d2    da           phx
+0x000ad1d3    bd5009       lda 0x0950,x
+0x000ad1d6    d003         bne 0x0ad1db
+0x000ad1d8    a20600       ldx #0x0006
+0x000ad1db    bffad10a     lda 0x0ad1fa,x
+0x000ad1df    85d6         sta 0xd6
+0x000ad1e1    22ae8e00     jsr 0x008eae
+0x000ad1e5    a5da         lda 0xda
+0x000ad1e7    18           clc
+0x000ad1e8    690400       adc #0x0004
+0x000ad1eb    85da         sta 0xda
+0x000ad1ed    fa           plx
+0x000ad1ee    e8           inx
+0x000ad1ef    e8           inx
+0x000ad1f0    e00600       cpx #0x0006
+0x000ad1f3    90dd         bcc 0x0ad1d2
+0x000ad1f5    ee0c01       inc 0x010c
+0x000ad1f8    28           plp
+0x000ad1f9    60           rts

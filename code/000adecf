@@ -1,0 +1,9 @@
+0x000adecf    ad6001       lda 0x0160
+0x000aded2    8d6201       sta 0x0162
+0x000aded5    ad5c01       lda 0x015c
+0x000aded8    301a         bmi 0x0adef4
+0x000adeda    29ff00       and #0x00ff
+0x000adedd    0a           asl a
+0x000adede    aa           tax
+0x000adedf    f4e4de       pea 0xdee4
+0x000adee2    7cf6de       jmp (0xdef6,x)

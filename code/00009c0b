@@ -1,0 +1,5 @@
+0x00009c0b    ca           dex
+0x00009c0c    10e4         bpl 0x009bf2
+0x00009c0e    fa           plx
+0x00009c0f    28           plp
+0x00009c10    6b           rtl

@@ -1,0 +1,3 @@
+0x000ac92b    22358f00     jsr 0x008f35
+0x000ac92f    28           plp
+0x000ac930    60           rts

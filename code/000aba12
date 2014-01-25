@@ -1,0 +1,8 @@
+0x000aba12    2065c8       jsr 0xc865
+0x000aba15    a55c         lda 0x5c
+0x000aba17    d009         bne 0x0aba22
+0x000aba19    a90f00       lda #0x000f
+0x000aba1c    855c         sta 0x5c
+0x000aba1e    e220         sep #0x20
+0x000aba20    e647         inc 0x47
+0x000aba22    60           rts

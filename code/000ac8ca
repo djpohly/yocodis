@@ -1,0 +1,10 @@
+0x000ac8ca    08           php
+0x000ac8cb    e220         sep #0x20
+0x000ac8cd    a558         lda 0x58
+0x000ac8cf    2907         and #0x07
+0x000ac8d1    d006         bne 0x0ac8d9
+0x000ac8d3    a57e         lda 0x7e
+0x000ac8d5    4901         eor #0x01
+0x000ac8d7    857e         sta 0x7e
+0x000ac8d9    28           plp
+0x000ac8da    60           rts

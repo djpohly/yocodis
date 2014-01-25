@@ -1,0 +1,5 @@
+0x000ab82f    ad4201       lda 0x0142
+0x000ab832    0a           asl a
+0x000ab833    aa           tax
+0x000ab834    bf39b80a     lda 0x0ab839,x
+0x000ab838    60           rts

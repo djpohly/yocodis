@@ -1,0 +1,22 @@
+0x000abc12    add601       lda 0x01d6
+0x000abc15    0d0c01       ora 0x010c
+0x000abc18    0d1401       ora 0x0114
+0x000abc1b    0d1c01       ora 0x011c
+0x000abc1e    0d5c00       ora 0x005c
+0x000abc21    d024         bne 0x0abc47
+0x000abc23    ad3a01       lda 0x013a
+0x000abc26    3a           dec a
+0x000abc27    0a           asl a
+0x000abc28    a8           tay
+0x000abc29    b99d00       lda 0x009d,y
+0x000abc2c    290010       and #0x1000
+0x000abc2f    f016         beq 0x0abc47
+0x000abc31    a90100       lda #0x0001
+0x000abc34    20efc8       jsr 0xc8ef
+0x000abc37    a98200       lda #0x0082
+0x000abc3a    22fb810d     jsr 0x0d81fb
+0x000abc3e    a90300       lda #0x0003
+0x000abc41    855c         sta 0x5c
+0x000abc43    e220         sep #0x20
+0x000abc45    e647         inc 0x47
+0x000abc47    60           rts

@@ -1,0 +1,16 @@
+0x000ab91a    20cac8       jsr 0xc8ca
+0x000ab91d    a55c         lda 0x5c
+0x000ab91f    d019         bne 0x0ab93a
+0x000ab921    e220         sep #0x20
+0x000ab923    a907         lda #0x07
+0x000ab925    8567         sta 0x67
+0x000ab927    a902         lda #0x02
+0x000ab929    8568         sta 0x68
+0x000ab92b    a987         lda #0x87
+0x000ab92d    eb           swa
+0x000ab92e    a901         lda #0x01
+0x000ab930    22448700     jsr 0x008744
+0x000ab934    a980         lda #0x80
+0x000ab936    04c3         tsb 0xc3
+0x000ab938    e647         inc 0x47
+0x000ab93a    60           rts

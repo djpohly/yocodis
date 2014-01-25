@@ -1,0 +1,12 @@
+0x000abbb8    200cc8       jsr 0xc80c
+0x000abbbb    a2fe01       ldx #0x01fe
+0x000abbbe    bd001b       lda 0x1b00,x
+0x000abbc1    9d0019       sta 0x1900,x
+0x000abbc4    ca           dex
+0x000abbc5    ca           dex
+0x000abbc6    10f6         bpl 0x0abbbe
+0x000abbc8    e220         sep #0x20
+0x000abbca    e647         inc 0x47
+0x000abbcc    a906         lda #0x06
+0x000abbce    85c3         sta 0xc3
+0x000abbd0    60           rts

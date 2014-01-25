@@ -1,0 +1,10 @@
+0x000acabc    08           php
+0x000acabd    e220         sep #0x20
+0x000acabf    200ccb       jsr 0xcb0c
+0x000acac2    9b           txy
+0x000acac3    300b         bmi 0x0acad0
+0x000acac5    be0009       ldx 0x0900,y
+0x000acac8    bfd2ca0a     lda 0x0acad2,x
+0x000acacc    2215820d     jsr 0x0d8215
+0x000acad0    28           plp
+0x000acad1    60           rts

@@ -1,0 +1,12 @@
+0x000ad28b    b95a09       lda 0x095a,y
+0x000ad28e    c90800       cmp #0x0008
+0x000ad291    b007         bcs 0x0ad29a
+0x000ad293    1a           inc a
+0x000ad294    995a09       sta 0x095a,y
+0x000ad297    20a5d2       jsr 0xd2a5
+0x000ad29a    ad0205       lda 0x0502
+0x000ad29d    490001       eor #0x0100
+0x000ad2a0    a8           tay
+0x000ad2a1    f0d8         beq 0x0ad27b
+0x000ad2a3    28           plp
+0x000ad2a4    60           rts

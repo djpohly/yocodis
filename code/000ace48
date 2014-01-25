@@ -1,0 +1,49 @@
+0x000ace48    08           php
+0x000ace49    c220         rep #0x20
+0x000ace4b    ac0005       ldy 0x0500
+0x000ace4e    b94809       lda 0x0948,y
+0x000ace51    290001       and #0x0100
+0x000ace54    4d0005       eor 0x0500
+0x000ace57    8500         sta 0x00
+0x000ace59    aa           tax
+0x000ace5a    bd0a09       lda 0x090a,x
+0x000ace5d    8d0007       sta 0x0700
+0x000ace60    bd0c09       lda 0x090c,x
+0x000ace63    8d0207       sta 0x0702
+0x000ace66    b94809       lda 0x0948,y
+0x000ace69    290f00       and #0x000f
+0x000ace6c    48           pha
+0x000ace6d    0a           asl a
+0x000ace6e    18           clc
+0x000ace6f    6301         adc 0x01,s
+0x000ace71    0a           asl a
+0x000ace72    aa           tax
+0x000ace73    68           pla
+0x000ace74    bfbfce0a     lda 0x0acebf,x
+0x000ace78    8d0307       sta 0x0703
+0x000ace7b    bfc1ce0a     lda 0x0acec1,x
+0x000ace7f    8d0507       sta 0x0705
+0x000ace82    bfc3ce0a     lda 0x0acec3,x
+0x000ace86    8d0707       sta 0x0707
+0x000ace89    a97e00       lda #0x007e
+0x000ace8c    85dc         sta 0xdc
+0x000ace8e    a90a00       lda #0x000a
+0x000ace91    85d8         sta 0xd8
+0x000ace93    a98a62       lda #0x628a
+0x000ace96    ac0005       ldy 0x0500
+0x000ace99    f003         beq 0x0ace9e
+0x000ace9b    a9a462       lda #0x62a4
+0x000ace9e    85da         sta 0xda
+0x000acea0    ad0005       lda 0x0500
+0x000acea3    18           clc
+0x000acea4    6d0a09       adc 0x090a
+0x000acea7    a90007       lda #0x0700
+0x000aceaa    85d6         sta 0xd6
+0x000aceac    a90a00       lda #0x000a
+0x000aceaf    85d8         sta 0xd8
+0x000aceb1    a90900       lda #0x0009
+0x000aceb4    85de         sta 0xde
+0x000aceb6    22ea9b00     jsr 0x009bea
+0x000aceba    ee1401       inc 0x0114
+0x000acebd    28           plp
+0x000acebe    60           rts

@@ -1,0 +1,40 @@
+0x000a9ac6    ad4008       lda 0x0840
+0x000a9ac9    38           sec
+0x000a9aca    e50c         sbc 0x0c
+0x000a9acc    1007         bpl 0x0a9ad5
+0x000a9ace    a980         lda #0x80
+0x000a9ad0    0c4108       tsb 0x0841
+0x000a9ad3    a901         lda #0x01
+0x000a9ad5    8d4008       sta 0x0840
+0x000a9ad8    c220         rep #0x20
+0x000a9ada    ad4008       lda 0x0840
+0x000a9add    29ff00       and #0x00ff
+0x000a9ae0    8506         sta 0x06
+0x000a9ae2    a504         lda 0x04
+0x000a9ae4    eb           swa
+0x000a9ae5    8d0442       sta 0x4204
+0x000a9ae8    e220         sep #0x20
+0x000a9aea    a506         lda 0x06
+0x000a9aec    8d0642       sta 0x4206
+0x000a9aef    08           php
+0x000a9af0    28           plp
+0x000a9af1    08           php
+0x000a9af2    28           plp
+0x000a9af3    c220         rep #0x20
+0x000a9af5    ad1442       lda 0x4214
+0x000a9af8    8502         sta 0x02
+0x000a9afa    a504         lda 0x04
+0x000a9afc    0a           asl a
+0x000a9afd    6504         adc 0x04
+0x000a9aff    850a         sta 0x0a
+0x000a9b01    a504         lda 0x04
+0x000a9b03    38           sec
+0x000a9b04    e506         sbc 0x06
+0x000a9b06    8508         sta 0x08
+0x000a9b08    0a           asl a
+0x000a9b09    6508         adc 0x08
+0x000a9b0b    8508         sta 0x08
+0x000a9b0d    a20000       ldx #0x0000
+0x000a9b10    e220         sep #0x20
+0x000a9b12    a583         lda 0x83
+0x000a9b14    8008         bra 0x0a9b1e

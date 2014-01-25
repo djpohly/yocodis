@@ -1,0 +1,8 @@
+0x000ab959    229d9a0a     jsr 0x0a9a9d
+0x000ab95d    ad4008       lda 0x0840
+0x000ab960    1008         bpl 0x0ab96a
+0x000ab962    e220         sep #0x20
+0x000ab964    a917         lda #0x17
+0x000ab966    8567         sta 0x67
+0x000ab968    e647         inc 0x47
+0x000ab96a    60           rts

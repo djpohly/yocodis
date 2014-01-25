@@ -1,0 +1,9 @@
+0x000acada    08           php
+0x000acadb    c220         rep #0x20
+0x000acadd    200ccb       jsr 0xcb0c
+0x000acae0    8a           txa
+0x000acae1    3009         bmi 0x0acaec
+0x000acae3    490001       eor #0x0100
+0x000acae6    a8           tay
+0x000acae7    be0009       ldx 0x0900,y
+0x000acaea    800e         bra 0x0acafa

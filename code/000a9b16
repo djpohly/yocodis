@@ -1,0 +1,10 @@
+0x000a9b16    9f01fc7e     sta 0x7efc01,x
+0x000a9b1a    3a           dec a
+0x000a9b1b    e8           inx
+0x000a9b1c    e8           inx
+0x000a9b1d    e8           inx
+0x000a9b1e    e408         cpx 0x08
+0x000a9b20    90f4         bcc 0x0a9b16
+0x000a9b22    8501         sta 0x01
+0x000a9b24    6400         stz 0x00
+0x000a9b26    8015         bra 0x0a9b3d
