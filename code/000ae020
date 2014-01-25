@@ -1,0 +1,3 @@
+0x000ae020    9c6001       stz 0x0160
+0x000ae023    ee5c01       inc 0x015c
+0x000ae026    60           rts

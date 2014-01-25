@@ -1,0 +1,60 @@
+0x000ae445    08           php
+0x000ae446    c220         rep #0x20
+0x000ae448    a90003       lda #0x0300
+0x000ae44b    18           clc
+0x000ae44c    6dba01       adc 0x01ba
+0x000ae44f    8500         sta 0x00
+0x000ae451    8510         sta 0x10
+0x000ae453    a20e00       ldx #0x000e
+0x000ae456    9e9401       stz 0x0194,x
+0x000ae459    ca           dex
+0x000ae45a    ca           dex
+0x000ae45b    10f9         bpl 0x0ae456
+0x000ae45d    a20000       ldx #0x0000
+0x000ae460    e220         sep #0x20
+0x000ae462    a00400       ldy #0x0004
+0x000ae465    b110         lda (0x10),y
+0x000ae467    c90e         cmp #0x0e
+0x000ae469    d003         bne 0x0ae46e
+0x000ae46b    adbc01       lda 0x01bc
+0x000ae46e    cd6401       cmp 0x0164
+0x000ae471    d003         bne 0x0ae476
+0x000ae473    fe9401       inc 0x0194,x
+0x000ae476    88           dey
+0x000ae477    10ec         bpl 0x0ae465
+0x000ae479    c220         rep #0x20
+0x000ae47b    a510         lda 0x10
+0x000ae47d    18           clc
+0x000ae47e    690800       adc #0x0008
+0x000ae481    8510         sta 0x10
+0x000ae483    e8           inx
+0x000ae484    e00500       cpx #0x0005
+0x000ae487    90d7         bcc 0x0ae460
+0x000ae489    a500         lda 0x00
+0x000ae48b    8510         sta 0x10
+0x000ae48d    a20000       ldx #0x0000
+0x000ae490    e220         sep #0x20
+0x000ae492    a02000       ldy #0x0020
+0x000ae495    b110         lda (0x10),y
+0x000ae497    c90e         cmp #0x0e
+0x000ae499    d003         bne 0x0ae49e
+0x000ae49b    adbc01       lda 0x01bc
+0x000ae49e    cd6401       cmp 0x0164
+0x000ae4a1    d003         bne 0x0ae4a6
+0x000ae4a3    fe9c01       inc 0x019c,x
+0x000ae4a6    88           dey
+0x000ae4a7    88           dey
+0x000ae4a8    88           dey
+0x000ae4a9    88           dey
+0x000ae4aa    88           dey
+0x000ae4ab    88           dey
+0x000ae4ac    88           dey
+0x000ae4ad    88           dey
+0x000ae4ae    10e5         bpl 0x0ae495
+0x000ae4b0    c220         rep #0x20
+0x000ae4b2    e610         inc 0x10
+0x000ae4b4    e8           inx
+0x000ae4b5    e00500       cpx #0x0005
+0x000ae4b8    90d6         bcc 0x0ae490
+0x000ae4ba    28           plp
+0x000ae4bb    60           rts

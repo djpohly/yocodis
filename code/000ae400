@@ -1,0 +1,25 @@
+0x000ae400    8612         stx 0x12
+0x000ae402    e8           inx
+0x000ae403    e09401       cpx #0x0194
+0x000ae406    90e5         bcc 0x0ae3ed
+0x000ae408    c220         rep #0x20
+0x000ae40a    b210         lda (0x10)
+0x000ae40c    29ff00       and #0x00ff
+0x000ae40f    c90500       cmp #0x0005
+0x000ae412    9023         bcc 0x0ae437
+0x000ae414    a510         lda 0x10
+0x000ae416    38           sec
+0x000ae417    e98401       sbc #0x0184
+0x000ae41a    8d6401       sta 0x0164
+0x000ae41d    b212         lda (0x12)
+0x000ae41f    29ff00       and #0x00ff
+0x000ae422    c90500       cmp #0x0005
+0x000ae425    9019         bcc 0x0ae440
+0x000ae427    a512         lda 0x12
+0x000ae429    c99101       cmp #0x0191
+0x000ae42c    f012         beq 0x0ae440
+0x000ae42e    38           sec
+0x000ae42f    e98401       sbc #0x0184
+0x000ae432    8d6c01       sta 0x016c
+0x000ae435    28           plp
+0x000ae436    60           rts

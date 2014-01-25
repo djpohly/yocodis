@@ -1,0 +1,5 @@
+0x000ae014    c9feff       cmp #0xfffe
+0x000ae017    90f4         bcc 0x0ae00d
+0x000ae019    a90001       lda #0x0100
+0x000ae01c    8d6001       sta 0x0160
+0x000ae01f    60           rts

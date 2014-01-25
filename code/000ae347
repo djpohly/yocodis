@@ -1,0 +1,13 @@
+0x000ae347    2068e3       jsr 0xe368
+0x000ae34a    e220         sep #0x20
+0x000ae34c    b90003       lda 0x0300,y
+0x000ae34f    c90e         cmp #0x0e
+0x000ae351    d003         bne 0x0ae356
+0x000ae353    adbc01       lda 0x01bc
+0x000ae356    cd6401       cmp 0x0164
+0x000ae359    d00b         bne 0x0ae366
+0x000ae35b    c220         rep #0x20
+0x000ae35d    9c6001       stz 0x0160
+0x000ae360    a90400       lda #0x0004
+0x000ae363    8d5c01       sta 0x015c
+0x000ae366    60           rts

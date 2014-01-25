@@ -1,0 +1,4 @@
+0x000ae579    ce7201       dec 0x0172
+0x000ae57c    3001         bmi 0x0ae57f
+0x000ae57e    68           pla
+0x000ae57f    60           rts

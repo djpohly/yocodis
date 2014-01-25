@@ -1,0 +1,15 @@
+0x000ae26a    a90400       lda #0x0004
+0x000ae26d    8502         sta 0x02
+0x000ae26f    a500         lda 0x00
+0x000ae271    0a           asl a
+0x000ae272    0a           asl a
+0x000ae273    aa           tax
+0x000ae274    e220         sep #0x20
+0x000ae276    bfb9e20a     lda 0x0ae2b9,x
+0x000ae27a    a8           tay
+0x000ae27b    b9ac01       lda 0x01ac,y
+0x000ae27e    d008         bne 0x0ae288
+0x000ae280    e8           inx
+0x000ae281    c602         dec 0x02
+0x000ae283    d0f1         bne 0x0ae276
+0x000ae285    4cb8e2       jmp 0xe2b8

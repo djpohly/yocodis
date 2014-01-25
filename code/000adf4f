@@ -1,0 +1,5 @@
+0x000adf4f    a90001       lda #0x0100
+0x000adf52    8dba01       sta 0x01ba
+0x000adf55    ee5c01       inc 0x015c
+0x000adf58    2051e5       jsr 0xe551
+0x000adf5b    60           rts

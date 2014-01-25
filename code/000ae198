@@ -1,0 +1,18 @@
+0x000ae198    b9a401       lda 0x01a4,y
+0x000ae19b    29ff00       and #0x00ff
+0x000ae19e    f041         beq 0x0ae1e1
+0x000ae1a0    a90400       lda #0x0004
+0x000ae1a3    8502         sta 0x02
+0x000ae1a5    a500         lda 0x00
+0x000ae1a7    0a           asl a
+0x000ae1a8    0a           asl a
+0x000ae1a9    aa           tax
+0x000ae1aa    e220         sep #0x20
+0x000ae1ac    bfb9e20a     lda 0x0ae2b9,x
+0x000ae1b0    a8           tay
+0x000ae1b1    b9a401       lda 0x01a4,y
+0x000ae1b4    f008         beq 0x0ae1be
+0x000ae1b6    e8           inx
+0x000ae1b7    c602         dec 0x02
+0x000ae1b9    d0f1         bne 0x0ae1ac
+0x000ae1bb    4cb8e2       jmp 0xe2b8

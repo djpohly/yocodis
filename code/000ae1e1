@@ -1,0 +1,31 @@
+0x000ae1e1    a90400       lda #0x0004
+0x000ae1e4    8502         sta 0x02
+0x000ae1e6    a90003       lda #0x0300
+0x000ae1e9    18           clc
+0x000ae1ea    6dba01       adc 0x01ba
+0x000ae1ed    8510         sta 0x10
+0x000ae1ef    ad6601       lda 0x0166
+0x000ae1f2    d039         bne 0x0ae22d
+0x000ae1f4    adb601       lda 0x01b6
+0x000ae1f7    0510         ora 0x10
+0x000ae1f9    8510         sta 0x10
+0x000ae1fb    adb801       lda 0x01b8
+0x000ae1fe    0a           asl a
+0x000ae1ff    0a           asl a
+0x000ae200    aa           tax
+0x000ae201    e220         sep #0x20
+0x000ae203    bfb9e20a     lda 0x0ae2b9,x
+0x000ae207    0a           asl a
+0x000ae208    0a           asl a
+0x000ae209    0a           asl a
+0x000ae20a    a8           tay
+0x000ae20b    b110         lda (0x10),y
+0x000ae20d    c90e         cmp #0x0e
+0x000ae20f    d003         bne 0x0ae214
+0x000ae211    adbc01       lda 0x01bc
+0x000ae214    cd6401       cmp 0x0164
+0x000ae217    f008         beq 0x0ae221
+0x000ae219    e8           inx
+0x000ae21a    c602         dec 0x02
+0x000ae21c    d0e5         bne 0x0ae203
+0x000ae21e    4cb8e2       jmp 0xe2b8

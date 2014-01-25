@@ -1,0 +1,10 @@
+0x000ae565    08           php
+0x000ae566    c220         rep #0x20
+0x000ae568    add201       lda 0x01d2
+0x000ae56b    ae500a       ldx 0x0a50
+0x000ae56e    f001         beq 0x0ae571
+0x000ae570    eb           swa
+0x000ae571    29ff00       and #0x00ff
+0x000ae574    8d7201       sta 0x0172
+0x000ae577    28           plp
+0x000ae578    60           rts

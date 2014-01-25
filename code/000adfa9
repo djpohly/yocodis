@@ -1,0 +1,6 @@
+0x000adfa9    2079e5       jsr 0xe579
+0x000adfac    2045e4       jsr 0xe445
+0x000adfaf    20bce4       jsr 0xe4bc
+0x000adfb2    2065e5       jsr 0xe565
+0x000adfb5    ee5c01       inc 0x015c
+0x000adfb8    60           rts

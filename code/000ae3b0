@@ -1,0 +1,26 @@
+0x000ae3b0    8500         sta 0x00
+0x000ae3b2    a20e00       ldx #0x000e
+0x000ae3b5    9e8401       stz 0x0184,x
+0x000ae3b8    ca           dex
+0x000ae3b9    ca           dex
+0x000ae3ba    10f9         bpl 0x0ae3b5
+0x000ae3bc    a90400       lda #0x0004
+0x000ae3bf    8502         sta 0x02
+0x000ae3c1    e220         sep #0x20
+0x000ae3c3    a00400       ldy #0x0004
+0x000ae3c6    a900         lda #0x00
+0x000ae3c8    eb           swa
+0x000ae3c9    b100         lda (0x00),y
+0x000ae3cb    290f         and #0x0f
+0x000ae3cd    aa           tax
+0x000ae3ce    fe8401       inc 0x0184,x
+0x000ae3d1    88           dey
+0x000ae3d2    10f5         bpl 0x0ae3c9
+0x000ae3d4    c220         rep #0x20
+0x000ae3d6    a500         lda 0x00
+0x000ae3d8    18           clc
+0x000ae3d9    690800       adc #0x0008
+0x000ae3dc    8500         sta 0x00
+0x000ae3de    c602         dec 0x02
+0x000ae3e0    10df         bpl 0x0ae3c1
+0x000ae3e2    60           rts

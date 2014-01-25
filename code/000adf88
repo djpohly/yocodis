@@ -1,0 +1,7 @@
+0x000adf88    ad7303       lda 0x0373
+0x000adf8b    cd7304       cmp 0x0473
+0x000adf8e    d0f7         bne 0x0adf87
+0x000adf90    a90d00       lda #0x000d
+0x000adf93    8d6401       sta 0x0164
+0x000adf96    9c6c01       stz 0x016c
+0x000adf99    80e6         bra 0x0adf81

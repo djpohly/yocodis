@@ -1,0 +1,6 @@
+0x000ae437    a90d00       lda #0x000d
+0x000ae43a    8d6401       sta 0x0164
+0x000ae43d    8dbc01       sta 0x01bc
+0x000ae440    9c6c01       stz 0x016c
+0x000ae443    28           plp
+0x000ae444    60           rts

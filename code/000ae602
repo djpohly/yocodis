@@ -1,0 +1,33 @@
+0x000ae602    acb601       ldy 0x01b6
+0x000ae605    e220         sep #0x20
+0x000ae607    b110         lda (0x10),y
+0x000ae609    c90e         cmp #0x0e
+0x000ae60b    d003         bne 0x0ae610
+0x000ae60d    adbc01       lda 0x01bc
+0x000ae610    cd6401       cmp 0x0164
+0x000ae613    d005         bne 0x0ae61a
+0x000ae615    fea401       inc 0x01a4,x
+0x000ae618    e612         inc 0x12
+0x000ae61a    e8           inx
+0x000ae61b    c8           iny
+0x000ae61c    c8           iny
+0x000ae61d    c8           iny
+0x000ae61e    c8           iny
+0x000ae61f    c8           iny
+0x000ae620    c8           iny
+0x000ae621    c8           iny
+0x000ae622    c8           iny
+0x000ae623    e00500       cpx #0x0005
+0x000ae626    90df         bcc 0x0ae607
+0x000ae628    a512         lda 0x12
+0x000ae62a    8db401       sta 0x01b4
+0x000ae62d    a00000       ldy #0x0000
+0x000ae630    b99401       lda 0x0194,y
+0x000ae633    38           sec
+0x000ae634    f9a401       sbc 0x01a4,y
+0x000ae637    99ac01       sta 0x01ac,y
+0x000ae63a    c8           iny
+0x000ae63b    c00500       cpy #0x0005
+0x000ae63e    90f0         bcc 0x0ae630
+0x000ae640    28           plp
+0x000ae641    60           rts

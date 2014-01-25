@@ -1,0 +1,5 @@
+0x000ae221    a28004       ldx #0x0480
+0x000ae224    4602         lsr 0x02
+0x000ae226    903b         bcc 0x0ae263
+0x000ae228    a28008       ldx #0x0880
+0x000ae22b    8036         bra 0x0ae263

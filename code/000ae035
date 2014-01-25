@@ -1,0 +1,8 @@
+0x000ae035    bd6c03       lda 0x036c,x
+0x000ae038    d00b         bne 0x0ae045
+0x000ae03a    bd7303       lda 0x0373,x
+0x000ae03d    290f0f       and #0x0f0f
+0x000ae040    c90808       cmp #0x0808
+0x000ae043    f004         beq 0x0ae049
+0x000ae045    9c6001       stz 0x0160
+0x000ae048    60           rts
