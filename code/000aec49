@@ -1,0 +1,10 @@
+0x000aec49    a59e         lda 0x9e
+0x000aec4b    2910         and #0x10
+0x000aec4d    f00f         beq 0x0aec5e
+0x000aec4f    a981         lda #0x81
+0x000aec51    22fb810d     jsr 0x0d81fb
+0x000aec55    a901         lda #0x01
+0x000aec57    8d3a01       sta 0x013a
+0x000aec5a    a913         lda #0x13
+0x000aec5c    8547         sta 0x47
+0x000aec5e    60           rts
