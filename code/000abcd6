@@ -1,0 +1,12 @@
+0x000abcd6    ad5201       lda 0x0152
+0x000abcd9    d053         bne 0x0abd2e
+0x000abcdb    226f8d0a     jsr 0x0a8d6f
+0x000abcdf    ae0005       ldx 0x0500
+0x000abce2    bdc003       lda 0x03c0,x
+0x000abce5    d020         bne 0x0abd07
+0x000abce7    bd6c03       lda 0x036c,x
+0x000abcea    d005         bne 0x0abcf1
+0x000abcec    bd5209       lda 0x0952,x
+0x000abcef    d005         bne 0x0abcf6
+0x000abcf1    2231960a     jsr 0x0a9631
+0x000abcf5    60           rts

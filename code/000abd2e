@@ -1,0 +1,11 @@
+0x000abd2e    ae0005       ldx 0x0500
+0x000abd31    f006         beq 0x0abd39
+0x000abd33    a90080       lda #0x8000
+0x000abd36    8d5c01       sta 0x015c
+0x000abd39    bd6003       lda 0x0360,x
+0x000abd3c    9d6403       sta 0x0364,x
+0x000abd3f    bd6203       lda 0x0362,x
+0x000abd42    9d6603       sta 0x0366,x
+0x000abd45    a90800       lda #0x0008
+0x000abd48    9d7803       sta 0x0378,x
+0x000abd4b    60           rts

@@ -1,0 +1,16 @@
+0x000ad378    08           php
+0x000ad379    c220         rep #0x20
+0x000ad37b    a00000       ldy #0x0000
+0x000ad37e    2098d3       jsr 0xd398
+0x000ad381    aa           tax
+0x000ad382    2098d3       jsr 0xd398
+0x000ad385    a8           tay
+0x000ad386    e220         sep #0x20
+0x000ad388    bd0003       lda 0x0300,x
+0x000ad38b    eb           swa
+0x000ad38c    b90003       lda 0x0300,y
+0x000ad38f    9d0003       sta 0x0300,x
+0x000ad392    eb           swa
+0x000ad393    990003       sta 0x0300,y
+0x000ad396    28           plp
+0x000ad397    60           rts

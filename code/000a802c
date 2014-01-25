@@ -1,0 +1,8 @@
+0x000a802c    ac4001       ldy 0x0140
+0x000a802f    f005         beq 0x0a8036
+0x000a8031    c00300       cpy #0x0003
+0x000a8034    d007         bne 0x0a803d
+0x000a8036    9b           txy
+0x000a8037    f003         beq 0x0a803c
+0x000a8039    a00200       ldy #0x0002
+0x000a803c    60           rts

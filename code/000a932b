@@ -1,0 +1,8 @@
+0x000a932b    bd0008       lda 0x0800,x
+0x000a932e    a8           tay
+0x000a932f    a90d         lda #0x0d
+0x000a9331    9104         sta (0x04),y
+0x000a9333    ca           dex
+0x000a9334    10f5         bpl 0x0a932b
+0x000a9336    28           plp
+0x000a9337    60           rts

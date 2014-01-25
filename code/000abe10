@@ -1,0 +1,12 @@
+0x000abe10    bd4009       lda 0x0940,x
+0x000abe13    c95000       cmp #0x0050
+0x000abe16    9016         bcc 0x0abe2e
+0x000abe18    bd4409       lda 0x0944,x
+0x000abe1b    29ffbf       and #0xbfff
+0x000abe1e    9d4409       sta 0x0944,x
+0x000abe21    9e7803       stz 0x0378,x
+0x000abe24    e220         sep #0x20
+0x000abe26    bd7203       lda 0x0372,x
+0x000abe29    29bf         and #0xbf
+0x000abe2b    9d7203       sta 0x0372,x
+0x000abe2e    60           rts

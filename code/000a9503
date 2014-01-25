@@ -1,0 +1,25 @@
+0x000a9503    08           php
+0x000a9504    c220         rep #0x20
+0x000a9506    ae0005       ldx 0x0500
+0x000a9509    8a           txa
+0x000a950a    18           clc
+0x000a950b    690003       adc #0x0300
+0x000a950e    8504         sta 0x04
+0x000a9510    8506         sta 0x06
+0x000a9512    bd6003       lda 0x0360,x
+0x000a9515    8508         sta 0x08
+0x000a9517    bd6203       lda 0x0362,x
+0x000a951a    850a         sta 0x0a
+0x000a951c    640c         stz 0x0c
+0x000a951e    640e         stz 0x0e
+0x000a9520    e220         sep #0x20
+0x000a9522    a40a         ldy 0x0a
+0x000a9524    d014         bne 0x0a953a
+0x000a9526    ad0805       lda 0x0508
+0x000a9529    a00000       ldy #0x0000
+0x000a952c    22658a00     jsr 0x008a65
+0x000a9530    a8           tay
+0x000a9531    b90905       lda 0x0509,y
+0x000a9534    9204         sta (0x04)
+0x000a9536    a901         lda #0x01
+0x000a9538    8002         bra 0x0a953c

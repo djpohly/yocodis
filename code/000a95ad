@@ -1,0 +1,57 @@
+0x000a95ad    c220         rep #0x20
+0x000a95af    e604         inc 0x04
+0x000a95b1    a00000       ldy #0x0000
+0x000a95b4    98           tya
+0x000a95b5    9104         sta (0x04),y
+0x000a95b7    9104         sta (0x04),y
+0x000a95b9    9104         sta (0x04),y
+0x000a95bb    9104         sta (0x04),y
+0x000a95bd    9104         sta (0x04),y
+0x000a95bf    9104         sta (0x04),y
+0x000a95c1    9104         sta (0x04),y
+0x000a95c3    9104         sta (0x04),y
+0x000a95c5    9104         sta (0x04),y
+0x000a95c7    9104         sta (0x04),y
+0x000a95c9    9104         sta (0x04),y
+0x000a95cb    9104         sta (0x04),y
+0x000a95cd    ae0005       ldx 0x0500
+0x000a95d0    8a           txa
+0x000a95d1    18           clc
+0x000a95d2    690003       adc #0x0300
+0x000a95d5    8504         sta 0x04
+0x000a95d7    bdb903       lda 0x03b9,x
+0x000a95da    29ff00       and #0x00ff
+0x000a95dd    18           clc
+0x000a95de    fd8203       sbc 0x0382,x
+0x000a95e1    9013         bcc 0x0a95f6
+0x000a95e3    fd8403       sbc 0x0384,x
+0x000a95e6    900e         bcc 0x0a95f6
+0x000a95e8    f003         beq 0x0a95ed
+0x000a95ea    a90400       lda #0x0004
+0x000a95ed    1a           inc a
+0x000a95ee    8506         sta 0x06
+0x000a95f0    20ac92       jsr 0x92ac
+0x000a95f3    ae0005       ldx 0x0500
+0x000a95f6    a508         lda 0x08
+0x000a95f8    050a         ora 0x0a
+0x000a95fa    d01a         bne 0x0a9616
+0x000a95fc    bdb903       lda 0x03b9,x
+0x000a95ff    29ff00       and #0x00ff
+0x000a9602    18           clc
+0x000a9603    7d8003       adc 0x0380,x
+0x000a9606    9d8003       sta 0x0380,x
+0x000a9609    2051cb       jsr 0xcb51
+0x000a960c    a90a00       lda #0x000a
+0x000a960f    2215820d     jsr 0x0d8215
+0x000a9613    ae0005       ldx 0x0500
+0x000a9616    bd8403       lda 0x0384,x
+0x000a9619    d00b         bne 0x0a9626
+0x000a961b    bd8203       lda 0x0382,x
+0x000a961e    f00c         beq 0x0a962c
+0x000a9620    0900c0       ora #0xc000
+0x000a9623    9d4c09       sta 0x094c,x
+0x000a9626    9e8203       stz 0x0382,x
+0x000a9629    9e8403       stz 0x0384,x
+0x000a962c    9eb803       stz 0x03b8,x
+0x000a962f    28           plp
+0x000a9630    60           rts

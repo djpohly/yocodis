@@ -1,0 +1,5 @@
+0x000abd4c    ae0005       ldx 0x0500
+0x000abd4f    bda803       lda 0x03a8,x
+0x000abd52    f004         beq 0x0abd58
+0x000abd54    203993       jsr 0x9339
+0x000abd57    60           rts

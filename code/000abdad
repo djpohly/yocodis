@@ -1,0 +1,5 @@
+0x000abdad    a90100       lda #0x0001
+0x000abdb0    9d7803       sta 0x0378,x
+0x000abdb3    e220         sep #0x20
+0x000abdb5    feb803       inc 0x03b8,x
+0x000abdb8    60           rts

@@ -1,0 +1,11 @@
+0x000ad398    a90500       lda #0x0005
+0x000ad39b    22658a00     jsr 0x008a65
+0x000ad39f    8500         sta 0x00
+0x000ad3a1    a90500       lda #0x0005
+0x000ad3a4    22658a00     jsr 0x008a65
+0x000ad3a8    0a           asl a
+0x000ad3a9    0a           asl a
+0x000ad3aa    0a           asl a
+0x000ad3ab    6500         adc 0x00
+0x000ad3ad    6d0005       adc 0x0500
+0x000ad3b0    60           rts
