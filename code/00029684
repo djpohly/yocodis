@@ -1,0 +1,9 @@
+0x00029684    c220         rep #0x20
+0x00029686    ad000c       lda 0x0c00
+0x00029689    c9c000       cmp #0x00c0
+0x0002968c    d009         bne 0x029697
+0x0002968e    a9ffff       lda #0xffff
+0x00029691    8d000c       sta 0x0c00
+0x00029694    ee7610       inc 0x1076
+0x00029697    ee000c       inc 0x0c00
+0x0002969a    60           rts

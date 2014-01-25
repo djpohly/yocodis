@@ -1,0 +1,9 @@
+0x000295da    22cb9e00     jsr 0x009ecb
+0x000295de    c220         rep #0x20
+0x000295e0    ad7a10       lda 0x107a
+0x000295e3    c90300       cmp #0x0003
+0x000295e6    900a         bcc 0x0295f2
+0x000295e8    ee7610       inc 0x1076
+0x000295eb    a20807       ldx #0x0708
+0x000295ee    8e7a10       stx 0x107a
+0x000295f1    60           rts
