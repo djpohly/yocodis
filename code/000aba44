@@ -1,8 +1,0 @@
-0x000aba44    224d800a     jsr 0x0a804d
-0x000aba48    20e9ce       jsr 0xcee9
-0x000aba4b    a90100       lda #0x0001
-0x000aba4e    8d2409       sta 0x0924
-0x000aba51    8d240a       sta 0x0a24
-0x000aba54    e220         sep #0x20
-0x000aba56    e647         inc 0x47
-0x000aba58    60           rts

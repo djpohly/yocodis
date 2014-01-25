@@ -1,5 +1,0 @@
-0x000ae2ae    8e6001       stx 0x0160
-0x000ae2b1    18           clc
-0x000ae2b2    6d5c01       adc 0x015c
-0x000ae2b5    8d5c01       sta 0x015c
-0x000ae2b8    60           rts

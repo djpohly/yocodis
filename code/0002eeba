@@ -1,4 +1,0 @@
-0x0002eeba    9c0602       stz 0x0206
-0x0002eebd    a599         lda 0x99
-0x0002eebf    8d0802       sta 0x0208
-0x0002eec2    60           rts

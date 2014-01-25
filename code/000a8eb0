@@ -1,8 +1,0 @@
-0x000a8eb0    c220         rep #0x20
-0x000a8eb2    a510         lda 0x10
-0x000a8eb4    38           sec
-0x000a8eb5    e90800       sbc #0x0008
-0x000a8eb8    8510         sta 0x10
-0x000a8eba    c612         dec 0x12
-0x000a8ebc    d0b4         bne 0x0a8e72
-0x000a8ebe    60           rts
