@@ -1,0 +1,17 @@
+0x000aab92    88           dey
+0x000aab93    88           dey
+0x000aab94    88           dey
+0x000aab95    88           dey
+0x000aab96    88           dey
+0x000aab97    88           dey
+0x000aab98    88           dey
+0x000aab99    88           dey
+0x000aab9a    10ea         bpl 0x0aab86
+0x000aab9c    ae0005       ldx 0x0500
+0x000aab9f    c220         rep #0x20
+0x000aaba1    bdc203       lda 0x03c2,x
+0x000aaba4    d044         bne 0x0aabea
+0x000aaba6    bdc003       lda 0x03c0,x
+0x000aaba9    851a         sta 0x1a
+0x000aabab    a606         ldx 0x06
+0x000aabad    8036         bra 0x0aabe5

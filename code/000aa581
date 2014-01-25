@@ -1,0 +1,3 @@
+0x000aa581    8c2a05       sty 0x052a
+0x000aa584    28           plp
+0x000aa585    6b           rtl

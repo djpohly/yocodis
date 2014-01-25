@@ -1,0 +1,10 @@
+0x000aaadf    08           php
+0x000aaae0    c220         rep #0x20
+0x000aaae2    ae0005       ldx 0x0500
+0x000aaae5    6412         stz 0x12
+0x000aaae7    6414         stz 0x14
+0x000aaae9    6416         stz 0x16
+0x000aaaeb    2400         bit 0x00
+0x000aaaed    5002         bvc 0x0aaaf1
+0x000aaaef    28           plp
+0x000aaaf0    60           rts

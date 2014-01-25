@@ -1,0 +1,10 @@
+0x000aa815    08           php
+0x000aa816    ae0005       ldx 0x0500
+0x000aa819    e220         sep #0x20
+0x000aa81b    2401         bit 0x01
+0x000aa81d    3053         bmi 0x0aa872
+0x000aa81f    7009         bvs 0x0aa82a
+0x000aa821    a909         lda #0x09
+0x000aa823    8512         sta 0x12
+0x000aa825    bd6403       lda 0x0364,x
+0x000aa828    8008         bra 0x0aa832

@@ -1,0 +1,29 @@
+0x000ab575    e220         sep #0x20
+0x000ab577    a900         lda #0x00
+0x000ab579    eb           swa
+0x000ab57a    ad6e03       lda 0x036e
+0x000ab57d    f009         beq 0x0ab588
+0x000ab57f    3a           dec a
+0x000ab580    0a           asl a
+0x000ab581    aa           tax
+0x000ab582    9e4103       stz 0x0341,x
+0x000ab585    9c6e03       stz 0x036e
+0x000ab588    ad7003       lda 0x0370
+0x000ab58b    f009         beq 0x0ab596
+0x000ab58d    3a           dec a
+0x000ab58e    0a           asl a
+0x000ab58f    aa           tax
+0x000ab590    9e5103       stz 0x0351,x
+0x000ab593    9c7003       stz 0x0370
+0x000ab596    6469         stz 0x69
+0x000ab598    a940         lda #0x40
+0x000ab59a    0c7203       tsb 0x0372
+0x000ab59d    c220         rep #0x20
+0x000ab59f    ad6003       lda 0x0360
+0x000ab5a2    8d6403       sta 0x0364
+0x000ab5a5    ad6203       lda 0x0362
+0x000ab5a8    8d6603       sta 0x0366
+0x000ab5ab    22128a0a     jsr 0x0a8a12
+0x000ab5af    a90500       lda #0x0005
+0x000ab5b2    8d7803       sta 0x0378
+0x000ab5b5    60           rts

@@ -1,0 +1,12 @@
+0x000aa4ea    bdce03       lda 0x03ce,x
+0x000aa4ed    d003         bne 0x0aa4f2
+0x000aa4ef    a92000       lda #0x0020
+0x000aa4f2    38           sec
+0x000aa4f3    e90400       sbc #0x0004
+0x000aa4f6    9dce03       sta 0x03ce,x
+0x000aa4f9    18           clc
+0x000aa4fa    6d0005       adc 0x0500
+0x000aa4fd    69d003       adc #0x03d0
+0x000aa500    8510         sta 0x10
+0x000aa502    fecc03       inc 0x03cc,x
+0x000aa505    60           rts

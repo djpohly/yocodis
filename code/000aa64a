@@ -1,0 +1,23 @@
+0x000aa64a    c220         rep #0x20
+0x000aa64c    bdce03       lda 0x03ce,x
+0x000aa64f    18           clc
+0x000aa650    6d0005       adc 0x0500
+0x000aa653    a8           tay
+0x000aa654    e220         sep #0x20
+0x000aa656    a900         lda #0x00
+0x000aa658    eb           swa
+0x000aa659    b9d003       lda 0x03d0,y
+0x000aa65c    0a           asl a
+0x000aa65d    aa           tax
+0x000aa65e    fc68a7       jsr (0xa768,x)
+0x000aa661    c602         dec 0x02
+0x000aa663    f00e         beq 0x0aa673
+0x000aa665    c8           iny
+0x000aa666    c8           iny
+0x000aa667    c8           iny
+0x000aa668    c8           iny
+0x000aa669    98           tya
+0x000aa66a    c920         cmp #0x20
+0x000aa66c    90e8         bcc 0x0aa656
+0x000aa66e    ac0005       ldy 0x0500
+0x000aa671    80e3         bra 0x0aa656

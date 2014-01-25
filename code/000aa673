@@ -1,0 +1,14 @@
+0x000aa673    ae0005       ldx 0x0500
+0x000aa676    b9d003       lda 0x03d0,y
+0x000aa679    c904         cmp #0x04
+0x000aa67b    f015         beq 0x0aa692
+0x000aa67d    c909         cmp #0x09
+0x000aa67f    d023         bne 0x0aa6a4
+0x000aa681    bdf003       lda 0x03f0,x
+0x000aa684    38           sec
+0x000aa685    f9d203       sbc 0x03d2,y
+0x000aa688    901a         bcc 0x0aa6a4
+0x000aa68a    c910         cmp #0x10
+0x000aa68c    9016         bcc 0x0aa6a4
+0x000aa68e    a907         lda #0x07
+0x000aa690    800f         bra 0x0aa6a1

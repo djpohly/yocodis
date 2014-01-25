@@ -1,0 +1,52 @@
+0x000aae6b    ae0005       ldx 0x0500
+0x000aae6e    bdc203       lda 0x03c2,x
+0x000aae71    18           clc
+0x000aae72    6d0005       adc 0x0500
+0x000aae75    a8           tay
+0x000aae76    88           dey
+0x000aae77    b9c403       lda 0x03c4,y
+0x000aae7a    298000       and #0x0080
+0x000aae7d    d055         bne 0x0aaed4
+0x000aae7f    bd6603       lda 0x0366,x
+0x000aae82    dd6203       cmp 0x0362,x
+0x000aae85    f04b         beq 0x0aaed2
+0x000aae87    8512         sta 0x12
+0x000aae89    3a           dec a
+0x000aae8a    8510         sta 0x10
+0x000aae8c    0a           asl a
+0x000aae8d    18           clc
+0x000aae8e    6d0005       adc 0x0500
+0x000aae91    a8           tay
+0x000aae92    b95003       lda 0x0350,y
+0x000aae95    290088       and #0x8800
+0x000aae98    f038         beq 0x0aaed2
+0x000aae9a    88           dey
+0x000aae9b    88           dey
+0x000aae9c    c610         dec 0x10
+0x000aae9e    10f2         bpl 0x0aae92
+0x000aaea0    a512         lda 0x12
+0x000aaea2    0a           asl a
+0x000aaea3    0a           asl a
+0x000aaea4    0a           asl a
+0x000aaea5    6d0005       adc 0x0500
+0x000aaea8    a8           tay
+0x000aaea9    e220         sep #0x20
+0x000aaeab    bd6003       lda 0x0360,x
+0x000aaeae    8510         sta 0x10
+0x000aaeb0    202daf       jsr 0xaf2d
+0x000aaeb3    c8           iny
+0x000aaeb4    c610         dec 0x10
+0x000aaeb6    d0f8         bne 0x0aaeb0
+0x000aaeb8    a500         lda 0x00
+0x000aaeba    d012         bne 0x0aaece
+0x000aaebc    c220         rep #0x20
+0x000aaebe    a512         lda 0x12
+0x000aaec0    0a           asl a
+0x000aaec1    6d0005       adc 0x0500
+0x000aaec4    a8           tay
+0x000aaec5    b95003       lda 0x0350,y
+0x000aaec8    090008       ora #0x0800
+0x000aaecb    995003       sta 0x0350,y
+0x000aaece    2286840a     jsr 0x0a8486
+0x000aaed2    28           plp
+0x000aaed3    60           rts

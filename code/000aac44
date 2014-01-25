@@ -1,0 +1,22 @@
+0x000aac44    febc03       inc 0x03bc,x
+0x000aac47    a504         lda 0x04
+0x000aac49    18           clc
+0x000aac4a    6908         adc #0x08
+0x000aac4c    9dbe03       sta 0x03be,x
+0x000aac4f    38           sec
+0x000aac50    fdf003       sbc 0x03f0,x
+0x000aac53    c930         cmp #0x30
+0x000aac55    9003         bcc 0x0aac5a
+0x000aac57    febc03       inc 0x03bc,x
+0x000aac5a    a510         lda 0x10
+0x000aac5c    3a           dec a
+0x000aac5d    0a           asl a
+0x000aac5e    0a           asl a
+0x000aac5f    0a           asl a
+0x000aac60    38           sec
+0x000aac61    fdf103       sbc 0x03f1,x
+0x000aac64    49ff         eor #0xff
+0x000aac66    1a           inc a
+0x000aac67    9dbf03       sta 0x03bf,x
+0x000aac6a    28           plp
+0x000aac6b    60           rts

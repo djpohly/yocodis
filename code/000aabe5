@@ -1,0 +1,13 @@
+0x000aabe5    e8           inx
+0x000aabe6    e41a         cpx 0x1a
+0x000aabe8    90c5         bcc 0x0aabaf
+0x000aabea    c220         rep #0x20
+0x000aabec    a510         lda 0x10
+0x000aabee    3a           dec a
+0x000aabef    0a           asl a
+0x000aabf0    aa           tax
+0x000aabf1    a516         lda 0x16
+0x000aabf3    29ff00       and #0x00ff
+0x000aabf6    a8           tay
+0x000aabf7    bf409700     lda 0x009740,x
+0x000aabfb    8001         bra 0x0aabfe

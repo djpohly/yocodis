@@ -1,0 +1,39 @@
+0x000aabaf    bdc403       lda 0x03c4,x
+0x000aabb2    294000       and #0x0040
+0x000aabb5    f033         beq 0x0aabea
+0x000aabb7    a90100       lda #0x0001
+0x000aabba    851c         sta 0x1c
+0x000aabbc    bdc403       lda 0x03c4,x
+0x000aabbf    290f00       and #0x000f
+0x000aabc2    3a           dec a
+0x000aabc3    0a           asl a
+0x000aabc4    0a           asl a
+0x000aabc5    0a           asl a
+0x000aabc6    6d0005       adc 0x0500
+0x000aabc9    a8           tay
+0x000aabca    e220         sep #0x20
+0x000aabcc    a90f         lda #0x0f
+0x000aabce    d90003       cmp 0x0300,y
+0x000aabd1    d002         bne 0x0aabd5
+0x000aabd3    061c         asl 0x1c
+0x000aabd5    d90103       cmp 0x0301,y
+0x000aabd8    d002         bne 0x0aabdc
+0x000aabda    061c         asl 0x1c
+0x000aabdc    c220         rep #0x20
+0x000aabde    a51c         lda 0x1c
+0x000aabe0    18           clc
+0x000aabe1    6512         adc 0x12
+0x000aabe3    8512         sta 0x12
+0x000aabe5    e8           inx
+0x000aabe6    e41a         cpx 0x1a
+0x000aabe8    90c5         bcc 0x0aabaf
+0x000aabea    c220         rep #0x20
+0x000aabec    a510         lda 0x10
+0x000aabee    3a           dec a
+0x000aabef    0a           asl a
+0x000aabf0    aa           tax
+0x000aabf1    a516         lda 0x16
+0x000aabf3    29ff00       and #0x00ff
+0x000aabf6    a8           tay
+0x000aabf7    bf409700     lda 0x009740,x
+0x000aabfb    8001         bra 0x0aabfe

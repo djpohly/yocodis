@@ -1,0 +1,8 @@
+0x000aa586    8c2a05       sty 0x052a
+0x000aa589    bd2d05       lda 0x052d,x
+0x000aa58c    48           pha
+0x000aa58d    2099c2       jsr 0xc299
+0x000aa590    68           pla
+0x000aa591    22ef930a     jsr 0x0a93ef
+0x000aa595    28           plp
+0x000aa596    6b           rtl

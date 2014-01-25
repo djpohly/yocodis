@@ -1,0 +1,22 @@
+0x000a93ef    08           php
+0x000a93f0    da           phx
+0x000a93f1    c220         rep #0x20
+0x000a93f3    291f00       and #0x001f
+0x000a93f6    3a           dec a
+0x000a93f7    0a           asl a
+0x000a93f8    0a           asl a
+0x000a93f9    ae0005       ldx 0x0500
+0x000a93fc    f003         beq 0x0a9401
+0x000a93fe    694000       adc #0x0040
+0x000a9401    aa           tax
+0x000a9402    bd4c05       lda 0x054c,x
+0x000a9405    1a           inc a
+0x000a9406    d00b         bne 0x0a9413
+0x000a9408    fe4e05       inc 0x054e,x
+0x000a940b    d006         bne 0x0a9413
+0x000a940d    a9ffff       lda #0xffff
+0x000a9410    9d4e05       sta 0x054e,x
+0x000a9413    9d4c05       sta 0x054c,x
+0x000a9416    fa           plx
+0x000a9417    28           plp
+0x000a9418    6b           rtl

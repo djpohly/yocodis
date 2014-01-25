@@ -1,0 +1,33 @@
+0x000aa9e1    e400         cpx 0x00
+0x000aa9e3    90f4         bcc 0x0aa9d9
+0x000aa9e5    c220         rep #0x20
+0x000aa9e7    ae0005       ldx 0x0500
+0x000aa9ea    68           pla
+0x000aa9eb    38           sec
+0x000aa9ec    ed0005       sbc 0x0500
+0x000aa9ef    4a           lsr a
+0x000aa9f0    f016         beq 0x0aaa08
+0x000aa9f2    9d6203       sta 0x0362,x
+0x000aa9f5    9d6603       sta 0x0366,x
+0x000aa9f8    bd7003       lda 0x0370,x
+0x000aa9fb    f026         beq 0x0aaa23
+0x000aa9fd    bd6603       lda 0x0366,x
+0x000aaa00    9d7003       sta 0x0370,x
+0x000aaa03    de6603       dec 0x0366,x
+0x000aaa06    d01b         bne 0x0aaa23
+0x000aaa08    e220         sep #0x20
+0x000aaa0a    a980         lda #0x80
+0x000aaa0c    9d7203       sta 0x0372,x
+0x000aaa0f    c220         rep #0x20
+0x000aaa11    9e6003       stz 0x0360,x
+0x000aaa14    9e6203       stz 0x0362,x
+0x000aaa17    9e6403       stz 0x0364,x
+0x000aaa1a    9e6603       stz 0x0366,x
+0x000aaa1d    9e6e03       stz 0x036e,x
+0x000aaa20    9e7003       stz 0x0370,x
+0x000aaa23    9ec003       stz 0x03c0,x
+0x000aaa26    9ec203       stz 0x03c2,x
+0x000aaa29    9ecc03       stz 0x03cc,x
+0x000aaa2c    9ece03       stz 0x03ce,x
+0x000aaa2f    28           plp
+0x000aaa30    60           rts

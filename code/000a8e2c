@@ -1,0 +1,17 @@
+0x000a8e2c    88           dey
+0x000a8e2d    10e9         bpl 0x0a8e18
+0x000a8e2f    a400         ldy 0x00
+0x000a8e31    a512         lda 0x12
+0x000a8e33    0518         ora 0x18
+0x000a8e35    9102         sta (0x02),y
+0x000a8e37    e600         inc 0x00
+0x000a8e39    c220         rep #0x20
+0x000a8e3b    a510         lda 0x10
+0x000a8e3d    18           clc
+0x000a8e3e    690800       adc #0x0008
+0x000a8e41    8510         sta 0x10
+0x000a8e43    e612         inc 0x12
+0x000a8e45    bd6603       lda 0x0366,x
+0x000a8e48    c512         cmp 0x12
+0x000a8e4a    b0af         bcs 0x0a8dfb
+0x000a8e4c    60           rts

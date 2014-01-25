@@ -1,0 +1,5 @@
+0x000ab613    a90100       lda #0x0001
+0x000ab616    8d7803       sta 0x0378
+0x000ab619    e220         sep #0x20
+0x000ab61b    eeb803       inc 0x03b8
+0x000ab61e    60           rts

@@ -1,0 +1,93 @@
+0x000aaa31    08           php
+0x000aaa32    ae0005       ldx 0x0500
+0x000aaa35    6400         stz 0x00
+0x000aaa37    6402         stz 0x02
+0x000aaa39    c602         dec 0x02
+0x000aaa3b    bd7303       lda 0x0373,x
+0x000aaa3e    29f000       and #0x00f0
+0x000aaa41    4a           lsr a
+0x000aaa42    4a           lsr a
+0x000aaa43    4a           lsr a
+0x000aaa44    18           clc
+0x000aaa45    6d0005       adc 0x0500
+0x000aaa48    a8           tay
+0x000aaa49    b94003       lda 0x0340,y
+0x000aaa4c    290088       and #0x8800
+0x000aaa4f    f01a         beq 0x0aaa6b
+0x000aaa51    98           tya
+0x000aaa52    38           sec
+0x000aaa53    ed0005       sbc 0x0500
+0x000aaa56    4a           lsr a
+0x000aaa57    1a           inc a
+0x000aaa58    8502         sta 0x02
+0x000aaa5a    bd6403       lda 0x0364,x
+0x000aaa5d    3a           dec a
+0x000aaa5e    0a           asl a
+0x000aaa5f    6d0005       adc 0x0500
+0x000aaa62    a8           tay
+0x000aaa63    b94003       lda 0x0340,y
+0x000aaa66    290088       and #0x8800
+0x000aaa69    d002         bne 0x0aaa6d
+0x000aaa6b    e600         inc 0x00
+0x000aaa6d    88           dey
+0x000aaa6e    88           dey
+0x000aaa6f    3005         bmi 0x0aaa76
+0x000aaa71    cc0005       cpy 0x0500
+0x000aaa74    b0ed         bcs 0x0aaa63
+0x000aaa76    a500         lda 0x00
+0x000aaa78    f007         beq 0x0aaa81
+0x000aaa7a    c502         cmp 0x02
+0x000aaa7c    9002         bcc 0x0aaa80
+0x000aaa7e    a502         lda 0x02
+0x000aaa80    3a           dec a
+0x000aaa81    8504         sta 0x04
+0x000aaa83    6400         stz 0x00
+0x000aaa85    6402         stz 0x02
+0x000aaa87    c602         dec 0x02
+0x000aaa89    bd7403       lda 0x0374,x
+0x000aaa8c    29f000       and #0x00f0
+0x000aaa8f    4a           lsr a
+0x000aaa90    4a           lsr a
+0x000aaa91    4a           lsr a
+0x000aaa92    18           clc
+0x000aaa93    6d0005       adc 0x0500
+0x000aaa96    a8           tay
+0x000aaa97    b95003       lda 0x0350,y
+0x000aaa9a    290088       and #0x8800
+0x000aaa9d    f01a         beq 0x0aaab9
+0x000aaa9f    98           tya
+0x000aaaa0    38           sec
+0x000aaaa1    ed0005       sbc 0x0500
+0x000aaaa4    4a           lsr a
+0x000aaaa5    1a           inc a
+0x000aaaa6    8502         sta 0x02
+0x000aaaa8    bd6603       lda 0x0366,x
+0x000aaaab    3a           dec a
+0x000aaaac    0a           asl a
+0x000aaaad    6d0005       adc 0x0500
+0x000aaab0    a8           tay
+0x000aaab1    b95003       lda 0x0350,y
+0x000aaab4    290088       and #0x8800
+0x000aaab7    d002         bne 0x0aaabb
+0x000aaab9    e600         inc 0x00
+0x000aaabb    88           dey
+0x000aaabc    88           dey
+0x000aaabd    3005         bmi 0x0aaac4
+0x000aaabf    cc0005       cpy 0x0500
+0x000aaac2    b0ed         bcs 0x0aaab1
+0x000aaac4    a500         lda 0x00
+0x000aaac6    f007         beq 0x0aaacf
+0x000aaac8    c502         cmp 0x02
+0x000aaaca    9002         bcc 0x0aaace
+0x000aaacc    a502         lda 0x02
+0x000aaace    3a           dec a
+0x000aaacf    8505         sta 0x05
+0x000aaad1    a504         lda 0x04
+0x000aaad3    0a           asl a
+0x000aaad4    0a           asl a
+0x000aaad5    0a           asl a
+0x000aaad6    0a           asl a
+0x000aaad7    090808       ora #0x0808
+0x000aaada    9d7303       sta 0x0373,x
+0x000aaadd    28           plp
+0x000aaade    60           rts

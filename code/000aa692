@@ -1,0 +1,13 @@
+0x000aa692    b9d303       lda 0x03d3,y
+0x000aa695    38           sec
+0x000aa696    fdf103       sbc 0x03f1,x
+0x000aa699    9009         bcc 0x0aa6a4
+0x000aa69b    c910         cmp #0x10
+0x000aa69d    9005         bcc 0x0aa6a4
+0x000aa69f    a987         lda #0x87
+0x000aa6a1    20b2a7       jsr 0xa7b2
+0x000aa6a4    c220         rep #0x20
+0x000aa6a6    ae0005       ldx 0x0500
+0x000aa6a9    bdc003       lda 0x03c0,x
+0x000aa6ac    d003         bne 0x0aa6b1
+0x000aa6ae    4c30a7       jmp 0xa730

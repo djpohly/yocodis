@@ -1,0 +1,25 @@
+0x000a8e8f    b110         lda (0x10),y
+0x000a8e91    c90e         cmp #0x0e
+0x000a8e93    d002         bne 0x0a8e97
+0x000a8e95    a90d         lda #0x0d
+0x000a8e97    c516         cmp 0x16
+0x000a8e99    f008         beq 0x0a8ea3
+0x000a8e9b    c908         cmp #0x08
+0x000a8e9d    f011         beq 0x0a8eb0
+0x000a8e9f    c90f         cmp #0x0f
+0x000a8ea1    d00d         bne 0x0a8eb0
+0x000a8ea3    88           dey
+0x000a8ea4    10e9         bpl 0x0a8e8f
+0x000a8ea6    a400         ldy 0x00
+0x000a8ea8    a512         lda 0x12
+0x000a8eaa    0518         ora 0x18
+0x000a8eac    9102         sta (0x02),y
+0x000a8eae    e600         inc 0x00
+0x000a8eb0    c220         rep #0x20
+0x000a8eb2    a510         lda 0x10
+0x000a8eb4    38           sec
+0x000a8eb5    e90800       sbc #0x0008
+0x000a8eb8    8510         sta 0x10
+0x000a8eba    c612         dec 0x12
+0x000a8ebc    d0b4         bne 0x0a8e72
+0x000a8ebe    60           rts

@@ -1,0 +1,26 @@
+0x000a93be    08           php
+0x000a93bf    c220         rep #0x20
+0x000a93c1    ae0005       ldx 0x0500
+0x000a93c4    8a           txa
+0x000a93c5    18           clc
+0x000a93c6    693f03       adc #0x033f
+0x000a93c9    8510         sta 0x10
+0x000a93cb    bdc003       lda 0x03c0,x
+0x000a93ce    f01d         beq 0x0a93ed
+0x000a93d0    8512         sta 0x12
+0x000a93d2    a90000       lda #0x0000
+0x000a93d5    e220         sep #0x20
+0x000a93d7    bdc403       lda 0x03c4,x
+0x000a93da    0a           asl a
+0x000a93db    290f         and #0x0f
+0x000a93dd    b002         bcs 0x0a93e1
+0x000a93df    6910         adc #0x10
+0x000a93e1    a8           tay
+0x000a93e2    b110         lda (0x10),y
+0x000a93e4    29fb         and #0xfb
+0x000a93e6    9110         sta (0x10),y
+0x000a93e8    e8           inx
+0x000a93e9    c612         dec 0x12
+0x000a93eb    d0ea         bne 0x0a93d7
+0x000a93ed    28           plp
+0x000a93ee    60           rts

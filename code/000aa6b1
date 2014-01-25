@@ -1,0 +1,30 @@
+0x000aa6b1    ddc203       cmp 0x03c2,x
+0x000aa6b4    f07a         beq 0x0aa730
+0x000aa6b6    bdc203       lda 0x03c2,x
+0x000aa6b9    18           clc
+0x000aa6ba    6d0005       adc 0x0500
+0x000aa6bd    a8           tay
+0x000aa6be    8406         sty 0x06
+0x000aa6c0    e220         sep #0x20
+0x000aa6c2    b9c403       lda 0x03c4,y
+0x000aa6c5    eb           swa
+0x000aa6c6    b9c403       lda 0x03c4,y
+0x000aa6c9    3a           dec a
+0x000aa6ca    c220         rep #0x20
+0x000aa6cc    290fc0       and #0xc00f
+0x000aa6cf    8500         sta 0x00
+0x000aa6d1    290f00       and #0x000f
+0x000aa6d4    0a           asl a
+0x000aa6d5    18           clc
+0x000aa6d6    6d0005       adc 0x0500
+0x000aa6d9    8502         sta 0x02
+0x000aa6db    2400         bit 0x00
+0x000aa6dd    3010         bmi 0x0aa6ef
+0x000aa6df    a95003       lda #0x0350
+0x000aa6e2    18           clc
+0x000aa6e3    6502         adc 0x02
+0x000aa6e5    8502         sta 0x02
+0x000aa6e7    bdf103       lda 0x03f1,x
+0x000aa6ea    38           sec
+0x000aa6eb    f202         sbc (0x02)
+0x000aa6ed    800d         bra 0x0aa6fc

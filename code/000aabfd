@@ -1,0 +1,16 @@
+0x000aabfd    0a           asl a
+0x000aabfe    88           dey
+0x000aabff    10fc         bpl 0x0aabfd
+0x000aac01    18           clc
+0x000aac02    6512         adc 0x12
+0x000aac04    ae0005       ldx 0x0500
+0x000aac07    9dba03       sta 0x03ba,x
+0x000aac0a    a92000       lda #0x0020
+0x000aac0d    9da803       sta 0x03a8,x
+0x000aac10    9ebc03       stz 0x03bc,x
+0x000aac13    feb903       inc 0x03b9,x
+0x000aac16    a515         lda 0x15
+0x000aac18    29ff00       and #0x00ff
+0x000aac1b    f005         beq 0x0aac22
+0x000aac1d    fe8403       inc 0x0384,x
+0x000aac20    800d         bra 0x0aac2f

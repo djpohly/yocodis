@@ -1,0 +1,4 @@
+0x000aab63    e8           inx
+0x000aab64    e41a         cpx 0x1a
+0x000aab66    90c7         bcc 0x0aab2f
+0x000aab68    4ceaab       jmp 0xabea

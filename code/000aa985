@@ -1,0 +1,40 @@
+0x000aa985    e400         cpx 0x00
+0x000aa987    90f4         bcc 0x0aa97d
+0x000aa989    c220         rep #0x20
+0x000aa98b    ae0005       ldx 0x0500
+0x000aa98e    68           pla
+0x000aa98f    38           sec
+0x000aa990    ed0005       sbc 0x0500
+0x000aa993    4a           lsr a
+0x000aa994    f072         beq 0x0aaa08
+0x000aa996    9d6003       sta 0x0360,x
+0x000aa999    9d6403       sta 0x0364,x
+0x000aa99c    bd6e03       lda 0x036e,x
+0x000aa99f    f00b         beq 0x0aa9ac
+0x000aa9a1    bd6403       lda 0x0364,x
+0x000aa9a4    9d6e03       sta 0x036e,x
+0x000aa9a7    de6403       dec 0x0364,x
+0x000aa9aa    f05c         beq 0x0aaa08
+0x000aa9ac    e220         sep #0x20
+0x000aa9ae    9b           txy
+0x000aa9af    a907         lda #0x07
+0x000aa9b1    8500         sta 0x00
+0x000aa9b3    b95103       lda 0x0351,y
+0x000aa9b6    2988         and #0x88
+0x000aa9b8    d012         bne 0x0aa9cc
+0x000aa9ba    b95103       lda 0x0351,y
+0x000aa9bd    2920         and #0x20
+0x000aa9bf    9d5103       sta 0x0351,x
+0x000aa9c2    f006         beq 0x0aa9ca
+0x000aa9c4    b95003       lda 0x0350,y
+0x000aa9c7    9d5003       sta 0x0350,x
+0x000aa9ca    e8           inx
+0x000aa9cb    e8           inx
+0x000aa9cc    c8           iny
+0x000aa9cd    c8           iny
+0x000aa9ce    c600         dec 0x00
+0x000aa9d0    10e1         bpl 0x0aa9b3
+0x000aa9d2    da           phx
+0x000aa9d3    8400         sty 0x00
+0x000aa9d5    a980         lda #0x80
+0x000aa9d7    8008         bra 0x0aa9e1

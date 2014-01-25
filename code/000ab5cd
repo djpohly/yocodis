@@ -1,0 +1,10 @@
+0x000ab5cd    adc003       lda 0x03c0
+0x000ab5d0    38           sec
+0x000ab5d1    edc203       sbc 0x03c2
+0x000ab5d4    0d2a05       ora 0x052a
+0x000ab5d7    0dcc03       ora 0x03cc
+0x000ab5da    0da803       ora 0x03a8
+0x000ab5dd    f009         beq 0x0ab5e8
+0x000ab5df    2219a50a     jsr 0x0aa519
+0x000ab5e3    22fca50a     jsr 0x0aa5fc
+0x000ab5e7    60           rts

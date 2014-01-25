@@ -1,0 +1,8 @@
+0x000aa5fc    08           php
+0x000aa5fd    c220         rep #0x20
+0x000aa5ff    206cac       jsr 0xac6c
+0x000aa602    20b5ad       jsr 0xadb5
+0x000aa605    ae0005       ldx 0x0500
+0x000aa608    bdcc03       lda 0x03cc,x
+0x000aa60b    d003         bne 0x0aa610
+0x000aa60d    4ca4a6       jmp 0xa6a4

@@ -1,0 +1,16 @@
+0x000aaa08    e220         sep #0x20
+0x000aaa0a    a980         lda #0x80
+0x000aaa0c    9d7203       sta 0x0372,x
+0x000aaa0f    c220         rep #0x20
+0x000aaa11    9e6003       stz 0x0360,x
+0x000aaa14    9e6203       stz 0x0362,x
+0x000aaa17    9e6403       stz 0x0364,x
+0x000aaa1a    9e6603       stz 0x0366,x
+0x000aaa1d    9e6e03       stz 0x036e,x
+0x000aaa20    9e7003       stz 0x0370,x
+0x000aaa23    9ec003       stz 0x03c0,x
+0x000aaa26    9ec203       stz 0x03c2,x
+0x000aaa29    9ecc03       stz 0x03cc,x
+0x000aaa2c    9ece03       stz 0x03ce,x
+0x000aaa2f    28           plp
+0x000aaa30    60           rts

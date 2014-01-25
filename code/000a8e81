@@ -1,0 +1,7 @@
+0x000a8e81    c908         cmp #0x08
+0x000a8e83    f02b         beq 0x0a8eb0
+0x000a8e85    c90e         cmp #0x0e
+0x000a8e87    d002         bne 0x0a8e8b
+0x000a8e89    a90d         lda #0x0d
+0x000a8e8b    8516         sta 0x16
+0x000a8e8d    8014         bra 0x0a8ea3

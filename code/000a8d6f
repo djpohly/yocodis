@@ -1,0 +1,17 @@
+0x000a8d6f    08           php
+0x000a8d70    ae0005       ldx 0x0500
+0x000a8d73    c220         rep #0x20
+0x000a8d75    bd6c03       lda 0x036c,x
+0x000a8d78    1dc003       ora 0x03c0,x
+0x000a8d7b    d060         bne 0x0a8ddd
+0x000a8d7d    6400         stz 0x00
+0x000a8d7f    a9c403       lda #0x03c4
+0x000a8d82    18           clc
+0x000a8d83    6d0005       adc 0x0500
+0x000a8d86    8502         sta 0x02
+0x000a8d88    bd8603       lda 0x0386,x
+0x000a8d8b    9e8603       stz 0x0386,x
+0x000a8d8e    f005         beq 0x0a8d95
+0x000a8d90    3a           dec a
+0x000a8d91    f00a         beq 0x0a8d9d
+0x000a8d93    8014         bra 0x0a8da9

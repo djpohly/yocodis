@@ -1,0 +1,6 @@
+0x000aadb5    08           php
+0x000aadb6    ae0005       ldx 0x0500
+0x000aadb9    c220         rep #0x20
+0x000aadbb    ad4001       lda 0x0140
+0x000aadbe    f003         beq 0x0aadc3
+0x000aadc0    4cd2ae       jmp 0xaed2

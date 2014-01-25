@@ -1,0 +1,7 @@
+0x000aa91f    9e0003       stz 0x0300,x
+0x000aa922    e8           inx
+0x000aa923    8a           txa
+0x000aa924    2907         and #0x07
+0x000aa926    d0f7         bne 0x0aa91f
+0x000aa928    c606         dec 0x06
+0x000aa92a    8008         bra 0x0aa934

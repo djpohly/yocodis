@@ -1,0 +1,24 @@
+0x000aadc3    bda803       lda 0x03a8,x
+0x000aadc6    1a           inc a
+0x000aadc7    290700       and #0x0007
+0x000aadca    d0f4         bne 0x0aadc0
+0x000aadcc    bdc203       lda 0x03c2,x
+0x000aadcf    18           clc
+0x000aadd0    6d0005       adc 0x0500
+0x000aadd3    a8           tay
+0x000aadd4    88           dey
+0x000aadd5    8418         sty 0x18
+0x000aadd7    b9c403       lda 0x03c4,y
+0x000aadda    8514         sta 0x14
+0x000aaddc    298000       and #0x0080
+0x000aaddf    d015         bne 0x0aadf6
+0x000aade1    a514         lda 0x14
+0x000aade3    290f00       and #0x000f
+0x000aade6    3a           dec a
+0x000aade7    8512         sta 0x12
+0x000aade9    bd6003       lda 0x0360,x
+0x000aadec    dd6403       cmp 0x0364,x
+0x000aadef    f069         beq 0x0aae5a
+0x000aadf1    3a           dec a
+0x000aadf2    8510         sta 0x10
+0x000aadf4    8013         bra 0x0aae09

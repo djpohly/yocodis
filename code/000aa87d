@@ -1,0 +1,42 @@
+0x000aa87d    a905         lda #0x05
+0x000aa87f    8512         sta 0x12
+0x000aa881    bd6603       lda 0x0366,x
+0x000aa884    3a           dec a
+0x000aa885    851a         sta 0x1a
+0x000aa887    bdf103       lda 0x03f1,x
+0x000aa88a    eb           swa
+0x000aa88b    a504         lda 0x04
+0x000aa88d    c220         rep #0x20
+0x000aa88f    8516         sta 0x16
+0x000aa891    a500         lda 0x00
+0x000aa893    290f00       and #0x000f
+0x000aa896    18           clc
+0x000aa897    6d0005       adc 0x0500
+0x000aa89a    690003       adc #0x0300
+0x000aa89d    8514         sta 0x14
+0x000aa89f    a00200       ldy #0x0002
+0x000aa8a2    20eaa4       jsr 0xa4ea
+0x000aa8a5    e220         sep #0x20
+0x000aa8a7    b214         lda (0x14)
+0x000aa8a9    eb           swa
+0x000aa8aa    a512         lda 0x12
+0x000aa8ac    c220         rep #0x20
+0x000aa8ae    9210         sta (0x10)
+0x000aa8b0    a516         lda 0x16
+0x000aa8b2    9110         sta (0x10),y
+0x000aa8b4    a514         lda 0x14
+0x000aa8b6    18           clc
+0x000aa8b7    690800       adc #0x0008
+0x000aa8ba    8514         sta 0x14
+0x000aa8bc    a516         lda 0x16
+0x000aa8be    38           sec
+0x000aa8bf    e90010       sbc #0x1000
+0x000aa8c2    8516         sta 0x16
+0x000aa8c4    c61a         dec 0x1a
+0x000aa8c6    d0da         bne 0x0aa8a2
+0x000aa8c8    b202         lda (0x02)
+0x000aa8ca    090008       ora #0x0800
+0x000aa8cd    9202         sta (0x02)
+0x000aa8cf    fec203       inc 0x03c2,x
+0x000aa8d2    28           plp
+0x000aa8d3    60           rts

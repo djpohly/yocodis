@@ -1,0 +1,7 @@
+0x000a9368    b9c01a       lda 0x1ac0,y
+0x000a936b    99801a       sta 0x1a80,y
+0x000a936e    88           dey
+0x000a936f    88           dey
+0x000a9370    10f6         bpl 0x0a9368
+0x000a9372    28           plp
+0x000a9373    60           rts

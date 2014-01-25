@@ -1,0 +1,14 @@
+0x000aab6b    a500         lda 0x00
+0x000aab6d    290f00       and #0x000f
+0x000aab70    18           clc
+0x000aab71    6d0005       adc 0x0500
+0x000aab74    690003       adc #0x0300
+0x000aab77    851c         sta 0x1c
+0x000aab79    bd6603       lda 0x0366,x
+0x000aab7c    8510         sta 0x10
+0x000aab7e    0a           asl a
+0x000aab7f    0a           asl a
+0x000aab80    0a           asl a
+0x000aab81    a8           tay
+0x000aab82    e220         sep #0x20
+0x000aab84    800c         bra 0x0aab92

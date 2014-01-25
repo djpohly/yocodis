@@ -1,0 +1,14 @@
+0x000aa7ee    a510         lda 0x10
+0x000aa7f0    2006a5       jsr 0xa506
+0x000aa7f3    9d2c05       sta 0x052c,x
+0x000aa7f6    b9d103       lda 0x03d1,y
+0x000aa7f9    9d2d05       sta 0x052d,x
+0x000aa7fc    b9d203       lda 0x03d2,y
+0x000aa7ff    9d2e05       sta 0x052e,x
+0x000aa802    b9d303       lda 0x03d3,y
+0x000aa805    9d2f05       sta 0x052f,x
+0x000aa808    ae0005       ldx 0x0500
+0x000aa80b    decc03       dec 0x03cc,x
+0x000aa80e    a90b         lda #0x0b
+0x000aa810    2230820d     jsr 0x0d8230
+0x000aa814    60           rts

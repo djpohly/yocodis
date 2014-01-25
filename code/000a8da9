@@ -1,0 +1,22 @@
+0x000a8da9    20bf8e       jsr 0x8ebf
+0x000a8dac    a500         lda 0x00
+0x000a8dae    8504         sta 0x04
+0x000a8db0    20df8d       jsr 0x8ddf
+0x000a8db3    a500         lda 0x00
+0x000a8db5    f026         beq 0x0a8ddd
+0x000a8db7    9dc003       sta 0x03c0,x
+0x000a8dba    9ec203       stz 0x03c2,x
+0x000a8dbd    a504         lda 0x04
+0x000a8dbf    d002         bne 0x0a8dc3
+0x000a8dc1    a500         lda 0x00
+0x000a8dc3    0a           asl a
+0x000a8dc4    9da603       sta 0x03a6,x
+0x000a8dc7    bd7203       lda 0x0372,x
+0x000a8dca    094000       ora #0x0040
+0x000a8dcd    9d7203       sta 0x0372,x
+0x000a8dd0    9e7a03       stz 0x037a,x
+0x000a8dd3    208593       jsr 0x9385
+0x000a8dd6    a91b00       lda #0x001b
+0x000a8dd9    2230820d     jsr 0x0d8230
+0x000a8ddd    28           plp
+0x000a8dde    6b           rtl

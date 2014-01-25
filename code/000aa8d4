@@ -1,0 +1,36 @@
+0x000aa8d4    08           php
+0x000aa8d5    c220         rep #0x20
+0x000aa8d7    ae0005       ldx 0x0500
+0x000aa8da    2031aa       jsr 0xaa31
+0x000aa8dd    a95103       lda #0x0351
+0x000aa8e0    18           clc
+0x000aa8e1    6d0005       adc 0x0500
+0x000aa8e4    8500         sta 0x00
+0x000aa8e6    a90800       lda #0x0008
+0x000aa8e9    8504         sta 0x04
+0x000aa8eb    8506         sta 0x06
+0x000aa8ed    e220         sep #0x20
+0x000aa8ef    ae0005       ldx 0x0500
+0x000aa8f2    9b           txy
+0x000aa8f3    b200         lda (0x00)
+0x000aa8f5    2988         and #0x88
+0x000aa8f7    d033         bne 0x0aa92c
+0x000aa8f9    c220         rep #0x20
+0x000aa8fb    a94103       lda #0x0341
+0x000aa8fe    18           clc
+0x000aa8ff    6d0005       adc 0x0500
+0x000aa902    8502         sta 0x02
+0x000aa904    e220         sep #0x20
+0x000aa906    b202         lda (0x02)
+0x000aa908    2988         and #0x88
+0x000aa90a    d007         bne 0x0aa913
+0x000aa90c    b90003       lda 0x0300,y
+0x000aa90f    9d0003       sta 0x0300,x
+0x000aa912    e8           inx
+0x000aa913    c8           iny
+0x000aa914    e602         inc 0x02
+0x000aa916    e602         inc 0x02
+0x000aa918    98           tya
+0x000aa919    2907         and #0x07
+0x000aa91b    d0e9         bne 0x0aa906
+0x000aa91d    8004         bra 0x0aa923
