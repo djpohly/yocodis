@@ -1,0 +1,12 @@
+0x000ad03a    ae9e05       ldx 0x059e
+0x000ad03d    f003         beq 0x0ad042
+0x000ad03f    9c5c01       stz 0x015c
+0x000ad042    204dd4       jsr 0xd44d
+0x000ad045    ae9e05       ldx 0x059e
+0x000ad048    18           clc
+0x000ad049    7d5009       adc 0x0950,x
+0x000ad04c    9d5009       sta 0x0950,x
+0x000ad04f    c535         cmp 0x35
+0x000ad051    f053         beq 0x0ad0a6
+0x000ad053    28           plp
+0x000ad054    60           rts

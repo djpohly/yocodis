@@ -1,0 +1,14 @@
+0x000ad122    a90700       lda #0x0007
+0x000ad125    2047d1       jsr 0xd147
+0x000ad128    ae9e05       ldx 0x059e
+0x000ad12b    bd8003       lda 0x0380,x
+0x000ad12e    38           sec
+0x000ad12f    e534         sbc 0x34
+0x000ad131    b003         bcs 0x0ad136
+0x000ad133    a90000       lda #0x0000
+0x000ad136    9d8003       sta 0x0380,x
+0x000ad139    2051cb       jsr 0xcb51
+0x000ad13c    a92300       lda #0x0023
+0x000ad13f    2215820d     jsr 0x0d8215
+0x000ad143    28           plp
+0x000ad144    60           rts
