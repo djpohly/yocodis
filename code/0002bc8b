@@ -1,0 +1,6 @@
+0x0002bc8b    a20048       ldx #0x4800
+0x0002bc8e    a00014       ldy #0x1400
+0x0002bc91    a90008       lda #0x0800
+0x0002bc94    227b8e00     jsr 0x008e7b
+0x0002bc98    ee4608       inc 0x0846
+0x0002bc9b    60           rts
