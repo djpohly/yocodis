@@ -1,0 +1,7 @@
+0x000ad616    2003d8       jsr 0xd803
+0x000ad619    20aed8       jsr 0xd8ae
+0x000ad61c    ae0005       ldx 0x0500
+0x000ad61f    de6209       dec 0x0962,x
+0x000ad622    1003         bpl 0x0ad627
+0x000ad624    fe6009       inc 0x0960,x
+0x000ad627    60           rts

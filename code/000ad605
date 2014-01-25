@@ -1,0 +1,6 @@
+0x000ad605    22ef830a     jsr 0x0a83ef
+0x000ad609    ae0005       ldx 0x0500
+0x000ad60c    a95000       lda #0x0050
+0x000ad60f    9d6209       sta 0x0962,x
+0x000ad612    fe6009       inc 0x0960,x
+0x000ad615    60           rts
