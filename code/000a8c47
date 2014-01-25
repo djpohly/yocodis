@@ -1,0 +1,16 @@
+0x000a8c47    08           php
+0x000a8c48    c220         rep #0x20
+0x000a8c4a    8a           txa
+0x000a8c4b    18           clc
+0x000a8c4c    690003       adc #0x0300
+0x000a8c4f    8500         sta 0x00
+0x000a8c51    e220         sep #0x20
+0x000a8c53    bd7703       lda 0x0377,x
+0x000a8c56    c904         cmp #0x04
+0x000a8c58    b07f         bcs 0x0a8cd9
+0x000a8c5a    bc6403       ldy 0x0364,x
+0x000a8c5d    88           dey
+0x000a8c5e    d003         bne 0x0a8c63
+0x000a8c60    28           plp
+0x000a8c61    38           sec
+0x000a8c62    60           rts

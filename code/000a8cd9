@@ -1,0 +1,4 @@
+0x000a8cd9    bc6603       ldy 0x0366,x
+0x000a8cdc    88           dey
+0x000a8cdd    d003         bne 0x0a8ce2
+0x000a8cdf    4c608c       jmp 0x8c60

@@ -1,0 +1,45 @@
+0x000a8ce2    bd6d03       lda 0x036d,x
+0x000a8ce5    d006         bne 0x0a8ced
+0x000a8ce7    a915         lda #0x15
+0x000a8ce9    2230820d     jsr 0x0d8230
+0x000a8ced    bd7703       lda 0x0377,x
+0x000a8cf0    c904         cmp #0x04
+0x000a8cf2    d03c         bne 0x0a8d30
+0x000a8cf4    bd6d03       lda 0x036d,x
+0x000a8cf7    38           sec
+0x000a8cf8    e906         sbc #0x06
+0x000a8cfa    9d6d03       sta 0x036d,x
+0x000a8cfd    c9c1         cmp #0xc1
+0x000a8cff    b02c         bcs 0x0a8d2d
+0x000a8d01    c220         rep #0x20
+0x000a8d03    bd6803       lda 0x0368,x
+0x000a8d06    3a           dec a
+0x000a8d07    18           clc
+0x000a8d08    6500         adc 0x00
+0x000a8d0a    8500         sta 0x00
+0x000a8d0c    bd6603       lda 0x0366,x
+0x000a8d0f    3a           dec a
+0x000a8d10    0a           asl a
+0x000a8d11    0a           asl a
+0x000a8d12    0a           asl a
+0x000a8d13    a8           tay
+0x000a8d14    e220         sep #0x20
+0x000a8d16    b200         lda (0x00)
+0x000a8d18    eb           swa
+0x000a8d19    b100         lda (0x00),y
+0x000a8d1b    eb           swa
+0x000a8d1c    9100         sta (0x00),y
+0x000a8d1e    88           dey
+0x000a8d1f    88           dey
+0x000a8d20    88           dey
+0x000a8d21    88           dey
+0x000a8d22    88           dey
+0x000a8d23    88           dey
+0x000a8d24    88           dey
+0x000a8d25    88           dey
+0x000a8d26    10f1         bpl 0x0a8d19
+0x000a8d28    c220         rep #0x20
+0x000a8d2a    9e6c03       stz 0x036c,x
+0x000a8d2d    28           plp
+0x000a8d2e    18           clc
+0x000a8d2f    60           rts

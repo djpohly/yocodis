@@ -1,0 +1,22 @@
+0x000a8c85    c220         rep #0x20
+0x000a8c87    bd6a03       lda 0x036a,x
+0x000a8c8a    3a           dec a
+0x000a8c8b    0a           asl a
+0x000a8c8c    0a           asl a
+0x000a8c8d    0a           asl a
+0x000a8c8e    6500         adc 0x00
+0x000a8c90    8500         sta 0x00
+0x000a8c92    bc6403       ldy 0x0364,x
+0x000a8c95    8402         sty 0x02
+0x000a8c97    88           dey
+0x000a8c98    e220         sep #0x20
+0x000a8c9a    b100         lda (0x00),y
+0x000a8c9c    eb           swa
+0x000a8c9d    a00000       ldy #0x0000
+0x000a8ca0    b100         lda (0x00),y
+0x000a8ca2    eb           swa
+0x000a8ca3    9100         sta (0x00),y
+0x000a8ca5    c8           iny
+0x000a8ca6    c402         cpy 0x02
+0x000a8ca8    90f6         bcc 0x0a8ca0
+0x000a8caa    807c         bra 0x0a8d28

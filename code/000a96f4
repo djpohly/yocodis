@@ -1,0 +1,13 @@
+0x000a96f4    bd7403       lda 0x0374,x
+0x000a96f7    29ff00       and #0x00ff
+0x000a96fa    4a           lsr a
+0x000a96fb    4a           lsr a
+0x000a96fc    4a           lsr a
+0x000a96fd    4a           lsr a
+0x000a96fe    1a           inc a
+0x000a96ff    9d6a03       sta 0x036a,x
+0x000a9702    9e6803       stz 0x0368,x
+0x000a9705    9e6c03       stz 0x036c,x
+0x000a9708    a90300       lda #0x0003
+0x000a970b    9d7a03       sta 0x037a,x
+0x000a970e    60           rts

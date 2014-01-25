@@ -1,0 +1,11 @@
+0x000a965d    ae0005       ldx 0x0500
+0x000a9660    9e6803       stz 0x0368,x
+0x000a9663    9e6a03       stz 0x036a,x
+0x000a9666    9e6c03       stz 0x036c,x
+0x000a9669    9e7603       stz 0x0376,x
+0x000a966c    e220         sep #0x20
+0x000a966e    9e7203       stz 0x0372,x
+0x000a9671    9e7503       stz 0x0375,x
+0x000a9674    a901         lda #0x01
+0x000a9676    9d7a03       sta 0x037a,x
+0x000a9679    60           rts

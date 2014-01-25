@@ -1,0 +1,12 @@
+0x000a96a5    ae0005       ldx 0x0500
+0x000a96a8    202c80       jsr 0x802c
+0x000a96ab    b9b700       lda 0x00b7,y
+0x000a96ae    298400       and #0x0084
+0x000a96b1    d010         bne 0x0a96c3
+0x000a96b3    e220         sep #0x20
+0x000a96b5    bd7203       lda 0x0372,x
+0x000a96b8    29df         and #0xdf
+0x000a96ba    9d7203       sta 0x0372,x
+0x000a96bd    a901         lda #0x01
+0x000a96bf    9d7a03       sta 0x037a,x
+0x000a96c2    60           rts
