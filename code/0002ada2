@@ -1,0 +1,7 @@
+0x0002ada2    ade810       lda 0x10e8
+0x0002ada5    f00c         beq 0x02adb3
+0x0002ada7    cee810       dec 0x10e8
+0x0002adaa    ee0c11       inc 0x110c
+0x0002adad    ade810       lda 0x10e8
+0x0002adb0    20cdb3       jsr 0xb3cd
+0x0002adb3    60           rts

@@ -1,0 +1,5 @@
+0x0002ad00    9ce210       stz 0x10e2
+0x0002ad03    a20200       ldx #0x0002
+0x0002ad06    8e0611       stx 0x1106
+0x0002ad09    20c7b2       jsr 0xb2c7
+0x0002ad0c    60           rts
