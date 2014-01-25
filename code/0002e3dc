@@ -1,0 +1,12 @@
+0x0002e3dc    e220         sep #0x20
+0x0002e3de    ae7a10       ldx 0x107a
+0x0002e3e1    bf2be402     lda 0x02e42b,x
+0x0002e3e5    3012         bmi 0x02e3f9
+0x0002e3e7    c220         rep #0x20
+0x0002e3e9    29ff00       and #0x00ff
+0x0002e3ec    18           clc
+0x0002e3ed    69a000       adc #0x00a0
+0x0002e3f0    8d7410       sta 0x1074
+0x0002e3f3    e220         sep #0x20
+0x0002e3f5    ee7a10       inc 0x107a
+0x0002e3f8    60           rts

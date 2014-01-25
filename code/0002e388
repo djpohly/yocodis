@@ -1,0 +1,5 @@
+0x0002e388    c220         rep #0x20
+0x0002e38a    ad7a10       lda 0x107a
+0x0002e38d    3004         bmi 0x02e393
+0x0002e38f    ce7a10       dec 0x107a
+0x0002e392    60           rts

@@ -1,0 +1,7 @@
+0x0002e34f    c220         rep #0x20
+0x0002e351    a20200       ldx #0x0002
+0x0002e354    8e8e10       stx 0x108e
+0x0002e357    ad7a10       lda 0x107a
+0x0002e35a    3004         bmi 0x02e360
+0x0002e35c    ce7a10       dec 0x107a
+0x0002e35f    60           rts

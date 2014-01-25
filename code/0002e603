@@ -1,0 +1,17 @@
+0x0002e603    c220         rep #0x20
+0x0002e605    ad080c       lda 0x0c08
+0x0002e608    c90300       cmp #0x0003
+0x0002e60b    d01d         bne 0x02e62a
+0x0002e60d    ad050d       lda 0x0d05
+0x0002e610    0a           asl a
+0x0002e611    aa           tax
+0x0002e612    bf2ee602     lda 0x02e62e,x
+0x0002e616    8d2a0d       sta 0x0d2a
+0x0002e619    ad050d       lda 0x0d05
+0x0002e61c    c91800       cmp #0x0018
+0x0002e61f    f009         beq 0x02e62a
+0x0002e621    a9ffff       lda #0xffff
+0x0002e624    8d080c       sta 0x0c08
+0x0002e627    ee050d       inc 0x0d05
+0x0002e62a    ee080c       inc 0x0c08
+0x0002e62d    60           rts

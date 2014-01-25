@@ -1,0 +1,12 @@
+0x0002e494    c220         rep #0x20
+0x0002e496    a558         lda 0x58
+0x0002e498    890300       bit #0x0003
+0x0002e49b    d013         bne 0x02e4b0
+0x0002e49d    ee7c10       inc 0x107c
+0x0002e4a0    ad7c10       lda 0x107c
+0x0002e4a3    290f00       and #0x000f
+0x0002e4a6    aa           tax
+0x0002e4a7    e220         sep #0x20
+0x0002e4a9    bfb1e402     lda 0x02e4b1,x
+0x0002e4ad    8d8e10       sta 0x108e
+0x0002e4b0    60           rts
