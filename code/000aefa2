@@ -1,0 +1,3 @@
+0x000aefa2    2231960a     jsr 0x0a9631
+0x000aefa6    20c5f6       jsr 0xf6c5
+0x000aefa9    60           rts

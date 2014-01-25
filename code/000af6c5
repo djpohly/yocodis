@@ -1,0 +1,9 @@
+0x000af6c5    08           php
+0x000af6c6    c220         rep #0x20
+0x000af6c8    ad8609       lda 0x0986
+0x000af6cb    f009         beq 0x0af6d6
+0x000af6cd    ee8409       inc 0x0984
+0x000af6d0    a90100       lda #0x0001
+0x000af6d3    8d2409       sta 0x0924
+0x000af6d6    28           plp
+0x000af6d7    60           rts

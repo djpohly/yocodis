@@ -1,0 +1,5 @@
+0x000aefb1    a90200       lda #0x0002
+0x000aefb4    8d2409       sta 0x0924
+0x000aefb7    2035f6       jsr 0xf635
+0x000aefba    a90600       lda #0x0006
+0x000aefbd    8011         bra 0x0aefd0

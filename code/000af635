@@ -1,0 +1,4 @@
+0x000af635    08           php
+0x000af636    e220         sep #0x20
+0x000af638    ce8409       dec 0x0984
+0x000af63b    8006         bra 0x0af643

@@ -1,0 +1,3 @@
+0x000aefe6    20be93       jsr 0x93be
+0x000aefe9    ee7803       inc 0x0378
+0x000aefec    60           rts

@@ -1,0 +1,4 @@
+0x000aefdd    ada803       lda 0x03a8
+0x000aefe0    f004         beq 0x0aefe6
+0x000aefe2    203993       jsr 0x9339
+0x000aefe5    60           rts
