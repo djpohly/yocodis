@@ -1,0 +1,8 @@
+0x0002de81    e220         sep #0x20
+0x0002de83    a20100       ldx #0x0001
+0x0002de86    8e8111       stx 0x1181
+0x0002de89    9c140d       stz 0x0d14
+0x0002de8c    9c150d       stz 0x0d15
+0x0002de8f    9c170d       stz 0x0d17
+0x0002de92    eea810       inc 0x10a8
+0x0002de95    60           rts

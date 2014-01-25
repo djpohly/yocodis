@@ -1,0 +1,17 @@
+0x0002ddb8    e220         sep #0x20
+0x0002ddba    ae7a10       ldx 0x107a
+0x0002ddbd    bf02de02     lda 0x02de02,x
+0x0002ddc1    f021         beq 0x02dde4
+0x0002ddc3    18           clc
+0x0002ddc4    6d6c10       adc 0x106c
+0x0002ddc7    8d6c10       sta 0x106c
+0x0002ddca    ee7a10       inc 0x107a
+0x0002ddcd    e01100       cpx #0x0011
+0x0002ddd0    d006         bne 0x02ddd8
+0x0002ddd2    a23000       ldx #0x0030
+0x0002ddd5    8e8e10       stx 0x108e
+0x0002ddd8    e01a00       cpx #0x001a
+0x0002dddb    d006         bne 0x02dde3
+0x0002dddd    a23100       ldx #0x0031
+0x0002dde0    8e8e10       stx 0x108e
+0x0002dde3    60           rts

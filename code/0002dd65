@@ -1,0 +1,6 @@
+0x0002dd65    c220         rep #0x20
+0x0002dd67    ad6a10       lda 0x106a
+0x0002dd6a    c98300       cmp #0x0083
+0x0002dd6d    d005         bne 0x02dd74
+0x0002dd6f    eea810       inc 0x10a8
+0x0002dd72    800f         bra 0x02dd83

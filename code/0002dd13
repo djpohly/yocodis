@@ -1,0 +1,11 @@
+0x0002dd13    c220         rep #0x20
+0x0002dd15    a23300       ldx #0x0033
+0x0002dd18    8e9210       stx 0x1092
+0x0002dd1b    206fa7       jsr 0xa76f
+0x0002dd1e    20eaa7       jsr 0xa7ea
+0x0002dd21    20fbca       jsr 0xcafb
+0x0002dd24    c220         rep #0x20
+0x0002dd26    ce7a10       dec 0x107a
+0x0002dd29    1003         bpl 0x02dd2e
+0x0002dd2b    eea810       inc 0x10a8
+0x0002dd2e    60           rts

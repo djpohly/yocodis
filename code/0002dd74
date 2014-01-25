@@ -1,0 +1,6 @@
+0x0002dd74    20c1a7       jsr 0xa7c1
+0x0002dd77    2080a8       jsr 0xa880
+0x0002dd7a    20e6ca       jsr 0xcae6
+0x0002dd7d    206fa7       jsr 0xa76f
+0x0002dd80    20b8dd       jsr 0xddb8
+0x0002dd83    60           rts

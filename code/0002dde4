@@ -1,0 +1,12 @@
+0x0002dde4    eea810       inc 0x10a8
+0x0002dde7    a23200       ldx #0x0032
+0x0002ddea    8e8e10       stx 0x108e
+0x0002dded    ad6c10       lda 0x106c
+0x0002ddf0    18           clc
+0x0002ddf1    6903         adc #0x03
+0x0002ddf3    8d6c10       sta 0x106c
+0x0002ddf6    9c8511       stz 0x1185
+0x0002ddf9    a26000       ldx #0x0060
+0x0002ddfc    8e7a10       stx 0x107a
+0x0002ddff    e220         sep #0x20
+0x0002de01    60           rts
