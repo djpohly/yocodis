@@ -1,0 +1,7 @@
+0x0002ce67    c220         rep #0x20
+0x0002ce69    ce7a10       dec 0x107a
+0x0002ce6c    1003         bpl 0x02ce71
+0x0002ce6e    eea810       inc 0x10a8
+0x0002ce71    a90600       lda #0x0006
+0x0002ce74    85c3         sta 0xc3
+0x0002ce76    60           rts

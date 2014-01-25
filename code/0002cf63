@@ -1,0 +1,13 @@
+0x0002cf63    c220         rep #0x20
+0x0002cf65    a558         lda 0x58
+0x0002cf67    890100       bit #0x0001
+0x0002cf6a    d014         bne 0x02cf80
+0x0002cf6c    ee7a10       inc 0x107a
+0x0002cf6f    ae7a10       ldx 0x107a
+0x0002cf72    e220         sep #0x20
+0x0002cf74    bf8bcf02     lda 0x02cf8b,x
+0x0002cf78    f007         beq 0x02cf81
+0x0002cf7a    18           clc
+0x0002cf7b    6991         adc #0x91
+0x0002cf7d    8d7410       sta 0x1074
+0x0002cf80    60           rts
