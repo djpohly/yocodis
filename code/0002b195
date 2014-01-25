@@ -1,0 +1,8 @@
+0x0002b195    adf010       lda 0x10f0
+0x0002b198    f00e         beq 0x02b1a8
+0x0002b19a    cef010       dec 0x10f0
+0x0002b19d    ee0811       inc 0x1108
+0x0002b1a0    e220         sep #0x20
+0x0002b1a2    a907         lda #0x07
+0x0002b1a4    2230820d     jsr 0x0d8230
+0x0002b1a8    60           rts

@@ -1,0 +1,6 @@
+0x0002ae46    adf810       lda 0x10f8
+0x0002ae49    f009         beq 0x02ae54
+0x0002ae4b    cef810       dec 0x10f8
+0x0002ae4e    ee0c11       inc 0x110c
+0x0002ae51    2006b4       jsr 0xb406
+0x0002ae54    60           rts

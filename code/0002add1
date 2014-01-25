@@ -1,0 +1,6 @@
+0x0002add1    ad1011       lda 0x1110
+0x0002add4    d036         bne 0x02ae0c
+0x0002add6    ad9900       lda 0x0099
+0x0002add9    890003       bit #0x0300
+0x0002addc    d001         bne 0x02addf
+0x0002adde    60           rts

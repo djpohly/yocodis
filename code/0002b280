@@ -1,0 +1,15 @@
+0x0002b280    a20500       ldx #0x0005
+0x0002b283    8e0411       stx 0x1104
+0x0002b286    ad9b00       lda 0x009b
+0x0002b289    890001       bit #0x0100
+0x0002b28c    f01e         beq 0x02b2ac
+0x0002b28e    adf610       lda 0x10f6
+0x0002b291    c91400       cmp #0x0014
+0x0002b294    b012         bcs 0x02b2a8
+0x0002b296    eef610       inc 0x10f6
+0x0002b299    a20100       ldx #0x0001
+0x0002b29c    8e1a11       stx 0x111a
+0x0002b29f    e220         sep #0x20
+0x0002b2a1    a907         lda #0x07
+0x0002b2a3    2230820d     jsr 0x0d8230
+0x0002b2a7    60           rts

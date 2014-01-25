@@ -1,0 +1,10 @@
+0x0002addf    890001       bit #0x0100
+0x0002ade2    f014         beq 0x02adf8
+0x0002ade4    adee10       lda 0x10ee
+0x0002ade7    d00e         bne 0x02adf7
+0x0002ade9    eeee10       inc 0x10ee
+0x0002adec    ee1011       inc 0x1110
+0x0002adef    e220         sep #0x20
+0x0002adf1    a907         lda #0x07
+0x0002adf3    2230820d     jsr 0x0d8230
+0x0002adf7    60           rts

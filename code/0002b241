@@ -1,0 +1,9 @@
+0x0002b241    adf410       lda 0x10f4
+0x0002b244    f012         beq 0x02b258
+0x0002b246    cef410       dec 0x10f4
+0x0002b249    a20100       ldx #0x0001
+0x0002b24c    8e1811       stx 0x1118
+0x0002b24f    e220         sep #0x20
+0x0002b251    a907         lda #0x07
+0x0002b253    2230820d     jsr 0x0d8230
+0x0002b257    60           rts
