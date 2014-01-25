@@ -1,0 +1,22 @@
+0x00028b24    eb           swa
+0x00028b25    a9ff         lda #0xff
+0x00028b27    eb           swa
+0x00028b28    c220         rep #0x20
+0x00028b2a    8d0610       sta 0x1006
+0x00028b2d    18           clc
+0x00028b2e    6d7d00       adc 0x007d
+0x00028b31    8d7d00       sta 0x007d
+0x00028b34    ad0610       lda 0x1006
+0x00028b37    49ffff       eor #0xffff
+0x00028b3a    1a           inc a
+0x00028b3b    18           clc
+0x00028b3c    6d6a10       adc 0x106a
+0x00028b3f    8d6a10       sta 0x106a
+0x00028b42    e8           inx
+0x00028b43    8e7a10       stx 0x107a
+0x00028b46    e08d00       cpx #0x008d
+0x00028b49    9009         bcc 0x028b54
+0x00028b4b    ee7610       inc 0x1076
+0x00028b4e    9c7e10       stz 0x107e
+0x00028b51    9c7a10       stz 0x107a
+0x00028b54    60           rts

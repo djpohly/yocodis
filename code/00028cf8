@@ -1,0 +1,3 @@
+0x00028cf8    ee7610       inc 0x1076
+0x00028cfb    a20000       ldx #0x0000
+0x00028cfe    60           rts

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cat code/* | colrm 13 | sort | uniq -d

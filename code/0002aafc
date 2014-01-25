@@ -1,0 +1,2 @@
+0x0002aafc    2033b3       jsr 0xb333
+0x0002aaff    60           rts

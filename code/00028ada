@@ -1,0 +1,15 @@
+0x00028ada    e220         sep #0x20
+0x00028adc    ce7a10       dec 0x107a
+0x00028adf    101f         bpl 0x028b00
+0x00028ae1    a20400       ldx #0x0004
+0x00028ae4    8e7a10       stx 0x107a
+0x00028ae7    ee7c10       inc 0x107c
+0x00028aea    ae7c10       ldx 0x107c
+0x00028aed    bf2efb03     lda 0x03fb2e,x
+0x00028af1    1a           inc a
+0x00028af2    8d7810       sta 0x1078
+0x00028af5    1009         bpl 0x028b00
+0x00028af7    ee7610       inc 0x1076
+0x00028afa    9c7810       stz 0x1078
+0x00028afd    ee7810       inc 0x1078
+0x00028b00    60           rts

@@ -1,0 +1,12 @@
+0x0002b43f    c220         rep #0x20
+0x0002b441    a21400       ldx #0x0014
+0x0002b444    bf4a830c     lda 0x0c834a,x
+0x0002b448    8500         sta 0x00
+0x0002b44a    a90c00       lda #0x000c
+0x0002b44d    8502         sta 0x02
+0x0002b44f    a9c000       lda #0x00c0
+0x0002b452    850a         sta 0x0a
+0x0002b454    a9e000       lda #0x00e0
+0x0002b457    850c         sta 0x0c
+0x0002b459    229d8700     jsr 0x00879d
+0x0002b45d    60           rts

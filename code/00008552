@@ -1,0 +1,231 @@
+0x00008552    a560         lda 0x60
+0x00008554    29cf         and #0xcf
+0x00008556    8d0042       sta 0x4200
+0x00008559    60           rts
+0x0000855a    08           php
+0x0000855b    e220         sep #0x20
+0x0000855d    58           cli
+0x0000855e    a560         lda 0x60
+0x00008560    0981         ora #0x81
+0x00008562    8d0042       sta 0x4200
+0x00008565    8560         sta 0x60
+0x00008567    28           plp
+0x00008568    6b           rtl
+0x00008569    08           php
+0x0000856a    e224         sep #0x24
+0x0000856c    a560         lda 0x60
+0x0000856e    290e         and #0x0e
+0x00008570    8d0042       sta 0x4200
+0x00008573    8560         sta 0x60
+0x00008575    28           plp
+0x00008576    6b           rtl
+0x00008577    08           php
+0x00008578    e220         sep #0x20
+0x0000857a    a561         lda 0x61
+0x0000857c    290f         and #0x0f
+0x0000857e    8561         sta 0x61
+0x00008580    8d0021       sta 0x2100
+0x00008583    28           plp
+0x00008584    6b           rtl
+0x00008585    08           php
+0x00008586    e220         sep #0x20
+0x00008588    a561         lda 0x61
+0x0000858a    0980         ora #0x80
+0x0000858c    8561         sta 0x61
+0x0000858e    8d0021       sta 0x2100
+0x00008591    28           plp
+0x00008592    6b           rtl
+0x00008593    08           php
+0x00008594    c220         rep #0x20
+0x00008596    a550         lda 0x50
+0x00008598    0a           asl a
+0x00008599    0a           asl a
+0x0000859a    18           clc
+0x0000859b    6550         adc 0x50
+0x0000859d    18           clc
+0x0000859e    691137       adc #0x3711
+0x000085a1    8550         sta 0x50
+0x000085a3    eb           swa
+0x000085a4    28           plp
+0x000085a5    6b           rtl
+0x000085a6    08           php
+0x000085a7    c220         rep #0x20
+0x000085a9    a552         lda 0x52
+0x000085ab    6556         adc 0x56
+0x000085ad    6554         adc 0x54
+0x000085af    2a           rol a
+0x000085b0    6656         ror 0x56
+0x000085b2    6556         adc 0x56
+0x000085b4    8556         sta 0x56
+0x000085b6    6d3721       adc 0x2137
+0x000085b9    6d3e21       adc 0x213e
+0x000085bc    6d3c21       adc 0x213c
+0x000085bf    8554         sta 0x54
+0x000085c1    6654         ror 0x54
+0x000085c3    2a           rol a
+0x000085c4    6554         adc 0x54
+0x000085c6    8552         sta 0x52
+0x000085c8    28           plp
+0x000085c9    6b           rtl
+0x000085ca    08           php
+0x000085cb    c220         rep #0x20
+0x000085cd    6499         stz 0x99
+0x000085cf    649b         stz 0x9b
+0x000085d1    649d         stz 0x9d
+0x000085d3    649f         stz 0x9f
+0x000085d5    28           plp
+0x000085d6    6b           rtl
+0x000085d7    08           php
+0x000085d8    c220         rep #0x20
+0x000085da    a00200       ldy #0x0002
+0x000085dd    b91842       lda 0x4218,y
+0x000085e0    999900       sta 0x0099,y
+0x000085e3    99b700       sta 0x00b7,y
+0x000085e6    48           pha
+0x000085e7    59a100       eor 0x00a1,y
+0x000085ea    399900       and 0x0099,y
+0x000085ed    999d00       sta 0x009d,y
+0x000085f0    99bb00       sta 0x00bb,y
+0x000085f3    68           pla
+0x000085f4    99a100       sta 0x00a1,y
+0x000085f7    88           dey
+0x000085f8    88           dey
+0x000085f9    f0e2         beq 0x0085dd
+0x000085fb    28           plp
+0x000085fc    60           rts
+0x000085fd    a57d         lda 0x7d
+0x000085ff    8d0d21       sta 0x210d
+0x00008602    a57e         lda 0x7e
+0x00008604    8d0d21       sta 0x210d
+0x00008607    a57f         lda 0x7f
+0x00008609    8d0e21       sta 0x210e
+0x0000860c    a580         lda 0x80
+0x0000860e    8d0e21       sta 0x210e
+0x00008611    a581         lda 0x81
+0x00008613    8d0f21       sta 0x210f
+0x00008616    a582         lda 0x82
+0x00008618    8d0f21       sta 0x210f
+0x0000861b    a583         lda 0x83
+0x0000861d    8d1021       sta 0x2110
+0x00008620    a584         lda 0x84
+0x00008622    8d1021       sta 0x2110
+0x00008625    a585         lda 0x85
+0x00008627    8d1121       sta 0x2111
+0x0000862a    a586         lda 0x86
+0x0000862c    8d1121       sta 0x2111
+0x0000862f    a587         lda 0x87
+0x00008631    8d1221       sta 0x2112
+0x00008634    a588         lda 0x88
+0x00008636    8d1221       sta 0x2112
+0x00008639    a589         lda 0x89
+0x0000863b    8d1321       sta 0x2113
+0x0000863e    a58a         lda 0x8a
+0x00008640    8d1321       sta 0x2113
+0x00008643    a58b         lda 0x8b
+0x00008645    8d1421       sta 0x2114
+0x00008648    a58c         lda 0x8c
+0x0000864a    8d1421       sta 0x2114
+0x0000864d    a571         lda 0x71
+0x0000864f    8d1b21       sta 0x211b
+0x00008652    a572         lda 0x72
+0x00008654    8d1b21       sta 0x211b
+0x00008657    a573         lda 0x73
+0x00008659    8d1c21       sta 0x211c
+0x0000865c    a574         lda 0x74
+0x0000865e    8d1c21       sta 0x211c
+0x00008661    a575         lda 0x75
+0x00008663    8d1d21       sta 0x211d
+0x00008666    a576         lda 0x76
+0x00008668    8d1d21       sta 0x211d
+0x0000866b    a577         lda 0x77
+0x0000866d    8d1e21       sta 0x211e
+0x00008670    a578         lda 0x78
+0x00008672    8d1e21       sta 0x211e
+0x00008675    a579         lda 0x79
+0x00008677    8d1f21       sta 0x211f
+0x0000867a    a57a         lda 0x7a
+0x0000867c    8d1f21       sta 0x211f
+0x0000867f    a57b         lda 0x7b
+0x00008681    8d2021       sta 0x2120
+0x00008684    a57c         lda 0x7c
+0x00008686    8d2021       sta 0x2120
+0x00008689    a564         lda 0x64
+0x0000868b    8d0621       sta 0x2106
+0x0000868e    60           rts
+0x0000868f    08           php
+0x00008690    e220         sep #0x20
+0x00008692    9c0c42       stz 0x420c
+0x00008695    a20000       ldx #0x0000
+0x00008698    8e0221       stx 0x2102
+0x0000869b    a20004       ldx #0x0400
+0x0000869e    8e0043       stx 0x4300
+0x000086a1    a2001d       ldx #0x1d00
+0x000086a4    8e0243       stx 0x4302
+0x000086a7    a900         lda #0x00
+0x000086a9    8d0443       sta 0x4304
+0x000086ac    a22002       ldx #0x0220
+0x000086af    8e0543       stx 0x4305
+0x000086b2    a901         lda #0x01
+0x000086b4    8d0b42       sta 0x420b
+0x000086b7    ad0001       lda 0x0100
+0x000086ba    3024         bmi 0x0086e0
+0x000086bc    f022         beq 0x0086e0
+0x000086be    a00022       ldy #0x2200
+0x000086c1    8c0043       sty 0x4300
+0x000086c4    9c2121       stz 0x2121
+0x000086c7    a00019       ldy #0x1900
+0x000086ca    8c0243       sty 0x4302
+0x000086cd    a900         lda #0x00
+0x000086cf    8d0443       sta 0x4304
+0x000086d2    a00002       ldy #0x0200
+0x000086d5    8c0543       sty 0x4305
+0x000086d8    a901         lda #0x01
+0x000086da    8d0b42       sta 0x420b
+0x000086dd    9c0001       stz 0x0100
+0x000086e0    a20000       ldx #0x0000
+0x000086e3    8035         bra 0x00871a
+0x000086e5    bd0018       lda 0x1800,x
+0x000086e8    8d1521       sta 0x2115
+0x000086eb    c220         rep #0x20
+0x000086ed    bd0118       lda 0x1801,x
+0x000086f0    8d1621       sta 0x2116
+0x000086f3    a90118       lda #0x1801
+0x000086f6    8d0043       sta 0x4300
+0x000086f9    bd0318       lda 0x1803,x
+0x000086fc    8d0243       sta 0x4302
+0x000086ff    bd0518       lda 0x1805,x
+0x00008702    8d0443       sta 0x4304
+0x00008705    e220         sep #0x20
+0x00008707    bd0718       lda 0x1807,x
+0x0000870a    8d0643       sta 0x4306
+0x0000870d    a901         lda #0x01
+0x0000870f    8d0b42       sta 0x420b
+0x00008712    e8           inx
+0x00008713    e8           inx
+0x00008714    e8           inx
+0x00008715    e8           inx
+0x00008716    e8           inx
+0x00008717    e8           inx
+0x00008718    e8           inx
+0x00008719    e8           inx
+0x0000871a    ec0201       cpx 0x0102
+0x0000871d    90c6         bcc 0x0086e5
+0x0000871f    a5c3         lda 0xc3
+0x00008721    8d0c42       sta 0x420c
+0x00008724    220c8a00     jsr 0x008a0c
+0x00008728    c220         rep #0x20
+0x0000872a    a567         lda 0x67
+0x0000872c    8d2c21       sta 0x212c
+0x0000872f    a569         lda 0x69
+0x00008731    8d2e21       sta 0x212e
+0x00008734    e220         sep #0x20
+0x00008736    28           plp
+0x00008737    6b           rtl
+0x00008738    08           php
+0x00008739    e220         sep #0x20
+0x0000873b    8561         sta 0x61
+0x0000873d    eb           swa
+0x0000873e    8562         sta 0x62
+0x00008740    6463         stz 0x63
+0x00008742    28           plp
+0x00008743    6b           rtl

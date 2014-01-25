@@ -1,0 +1,11 @@
+0x0002ab1b    a00000       ldy #0x0000
+0x0002ab1e    a28000       ldx #0x0080
+0x0002ab21    8e0000       stx 0x0000
+0x0002ab24    20a28c       jsr 0x8ca2
+0x0002ab27    f00f         beq 0x02ab38
+0x0002ab29    a00000       ldy #0x0000
+0x0002ab2c    a28000       ldx #0x0080
+0x0002ab2f    8e0000       stx 0x0000
+0x0002ab32    20a28c       jsr 0x8ca2
+0x0002ab35    f001         beq 0x02ab38
+0x0002ab37    60           rts

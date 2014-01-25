@@ -1,0 +1,35 @@
+0x000ac041    08           php
+0x000ac042    c220         rep #0x20
+0x000ac044    ad2009       lda 0x0920
+0x000ac047    3047         bmi 0x0ac090
+0x000ac049    a90600       lda #0x0006
+0x000ac04c    8502         sta 0x02
+0x000ac04e    ad3609       lda 0x0936
+0x000ac051    0a           asl a
+0x000ac052    aa           tax
+0x000ac053    bf96a106     lda 0x06a196,x
+0x000ac057    8500         sta 0x00
+0x000ac059    ad3809       lda 0x0938
+0x000ac05c    8504         sta 0x04
+0x000ac05e    ad3a09       lda 0x093a
+0x000ac061    850c         sta 0x0c
+0x000ac063    ad3c09       lda 0x093c
+0x000ac066    850a         sta 0x0a
+0x000ac068    22a58700     jsr 0x0087a5
+0x000ac06c    ad2609       lda 0x0926
+0x000ac06f    0a           asl a
+0x000ac070    aa           tax
+0x000ac071    bf96a106     lda 0x06a196,x
+0x000ac075    8500         sta 0x00
+0x000ac077    ad2809       lda 0x0928
+0x000ac07a    8504         sta 0x04
+0x000ac07c    ad2a09       lda 0x092a
+0x000ac07f    850c         sta 0x0c
+0x000ac081    ad2c09       lda 0x092c
+0x000ac084    850a         sta 0x0a
+0x000ac086    e220         sep #0x20
+0x000ac088    a940         lda #0x40
+0x000ac08a    8503         sta 0x03
+0x000ac08c    22a58700     jsr 0x0087a5
+0x000ac090    28           plp
+0x000ac091    60           rts

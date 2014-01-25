@@ -1,0 +1,13 @@
+0x0002d47a    2263f504     jsr 0x04f563
+0x0002d47e    229ff504     jsr 0x04f59f
+0x0002d482    2286f404     jsr 0x04f486
+0x0002d486    221cf504     jsr 0x04f51c
+0x0002d48a    22d1f404     jsr 0x04f4d1
+0x0002d48e    2018a0       jsr 0xa018
+0x0002d491    c220         rep #0x20
+0x0002d493    ada810       lda 0x10a8
+0x0002d496    29ff00       and #0x00ff
+0x0002d499    0a           asl a
+0x0002d49a    aa           tax
+0x0002d49b    f4a0d4       pea 0xd4a0
+0x0002d49e    7ca2d4       jmp (0xd4a2,x)

@@ -1,0 +1,3 @@
+0x0002aae0    20c1ab       jsr 0xabc1
+0x0002aae3    201faf       jsr 0xaf1f
+0x0002aae6    60           rts

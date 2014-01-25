@@ -1,0 +1,20 @@
+0x000d8425    e220         sep #0x20
+0x000d8427    a5e6         lda 0xe6
+0x000d8429    1010         bpl 0x0d843b
+0x000d842b    eed601       inc 0x01d6
+0x000d842e    a2aabb       ldx #0xbbaa
+0x000d8431    ec4021       cpx 0x2140
+0x000d8434    d006         bne 0x0d843c
+0x000d8436    a905         lda #0x05
+0x000d8438    8dd601       sta 0x01d6
+0x000d843b    60           rts
+0x000d843c    60           rts
+0x000d843d    e220         sep #0x20
+0x000d843f    a980         lda #0x80
+0x000d8441    8d4021       sta 0x2140
+0x000d8444    8d4121       sta 0x2141
+0x000d8447    a900         lda #0x00
+0x000d8449    cd4021       cmp 0x2140
+0x000d844c    d0fb         bne 0x0d8449
+0x000d844e    eed601       inc 0x01d6
+0x000d8451    60           rts

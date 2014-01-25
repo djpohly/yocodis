@@ -1,0 +1,4 @@
+0x0002a6c3    adbc10       lda 0x10bc
+0x0002a6c6    29ff00       and #0x00ff
+0x0002a6c9    8dbc10       sta 0x10bc
+0x0002a6cc    60           rts

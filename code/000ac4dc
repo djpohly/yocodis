@@ -1,0 +1,14 @@
+0x000ac4dc    08           php
+0x000ac4dd    c220         rep #0x20
+0x000ac4df    a567         lda 0x67
+0x000ac4e1    4a           lsr a
+0x000ac4e2    9029         bcc 0x0ac50d
+0x000ac4e4    ee5a01       inc 0x015a
+0x000ac4e7    2c5801       bit 0x0158
+0x000ac4ea    1021         bpl 0x0ac50d
+0x000ac4ec    ad0401       lda 0x0104
+0x000ac4ef    d01c         bne 0x0ac50d
+0x000ac4f1    ad5601       lda 0x0156
+0x000ac4f4    0a           asl a
+0x000ac4f5    aa           tax
+0x000ac4f6    7cf9c4       jmp (0xc4f9,x)

@@ -1,0 +1,5 @@
+0x0002a78d    ad6a10       lda 0x106a
+0x0002a790    38           sec
+0x0002a791    edd810       sbc 0x10d8
+0x0002a794    8d6a10       sta 0x106a
+0x0002a797    60           rts

@@ -1,0 +1,9 @@
+0x000283a8    e220         sep #0x20
+0x000283aa    adaa10       lda 0x10aa
+0x000283ad    d009         bne 0x0283b8
+0x000283af    eeaa10       inc 0x10aa
+0x000283b2    a20300       ldx #0x0003
+0x000283b5    8eab10       stx 0x10ab
+0x000283b8    20cf8b       jsr 0x8bcf
+0x000283bb    203f8c       jsr 0x8c3f
+0x000283be    60           rts

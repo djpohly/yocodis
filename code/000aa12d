@@ -1,0 +1,53 @@
+0x000aa12d    08           php
+0x000aa12e    c220         rep #0x20
+0x000aa130    9cf803       stz 0x03f8
+0x000aa133    9cfa03       stz 0x03fa
+0x000aa136    9cf804       stz 0x04f8
+0x000aa139    9cfa04       stz 0x04fa
+0x000aa13c    9cfc03       stz 0x03fc
+0x000aa13f    9cfe03       stz 0x03fe
+0x000aa142    9cfc04       stz 0x04fc
+0x000aa145    9cfe04       stz 0x04fe
+0x000aa148    9c3301       stz 0x0133
+0x000aa14b    9cc201       stz 0x01c2
+0x000aa14e    9cc401       stz 0x01c4
+0x000aa151    9cca01       stz 0x01ca
+0x000aa154    9cfa10       stz 0x10fa
+0x000aa157    9cfc10       stz 0x10fc
+0x000aa15a    9cfe10       stz 0x10fe
+0x000aa15d    20a1a1       jsr 0xa1a1
+0x000aa160    9c4601       stz 0x0146
+0x000aa163    9cce01       stz 0x01ce
+0x000aa166    a20100       ldx #0x0001
+0x000aa169    8ee610       stx 0x10e6
+0x000aa16c    8ef010       stx 0x10f0
+0x000aa16f    8ef210       stx 0x10f2
+0x000aa172    9ce210       stz 0x10e2
+0x000aa175    9ce810       stz 0x10e8
+0x000aa178    9cee10       stz 0x10ee
+0x000aa17b    9cf410       stz 0x10f4
+0x000aa17e    9cf610       stz 0x10f6
+0x000aa181    9cf810       stz 0x10f8
+0x000aa184    9c4011       stz 0x1140
+0x000aa187    9c6011       stz 0x1160
+0x000aa18a    a20900       ldx #0x0009
+0x000aa18d    8e1c11       stx 0x111c
+0x000aa190    a21d1d       ldx #0x1d1d
+0x000aa193    8e9e11       stx 0x119e
+0x000aa196    8ea011       stx 0x11a0
+0x000aa199    8ea211       stx 0x11a2
+0x000aa19c    8ea311       stx 0x11a3
+0x000aa19f    28           plp
+0x000aa1a0    6b           rtl
+0x000aa1a1    08           php
+0x000aa1a2    c220         rep #0x20
+0x000aa1a4    a91c1c       lda #0x1c1c
+0x000aa1a7    8d0006       sta 0x0600
+0x000aa1aa    8d0406       sta 0x0604
+0x000aa1ad    8d0806       sta 0x0608
+0x000aa1b0    a91c80       lda #0x801c
+0x000aa1b3    8d0206       sta 0x0602
+0x000aa1b6    8d0606       sta 0x0606
+0x000aa1b9    8d0a06       sta 0x060a
+0x000aa1bc    28           plp
+0x000aa1bd    60           rts

@@ -1,0 +1,8 @@
+0x0002ab38    e220         sep #0x20
+0x0002ab3a    22858500     jsr 0x008585
+0x0002ab3e    9c6100       stz 0x0061
+0x0002ab41    9c6900       stz 0x0069
+0x0002ab44    9c6a00       stz 0x006a
+0x0002ab47    9cc300       stz 0x00c3
+0x0002ab4a    9cbb10       stz 0x10bb
+0x0002ab4d    60           rts

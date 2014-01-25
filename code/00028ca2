@@ -1,0 +1,5 @@
+0x00028ca2    e220         sep #0x20
+0x00028ca4    adbb10       lda 0x10bb
+0x00028ca7    d004         bne 0x028cad
+0x00028ca9    a2ffff       ldx #0xffff
+0x00028cac    60           rts

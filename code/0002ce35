@@ -1,0 +1,10 @@
+0x0002ce35    2200f204     jsr 0x04f200
+0x0002ce39    224ef204     jsr 0x04f24e
+0x0002ce3d    2018a0       jsr 0xa018
+0x0002ce40    c220         rep #0x20
+0x0002ce42    ada810       lda 0x10a8
+0x0002ce45    29ff00       and #0x00ff
+0x0002ce48    0a           asl a
+0x0002ce49    aa           tax
+0x0002ce4a    f44fce       pea 0xce4f
+0x0002ce4d    7c51ce       jmp (0xce51,x)

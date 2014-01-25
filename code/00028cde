@@ -1,0 +1,11 @@
+0x00028cde    c978         cmp #0x78
+0x00028ce0    9002         bcc 0x028ce4
+0x00028ce2    a978         lda #0x78
+0x00028ce4    8db610       sta 0x10b6
+0x00028ce7    adb710       lda 0x10b7
+0x00028cea    49ff         eor #0xff
+0x00028cec    8db810       sta 0x10b8
+0x00028cef    adb610       lda 0x10b6
+0x00028cf2    f004         beq 0x028cf8
+0x00028cf4    a2ffff       ldx #0xffff
+0x00028cf7    60           rts

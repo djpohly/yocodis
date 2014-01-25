@@ -1,0 +1,5 @@
+0x0002ab85    20df92       jsr 0x92df
+0x0002ab88    e220         sep #0x20
+0x0002ab8a    a983         lda #0x83
+0x0002ab8c    8544         sta 0x44
+0x0002ab8e    60           rts

@@ -1,0 +1,22 @@
+0x0000839c    08           php
+0x0000839d    a544         lda 0x44
+0x0000839f    301f         bmi 0x0083c0
+0x000083a1    4b           phk
+0x000083a2    f4bf83       pea 0x83bf
+0x000083a5    c220         rep #0x20
+0x000083a7    29ff00       and #0x00ff
+0x000083aa    48           pha
+0x000083ab    0a           asl a
+0x000083ac    6301         adc 0x01,s
+0x000083ae    aa           tax
+0x000083af    68           pla
+0x000083b0    e220         sep #0x20
+0x000083b2    bfc48300     lda 0x0083c4,x
+0x000083b6    48           pha
+0x000083b7    c220         rep #0x20
+0x000083b9    bfc28300     lda 0x0083c2,x
+0x000083bd    3a           dec a
+0x000083be    48           pha
+0x000083bf    6b           rtl
+0x000083c0    28           plp
+0x000083c1    60           rts

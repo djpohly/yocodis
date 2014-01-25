@@ -1,0 +1,7 @@
+0x0002a6cd    c220         rep #0x20
+0x0002a6cf    adca10       lda 0x10ca
+0x0002a6d2    29ff00       and #0x00ff
+0x0002a6d5    0a           asl a
+0x0002a6d6    aa           tax
+0x0002a6d7    f4dca6       pea 0xa6dc
+0x0002a6da    7cdea6       jmp (0xa6de,x)

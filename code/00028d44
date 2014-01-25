@@ -1,0 +1,13 @@
+0x00028d44    20698d       jsr 0x8d69
+0x00028d47    adb410       lda 0x10b4
+0x00028d4a    38           sec
+0x00028d4b    e93f         sbc #0x3f
+0x00028d4d    8dba10       sta 0x10ba
+0x00028d50    8db610       sta 0x10b6
+0x00028d53    adb410       lda 0x10b4
+0x00028d56    49ff         eor #0xff
+0x00028d58    18           clc
+0x00028d59    6998         adc #0x98
+0x00028d5b    8db910       sta 0x10b9
+0x00028d5e    a2ffff       ldx #0xffff
+0x00028d61    60           rts

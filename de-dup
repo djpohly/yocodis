@@ -1,0 +1,10 @@
+#!/bin/bash
+
+last=/dev/null
+for f in code/*; do
+	if comm -13 $last $f | grep -q ""; then
+		last=$f
+	else 
+		rm $f
+	fi
+done

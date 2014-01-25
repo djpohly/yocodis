@@ -1,0 +1,53 @@
+0x0002fc4a    08           php
+0x0002fc4b    c220         rep #0x20
+0x0002fc4d    ad4011       lda 0x1140
+0x0002fc50    8d0009       sta 0x0900
+0x0002fc53    ad4601       lda 0x0146
+0x0002fc56    f003         beq 0x02fc5b
+0x0002fc58    a90400       lda #0x0004
+0x0002fc5b    0d6011       ora 0x1160
+0x0002fc5e    8d000a       sta 0x0a00
+0x0002fc61    a22000       ldx #0x0020
+0x0002fc64    8e0005       stx 0x0500
+0x0002fc67    207dfb       jsr 0xfb7d
+0x0002fc6a    a700         lda [0x00]
+0x0002fc6c    8508         sta 0x08
+0x0002fc6e    a00100       ldy #0x0001
+0x0002fc71    b700         lda [0x00],y
+0x0002fc73    8509         sta 0x09
+0x0002fc75    ae0005       ldx 0x0500
+0x0002fc78    3c4211       bit 0x1142,x
+0x0002fc7b    7014         bvs 0x02fc91
+0x0002fc7d    2089fb       jsr 0xfb89
+0x0002fc80    a00000       ldy #0x0000
+0x0002fc83    a700         lda [0x00]
+0x0002fc85    8704         sta [0x04]
+0x0002fc87    a00200       ldy #0x0002
+0x0002fc8a    b700         lda [0x00],y
+0x0002fc8c    29ff00       and #0x00ff
+0x0002fc8f    9704         sta [0x04],y
+0x0002fc91    ad0005       lda 0x0500
+0x0002fc94    f003         beq 0x02fc99
+0x0002fc96    a90001       lda #0x0100
+0x0002fc99    18           clc
+0x0002fc9a    690a09       adc #0x090a
+0x0002fc9d    85da         sta 0xda
+0x0002fc9f    a00000       ldy #0x0000
+0x0002fca2    98           tya
+0x0002fca3    e220         sep #0x20
+0x0002fca5    b700         lda [0x00],y
+0x0002fca7    aa           tax
+0x0002fca8    bfc5fc02     lda 0x02fcc5,x
+0x0002fcac    91da         sta (0xda),y
+0x0002fcae    c8           iny
+0x0002fcaf    c00300       cpy #0x0003
+0x0002fcb2    90f1         bcc 0x02fca5
+0x0002fcb4    a94f         lda #0x4f
+0x0002fcb6    91da         sta (0xda),y
+0x0002fcb8    c220         rep #0x20
+0x0002fcba    ad0005       lda 0x0500
+0x0002fcbd    492000       eor #0x0020
+0x0002fcc0    aa           tax
+0x0002fcc1    f0a1         beq 0x02fc64
+0x0002fcc3    28           plp
+0x0002fcc4    60           rts

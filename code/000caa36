@@ -1,0 +1,56 @@
+0x000caa36    08           php
+0x000caa37    e220         sep #0x20
+0x000caa39    ad010d       lda 0x0d01
+0x000caa3c    d002         bne 0x0caa40
+0x000caa3e    28           plp
+0x000caa3f    6b           rtl
+0x000caa40    ae8a10       ldx 0x108a
+0x000caa43    bf6aa50c     lda 0x0ca56a,x
+0x000caa47    0a           asl a
+0x000caa48    aa           tax
+0x000caa49    c220         rep #0x20
+0x000caa4b    bfe7ac09     lda 0x09ace7,x
+0x000caa4f    aa           tax
+0x000caa50    8600         stx 0x00
+0x000caa52    e220         sep #0x20
+0x000caa54    a909         lda #0x09
+0x000caa56    8502         sta 0x02
+0x000caa58    a29500       ldx #0x0095
+0x000caa5b    860a         stx 0x0a
+0x000caa5d    a28800       ldx #0x0088
+0x000caa60    860c         stx 0x0c
+0x000caa62    a900         lda #0x00
+0x000caa64    8503         sta 0x03
+0x000caa66    6404         stz 0x04
+0x000caa68    6405         stz 0x05
+0x000caa6a    640f         stz 0x0f
+0x000caa6c    6410         stz 0x10
+0x000caa6e    22a58700     jsr 0x0087a5
+0x000caa72    28           plp
+0x000caa73    6b           rtl
+0x000caa74    08           php
+0x000caa75    e220         sep #0x20
+0x000caa77    ad020d       lda 0x0d02
+0x000caa7a    f02d         beq 0x0caaa9
+0x000caa7c    c220         rep #0x20
+0x000caa7e    a90e00       lda #0x000e
+0x000caa81    0a           asl a
+0x000caa82    aa           tax
+0x000caa83    bfe7ac09     lda 0x09ace7,x
+0x000caa87    8500         sta 0x00
+0x000caa89    e220         sep #0x20
+0x000caa8b    a909         lda #0x09
+0x000caa8d    8502         sta 0x02
+0x000caa8f    ae050d       ldx 0x0d05
+0x000caa92    860a         stx 0x0a
+0x000caa94    a22600       ldx #0x0026
+0x000caa97    860c         stx 0x0c
+0x000caa99    a900         lda #0x00
+0x000caa9b    8503         sta 0x03
+0x000caa9d    6404         stz 0x04
+0x000caa9f    6405         stz 0x05
+0x000caaa1    640f         stz 0x0f
+0x000caaa3    6410         stz 0x10
+0x000caaa5    22a58700     jsr 0x0087a5
+0x000caaa9    28           plp
+0x000caaaa    6b           rtl

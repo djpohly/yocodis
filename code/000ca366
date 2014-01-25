@@ -1,0 +1,29 @@
+0x000ca366    e220         sep #0x20
+0x000ca368    2047ad       jsr 0xad47
+0x000ca36b    2051ab       jsr 0xab51
+0x000ca36e    2200ac0c     jsr 0x0cac00
+0x000ca372    2226ac0c     jsr 0x0cac26
+0x000ca376    2012a7       jsr 0xa712
+0x000ca379    227fa90c     jsr 0x0ca97f
+0x000ca37d    22e0a90c     jsr 0x0ca9e0
+0x000ca381    22b1a90c     jsr 0x0ca9b1
+0x000ca385    2236aa0c     jsr 0x0caa36
+0x000ca389    2274aa0c     jsr 0x0caa74
+0x000ca38d    c220         rep #0x20
+0x000ca38f    ad7610       lda 0x1076
+0x000ca392    4b           phk
+0x000ca393    f4aea3       pea 0xa3ae
+0x000ca396    29ff00       and #0x00ff
+0x000ca399    48           pha
+0x000ca39a    0a           asl a
+0x000ca39b    6301         adc 0x01,s
+0x000ca39d    aa           tax
+0x000ca39e    68           pla
+0x000ca39f    e220         sep #0x20
+0x000ca3a1    bfb2a30c     lda 0x0ca3b2,x
+0x000ca3a5    48           pha
+0x000ca3a6    c220         rep #0x20
+0x000ca3a8    bfb0a30c     lda 0x0ca3b0,x
+0x000ca3ac    3a           dec a
+0x000ca3ad    48           pha
+0x000ca3ae    6b           rtl

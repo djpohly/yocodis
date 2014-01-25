@@ -1,0 +1,7 @@
+0x0002b317    c220         rep #0x20
+0x0002b319    890008       bit #0x0800
+0x0002b31c    f009         beq 0x02b327
+0x0002b31e    ade010       lda 0x10e0
+0x0002b321    f003         beq 0x02b326
+0x0002b323    cee010       dec 0x10e0
+0x0002b326    60           rts

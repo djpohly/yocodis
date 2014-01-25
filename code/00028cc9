@@ -1,0 +1,10 @@
+0x00028cc9    c978         cmp #0x78
+0x00028ccb    9002         bcc 0x028ccf
+0x00028ccd    a978         lda #0x78
+0x00028ccf    8db510       sta 0x10b5
+0x00028cd2    a978         lda #0x78
+0x00028cd4    38           sec
+0x00028cd5    edb510       sbc 0x10b5
+0x00028cd8    1004         bpl 0x028cde
+0x00028cda    a901         lda #0x01
+0x00028cdc    8006         bra 0x028ce4

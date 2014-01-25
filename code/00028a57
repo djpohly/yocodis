@@ -1,0 +1,11 @@
+0x00028a57    c220         rep #0x20
+0x00028a59    a20f00       ldx #0x000f
+0x00028a5c    8e7a10       stx 0x107a
+0x00028a5f    ee7610       inc 0x1076
+0x00028a62    a25e00       ldx #0x005e
+0x00028a65    a90000       lda #0x0000
+0x00028a68    9d001b       sta 0x1b00,x
+0x00028a6b    ca           dex
+0x00028a6c    ca           dex
+0x00028a6d    10f9         bpl 0x028a68
+0x00028a6f    60           rts

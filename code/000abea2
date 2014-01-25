@@ -1,0 +1,14 @@
+0x000abea2    c220         rep #0x20
+0x000abea4    a547         lda 0x47
+0x000abea6    29ff00       and #0x00ff
+0x000abea9    0a           asl a
+0x000abeaa    aa           tax
+0x000abeab    fcc5be       jsr (0xbec5,x)
+0x000abeae    229c8f00     jsr 0x008f9c
+0x000abeb2    22a48a00     jsr 0x008aa4
+0x000abeb6    2096cc       jsr 0xcc96
+0x000abeb9    2022d2       jsr 0xd222
+0x000abebc    2031c9       jsr 0xc931
+0x000abebf    2084ca       jsr 0xca84
+0x000abec2    c220         rep #0x20
+0x000abec4    6b           rtl

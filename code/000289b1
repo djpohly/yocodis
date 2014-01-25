@@ -1,0 +1,12 @@
+0x000289b1    a2001a       ldx #0x1a00
+0x000289b4    8600         stx 0x00
+0x000289b6    a20200       ldx #0x0002
+0x000289b9    8602         stx 0x02
+0x000289bb    20738a       jsr 0x8a73
+0x000289be    f00f         beq 0x0289cf
+0x000289c0    ee7610       inc 0x1076
+0x000289c3    a20400       ldx #0x0004
+0x000289c6    8e7a10       stx 0x107a
+0x000289c9    a20000       ldx #0x0000
+0x000289cc    8e7c10       stx 0x107c
+0x000289cf    60           rts

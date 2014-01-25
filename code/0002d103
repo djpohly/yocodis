@@ -1,0 +1,11 @@
+0x0002d103    224cf404     jsr 0x04f44c
+0x0002d107    2207f404     jsr 0x04f407
+0x0002d10b    22bff304     jsr 0x04f3bf
+0x0002d10f    2018a0       jsr 0xa018
+0x0002d112    c220         rep #0x20
+0x0002d114    ada810       lda 0x10a8
+0x0002d117    29ff00       and #0x00ff
+0x0002d11a    0a           asl a
+0x0002d11b    aa           tax
+0x0002d11c    f421d1       pea 0xd121
+0x0002d11f    7c23d1       jmp (0xd123,x)

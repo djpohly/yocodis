@@ -1,0 +1,117 @@
+0x000d845f    e220         sep #0x20
+0x000d8461    a9ff         lda #0xff
+0x000d8463    8d4021       sta 0x2140
+0x000d8466    a2aabb       ldx #0xbbaa
+0x000d8469    ec4021       cpx 0x2140
+0x000d846c    d0fb         bne 0x0d8469
+0x000d846e    eed601       inc 0x01d6
+0x000d8471    60           rts
+0x000d8472    c220         rep #0x20
+0x000d8474    a5e6         lda 0xe6
+0x000d8476    297f00       and #0x007f
+0x000d8479    8520         sta 0x20
+0x000d847b    0a           asl a
+0x000d847c    18           clc
+0x000d847d    6520         adc 0x20
+0x000d847f    aa           tax
+0x000d8480    bf63e60d     lda 0x0de663,x
+0x000d8484    8520         sta 0x20
+0x000d8486    bf65e60d     lda 0x0de665,x
+0x000d848a    8522         sta 0x22
+0x000d848c    22f1840d     jsr 0x0d84f1
+0x000d8490    e220         sep #0x20
+0x000d8492    eed601       inc 0x01d6
+0x000d8495    60           rts
+0x000d8496    eed601       inc 0x01d6
+0x000d8499    60           rts
+0x000d849a    e220         sep #0x20
+0x000d849c    9c4121       stz 0x2141
+0x000d849f    9c4221       stz 0x2142
+0x000d84a2    9c4321       stz 0x2143
+0x000d84a5    a5e7         lda 0xe7
+0x000d84a7    8d4021       sta 0x2140
+0x000d84aa    8dec00       sta 0x00ec
+0x000d84ad    9ceb00       stz 0x00eb
+0x000d84b0    9ced00       stz 0x00ed
+0x000d84b3    64fa         stz 0xfa
+0x000d84b5    ad4021       lda 0x2140
+0x000d84b8    c5e7         cmp 0xe7
+0x000d84ba    d003         bne 0x0d84bf
+0x000d84bc    eed601       inc 0x01d6
+0x000d84bf    60           rts
+0x000d84c0    e220         sep #0x20
+0x000d84c2    a5f9         lda 0xf9
+0x000d84c4    f002         beq 0x0d84c8
+0x000d84c6    a901         lda #0x01
+0x000d84c8    18           clc
+0x000d84c9    6986         adc #0x86
+0x000d84cb    8d4021       sta 0x2140
+0x000d84ce    eed601       inc 0x01d6
+0x000d84d1    60           rts
+0x000d84d2    e220         sep #0x20
+0x000d84d4    a5e6         lda 0xe6
+0x000d84d6    297f         and #0x7f
+0x000d84d8    85e6         sta 0xe6
+0x000d84da    64e8         stz 0xe8
+0x000d84dc    64f8         stz 0xf8
+0x000d84de    a20000       ldx #0x0000
+0x000d84e1    8eee00       stx 0x00ee
+0x000d84e4    8ef000       stx 0x00f0
+0x000d84e7    8ef200       stx 0x00f2
+0x000d84ea    8ef400       stx 0x00f4
+0x000d84ed    9cd601       stz 0x01d6
+0x000d84f0    60           rts
+0x000d84f1    08           php
+0x000d84f2    c230         rep #0x30
+0x000d84f4    a00000       ldy #0x0000
+0x000d84f7    a9aabb       lda #0xbbaa
+0x000d84fa    cd4021       cmp 0x2140
+0x000d84fd    d0fb         bne 0x0d84fa
+0x000d84ff    e220         sep #0x20
+0x000d8501    a9cc         lda #0xcc
+0x000d8503    8026         bra 0x0d852b
+0x000d8505    b720         lda [0x20],y
+0x000d8507    c8           iny
+0x000d8508    eb           swa
+0x000d8509    a900         lda #0x00
+0x000d850b    800b         bra 0x0d8518
+0x000d850d    eb           swa
+0x000d850e    b720         lda [0x20],y
+0x000d8510    c8           iny
+0x000d8511    eb           swa
+0x000d8512    cd4021       cmp 0x2140
+0x000d8515    d0fb         bne 0x0d8512
+0x000d8517    1a           inc a
+0x000d8518    c220         rep #0x20
+0x000d851a    8d4021       sta 0x2140
+0x000d851d    e220         sep #0x20
+0x000d851f    ca           dex
+0x000d8520    d0eb         bne 0x0d850d
+0x000d8522    cd4021       cmp 0x2140
+0x000d8525    d0fb         bne 0x0d8522
+0x000d8527    6903         adc #0x03
+0x000d8529    f0fc         beq 0x0d8527
+0x000d852b    48           pha
+0x000d852c    c220         rep #0x20
+0x000d852e    b720         lda [0x20],y
+0x000d8530    c8           iny
+0x000d8531    c8           iny
+0x000d8532    aa           tax
+0x000d8533    b720         lda [0x20],y
+0x000d8535    c8           iny
+0x000d8536    c8           iny
+0x000d8537    8d4221       sta 0x2142
+0x000d853a    e220         sep #0x20
+0x000d853c    e00100       cpx #0x0001
+0x000d853f    a900         lda #0x00
+0x000d8541    2a           rol a
+0x000d8542    8d4121       sta 0x2141
+0x000d8545    697f         adc #0x7f
+0x000d8547    68           pla
+0x000d8548    8d4021       sta 0x2140
+0x000d854b    5007         bvc 0x0d8554
+0x000d854d    cd4021       cmp 0x2140
+0x000d8550    d0fb         bne 0x0d854d
+0x000d8552    80b1         bra 0x0d8505
+0x000d8554    28           plp
+0x000d8555    6b           rtl

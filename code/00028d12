@@ -1,0 +1,19 @@
+0x00028d12    ceb410       dec 0x10b4
+0x00028d15    adb410       lda 0x10b4
+0x00028d18    f048         beq 0x028d62
+0x00028d1a    c998         cmp #0x98
+0x00028d1c    b044         bcs 0x028d62
+0x00028d1e    cd0000       cmp 0x0000
+0x00028d21    f03f         beq 0x028d62
+0x00028d23    c940         cmp #0x40
+0x00028d25    b01d         bcs 0x028d44
+0x00028d27    8db510       sta 0x10b5
+0x00028d2a    49ff         eor #0xff
+0x00028d2c    18           clc
+0x00028d2d    6940         adc #0x40
+0x00028d2f    8db610       sta 0x10b6
+0x00028d32    adb410       lda 0x10b4
+0x00028d35    c920         cmp #0x20
+0x00028d37    b004         bcs 0x028d3d
+0x00028d39    a2ffff       ldx #0xffff
+0x00028d3c    60           rts

@@ -1,0 +1,11 @@
+0x00029298    c220         rep #0x20
+0x0002929a    ade810       lda 0x10e8
+0x0002929d    1a           inc a
+0x0002929e    290300       and #0x0003
+0x000292a1    8d4201       sta 0x0142
+0x000292a4    aee210       ldx 0x10e2
+0x000292a7    8e3c01       stx 0x013c
+0x000292aa    9c3e01       stz 0x013e
+0x000292ad    aee610       ldx 0x10e6
+0x000292b0    8ef203       stx 0x03f2
+0x000292b3    60           rts

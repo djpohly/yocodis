@@ -1,0 +1,6 @@
+0x000287f9    c220         rep #0x20
+0x000287fb    0a           asl a
+0x000287fc    aa           tax
+0x000287fd    bf238802     lda 0x028823,x
+0x00028801    204b88       jsr 0x884b
+0x00028804    60           rts

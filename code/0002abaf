@@ -1,0 +1,4 @@
+0x0002abaf    a562         lda 0x62
+0x0002abb1    d003         bne 0x02abb6
+0x0002abb3    ee7610       inc 0x1076
+0x0002abb6    60           rts

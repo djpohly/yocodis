@@ -1,0 +1,66 @@
+0x000ca97f    08           php
+0x000ca980    e220         sep #0x20
+0x000ca982    ad000d       lda 0x0d00
+0x000ca985    d003         bne 0x0ca98a
+0x000ca987    4cafa9       jmp 0xa9af
+0x000ca98a    a22af4       ldx #0xf42a
+0x000ca98d    8600         stx 0x00
+0x000ca98f    a909         lda #0x09
+0x000ca991    8502         sta 0x02
+0x000ca993    a27000       ldx #0x0070
+0x000ca996    860a         stx 0x0a
+0x000ca998    a28000       ldx #0x0080
+0x000ca99b    860c         stx 0x0c
+0x000ca99d    a900         lda #0x00
+0x000ca99f    8503         sta 0x03
+0x000ca9a1    6404         stz 0x04
+0x000ca9a3    a901         lda #0x01
+0x000ca9a5    8505         sta 0x05
+0x000ca9a7    640f         stz 0x0f
+0x000ca9a9    6410         stz 0x10
+0x000ca9ab    22a58700     jsr 0x0087a5
+0x000ca9af    28           plp
+0x000ca9b0    6b           rtl
+0x000ca9b1    08           php
+0x000ca9b2    e220         sep #0x20
+0x000ca9b4    ad030d       lda 0x0d03
+0x000ca9b7    f025         beq 0x0ca9de
+0x000ca9b9    a2fdf4       ldx #0xf4fd
+0x000ca9bc    8600         stx 0x00
+0x000ca9be    a909         lda #0x09
+0x000ca9c0    8502         sta 0x02
+0x000ca9c2    a27c00       ldx #0x007c
+0x000ca9c5    860a         stx 0x0a
+0x000ca9c7    a28800       ldx #0x0088
+0x000ca9ca    860c         stx 0x0c
+0x000ca9cc    a900         lda #0x00
+0x000ca9ce    8503         sta 0x03
+0x000ca9d0    6404         stz 0x04
+0x000ca9d2    a901         lda #0x01
+0x000ca9d4    8505         sta 0x05
+0x000ca9d6    640f         stz 0x0f
+0x000ca9d8    6410         stz 0x10
+0x000ca9da    22a58700     jsr 0x0087a5
+0x000ca9de    28           plp
+0x000ca9df    6b           rtl
+0x000ca9e0    08           php
+0x000ca9e1    e220         sep #0x20
+0x000ca9e3    ad040d       lda 0x0d04
+0x000ca9e6    f023         beq 0x0caa0b
+0x000ca9e8    a20daa       ldx #0xaa0d
+0x000ca9eb    8600         stx 0x00
+0x000ca9ed    a90c         lda #0x0c
+0x000ca9ef    8502         sta 0x02
+0x000ca9f1    a2cc00       ldx #0x00cc
+0x000ca9f4    860a         stx 0x0a
+0x000ca9f6    a27000       ldx #0x0070
+0x000ca9f9    860c         stx 0x0c
+0x000ca9fb    a900         lda #0x00
+0x000ca9fd    8503         sta 0x03
+0x000ca9ff    6404         stz 0x04
+0x000caa01    6405         stz 0x05
+0x000caa03    640f         stz 0x0f
+0x000caa05    6410         stz 0x10
+0x000caa07    22a58700     jsr 0x0087a5
+0x000caa0b    28           plp
+0x000caa0c    6b           rtl

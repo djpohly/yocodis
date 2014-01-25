@@ -1,0 +1,57 @@
+0x000084cb    22cc8202     jsr 0x0282cc
+0x000084cf    6b           rtl
+0x000084d0    22e38f02     jsr 0x028fe3
+0x000084d4    6b           rtl
+0x000084d5    2264aa02     jsr 0x02aa64
+0x000084d9    6b           rtl
+0x000084da    223fc502     jsr 0x02c53f
+0x000084de    6b           rtl
+0x000084df    227c9702     jsr 0x02977c
+0x000084e3    6b           rtl
+0x000084e4    22189d02     jsr 0x029d18
+0x000084e8    6b           rtl
+0x000084e9    22dfec02     jsr 0x02ecdf
+0x000084ed    6b           rtl
+0x000084ee    2215b10a     jsr 0x0ab115
+0x000084f2    6b           rtl
+0x000084f3    22b1b80a     jsr 0x0ab8b1
+0x000084f7    6b           rtl
+0x000084f8    22a2be0a     jsr 0x0abea2
+0x000084fc    6b           rtl
+0x000084fd    22f1e80a     jsr 0x0ae8f1
+0x00008501    6b           rtl
+0x00008502    2282ea0a     jsr 0x0aea82
+0x00008506    6b           rtl
+0x00008507    220c9502     jsr 0x02950c
+0x0000850b    6b           rtl
+0x0000850c    2272b502     jsr 0x02b572
+0x00008510    6b           rtl
+0x00008511    6b           rtl
+0x00008512    2249bb0f     jsr 0x0fbb49
+0x00008516    6b           rtl
+0x00008517    6b           rtl
+0x00008518    2264a00c     jsr 0x0ca064
+0x0000851c    6b           rtl
+0x0000851d    2266a30c     jsr 0x0ca366
+0x00008521    6b           rtl
+0x00008522    c220         rep #0x20
+0x00008524    48           pha
+0x00008525    da           phx
+0x00008526    5a           phy
+0x00008527    0b           phd
+0x00008528    8b           phb
+0x00008529    a90000       lda #0x0000
+0x0000852c    e220         sep #0x20
+0x0000852e    a54b         lda 0x4b
+0x00008530    297f         and #0x7f
+0x00008532    0a           asl a
+0x00008533    aa           tax
+0x00008534    ad1142       lda 0x4211
+0x00008537    fc4285       jsr (0x8542,x)
+0x0000853a    c220         rep #0x20
+0x0000853c    ab           plb
+0x0000853d    2b           pld
+0x0000853e    7a           ply
+0x0000853f    fa           plx
+0x00008540    68           pla
+0x00008541    40           rti

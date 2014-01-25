@@ -1,0 +1,30 @@
+0x0002c884    bd4c11       lda 0x114c,x
+0x0002c887    0a           asl a
+0x0002c888    0a           asl a
+0x0002c889    0a           asl a
+0x0002c88a    0a           asl a
+0x0002c88b    699800       adc #0x0098
+0x0002c88e    850a         sta 0x0a
+0x0002c890    c9d800       cmp #0x00d8
+0x0002c893    f008         beq 0x02c89d
+0x0002c895    bd4a11       lda 0x114a,x
+0x0002c898    0a           asl a
+0x0002c899    0a           asl a
+0x0002c89a    0a           asl a
+0x0002c89b    800f         bra 0x02c8ac
+0x0002c89d    bd4a11       lda 0x114a,x
+0x0002c8a0    0a           asl a
+0x0002c8a1    0a           asl a
+0x0002c8a2    0a           asl a
+0x0002c8a3    0a           asl a
+0x0002c8a4    c92000       cmp #0x0020
+0x0002c8a7    9003         bcc 0x02c8ac
+0x0002c8a9    a92800       lda #0x0028
+0x0002c8ac    18           clc
+0x0002c8ad    692000       adc #0x0020
+0x0002c8b0    9b           txy
+0x0002c8b1    f004         beq 0x02c8b7
+0x0002c8b3    18           clc
+0x0002c8b4    697800       adc #0x0078
+0x0002c8b7    850c         sta 0x0c
+0x0002c8b9    60           rts

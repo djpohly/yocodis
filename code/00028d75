@@ -1,0 +1,46 @@
+0x00028d75    e220         sep #0x20
+0x00028d77    adbb10       lda 0x10bb
+0x00028d7a    d001         bne 0x028d7d
+0x00028d7c    60           rts
+0x00028d7d    adb510       lda 0x10b5
+0x00028d80    8f00e47e     sta 0x7ee400
+0x00028d84    8f09e47e     sta 0x7ee409
+0x00028d88    adb710       lda 0x10b7
+0x00028d8b    8f04e47e     sta 0x7ee404
+0x00028d8f    8f07e47e     sta 0x7ee407
+0x00028d93    adb810       lda 0x10b8
+0x00028d96    8f05e47e     sta 0x7ee405
+0x00028d9a    8f08e47e     sta 0x7ee408
+0x00028d9e    adb610       lda 0x10b6
+0x00028da1    8f03e47e     sta 0x7ee403
+0x00028da5    8f06e47e     sta 0x7ee406
+0x00028da9    60           rts
+0x00028daa    e220         sep #0x20
+0x00028dac    adbb10       lda 0x10bb
+0x00028daf    d001         bne 0x028db2
+0x00028db1    60           rts
+0x00028db2    adb510       lda 0x10b5
+0x00028db5    8f00e47e     sta 0x7ee400
+0x00028db9    adb710       lda 0x10b7
+0x00028dbc    8f04e47e     sta 0x7ee404
+0x00028dc0    8f07e47e     sta 0x7ee407
+0x00028dc4    8f0ae47e     sta 0x7ee40a
+0x00028dc8    adb810       lda 0x10b8
+0x00028dcb    8f05e47e     sta 0x7ee405
+0x00028dcf    8f08e47e     sta 0x7ee408
+0x00028dd3    8f0be47e     sta 0x7ee40b
+0x00028dd7    adb610       lda 0x10b6
+0x00028dda    8f03e47e     sta 0x7ee403
+0x00028dde    adb910       lda 0x10b9
+0x00028de1    8f06e47e     sta 0x7ee406
+0x00028de5    8f09e47e     sta 0x7ee409
+0x00028de9    adba10       lda 0x10ba
+0x00028dec    8f0ce47e     sta 0x7ee40c
+0x00028df0    adb410       lda 0x10b4
+0x00028df3    c940         cmp #0x40
+0x00028df5    900c         bcc 0x028e03
+0x00028df7    a9ff         lda #0xff
+0x00028df9    8f04e47e     sta 0x7ee404
+0x00028dfd    a900         lda #0x00
+0x00028dff    8f05e47e     sta 0x7ee405
+0x00028e03    60           rts

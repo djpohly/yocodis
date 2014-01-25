@@ -1,0 +1,10 @@
+0x0002c5b3    a00000       ldy #0x0000
+0x0002c5b6    a28000       ldx #0x0080
+0x0002c5b9    8600         stx 0x00
+0x0002c5bb    20a28c       jsr 0x8ca2
+0x0002c5be    f00b         beq 0x02c5cb
+0x0002c5c0    a00000       ldy #0x0000
+0x0002c5c3    a28000       ldx #0x0080
+0x0002c5c6    8600         stx 0x00
+0x0002c5c8    20a28c       jsr 0x8ca2
+0x0002c5cb    60           rts

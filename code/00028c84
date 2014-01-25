@@ -1,0 +1,11 @@
+0x00028c84    c220         rep #0x20
+0x00028c86    a558         lda 0x58
+0x00028c88    890100       bit #0x0001
+0x00028c8b    d014         bne 0x028ca1
+0x00028c8d    ad9900       lda 0x0099
+0x00028c90    893000       bit #0x0030
+0x00028c93    f00c         beq 0x028ca1
+0x00028c95    891000       bit #0x0010
+0x00028c98    f004         beq 0x028c9e
+0x00028c9a    ce7d00       dec 0x007d
+0x00028c9d    60           rts

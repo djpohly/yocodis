@@ -1,0 +1,12 @@
+0x0002aa95    e220         sep #0x20
+0x0002aa97    a902         lda #0x02
+0x0002aa99    04c3         tsb 0xc3
+0x0002aa9b    c220         rep #0x20
+0x0002aa9d    ad9e10       lda 0x109e
+0x0002aaa0    f00e         beq 0x02aab0
+0x0002aaa2    c90200       cmp #0x0002
+0x0002aaa5    9010         bcc 0x02aab7
+0x0002aaa7    f015         beq 0x02aabe
+0x0002aaa9    a20500       ldx #0x0005
+0x0002aaac    8e7610       stx 0x1076
+0x0002aaaf    60           rts

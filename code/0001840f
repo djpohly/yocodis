@@ -1,0 +1,60 @@
+0x0001840f    ad211e       lda 0x1e21
+0x00018412    f0fb         beq 0x01840f
+0x00018414    9c211e       stz 0x1e21
+0x00018417    60           rts
+0x00018418    9c1521       stz 0x2115
+0x0001841b    a20000       ldx #0x0000
+0x0001841e    8e2e1e       stx 0x1e2e
+0x00018421    ad2e1e       lda 0x1e2e
+0x00018424    8d1621       sta 0x2116
+0x00018427    ad2f1e       lda 0x1e2f
+0x0001842a    8d1721       sta 0x2117
+0x0001842d    a02000       ldy #0x0020
+0x00018430    9c1821       stz 0x2118
+0x00018433    e8           inx
+0x00018434    88           dey
+0x00018435    d0f9         bne 0x018430
+0x00018437    c220         rep #0x20
+0x00018439    ad2e1e       lda 0x1e2e
+0x0001843c    18           clc
+0x0001843d    698000       adc #0x0080
+0x00018440    8d2e1e       sta 0x1e2e
+0x00018443    e220         sep #0x20
+0x00018445    e00010       cpx #0x1000
+0x00018448    d0d7         bne 0x018421
+0x0001844a    a00000       ldy #0x0000
+0x0001844d    be9684       ldx 0x8496,y
+0x00018450    8e2e1e       stx 0x1e2e
+0x00018453    c8           iny
+0x00018454    c8           iny
+0x00018455    be9684       ldx 0x8496,y
+0x00018458    c8           iny
+0x00018459    c8           iny
+0x0001845a    ad2e1e       lda 0x1e2e
+0x0001845d    8d1621       sta 0x2116
+0x00018460    ad2f1e       lda 0x1e2f
+0x00018463    8d1721       sta 0x2117
+0x00018466    da           phx
+0x00018467    b99684       lda 0x8496,y
+0x0001846a    8d1821       sta 0x2118
+0x0001846d    c8           iny
+0x0001846e    ca           dex
+0x0001846f    d0f6         bne 0x018467
+0x00018471    fa           plx
+0x00018472    b99684       lda 0x8496,y
+0x00018475    c9ff         cmp #0xff
+0x00018477    f017         beq 0x018490
+0x00018479    c9fe         cmp #0xfe
+0x0001847b    d003         bne 0x018480
+0x0001847d    c8           iny
+0x0001847e    80cd         bra 0x01844d
+0x00018480    c220         rep #0x20
+0x00018482    ad2e1e       lda 0x1e2e
+0x00018485    18           clc
+0x00018486    698000       adc #0x0080
+0x00018489    8d2e1e       sta 0x1e2e
+0x0001848c    e220         sep #0x20
+0x0001848e    80ca         bra 0x01845a
+0x00018490    a980         lda #0x80
+0x00018492    8d1521       sta 0x2115
+0x00018495    60           rts

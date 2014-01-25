@@ -1,0 +1,18 @@
+0x00008e7b    08           php
+0x00008e7c    c220         rep #0x20
+0x00008e7e    48           pha
+0x00008e7f    da           phx
+0x00008e80    5a           phy
+0x00008e81    22f68900     jsr 0x0089f6
+0x00008e85    a97e00       lda #0x007e
+0x00008e88    9d0518       sta 0x1805,x
+0x00008e8b    a98000       lda #0x0080
+0x00008e8e    9d0018       sta 0x1800,x
+0x00008e91    68           pla
+0x00008e92    9d0118       sta 0x1801,x
+0x00008e95    68           pla
+0x00008e96    9d0318       sta 0x1803,x
+0x00008e99    68           pla
+0x00008e9a    9d0618       sta 0x1806,x
+0x00008e9d    28           plp
+0x00008e9e    6b           rtl

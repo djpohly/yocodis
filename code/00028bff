@@ -1,0 +1,10 @@
+0x00028bff    c220         rep #0x20
+0x00028c01    ad9900       lda 0x0099
+0x00028c04    89f0ff       bit #0xfff0
+0x00028c07    f00c         beq 0x028c15
+0x00028c09    a20700       ldx #0x0007
+0x00028c0c    8e7610       stx 0x1076
+0x00028c0f    e220         sep #0x20
+0x00028c11    a901         lda #0x01
+0x00028c13    8545         sta 0x45
+0x00028c15    60           rts

@@ -1,0 +1,13 @@
+0x00008a4f    08           php
+0x00008a50    c220         rep #0x20
+0x00008a52    e658         inc 0x58
+0x00008a54    e65a         inc 0x5a
+0x00008a56    a20200       ldx #0x0002
+0x00008a59    b55c         lda 0x5c,x
+0x00008a5b    f002         beq 0x008a5f
+0x00008a5d    d65c         dec 0x5c,x
+0x00008a5f    ca           dex
+0x00008a60    ca           dex
+0x00008a61    10f6         bpl 0x008a59
+0x00008a63    28           plp
+0x00008a64    6b           rtl

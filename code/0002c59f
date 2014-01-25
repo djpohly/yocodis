@@ -1,0 +1,4 @@
+0x0002c59f    a96000       lda #0x0060
+0x0002c5a2    855c         sta 0x5c
+0x0002c5a4    ee7610       inc 0x1076
+0x0002c5a7    60           rts

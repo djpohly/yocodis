@@ -1,0 +1,3 @@
+0x0002aabe    a20700       ldx #0x0007
+0x0002aac1    8e7610       stx 0x1076
+0x0002aac4    60           rts

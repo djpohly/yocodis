@@ -1,0 +1,9 @@
+0x0002ac43    c220         rep #0x20
+0x0002ac45    ad0811       lda 0x1108
+0x0002ac48    0d0c11       ora 0x110c
+0x0002ac4b    0d1011       ora 0x1110
+0x0002ac4e    0d1411       ora 0x1114
+0x0002ac51    0dd601       ora 0x01d6
+0x0002ac54    f002         beq 0x02ac58
+0x0002ac56    18           clc
+0x0002ac57    60           rts

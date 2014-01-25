@@ -1,0 +1,7 @@
+0x0002c58e    a90900       lda #0x0009
+0x0002c591    cd3c11       cmp 0x113c
+0x0002c594    d005         bne 0x02c59b
+0x0002c596    cd5c11       cmp 0x115c
+0x0002c599    f004         beq 0x02c59f
+0x0002c59b    2088f7       jsr 0xf788
+0x0002c59e    60           rts

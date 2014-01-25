@@ -1,0 +1,6 @@
+0x000ac954    ad0005       lda 0x0500
+0x000ac957    490001       eor #0x0100
+0x000ac95a    aa           tax
+0x000ac95b    f0df         beq 0x0ac93c
+0x000ac95d    28           plp
+0x000ac95e    60           rts

@@ -1,0 +1,69 @@
+0x00018865    8b           phb
+0x00018866    08           php
+0x00018867    e220         sep #0x20
+0x00018869    4b           phk
+0x0001886a    ab           plb
+0x0001886b    ad201e       lda 0x1e20
+0x0001886e    d003         bne 0x018873
+0x00018870    4c0989       jmp 0x8909
+0x00018873    ad301f       lda 0x1f30
+0x00018876    cd311f       cmp 0x1f31
+0x00018879    f006         beq 0x018881
+0x0001887b    8d4021       sta 0x2140
+0x0001887e    8d311f       sta 0x1f31
+0x00018881    9c0221       stz 0x2102
+0x00018884    a980         lda #0x80
+0x00018886    8d0321       sta 0x2103
+0x00018889    a00a00       ldy #0x000a
+0x0001888c    201a88       jsr 0x881a
+0x0001888f    a901         lda #0x01
+0x00018891    8d0b42       sta 0x420b
+0x00018894    ad281e       lda 0x1e28
+0x00018897    8d1b21       sta 0x211b
+0x0001889a    ad291e       lda 0x1e29
+0x0001889d    8d1b21       sta 0x211b
+0x000188a0    ad281e       lda 0x1e28
+0x000188a3    8d1e21       sta 0x211e
+0x000188a6    ad291e       lda 0x1e29
+0x000188a9    8d1e21       sta 0x211e
+0x000188ac    9c2121       stz 0x2121
+0x000188af    a00000       ldy #0x0000
+0x000188b2    a2e000       ldx #0x00e0
+0x000188b5    b9301e       lda 0x1e30,y
+0x000188b8    8d2221       sta 0x2122
+0x000188bb    c8           iny
+0x000188bc    c00001       cpy #0x0100
+0x000188bf    f00a         beq 0x0188cb
+0x000188c1    ca           dex
+0x000188c2    d0f1         bne 0x0188b5
+0x000188c4    a9c0         lda #0xc0
+0x000188c6    8d2121       sta 0x2121
+0x000188c9    80e7         bra 0x0188b2
+0x000188cb    ad221e       lda 0x1e22
+0x000188ce    f013         beq 0x0188e3
+0x000188d0    a911         lda #0x11
+0x000188d2    8d2c21       sta 0x212c
+0x000188d5    9c2d21       stz 0x212d
+0x000188d8    9c3021       stz 0x2130
+0x000188db    a991         lda #0x91
+0x000188dd    8d3121       sta 0x2131
+0x000188e0    9c221e       stz 0x1e22
+0x000188e3    ad231e       lda 0x1e23
+0x000188e6    f021         beq 0x018909
+0x000188e8    ce251e       dec 0x1e25
+0x000188eb    d01c         bne 0x018909
+0x000188ed    ad241e       lda 0x1e24
+0x000188f0    8d251e       sta 0x1e25
+0x000188f3    ee271e       inc 0x1e27
+0x000188f6    a91f         lda #0x1f
+0x000188f8    cd271e       cmp 0x1e27
+0x000188fb    d003         bne 0x018900
+0x000188fd    9c231e       stz 0x1e23
+0x00018900    ad271e       lda 0x1e27
+0x00018903    0d261e       ora 0x1e26
+0x00018906    8d3221       sta 0x2132
+0x00018909    a901         lda #0x01
+0x0001890b    8d211e       sta 0x1e21
+0x0001890e    28           plp
+0x0001890f    ab           plb
+0x00018910    6b           rtl

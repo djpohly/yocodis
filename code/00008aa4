@@ -1,0 +1,99 @@
+0x00008aa4    08           php
+0x00008aa5    a20000       ldx #0x0000
+0x00008aa8    da           phx
+0x00008aa9    e220         sep #0x20
+0x00008aab    bd2401       lda 0x0124,x
+0x00008aae    1052         bpl 0x008b02
+0x00008ab0    de2501       dec 0x0125,x
+0x00008ab3    104d         bpl 0x008b02
+0x00008ab5    de2601       dec 0x0126,x
+0x00008ab8    1008         bpl 0x008ac2
+0x00008aba    9e2401       stz 0x0124,x
+0x00008abd    9e2501       stz 0x0125,x
+0x00008ac0    8040         bra 0x008b02
+0x00008ac2    290f         and #0x0f
+0x00008ac4    9d2501       sta 0x0125,x
+0x00008ac7    c220         rep #0x20
+0x00008ac9    bd2601       lda 0x0126,x
+0x00008acc    8534         sta 0x34
+0x00008ace    bd2801       lda 0x0128,x
+0x00008ad1    8536         sta 0x36
+0x00008ad3    e220         sep #0x20
+0x00008ad5    3c2401       bit 0x0124,x
+0x00008ad8    5007         bvc 0x008ae1
+0x00008ada    a920         lda #0x20
+0x00008adc    38           sec
+0x00008add    e534         sbc 0x34
+0x00008adf    8534         sta 0x34
+0x00008ae1    c220         rep #0x20
+0x00008ae3    a00000       ldy #0x0000
+0x00008ae6    b735         lda [0x35],y
+0x00008ae8    f015         beq 0x008aff
+0x00008aea    8538         sta 0x38
+0x00008aec    c8           iny
+0x00008aed    c8           iny
+0x00008aee    b735         lda [0x35],y
+0x00008af0    aa           tax
+0x00008af1    22118b00     jsr 0x008b11
+0x00008af5    e8           inx
+0x00008af6    e8           inx
+0x00008af7    c638         dec 0x38
+0x00008af9    d0f6         bne 0x008af1
+0x00008afb    c8           iny
+0x00008afc    c8           iny
+0x00008afd    80e7         bra 0x008ae6
+0x00008aff    ee0001       inc 0x0100
+0x00008b02    c220         rep #0x20
+0x00008b04    68           pla
+0x00008b05    18           clc
+0x00008b06    690600       adc #0x0006
+0x00008b09    aa           tax
+0x00008b0a    e00c00       cpx #0x000c
+0x00008b0d    9099         bcc 0x008aa8
+0x00008b0f    28           plp
+0x00008b10    6b           rtl
+0x00008b11    08           php
+0x00008b12    c220         rep #0x20
+0x00008b14    bd001b       lda 0x1b00,x
+0x00008b17    29e003       and #0x03e0
+0x00008b1a    0a           asl a
+0x00008b1b    0a           asl a
+0x00008b1c    0a           asl a
+0x00008b1d    e220         sep #0x20
+0x00008b1f    a534         lda 0x34
+0x00008b21    c220         rep #0x20
+0x00008b23    8d0242       sta 0x4202
+0x00008b26    08           php
+0x00008b27    28           plp
+0x00008b28    ad1642       lda 0x4216
+0x00008b2b    29e003       and #0x03e0
+0x00008b2e    853a         sta 0x3a
+0x00008b30    e220         sep #0x20
+0x00008b32    bd001b       lda 0x1b00,x
+0x00008b35    0a           asl a
+0x00008b36    0a           asl a
+0x00008b37    0a           asl a
+0x00008b38    8d0242       sta 0x4202
+0x00008b3b    a534         lda 0x34
+0x00008b3d    8d0342       sta 0x4203
+0x00008b40    08           php
+0x00008b41    28           plp
+0x00008b42    ad1742       lda 0x4217
+0x00008b45    043a         tsb 0x3a
+0x00008b47    bd011b       lda 0x1b01,x
+0x00008b4a    297c         and #0x7c
+0x00008b4c    8d0242       sta 0x4202
+0x00008b4f    a534         lda 0x34
+0x00008b51    8d0342       sta 0x4203
+0x00008b54    08           php
+0x00008b55    28           plp
+0x00008b56    c220         rep #0x20
+0x00008b58    ad1642       lda 0x4216
+0x00008b5b    0a           asl a
+0x00008b5c    0a           asl a
+0x00008b5d    0a           asl a
+0x00008b5e    29007c       and #0x7c00
+0x00008b61    053a         ora 0x3a
+0x00008b63    9d0019       sta 0x1900,x
+0x00008b66    28           plp
+0x00008b67    6b           rtl

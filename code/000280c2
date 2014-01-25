@@ -1,0 +1,12 @@
+0x000280c2    c220         rep #0x20
+0x000280c4    a90f00       lda #0x000f
+0x000280c7    8500         sta 0x00
+0x000280c9    20da80       jsr 0x80da
+0x000280cc    18           clc
+0x000280cd    7d001b       adc 0x1b00,x
+0x000280d0    9d0019       sta 0x1900,x
+0x000280d3    e8           inx
+0x000280d4    e8           inx
+0x000280d5    c600         dec 0x00
+0x000280d7    10f0         bpl 0x0280c9
+0x000280d9    60           rts

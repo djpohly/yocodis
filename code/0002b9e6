@@ -1,0 +1,17 @@
+0x0002b9e6    e220         sep #0x20
+0x0002b9e8    adbb10       lda 0x10bb
+0x0002b9eb    d001         bne 0x02b9ee
+0x0002b9ed    60           rts
+0x0002b9ee    adb510       lda 0x10b5
+0x0002b9f1    8f03e47e     sta 0x7ee403
+0x0002b9f5    adb610       lda 0x10b6
+0x0002b9f8    8f07e47e     sta 0x7ee407
+0x0002b9fc    adb710       lda 0x10b7
+0x0002b9ff    8f08e47e     sta 0x7ee408
+0x0002ba03    adb810       lda 0x10b8
+0x0002ba06    8f03e87e     sta 0x7ee803
+0x0002ba0a    adb910       lda 0x10b9
+0x0002ba0d    8f07e87e     sta 0x7ee807
+0x0002ba11    adba10       lda 0x10ba
+0x0002ba14    8f08e87e     sta 0x7ee808
+0x0002ba18    60           rts

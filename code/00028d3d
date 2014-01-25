@@ -1,0 +1,3 @@
+0x00028d3d    20698d       jsr 0x8d69
+0x00028d40    a2ffff       ldx #0xffff
+0x00028d43    60           rts

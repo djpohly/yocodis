@@ -1,0 +1,28 @@
+0x0004f858    08           php
+0x0004f859    e220         sep #0x20
+0x0004f85b    ad170d       lda 0x0d17
+0x0004f85e    f030         beq 0x04f890
+0x0004f860    a908         lda #0x08
+0x0004f862    0a           asl a
+0x0004f863    aa           tax
+0x0004f864    c220         rep #0x20
+0x0004f866    bfb3e10c     lda 0x0ce1b3,x
+0x0004f86a    8500         sta 0x00
+0x0004f86c    e220         sep #0x20
+0x0004f86e    a90c         lda #0x0c
+0x0004f870    8502         sta 0x02
+0x0004f872    a28d00       ldx #0x008d
+0x0004f875    860a         stx 0x0a
+0x0004f877    a28000       ldx #0x0080
+0x0004f87a    860c         stx 0x0c
+0x0004f87c    a900         lda #0x00
+0x0004f87e    8503         sta 0x03
+0x0004f880    a950         lda #0x50
+0x0004f882    8504         sta 0x04
+0x0004f884    a931         lda #0x31
+0x0004f886    8505         sta 0x05
+0x0004f888    640f         stz 0x0f
+0x0004f88a    6410         stz 0x10
+0x0004f88c    22a58700     jsr 0x0087a5
+0x0004f890    28           plp
+0x0004f891    6b           rtl

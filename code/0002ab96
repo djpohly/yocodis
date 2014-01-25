@@ -1,0 +1,7 @@
+0x0002ab96    e220         sep #0x20
+0x0002ab98    ad9e10       lda 0x109e
+0x0002ab9b    f008         beq 0x02aba5
+0x0002ab9d    c902         cmp #0x02
+0x0002ab9f    9009         bcc 0x02abaa
+0x0002aba1    f00c         beq 0x02abaf
+0x0002aba3    800a         bra 0x02abaf

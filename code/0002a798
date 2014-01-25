@@ -1,0 +1,12 @@
+0x0002a798    c220         rep #0x20
+0x0002a79a    cec410       dec 0x10c4
+0x0002a79d    1021         bpl 0x02a7c0
+0x0002a79f    aec210       ldx 0x10c2
+0x0002a7a2    8ec410       stx 0x10c4
+0x0002a7a5    ad9610       lda 0x1096
+0x0002a7a8    f00c         beq 0x02a7b6
+0x0002a7aa    ad6e10       lda 0x106e
+0x0002a7ad    18           clc
+0x0002a7ae    6dda10       adc 0x10da
+0x0002a7b1    8d6e10       sta 0x106e
+0x0002a7b4    800a         bra 0x02a7c0
