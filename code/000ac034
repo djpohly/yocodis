@@ -1,0 +1,5 @@
+0x000ac034    a90600       lda #0x0006
+0x000ac037    8d2609       sta 0x0926
+0x000ac03a    a90d00       lda #0x000d
+0x000ac03d    8d3609       sta 0x0936
+0x000ac040    60           rts

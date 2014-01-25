@@ -1,0 +1,5 @@
+0x000abfd4    9c2609       stz 0x0926
+0x000abfd7    a90700       lda #0x0007
+0x000abfda    8d3609       sta 0x0936
+0x000abfdd    ee2409       inc 0x0924
+0x000abfe0    60           rts
