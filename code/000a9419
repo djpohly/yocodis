@@ -1,0 +1,9 @@
+0x000a9419    08           php
+0x000a941a    c220         rep #0x20
+0x000a941c    ae0005       ldx 0x0500
+0x000a941f    6436         stz 0x36
+0x000a9421    bdb903       lda 0x03b9,x
+0x000a9424    29ff00       and #0x00ff
+0x000a9427    a8           tay
+0x000a9428    bdba03       lda 0x03ba,x
+0x000a942b    8003         bra 0x0a9430

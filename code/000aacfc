@@ -1,0 +1,7 @@
+0x000aacfc    ae0005       ldx 0x0500
+0x000aacff    bda803       lda 0x03a8,x
+0x000aad02    f006         beq 0x0aad0a
+0x000aad04    9ea803       stz 0x03a8,x
+0x000aad07    2051cb       jsr 0xcb51
+0x000aad0a    28           plp
+0x000aad0b    60           rts

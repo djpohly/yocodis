@@ -1,0 +1,43 @@
+0x000a9430    88           dey
+0x000a9431    d0fa         bne 0x0a942d
+0x000a9433    8534         sta 0x34
+0x000a9435    38           sec
+0x000a9436    e92000       sbc #0x0020
+0x000a9439    a536         lda 0x36
+0x000a943b    e90000       sbc #0x0000
+0x000a943e    9007         bcc 0x0a9447
+0x000a9440    a90a00       lda #0x000a
+0x000a9443    2215820d     jsr 0x0d8215
+0x000a9447    a534         lda 0x34
+0x000a9449    18           clc
+0x000a944a    7df803       adc 0x03f8,x
+0x000a944d    8534         sta 0x34
+0x000a944f    bdfa03       lda 0x03fa,x
+0x000a9452    6536         adc 0x36
+0x000a9454    8536         sta 0x36
+0x000a9456    a534         lda 0x34
+0x000a9458    38           sec
+0x000a9459    e93f42       sbc #0x423f
+0x000a945c    a536         lda 0x36
+0x000a945e    e90f00       sbc #0x000f
+0x000a9461    900a         bcc 0x0a946d
+0x000a9463    a93f42       lda #0x423f
+0x000a9466    8534         sta 0x34
+0x000a9468    a90f00       lda #0x000f
+0x000a946b    8536         sta 0x36
+0x000a946d    bdfc03       lda 0x03fc,x
+0x000a9470    38           sec
+0x000a9471    e534         sbc 0x34
+0x000a9473    bdfe03       lda 0x03fe,x
+0x000a9476    e536         sbc 0x36
+0x000a9478    b00a         bcs 0x0a9484
+0x000a947a    a534         lda 0x34
+0x000a947c    9dfc03       sta 0x03fc,x
+0x000a947f    a536         lda 0x36
+0x000a9481    9dfe03       sta 0x03fe,x
+0x000a9484    a534         lda 0x34
+0x000a9486    9df803       sta 0x03f8,x
+0x000a9489    a536         lda 0x36
+0x000a948b    9dfa03       sta 0x03fa,x
+0x000a948e    28           plp
+0x000a948f    60           rts

@@ -1,0 +1,8 @@
+0x000aada2    a50c         lda 0x0c
+0x000aada4    38           sec
+0x000aada5    e90800       sbc #0x0008
+0x000aada8    850c         sta 0x0c
+0x000aadaa    88           dey
+0x000aadab    10e7         bpl 0x0aad94
+0x000aadad    28           plp
+0x000aadae    60           rts
