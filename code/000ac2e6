@@ -1,0 +1,27 @@
+0x000ac2e6    a0ffff       ldy #0xffff
+0x000ac2e9    38           sec
+0x000ac2ea    e903         sbc #0x03
+0x000ac2ec    c8           iny
+0x000ac2ed    b0fb         bcs 0x0ac2ea
+0x000ac2ef    a90a         lda #0x0a
+0x000ac2f1    8dd800       sta 0x00d8
+0x000ac2f4    a97e         lda #0x7e
+0x000ac2f6    8ddc00       sta 0x00dc
+0x000ac2f9    c220         rep #0x20
+0x000ac2fb    a90302       lda #0x0203
+0x000ac2fe    85de         sta 0xde
+0x000ac300    a500         lda 0x00
+0x000ac302    0a           asl a
+0x000ac303    aa           tax
+0x000ac304    bf1dc30a     lda 0x0ac31d,x
+0x000ac308    85da         sta 0xda
+0x000ac30a    98           tya
+0x000ac30b    290700       and #0x0007
+0x000ac30e    0a           asl a
+0x000ac30f    aa           tax
+0x000ac310    bf29c30a     lda 0x0ac329,x
+0x000ac314    85d6         sta 0xd6
+0x000ac316    22ae8e00     jsr 0x008eae
+0x000ac31a    ee0c01       inc 0x010c
+0x000ac31d    28           plp
+0x000ac31e    60           rts

@@ -1,0 +1,14 @@
+0x000ab64c    fe1000       inc 0x0010,x
+0x000ab64f    ca           dex
+0x000ab650    10e8         bpl 0x0ab63a
+0x000ab652    2090b6       jsr 0xb690
+0x000ab655    990019       sta 0x1900,y
+0x000ab658    c8           iny
+0x000ab659    c8           iny
+0x000ab65a    98           tya
+0x000ab65b    291f00       and #0x001f
+0x000ab65e    d0d1         bne 0x0ab631
+0x000ab660    1a           inc a
+0x000ab661    8d0001       sta 0x0100
+0x000ab664    28           plp
+0x000ab665    60           rts

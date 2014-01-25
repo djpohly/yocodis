@@ -1,0 +1,86 @@
+0x000a8566    08           php
+0x000a8567    da           phx
+0x000a8568    c220         rep #0x20
+0x000a856a    a500         lda 0x00
+0x000a856c    293f00       and #0x003f
+0x000a856f    0d4401       ora 0x0144
+0x000a8572    0a           asl a
+0x000a8573    0a           asl a
+0x000a8574    0a           asl a
+0x000a8575    691286       adc #0x8612
+0x000a8578    850c         sta 0x0c
+0x000a857a    a90a00       lda #0x000a
+0x000a857d    850e         sta 0x0e
+0x000a857f    a502         lda 0x02
+0x000a8581    29f8f8       and #0xf8f8
+0x000a8584    8502         sta 0x02
+0x000a8586    29f800       and #0x00f8
+0x000a8589    4a           lsr a
+0x000a858a    4a           lsr a
+0x000a858b    48           pha
+0x000a858c    a503         lda 0x03
+0x000a858e    29f800       and #0x00f8
+0x000a8591    0a           asl a
+0x000a8592    0a           asl a
+0x000a8593    0a           asl a
+0x000a8594    0301         ora 0x01,s
+0x000a8596    aa           tax
+0x000a8597    68           pla
+0x000a8598    e220         sep #0x20
+0x000a859a    a503         lda 0x03
+0x000a859c    18           clc
+0x000a859d    e508         sbc 0x08
+0x000a859f    906e         bcc 0x0a860f
+0x000a85a1    c90f         cmp #0x0f
+0x000a85a3    9035         bcc 0x0a85da
+0x000a85a5    a507         lda 0x07
+0x000a85a7    18           clc
+0x000a85a8    e502         sbc 0x02
+0x000a85aa    9063         bcc 0x0a860f
+0x000a85ac    c90f         cmp #0x0f
+0x000a85ae    9015         bcc 0x0a85c5
+0x000a85b0    a00200       ldy #0x0002
+0x000a85b3    b70c         lda [0x0c],y
+0x000a85b5    18           clc
+0x000a85b6    6504         adc 0x04
+0x000a85b8    9f02407e     sta 0x7e4002,x
+0x000a85bc    c8           iny
+0x000a85bd    b70c         lda [0x0c],y
+0x000a85bf    0505         ora 0x05
+0x000a85c1    9f03407e     sta 0x7e4003,x
+0x000a85c5    a00000       ldy #0x0000
+0x000a85c8    b70c         lda [0x0c],y
+0x000a85ca    18           clc
+0x000a85cb    6504         adc 0x04
+0x000a85cd    9f00407e     sta 0x7e4000,x
+0x000a85d1    c8           iny
+0x000a85d2    b70c         lda [0x0c],y
+0x000a85d4    0505         ora 0x05
+0x000a85d6    9f01407e     sta 0x7e4001,x
+0x000a85da    a507         lda 0x07
+0x000a85dc    18           clc
+0x000a85dd    e502         sbc 0x02
+0x000a85df    902e         bcc 0x0a860f
+0x000a85e1    c90f         cmp #0x0f
+0x000a85e3    9015         bcc 0x0a85fa
+0x000a85e5    a00600       ldy #0x0006
+0x000a85e8    b70c         lda [0x0c],y
+0x000a85ea    18           clc
+0x000a85eb    6504         adc 0x04
+0x000a85ed    9f42407e     sta 0x7e4042,x
+0x000a85f1    c8           iny
+0x000a85f2    b70c         lda [0x0c],y
+0x000a85f4    0505         ora 0x05
+0x000a85f6    9f43407e     sta 0x7e4043,x
+0x000a85fa    a00400       ldy #0x0004
+0x000a85fd    b70c         lda [0x0c],y
+0x000a85ff    18           clc
+0x000a8600    6504         adc 0x04
+0x000a8602    9f40407e     sta 0x7e4040,x
+0x000a8606    c8           iny
+0x000a8607    b70c         lda [0x0c],y
+0x000a8609    0505         ora 0x05
+0x000a860b    9f41407e     sta 0x7e4041,x
+0x000a860f    fa           plx
+0x000a8610    28           plp
+0x000a8611    6b           rtl

@@ -1,0 +1,9 @@
+0x000a801a    a20001       ldx #0x0100
+0x000a801d    ad4001       lda 0x0140
+0x000a8020    3a           dec a
+0x000a8021    4a           lsr a
+0x000a8022    4a           lsr a
+0x000a8023    9003         bcc 0x0a8028
+0x000a8025    a20000       ldx #0x0000
+0x000a8028    8e0005       stx 0x0500
+0x000a802b    60           rts

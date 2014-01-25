@@ -1,0 +1,10 @@
+0x000a804d    08           php
+0x000a804e    c220         rep #0x20
+0x000a8050    a595         lda 0x95
+0x000a8052    48           pha
+0x000a8053    9c0605       stz 0x0506
+0x000a8056    ad4001       lda 0x0140
+0x000a8059    3a           dec a
+0x000a805a    290200       and #0x0002
+0x000a805d    f003         beq 0x0a8062
+0x000a805f    4c1481       jmp 0x8114

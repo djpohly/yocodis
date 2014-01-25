@@ -1,0 +1,12 @@
+0x000ab32f    a90b         lda #0x0b
+0x000ab331    8547         sta 0x47
+0x000ab333    c220         rep #0x20
+0x000ab335    a90300       lda #0x0003
+0x000ab338    8d2409       sta 0x0924
+0x000ab33b    a95a00       lda #0x005a
+0x000ab33e    855c         sta 0x5c
+0x000ab340    ad3101       lda 0x0131
+0x000ab343    d0e9         bne 0x0ab32e
+0x000ab345    a90207       lda #0x0702
+0x000ab348    2200800d     jsr 0x0d8000
+0x000ab34c    60           rts

@@ -1,0 +1,8 @@
+0x000ab162    ad2401       lda 0x0124
+0x000ab165    d00d         bne 0x0ab174
+0x000ab167    20fca1       jsr 0xa1fc
+0x000ab16a    a93c00       lda #0x003c
+0x000ab16d    8d5c00       sta 0x005c
+0x000ab170    e220         sep #0x20
+0x000ab172    e647         inc 0x47
+0x000ab174    60           rts

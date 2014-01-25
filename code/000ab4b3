@@ -1,0 +1,15 @@
+0x000ab4b3    ad0c01       lda 0x010c
+0x000ab4b6    0d1401       ora 0x0114
+0x000ab4b9    0d5c00       ora 0x005c
+0x000ab4bc    d01c         bne 0x0ab4da
+0x000ab4be    a59d         lda 0x9d
+0x000ab4c0    290010       and #0x1000
+0x000ab4c3    f015         beq 0x0ab4da
+0x000ab4c5    9c0005       stz 0x0500
+0x000ab4c8    2286840a     jsr 0x0a8486
+0x000ab4cc    22f3840a     jsr 0x0a84f3
+0x000ab4d0    a90000       lda #0x0000
+0x000ab4d3    2057c4       jsr 0xc457
+0x000ab4d6    e220         sep #0x20
+0x000ab4d8    e647         inc 0x47
+0x000ab4da    60           rts

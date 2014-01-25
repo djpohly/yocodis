@@ -1,0 +1,13 @@
+0x000ab175    a55c         lda 0x5c
+0x000ab177    d015         bne 0x0ab18e
+0x000ab179    e220         sep #0x20
+0x000ab17b    a907         lda #0x07
+0x000ab17d    8567         sta 0x67
+0x000ab17f    a902         lda #0x02
+0x000ab181    8568         sta 0x68
+0x000ab183    a9c7         lda #0xc7
+0x000ab185    eb           swa
+0x000ab186    a9f6         lda #0xf6
+0x000ab188    22448700     jsr 0x008744
+0x000ab18c    e647         inc 0x47
+0x000ab18e    60           rts

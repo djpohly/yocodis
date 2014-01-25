@@ -1,0 +1,76 @@
+0x000aa452    08           php
+0x000aa453    c220         rep #0x20
+0x000aa455    bd6003       lda 0x0360,x
+0x000aa458    850c         sta 0x0c
+0x000aa45a    bd6203       lda 0x0362,x
+0x000aa45d    850e         sta 0x0e
+0x000aa45f    8a           txa
+0x000aa460    18           clc
+0x000aa461    694003       adc #0x0340
+0x000aa464    8504         sta 0x04
+0x000aa466    a00800       ldy #0x0008
+0x000aa469    c604         dec 0x04
+0x000aa46b    c604         dec 0x04
+0x000aa46d    a90000       lda #0x0000
+0x000aa470    9204         sta (0x04)
+0x000aa472    c604         dec 0x04
+0x000aa474    c604         dec 0x04
+0x000aa476    9204         sta (0x04)
+0x000aa478    c604         dec 0x04
+0x000aa47a    c604         dec 0x04
+0x000aa47c    9204         sta (0x04)
+0x000aa47e    c604         dec 0x04
+0x000aa480    c604         dec 0x04
+0x000aa482    9204         sta (0x04)
+0x000aa484    88           dey
+0x000aa485    f061         beq 0x0aa4e8
+0x000aa487    c40e         cpy 0x0e
+0x000aa489    d0de         bne 0x0aa469
+0x000aa48b    840a         sty 0x0a
+0x000aa48d    e220         sep #0x20
+0x000aa48f    a00800       ldy #0x0008
+0x000aa492    a900         lda #0x00
+0x000aa494    c604         dec 0x04
+0x000aa496    9204         sta (0x04)
+0x000aa498    88           dey
+0x000aa499    f049         beq 0x0aa4e4
+0x000aa49b    c40c         cpy 0x0c
+0x000aa49d    d0f5         bne 0x0aa494
+0x000aa49f    8408         sty 0x08
+0x000aa4a1    22938500     jsr 0x008593
+0x000aa4a5    c220         rep #0x20
+0x000aa4a7    a504         lda 0x04
+0x000aa4a9    18           clc
+0x000aa4aa    690700       adc #0x0007
+0x000aa4ad    8506         sta 0x06
+0x000aa4af    e220         sep #0x20
+0x000aa4b1    a20000       ldx #0x0000
+0x000aa4b4    8a           txa
+0x000aa4b5    eb           swa
+0x000aa4b6    ad0805       lda 0x0508
+0x000aa4b9    a8           tay
+0x000aa4ba    b90805       lda 0x0508,y
+0x000aa4bd    d204         cmp (0x04)
+0x000aa4bf    f008         beq 0x0aa4c9
+0x000aa4c1    d206         cmp (0x06)
+0x000aa4c3    f004         beq 0x0aa4c9
+0x000aa4c5    9d1905       sta 0x0519,x
+0x000aa4c8    e8           inx
+0x000aa4c9    88           dey
+0x000aa4ca    d0ee         bne 0x0aa4ba
+0x000aa4cc    8a           txa
+0x000aa4cd    0a           asl a
+0x000aa4ce    a00000       ldy #0x0000
+0x000aa4d1    22658a00     jsr 0x008a65
+0x000aa4d5    4a           lsr a
+0x000aa4d6    aa           tax
+0x000aa4d7    c604         dec 0x04
+0x000aa4d9    c606         dec 0x06
+0x000aa4db    bd1905       lda 0x0519,x
+0x000aa4de    9204         sta (0x04)
+0x000aa4e0    c608         dec 0x08
+0x000aa4e2    d0cd         bne 0x0aa4b1
+0x000aa4e4    c60a         dec 0x0a
+0x000aa4e6    d0a7         bne 0x0aa48f
+0x000aa4e8    28           plp
+0x000aa4e9    60           rts

@@ -1,0 +1,18 @@
+0x000aa5a3    bd2d05       lda 0x052d,x
+0x000aa5a6    8500         sta 0x00
+0x000aa5a8    bd2e05       lda 0x052e,x
+0x000aa5ab    8502         sta 0x02
+0x000aa5ad    bd2f05       lda 0x052f,x
+0x000aa5b0    8503         sta 0x03
+0x000aa5b2    20ad82       jsr 0x82ad
+0x000aa5b5    ee0605       inc 0x0506
+0x000aa5b8    e8           inx
+0x000aa5b9    e8           inx
+0x000aa5ba    e8           inx
+0x000aa5bb    e8           inx
+0x000aa5bc    e02000       cpx #0x0020
+0x000aa5bf    9003         bcc 0x0aa5c4
+0x000aa5c1    a20000       ldx #0x0000
+0x000aa5c4    88           dey
+0x000aa5c5    10dc         bpl 0x0aa5a3
+0x000aa5c7    60           rts

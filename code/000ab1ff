@@ -1,0 +1,13 @@
+0x000ab1ff    ad2401       lda 0x0124
+0x000ab202    d01a         bne 0x0ab21e
+0x000ab204    a90200       lda #0x0002
+0x000ab207    2057c4       jsr 0xc457
+0x000ab20a    a90300       lda #0x0003
+0x000ab20d    2057c4       jsr 0xc457
+0x000ab210    ad3101       lda 0x0131
+0x000ab213    f005         beq 0x0ab21a
+0x000ab215    a92000       lda #0x0020
+0x000ab218    855c         sta 0x5c
+0x000ab21a    e220         sep #0x20
+0x000ab21c    e647         inc 0x47
+0x000ab21e    60           rts

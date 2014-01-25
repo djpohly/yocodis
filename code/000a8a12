@@ -1,0 +1,38 @@
+0x000a8a12    08           php
+0x000a8a13    e220         sep #0x20
+0x000a8a15    ae0005       ldx 0x0500
+0x000a8a18    ad5001       lda 0x0150
+0x000a8a1b    4a           lsr a
+0x000a8a1c    4a           lsr a
+0x000a8a1d    4a           lsr a
+0x000a8a1e    85de         sta 0xde
+0x000a8a20    ad5101       lda 0x0151
+0x000a8a23    4a           lsr a
+0x000a8a24    4a           lsr a
+0x000a8a25    4a           lsr a
+0x000a8a26    85df         sta 0xdf
+0x000a8a28    bdf003       lda 0x03f0,x
+0x000a8a2b    4a           lsr a
+0x000a8a2c    4a           lsr a
+0x000a8a2d    4a           lsr a
+0x000a8a2e    85da         sta 0xda
+0x000a8a30    64db         stz 0xdb
+0x000a8a32    a97e         lda #0x7e
+0x000a8a34    85dc         sta 0xdc
+0x000a8a36    bdf103       lda 0x03f1,x
+0x000a8a39    38           sec
+0x000a8a3a    ed5101       sbc 0x0151
+0x000a8a3d    c220         rep #0x20
+0x000a8a3f    29f800       and #0x00f8
+0x000a8a42    0a           asl a
+0x000a8a43    0a           asl a
+0x000a8a44    65da         adc 0xda
+0x000a8a46    0a           asl a
+0x000a8a47    698040       adc #0x4080
+0x000a8a4a    85da         sta 0xda
+0x000a8a4c    a94f20       lda #0x204f
+0x000a8a4f    85d6         sta 0xd6
+0x000a8a51    22358f00     jsr 0x008f35
+0x000a8a55    ee0c01       inc 0x010c
+0x000a8a58    28           plp
+0x000a8a59    6b           rtl

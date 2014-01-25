@@ -1,0 +1,20 @@
+0x000a8ada    850c         sta 0x0c
+0x000a8adc    c512         cmp 0x12
+0x000a8ade    f004         beq 0x0a8ae4
+0x000a8ae0    22c28800     jsr 0x0088c2
+0x000a8ae4    a50c         lda 0x0c
+0x000a8ae6    18           clc
+0x000a8ae7    6920         adc #0x20
+0x000a8ae9    b004         bcs 0x0a8aef
+0x000a8aeb    c514         cmp 0x14
+0x000a8aed    90eb         bcc 0x0a8ada
+0x000a8aef    c220         rep #0x20
+0x000a8af1    af778b0a     lda 0x0a8b77
+0x000a8af5    8500         sta 0x00
+0x000a8af7    e220         sep #0x20
+0x000a8af9    a512         lda 0x12
+0x000a8afb    850c         sta 0x0c
+0x000a8afd    a515         lda 0x15
+0x000a8aff    18           clc
+0x000a8b00    6508         adc 0x08
+0x000a8b02    8011         bra 0x0a8b15

@@ -1,0 +1,5 @@
+0x000aa5f6    aa           tax
+0x000aa5f7    88           dey
+0x000aa5f8    10db         bpl 0x0aa5d5
+0x000aa5fa    28           plp
+0x000aa5fb    60           rts

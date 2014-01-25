@@ -1,0 +1,5 @@
+0x000aa597    6404         stz 0x04
+0x000aa599    6405         stz 0x05
+0x000aa59b    ae2805       ldx 0x0528
+0x000aa59e    ac2a05       ldy 0x052a
+0x000aa5a1    8021         bra 0x0aa5c4

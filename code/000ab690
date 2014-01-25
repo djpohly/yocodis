@@ -1,0 +1,11 @@
+0x000ab690    0611         asl 0x11
+0x000ab692    0611         asl 0x11
+0x000ab694    0611         asl 0x11
+0x000ab696    c220         rep #0x20
+0x000ab698    a511         lda 0x11
+0x000ab69a    0a           asl a
+0x000ab69b    0a           asl a
+0x000ab69c    e220         sep #0x20
+0x000ab69e    0510         ora 0x10
+0x000ab6a0    c220         rep #0x20
+0x000ab6a2    60           rts

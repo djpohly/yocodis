@@ -1,0 +1,12 @@
+0x000ab34d    ad3101       lda 0x0131
+0x000ab350    d015         bne 0x0ab367
+0x000ab352    a59e         lda 0x9e
+0x000ab354    2910         and #0x10
+0x000ab356    f00f         beq 0x0ab367
+0x000ab358    a981         lda #0x81
+0x000ab35a    22fb810d     jsr 0x0d81fb
+0x000ab35e    a901         lda #0x01
+0x000ab360    8d3a01       sta 0x013a
+0x000ab363    a913         lda #0x13
+0x000ab365    8547         sta 0x47
+0x000ab367    60           rts

@@ -1,0 +1,11 @@
+0x000ab431    a59d         lda 0x9d
+0x000ab433    298010       and #0x1080
+0x000ab436    d005         bne 0x0ab43d
+0x000ab438    ad5c00       lda 0x005c
+0x000ab43b    d00c         bne 0x0ab449
+0x000ab43d    ee3e01       inc 0x013e
+0x000ab440    2037a2       jsr 0xa237
+0x000ab443    e220         sep #0x20
+0x000ab445    a904         lda #0x04
+0x000ab447    8547         sta 0x47
+0x000ab449    60           rts

@@ -1,0 +1,43 @@
+0x000a8a8a    c220         rep #0x20
+0x000a8a8c    0a           asl a
+0x000a8a8d    0a           asl a
+0x000a8a8e    0a           asl a
+0x000a8a8f    0a           asl a
+0x000a8a90    8514         sta 0x14
+0x000a8a92    bdf003       lda 0x03f0,x
+0x000a8a95    8510         sta 0x10
+0x000a8a97    bd7303       lda 0x0373,x
+0x000a8a9a    29f0f0       and #0xf0f0
+0x000a8a9d    e220         sep #0x20
+0x000a8a9f    18           clc
+0x000a8aa0    6510         adc 0x10
+0x000a8aa2    8512         sta 0x12
+0x000a8aa4    eb           swa
+0x000a8aa5    38           sec
+0x000a8aa6    e511         sbc 0x11
+0x000a8aa8    49ff         eor #0xff
+0x000a8aaa    1a           inc a
+0x000a8aab    8513         sta 0x13
+0x000a8aad    a510         lda 0x10
+0x000a8aaf    18           clc
+0x000a8ab0    6514         adc 0x14
+0x000a8ab2    8514         sta 0x14
+0x000a8ab4    a511         lda 0x11
+0x000a8ab6    38           sec
+0x000a8ab7    e515         sbc 0x15
+0x000a8ab9    18           clc
+0x000a8aba    6910         adc #0x10
+0x000a8abc    8515         sta 0x15
+0x000a8abe    bd7203       lda 0x0372,x
+0x000a8ac1    2920         and #0x20
+0x000a8ac3    f056         beq 0x0a8b1b
+0x000a8ac5    c220         rep #0x20
+0x000a8ac7    af758b0a     lda 0x0a8b75
+0x000a8acb    8500         sta 0x00
+0x000a8acd    e220         sep #0x20
+0x000a8acf    a513         lda 0x13
+0x000a8ad1    850a         sta 0x0a
+0x000a8ad3    a510         lda 0x10
+0x000a8ad5    18           clc
+0x000a8ad6    6508         adc 0x08
+0x000a8ad8    8011         bra 0x0a8aeb

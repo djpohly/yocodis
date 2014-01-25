@@ -1,0 +1,11 @@
+0x000ab496    9c0005       stz 0x0500
+0x000ab499    22128a0a     jsr 0x0a8a12
+0x000ab49d    a90600       lda #0x0006
+0x000ab4a0    2057c4       jsr 0xc457
+0x000ab4a3    a90400       lda #0x0004
+0x000ab4a6    855c         sta 0x5c
+0x000ab4a8    e220         sep #0x20
+0x000ab4aa    a91a         lda #0x1a
+0x000ab4ac    2230820d     jsr 0x0d8230
+0x000ab4b0    e647         inc 0x47
+0x000ab4b2    60           rts

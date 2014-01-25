@@ -1,0 +1,11 @@
+0x000ac2d2    08           php
+0x000ac2d3    e220         sep #0x20
+0x000ac2d5    48           pha
+0x000ac2d6    a500         lda 0x00
+0x000ac2d8    c906         cmp #0x06
+0x000ac2da    68           pla
+0x000ac2db    b040         bcs 0x0ac31d
+0x000ac2dd    c90f         cmp #0x0f
+0x000ac2df    9005         bcc 0x0ac2e6
+0x000ac2e1    a00500       ldy #0x0005
+0x000ac2e4    8009         bra 0x0ac2ef

@@ -1,0 +1,29 @@
+0x000088c2    08           php
+0x000088c3    c220         rep #0x20
+0x000088c5    6403         stz 0x03
+0x000088c7    6404         stz 0x04
+0x000088c9    28           plp
+0x000088ca    08           php
+0x000088cb    e220         sep #0x20
+0x000088cd    8b           phb
+0x000088ce    a502         lda 0x02
+0x000088d0    48           pha
+0x000088d1    ab           plb
+0x000088d2    da           phx
+0x000088d3    a695         ldx 0x95
+0x000088d5    a400         ldy 0x00
+0x000088d7    b90000       lda 0x0000,y
+0x000088da    3010         bmi 0x0088ec
+0x000088dc    0a           asl a
+0x000088dd    8506         sta 0x06
+0x000088df    f002         beq 0x0088e3
+0x000088e1    a908         lda #0x08
+0x000088e3    49f0         eor #0xf0
+0x000088e5    8507         sta 0x07
+0x000088e7    e00002       cpx #0x0200
+0x000088ea    9006         bcc 0x0088f2
+0x000088ec    8695         stx 0x95
+0x000088ee    fa           plx
+0x000088ef    ab           plb
+0x000088f0    28           plp
+0x000088f1    6b           rtl

@@ -1,0 +1,23 @@
+0x000a824e    bd6a03       lda 0x036a,x
+0x000a8251    f059         beq 0x0a82ac
+0x000a8253    3a           dec a
+0x000a8254    0a           asl a
+0x000a8255    0a           asl a
+0x000a8256    0a           asl a
+0x000a8257    8510         sta 0x10
+0x000a8259    0a           asl a
+0x000a825a    8503         sta 0x03
+0x000a825c    bd6c03       lda 0x036c,x
+0x000a825f    f04b         beq 0x0a82ac
+0x000a8261    3012         bmi 0x0a8275
+0x000a8263    4a           lsr a
+0x000a8264    4a           lsr a
+0x000a8265    38           sec
+0x000a8266    e910         sbc #0x10
+0x000a8268    8502         sta 0x02
+0x000a826a    bd6403       lda 0x0364,x
+0x000a826d    3a           dec a
+0x000a826e    18           clc
+0x000a826f    6510         adc 0x10
+0x000a8271    8510         sta 0x10
+0x000a8273    8013         bra 0x0a8288

@@ -1,0 +1,36 @@
+0x000ab27f    224d800a     jsr 0x0a804d
+0x000ab283    e220         sep #0x20
+0x000ab285    a558         lda 0x58
+0x000ab287    4a           lsr a
+0x000ab288    b05a         bcs 0x0ab2e4
+0x000ab28a    ad6203       lda 0x0362
+0x000ab28d    0a           asl a
+0x000ab28e    8502         sta 0x02
+0x000ab290    6403         stz 0x03
+0x000ab292    ad5203       lda 0x0352
+0x000ab295    c910         cmp #0x10
+0x000ab297    b02a         bcs 0x0ab2c3
+0x000ab299    1a           inc a
+0x000ab29a    8500         sta 0x00
+0x000ab29c    a20200       ldx #0x0002
+0x000ab29f    9d5003       sta 0x0350,x
+0x000ab2a2    18           clc
+0x000ab2a3    6500         adc 0x00
+0x000ab2a5    e8           inx
+0x000ab2a6    e8           inx
+0x000ab2a7    e402         cpx 0x02
+0x000ab2a9    90f4         bcc 0x0ab29f
+0x000ab2ab    a500         lda 0x00
+0x000ab2ad    c910         cmp #0x10
+0x000ab2af    9033         bcc 0x0ab2e4
+0x000ab2b1    a900         lda #0x00
+0x000ab2b3    eb           swa
+0x000ab2b4    ad6003       lda 0x0360
+0x000ab2b7    3a           dec a
+0x000ab2b8    0a           asl a
+0x000ab2b9    aa           tax
+0x000ab2ba    9e4103       stz 0x0341,x
+0x000ab2bd    ca           dex
+0x000ab2be    ca           dex
+0x000ab2bf    10f9         bpl 0x0ab2ba
+0x000ab2c1    8021         bra 0x0ab2e4

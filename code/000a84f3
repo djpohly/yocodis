@@ -1,0 +1,62 @@
+0x000a84f3    08           php
+0x000a84f4    c220         rep #0x20
+0x000a84f6    ae0005       ldx 0x0500
+0x000a84f9    bd6e03       lda 0x036e,x
+0x000a84fc    f066         beq 0x0a8564
+0x000a84fe    3a           dec a
+0x000a84ff    290700       and #0x0007
+0x000a8502    48           pha
+0x000a8503    0a           asl a
+0x000a8504    6d0005       adc 0x0500
+0x000a8507    a8           tay
+0x000a8508    b94003       lda 0x0340,y
+0x000a850b    8502         sta 0x02
+0x000a850d    6404         stz 0x04
+0x000a850f    68           pla
+0x000a8510    18           clc
+0x000a8511    6d0005       adc 0x0500
+0x000a8514    a8           tay
+0x000a8515    e220         sep #0x20
+0x000a8517    bdf003       lda 0x03f0,x
+0x000a851a    8506         sta 0x06
+0x000a851c    18           clc
+0x000a851d    6502         adc 0x02
+0x000a851f    8502         sta 0x02
+0x000a8521    a506         lda 0x06
+0x000a8523    18           clc
+0x000a8524    6d5001       adc 0x0150
+0x000a8527    8507         sta 0x07
+0x000a8529    bdf103       lda 0x03f1,x
+0x000a852c    8509         sta 0x09
+0x000a852e    38           sec
+0x000a852f    ed5101       sbc 0x0151
+0x000a8532    8508         sta 0x08
+0x000a8534    bd6203       lda 0x0362,x
+0x000a8537    8510         sta 0x10
+0x000a8539    bd5103       lda 0x0351,x
+0x000a853c    29c0         and #0xc0
+0x000a853e    d013         bne 0x0a8553
+0x000a8540    a509         lda 0x09
+0x000a8542    38           sec
+0x000a8543    fd5003       sbc 0x0350,x
+0x000a8546    8503         sta 0x03
+0x000a8548    b90003       lda 0x0300,y
+0x000a854b    8500         sta 0x00
+0x000a854d    5a           phy
+0x000a854e    2266850a     jsr 0x0a8566
+0x000a8552    7a           ply
+0x000a8553    c8           iny
+0x000a8554    c8           iny
+0x000a8555    c8           iny
+0x000a8556    c8           iny
+0x000a8557    c8           iny
+0x000a8558    c8           iny
+0x000a8559    c8           iny
+0x000a855a    c8           iny
+0x000a855b    e8           inx
+0x000a855c    e8           inx
+0x000a855d    c610         dec 0x10
+0x000a855f    d0d8         bne 0x0a8539
+0x000a8561    ee0c01       inc 0x010c
+0x000a8564    28           plp
+0x000a8565    6b           rtl

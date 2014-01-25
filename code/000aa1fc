@@ -1,0 +1,15 @@
+0x000aa1fc    08           php
+0x000aa1fd    c220         rep #0x20
+0x000aa1ff    ad4001       lda 0x0140
+0x000aa202    0a           asl a
+0x000aa203    6d4001       adc 0x0140
+0x000aa206    0a           asl a
+0x000aa207    aa           tax
+0x000aa208    bf1fa20a     lda 0x0aa21f,x
+0x000aa20c    8df003       sta 0x03f0
+0x000aa20f    bf21a20a     lda 0x0aa221,x
+0x000aa213    8df004       sta 0x04f0
+0x000aa216    bf23a20a     lda 0x0aa223,x
+0x000aa21a    8d5001       sta 0x0150
+0x000aa21d    28           plp
+0x000aa21e    60           rts

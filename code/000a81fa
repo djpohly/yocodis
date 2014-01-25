@@ -1,0 +1,5 @@
+0x000a81fa    c8           iny
+0x000a81fb    c02000       cpy #0x0020
+0x000a81fe    90f2         bcc 0x0a81f2
+0x000a8200    28           plp
+0x000a8201    6b           rtl
