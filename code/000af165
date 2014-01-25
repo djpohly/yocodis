@@ -1,0 +1,14 @@
+0x000af165    08           php
+0x000af166    c220         rep #0x20
+0x000af168    adcc01       lda 0x01cc
+0x000af16b    c90b00       cmp #0x000b
+0x000af16e    d017         bne 0x0af187
+0x000af170    ad3c01       lda 0x013c
+0x000af173    f012         beq 0x0af187
+0x000af175    a94800       lda #0x0048
+0x000af178    8d4608       sta 0x0846
+0x000af17b    a00000       ldy #0x0000
+0x000af17e    22658a00     jsr 0x008a65
+0x000af182    8d4808       sta 0x0848
+0x000af185    28           plp
+0x000af186    60           rts

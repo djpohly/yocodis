@@ -1,0 +1,11 @@
+0x000ae9a7    a55c         lda 0x5c
+0x000ae9a9    f00f         beq 0x0ae9ba
+0x000ae9ab    ad3c01       lda 0x013c
+0x000ae9ae    c90a00       cmp #0x000a
+0x000ae9b1    f00c         beq 0x0ae9bf
+0x000ae9b3    a5bb         lda 0xbb
+0x000ae9b5    298010       and #0x1080
+0x000ae9b8    f005         beq 0x0ae9bf
+0x000ae9ba    e220         sep #0x20
+0x000ae9bc    e647         inc 0x47
+0x000ae9be    60           rts

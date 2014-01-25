@@ -1,0 +1,12 @@
+0x000aea38    e220         sep #0x20
+0x000aea3a    ad2a01       lda 0x012a
+0x000aea3d    f00d         beq 0x0aea4c
+0x000aea3f    ad2c01       lda 0x012c
+0x000aea42    c910         cmp #0x10
+0x000aea44    b00c         bcs 0x0aea52
+0x000aea46    9c2a01       stz 0x012a
+0x000aea49    9c2b01       stz 0x012b
+0x000aea4c    a565         lda 0x65
+0x000aea4e    3002         bmi 0x0aea52
+0x000aea50    e647         inc 0x47
+0x000aea52    60           rts

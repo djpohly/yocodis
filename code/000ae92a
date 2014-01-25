@@ -1,0 +1,5 @@
+0x000ae92a    e220         sep #0x20
+0x000ae92c    a562         lda 0x62
+0x000ae92e    d002         bne 0x0ae932
+0x000ae930    e647         inc 0x47
+0x000ae932    60           rts

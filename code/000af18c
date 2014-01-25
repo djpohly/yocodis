@@ -1,0 +1,43 @@
+0x000af18c    08           php
+0x000af18d    c220         rep #0x20
+0x000af18f    ad4608       lda 0x0846
+0x000af192    f055         beq 0x0af1e9
+0x000af194    3a           dec a
+0x000af195    8d4608       sta 0x0846
+0x000af198    18           clc
+0x000af199    6d4808       adc 0x0848
+0x000af19c    38           sec
+0x000af19d    e94800       sbc #0x0048
+0x000af1a0    b0fb         bcs 0x0af19d
+0x000af1a2    694800       adc #0x0048
+0x000af1a5    0a           asl a
+0x000af1a6    aa           tax
+0x000af1a7    bff0f10a     lda 0x0af1f0,x
+0x000af1ab    2900ff       and #0xff00
+0x000af1ae    4a           lsr a
+0x000af1af    4a           lsr a
+0x000af1b0    8500         sta 0x00
+0x000af1b2    bff0f10a     lda 0x0af1f0,x
+0x000af1b6    29ff00       and #0x00ff
+0x000af1b9    0a           asl a
+0x000af1ba    6500         adc 0x00
+0x000af1bc    8500         sta 0x00
+0x000af1be    ad3c01       lda 0x013c
+0x000af1c1    3a           dec a
+0x000af1c2    c90900       cmp #0x0009
+0x000af1c5    b024         bcs 0x0af1eb
+0x000af1c7    0a           asl a
+0x000af1c8    aa           tax
+0x000af1c9    bf53f10a     lda 0x0af153,x
+0x000af1cd    6500         adc 0x00
+0x000af1cf    aa           tax
+0x000af1d0    a90020       lda #0x2000
+0x000af1d3    9f00407e     sta 0x7e4000,x
+0x000af1d7    ee0c01       inc 0x010c
+0x000af1da    ad4608       lda 0x0846
+0x000af1dd    290300       and #0x0003
+0x000af1e0    d007         bne 0x0af1e9
+0x000af1e2    a91800       lda #0x0018
+0x000af1e5    2230820d     jsr 0x0d8230
+0x000af1e9    28           plp
+0x000af1ea    60           rts

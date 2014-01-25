@@ -1,0 +1,16 @@
+0x000ae986    18           clc
+0x000ae987    690200       adc #0x0002
+0x000ae98a    9003         bcc 0x0ae98f
+0x000ae98c    a90000       lda #0x0000
+0x000ae98f    998500       sta 0x0085,y
+0x000ae992    88           dey
+0x000ae993    88           dey
+0x000ae994    10e1         bpl 0x0ae977
+0x000ae996    a585         lda 0x85
+0x000ae998    0587         ora 0x87
+0x000ae99a    d009         bne 0x0ae9a5
+0x000ae99c    a9b400       lda #0x00b4
+0x000ae99f    855c         sta 0x5c
+0x000ae9a1    e220         sep #0x20
+0x000ae9a3    e647         inc 0x47
+0x000ae9a5    8018         bra 0x0ae9bf

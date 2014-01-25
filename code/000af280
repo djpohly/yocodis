@@ -1,0 +1,15 @@
+0x000af280    08           php
+0x000af281    c220         rep #0x20
+0x000af283    ad3c01       lda 0x013c
+0x000af286    0a           asl a
+0x000af287    0a           asl a
+0x000af288    aa           tax
+0x000af289    bf24f30a     lda 0x0af324,x
+0x000af28d    8585         sta 0x85
+0x000af28f    bf26f30a     lda 0x0af326,x
+0x000af293    8587         sta 0x87
+0x000af295    ad3c01       lda 0x013c
+0x000af298    c90a00       cmp #0x000a
+0x000af29b    d005         bne 0x0af2a2
+0x000af29d    2005f5       jsr 0xf505
+0x000af2a0    8044         bra 0x0af2e6

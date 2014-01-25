@@ -1,0 +1,4 @@
+0x000aea72    e220         sep #0x20
+0x000aea74    a562         lda 0x62
+0x000aea76    f003         beq 0x0aea7b
+0x000aea78    4cbfe9       jmp 0xe9bf

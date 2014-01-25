@@ -1,0 +1,17 @@
+0x000aea09    a98000       lda #0x0080
+0x000aea0c    8d2a01       sta 0x012a
+0x000aea0f    a90020       lda #0x2000
+0x000aea12    8d2b01       sta 0x012b
+0x000aea15    a932ea       lda #0xea32
+0x000aea18    8d2d01       sta 0x012d
+0x000aea1b    e220         sep #0x20
+0x000aea1d    a90a         lda #0x0a
+0x000aea1f    8d2f01       sta 0x012f
+0x000aea22    a9c3         lda #0xc3
+0x000aea24    eb           swa
+0x000aea25    a9f2         lda #0xf2
+0x000aea27    22448700     jsr 0x008744
+0x000aea2b    a902         lda #0x02
+0x000aea2d    0467         tsb 0x67
+0x000aea2f    e647         inc 0x47
+0x000aea31    60           rts

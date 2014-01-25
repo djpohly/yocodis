@@ -1,0 +1,4 @@
+0x000aea5a    a5bb         lda 0xbb
+0x000aea5c    298010       and #0x1080
+0x000aea5f    d003         bne 0x0aea64
+0x000aea61    4cbfe9       jmp 0xe9bf

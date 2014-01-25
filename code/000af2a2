@@ -1,0 +1,32 @@
+0x000af2a2    a91663       lda #0x6316
+0x000af2a5    85da         sta 0xda
+0x000af2a7    a97e00       lda #0x007e
+0x000af2aa    85dc         sta 0xdc
+0x000af2ac    a90a02       lda #0x020a
+0x000af2af    85de         sta 0xde
+0x000af2b1    a9e8f2       lda #0xf2e8
+0x000af2b4    85d6         sta 0xd6
+0x000af2b6    a90a00       lda #0x000a
+0x000af2b9    85d8         sta 0xd8
+0x000af2bb    22ae8e00     jsr 0x008eae
+0x000af2bf    a9de63       lda #0x63de
+0x000af2c2    85da         sta 0xda
+0x000af2c4    ad3c01       lda 0x013c
+0x000af2c7    0a           asl a
+0x000af2c8    aa           tax
+0x000af2c9    bf10f30a     lda 0x0af310,x
+0x000af2cd    87da         sta [0xda]
+0x000af2cf    1a           inc a
+0x000af2d0    a00200       ldy #0x0002
+0x000af2d3    97da         sta [0xda],y
+0x000af2d5    18           clc
+0x000af2d6    690f00       adc #0x000f
+0x000af2d9    a04000       ldy #0x0040
+0x000af2dc    97da         sta [0xda],y
+0x000af2de    1a           inc a
+0x000af2df    c8           iny
+0x000af2e0    c8           iny
+0x000af2e1    97da         sta [0xda],y
+0x000af2e3    ee1401       inc 0x0114
+0x000af2e6    28           plp
+0x000af2e7    60           rts
