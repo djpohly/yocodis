@@ -1,0 +1,18 @@
+0x000add1e    ad7303       lda 0x0373
+0x000add21    ac6601       ldy 0x0166
+0x000add24    f001         beq 0x0add27
+0x000add26    eb           swa
+0x000add27    29ff00       and #0x00ff
+0x000add2a    4a           lsr a
+0x000add2b    4a           lsr a
+0x000add2c    4a           lsr a
+0x000add2d    4a           lsr a
+0x000add2e    a8           tay
+0x000add2f    b9ac01       lda 0x01ac,y
+0x000add32    29ff00       and #0x00ff
+0x000add35    f00b         beq 0x0add42
+0x000add37    c220         rep #0x20
+0x000add39    9c6001       stz 0x0160
+0x000add3c    a90400       lda #0x0004
+0x000add3f    8d5c01       sta 0x015c
+0x000add42    60           rts

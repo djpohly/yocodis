@@ -1,0 +1,44 @@
+0x000ade0e    08           php
+0x000ade0f    c220         rep #0x20
+0x000ade11    a20e00       ldx #0x000e
+0x000ade14    9ea401       stz 0x01a4,x
+0x000ade17    ca           dex
+0x000ade18    ca           dex
+0x000ade19    10f9         bpl 0x0ade14
+0x000ade1b    6412         stz 0x12
+0x000ade1d    ad7303       lda 0x0373
+0x000ade20    4a           lsr a
+0x000ade21    4a           lsr a
+0x000ade22    4a           lsr a
+0x000ade23    4a           lsr a
+0x000ade24    48           pha
+0x000ade25    290f00       and #0x000f
+0x000ade28    8db601       sta 0x01b6
+0x000ade2b    68           pla
+0x000ade2c    eb           swa
+0x000ade2d    290f00       and #0x000f
+0x000ade30    8db801       sta 0x01b8
+0x000ade33    a20000       ldx #0x0000
+0x000ade36    ac6601       ldy 0x0166
+0x000ade39    d03a         bne 0x0ade75
+0x000ade3b    adb801       lda 0x01b8
+0x000ade3e    0a           asl a
+0x000ade3f    0a           asl a
+0x000ade40    0a           asl a
+0x000ade41    a8           tay
+0x000ade42    e220         sep #0x20
+0x000ade44    b90003       lda 0x0300,y
+0x000ade47    c90f         cmp #0x0f
+0x000ade49    f005         beq 0x0ade50
+0x000ade4b    cd6401       cmp 0x0164
+0x000ade4e    d005         bne 0x0ade55
+0x000ade50    fea401       inc 0x01a4,x
+0x000ade53    e612         inc 0x12
+0x000ade55    e8           inx
+0x000ade56    c8           iny
+0x000ade57    ec6403       cpx 0x0364
+0x000ade5a    90e8         bcc 0x0ade44
+0x000ade5c    a512         lda 0x12
+0x000ade5e    8db401       sta 0x01b4
+0x000ade61    ac6403       ldy 0x0364
+0x000ade64    800a         bra 0x0ade70

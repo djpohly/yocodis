@@ -1,0 +1,11 @@
+0x000add9e    a90003       lda #0x0300
+0x000adda1    8510         sta 0x10
+0x000adda3    a20e00       ldx #0x000e
+0x000adda6    9e9401       stz 0x0194,x
+0x000adda9    ca           dex
+0x000addaa    ca           dex
+0x000addab    10f9         bpl 0x0adda6
+0x000addad    a20000       ldx #0x0000
+0x000addb0    e220         sep #0x20
+0x000addb2    ac6403       ldy 0x0364
+0x000addb5    800e         bra 0x0addc5

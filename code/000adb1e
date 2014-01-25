@@ -1,0 +1,5 @@
+0x000adb1e    9cba01       stz 0x01ba
+0x000adb21    a90080       lda #0x8000
+0x000adb24    8d6001       sta 0x0160
+0x000adb27    ee5c01       inc 0x015c
+0x000adb2a    60           rts

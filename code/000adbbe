@@ -1,0 +1,7 @@
+0x000adbbe    c220         rep #0x20
+0x000adbc0    a500         lda 0x00
+0x000adbc2    38           sec
+0x000adbc3    e93400       sbc #0x0034
+0x000adbc6    8d6401       sta 0x0164
+0x000adbc9    ee5c01       inc 0x015c
+0x000adbcc    60           rts

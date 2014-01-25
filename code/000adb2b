@@ -1,0 +1,15 @@
+0x000adb2b    a90100       lda #0x0001
+0x000adb2e    cd6403       cmp 0x0364
+0x000adb31    f05b         beq 0x0adb8e
+0x000adb33    cd6603       cmp 0x0366
+0x000adb36    f056         beq 0x0adb8e
+0x000adb38    a20e00       ldx #0x000e
+0x000adb3b    7434         stz 0x34,x
+0x000adb3d    ca           dex
+0x000adb3e    ca           dex
+0x000adb3f    10fa         bpl 0x0adb3b
+0x000adb41    a90003       lda #0x0300
+0x000adb44    8500         sta 0x00
+0x000adb46    ad6603       lda 0x0366
+0x000adb49    8502         sta 0x02
+0x000adb4b    801c         bra 0x0adb69

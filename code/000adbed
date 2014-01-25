@@ -1,0 +1,2 @@
+0x000adbed    ee5c01       inc 0x015c
+0x000adbf0    60           rts

@@ -1,0 +1,15 @@
+0x000add83    c220         rep #0x20
+0x000add85    ad7403       lda 0x0374
+0x000add88    29f000       and #0x00f0
+0x000add8b    4a           lsr a
+0x000add8c    8510         sta 0x10
+0x000add8e    ad7303       lda 0x0373
+0x000add91    29f000       and #0x00f0
+0x000add94    4a           lsr a
+0x000add95    4a           lsr a
+0x000add96    4a           lsr a
+0x000add97    4a           lsr a
+0x000add98    0510         ora 0x10
+0x000add9a    a8           tay
+0x000add9b    8410         sty 0x10
+0x000add9d    60           rts

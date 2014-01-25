@@ -1,0 +1,12 @@
+0x000adc58    ad7303       lda 0x0373
+0x000adc5b    29f000       and #0x00f0
+0x000adc5e    4a           lsr a
+0x000adc5f    4a           lsr a
+0x000adc60    4a           lsr a
+0x000adc61    4a           lsr a
+0x000adc62    cd6801       cmp 0x0168
+0x000adc65    f010         beq 0x0adc77
+0x000adc67    9007         bcc 0x0adc70
+0x000adc69    a90002       lda #0x0200
+0x000adc6c    8d6001       sta 0x0160
+0x000adc6f    60           rts

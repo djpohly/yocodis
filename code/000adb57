@@ -1,0 +1,15 @@
+0x000adb57    b100         lda (0x00),y
+0x000adb59    aa           tax
+0x000adb5a    f634         inc 0x34,x
+0x000adb5c    88           dey
+0x000adb5d    10f8         bpl 0x0adb57
+0x000adb5f    c220         rep #0x20
+0x000adb61    a500         lda 0x00
+0x000adb63    18           clc
+0x000adb64    690800       adc #0x0008
+0x000adb67    8500         sta 0x00
+0x000adb69    c602         dec 0x02
+0x000adb6b    10e0         bpl 0x0adb4d
+0x000adb6d    e220         sep #0x20
+0x000adb6f    a23500       ldx #0x0035
+0x000adb72    8006         bra 0x0adb7a

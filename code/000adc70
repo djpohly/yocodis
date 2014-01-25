@@ -1,0 +1,3 @@
+0x000adc70    a90001       lda #0x0100
+0x000adc73    8d6001       sta 0x0160
+0x000adc76    60           rts
