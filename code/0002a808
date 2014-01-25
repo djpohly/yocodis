@@ -1,0 +1,12 @@
+0x0002a808    e220         sep #0x20
+0x0002a80a    cece10       dec 0x10ce
+0x0002a80d    1016         bpl 0x02a825
+0x0002a80f    aecc10       ldx 0x10cc
+0x0002a812    8ece10       stx 0x10ce
+0x0002a815    ee2811       inc 0x1128
+0x0002a818    ee8810       inc 0x1088
+0x0002a81b    ad8810       lda 0x1088
+0x0002a81e    c902         cmp #0x02
+0x0002a820    9003         bcc 0x02a825
+0x0002a822    9c8810       stz 0x1088
+0x0002a825    60           rts

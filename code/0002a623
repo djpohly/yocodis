@@ -1,0 +1,12 @@
+0x0002a623    e220         sep #0x20
+0x0002a625    a562         lda 0x62
+0x0002a627    d016         bne 0x02a63f
+0x0002a629    a20000       ldx #0x0000
+0x0002a62c    8e4001       stx 0x0140
+0x0002a62f    8ef803       stx 0x03f8
+0x0002a632    8efa03       stx 0x03fa
+0x0002a635    a20100       ldx #0x0001
+0x0002a638    8e3101       stx 0x0131
+0x0002a63b    a987         lda #0x87
+0x0002a63d    8544         sta 0x44
+0x0002a63f    60           rts

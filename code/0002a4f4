@@ -1,0 +1,26 @@
+0x0002a4f4    9c9410       stz 0x1094
+0x0002a4f7    a20100       ldx #0x0001
+0x0002a4fa    8ebe10       stx 0x10be
+0x0002a4fd    a20600       ldx #0x0006
+0x0002a500    8ecc10       stx 0x10cc
+0x0002a503    a20100       ldx #0x0001
+0x0002a506    8ed810       stx 0x10d8
+0x0002a509    206fa7       jsr 0xa76f
+0x0002a50c    20eaa7       jsr 0xa7ea
+0x0002a50f    20daa8       jsr 0xa8da
+0x0002a512    c220         rep #0x20
+0x0002a514    ad8e10       lda 0x108e
+0x0002a517    18           clc
+0x0002a518    6d3011       adc 0x1130
+0x0002a51b    8d8e10       sta 0x108e
+0x0002a51e    c220         rep #0x20
+0x0002a520    ad6a10       lda 0x106a
+0x0002a523    c9e0ff       cmp #0xffe0
+0x0002a526    d012         bne 0x02a53a
+0x0002a528    a2d000       ldx #0x00d0
+0x0002a52b    8e7a10       stx 0x107a
+0x0002a52e    eea810       inc 0x10a8
+0x0002a531    a21600       ldx #0x0016
+0x0002a534    8e3011       stx 0x1130
+0x0002a537    9c3211       stz 0x1132
+0x0002a53a    60           rts

@@ -1,0 +1,19 @@
+0x0002a5e3    9c9410       stz 0x1094
+0x0002a5e6    206fa7       jsr 0xa76f
+0x0002a5e9    a20100       ldx #0x0001
+0x0002a5ec    8e9610       stx 0x1096
+0x0002a5ef    2098a7       jsr 0xa798
+0x0002a5f2    20eaa7       jsr 0xa7ea
+0x0002a5f5    2044a8       jsr 0xa844
+0x0002a5f8    20daa8       jsr 0xa8da
+0x0002a5fb    20f2a8       jsr 0xa8f2
+0x0002a5fe    c220         rep #0x20
+0x0002a600    ad8e10       lda 0x108e
+0x0002a603    18           clc
+0x0002a604    691600       adc #0x0016
+0x0002a607    8d8e10       sta 0x108e
+0x0002a60a    ad6a10       lda 0x106a
+0x0002a60d    c9eeff       cmp #0xffee
+0x0002a610    d003         bne 0x02a615
+0x0002a612    eea810       inc 0x10a8
+0x0002a615    60           rts

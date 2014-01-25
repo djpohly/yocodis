@@ -1,0 +1,31 @@
+0x0002a42f    a20100       ldx #0x0001
+0x0002a432    8e9410       stx 0x1094
+0x0002a435    206fa7       jsr 0xa76f
+0x0002a438    20eaa7       jsr 0xa7ea
+0x0002a43b    20daa8       jsr 0xa8da
+0x0002a43e    c220         rep #0x20
+0x0002a440    ad8e10       lda 0x108e
+0x0002a443    18           clc
+0x0002a444    690d00       adc #0x000d
+0x0002a447    8d8e10       sta 0x108e
+0x0002a44a    a20800       ldx #0x0008
+0x0002a44d    8ed010       stx 0x10d0
+0x0002a450    9cda10       stz 0x10da
+0x0002a453    2062a8       jsr 0xa862
+0x0002a456    20f2a8       jsr 0xa8f2
+0x0002a459    c220         rep #0x20
+0x0002a45b    ad9010       lda 0x1090
+0x0002a45e    38           sec
+0x0002a45f    e90600       sbc #0x0006
+0x0002a462    8d9010       sta 0x1090
+0x0002a465    ad6a10       lda 0x106a
+0x0002a468    c95000       cmp #0x0050
+0x0002a46b    d015         bne 0x02a482
+0x0002a46d    eea810       inc 0x10a8
+0x0002a470    a21000       ldx #0x0010
+0x0002a473    8e3011       stx 0x1130
+0x0002a476    a20400       ldx #0x0004
+0x0002a479    8e3211       stx 0x1132
+0x0002a47c    a20f00       ldx #0x000f
+0x0002a47f    8e7a10       stx 0x107a
+0x0002a482    60           rts
