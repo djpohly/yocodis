@@ -1,0 +1,13 @@
+0x000a97cf    c220         rep #0x20
+0x000a97d1    ae0405       ldx 0x0504
+0x000a97d4    a90200       lda #0x0002
+0x000a97d7    9d7c03       sta 0x037c,x
+0x000a97da    203ec1       jsr 0xc13e
+0x000a97dd    8a           txa
+0x000a97de    490200       eor #0x0002
+0x000a97e1    aa           tax
+0x000a97e2    bd6403       lda 0x0364,x
+0x000a97e5    9d6003       sta 0x0360,x
+0x000a97e8    9e6e03       stz 0x036e,x
+0x000a97eb    9ca003       stz 0x03a0
+0x000a97ee    60           rts

@@ -1,0 +1,12 @@
+0x000a9882    ada003       lda 0x03a0
+0x000a9885    d06c         bne 0x0a98f3
+0x000a9887    ad0405       lda 0x0504
+0x000a988a    490200       eor #0x0002
+0x000a988d    aa           tax
+0x000a988e    0a           asl a
+0x000a988f    0a           asl a
+0x000a9890    0a           asl a
+0x000a9891    8500         sta 0x00
+0x000a9893    bd6e03       lda 0x036e,x
+0x000a9896    d003         bne 0x0a989b
+0x000a9898    4ccf97       jmp 0x97cf

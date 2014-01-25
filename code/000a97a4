@@ -1,0 +1,16 @@
+0x000a97a4    ae0405       ldx 0x0504
+0x000a97a7    a90200       lda #0x0002
+0x000a97aa    9d7c03       sta 0x037c,x
+0x000a97ad    8a           txa
+0x000a97ae    d01e         bne 0x0a97ce
+0x000a97b0    ad6403       lda 0x0364
+0x000a97b3    8d6003       sta 0x0360
+0x000a97b6    9c6e03       stz 0x036e
+0x000a97b9    ad6603       lda 0x0366
+0x000a97bc    8d6203       sta 0x0362
+0x000a97bf    9c7003       stz 0x0370
+0x000a97c2    9ca003       stz 0x03a0
+0x000a97c5    9c8603       stz 0x0386
+0x000a97c8    20f6c0       jsr 0xc0f6
+0x000a97cb    20d1c0       jsr 0xc0d1
+0x000a97ce    60           rts

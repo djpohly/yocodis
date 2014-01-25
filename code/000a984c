@@ -1,0 +1,16 @@
+0x000a984c    206ec1       jsr 0xc16e
+0x000a984f    aef203       ldx 0x03f2
+0x000a9852    bf73980a     lda 0x0a9873,x
+0x000a9856    29ff00       and #0x00ff
+0x000a9859    a8           tay
+0x000a985a    18           clc
+0x000a985b    a90000       lda #0x0000
+0x000a985e    6534         adc 0x34
+0x000a9860    88           dey
+0x000a9861    10fb         bpl 0x0a985e
+0x000a9863    ae0405       ldx 0x0504
+0x000a9866    9da203       sta 0x03a2,x
+0x000a9869    a90600       lda #0x0006
+0x000a986c    9d7c03       sta 0x037c,x
+0x000a986f    9ca003       stz 0x03a0
+0x000a9872    60           rts

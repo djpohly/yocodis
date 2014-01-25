@@ -1,0 +1,67 @@
+0x000ac16e    08           php
+0x000ac16f    c220         rep #0x20
+0x000ac171    adf203       lda 0x03f2
+0x000ac174    0a           asl a
+0x000ac175    0a           asl a
+0x000ac176    6df203       adc 0x03f2
+0x000ac179    0a           asl a
+0x000ac17a    aa           tax
+0x000ac17b    20bea1       jsr 0xa1be
+0x000ac17e    8534         sta 0x34
+0x000ac180    0a           asl a
+0x000ac181    0a           asl a
+0x000ac182    6534         adc 0x34
+0x000ac184    0a           asl a
+0x000ac185    6d3e01       adc 0x013e
+0x000ac188    8534         sta 0x34
+0x000ac18a    bf04c20a     lda 0x0ac204,x
+0x000ac18e    38           sec
+0x000ac18f    e534         sbc 0x34
+0x000ac191    8534         sta 0x34
+0x000ac193    8536         sta 0x36
+0x000ac195    228f9600     jsr 0x00968f
+0x000ac199    bf06c20a     lda 0x0ac206,x
+0x000ac19d    8537         sta 0x37
+0x000ac19f    22539600     jsr 0x009653
+0x000ac1a3    a534         lda 0x34
+0x000ac1a5    18           clc
+0x000ac1a6    7f08c20a     adc 0x0ac208,x
+0x000ac1aa    8500         sta 0x00
+0x000ac1ac    ad4b01       lda 0x014b
+0x000ac1af    8534         sta 0x34
+0x000ac1b1    6436         stz 0x36
+0x000ac1b3    bf0ac20a     lda 0x0ac20a,x
+0x000ac1b7    8537         sta 0x37
+0x000ac1b9    22539600     jsr 0x009653
+0x000ac1bd    a534         lda 0x34
+0x000ac1bf    8502         sta 0x02
+0x000ac1c1    ad4801       lda 0x0148
+0x000ac1c4    8534         sta 0x34
+0x000ac1c6    6436         stz 0x36
+0x000ac1c8    bf0cc20a     lda 0x0ac20c,x
+0x000ac1cc    8537         sta 0x37
+0x000ac1ce    22539600     jsr 0x009653
+0x000ac1d2    a534         lda 0x34
+0x000ac1d4    18           clc
+0x000ac1d5    6502         adc 0x02
+0x000ac1d7    8502         sta 0x02
+0x000ac1d9    ad6403       lda 0x0364
+0x000ac1dc    8534         sta 0x34
+0x000ac1de    ad6603       lda 0x0366
+0x000ac1e1    8536         sta 0x36
+0x000ac1e3    228f9600     jsr 0x00968f
+0x000ac1e7    a500         lda 0x00
+0x000ac1e9    18           clc
+0x000ac1ea    6534         adc 0x34
+0x000ac1ec    38           sec
+0x000ac1ed    e502         sbc 0x02
+0x000ac1ef    b003         bcs 0x0ac1f4
+0x000ac1f1    a90000       lda #0x0000
+0x000ac1f4    8534         sta 0x34
+0x000ac1f6    a534         lda 0x34
+0x000ac1f8    c90700       cmp #0x0007
+0x000ac1fb    b003         bcs 0x0ac200
+0x000ac1fd    a90700       lda #0x0007
+0x000ac200    8534         sta 0x34
+0x000ac202    28           plp
+0x000ac203    60           rts

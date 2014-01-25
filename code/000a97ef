@@ -1,0 +1,5 @@
+0x000a97ef    208499       jsr 0x9984
+0x000a97f2    b006         bcs 0x0a97fa
+0x000a97f4    a90300       lda #0x0003
+0x000a97f7    9d7c03       sta 0x037c,x
+0x000a97fa    60           rts

@@ -1,0 +1,13 @@
+0x000a9984    ae0405       ldx 0x0504
+0x000a9987    adb700       lda 0x00b7
+0x000a998a    290080       and #0x8000
+0x000a998d    f003         beq 0x0a9992
+0x000a998f    a90300       lda #0x0003
+0x000a9992    8500         sta 0x00
+0x000a9994    bda203       lda 0x03a2,x
+0x000a9997    18           clc
+0x000a9998    e500         sbc 0x00
+0x000a999a    f006         beq 0x0a99a2
+0x000a999c    9004         bcc 0x0a99a2
+0x000a999e    9da203       sta 0x03a2,x
+0x000a99a1    60           rts

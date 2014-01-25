@@ -1,0 +1,3 @@
+0x000a99a2    9ea203       stz 0x03a2,x
+0x000a99a5    18           clc
+0x000a99a6    60           rts

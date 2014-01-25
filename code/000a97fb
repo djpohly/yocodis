@@ -1,0 +1,20 @@
+0x000a97fb    ada003       lda 0x03a0
+0x000a97fe    d029         bne 0x0a9829
+0x000a9800    ad0405       lda 0x0504
+0x000a9803    490200       eor #0x0002
+0x000a9806    aa           tax
+0x000a9807    bd6403       lda 0x0364,x
+0x000a980a    3a           dec a
+0x000a980b    d008         bne 0x0a9815
+0x000a980d    a00300       ldy #0x0003
+0x000a9810    ad4e01       lda 0x014e
+0x000a9813    f003         beq 0x0a9818
+0x000a9815    2022c2       jsr 0xc222
+0x000a9818    20478f       jsr 0x8f47
+0x000a981b    ae0405       ldx 0x0504
+0x000a981e    a90400       lda #0x0004
+0x000a9821    9d7c03       sta 0x037c,x
+0x000a9824    8a           txa
+0x000a9825    1a           inc a
+0x000a9826    8da003       sta 0x03a0
+0x000a9829    60           rts

@@ -1,0 +1,11 @@
+0x000a98f8    206ec1       jsr 0xc16e
+0x000a98fb    ad0405       lda 0x0504
+0x000a98fe    490200       eor #0x0002
+0x000a9901    aa           tax
+0x000a9902    0a           asl a
+0x000a9903    0a           asl a
+0x000a9904    0a           asl a
+0x000a9905    8500         sta 0x00
+0x000a9907    bd6e03       lda 0x036e,x
+0x000a990a    d003         bne 0x0a990f
+0x000a990c    4ccf97       jmp 0x97cf
