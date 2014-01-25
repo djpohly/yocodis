@@ -1,0 +1,4 @@
+0x0002c0e8    ad2401       lda 0x0124
+0x0002c0eb    d003         bne 0x02c0f0
+0x0002c0ed    ee4608       inc 0x0846
+0x0002c0f0    60           rts

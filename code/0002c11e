@@ -1,0 +1,6 @@
+0x0002c11e    ad2401       lda 0x0124
+0x0002c121    055c         ora 0x5c
+0x0002c123    d006         bne 0x02c12b
+0x0002c125    ee7e07       inc 0x077e
+0x0002c128    ee4608       inc 0x0846
+0x0002c12b    60           rts
