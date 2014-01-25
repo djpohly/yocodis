@@ -1,0 +1,9 @@
+0x000aca0b    a00400       ldy #0x0004
+0x000aca0e    a558         lda 0x58
+0x000aca10    293000       and #0x0030
+0x000aca13    d001         bne 0x0aca16
+0x000aca15    c8           iny
+0x000aca16    98           tya
+0x000aca17    ae0005       ldx 0x0500
+0x000aca1a    9d2609       sta 0x0926,x
+0x000aca1d    60           rts
