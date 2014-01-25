@@ -1,0 +1,16 @@
+0x0002e179    c220         rep #0x20
+0x0002e17b    a95000       lda #0x0050
+0x0002e17e    8f00e47e     sta 0x7ee400
+0x0002e182    a9ff01       lda #0x01ff
+0x0002e185    8f02e47e     sta 0x7ee402
+0x0002e189    a940c0       lda #0xc040
+0x0002e18c    8f04e47e     sta 0x7ee404
+0x0002e190    e220         sep #0x20
+0x0002e192    a20000       ldx #0x0000
+0x0002e195    8e8111       stx 0x1181
+0x0002e198    a20000       ldx #0x0000
+0x0002e19b    8e8511       stx 0x1185
+0x0002e19e    a980         lda #0x80
+0x0002e1a0    8d140d       sta 0x0d14
+0x0002e1a3    eea810       inc 0x10a8
+0x0002e1a6    60           rts

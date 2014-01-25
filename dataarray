@@ -1,0 +1,18 @@
+#!/bin/bash
+
+stride=$1
+stridehex=$((stride*2))
+
+bytes=
+ofs=
+while read a b i; do
+	ofs=${ofs:-$a}
+	bytes=$bytes$b
+done
+
+seg=$(rax2 0x${ofs%%/*})
+ofs=$(rax2 0x${ofs#*/})
+for i in $(seq 0 $stridehex $((${#bytes} - 1))); do
+	printf '  %02x/%04x    %s\n' $seg $ofs ${bytes:$i:$stridehex}
+	let ofs+=stride
+done
