@@ -1,0 +1,5 @@
+0x0002d37b    e220         sep #0x20
+0x0002d37d    ae8c10       ldx 0x108c
+0x0002d380    bf88d302     lda 0x02d388,x
+0x0002d384    8d9210       sta 0x1092
+0x0002d387    60           rts

@@ -1,0 +1,22 @@
+0x0002d276    9c9810       stz 0x1098
+0x0002d279    20c1a7       jsr 0xa7c1
+0x0002d27c    20bca8       jsr 0xa8bc
+0x0002d27f    207bd3       jsr 0xd37b
+0x0002d282    a21b00       ldx #0x001b
+0x0002d285    8e8e10       stx 0x108e
+0x0002d288    c220         rep #0x20
+0x0002d28a    9c9410       stz 0x1094
+0x0002d28d    a558         lda 0x58
+0x0002d28f    890100       bit #0x0001
+0x0002d292    d01f         bne 0x02d2b3
+0x0002d294    ee7a10       inc 0x107a
+0x0002d297    ae7a10       ldx 0x107a
+0x0002d29a    e220         sep #0x20
+0x0002d29c    bfb4d202     lda 0x02d2b4,x
+0x0002d2a0    f00e         beq 0x02d2b0
+0x0002d2a2    8d0610       sta 0x1006
+0x0002d2a5    ad6c10       lda 0x106c
+0x0002d2a8    38           sec
+0x0002d2a9    ed0610       sbc 0x1006
+0x0002d2ac    8d6c10       sta 0x106c
+0x0002d2af    60           rts
