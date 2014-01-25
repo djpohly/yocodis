@@ -1,0 +1,9 @@
+0x0002d75f    c220         rep #0x20
+0x0002d761    20e2d7       jsr 0xd7e2
+0x0002d764    204ed8       jsr 0xd84e
+0x0002d767    2022d8       jsr 0xd822
+0x0002d76a    2074d8       jsr 0xd874
+0x0002d76d    20c9d8       jsr 0xd8c9
+0x0002d770    20f1d8       jsr 0xd8f1
+0x0002d773    e220         sep #0x20
+0x0002d775    60           rts

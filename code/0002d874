@@ -1,0 +1,32 @@
+0x0002d874    c220         rep #0x20
+0x0002d876    ad060c       lda 0x0c06
+0x0002d879    c90000       cmp #0x0000
+0x0002d87c    d045         bne 0x02d8c3
+0x0002d87e    a9ffff       lda #0xffff
+0x0002d881    8d060c       sta 0x0c06
+0x0002d884    ad2e0d       lda 0x0d2e
+0x0002d887    c9c000       cmp #0x00c0
+0x0002d88a    f021         beq 0x02d8ad
+0x0002d88c    e220         sep #0x20
+0x0002d88e    18           clc
+0x0002d88f    ad320d       lda 0x0d32
+0x0002d892    6902         adc #0x02
+0x0002d894    8d320d       sta 0x0d32
+0x0002d897    ad330d       lda 0x0d33
+0x0002d89a    6900         adc #0x00
+0x0002d89c    8d330d       sta 0x0d33
+0x0002d89f    c220         rep #0x20
+0x0002d8a1    38           sec
+0x0002d8a2    ad2e0d       lda 0x0d2e
+0x0002d8a5    e90200       sbc #0x0002
+0x0002d8a8    8d2e0d       sta 0x0d2e
+0x0002d8ab    e220         sep #0x20
+0x0002d8ad    ad320d       lda 0x0d32
+0x0002d8b0    8f04ec7e     sta 0x7eec04
+0x0002d8b4    8f07ec7e     sta 0x7eec07
+0x0002d8b8    ad330d       lda 0x0d33
+0x0002d8bb    8f05ec7e     sta 0x7eec05
+0x0002d8bf    8f08ec7e     sta 0x7eec08
+0x0002d8c3    c220         rep #0x20
+0x0002d8c5    ee060c       inc 0x0c06
+0x0002d8c8    60           rts

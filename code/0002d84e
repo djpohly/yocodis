@@ -1,0 +1,16 @@
+0x0002d84e    c220         rep #0x20
+0x0002d850    ad2e0d       lda 0x0d2e
+0x0002d853    c90001       cmp #0x0100
+0x0002d856    d009         bne 0x02d861
+0x0002d858    e220         sep #0x20
+0x0002d85a    a980         lda #0x80
+0x0002d85c    8d160d       sta 0x0d16
+0x0002d85f    c220         rep #0x20
+0x0002d861    ad2e0d       lda 0x0d2e
+0x0002d864    c9c000       cmp #0x00c0
+0x0002d867    d00a         bne 0x02d873
+0x0002d869    ee220d       inc 0x0d22
+0x0002d86c    e220         sep #0x20
+0x0002d86e    eea810       inc 0x10a8
+0x0002d871    c220         rep #0x20
+0x0002d873    60           rts

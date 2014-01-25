@@ -1,0 +1,14 @@
+0x0002d60d    c220         rep #0x20
+0x0002d60f    ee7210       inc 0x1072
+0x0002d612    ee7210       inc 0x1072
+0x0002d615    ee7210       inc 0x1072
+0x0002d618    ee0410       inc 0x1004
+0x0002d61b    ad0410       lda 0x1004
+0x0002d61e    c90700       cmp #0x0007
+0x0002d621    d003         bne 0x02d626
+0x0002d623    9c8511       stz 0x1185
+0x0002d626    a558         lda 0x58
+0x0002d628    890300       bit #0x0003
+0x0002d62b    d003         bne 0x02d630
+0x0002d62d    ce7410       dec 0x1074
+0x0002d630    60           rts
