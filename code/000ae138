@@ -1,0 +1,8 @@
+0x000ae138    ad500a       lda 0x0a50
+0x000ae13b    d091         bne 0x0ae0ce
+0x000ae13d    ad6c01       lda 0x016c
+0x000ae140    d00a         bne 0x0ae14c
+0x000ae142    22938500     jsr 0x008593
+0x000ae146    29fc00       and #0x00fc
+0x000ae149    f083         beq 0x0ae0ce
+0x000ae14b    60           rts

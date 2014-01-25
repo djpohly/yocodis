@@ -1,0 +1,6 @@
+0x000ae128    a90d00       lda #0x000d
+0x000ae12b    8dbc01       sta 0x01bc
+0x000ae12e    a90200       lda #0x0002
+0x000ae131    8d5c01       sta 0x015c
+0x000ae134    2065e5       jsr 0xe565
+0x000ae137    60           rts

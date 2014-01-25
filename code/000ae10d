@@ -1,0 +1,5 @@
+0x000ae10d    ad500a       lda 0x0a50
+0x000ae110    d0bc         bne 0x0ae0ce
+0x000ae112    ad6c01       lda 0x016c
+0x000ae115    d035         bne 0x0ae14c
+0x000ae117    80b5         bra 0x0ae0ce
