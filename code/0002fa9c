@@ -1,0 +1,5 @@
+0x0002fa9c    a00300       ldy #0x0003
+0x0002fa9f    a60c         ldx 0x0c
+0x0002faa1    bf50fa02     lda 0x02fa50,x
+0x0002faa5    29ff00       and #0x00ff
+0x0002faa8    8094         bra 0x02fa3e
