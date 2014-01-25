@@ -1,0 +1,8 @@
+0x000ad5eb    ae0005       ldx 0x0500
+0x000ad5ee    bd6009       lda 0x0960,x
+0x000ad5f1    300b         bmi 0x0ad5fe
+0x000ad5f3    29ff00       and #0x00ff
+0x000ad5f6    0a           asl a
+0x000ad5f7    aa           tax
+0x000ad5f8    f4fdd5       pea 0xd5fd
+0x000ad5fb    7cffd5       jmp (0xd5ff,x)
