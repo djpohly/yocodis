@@ -1,0 +1,7 @@
+0x0002eae0    c220         rep #0x20
+0x0002eae2    a90008       lda #0x0800
+0x0002eae5    a20068       ldx #0x6800
+0x0002eae8    a00064       ldy #0x6400
+0x0002eaeb    227b8e00     jsr 0x008e7b
+0x0002eaef    eea810       inc 0x10a8
+0x0002eaf2    60           rts

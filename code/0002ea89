@@ -1,0 +1,11 @@
+0x0002ea89    c220         rep #0x20
+0x0002ea8b    ad8700       lda 0x0087
+0x0002ea8e    c90001       cmp #0x0100
+0x0002ea91    9012         bcc 0x02eaa5
+0x0002ea93    c91001       cmp #0x0110
+0x0002ea96    b00d         bcs 0x02eaa5
+0x0002ea98    eea810       inc 0x10a8
+0x0002ea9b    9c8500       stz 0x0085
+0x0002ea9e    a20001       ldx #0x0100
+0x0002eaa1    8e8700       stx 0x0087
+0x0002eaa4    60           rts

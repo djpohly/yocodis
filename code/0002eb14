@@ -1,0 +1,2 @@
+0x0002eb14    2021ea       jsr 0xea21
+0x0002eb17    60           rts

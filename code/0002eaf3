@@ -1,0 +1,7 @@
+0x0002eaf3    c220         rep #0x20
+0x0002eaf5    ad9d00       lda 0x009d
+0x0002eaf8    f006         beq 0x02eb00
+0x0002eafa    e220         sep #0x20
+0x0002eafc    a90a         lda #0x0a
+0x0002eafe    8545         sta 0x45
+0x0002eb00    60           rts

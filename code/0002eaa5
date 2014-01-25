@@ -1,0 +1,7 @@
+0x0002eaa5    ee8700       inc 0x0087
+0x0002eaa8    ad2601       lda 0x0126
+0x0002eaab    29ff00       and #0x00ff
+0x0002eaae    c91000       cmp #0x0010
+0x0002eab1    9004         bcc 0x02eab7
+0x0002eab3    22a48a00     jsr 0x008aa4
+0x0002eab7    60           rts
