@@ -1,0 +1,2 @@
+0x000afaef    a90000       lda #0x0000
+0x000afaf2    8008         bra 0x0afafc

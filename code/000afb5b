@@ -1,0 +1,2 @@
+0x000afb5b    9c2409       stz 0x0924
+0x000afb5e    60           rts

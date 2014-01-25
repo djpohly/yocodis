@@ -1,0 +1,9 @@
+0x000afaf9    a90200       lda #0x0002
+0x000afafc    8d2809       sta 0x0928
+0x000afaff    a91000       lda #0x0010
+0x000afb02    8d2e09       sta 0x092e
+0x000afb05    a90500       lda #0x0005
+0x000afb08    8d2409       sta 0x0924
+0x000afb0b    a90d00       lda #0x000d
+0x000afb0e    2230820d     jsr 0x0d8230
+0x000afb12    60           rts

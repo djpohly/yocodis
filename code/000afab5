@@ -1,0 +1,8 @@
+0x000afab5    a90400       lda #0x0004
+0x000afab8    8d2409       sta 0x0924
+0x000afabb    9c2609       stz 0x0926
+0x000afabe    9c2a09       stz 0x092a
+0x000afac1    9c2c09       stz 0x092c
+0x000afac4    9c2809       stz 0x0928
+0x000afac7    9c2e09       stz 0x092e
+0x000afaca    60           rts
