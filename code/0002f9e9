@@ -1,0 +1,8 @@
+0x0002f9e9    bd4411       lda 0x1144,x
+0x0002f9ec    1a           inc a
+0x0002f9ed    c90300       cmp #0x0003
+0x0002f9f0    b0f6         bcs 0x02f9e8
+0x0002f9f2    9d4411       sta 0x1144,x
+0x0002f9f5    a90700       lda #0x0007
+0x0002f9f8    2230820d     jsr 0x0d8230
+0x0002f9fc    60           rts

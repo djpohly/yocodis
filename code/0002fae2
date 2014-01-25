@@ -1,0 +1,6 @@
+0x0002fae2    08           php
+0x0002fae3    da           phx
+0x0002fae4    e220         sep #0x20
+0x0002fae6    bb           tyx
+0x0002fae7    18           clc
+0x0002fae8    8005         bra 0x02faef

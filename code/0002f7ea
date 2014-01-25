@@ -1,0 +1,17 @@
+0x0002f7ea    ae0005       ldx 0x0500
+0x0002f7ed    fe3c11       inc 0x113c,x
+0x0002f7f0    9e3e11       stz 0x113e,x
+0x0002f7f3    9e4211       stz 0x1142,x
+0x0002f7f6    9e4411       stz 0x1144,x
+0x0002f7f9    9e4a11       stz 0x114a,x
+0x0002f7fc    9e4c11       stz 0x114c,x
+0x0002f7ff    9e4e11       stz 0x114e,x
+0x0002f802    9e5011       stz 0x1150,x
+0x0002f805    8a           txa
+0x0002f806    f001         beq 0x02f809
+0x0002f808    1a           inc a
+0x0002f809    1a           inc a
+0x0002f80a    20b9fb       jsr 0xfbb9
+0x0002f80d    20eefb       jsr 0xfbee
+0x0002f810    20effb       jsr 0xfbef
+0x0002f813    60           rts

@@ -1,0 +1,10 @@
+0x0002f86b    ae0005       ldx 0x0500
+0x0002f86e    fe3c11       inc 0x113c,x
+0x0002f871    9e4211       stz 0x1142,x
+0x0002f874    a90300       lda #0x0003
+0x0002f877    9b           txy
+0x0002f878    f001         beq 0x02f87b
+0x0002f87a    1a           inc a
+0x0002f87b    20b9fb       jsr 0xfbb9
+0x0002f87e    2022fc       jsr 0xfc22
+0x0002f881    60           rts

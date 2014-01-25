@@ -1,0 +1,13 @@
+0x0002f7c5    ae0005       ldx 0x0500
+0x0002f7c8    fe3c11       inc 0x113c,x
+0x0002f7cb    9e3e11       stz 0x113e,x
+0x0002f7ce    9e4211       stz 0x1142,x
+0x0002f7d1    9e4411       stz 0x1144,x
+0x0002f7d4    9e4a11       stz 0x114a,x
+0x0002f7d7    9e4c11       stz 0x114c,x
+0x0002f7da    9e4e11       stz 0x114e,x
+0x0002f7dd    9e5011       stz 0x1150,x
+0x0002f7e0    a91c1c       lda #0x1c1c
+0x0002f7e3    9d4611       sta 0x1146,x
+0x0002f7e6    9d4811       sta 0x1148,x
+0x0002f7e9    60           rts

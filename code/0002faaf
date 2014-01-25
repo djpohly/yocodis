@@ -1,0 +1,17 @@
+0x0002faaf    ae0005       ldx 0x0500
+0x0002fab2    a91c1c       lda #0x1c1c
+0x0002fab5    dd4611       cmp 0x1146,x
+0x0002fab8    d014         bne 0x02face
+0x0002faba    dd4711       cmp 0x1147,x
+0x0002fabd    d00f         bne 0x02face
+0x0002fabf    2013fb       jsr 0xfb13
+0x0002fac2    ae0005       ldx 0x0500
+0x0002fac5    bd4211       lda 0x1142,x
+0x0002fac8    090040       ora #0x4000
+0x0002facb    9d4211       sta 0x1142,x
+0x0002face    ae0005       ldx 0x0500
+0x0002fad1    bd4211       lda 0x1142,x
+0x0002fad4    090080       ora #0x8000
+0x0002fad7    9d4211       sta 0x1142,x
+0x0002fada    fe3c11       inc 0x113c,x
+0x0002fadd    60           rts

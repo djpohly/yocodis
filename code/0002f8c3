@@ -1,0 +1,9 @@
+0x0002f8c3    890080       bit #0x8000
+0x0002f8c6    f013         beq 0x02f8db
+0x0002f8c8    9e3e11       stz 0x113e,x
+0x0002f8cb    9e4211       stz 0x1142,x
+0x0002f8ce    a90100       lda #0x0001
+0x0002f8d1    9d3c11       sta 0x113c,x
+0x0002f8d4    a91300       lda #0x0013
+0x0002f8d7    2230820d     jsr 0x0d8230
+0x0002f8db    60           rts

@@ -1,0 +1,6 @@
+0x0002f85a    ae0005       ldx 0x0500
+0x0002f85d    fe3e11       inc 0x113e,x
+0x0002f860    fe3c11       inc 0x113c,x
+0x0002f863    a91300       lda #0x0013
+0x0002f866    2230820d     jsr 0x0d8230
+0x0002f86a    60           rts
