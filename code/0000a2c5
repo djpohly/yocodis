@@ -1,0 +1,5 @@
+0x0000a2c5    a00008       ldy #0x0800
+0x0000a2c8    a94f00       lda #0x004f
+0x0000a2cb    22688b00     jsr 0x008b68
+0x0000a2cf    ee4608       inc 0x0846
+0x0000a2d2    60           rts

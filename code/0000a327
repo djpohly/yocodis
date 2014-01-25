@@ -1,0 +1,13 @@
+0x0000a327    9f00687e     sta 0x7e6800,x
+0x0000a32b    091000       ora #0x0010
+0x0000a32e    9f40687e     sta 0x7e6840,x
+0x0000a332    e8           inx
+0x0000a333    e8           inx
+0x0000a334    c8           iny
+0x0000a335    c8           iny
+0x0000a336    c6de         dec 0xde
+0x0000a338    d0d9         bne 0x00a313
+0x0000a33a    2c4a08       bit 0x084a
+0x0000a33d    10ac         bpl 0x00a2eb
+0x0000a33f    ee4608       inc 0x0846
+0x0000a342    60           rts

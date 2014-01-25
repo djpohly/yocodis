@@ -1,0 +1,7 @@
+0x00008b6a    9f00007e     sta 0x7e0000,x
+0x00008b6e    e8           inx
+0x00008b6f    e8           inx
+0x00008b70    88           dey
+0x00008b71    88           dey
+0x00008b72    10f6         bpl 0x008b6a
+0x00008b74    6b           rtl

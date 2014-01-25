@@ -1,3 +1,6 @@
 #!/bin/bash
 
+echo
+echo '; jumptable'
 sed 's,^  \(..\)/\(....\)    \(..\)\(..\).*,  \1/\2    \3\4         .da \1/\4\3,'
+echo
