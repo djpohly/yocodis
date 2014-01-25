@@ -1,0 +1,8 @@
+0x000ad6bc    b9001b       lda 0x1b00,y
+0x000ad6bf    990019       sta 0x1900,y
+0x000ad6c2    c8           iny
+0x000ad6c3    c8           iny
+0x000ad6c4    c602         dec 0x02
+0x000ad6c6    10f4         bpl 0x0ad6bc
+0x000ad6c8    ee0001       inc 0x0100
+0x000ad6cb    60           rts

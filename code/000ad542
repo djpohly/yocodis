@@ -1,0 +1,5 @@
+0x000ad542    ae0005       ldx 0x0500
+0x000ad545    a97800       lda #0x0078
+0x000ad548    9d6209       sta 0x0962,x
+0x000ad54b    fe6009       inc 0x0960,x
+0x000ad54e    60           rts
