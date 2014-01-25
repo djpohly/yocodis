@@ -1,0 +1,10 @@
+0x0002dabf    c220         rep #0x20
+0x0002dac1    ad7d00       lda 0x007d
+0x0002dac4    18           clc
+0x0002dac5    6d6a10       adc 0x106a
+0x0002dac8    4a           lsr a
+0x0002dac9    4a           lsr a
+0x0002daca    18           clc
+0x0002dacb    695100       adc #0x0051
+0x0002dace    8d6c10       sta 0x106c
+0x0002dad1    60           rts

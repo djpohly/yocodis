@@ -1,0 +1,6 @@
+0x0002dab2    c220         rep #0x20
+0x0002dab4    a558         lda 0x58
+0x0002dab6    890300       bit #0x0003
+0x0002dab9    d003         bne 0x02dabe
+0x0002dabb    ee7410       inc 0x1074
+0x0002dabe    60           rts
