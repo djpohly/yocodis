@@ -1,0 +1,11 @@
+0x0002bcec    08           php
+0x0002bced    c220         rep #0x20
+0x0002bcef    48           pha
+0x0002bcf0    a94f00       lda #0x004f
+0x0002bcf3    a20060       ldx #0x6000
+0x0002bcf6    a00007       ldy #0x0700
+0x0002bcf9    22688b00     jsr 0x008b68
+0x0002bcfd    68           pla
+0x0002bcfe    20b9fb       jsr 0xfbb9
+0x0002bd01    28           plp
+0x0002bd02    60           rts

@@ -1,0 +1,5 @@
+0x0002bf6e    ad2401       lda 0x0124
+0x0002bf71    d006         bne 0x02bf79
+0x0002bf73    9c4808       stz 0x0848
+0x0002bf76    ee4608       inc 0x0846
+0x0002bf79    60           rts

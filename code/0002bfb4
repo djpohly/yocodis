@@ -1,0 +1,3 @@
+0x0002bfb4    9c4808       stz 0x0848
+0x0002bfb7    ee4608       inc 0x0846
+0x0002bfba    60           rts

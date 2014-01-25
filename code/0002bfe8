@@ -1,0 +1,5 @@
+0x0002bfe8    a59d         lda 0x9d
+0x0002bfea    298010       and #0x1080
+0x0002bfed    f003         beq 0x02bff2
+0x0002bfef    ee4608       inc 0x0846
+0x0002bff2    60           rts

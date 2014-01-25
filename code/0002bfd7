@@ -1,0 +1,7 @@
+0x0002bfd7    ad4808       lda 0x0848
+0x0002bfda    18           clc
+0x0002bfdb    691200       adc #0x0012
+0x0002bfde    20ecbc       jsr 0xbcec
+0x0002bfe1    ee4808       inc 0x0848
+0x0002bfe4    ee4608       inc 0x0846
+0x0002bfe7    60           rts

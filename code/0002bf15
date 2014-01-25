@@ -1,0 +1,17 @@
+0x0002bf15    a20600       ldx #0x0006
+0x0002bf18    9e0819       stz 0x1908,x
+0x0002bf1b    ca           dex
+0x0002bf1c    ca           dex
+0x0002bf1d    10f9         bpl 0x02bf18
+0x0002bf1f    a27e00       ldx #0x007e
+0x0002bf22    9e001a       stz 0x1a00,x
+0x0002bf25    ca           dex
+0x0002bf26    ca           dex
+0x0002bf27    10f9         bpl 0x02bf22
+0x0002bf29    ee0001       inc 0x0100
+0x0002bf2c    a91e00       lda #0x001e
+0x0002bf2f    855c         sta 0x5c
+0x0002bf31    ee4608       inc 0x0846
+0x0002bf34    e220         sep #0x20
+0x0002bf36    6467         stz 0x67
+0x0002bf38    60           rts
