@@ -1,0 +1,13 @@
+0x0002e9d3    e220         sep #0x20
+0x0002e9d5    a900         lda #0x00
+0x0002e9d7    8f00e87e     sta 0x7ee800
+0x0002e9db    a20100       ldx #0x0001
+0x0002e9de    8e8111       stx 0x1181
+0x0002e9e1    a20100       ldx #0x0001
+0x0002e9e4    8e8311       stx 0x1183
+0x0002e9e7    a20100       ldx #0x0001
+0x0002e9ea    8e8511       stx 0x1185
+0x0002e9ed    9c140d       stz 0x0d14
+0x0002e9f0    9c150d       stz 0x0d15
+0x0002e9f3    eea810       inc 0x10a8
+0x0002e9f6    60           rts

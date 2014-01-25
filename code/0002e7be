@@ -1,0 +1,11 @@
+0x0002e7be    c220         rep #0x20
+0x0002e7c0    ce7a10       dec 0x107a
+0x0002e7c3    1003         bpl 0x02e7c8
+0x0002e7c5    eea810       inc 0x10a8
+0x0002e7c8    206fa7       jsr 0xa76f
+0x0002e7cb    20eaa7       jsr 0xa7ea
+0x0002e7ce    20fbca       jsr 0xcafb
+0x0002e7d1    2098a7       jsr 0xa798
+0x0002e7d4    2044a8       jsr 0xa844
+0x0002e7d7    2094d6       jsr 0xd694
+0x0002e7da    60           rts

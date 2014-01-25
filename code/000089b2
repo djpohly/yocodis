@@ -1,0 +1,11 @@
+0x000089b2    08           php
+0x000089b3    e220         sep #0x20
+0x000089b5    8e8121       stx 0x2181
+0x000089b8    2901         and #0x01
+0x000089ba    8d8321       sta 0x2183
+0x000089bd    eb           swa
+0x000089be    8d8021       sta 0x2180
+0x000089c1    88           dey
+0x000089c2    d0fa         bne 0x0089be
+0x000089c4    28           plp
+0x000089c5    6b           rtl
