@@ -1,0 +1,29 @@
+0x0002f668    e220         sep #0x20
+0x0002f66a    6400         stz 0x00
+0x0002f66c    a20500       ldx #0x0005
+0x0002f66f    b538         lda 0x38,x
+0x0002f671    18           clc
+0x0002f672    6500         adc 0x00
+0x0002f674    8500         sta 0x00
+0x0002f676    ca           dex
+0x0002f677    10f6         bpl 0x02f66f
+0x0002f679    a500         lda 0x00
+0x0002f67b    2907         and #0x07
+0x0002f67d    0a           asl a
+0x0002f67e    0a           asl a
+0x0002f67f    053d         ora 0x3d
+0x0002f681    853d         sta 0x3d
+0x0002f683    a500         lda 0x00
+0x0002f685    2938         and #0x38
+0x0002f687    4a           lsr a
+0x0002f688    4a           lsr a
+0x0002f689    4a           lsr a
+0x0002f68a    8dab11       sta 0x11ab
+0x0002f68d    c220         rep #0x20
+0x0002f68f    a63c         ldx 0x3c
+0x0002f691    8ea911       stx 0x11a9
+0x0002f694    a63a         ldx 0x3a
+0x0002f696    8ea711       stx 0x11a7
+0x0002f699    a638         ldx 0x38
+0x0002f69b    8ea511       stx 0x11a5
+0x0002f69e    60           rts

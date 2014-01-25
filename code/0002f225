@@ -1,0 +1,5 @@
+0x0002f225    ce4a11       dec 0x114a
+0x0002f228    1006         bpl 0x02f230
+0x0002f22a    a22a00       ldx #0x002a
+0x0002f22d    8e4a11       stx 0x114a
+0x0002f230    60           rts

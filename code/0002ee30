@@ -1,0 +1,12 @@
+0x0002ee30    ad0402       lda 0x0204
+0x0002ee33    8500         sta 0x00
+0x0002ee35    a93000       lda #0x0030
+0x0002ee38    8504         sta 0x04
+0x0002ee3a    a90200       lda #0x0002
+0x0002ee3d    8506         sta 0x06
+0x0002ee3f    ad0802       lda 0x0208
+0x0002ee42    22629700     jsr 0x009762
+0x0002ee46    8d0402       sta 0x0204
+0x0002ee49    b003         bcs 0x02ee4e
+0x0002ee4b    9c0802       stz 0x0208
+0x0002ee4e    60           rts

@@ -1,0 +1,2 @@
+0x0002edc0    ee7610       inc 0x1076
+0x0002edc3    60           rts

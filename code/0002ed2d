@@ -1,0 +1,4 @@
+0x0002ed2d    206fef       jsr 0xef6f
+0x0002ed30    a20300       ldx #0x0003
+0x0002ed33    8e7610       stx 0x1076
+0x0002ed36    60           rts

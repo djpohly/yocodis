@@ -1,0 +1,12 @@
+0x0002ed37    a59d         lda 0x9d
+0x0002ed39    290080       and #0x8000
+0x0002ed3c    d017         bne 0x02ed55
+0x0002ed3e    2087f1       jsr 0xf187
+0x0002ed41    ad9c11       lda 0x119c
+0x0002ed44    d00b         bne 0x02ed51
+0x0002ed46    2031f2       jsr 0xf231
+0x0002ed49    ad9c11       lda 0x119c
+0x0002ed4c    d003         bne 0x02ed51
+0x0002ed4e    207cf2       jsr 0xf27c
+0x0002ed51    9c9c11       stz 0x119c
+0x0002ed54    60           rts

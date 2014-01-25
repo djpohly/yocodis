@@ -1,0 +1,11 @@
+0x0002f711    e220         sep #0x20
+0x0002f713    a00600       ldy #0x0006
+0x0002f716    a900         lda #0x00
+0x0002f718    eb           swa
+0x0002f719    b9a511       lda 0x11a5,y
+0x0002f71c    aa           tax
+0x0002f71d    98           tya
+0x0002f71e    8901         bit #0x01
+0x0002f720    d006         bne 0x02f728
+0x0002f722    bf33f702     lda 0x02f733,x
+0x0002f726    8004         bra 0x02f72c

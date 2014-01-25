@@ -1,0 +1,7 @@
+0x0002eede    e220         sep #0x20
+0x0002eee0    a562         lda 0x62
+0x0002eee2    d007         bne 0x02eeeb
+0x0002eee4    2018f1       jsr 0xf118
+0x0002eee7    a993         lda #0x93
+0x0002eee9    8544         sta 0x44
+0x0002eeeb    60           rts

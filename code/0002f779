@@ -1,0 +1,5 @@
+0x0002f779    2038f6       jsr 0xf638
+0x0002f77c    2095f4       jsr 0xf495
+0x0002f77f    2068f6       jsr 0xf668
+0x0002f782    2011f7       jsr 0xf711
+0x0002f785    6b           rtl

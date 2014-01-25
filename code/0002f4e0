@@ -1,0 +1,7 @@
+0x0002f4e0    a534         lda 0x34
+0x0002f4e2    38           sec
+0x0002f4e3    e9c904       sbc #0x04c9
+0x0002f4e6    9006         bcc 0x02f4ee
+0x0002f4e8    e63a         inc 0x3a
+0x0002f4ea    8534         sta 0x34
+0x0002f4ec    80f5         bra 0x02f4e3

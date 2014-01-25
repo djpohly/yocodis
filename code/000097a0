@@ -1,0 +1,6 @@
+0x000097a0    0a           asl a
+0x000097a1    0a           asl a
+0x000097a2    29000c       and #0x0c00
+0x000097a5    d004         bne 0x0097ab
+0x000097a7    a500         lda 0x00
+0x000097a9    80d6         bra 0x009781

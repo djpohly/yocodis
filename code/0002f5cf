@@ -1,0 +1,11 @@
+0x0002f5cf    c220         rep #0x20
+0x0002f5d1    ada911       lda 0x11a9
+0x0002f5d4    29ff03       and #0x03ff
+0x0002f5d7    853c         sta 0x3c
+0x0002f5d9    aea711       ldx 0x11a7
+0x0002f5dc    863a         stx 0x3a
+0x0002f5de    aea511       ldx 0x11a5
+0x0002f5e1    8638         stx 0x38
+0x0002f5e3    2004f5       jsr 0xf504
+0x0002f5e6    20eaf5       jsr 0xf5ea
+0x0002f5e9    60           rts

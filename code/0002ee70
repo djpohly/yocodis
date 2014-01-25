@@ -1,0 +1,11 @@
+0x0002ee70    a91500       lda #0x0015
+0x0002ee73    8d0602       sta 0x0206
+0x0002ee76    ad0202       lda 0x0202
+0x0002ee79    8500         sta 0x00
+0x0002ee7b    a599         lda 0x99
+0x0002ee7d    22a09700     jsr 0x0097a0
+0x0002ee81    8d0202       sta 0x0202
+0x0002ee84    2017f0       jsr 0xf017
+0x0002ee87    a90700       lda #0x0007
+0x0002ee8a    2230820d     jsr 0x0d8230
+0x0002ee8e    60           rts

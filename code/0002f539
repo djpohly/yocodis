@@ -1,0 +1,11 @@
+0x0002f539    e63c         inc 0x3c
+0x0002f53b    c63b         dec 0x3b
+0x0002f53d    3011         bmi 0x02f550
+0x0002f53f    a534         lda 0x34
+0x0002f541    18           clc
+0x0002f542    697ba7       adc #0xa77b
+0x0002f545    8534         sta 0x34
+0x0002f547    a536         lda 0x36
+0x0002f549    690000       adc #0x0000
+0x0002f54c    8536         sta 0x36
+0x0002f54e    80eb         bra 0x02f53b

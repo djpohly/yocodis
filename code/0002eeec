@@ -1,0 +1,19 @@
+0x0002eeec    ad0402       lda 0x0204
+0x0002eeef    f003         beq 0x02eef4
+0x0002eef1    a90100       lda #0x0001
+0x0002eef4    8dfa10       sta 0x10fa
+0x0002eef7    ad0202       lda 0x0202
+0x0002eefa    c90a00       cmp #0x000a
+0x0002eefd    f01e         beq 0x02ef1d
+0x0002eeff    8d3c01       sta 0x013c
+0x0002ef02    8dfc10       sta 0x10fc
+0x0002ef05    9c3e01       stz 0x013e
+0x0002ef08    9cfe10       stz 0x10fe
+0x0002ef0b    9cc201       stz 0x01c2
+0x0002ef0e    9cc401       stz 0x01c4
+0x0002ef11    2279f702     jsr 0x02f779
+0x0002ef15    e220         sep #0x20
+0x0002ef17    a902         lda #0x02
+0x0002ef19    8545         sta 0x45
+0x0002ef1b    18           clc
+0x0002ef1c    60           rts

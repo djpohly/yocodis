@@ -1,0 +1,6 @@
+0x0002f231    c220         rep #0x20
+0x0002f233    a59d         lda 0x9d
+0x0002f235    897040       bit #0x4070
+0x0002f238    d004         bne 0x02f23e
+0x0002f23a    9c9c11       stz 0x119c
+0x0002f23d    60           rts

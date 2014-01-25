@@ -1,0 +1,39 @@
+0x00008ef4    08           php
+0x00008ef5    8b           phb
+0x00008ef6    e220         sep #0x20
+0x00008ef8    a5dc         lda 0xdc
+0x00008efa    48           pha
+0x00008efb    ab           plb
+0x00008efc    a6da         ldx 0xda
+0x00008efe    c220         rep #0x20
+0x00008f00    a5df         lda 0xdf
+0x00008f02    293f00       and #0x003f
+0x00008f05    8512         sta 0x12
+0x00008f07    a00000       ldy #0x0000
+0x00008f0a    da           phx
+0x00008f0b    5a           phy
+0x00008f0c    a5de         lda 0xde
+0x00008f0e    293f00       and #0x003f
+0x00008f11    8510         sta 0x10
+0x00008f13    b7d6         lda [0xd6],y
+0x00008f15    45e0         eor 0xe0
+0x00008f17    9d0000       sta 0x0000,x
+0x00008f1a    c8           iny
+0x00008f1b    c8           iny
+0x00008f1c    e8           inx
+0x00008f1d    e8           inx
+0x00008f1e    c610         dec 0x10
+0x00008f20    d0f1         bne 0x008f13
+0x00008f22    68           pla
+0x00008f23    18           clc
+0x00008f24    694000       adc #0x0040
+0x00008f27    a8           tay
+0x00008f28    68           pla
+0x00008f29    18           clc
+0x00008f2a    694000       adc #0x0040
+0x00008f2d    aa           tax
+0x00008f2e    c612         dec 0x12
+0x00008f30    d0d8         bne 0x008f0a
+0x00008f32    ab           plb
+0x00008f33    28           plp
+0x00008f34    6b           rtl

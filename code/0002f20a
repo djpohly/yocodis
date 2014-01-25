@@ -1,0 +1,5 @@
+0x0002f20a    c92b00       cmp #0x002b
+0x0002f20d    9003         bcc 0x02f212
+0x0002f20f    a92a00       lda #0x002a
+0x0002f212    8d4a11       sta 0x114a
+0x0002f215    60           rts

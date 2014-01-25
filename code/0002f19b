@@ -1,0 +1,6 @@
+0x0002f19b    e220         sep #0x20
+0x0002f19d    a20100       ldx #0x0001
+0x0002f1a0    8e9c11       stx 0x119c
+0x0002f1a3    ce7c11       dec 0x117c
+0x0002f1a6    3001         bmi 0x02f1a9
+0x0002f1a8    60           rts
