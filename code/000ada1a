@@ -1,0 +1,14 @@
+0x000ada1a    08           php
+0x000ada1b    c220         rep #0x20
+0x000ada1d    a01c00       ldy #0x001c
+0x000ada20    a90000       lda #0x0000
+0x000ada23    992209       sta 0x0922,y
+0x000ada26    99220a       sta 0x0a22,y
+0x000ada29    88           dey
+0x000ada2a    88           dey
+0x000ada2b    10f6         bpl 0x0ada23
+0x000ada2d    a90080       lda #0x8000
+0x000ada30    8d2009       sta 0x0920
+0x000ada33    8d200a       sta 0x0a20
+0x000ada36    28           plp
+0x000ada37    60           rts

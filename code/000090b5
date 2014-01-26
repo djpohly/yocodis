@@ -1,0 +1,28 @@
+0x000090b5    08           php
+0x000090b6    8b           phb
+0x000090b7    e220         sep #0x20
+0x000090b9    a6c4         ldx 0xc4
+0x000090bb    a5c6         lda 0xc6
+0x000090bd    48           pha
+0x000090be    ab           plb
+0x000090bf    bc0000       ldy 0x0000,x
+0x000090c2    84ca         sty 0xca
+0x000090c4    e8           inx
+0x000090c5    e8           inx
+0x000090c6    a00000       ldy #0x0000
+0x000090c9    64cd         stz 0xcd
+0x000090cb    a5cd         lda 0xcd
+0x000090cd    d00a         bne 0x0090d9
+0x000090cf    bd0000       lda 0x0000,x
+0x000090d2    85cc         sta 0xcc
+0x000090d4    e8           inx
+0x000090d5    a908         lda #0x08
+0x000090d7    85cd         sta 0xcd
+0x000090d9    c6cd         dec 0xcd
+0x000090db    46cc         lsr 0xcc
+0x000090dd    9009         bcc 0x0090e8
+0x000090df    bd0000       lda 0x0000,x
+0x000090e2    97c7         sta [0xc7],y
+0x000090e4    e8           inx
+0x000090e5    c8           iny
+0x000090e6    804d         bra 0x009135

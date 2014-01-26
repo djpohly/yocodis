@@ -1,0 +1,31 @@
+0x00009061    b90000       lda 0x0000,y
+0x00009064    290f         and #0x0f
+0x00009066    1a           inc a
+0x00009067    1a           inc a
+0x00009068    85ce         sta 0xce
+0x0000906a    c220         rep #0x20
+0x0000906c    b90000       lda 0x0000,y
+0x0000906f    c8           iny
+0x00009070    c8           iny
+0x00009071    5a           phy
+0x00009072    4a           lsr a
+0x00009073    4a           lsr a
+0x00009074    4a           lsr a
+0x00009075    4a           lsr a
+0x00009076    85d0         sta 0xd0
+0x00009078    8a           txa
+0x00009079    38           sec
+0x0000907a    e5d0         sbc 0xd0
+0x0000907c    101a         bpl 0x009098
+0x0000907e    e220         sep #0x20
+0x00009080    49ff         eor #0xff
+0x00009082    85d0         sta 0xd0
+0x00009084    a900         lda #0x00
+0x00009086    9f00807e     sta 0x7e8000,x
+0x0000908a    e8           inx
+0x0000908b    c6ce         dec 0xce
+0x0000908d    301e         bmi 0x0090ad
+0x0000908f    c6d0         dec 0xd0
+0x00009091    10f3         bpl 0x009086
+0x00009093    a00000       ldy #0x0000
+0x00009096    8003         bra 0x00909b

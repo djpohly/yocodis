@@ -1,0 +1,7 @@
+0x0002b894    c220         rep #0x20
+0x0002b896    a9a5b8       lda #0xb8a5
+0x0002b899    8500         sta 0x00
+0x0002b89b    a90200       lda #0x0002
+0x0002b89e    8502         sta 0x02
+0x0002b8a0    22b6d90a     jsr 0x0ad9b6
+0x0002b8a4    60           rts

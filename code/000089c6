@@ -1,0 +1,26 @@
+0x000089c6    08           php
+0x000089c7    5a           phy
+0x000089c8    c220         rep #0x20
+0x000089ca    22f68900     jsr 0x0089f6
+0x000089ce    a00000       ldy #0x0000
+0x000089d1    b700         lda [0x00],y
+0x000089d3    9d0018       sta 0x1800,x
+0x000089d6    c8           iny
+0x000089d7    c8           iny
+0x000089d8    b700         lda [0x00],y
+0x000089da    9d0218       sta 0x1802,x
+0x000089dd    c8           iny
+0x000089de    c8           iny
+0x000089df    b700         lda [0x00],y
+0x000089e1    9d0418       sta 0x1804,x
+0x000089e4    c8           iny
+0x000089e5    c8           iny
+0x000089e6    b700         lda [0x00],y
+0x000089e8    9d0618       sta 0x1806,x
+0x000089eb    a500         lda 0x00
+0x000089ed    18           clc
+0x000089ee    690800       adc #0x0008
+0x000089f1    8500         sta 0x00
+0x000089f3    7a           ply
+0x000089f4    28           plp
+0x000089f5    6b           rtl

@@ -1,0 +1,10 @@
+0x000cace4    c220         rep #0x20
+0x000cace6    a00000       ldy #0x0000
+0x000cace9    a9136a       lda #0x6a13
+0x000cacec    9d0019       sta 0x1900,x
+0x000cacef    e8           inx
+0x000cacf0    e8           inx
+0x000cacf1    c8           iny
+0x000cacf2    c401         cpy 0x01
+0x000cacf4    d0f3         bne 0x0cace9
+0x000cacf6    60           rts

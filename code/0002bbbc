@@ -1,0 +1,41 @@
+0x0002bbbc    08           php
+0x0002bbbd    c220         rep #0x20
+0x0002bbbf    a912ce       lda #0xce12
+0x0002bbc2    85c4         sta 0xc4
+0x0002bbc4    a90800       lda #0x0008
+0x0002bbc7    85c6         sta 0xc6
+0x0002bbc9    22239000     jsr 0x009023
+0x0002bbcd    223c9100     jsr 0x00913c
+0x0002bbd1    8b           phb
+0x0002bbd2    a214d2       ldx #0xd214
+0x0002bbd5    a00040       ldy #0x4000
+0x0002bbd8    a9ff05       lda #0x05ff
+0x0002bbdb    547e05       mvn 0x7e,0x05
+0x0002bbde    a214da       ldx #0xda14
+0x0002bbe1    a00048       ldy #0x4800
+0x0002bbe4    a9ff05       lda #0x05ff
+0x0002bbe7    547e05       mvn 0x7e,0x05
+0x0002bbea    ab           plb
+0x0002bbeb    a23e00       ldx #0x003e
+0x0002bbee    bfc0457e     lda 0x7e45c0,x
+0x0002bbf2    9f00467e     sta 0x7e4600,x
+0x0002bbf6    9f40467e     sta 0x7e4640,x
+0x0002bbfa    9f80467e     sta 0x7e4680,x
+0x0002bbfe    9fc0467e     sta 0x7e46c0,x
+0x0002bc02    9f00477e     sta 0x7e4700,x
+0x0002bc06    9f40477e     sta 0x7e4740,x
+0x0002bc0a    9f80477e     sta 0x7e4780,x
+0x0002bc0e    9fc0477e     sta 0x7e47c0,x
+0x0002bc12    9f004e7e     sta 0x7e4e00,x
+0x0002bc16    9f404e7e     sta 0x7e4e40,x
+0x0002bc1a    9f804e7e     sta 0x7e4e80,x
+0x0002bc1e    9fc04e7e     sta 0x7e4ec0,x
+0x0002bc22    9f004f7e     sta 0x7e4f00,x
+0x0002bc26    9f404f7e     sta 0x7e4f40,x
+0x0002bc2a    9f804f7e     sta 0x7e4f80,x
+0x0002bc2e    9fc04f7e     sta 0x7e4fc0,x
+0x0002bc32    ca           dex
+0x0002bc33    ca           dex
+0x0002bc34    10b8         bpl 0x02bbee
+0x0002bc36    28           plp
+0x0002bc37    60           rts

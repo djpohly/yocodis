@@ -1,0 +1,5 @@
+0x0002a9d9    adfa10       lda 0x10fa
+0x0002a9dc    f002         beq 0x02a9e0
+0x0002a9de    a903         lda #0x03
+0x0002a9e0    20cdb3       jsr 0xb3cd
+0x0002a9e3    6b           rtl

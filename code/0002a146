@@ -1,0 +1,8 @@
+0x0002a146    8b           phb
+0x0002a147    c220         rep #0x20
+0x0002a149    a20697       ldx #0x9706
+0x0002a14c    a0c019       ldy #0x19c0
+0x0002a14f    a93f00       lda #0x003f
+0x0002a152    540206       mvn 0x02,0x06
+0x0002a155    ab           plb
+0x0002a156    60           rts

@@ -1,0 +1,11 @@
+0x00009b25    08           php
+0x00009b26    da           phx
+0x00009b27    c220         rep #0x20
+0x00009b29    22759500     jsr 0x009575
+0x00009b2d    a00000       ldy #0x0000
+0x00009b30    a6de         ldx 0xde
+0x00009b32    1025         bpl 0x009b59
+0x00009b34    8a           txa
+0x00009b35    29ff00       and #0x00ff
+0x00009b38    aa           tax
+0x00009b39    800e         bra 0x009b49

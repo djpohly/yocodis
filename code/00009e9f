@@ -1,0 +1,18 @@
+0x00009e9f    85da         sta 0xda
+0x00009ea1    a90600       lda #0x0006
+0x00009ea4    85de         sta 0xde
+0x00009ea6    adf803       lda 0x03f8
+0x00009ea9    8534         sta 0x34
+0x00009eab    adfa03       lda 0x03fa
+0x00009eae    8536         sta 0x36
+0x00009eb0    22259b00     jsr 0x009b25
+0x00009eb4    adfc03       lda 0x03fc
+0x00009eb7    8534         sta 0x34
+0x00009eb9    adfe03       lda 0x03fe
+0x00009ebc    8536         sta 0x36
+0x00009ebe    a5da         lda 0xda
+0x00009ec0    18           clc
+0x00009ec1    694000       adc #0x0040
+0x00009ec4    85da         sta 0xda
+0x00009ec6    22259b00     jsr 0x009b25
+0x00009eca    60           rts

@@ -1,0 +1,16 @@
+0x000ad956    08           php
+0x000ad957    c220         rep #0x20
+0x000ad959    5a           phy
+0x000ad95a    a99694       lda #0x9496
+0x000ad95d    85c4         sta 0xc4
+0x000ad95f    a90800       lda #0x0008
+0x000ad962    85c6         sta 0xc6
+0x000ad964    22239000     jsr 0x009023
+0x000ad968    223c9100     jsr 0x00913c
+0x000ad96c    7a           ply
+0x000ad96d    a20080       ldx #0x8000
+0x000ad970    a5ca         lda 0xca
+0x000ad972    227b8e00     jsr 0x008e7b
+0x000ad976    228f8600     jsr 0x00868f
+0x000ad97a    28           plp
+0x000ad97b    6b           rtl

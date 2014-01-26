@@ -1,0 +1,19 @@
+0x00009098    a8           tay
+0x00009099    e220         sep #0x20
+0x0000909b    8b           phb
+0x0000909c    a97e         lda #0x7e
+0x0000909e    48           pha
+0x0000909f    ab           plb
+0x000090a0    b90080       lda 0x8000,y
+0x000090a3    9d0080       sta 0x8000,x
+0x000090a6    e8           inx
+0x000090a7    c8           iny
+0x000090a8    c6ce         dec 0xce
+0x000090aa    10f4         bpl 0x0090a0
+0x000090ac    ab           plb
+0x000090ad    7a           ply
+0x000090ae    e4ca         cpx 0xca
+0x000090b0    9090         bcc 0x009042
+0x000090b2    ab           plb
+0x000090b3    28           plp
+0x000090b4    6b           rtl

@@ -1,0 +1,7 @@
+0x0002991a    c220         rep #0x20
+0x0002991c    ad9a10       lda 0x109a
+0x0002991f    29ff00       and #0x00ff
+0x00029922    0a           asl a
+0x00029923    aa           tax
+0x00029924    f42999       pea 0x9929
+0x00029927    7c2b99       jmp (0x992b,x)

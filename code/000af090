@@ -1,0 +1,16 @@
+0x000af090    da           phx
+0x000af091    bf53f10a     lda 0x0af153,x
+0x000af095    18           clc
+0x000af096    690040       adc #0x4000
+0x000af099    85da         sta 0xda
+0x000af09b    22ae8e00     jsr 0x008eae
+0x000af09f    fa           plx
+0x000af0a0    e8           inx
+0x000af0a1    e8           inx
+0x000af0a2    e01200       cpx #0x0012
+0x000af0a5    90e9         bcc 0x0af090
+0x000af0a7    e220         sep #0x20
+0x000af0a9    a913         lda #0x13
+0x000af0ab    8567         sta 0x67
+0x000af0ad    28           plp
+0x000af0ae    60           rts

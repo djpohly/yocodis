@@ -1,0 +1,20 @@
+0x0002c61d    08           php
+0x0002c61e    c220         rep #0x20
+0x0002c620    a94f00       lda #0x004f
+0x0002c623    a20060       ldx #0x6000
+0x0002c626    a00008       ldy #0x0800
+0x0002c629    22688b00     jsr 0x008b68
+0x0002c62d    a90000       lda #0x0000
+0x0002c630    20b9fb       jsr 0xfbb9
+0x0002c633    a90100       lda #0x0001
+0x0002c636    20b9fb       jsr 0xfbb9
+0x0002c639    a90200       lda #0x0002
+0x0002c63c    20b9fb       jsr 0xfbb9
+0x0002c63f    9c0005       stz 0x0500
+0x0002c642    20eefb       jsr 0xfbee
+0x0002c645    a92000       lda #0x0020
+0x0002c648    8d0005       sta 0x0500
+0x0002c64b    20eefb       jsr 0xfbee
+0x0002c64e    9c1401       stz 0x0114
+0x0002c651    28           plp
+0x0002c652    60           rts

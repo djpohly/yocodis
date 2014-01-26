@@ -1,0 +1,37 @@
+0x000a9b78    08           php
+0x000a9b79    e220         sep #0x20
+0x000a9b7b    a980         lda #0x80
+0x000a9b7d    14c3         trb 0xc3
+0x000a9b7f    a902         lda #0x02
+0x000a9b81    8d7043       sta 0x4370
+0x000a9b84    a90f         lda #0x0f
+0x000a9b86    8d7143       sta 0x4371
+0x000a9b89    a900         lda #0x00
+0x000a9b8b    8d7243       sta 0x4372
+0x000a9b8e    a9fc         lda #0xfc
+0x000a9b90    8d7343       sta 0x4373
+0x000a9b93    a97e         lda #0x7e
+0x000a9b95    8d7443       sta 0x4374
+0x000a9b98    c220         rep #0x20
+0x000a9b9a    a9f49b       lda #0x9bf4
+0x000a9b9d    8500         sta 0x00
+0x000a9b9f    a90a00       lda #0x000a
+0x000a9ba2    8502         sta 0x02
+0x000a9ba4    a90000       lda #0x0000
+0x000a9ba7    8fa0fe7e     sta 0x7efea0
+0x000a9bab    a0be01       ldy #0x01be
+0x000a9bae    a29d02       ldx #0x029d
+0x000a9bb1    a90100       lda #0x0001
+0x000a9bb4    9f00fc7e     sta 0x7efc00,x
+0x000a9bb8    b700         lda [0x00],y
+0x000a9bba    9f01fc7e     sta 0x7efc01,x
+0x000a9bbe    88           dey
+0x000a9bbf    88           dey
+0x000a9bc0    ca           dex
+0x000a9bc1    ca           dex
+0x000a9bc2    ca           dex
+0x000a9bc3    10ec         bpl 0x0a9bb1
+0x000a9bc5    a90080       lda #0x8000
+0x000a9bc8    8d4008       sta 0x0840
+0x000a9bcb    28           plp
+0x000a9bcc    6b           rtl

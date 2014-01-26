@@ -1,0 +1,12 @@
+0x0002b72a    08           php
+0x0002b72b    c220         rep #0x20
+0x0002b72d    a2fe07       ldx #0x07fe
+0x0002b730    bf0dd00b     lda 0x0bd00d,x
+0x0002b734    9f00207e     sta 0x7e2000,x
+0x0002b738    490004       eor #0x0400
+0x0002b73b    9f80407e     sta 0x7e4080,x
+0x0002b73f    ca           dex
+0x0002b740    ca           dex
+0x0002b741    10ed         bpl 0x02b730
+0x0002b743    28           plp
+0x0002b744    60           rts

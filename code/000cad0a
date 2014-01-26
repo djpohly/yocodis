@@ -1,0 +1,6 @@
+0x000cad0a    e220         sep #0x20
+0x000cad0c    ad3301       lda 0x0133
+0x000cad0f    f035         beq 0x0cad46
+0x000cad11    ad4001       lda 0x0140
+0x000cad14    f001         beq 0x0cad17
+0x000cad16    60           rts

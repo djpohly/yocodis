@@ -1,0 +1,7 @@
+0x000af0a2    e01200       cpx #0x0012
+0x000af0a5    90e9         bcc 0x0af090
+0x000af0a7    e220         sep #0x20
+0x000af0a9    a913         lda #0x13
+0x000af0ab    8567         sta 0x67
+0x000af0ad    28           plp
+0x000af0ae    60           rts

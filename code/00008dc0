@@ -1,0 +1,57 @@
+0x00008dc0    08           php
+0x00008dc1    8b           phb
+0x00008dc2    e220         sep #0x20
+0x00008dc4    48           pha
+0x00008dc5    ab           plb
+0x00008dc6    c220         rep #0x20
+0x00008dc8    a00000       ldy #0x0000
+0x00008dcb    a5ca         lda 0xca
+0x00008dcd    85ce         sta 0xce
+0x00008dcf    c220         rep #0x20
+0x00008dd1    bd0000       lda 0x0000,x
+0x00008dd4    85d0         sta 0xd0
+0x00008dd6    bd1000       lda 0x0010,x
+0x00008dd9    85d2         sta 0xd2
+0x00008ddb    e220         sep #0x20
+0x00008ddd    06d3         asl 0xd3
+0x00008ddf    2a           rol a
+0x00008de0    06d2         asl 0xd2
+0x00008de2    2a           rol a
+0x00008de3    06d1         asl 0xd1
+0x00008de5    2a           rol a
+0x00008de6    06d0         asl 0xd0
+0x00008de8    2a           rol a
+0x00008de9    290f         and #0x0f
+0x00008deb    97c7         sta [0xc7],y
+0x00008ded    c8           iny
+0x00008dee    c8           iny
+0x00008def    06d3         asl 0xd3
+0x00008df1    2a           rol a
+0x00008df2    06d2         asl 0xd2
+0x00008df4    2a           rol a
+0x00008df5    06d1         asl 0xd1
+0x00008df7    2a           rol a
+0x00008df8    06d0         asl 0xd0
+0x00008dfa    2a           rol a
+0x00008dfb    290f         and #0x0f
+0x00008dfd    97c7         sta [0xc7],y
+0x00008dff    c8           iny
+0x00008e00    c8           iny
+0x00008e01    98           tya
+0x00008e02    290f         and #0x0f
+0x00008e04    d0d7         bne 0x008ddd
+0x00008e06    e8           inx
+0x00008e07    e8           inx
+0x00008e08    98           tya
+0x00008e09    297f         and #0x7f
+0x00008e0b    d0c2         bne 0x008dcf
+0x00008e0d    c220         rep #0x20
+0x00008e0f    8a           txa
+0x00008e10    18           clc
+0x00008e11    691000       adc #0x0010
+0x00008e14    aa           tax
+0x00008e15    c6ce         dec 0xce
+0x00008e17    d0b6         bne 0x008dcf
+0x00008e19    ab           plb
+0x00008e1a    28           plp
+0x00008e1b    6b           rtl

@@ -1,0 +1,9 @@
+0x000af0af    8b           phb
+0x000af0b0    a2beea       ldx #0xeabe
+0x000af0b3    a00040       ldy #0x4000
+0x000af0b6    a9ff07       lda #0x07ff
+0x000af0b9    547e06       mvn 0x7e,0x06
+0x000af0bc    ab           plb
+0x000af0bd    e220         sep #0x20
+0x000af0bf    a911         lda #0x11
+0x000af0c1    80e8         bra 0x0af0ab

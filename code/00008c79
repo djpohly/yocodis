@@ -1,0 +1,11 @@
+0x00008c79    08           php
+0x00008c7a    c220         rep #0x20
+0x00008c7c    290300       and #0x0003
+0x00008c7f    0a           asl a
+0x00008c80    aa           tax
+0x00008c81    bf8f8c00     lda 0x008c8f,x
+0x00008c85    a8           tay
+0x00008c86    a90000       lda #0x0000
+0x00008c89    22bf8c00     jsr 0x008cbf
+0x00008c8d    28           plp
+0x00008c8e    6b           rtl

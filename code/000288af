@@ -1,0 +1,15 @@
+0x000288af    e220         sep #0x20
+0x000288b1    a240de       ldx #0xde40
+0x000288b4    8ec400       stx 0x00c4
+0x000288b7    a903         lda #0x03
+0x000288b9    8dc600       sta 0x00c6
+0x000288bc    22239000     jsr 0x009023
+0x000288c0    223c9100     jsr 0x00913c
+0x000288c4    e220         sep #0x20
+0x000288c6    a97e         lda #0x7e
+0x000288c8    48           pha
+0x000288c9    f40080       pea 0x8000
+0x000288cc    f40040       pea 0x4000
+0x000288cf    f40020       pea 0x2000
+0x000288d2    222a8902     jsr 0x02892a
+0x000288d6    60           rts

@@ -1,0 +1,56 @@
+0x0000913c    08           php
+0x0000913d    8b           phb
+0x0000913e    c220         rep #0x20
+0x00009140    a5ca         lda 0xca
+0x00009142    18           clc
+0x00009143    65c7         adc 0xc7
+0x00009145    85ce         sta 0xce
+0x00009147    e220         sep #0x20
+0x00009149    a6c7         ldx 0xc7
+0x0000914b    a5c9         lda 0xc9
+0x0000914d    48           pha
+0x0000914e    ab           plb
+0x0000914f    bd0000       lda 0x0000,x
+0x00009152    85d6         sta 0xd6
+0x00009154    bd0100       lda 0x0001,x
+0x00009157    85d8         sta 0xd8
+0x00009159    bd0200       lda 0x0002,x
+0x0000915c    85da         sta 0xda
+0x0000915e    bd0300       lda 0x0003,x
+0x00009161    85dc         sta 0xdc
+0x00009163    bd0400       lda 0x0004,x
+0x00009166    85de         sta 0xde
+0x00009168    bd0500       lda 0x0005,x
+0x0000916b    85e0         sta 0xe0
+0x0000916d    bd0600       lda 0x0006,x
+0x00009170    85e2         sta 0xe2
+0x00009172    bd0700       lda 0x0007,x
+0x00009175    85e4         sta 0xe4
+0x00009177    bd0800       lda 0x0008,x
+0x0000917a    85d7         sta 0xd7
+0x0000917c    bd0900       lda 0x0009,x
+0x0000917f    85d9         sta 0xd9
+0x00009181    bd0a00       lda 0x000a,x
+0x00009184    85db         sta 0xdb
+0x00009186    bd0b00       lda 0x000b,x
+0x00009189    85dd         sta 0xdd
+0x0000918b    bd0c00       lda 0x000c,x
+0x0000918e    85df         sta 0xdf
+0x00009190    bd0d00       lda 0x000d,x
+0x00009193    85e1         sta 0xe1
+0x00009195    bd0e00       lda 0x000e,x
+0x00009198    85e3         sta 0xe3
+0x0000919a    bd0f00       lda 0x000f,x
+0x0000919d    85e5         sta 0xe5
+0x0000919f    c220         rep #0x20
+0x000091a1    9b           txy
+0x000091a2    a2d600       ldx #0x00d6
+0x000091a5    a90f00       lda #0x000f
+0x000091a8    547e00       mvn 0x7e,0x00
+0x000091ab    e220         sep #0x20
+0x000091ad    bb           tyx
+0x000091ae    e4ce         cpx 0xce
+0x000091b0    909d         bcc 0x00914f
+0x000091b2    ab           plb
+0x000091b3    28           plp
+0x000091b4    6b           rtl

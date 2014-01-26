@@ -1,0 +1,12 @@
+0x0002c6bd    8b           phb
+0x0002c6be    c220         rep #0x20
+0x0002c6c0    a2eaf6       ldx #0xf6ea
+0x0002c6c3    a04019       ldy #0x1940
+0x0002c6c6    a91f00       lda #0x001f
+0x0002c6c9    540200       mvn 0x02,0x00
+0x0002c6cc    a2aaf6       ldx #0xf6aa
+0x0002c6cf    a0801a       ldy #0x1a80
+0x0002c6d2    a91f00       lda #0x001f
+0x0002c6d5    540200       mvn 0x02,0x00
+0x0002c6d8    ab           plb
+0x0002c6d9    60           rts

@@ -1,0 +1,24 @@
+0x000ac899    08           php
+0x000ac89a    c220         rep #0x20
+0x000ac89c    a20000       ldx #0x0000
+0x000ac89f    a90714       lda #0x1407
+0x000ac8a2    9f00307e     sta 0x7e3000,x
+0x000ac8a6    9f42307e     sta 0x7e3042,x
+0x000ac8aa    1a           inc a
+0x000ac8ab    9f02307e     sta 0x7e3002,x
+0x000ac8af    9f40307e     sta 0x7e3040,x
+0x000ac8b3    e8           inx
+0x000ac8b4    e8           inx
+0x000ac8b5    e8           inx
+0x000ac8b6    e8           inx
+0x000ac8b7    8a           txa
+0x000ac8b8    293f00       and #0x003f
+0x000ac8bb    d0e2         bne 0x0ac89f
+0x000ac8bd    8a           txa
+0x000ac8be    18           clc
+0x000ac8bf    694000       adc #0x0040
+0x000ac8c2    aa           tax
+0x000ac8c3    e00008       cpx #0x0800
+0x000ac8c6    90d7         bcc 0x0ac89f
+0x000ac8c8    28           plp
+0x000ac8c9    60           rts

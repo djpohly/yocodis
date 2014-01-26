@@ -1,0 +1,11 @@
+0x000a9490    08           php
+0x000a9491    c220         rep #0x20
+0x000a9493    a23e00       ldx #0x003e
+0x000a9496    bf069706     lda 0x069706,x
+0x000a949a    9dc01b       sta 0x1bc0,x
+0x000a949d    9dc01c       sta 0x1cc0,x
+0x000a94a0    ca           dex
+0x000a94a1    ca           dex
+0x000a94a2    10f2         bpl 0x0a9496
+0x000a94a4    28           plp
+0x000a94a5    6b           rtl

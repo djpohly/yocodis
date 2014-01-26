@@ -1,0 +1,33 @@
+0x000cadb1    6410         stz 0x10
+0x000cadb3    6412         stz 0x12
+0x000cadb5    c220         rep #0x20
+0x000cadb7    bf00807e     lda 0x7e8000,x
+0x000cadbb    c510         cmp 0x10
+0x000cadbd    f029         beq 0x0cade8
+0x000cadbf    8510         sta 0x10
+0x000cadc1    29ff00       and #0x00ff
+0x000cadc4    eb           swa
+0x000cadc5    4a           lsr a
+0x000cadc6    8512         sta 0x12
+0x000cadc8    bf00807e     lda 0x7e8000,x
+0x000cadcc    29001c       and #0x1c00
+0x000cadcf    0a           asl a
+0x000cadd0    0a           asl a
+0x000cadd1    8514         sta 0x14
+0x000cadd3    a412         ldy 0x12
+0x000cadd5    a94000       lda #0x0040
+0x000cadd8    8516         sta 0x16
+0x000cadda    b700         lda [0x00],y
+0x000caddc    0514         ora 0x14
+0x000cadde    9700         sta [0x00],y
+0x000cade0    c8           iny
+0x000cade1    c8           iny
+0x000cade2    c616         dec 0x16
+0x000cade4    a516         lda 0x16
+0x000cade6    d0f2         bne 0x0cadda
+0x000cade8    e8           inx
+0x000cade9    e8           inx
+0x000cadea    e404         cpx 0x04
+0x000cadec    d0c9         bne 0x0cadb7
+0x000cadee    e220         sep #0x20
+0x000cadf0    6b           rtl

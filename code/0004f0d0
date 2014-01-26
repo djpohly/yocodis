@@ -1,0 +1,23 @@
+0x0004f0d0    08           php
+0x0004f0d1    c220         rep #0x20
+0x0004f0d3    9c140d       stz 0x0d14
+0x0004f0d6    9c160d       stz 0x0d16
+0x0004f0d9    9c150d       stz 0x0d15
+0x0004f0dc    9c170d       stz 0x0d17
+0x0004f0df    9c240d       stz 0x0d24
+0x0004f0e2    9c1e0d       stz 0x0d1e
+0x0004f0e5    9c200d       stz 0x0d20
+0x0004f0e8    9c220d       stz 0x0d22
+0x0004f0eb    9c180d       stz 0x0d18
+0x0004f0ee    9c1a0d       stz 0x0d1a
+0x0004f0f1    9c1c0d       stz 0x0d1c
+0x0004f0f4    9c000c       stz 0x0c00
+0x0004f0f7    9c020c       stz 0x0c02
+0x0004f0fa    9c040c       stz 0x0c04
+0x0004f0fd    9c060c       stz 0x0c06
+0x0004f100    9c080c       stz 0x0c08
+0x0004f103    9c0a0c       stz 0x0c0a
+0x0004f106    9c320d       stz 0x0d32
+0x0004f109    e220         sep #0x20
+0x0004f10b    28           plp
+0x0004f10c    6b           rtl

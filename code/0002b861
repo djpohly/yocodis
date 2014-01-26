@@ -1,0 +1,22 @@
+0x0002b861    8b           phb
+0x0002b862    c220         rep #0x20
+0x0002b864    a22000       ldx #0x0020
+0x0002b867    bf2af700     lda 0x00f72a,x
+0x0002b86b    9d4019       sta 0x1940,x
+0x0002b86e    9d6019       sta 0x1960,x
+0x0002b871    ca           dex
+0x0002b872    ca           dex
+0x0002b873    10f2         bpl 0x02b867
+0x0002b875    a22000       ldx #0x0020
+0x0002b878    bfeaf600     lda 0x00f6ea,x
+0x0002b87c    9dc01a       sta 0x1ac0,x
+0x0002b87f    9de01a       sta 0x1ae0,x
+0x0002b882    ca           dex
+0x0002b883    ca           dex
+0x0002b884    10f2         bpl 0x02b878
+0x0002b886    a2caf7       ldx #0xf7ca
+0x0002b889    a0a01a       ldy #0x1aa0
+0x0002b88c    a91f00       lda #0x001f
+0x0002b88f    540200       mvn 0x02,0x00
+0x0002b892    ab           plb
+0x0002b893    60           rts

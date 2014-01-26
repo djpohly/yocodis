@@ -1,0 +1,3 @@
+0x000af0ab    8567         sta 0x67
+0x000af0ad    28           plp
+0x000af0ae    60           rts

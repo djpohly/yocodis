@@ -1,0 +1,12 @@
+0x000ca343    e220         sep #0x20
+0x000ca345    9c040d       stz 0x0d04
+0x000ca348    c220         rep #0x20
+0x000ca34a    a90100       lda #0x0001
+0x000ca34d    eb           swa
+0x000ca34e    c5e6         cmp 0xe6
+0x000ca350    f005         beq 0x0ca357
+0x000ca352    eb           swa
+0x000ca353    2200800d     jsr 0x0d8000
+0x000ca357    a900c7       lda #0xc700
+0x000ca35a    22388700     jsr 0x008738
+0x000ca35e    6b           rtl
