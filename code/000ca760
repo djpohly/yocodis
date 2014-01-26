@@ -1,0 +1,18 @@
+0x000ca760    c220         rep #0x20
+0x000ca762    ad080c       lda 0x0c08
+0x000ca765    c90300       cmp #0x0003
+0x000ca768    d01b         bne 0x0ca785
+0x000ca76a    a56f         lda 0x6f
+0x000ca76c    056d         ora 0x6d
+0x000ca76e    c90002       cmp #0x0200
+0x000ca771    f012         beq 0x0ca785
+0x000ca773    18           clc
+0x000ca774    690800       adc #0x0008
+0x000ca777    856f         sta 0x6f
+0x000ca779    856d         sta 0x6d
+0x000ca77b    8571         sta 0x71
+0x000ca77d    8577         sta 0x77
+0x000ca77f    a9ffff       lda #0xffff
+0x000ca782    8d080c       sta 0x0c08
+0x000ca785    ee080c       inc 0x0c08
+0x000ca788    60           rts

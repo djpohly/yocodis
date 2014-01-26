@@ -1,0 +1,5 @@
+0x000ca3ed    e220         sep #0x20
+0x000ca3ef    a562         lda 0x62
+0x000ca3f1    d003         bne 0x0ca3f6
+0x000ca3f3    ee7610       inc 0x1076
+0x000ca3f6    6b           rtl

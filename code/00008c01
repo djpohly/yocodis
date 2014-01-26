@@ -1,0 +1,61 @@
+0x00008c01    08           php
+0x00008c02    c220         rep #0x20
+0x00008c04    bd001b       lda 0x1b00,x
+0x00008c07    29e003       and #0x03e0
+0x00008c0a    0a           asl a
+0x00008c0b    0a           asl a
+0x00008c0c    0a           asl a
+0x00008c0d    e220         sep #0x20
+0x00008c0f    a534         lda 0x34
+0x00008c11    c220         rep #0x20
+0x00008c13    8d0242       sta 0x4202
+0x00008c16    08           php
+0x00008c17    28           plp
+0x00008c18    ad1642       lda 0x4216
+0x00008c1b    29e003       and #0x03e0
+0x00008c1e    18           clc
+0x00008c1f    6540         adc 0x40
+0x00008c21    c9e003       cmp #0x03e0
+0x00008c24    9003         bcc 0x008c29
+0x00008c26    a9e003       lda #0x03e0
+0x00008c29    853a         sta 0x3a
+0x00008c2b    e220         sep #0x20
+0x00008c2d    bd001b       lda 0x1b00,x
+0x00008c30    0a           asl a
+0x00008c31    0a           asl a
+0x00008c32    0a           asl a
+0x00008c33    8d0242       sta 0x4202
+0x00008c36    a534         lda 0x34
+0x00008c38    8d0342       sta 0x4203
+0x00008c3b    08           php
+0x00008c3c    28           plp
+0x00008c3d    ad1742       lda 0x4217
+0x00008c40    291f         and #0x1f
+0x00008c42    18           clc
+0x00008c43    653e         adc 0x3e
+0x00008c45    c91f         cmp #0x1f
+0x00008c47    9002         bcc 0x008c4b
+0x00008c49    a91f         lda #0x1f
+0x00008c4b    043a         tsb 0x3a
+0x00008c4d    bd011b       lda 0x1b01,x
+0x00008c50    297c         and #0x7c
+0x00008c52    8d0242       sta 0x4202
+0x00008c55    a534         lda 0x34
+0x00008c57    8d0342       sta 0x4203
+0x00008c5a    08           php
+0x00008c5b    28           plp
+0x00008c5c    c220         rep #0x20
+0x00008c5e    ad1642       lda 0x4216
+0x00008c61    0a           asl a
+0x00008c62    0a           asl a
+0x00008c63    0a           asl a
+0x00008c64    29007c       and #0x7c00
+0x00008c67    18           clc
+0x00008c68    6542         adc 0x42
+0x00008c6a    c9007c       cmp #0x7c00
+0x00008c6d    9003         bcc 0x008c72
+0x00008c6f    a9007c       lda #0x7c00
+0x00008c72    053a         ora 0x3a
+0x00008c74    9d0019       sta 0x1900,x
+0x00008c77    28           plp
+0x00008c78    6b           rtl

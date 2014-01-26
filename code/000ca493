@@ -1,0 +1,17 @@
+0x000ca493    c220         rep #0x20
+0x000ca495    a558         lda 0x58
+0x000ca497    290300       and #0x0003
+0x000ca49a    d020         bne 0x0ca4bc
+0x000ca49c    a9136a       lda #0x6a13
+0x000ca49f    853c         sta 0x3c
+0x000ca4a1    a98da4       lda #0xa48d
+0x000ca4a4    8500         sta 0x00
+0x000ca4a6    a90c00       lda #0x000c
+0x000ca4a9    8502         sta 0x02
+0x000ca4ab    ad0e0c       lda 0x0c0e
+0x000ca4ae    8534         sta 0x34
+0x000ca4b0    22858b00     jsr 0x008b85
+0x000ca4b4    ce0e0c       dec 0x0c0e
+0x000ca4b7    1003         bpl 0x0ca4bc
+0x000ca4b9    ee7610       inc 0x1076
+0x000ca4bc    6b           rtl

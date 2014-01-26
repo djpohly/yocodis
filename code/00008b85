@@ -1,0 +1,64 @@
+0x00008b85    08           php
+0x00008b86    c220         rep #0x20
+0x00008b88    a92000       lda #0x0020
+0x00008b8b    38           sec
+0x00008b8c    e534         sbc 0x34
+0x00008b8e    8536         sta 0x36
+0x00008b90    a53c         lda 0x3c
+0x00008b92    29e003       and #0x03e0
+0x00008b95    0a           asl a
+0x00008b96    0a           asl a
+0x00008b97    0a           asl a
+0x00008b98    e220         sep #0x20
+0x00008b9a    a536         lda 0x36
+0x00008b9c    c220         rep #0x20
+0x00008b9e    8d0242       sta 0x4202
+0x00008ba1    08           php
+0x00008ba2    28           plp
+0x00008ba3    ad1642       lda 0x4216
+0x00008ba6    29e003       and #0x03e0
+0x00008ba9    8540         sta 0x40
+0x00008bab    e220         sep #0x20
+0x00008bad    a536         lda 0x36
+0x00008baf    8d0242       sta 0x4202
+0x00008bb2    a53c         lda 0x3c
+0x00008bb4    291f         and #0x1f
+0x00008bb6    0a           asl a
+0x00008bb7    0a           asl a
+0x00008bb8    0a           asl a
+0x00008bb9    8d0342       sta 0x4203
+0x00008bbc    08           php
+0x00008bbd    28           plp
+0x00008bbe    ad1742       lda 0x4217
+0x00008bc1    853e         sta 0x3e
+0x00008bc3    643f         stz 0x3f
+0x00008bc5    a53d         lda 0x3d
+0x00008bc7    297c         and #0x7c
+0x00008bc9    8d0242       sta 0x4202
+0x00008bcc    a536         lda 0x36
+0x00008bce    8d0342       sta 0x4203
+0x00008bd1    08           php
+0x00008bd2    28           plp
+0x00008bd3    c220         rep #0x20
+0x00008bd5    ad1642       lda 0x4216
+0x00008bd8    0a           asl a
+0x00008bd9    0a           asl a
+0x00008bda    0a           asl a
+0x00008bdb    29007c       and #0x7c00
+0x00008bde    8542         sta 0x42
+0x00008be0    a00000       ldy #0x0000
+0x00008be3    b700         lda [0x00],y
+0x00008be5    f015         beq 0x008bfc
+0x00008be7    8538         sta 0x38
+0x00008be9    c8           iny
+0x00008bea    c8           iny
+0x00008beb    b700         lda [0x00],y
+0x00008bed    aa           tax
+0x00008bee    22018c00     jsr 0x008c01
+0x00008bf2    e8           inx
+0x00008bf3    e8           inx
+0x00008bf4    c638         dec 0x38
+0x00008bf6    d0f6         bne 0x008bee
+0x00008bf8    c8           iny
+0x00008bf9    c8           iny
+0x00008bfa    80e7         bra 0x008be3

@@ -1,0 +1,13 @@
+0x000ca5be    e220         sep #0x20
+0x000ca5c0    9c010d       stz 0x0d01
+0x000ca5c3    c220         rep #0x20
+0x000ca5c5    c220         rep #0x20
+0x000ca5c7    8b           phb
+0x000ca5c8    a2e6f5       ldx #0xf5e6
+0x000ca5cb    a0c01b       ldy #0x1bc0
+0x000ca5ce    a93f00       lda #0x003f
+0x000ca5d1    540c09       mvn 0x0c,0x09
+0x000ca5d4    ab           plb
+0x000ca5d5    9c0e0c       stz 0x0c0e
+0x000ca5d8    ee7610       inc 0x1076
+0x000ca5db    6b           rtl
