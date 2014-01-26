@@ -1,5 +1,0 @@
-0x000adb69    c602         dec 0x02
-0x000adb6b    10e0         bpl 0x0adb4d
-0x000adb6d    e220         sep #0x20
-0x000adb6f    a23500       ldx #0x0035
-0x000adb72    8006         bra 0x0adb7a

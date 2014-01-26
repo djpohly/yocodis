@@ -1,4 +1,0 @@
-0x000adead    88           dey
-0x000adeae    10f3         bpl 0x0adea3
-0x000adeb0    28           plp
-0x000adeb1    60           rts

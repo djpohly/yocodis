@@ -1,7 +1,0 @@
-0x0002fa3e    ae0005       ldx 0x0500
-0x0002fa41    9d4a11       sta 0x114a,x
-0x0002fa44    98           tya
-0x0002fa45    9d4c11       sta 0x114c,x
-0x0002fa48    a90700       lda #0x0007
-0x0002fa4b    2230820d     jsr 0x0d8230
-0x0002fa4f    60           rts
