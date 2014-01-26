@@ -1,3 +1,0 @@
-0x000ab47a    a98d         lda #0x8d
-0x000ab47c    8544         sta 0x44
-0x000ab47e    60           rts

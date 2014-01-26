@@ -1,4 +1,0 @@
-0x0002d81a    e220         sep #0x20
-0x0002d81c    9c140d       stz 0x0d14
-0x0002d81f    c220         rep #0x20
-0x0002d821    60           rts

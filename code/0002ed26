@@ -1,3 +1,0 @@
-0x0002ed26    a90c00       lda #0x000c
-0x0002ed29    8d7610       sta 0x1076
-0x0002ed2c    60           rts

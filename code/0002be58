@@ -7,3 +7,5 @@
 0x0002be64    aa           tax
 0x0002be65    f46abe       pea 0xbe6a
 0x0002be68    7c6dbe       jmp (0xbe6d,x)
+0x0002be6b    28           plp
+0x0002be6c    60           rts

@@ -1,7 +1,0 @@
-0x0002b607    20aabc       jsr 0xbcaa
-0x0002b60a    aed401       ldx 0x01d4
-0x0002b60d    bf1bb602     lda 0x02b61b,x
-0x0002b611    29ff00       and #0x00ff
-0x0002b614    8d7610       sta 0x1076
-0x0002b617    9c4608       stz 0x0846
-0x0002b61a    60           rts

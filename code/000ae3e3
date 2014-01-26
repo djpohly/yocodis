@@ -1,5 +1,0 @@
-0x000ae3e3    08           php
-0x000ae3e4    e220         sep #0x20
-0x000ae3e6    a28401       ldx #0x0184
-0x000ae3e9    8610         stx 0x10
-0x000ae3eb    8013         bra 0x0ae400

@@ -1,5 +1,0 @@
-0x000aef25    2008a4       jsr 0xa408
-0x000aef28    e220         sep #0x20
-0x000aef2a    a904         lda #0x04
-0x000aef2c    8547         sta 0x47
-0x000aef2e    60           rts

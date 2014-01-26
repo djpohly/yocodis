@@ -1,4 +1,0 @@
-0x00028cad    98           tya
-0x00028cae    3005         bmi 0x028cb5
-0x00028cb0    eeb410       inc 0x10b4
-0x00028cb3    8003         bra 0x028cb8

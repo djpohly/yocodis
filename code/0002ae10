@@ -1,3 +1,0 @@
-0x0002ae10    2069b1       jsr 0xb169
-0x0002ae13    20adb1       jsr 0xb1ad
-0x0002ae16    60           rts

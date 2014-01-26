@@ -1,5 +1,0 @@
-0x000ae962    a55c         lda 0x5c
-0x000ae964    d004         bne 0x0ae96a
-0x000ae966    e220         sep #0x20
-0x000ae968    e647         inc 0x47
-0x000ae96a    60           rts

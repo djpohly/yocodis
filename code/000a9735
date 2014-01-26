@@ -1,6 +1,0 @@
-0x000a9735    e220         sep #0x20
-0x000a9737    ae0005       ldx 0x0500
-0x000a973a    bdc003       lda 0x03c0,x
-0x000a973d    d003         bne 0x0a9742
-0x000a973f    9e7a03       stz 0x037a,x
-0x000a9742    60           rts

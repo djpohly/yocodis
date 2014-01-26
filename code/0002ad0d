@@ -1,4 +1,0 @@
-0x0002ad0d    ade210       lda 0x10e2
-0x0002ad10    f005         beq 0x02ad17
-0x0002ad12    cee210       dec 0x10e2
-0x0002ad15    8006         bra 0x02ad1d

@@ -1,6 +1,0 @@
-0x000abbe5    a55c         lda 0x5c
-0x000abbe7    d006         bne 0x0abbef
-0x000abbe9    e220         sep #0x20
-0x000abbeb    a904         lda #0x04
-0x000abbed    8547         sta 0x47
-0x000abbef    60           rts

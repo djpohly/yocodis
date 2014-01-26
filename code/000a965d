@@ -9,3 +9,114 @@
 0x000a9674    a901         lda #0x01
 0x000a9676    9d7a03       sta 0x037a,x
 0x000a9679    60           rts
+0x000a967a    e220         sep #0x20
+0x000a967c    20b1d3       jsr 0xd3b1
+0x000a967f    ae0005       ldx 0x0500
+0x000a9682    202c80       jsr 0x802c
+0x000a9685    b9b700       lda 0x00b7,y
+0x000a9688    2984         and #0x84
+0x000a968a    f018         beq 0x0a96a4
+0x000a968c    bd7203       lda 0x0372,x
+0x000a968f    0920         ora #0x20
+0x000a9691    9d7203       sta 0x0372,x
+0x000a9694    a902         lda #0x02
+0x000a9696    9d7503       sta 0x0375,x
+0x000a9699    9e7603       stz 0x0376,x
+0x000a969c    9e7703       stz 0x0377,x
+0x000a969f    a902         lda #0x02
+0x000a96a1    9d7a03       sta 0x037a,x
+0x000a96a4    60           rts
+0x000a96a5    ae0005       ldx 0x0500
+0x000a96a8    202c80       jsr 0x802c
+0x000a96ab    b9b700       lda 0x00b7,y
+0x000a96ae    298400       and #0x0084
+0x000a96b1    d010         bne 0x0a96c3
+0x000a96b3    e220         sep #0x20
+0x000a96b5    bd7203       lda 0x0372,x
+0x000a96b8    29df         and #0xdf
+0x000a96ba    9d7203       sta 0x0372,x
+0x000a96bd    a901         lda #0x01
+0x000a96bf    9d7a03       sta 0x037a,x
+0x000a96c2    60           rts
+0x000a96c3    e220         sep #0x20
+0x000a96c5    bd7503       lda 0x0375,x
+0x000a96c8    f005         beq 0x0a96cf
+0x000a96ca    de7503       dec 0x0375,x
+0x000a96cd    d03f         bne 0x0a970e
+0x000a96cf    c220         rep #0x20
+0x000a96d1    200080       jsr 0x8000
+0x000a96d4    39b700       and 0x00b7,y
+0x000a96d7    f035         beq 0x0a970e
+0x000a96d9    9d7603       sta 0x0376,x
+0x000a96dc    c90004       cmp #0x0400
+0x000a96df    9013         bcc 0x0a96f4
+0x000a96e1    bd7303       lda 0x0373,x
+0x000a96e4    29ff00       and #0x00ff
+0x000a96e7    4a           lsr a
+0x000a96e8    4a           lsr a
+0x000a96e9    4a           lsr a
+0x000a96ea    4a           lsr a
+0x000a96eb    1a           inc a
+0x000a96ec    9d6803       sta 0x0368,x
+0x000a96ef    9e6a03       stz 0x036a,x
+0x000a96f2    8011         bra 0x0a9705
+0x000a96f4    bd7403       lda 0x0374,x
+0x000a96f7    29ff00       and #0x00ff
+0x000a96fa    4a           lsr a
+0x000a96fb    4a           lsr a
+0x000a96fc    4a           lsr a
+0x000a96fd    4a           lsr a
+0x000a96fe    1a           inc a
+0x000a96ff    9d6a03       sta 0x036a,x
+0x000a9702    9e6803       stz 0x0368,x
+0x000a9705    9e6c03       stz 0x036c,x
+0x000a9708    a90300       lda #0x0003
+0x000a970b    9d7a03       sta 0x037a,x
+0x000a970e    60           rts
+0x000a970f    ae0005       ldx 0x0500
+0x000a9712    20478c       jsr 0x8c47
+0x000a9715    b00b         bcs 0x0a9722
+0x000a9717    bd6c03       lda 0x036c,x
+0x000a971a    d018         bne 0x0a9734
+0x000a971c    a90100       lda #0x0001
+0x000a971f    8d8609       sta 0x0986
+0x000a9722    9e7603       stz 0x0376,x
+0x000a9725    9e6803       stz 0x0368,x
+0x000a9728    e220         sep #0x20
+0x000a972a    a902         lda #0x02
+0x000a972c    9d7503       sta 0x0375,x
+0x000a972f    a902         lda #0x02
+0x000a9731    9d7a03       sta 0x037a,x
+0x000a9734    60           rts
+0x000a9735    e220         sep #0x20
+0x000a9737    ae0005       ldx 0x0500
+0x000a973a    bdc003       lda 0x03c0,x
+0x000a973d    d003         bne 0x0a9742
+0x000a973f    9e7a03       stz 0x037a,x
+0x000a9742    60           rts
+0x000a9743    08           php
+0x000a9744    c220         rep #0x20
+0x000a9746    ad6403       lda 0x0364
+0x000a9749    f02f         beq 0x0a977a
+0x000a974b    ad6603       lda 0x0366
+0x000a974e    f02a         beq 0x0a977a
+0x000a9750    a20000       ldx #0x0000
+0x000a9753    8e0005       stx 0x0500
+0x000a9756    8e0405       stx 0x0504
+0x000a9759    ad7c03       lda 0x037c
+0x000a975c    3007         bmi 0x0a9765
+0x000a975e    0a           asl a
+0x000a975f    aa           tax
+0x000a9760    fc7c97       jsr (0x977c,x)
+0x000a9763    c220         rep #0x20
+0x000a9765    a90200       lda #0x0002
+0x000a9768    8d0405       sta 0x0504
+0x000a976b    ad7e03       lda 0x037e
+0x000a976e    3005         bmi 0x0a9775
+0x000a9770    0a           asl a
+0x000a9771    aa           tax
+0x000a9772    fc9097       jsr (0x9790,x)
+0x000a9775    e220         sep #0x20
+0x000a9777    2092c0       jsr 0xc092
+0x000a977a    28           plp
+0x000a977b    6b           rtl

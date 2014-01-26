@@ -1,7 +1,0 @@
-0x0002ea32    c220         rep #0x20
-0x0002ea34    ada810       lda 0x10a8
-0x0002ea37    29ff00       and #0x00ff
-0x0002ea3a    0a           asl a
-0x0002ea3b    aa           tax
-0x0002ea3c    f441ea       pea 0xea41
-0x0002ea3f    7c43ea       jmp (0xea43,x)

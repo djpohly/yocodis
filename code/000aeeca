@@ -1,4 +1,0 @@
-0x000aeeca    e220         sep #0x20
-0x000aeecc    a92e         lda #0x2e
-0x000aeece    8547         sta 0x47
-0x000aeed0    60           rts

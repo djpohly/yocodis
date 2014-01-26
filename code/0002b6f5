@@ -1,5 +1,0 @@
-0x0002b6f5    ad2401       lda 0x0124
-0x0002b6f8    0d2a01       ora 0x012a
-0x0002b6fb    d003         bne 0x02b700
-0x0002b6fd    ee7610       inc 0x1076
-0x0002b700    60           rts

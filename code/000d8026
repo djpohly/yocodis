@@ -1,8 +1,0 @@
-0x000d8026    c220         rep #0x20
-0x000d8028    68           pla
-0x000d8029    29ff00       and #0x00ff
-0x000d802c    85e7         sta 0xe7
-0x000d802e    22fb810d     jsr 0x0d81fb
-0x000d8032    7a           ply
-0x000d8033    28           plp
-0x000d8034    6b           rtl

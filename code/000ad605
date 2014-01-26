@@ -4,3 +4,19 @@
 0x000ad60f    9d6209       sta 0x0962,x
 0x000ad612    fe6009       inc 0x0960,x
 0x000ad615    60           rts
+0x000ad616    2003d8       jsr 0xd803
+0x000ad619    20aed8       jsr 0xd8ae
+0x000ad61c    ae0005       ldx 0x0500
+0x000ad61f    de6209       dec 0x0962,x
+0x000ad622    1003         bpl 0x0ad627
+0x000ad624    fe6009       inc 0x0960,x
+0x000ad627    60           rts
+0x000ad628    ae0005       ldx 0x0500
+0x000ad62b    bd6009       lda 0x0960,x
+0x000ad62e    300b         bmi 0x0ad63b
+0x000ad630    29ff00       and #0x00ff
+0x000ad633    0a           asl a
+0x000ad634    aa           tax
+0x000ad635    f43ad6       pea 0xd63a
+0x000ad638    7c3cd6       jmp (0xd63c,x)
+0x000ad63b    60           rts

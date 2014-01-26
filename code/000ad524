@@ -6,3 +6,4 @@
 0x000ad530    aa           tax
 0x000ad531    f436d5       pea 0xd536
 0x000ad534    7c38d5       jmp (0xd538,x)
+0x000ad537    60           rts

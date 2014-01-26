@@ -1,7 +1,0 @@
-0x000ae3ed    bd0000       lda 0x0000,x
-0x000ae3f0    d210         cmp (0x10)
-0x000ae3f2    9008         bcc 0x0ae3fc
-0x000ae3f4    a410         ldy 0x10
-0x000ae3f6    8412         sty 0x12
-0x000ae3f8    8610         stx 0x10
-0x000ae3fa    8006         bra 0x0ae402

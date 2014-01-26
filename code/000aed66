@@ -1,9 +1,0 @@
-0x000aed66    a983         lda #0x83
-0x000aed68    eb           swa
-0x000aed69    a90f         lda #0x0f
-0x000aed6b    22388700     jsr 0x008738
-0x000aed6f    e647         inc 0x47
-0x000aed71    e647         inc 0x47
-0x000aed73    20cbf9       jsr 0xf9cb
-0x000aed76    224d800a     jsr 0x0a804d
-0x000aed7a    60           rts

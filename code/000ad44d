@@ -26,3 +26,15 @@
 0x000ad486    228f9600     jsr 0x00968f
 0x000ad48a    a535         lda 0x35
 0x000ad48c    60           rts
+0x000ad48d    08           php
+0x000ad48e    c220         rep #0x20
+0x000ad490    ac0005       ldy 0x0500
+0x000ad493    b90009       lda 0x0900,y
+0x000ad496    0a           asl a
+0x000ad497    0a           asl a
+0x000ad498    0a           asl a
+0x000ad499    aa           tax
+0x000ad49a    bfa7d40a     lda 0x0ad4a7,x
+0x000ad49e    994609       sta 0x0946,y
+0x000ad4a1    28           plp
+0x000ad4a2    60           rts

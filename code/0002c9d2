@@ -1,9 +1,0 @@
-0x0002c9d2    220df104     jsr 0x04f10d
-0x0002c9d6    2018a0       jsr 0xa018
-0x0002c9d9    c220         rep #0x20
-0x0002c9db    ada810       lda 0x10a8
-0x0002c9de    29ff00       and #0x00ff
-0x0002c9e1    0a           asl a
-0x0002c9e2    aa           tax
-0x0002c9e3    f4e8c9       pea 0xc9e8
-0x0002c9e6    7ceac9       jmp (0xc9ea,x)

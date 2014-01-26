@@ -36,3 +36,74 @@
 0x00009571    8538         sta 0x38
 0x00009573    28           plp
 0x00009574    6b           rtl
+0x00009575    08           php
+0x00009576    c220         rep #0x20
+0x00009578    6437         stz 0x37
+0x0000957a    6439         stz 0x39
+0x0000957c    643b         stz 0x3b
+0x0000957e    643d         stz 0x3d
+0x00009580    a534         lda 0x34
+0x00009582    38           sec
+0x00009583    e94042       sbc #0x4240
+0x00009586    48           pha
+0x00009587    a536         lda 0x36
+0x00009589    e90f00       sbc #0x000f
+0x0000958c    9009         bcc 0x009597
+0x0000958e    e63e         inc 0x3e
+0x00009590    8536         sta 0x36
+0x00009592    68           pla
+0x00009593    8534         sta 0x34
+0x00009595    80ec         bra 0x009583
+0x00009597    68           pla
+0x00009598    a534         lda 0x34
+0x0000959a    38           sec
+0x0000959b    e9a086       sbc #0x86a0
+0x0000959e    48           pha
+0x0000959f    a536         lda 0x36
+0x000095a1    e90100       sbc #0x0001
+0x000095a4    9009         bcc 0x0095af
+0x000095a6    e63d         inc 0x3d
+0x000095a8    8536         sta 0x36
+0x000095aa    68           pla
+0x000095ab    8534         sta 0x34
+0x000095ad    80ec         bra 0x00959b
+0x000095af    68           pla
+0x000095b0    a534         lda 0x34
+0x000095b2    38           sec
+0x000095b3    e91027       sbc #0x2710
+0x000095b6    48           pha
+0x000095b7    a536         lda 0x36
+0x000095b9    e90000       sbc #0x0000
+0x000095bc    9009         bcc 0x0095c7
+0x000095be    e63c         inc 0x3c
+0x000095c0    8536         sta 0x36
+0x000095c2    68           pla
+0x000095c3    8534         sta 0x34
+0x000095c5    80ec         bra 0x0095b3
+0x000095c7    68           pla
+0x000095c8    a534         lda 0x34
+0x000095ca    38           sec
+0x000095cb    e9e803       sbc #0x03e8
+0x000095ce    9006         bcc 0x0095d6
+0x000095d0    e63b         inc 0x3b
+0x000095d2    8534         sta 0x34
+0x000095d4    80f5         bra 0x0095cb
+0x000095d6    a534         lda 0x34
+0x000095d8    38           sec
+0x000095d9    e96400       sbc #0x0064
+0x000095dc    9006         bcc 0x0095e4
+0x000095de    e63a         inc 0x3a
+0x000095e0    8534         sta 0x34
+0x000095e2    80f5         bra 0x0095d9
+0x000095e4    a534         lda 0x34
+0x000095e6    38           sec
+0x000095e7    e90a00       sbc #0x000a
+0x000095ea    9006         bcc 0x0095f2
+0x000095ec    e639         inc 0x39
+0x000095ee    8534         sta 0x34
+0x000095f0    80f5         bra 0x0095e7
+0x000095f2    e220         sep #0x20
+0x000095f4    a534         lda 0x34
+0x000095f6    8538         sta 0x38
+0x000095f8    28           plp
+0x000095f9    6b           rtl

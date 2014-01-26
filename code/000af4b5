@@ -1,8 +1,0 @@
-0x000af4b5    08           php
-0x000af4b6    c220         rep #0x20
-0x000af4b8    ad8803       lda 0x0388
-0x000af4bb    8dc201       sta 0x01c2
-0x000af4be    ad8a03       lda 0x038a
-0x000af4c1    8dc401       sta 0x01c4
-0x000af4c4    28           plp
-0x000af4c5    60           rts

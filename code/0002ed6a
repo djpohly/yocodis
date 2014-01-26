@@ -1,7 +1,0 @@
-0x0002ed6a    2279f702     jsr 0x02f779
-0x0002ed6e    a21009       ldx #0x0910
-0x0002ed71    8eac11       stx 0x11ac
-0x0002ed74    22c2f302     jsr 0x02f3c2
-0x0002ed78    2053f4       jsr 0xf453
-0x0002ed7b    ee7610       inc 0x1076
-0x0002ed7e    60           rts

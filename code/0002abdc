@@ -1,6 +1,0 @@
-0x0002abdc    e220         sep #0x20
-0x0002abde    6469         stz 0x69
-0x0002abe0    646a         stz 0x6a
-0x0002abe2    64c3         stz 0xc3
-0x0002abe4    9cbb10       stz 0x10bb
-0x0002abe7    60           rts

@@ -1,4 +1,0 @@
-0x0002f9e2    bd4411       lda 0x1144,x
-0x0002f9e5    3a           dec a
-0x0002f9e6    100a         bpl 0x02f9f2
-0x0002f9e8    60           rts

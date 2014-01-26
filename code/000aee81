@@ -1,3 +1,0 @@
-0x000aee81    e220         sep #0x20
-0x000aee83    e647         inc 0x47
-0x000aee85    60           rts

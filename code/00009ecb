@@ -8,3 +8,5 @@
 0x00009eda    aa           tax
 0x00009edb    f4e09e       pea 0x9ee0
 0x00009ede    7ce39e       jmp (0x9ee3,x)
+0x00009ee1    28           plp
+0x00009ee2    6b           rtl

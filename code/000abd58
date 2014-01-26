@@ -1,3 +1,0 @@
-0x000abd58    fe7803       inc 0x0378,x
-0x000abd5b    20be93       jsr 0x93be
-0x000abd5e    60           rts

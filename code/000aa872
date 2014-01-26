@@ -1,5 +1,0 @@
-0x000aa872    7009         bvs 0x0aa87d
-0x000aa874    a904         lda #0x04
-0x000aa876    8512         sta 0x12
-0x000aa878    bd6603       lda 0x0366,x
-0x000aa87b    8008         bra 0x0aa885

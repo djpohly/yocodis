@@ -1,6 +1,0 @@
-0x0002ad17    ae1c11       ldx 0x111c
-0x0002ad1a    8ee210       stx 0x10e2
-0x0002ad1d    20c7b2       jsr 0xb2c7
-0x0002ad20    a20100       ldx #0x0001
-0x0002ad23    8e0611       stx 0x1106
-0x0002ad26    60           rts

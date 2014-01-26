@@ -1,9 +1,0 @@
-0x000abaa1    a00100       ldy #0x0001
-0x000abaa4    249d         bit 0x9d
-0x000abaa6    d001         bne 0x0abaa9
-0x000abaa8    c8           iny
-0x000abaa9    8c3a01       sty 0x013a
-0x000abaac    e220         sep #0x20
-0x000abaae    a915         lda #0x15
-0x000abab0    8547         sta 0x47
-0x000abab2    60           rts

@@ -7,3 +7,11 @@
 0x000acae6    a8           tay
 0x000acae7    be0009       ldx 0x0900,y
 0x000acaea    800e         bra 0x0acafa
+0x000acaec    ae0009       ldx 0x0900
+0x000acaef    bf04cb0a     lda 0x0acb04,x
+0x000acaf3    2230820d     jsr 0x0d8230
+0x000acaf7    ae000a       ldx 0x0a00
+0x000acafa    bf04cb0a     lda 0x0acb04,x
+0x000acafe    2230820d     jsr 0x0d8230
+0x000acb02    28           plp
+0x000acb03    60           rts

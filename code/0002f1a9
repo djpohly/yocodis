@@ -1,6 +1,0 @@
-0x0002f1a9    ad7e11       lda 0x117e
-0x0002f1ac    d00a         bne 0x02f1b8
-0x0002f1ae    a915         lda #0x15
-0x0002f1b0    8d7c11       sta 0x117c
-0x0002f1b3    ee7e11       inc 0x117e
-0x0002f1b6    8005         bra 0x02f1bd

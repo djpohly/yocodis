@@ -1,5 +1,0 @@
-0x000af63d    08           php
-0x000af63e    e220         sep #0x20
-0x000af640    9c8409       stz 0x0984
-0x000af643    28           plp
-0x000af644    60           rts

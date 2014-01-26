@@ -11,3 +11,11 @@
 0x000acc06    9d4009       sta 0x0940,x
 0x000acc09    28           plp
 0x000acc0a    60           rts
+0x000acc0b    08           php
+0x000acc0c    c220         rep #0x20
+0x000acc0e    9e4209       stz 0x0942,x
+0x000acc11    a95000       lda #0x0050
+0x000acc14    9d4009       sta 0x0940,x
+0x000acc17    9e4409       stz 0x0944,x
+0x000acc1a    28           plp
+0x000acc1b    60           rts

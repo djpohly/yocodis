@@ -1,4 +1,0 @@
-0x000ae947    ad4608       lda 0x0846
-0x000ae94a    f004         beq 0x0ae950
-0x000ae94c    208cf1       jsr 0xf18c
-0x000ae94f    60           rts

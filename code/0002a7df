@@ -1,5 +1,0 @@
-0x0002a7df    ad7210       lda 0x1072
-0x0002a7e2    38           sec
-0x0002a7e3    eddc10       sbc 0x10dc
-0x0002a7e6    8d7210       sta 0x1072
-0x0002a7e9    60           rts

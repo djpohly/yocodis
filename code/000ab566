@@ -1,6 +1,0 @@
-0x000ab566    ee7803       inc 0x0378
-0x000ab569    9c5c01       stz 0x015c
-0x000ab56c    e220         sep #0x20
-0x000ab56e    9cb803       stz 0x03b8
-0x000ab571    9cb903       stz 0x03b9
-0x000ab574    60           rts

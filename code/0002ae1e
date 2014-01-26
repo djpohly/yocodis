@@ -1,8 +1,0 @@
-0x0002ae1e    c220         rep #0x20
-0x0002ae20    ad0c11       lda 0x110c
-0x0002ae23    0dd601       ora 0x01d6
-0x0002ae26    d02d         bne 0x02ae55
-0x0002ae28    ad9900       lda 0x0099
-0x0002ae2b    890003       bit #0x0300
-0x0002ae2e    d001         bne 0x02ae31
-0x0002ae30    60           rts

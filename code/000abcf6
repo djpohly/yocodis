@@ -1,7 +1,0 @@
-0x000abcf6    a90700       lda #0x0007
-0x000abcf9    9d7803       sta 0x0378,x
-0x000abcfc    e220         sep #0x20
-0x000abcfe    bd7203       lda 0x0372,x
-0x000abd01    29df         and #0xdf
-0x000abd03    9d7203       sta 0x0372,x
-0x000abd06    60           rts

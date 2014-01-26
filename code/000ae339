@@ -1,6 +1,0 @@
-0x000ae339    aeba01       ldx 0x01ba
-0x000ae33c    d009         bne 0x0ae347
-0x000ae33e    2042e6       jsr 0xe642
-0x000ae341    9004         bcc 0x0ae347
-0x000ae343    9c5c01       stz 0x015c
-0x000ae346    60           rts

@@ -1,3 +1,0 @@
-0x0002aab0    a20100       ldx #0x0001
-0x0002aab3    8e7610       stx 0x1076
-0x0002aab6    60           rts

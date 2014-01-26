@@ -1,2 +1,0 @@
-0x00029d70    200cdc       jsr 0xdc0c
-0x00029d73    60           rts

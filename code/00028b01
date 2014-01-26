@@ -1,8 +1,0 @@
-0x00028b01    c220         rep #0x20
-0x00028b03    ad7e10       lda 0x107e
-0x00028b06    d00c         bne 0x028b14
-0x00028b08    ce7a10       dec 0x107a
-0x00028b0b    1006         bpl 0x028b13
-0x00028b0d    ee7e10       inc 0x107e
-0x00028b10    9c7a10       stz 0x107a
-0x00028b13    60           rts

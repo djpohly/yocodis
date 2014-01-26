@@ -18,3 +18,68 @@
 0x000aef9b    c92000       cmp #0x0020
 0x000aef9e    f011         beq 0x0aefb1
 0x000aefa0    801d         bra 0x0aefbf
+0x000aefa2    2231960a     jsr 0x0a9631
+0x000aefa6    20c5f6       jsr 0xf6c5
+0x000aefa9    60           rts
+0x000aefaa    ee7803       inc 0x0378
+0x000aefad    9cb803       stz 0x03b8
+0x000aefb0    60           rts
+0x000aefb1    a90200       lda #0x0002
+0x000aefb4    8d2409       sta 0x0924
+0x000aefb7    2035f6       jsr 0xf635
+0x000aefba    a90600       lda #0x0006
+0x000aefbd    8011         bra 0x0aefd0
+0x000aefbf    a90300       lda #0x0003
+0x000aefc2    8d2409       sta 0x0924
+0x000aefc5    203df6       jsr 0xf63d
+0x000aefc8    a90700       lda #0x0007
+0x000aefcb    8003         bra 0x0aefd0
+0x000aefcd    a90500       lda #0x0005
+0x000aefd0    8d7803       sta 0x0378
+0x000aefd3    e220         sep #0x20
+0x000aefd5    6469         stz 0x69
+0x000aefd7    a940         lda #0x40
+0x000aefd9    0c7203       tsb 0x0372
+0x000aefdc    60           rts
+0x000aefdd    ada803       lda 0x03a8
+0x000aefe0    f004         beq 0x0aefe6
+0x000aefe2    203993       jsr 0x9339
+0x000aefe5    60           rts
+0x000aefe6    20be93       jsr 0x93be
+0x000aefe9    ee7803       inc 0x0378
+0x000aefec    60           rts
+0x000aefed    adc003       lda 0x03c0
+0x000aeff0    38           sec
+0x000aeff1    edc203       sbc 0x03c2
+0x000aeff4    0dcc03       ora 0x03cc
+0x000aeff7    0da803       ora 0x03a8
+0x000aeffa    f005         beq 0x0af001
+0x000aeffc    22fca50a     jsr 0x0aa5fc
+0x000af000    60           rts
+0x000af001    20d4a8       jsr 0xa8d4
+0x000af004    ee7803       inc 0x0378
+0x000af007    60           rts
+0x000af008    ad6003       lda 0x0360
+0x000af00b    0d6203       ora 0x0362
+0x000af00e    f024         beq 0x0af034
+0x000af010    226f8d0a     jsr 0x0a8d6f
+0x000af014    adc003       lda 0x03c0
+0x000af017    d00f         bne 0x0af028
+0x000af019    9c7803       stz 0x0378
+0x000af01c    e220         sep #0x20
+0x000af01e    9cb803       stz 0x03b8
+0x000af021    9cb903       stz 0x03b9
+0x000af024    9c7203       stz 0x0372
+0x000af027    60           rts
+0x000af028    a90100       lda #0x0001
+0x000af02b    8d7803       sta 0x0378
+0x000af02e    e220         sep #0x20
+0x000af030    eeb803       inc 0x03b8
+0x000af033    60           rts
+0x000af034    ee7803       inc 0x0378
+0x000af037    e220         sep #0x20
+0x000af039    6469         stz 0x69
+0x000af03b    a940         lda #0x40
+0x000af03d    0c7203       tsb 0x0372
+0x000af040    60           rts
+0x000af041    60           rts

@@ -4,3 +4,20 @@
 0x000af915    9cc801       stz 0x01c8
 0x000af918    28           plp
 0x000af919    60           rts
+0x000af91a    08           php
+0x000af91b    c220         rep #0x20
+0x000af91d    a55c         lda 0x5c
+0x000af91f    d014         bne 0x0af935
+0x000af921    ad8409       lda 0x0984
+0x000af924    cd8209       cmp 0x0982
+0x000af927    9003         bcc 0x0af92c
+0x000af929    28           plp
+0x000af92a    38           sec
+0x000af92b    60           rts
+0x000af92c    1a           inc a
+0x000af92d    8d8409       sta 0x0984
+0x000af930    a91400       lda #0x0014
+0x000af933    855c         sta 0x5c
+0x000af935    28           plp
+0x000af936    18           clc
+0x000af937    60           rts

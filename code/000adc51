@@ -1,3 +1,0 @@
-0x000adc51    a90008       lda #0x0800
-0x000adc54    8d6001       sta 0x0160
-0x000adc57    60           rts

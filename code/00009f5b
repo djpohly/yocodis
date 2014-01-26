@@ -9,3 +9,22 @@
 0x00009f6e    8d4a08       sta 0x084a
 0x00009f71    ce4608       dec 0x0846
 0x00009f74    60           rts
+0x00009f75    ee4608       inc 0x0846
+0x00009f78    60           rts
+0x00009f79    a90080       lda #0x8000
+0x00009f7c    0c4608       tsb 0x0846
+0x00009f7f    e220         sep #0x20
+0x00009f81    a962         lda #0x62
+0x00009f83    8d0921       sta 0x2109
+0x00009f86    60           rts
+0x00009f87    ad4608       lda 0x0846
+0x00009f8a    c90080       cmp #0x8000
+0x00009f8d    f012         beq 0x009fa1
+0x00009f8f    a558         lda 0x58
+0x00009f91    293c00       and #0x003c
+0x00009f94    aa           tax
+0x00009f95    bfa29f00     lda 0x009fa2,x
+0x00009f99    8585         sta 0x85
+0x00009f9b    bfa49f00     lda 0x009fa4,x
+0x00009f9f    8587         sta 0x87
+0x00009fa1    60           rts

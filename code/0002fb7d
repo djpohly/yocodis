@@ -1,6 +1,0 @@
-0x0002fb7d    ad0005       lda 0x0500
-0x0002fb80    18           clc
-0x0002fb81    694611       adc #0x1146
-0x0002fb84    8500         sta 0x00
-0x0002fb86    6402         stz 0x02
-0x0002fb88    60           rts

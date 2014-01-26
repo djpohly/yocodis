@@ -1,3 +1,0 @@
-0x0002bc7b    a20098       ldx #0x9800
-0x0002bc7e    a0004c       ldy #0x4c00
-0x0002bc81    800e         bra 0x02bc91

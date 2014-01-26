@@ -10,3 +10,5 @@
 0x0002bc4c    aa           tax
 0x0002bc4d    f452bc       pea 0xbc52
 0x0002bc50    7c55bc       jmp (0xbc55,x)
+0x0002bc53    28           plp
+0x0002bc54    60           rts

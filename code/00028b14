@@ -1,7 +1,0 @@
-0x00028b14    e220         sep #0x20
-0x00028b16    ae7a10       ldx 0x107a
-0x00028b19    bf6ffb03     lda 0x03fb6f,x
-0x00028b1d    3005         bmi 0x028b24
-0x00028b1f    eb           swa
-0x00028b20    a900         lda #0x00
-0x00028b22    8003         bra 0x028b27

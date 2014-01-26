@@ -27,3 +27,70 @@
 0x000088ef    ab           plb
 0x000088f0    28           plp
 0x000088f1    6b           rtl
+0x000088f2    2403         bit 0x03
+0x000088f4    b90100       lda 0x0001,y
+0x000088f7    5006         bvc 0x0088ff
+0x000088f9    a507         lda 0x07
+0x000088fb    38           sec
+0x000088fc    f90100       sbc 0x0001,y
+0x000088ff    18           clc
+0x00008900    650c         adc 0x0c
+0x00008902    9d001d       sta 0x1d00,x
+0x00008905    da           phx
+0x00008906    5a           phy
+0x00008907    c220         rep #0x20
+0x00008909    8a           txa
+0x0000890a    4a           lsr a
+0x0000890b    4a           lsr a
+0x0000890c    4a           lsr a
+0x0000890d    4a           lsr a
+0x0000890e    a8           tay
+0x0000890f    8a           txa
+0x00008910    0506         ora 0x06
+0x00008912    290f00       and #0x000f
+0x00008915    aa           tax
+0x00008916    e220         sep #0x20
+0x00008918    b9001f       lda 0x1f00,y
+0x0000891b    3fb28800     and 0x0088b2,x
+0x0000891f    1fa28800     ora 0x0088a2,x
+0x00008923    99001f       sta 0x1f00,y
+0x00008926    7a           ply
+0x00008927    fa           plx
+0x00008928    b90200       lda 0x0002,y
+0x0000892b    18           clc
+0x0000892c    650a         adc 0x0a
+0x0000892e    3a           dec a
+0x0000892f    9d011d       sta 0x1d01,x
+0x00008932    b90300       lda 0x0003,y
+0x00008935    18           clc
+0x00008936    6504         adc 0x04
+0x00008938    9d021d       sta 0x1d02,x
+0x0000893b    a505         lda 0x05
+0x0000893d    9002         bcc 0x008941
+0x0000893f    0901         ora #0x01
+0x00008941    8506         sta 0x06
+0x00008943    b90400       lda 0x0004,y
+0x00008946    4503         eor 0x03
+0x00008948    0506         ora 0x06
+0x0000894a    9d031d       sta 0x1d03,x
+0x0000894d    e8           inx
+0x0000894e    e8           inx
+0x0000894f    e8           inx
+0x00008950    e8           inx
+0x00008951    c8           iny
+0x00008952    c8           iny
+0x00008953    c8           iny
+0x00008954    c8           iny
+0x00008955    c8           iny
+0x00008956    4cd788       jmp 0x88d7
+0x00008959    a695         ldx 0x95
+0x0000895b    8009         bra 0x008966
+0x0000895d    a9f0         lda #0xf0
+0x0000895f    9d011d       sta 0x1d01,x
+0x00008962    e8           inx
+0x00008963    e8           inx
+0x00008964    e8           inx
+0x00008965    e8           inx
+0x00008966    e00002       cpx #0x0200
+0x00008969    90f2         bcc 0x00895d
+0x0000896b    6b           rtl

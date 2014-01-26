@@ -1,7 +1,0 @@
-0x000aeed1    a90000       lda #0x0000
-0x000aeed4    2005f5       jsr 0xf505
-0x000aeed7    a90900       lda #0x0009
-0x000aeeda    2005f5       jsr 0xf505
-0x000aeedd    e220         sep #0x20
-0x000aeedf    e647         inc 0x47
-0x000aeee1    60           rts

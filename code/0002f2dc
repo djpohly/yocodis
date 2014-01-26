@@ -1,7 +1,0 @@
-0x0002f2dc    c220         rep #0x20
-0x0002f2de    c92900       cmp #0x0029
-0x0002f2e1    9009         bcc 0x02f2ec
-0x0002f2e3    f00b         beq 0x02f2f0
-0x0002f2e5    ee7610       inc 0x1076
-0x0002f2e8    ee5411       inc 0x1154
-0x0002f2eb    60           rts

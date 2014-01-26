@@ -24,3 +24,9 @@
 0x000abf32    225a8a0a     jsr 0x0a8a5a
 0x000abf36    224d800a     jsr 0x0a804d
 0x000abf3a    60           rts
+0x000abf3b    e220         sep #0x20
+0x000abf3d    a901         lda #0x01
+0x000abf3f    8d3a01       sta 0x013a
+0x000abf42    a915         lda #0x15
+0x000abf44    8547         sta 0x47
+0x000abf46    60           rts

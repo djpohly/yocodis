@@ -1,8 +1,0 @@
-0x0002dd96    c220         rep #0x20
-0x0002dd98    ce7a10       dec 0x107a
-0x0002dd9b    100b         bpl 0x02dda8
-0x0002dd9d    eea810       inc 0x10a8
-0x0002dda0    e220         sep #0x20
-0x0002dda2    a914         lda #0x14
-0x0002dda4    2230820d     jsr 0x0d8230
-0x0002dda8    60           rts

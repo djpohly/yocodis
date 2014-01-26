@@ -9,3 +9,31 @@
 0x000aac95    201994       jsr 0x9419
 0x000aac98    207dc3       jsr 0xc37d
 0x000aac9b    8018         bra 0x0aacb5
+0x000aac9d    e220         sep #0x20
+0x000aac9f    4a           lsr a
+0x000aaca0    b013         bcs 0x0aacb5
+0x000aaca2    debf03       dec 0x03bf,x
+0x000aaca5    bdbc03       lda 0x03bc,x
+0x000aaca8    f00b         beq 0x0aacb5
+0x000aacaa    3a           dec a
+0x000aacab    d005         bne 0x0aacb2
+0x000aacad    febe03       inc 0x03be,x
+0x000aacb0    8003         bra 0x0aacb5
+0x000aacb2    debe03       dec 0x03be,x
+0x000aacb5    e220         sep #0x20
+0x000aacb7    bdba03       lda 0x03ba,x
+0x000aacba    8506         sta 0x06
+0x000aacbc    bdbb03       lda 0x03bb,x
+0x000aacbf    8507         sta 0x07
+0x000aacc1    bdb903       lda 0x03b9,x
+0x000aacc4    8508         sta 0x08
+0x000aacc6    bdbf03       lda 0x03bf,x
+0x000aacc9    850a         sta 0x0a
+0x000aaccb    bdbe03       lda 0x03be,x
+0x000aacce    a600         ldx 0x00
+0x000aacd0    18           clc
+0x000aacd1    7fdcac0a     adc 0x0aacdc,x
+0x000aacd5    850c         sta 0x0c
+0x000aacd7    2029ad       jsr 0xad29
+0x000aacda    28           plp
+0x000aacdb    60           rts

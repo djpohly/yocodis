@@ -1,6 +1,0 @@
-0x000aec10    20e4f4       jsr 0xf4e4
-0x000aec13    220d9a0a     jsr 0x0a9a0d
-0x000aec17    e220         sep #0x20
-0x000aec19    e647         inc 0x47
-0x000aec1b    224d800a     jsr 0x0a804d
-0x000aec1f    60           rts

@@ -1,6 +1,0 @@
-0x0002fa0e    a00200       ldy #0x0002
-0x0002fa11    a50c         lda 0x0c
-0x0002fa13    c90700       cmp #0x0007
-0x0002fa16    9026         bcc 0x02fa3e
-0x0002fa18    a90600       lda #0x0006
-0x0002fa1b    8021         bra 0x02fa3e

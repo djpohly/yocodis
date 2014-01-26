@@ -1,8 +1,0 @@
-0x000a92ac    08           php
-0x000a92ad    e220         sep #0x20
-0x000a92af    a20000       ldx #0x0000
-0x000a92b2    a904         lda #0x04
-0x000a92b4    850e         sta 0x0e
-0x000a92b6    a924         lda #0x24
-0x000a92b8    8510         sta 0x10
-0x000a92ba    8018         bra 0x0a92d4

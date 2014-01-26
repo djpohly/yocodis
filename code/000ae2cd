@@ -4,3 +4,78 @@
 0x000ae2d5    9004         bcc 0x0ae2db
 0x000ae2d7    9c5c01       stz 0x015c
 0x000ae2da    60           rts
+0x000ae2db    2068e3       jsr 0xe368
+0x000ae2de    e220         sep #0x20
+0x000ae2e0    b90003       lda 0x0300,y
+0x000ae2e3    c90e         cmp #0x0e
+0x000ae2e5    d003         bne 0x0ae2ea
+0x000ae2e7    adbc01       lda 0x01bc
+0x000ae2ea    cd6401       cmp 0x0164
+0x000ae2ed    f00b         beq 0x0ae2fa
+0x000ae2ef    c220         rep #0x20
+0x000ae2f1    9c6001       stz 0x0160
+0x000ae2f4    a90400       lda #0x0004
+0x000ae2f7    8d5c01       sta 0x015c
+0x000ae2fa    60           rts
+0x000ae2fb    aeba01       ldx 0x01ba
+0x000ae2fe    d009         bne 0x0ae309
+0x000ae300    2042e6       jsr 0xe642
+0x000ae303    9004         bcc 0x0ae309
+0x000ae305    9c5c01       stz 0x015c
+0x000ae308    60           rts
+0x000ae309    6400         stz 0x00
+0x000ae30b    e220         sep #0x20
+0x000ae30d    bd7303       lda 0x0373,x
+0x000ae310    4a           lsr a
+0x000ae311    4a           lsr a
+0x000ae312    4a           lsr a
+0x000ae313    4a           lsr a
+0x000ae314    cdb601       cmp 0x01b6
+0x000ae317    f002         beq 0x0ae31b
+0x000ae319    e600         inc 0x00
+0x000ae31b    bd7403       lda 0x0374,x
+0x000ae31e    4a           lsr a
+0x000ae31f    4a           lsr a
+0x000ae320    4a           lsr a
+0x000ae321    4a           lsr a
+0x000ae322    cdb801       cmp 0x01b8
+0x000ae325    f002         beq 0x0ae329
+0x000ae327    e600         inc 0x00
+0x000ae329    c600         dec 0x00
+0x000ae32b    f00b         beq 0x0ae338
+0x000ae32d    c220         rep #0x20
+0x000ae32f    9c6001       stz 0x0160
+0x000ae332    a90400       lda #0x0004
+0x000ae335    8d5c01       sta 0x015c
+0x000ae338    60           rts
+0x000ae339    aeba01       ldx 0x01ba
+0x000ae33c    d009         bne 0x0ae347
+0x000ae33e    2042e6       jsr 0xe642
+0x000ae341    9004         bcc 0x0ae347
+0x000ae343    9c5c01       stz 0x015c
+0x000ae346    60           rts
+0x000ae347    2068e3       jsr 0xe368
+0x000ae34a    e220         sep #0x20
+0x000ae34c    b90003       lda 0x0300,y
+0x000ae34f    c90e         cmp #0x0e
+0x000ae351    d003         bne 0x0ae356
+0x000ae353    adbc01       lda 0x01bc
+0x000ae356    cd6401       cmp 0x0164
+0x000ae359    d00b         bne 0x0ae366
+0x000ae35b    c220         rep #0x20
+0x000ae35d    9c6001       stz 0x0160
+0x000ae360    a90400       lda #0x0004
+0x000ae363    8d5c01       sta 0x015c
+0x000ae366    60           rts
+0x000ae367    60           rts
+0x000ae368    08           php
+0x000ae369    c220         rep #0x20
+0x000ae36b    adb801       lda 0x01b8
+0x000ae36e    0a           asl a
+0x000ae36f    0a           asl a
+0x000ae370    0a           asl a
+0x000ae371    0db601       ora 0x01b6
+0x000ae374    0dba01       ora 0x01ba
+0x000ae377    a8           tay
+0x000ae378    28           plp
+0x000ae379    60           rts

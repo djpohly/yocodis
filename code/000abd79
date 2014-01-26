@@ -1,4 +1,0 @@
-0x000abd79    20d4a8       jsr 0xa8d4
-0x000abd7c    ae0005       ldx 0x0500
-0x000abd7f    fe7803       inc 0x0378,x
-0x000abd82    60           rts

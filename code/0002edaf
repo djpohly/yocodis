@@ -1,7 +1,0 @@
-0x0002edaf    e220         sep #0x20
-0x0002edb1    a98a         lda #0x8a
-0x0002edb3    22758b00     jsr 0x008b75
-0x0002edb7    a903         lda #0x03
-0x0002edb9    8d4001       sta 0x0140
-0x0002edbc    200d93       jsr 0x930d
-0x0002edbf    60           rts

@@ -1,6 +1,0 @@
-0x0002f216    ee4a11       inc 0x114a
-0x0002f219    ad4a11       lda 0x114a
-0x0002f21c    c92b00       cmp #0x002b
-0x0002f21f    9003         bcc 0x02f224
-0x0002f221    9c4a11       stz 0x114a
-0x0002f224    60           rts

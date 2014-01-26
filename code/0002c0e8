@@ -2,3 +2,17 @@
 0x0002c0eb    d003         bne 0x02c0f0
 0x0002c0ed    ee4608       inc 0x0846
 0x0002c0f0    60           rts
+0x0002c0f1    a91000       lda #0x0010
+0x0002c0f4    20b9fb       jsr 0xfbb9
+0x0002c0f7    a9c100       lda #0x00c1
+0x0002c0fa    8d2401       sta 0x0124
+0x0002c0fd    a90020       lda #0x2000
+0x0002c100    8d2501       sta 0x0125
+0x0002c103    a918c1       lda #0xc118
+0x0002c106    8d2701       sta 0x0127
+0x0002c109    a90200       lda #0x0002
+0x0002c10c    8d2901       sta 0x0129
+0x0002c10f    a97800       lda #0x0078
+0x0002c112    855c         sta 0x5c
+0x0002c114    ee4608       inc 0x0846
+0x0002c117    60           rts

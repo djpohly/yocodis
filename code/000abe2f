@@ -1,6 +1,0 @@
-0x000abe2f    ae0005       ldx 0x0500
-0x000abe32    bd5209       lda 0x0952,x
-0x000abe35    f007         beq 0x0abe3e
-0x000abe37    20b1d3       jsr 0xd3b1
-0x000abe3a    2078d3       jsr 0xd378
-0x000abe3d    60           rts

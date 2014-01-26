@@ -1,6 +1,0 @@
-0x000ab5b6    ada603       lda 0x03a6
-0x000ab5b9    0da803       ora 0x03a8
-0x000ab5bc    f008         beq 0x0ab5c6
-0x000ab5be    203993       jsr 0x9339
-0x000ab5c1    22a7990a     jsr 0x0a99a7
-0x000ab5c5    60           rts

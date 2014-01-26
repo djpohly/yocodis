@@ -1,4 +1,0 @@
-0x0002b3e8    c220         rep #0x20
-0x0002b3ea    a9010a       lda #0x0a01
-0x0002b3ed    2200800d     jsr 0x0d8000
-0x0002b3f1    60           rts

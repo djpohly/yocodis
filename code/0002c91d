@@ -10,3 +10,72 @@
 0x0002c930    8e4001       stx 0x0140
 0x0002c933    8544         sta 0x44
 0x0002c935    60           rts
+0x0002c936    c220         rep #0x20
+0x0002c938    a558         lda 0x58
+0x0002c93a    890f00       bit #0x000f
+0x0002c93d    f001         beq 0x02c940
+0x0002c93f    60           rts
+0x0002c940    ee7c10       inc 0x107c
+0x0002c943    ad7c10       lda 0x107c
+0x0002c946    890100       bit #0x0001
+0x0002c949    d019         bne 0x02c964
+0x0002c94b    a24d00       ldx #0x004d
+0x0002c94e    8e9010       stx 0x1090
+0x0002c951    a24b00       ldx #0x004b
+0x0002c954    8e8e10       stx 0x108e
+0x0002c957    a20200       ldx #0x0002
+0x0002c95a    8e8f11       stx 0x118f
+0x0002c95d    a20600       ldx #0x0006
+0x0002c960    8e9111       stx 0x1191
+0x0002c963    60           rts
+0x0002c964    a24e00       ldx #0x004e
+0x0002c967    8e9010       stx 0x1090
+0x0002c96a    a24c00       ldx #0x004c
+0x0002c96d    8e8e10       stx 0x108e
+0x0002c970    9c8f11       stz 0x118f
+0x0002c973    a20400       ldx #0x0004
+0x0002c976    8e9111       stx 0x1191
+0x0002c979    60           rts
+0x0002c97a    c220         rep #0x20
+0x0002c97c    ad9511       lda 0x1195
+0x0002c97f    d001         bne 0x02c982
+0x0002c981    60           rts
+0x0002c982    ad8300       lda 0x0083
+0x0002c985    d007         bne 0x02c98e
+0x0002c987    e220         sep #0x20
+0x0002c989    a938         lda #0x38
+0x0002c98b    8d0821       sta 0x2108
+0x0002c98e    c220         rep #0x20
+0x0002c990    ce8100       dec 0x0081
+0x0002c993    ce8300       dec 0x0083
+0x0002c996    ce8300       dec 0x0083
+0x0002c999    60           rts
+0x0002c99a    e220         sep #0x20
+0x0002c99c    a20020       ldx #0x2000
+0x0002c99f    8ee000       stx 0x00e0
+0x0002c9a2    a2200c       ldx #0x0c20
+0x0002c9a5    8ede00       stx 0x00de
+0x0002c9a8    a24025       ldx #0x2540
+0x0002c9ab    8eda00       stx 0x00da
+0x0002c9ae    a24025       ldx #0x2540
+0x0002c9b1    8ed600       stx 0x00d6
+0x0002c9b4    a97e         lda #0x7e
+0x0002c9b6    8ddc00       sta 0x00dc
+0x0002c9b9    a97e         lda #0x7e
+0x0002c9bb    8dd800       sta 0x00d8
+0x0002c9be    22b48e00     jsr 0x008eb4
+0x0002c9c2    c220         rep #0x20
+0x0002c9c4    a90008       lda #0x0800
+0x0002c9c7    a20020       ldx #0x2000
+0x0002c9ca    a00030       ldy #0x3000
+0x0002c9cd    227b8e00     jsr 0x008e7b
+0x0002c9d1    60           rts
+0x0002c9d2    220df104     jsr 0x04f10d
+0x0002c9d6    2018a0       jsr 0xa018
+0x0002c9d9    c220         rep #0x20
+0x0002c9db    ada810       lda 0x10a8
+0x0002c9de    29ff00       and #0x00ff
+0x0002c9e1    0a           asl a
+0x0002c9e2    aa           tax
+0x0002c9e3    f4e8c9       pea 0xc9e8
+0x0002c9e6    7ceac9       jmp (0xc9ea,x)

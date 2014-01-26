@@ -14,3 +14,62 @@
 0x0002e1a0    8d140d       sta 0x0d14
 0x0002e1a3    eea810       inc 0x10a8
 0x0002e1a6    60           rts
+0x0002e1a7    c220         rep #0x20
+0x0002e1a9    ad240d       lda 0x0d24
+0x0002e1ac    c90600       cmp #0x0006
+0x0002e1af    d00a         bne 0x02e1bb
+0x0002e1b1    e220         sep #0x20
+0x0002e1b3    eea810       inc 0x10a8
+0x0002e1b6    c220         rep #0x20
+0x0002e1b8    9c240d       stz 0x0d24
+0x0002e1bb    20f6e1       jsr 0xe1f6
+0x0002e1be    e220         sep #0x20
+0x0002e1c0    60           rts
+0x0002e1c1    e220         sep #0x20
+0x0002e1c3    a20100       ldx #0x0001
+0x0002e1c6    8e8111       stx 0x1181
+0x0002e1c9    a20100       ldx #0x0001
+0x0002e1cc    8e8511       stx 0x1185
+0x0002e1cf    9c140d       stz 0x0d14
+0x0002e1d2    9c150d       stz 0x0d15
+0x0002e1d5    eea810       inc 0x10a8
+0x0002e1d8    60           rts
+0x0002e1d9    c220         rep #0x20
+0x0002e1db    a95000       lda #0x0050
+0x0002e1de    8f00e47e     sta 0x7ee400
+0x0002e1e2    a9ff01       lda #0x01ff
+0x0002e1e5    8f02e47e     sta 0x7ee402
+0x0002e1e9    a9ff00       lda #0x00ff
+0x0002e1ec    8f04e47e     sta 0x7ee404
+0x0002e1f0    e220         sep #0x20
+0x0002e1f2    eea810       inc 0x10a8
+0x0002e1f5    60           rts
+0x0002e1f6    c220         rep #0x20
+0x0002e1f8    ad1e0d       lda 0x0d1e
+0x0002e1fb    0a           asl a
+0x0002e1fc    aa           tax
+0x0002e1fd    bfbef704     lda 0x04f7be,x
+0x0002e201    aa           tax
+0x0002e202    ec000c       cpx 0x0c00
+0x0002e205    d01a         bne 0x02e221
+0x0002e207    ad1e0d       lda 0x0d1e
+0x0002e20a    c90100       cmp #0x0001
+0x0002e20d    d006         bne 0x02e215
+0x0002e20f    a9ffff       lda #0xffff
+0x0002e212    8d1e0d       sta 0x0d1e
+0x0002e215    a9ffff       lda #0xffff
+0x0002e218    8d000c       sta 0x0c00
+0x0002e21b    ee1e0d       inc 0x0d1e
+0x0002e21e    ee240d       inc 0x0d24
+0x0002e221    ee000c       inc 0x0c00
+0x0002e224    60           rts
+0x0002e225    22c2f704     jsr 0x04f7c2
+0x0002e229    2210f804     jsr 0x04f810
+0x0002e22d    2258f804     jsr 0x04f858
+0x0002e231    2018a0       jsr 0xa018
+0x0002e234    ada810       lda 0x10a8
+0x0002e237    29ff00       and #0x00ff
+0x0002e23a    0a           asl a
+0x0002e23b    aa           tax
+0x0002e23c    f441e2       pea 0xe241
+0x0002e23f    7c43e2       jmp (0xe243,x)

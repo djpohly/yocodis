@@ -1,5 +1,0 @@
-0x0002b30b    adde10       lda 0x10de
-0x0002b30e    c90200       cmp #0x0002
-0x0002b311    b003         bcs 0x02b316
-0x0002b313    eede10       inc 0x10de
-0x0002b316    60           rts

@@ -11,3 +11,22 @@
 0x00008a61    10f6         bpl 0x008a59
 0x00008a63    28           plp
 0x00008a64    6b           rtl
+0x00008a65    08           php
+0x00008a66    e220         sep #0x20
+0x00008a68    48           pha
+0x00008a69    c220         rep #0x20
+0x00008a6b    22938500     jsr 0x008593
+0x00008a6f    8d0442       sta 0x4204
+0x00008a72    e220         sep #0x20
+0x00008a74    68           pla
+0x00008a75    8d0642       sta 0x4206
+0x00008a78    08           php
+0x00008a79    28           plp
+0x00008a7a    08           php
+0x00008a7b    28           plp
+0x00008a7c    c220         rep #0x20
+0x00008a7e    98           tya
+0x00008a7f    18           clc
+0x00008a80    6d1642       adc 0x4216
+0x00008a83    28           plp
+0x00008a84    6b           rtl

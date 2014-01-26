@@ -19,3 +19,21 @@
 0x0000a068    a93f00       lda #0x003f
 0x0000a06b    14da         trb 0xda
 0x0000a06d    801d         bra 0x00a08c
+0x0000a06f    a90200       lda #0x0002
+0x0000a072    8510         sta 0x10
+0x0000a074    a90001       lda #0x0100
+0x0000a077    38           sec
+0x0000a078    e50c         sbc 0x0c
+0x0000a07a    9012         bcc 0x00a08e
+0x0000a07c    f010         beq 0x00a08e
+0x0000a07e    4a           lsr a
+0x0000a07f    4a           lsr a
+0x0000a080    6510         adc 0x10
+0x0000a082    c90e00       cmp #0x000e
+0x0000a085    9003         bcc 0x00a08a
+0x0000a087    a90e00       lda #0x000e
+0x0000a08a    8512         sta 0x12
+0x0000a08c    38           sec
+0x0000a08d    60           rts
+0x0000a08e    18           clc
+0x0000a08f    60           rts

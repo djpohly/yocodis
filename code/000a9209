@@ -1,5 +1,0 @@
-0x000a9209    08           php
-0x000a920a    e220         sep #0x20
-0x000a920c    a506         lda 0x06
-0x000a920e    d003         bne 0x0a9213
-0x000a9210    4caa92       jmp 0x92aa

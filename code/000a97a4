@@ -14,3 +14,69 @@
 0x000a97c8    20f6c0       jsr 0xc0f6
 0x000a97cb    20d1c0       jsr 0xc0d1
 0x000a97ce    60           rts
+0x000a97cf    c220         rep #0x20
+0x000a97d1    ae0405       ldx 0x0504
+0x000a97d4    a90200       lda #0x0002
+0x000a97d7    9d7c03       sta 0x037c,x
+0x000a97da    203ec1       jsr 0xc13e
+0x000a97dd    8a           txa
+0x000a97de    490200       eor #0x0002
+0x000a97e1    aa           tax
+0x000a97e2    bd6403       lda 0x0364,x
+0x000a97e5    9d6003       sta 0x0360,x
+0x000a97e8    9e6e03       stz 0x036e,x
+0x000a97eb    9ca003       stz 0x03a0
+0x000a97ee    60           rts
+0x000a97ef    208499       jsr 0x9984
+0x000a97f2    b006         bcs 0x0a97fa
+0x000a97f4    a90300       lda #0x0003
+0x000a97f7    9d7c03       sta 0x037c,x
+0x000a97fa    60           rts
+0x000a97fb    ada003       lda 0x03a0
+0x000a97fe    d029         bne 0x0a9829
+0x000a9800    ad0405       lda 0x0504
+0x000a9803    490200       eor #0x0002
+0x000a9806    aa           tax
+0x000a9807    bd6403       lda 0x0364,x
+0x000a980a    3a           dec a
+0x000a980b    d008         bne 0x0a9815
+0x000a980d    a00300       ldy #0x0003
+0x000a9810    ad4e01       lda 0x014e
+0x000a9813    f003         beq 0x0a9818
+0x000a9815    2022c2       jsr 0xc222
+0x000a9818    20478f       jsr 0x8f47
+0x000a981b    ae0405       ldx 0x0504
+0x000a981e    a90400       lda #0x0004
+0x000a9821    9d7c03       sta 0x037c,x
+0x000a9824    8a           txa
+0x000a9825    1a           inc a
+0x000a9826    8da003       sta 0x03a0
+0x000a9829    60           rts
+0x000a982a    22128a0a     jsr 0x0a8a12
+0x000a982e    2286840a     jsr 0x0a8486
+0x000a9832    22f3840a     jsr 0x0a84f3
+0x000a9836    ae0405       ldx 0x0504
+0x000a9839    fe7c03       inc 0x037c,x
+0x000a983c    60           rts
+0x000a983d    ad0405       lda 0x0504
+0x000a9840    490200       eor #0x0002
+0x000a9843    aa           tax
+0x000a9844    bd6e03       lda 0x036e,x
+0x000a9847    d003         bne 0x0a984c
+0x000a9849    4ccf97       jmp 0x97cf
+0x000a984c    206ec1       jsr 0xc16e
+0x000a984f    aef203       ldx 0x03f2
+0x000a9852    bf73980a     lda 0x0a9873,x
+0x000a9856    29ff00       and #0x00ff
+0x000a9859    a8           tay
+0x000a985a    18           clc
+0x000a985b    a90000       lda #0x0000
+0x000a985e    6534         adc 0x34
+0x000a9860    88           dey
+0x000a9861    10fb         bpl 0x0a985e
+0x000a9863    ae0405       ldx 0x0504
+0x000a9866    9da203       sta 0x03a2,x
+0x000a9869    a90600       lda #0x0006
+0x000a986c    9d7c03       sta 0x037c,x
+0x000a986f    9ca003       stz 0x03a0
+0x000a9872    60           rts

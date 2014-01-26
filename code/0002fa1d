@@ -1,3 +1,0 @@
-0x0002fa1d    a00300       ldy #0x0003
-0x0002fa20    a50c         lda 0x0c
-0x0002fa22    801a         bra 0x02fa3e

@@ -15,3 +15,13 @@
 0x00029306    aef210       ldx 0x10f2
 0x00029309    8ef204       stx 0x04f2
 0x0002930c    60           rts
+0x0002930d    c220         rep #0x20
+0x0002930f    adfa10       lda 0x10fa
+0x00029312    490100       eor #0x0001
+0x00029315    8d4201       sta 0x0142
+0x00029318    aefc10       ldx 0x10fc
+0x0002931b    8e3c01       stx 0x013c
+0x0002931e    aefe10       ldx 0x10fe
+0x00029321    8e3e01       stx 0x013e
+0x00029324    9cf203       stz 0x03f2
+0x00029327    60           rts

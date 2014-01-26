@@ -1,5 +1,0 @@
-0x000a99a7    08           php
-0x000a99a8    c220         rep #0x20
-0x000a99aa    ada603       lda 0x03a6
-0x000a99ad    d003         bne 0x0a99b2
-0x000a99af    4c0b9a       jmp 0x9a0b

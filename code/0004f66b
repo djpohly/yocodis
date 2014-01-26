@@ -26,3 +26,32 @@
 0x0004f69f    22a58700     jsr 0x0087a5
 0x0004f6a3    28           plp
 0x0004f6a4    6b           rtl
+0x0004f6a5    08           php
+0x0004f6a6    e220         sep #0x20
+0x0004f6a8    ad140d       lda 0x0d14
+0x0004f6ab    f035         beq 0x04f6e2
+0x0004f6ad    ae1e0d       ldx 0x0d1e
+0x0004f6b0    bfe4f604     lda 0x04f6e4,x
+0x0004f6b4    0a           asl a
+0x0004f6b5    aa           tax
+0x0004f6b6    c220         rep #0x20
+0x0004f6b8    bf38c80c     lda 0x0cc838,x
+0x0004f6bc    8500         sta 0x00
+0x0004f6be    e220         sep #0x20
+0x0004f6c0    a90c         lda #0x0c
+0x0004f6c2    8502         sta 0x02
+0x0004f6c4    a28800       ldx #0x0088
+0x0004f6c7    860a         stx 0x0a
+0x0004f6c9    a26800       ldx #0x0068
+0x0004f6cc    860c         stx 0x0c
+0x0004f6ce    a900         lda #0x00
+0x0004f6d0    8503         sta 0x03
+0x0004f6d2    a950         lda #0x50
+0x0004f6d4    8504         sta 0x04
+0x0004f6d6    a901         lda #0x01
+0x0004f6d8    8505         sta 0x05
+0x0004f6da    640f         stz 0x0f
+0x0004f6dc    6410         stz 0x10
+0x0004f6de    22a58700     jsr 0x0087a5
+0x0004f6e2    28           plp
+0x0004f6e3    6b           rtl

@@ -1,3 +1,0 @@
-0x000abe3e    9e7803       stz 0x0378,x
-0x000abe41    9c5c01       stz 0x015c
-0x000abe44    60           rts

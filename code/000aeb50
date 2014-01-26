@@ -1,4 +1,0 @@
-0x000aeb50    9c2009       stz 0x0920
-0x000aeb53    e220         sep #0x20
-0x000aeb55    e647         inc 0x47
-0x000aeb57    60           rts

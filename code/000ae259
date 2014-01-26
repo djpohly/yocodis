@@ -1,7 +1,0 @@
-0x000ae259    a28002       ldx #0x0280
-0x000ae25c    4602         lsr 0x02
-0x000ae25e    9003         bcc 0x0ae263
-0x000ae260    a28001       ldx #0x0180
-0x000ae263    c220         rep #0x20
-0x000ae265    a90300       lda #0x0003
-0x000ae268    8044         bra 0x0ae2ae

@@ -1,6 +1,0 @@
-0x0002bc9c    a90080       lda #0x8000
-0x0002bc9f    0c4608       tsb 0x0846
-0x0002bca2    e220         sep #0x20
-0x0002bca4    a911         lda #0x11
-0x0002bca6    8d0821       sta 0x2108
-0x0002bca9    60           rts

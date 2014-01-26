@@ -1,6 +1,0 @@
-0x0002bff3    a55c         lda 0x5c
-0x0002bff5    0d2401       ora 0x0124
-0x0002bff8    d006         bne 0x02c000
-0x0002bffa    a90080       lda #0x8000
-0x0002bffd    0c4608       tsb 0x0846
-0x0002c000    60           rts

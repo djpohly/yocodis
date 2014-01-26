@@ -1,5 +1,0 @@
-0x000ad56e    ae0005       ldx 0x0500
-0x000ad571    bd6009       lda 0x0960,x
-0x000ad574    090080       ora #0x8000
-0x000ad577    9d6009       sta 0x0960,x
-0x000ad57a    60           rts

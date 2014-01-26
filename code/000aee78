@@ -1,5 +1,0 @@
-0x000aee78    a55c         lda 0x5c
-0x000aee7a    d004         bne 0x0aee80
-0x000aee7c    e220         sep #0x20
-0x000aee7e    e647         inc 0x47
-0x000aee80    60           rts

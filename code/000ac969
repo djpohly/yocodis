@@ -7,3 +7,15 @@
 0x000ac975    ae0005       ldx 0x0500
 0x000ac978    9d2609       sta 0x0926,x
 0x000ac97b    60           rts
+0x000ac97c    ae0005       ldx 0x0500
+0x000ac97f    bd4809       lda 0x0948,x
+0x000ac982    0a           asl a
+0x000ac983    1d4909       ora 0x0949,x
+0x000ac986    29ff00       and #0x00ff
+0x000ac989    aa           tax
+0x000ac98a    bf9ac90a     lda 0x0ac99a,x
+0x000ac98e    29ff00       and #0x00ff
+0x000ac991    f0d6         beq 0x0ac969
+0x000ac993    ae0005       ldx 0x0500
+0x000ac996    9d2609       sta 0x0926,x
+0x000ac999    60           rts

@@ -1,8 +1,0 @@
-0x000095c7    68           pla
-0x000095c8    a534         lda 0x34
-0x000095ca    38           sec
-0x000095cb    e9e803       sbc #0x03e8
-0x000095ce    9006         bcc 0x0095d6
-0x000095d0    e63b         inc 0x3b
-0x000095d2    8534         sta 0x34
-0x000095d4    80f5         bra 0x0095cb

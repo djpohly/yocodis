@@ -1,6 +1,0 @@
-0x000ab94d    20dbc8       jsr 0xc8db
-0x000ab950    a565         lda 0x65
-0x000ab952    4940         eor #0x40
-0x000ab954    8565         sta 0x65
-0x000ab956    e647         inc 0x47
-0x000ab958    60           rts

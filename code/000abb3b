@@ -1,8 +1,0 @@
-0x000abb3b    490001       eor #0x0100
-0x000abb3e    aa           tax
-0x000abb3f    a90200       lda #0x0002
-0x000abb42    9d2409       sta 0x0924,x
-0x000abb45    224d800a     jsr 0x0a804d
-0x000abb49    e220         sep #0x20
-0x000abb4b    e647         inc 0x47
-0x000abb4d    60           rts

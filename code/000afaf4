@@ -1,2 +1,0 @@
-0x000afaf4    a90100       lda #0x0001
-0x000afaf7    8003         bra 0x0afafc

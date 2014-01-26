@@ -51,3 +51,44 @@
 0x000aa1b9    8d0a06       sta 0x060a
 0x000aa1bc    28           plp
 0x000aa1bd    60           rts
+0x000aa1be    ad3c01       lda 0x013c
+0x000aa1c1    c90a00       cmp #0x000a
+0x000aa1c4    900b         bcc 0x0aa1d1
+0x000aa1c6    e90a00       sbc #0x000a
+0x000aa1c9    c90a00       cmp #0x000a
+0x000aa1cc    9003         bcc 0x0aa1d1
+0x000aa1ce    a90900       lda #0x0009
+0x000aa1d1    60           rts
+0x000aa1d2    08           php
+0x000aa1d3    c220         rep #0x20
+0x000aa1d5    a28e00       ldx #0x008e
+0x000aa1d8    9e6003       stz 0x0360,x
+0x000aa1db    9e6004       stz 0x0460,x
+0x000aa1de    ca           dex
+0x000aa1df    ca           dex
+0x000aa1e0    10f6         bpl 0x0aa1d8
+0x000aa1e2    9c2805       stz 0x0528
+0x000aa1e5    9c2a05       stz 0x052a
+0x000aa1e8    9c4b01       stz 0x014b
+0x000aa1eb    9c4c01       stz 0x014c
+0x000aa1ee    9c3a01       stz 0x013a
+0x000aa1f1    9c3301       stz 0x0133
+0x000aa1f4    9c6001       stz 0x0160
+0x000aa1f7    9c5c01       stz 0x015c
+0x000aa1fa    28           plp
+0x000aa1fb    60           rts
+0x000aa1fc    08           php
+0x000aa1fd    c220         rep #0x20
+0x000aa1ff    ad4001       lda 0x0140
+0x000aa202    0a           asl a
+0x000aa203    6d4001       adc 0x0140
+0x000aa206    0a           asl a
+0x000aa207    aa           tax
+0x000aa208    bf1fa20a     lda 0x0aa21f,x
+0x000aa20c    8df003       sta 0x03f0
+0x000aa20f    bf21a20a     lda 0x0aa221,x
+0x000aa213    8df004       sta 0x04f0
+0x000aa216    bf23a20a     lda 0x0aa223,x
+0x000aa21a    8d5001       sta 0x0150
+0x000aa21d    28           plp
+0x000aa21e    60           rts

@@ -1,6 +1,0 @@
-0x00028b55    ad7e10       lda 0x107e
-0x00028b58    d009         bne 0x028b63
-0x00028b5a    ce7a10       dec 0x107a
-0x00028b5d    1003         bpl 0x028b62
-0x00028b5f    ee7e10       inc 0x107e
-0x00028b62    60           rts

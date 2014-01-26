@@ -1,7 +1,0 @@
-0x000ac523    ad5a01       lda 0x015a
-0x000ac526    c90800       cmp #0x0008
-0x000ac529    9009         bcc 0x0ac534
-0x000ac52b    9c5a01       stz 0x015a
-0x000ac52e    a90080       lda #0x8000
-0x000ac531    1c5801       trb 0x0158
-0x000ac534    4c0dc5       jmp 0xc50d

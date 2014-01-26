@@ -1,4 +1,0 @@
-0x00028310    20708a       jsr 0x8a70
-0x00028313    20da8a       jsr 0x8ada
-0x00028316    20ff8b       jsr 0x8bff
-0x00028319    60           rts

@@ -1,7 +1,0 @@
-0x0002bcdc    29f000       and #0x00f0
-0x0002bcdf    c9f000       cmp #0x00f0
-0x0002bce2    d006         bne 0x02bcea
-0x0002bce4    a90200       lda #0x0002
-0x0002bce7    8dd401       sta 0x01d4
-0x0002bcea    28           plp
-0x0002bceb    60           rts

@@ -1,8 +1,0 @@
-0x0002e530    c220         rep #0x20
-0x0002e532    208be5       jsr 0xe58b
-0x0002e535    20b1e5       jsr 0xe5b1
-0x0002e538    20dde5       jsr 0xe5dd
-0x0002e53b    2003e6       jsr 0xe603
-0x0002e53e    ee040c       inc 0x0c04
-0x0002e541    e220         sep #0x20
-0x0002e543    60           rts

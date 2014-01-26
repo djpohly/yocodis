@@ -1,6 +1,0 @@
-0x00028d69    38           sec
-0x00028d6a    e91f         sbc #0x1f
-0x00028d6c    8db710       sta 0x10b7
-0x00028d6f    49ff         eor #0xff
-0x00028d71    8db810       sta 0x10b8
-0x00028d74    60           rts

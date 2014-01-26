@@ -1,8 +1,0 @@
-0x000aee4f    ad2401       lda 0x0124
-0x000aee52    055c         ora 0x5c
-0x000aee54    d00a         bne 0x0aee60
-0x000aee56    a90000       lda #0x0000
-0x000aee59    2005f5       jsr 0xf505
-0x000aee5c    e220         sep #0x20
-0x000aee5e    e647         inc 0x47
-0x000aee60    60           rts

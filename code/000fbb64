@@ -12,3 +12,115 @@
 0x000fbb79    ad281f       lda 0x1f28
 0x000fbb7c    2230820d     jsr 0x0d8230
 0x000fbb80    800b         bra 0x0fbb8d
+0x000fbb82    ea           nop
+0x000fbb83    ea           nop
+0x000fbb84    ea           nop
+0x000fbb85    ea           nop
+0x000fbb86    ad261f       lda 0x1f26
+0x000fbb89    2200800d     jsr 0x0d8000
+0x000fbb8d    a581         lda 0x81
+0x000fbb8f    8500         sta 0x00
+0x000fbb91    6402         stz 0x02
+0x000fbb93    a9fc01       lda #0x01fc
+0x000fbb96    8504         sta 0x04
+0x000fbb98    a90400       lda #0x0004
+0x000fbb9b    8506         sta 0x06
+0x000fbb9d    a599         lda 0x99
+0x000fbb9f    22a09700     jsr 0x0097a0
+0x000fbba3    9002         bcc 0x0fbba7
+0x000fbba5    8581         sta 0x81
+0x000fbba7    a583         lda 0x83
+0x000fbba9    8500         sta 0x00
+0x000fbbab    a599         lda 0x99
+0x000fbbad    22a29700     jsr 0x0097a2
+0x000fbbb1    9002         bcc 0x0fbbb5
+0x000fbbb3    8583         sta 0x83
+0x000fbbb5    a5bb         lda 0xbb
+0x000fbbb7    298000       and #0x0080
+0x000fbbba    f024         beq 0x0fbbe0
+0x000fbbbc    ad301f       lda 0x1f30
+0x000fbbbf    1a           inc a
+0x000fbbc0    290700       and #0x0007
+0x000fbbc3    8d301f       sta 0x1f30
+0x000fbbc6    eb           swa
+0x000fbbc7    4a           lsr a
+0x000fbbc8    4a           lsr a
+0x000fbbc9    4a           lsr a
+0x000fbbca    aa           tax
+0x000fbbcb    a00000       ldy #0x0000
+0x000fbbce    bd001b       lda 0x1b00,x
+0x000fbbd1    990019       sta 0x1900,y
+0x000fbbd4    e8           inx
+0x000fbbd5    e8           inx
+0x000fbbd6    c8           iny
+0x000fbbd7    c8           iny
+0x000fbbd8    c02000       cpy #0x0020
+0x000fbbdb    90f1         bcc 0x0fbbce
+0x000fbbdd    ee0001       inc 0x0100
+0x000fbbe0    a5b7         lda 0xb7
+0x000fbbe2    290010       and #0x1000
+0x000fbbe5    d02b         bne 0x0fbc12
+0x000fbbe7    a59d         lda 0x9d
+0x000fbbe9    290040       and #0x4000
+0x000fbbec    f023         beq 0x0fbc11
+0x000fbbee    a9ff7f       lda #0x7fff
+0x000fbbf1    a01c00       ldy #0x001c
+0x000fbbf4    990219       sta 0x1902,y
+0x000fbbf7    88           dey
+0x000fbbf8    88           dey
+0x000fbbf9    10f9         bpl 0x0fbbf4
+0x000fbbfb    ee0001       inc 0x0100
+0x000fbbfe    a90400       lda #0x0004
+0x000fbc01    8567         sta 0x67
+0x000fbc03    9c4608       stz 0x0846
+0x000fbc06    e220         sep #0x20
+0x000fbc08    a961         lda #0x61
+0x000fbc0a    8d0921       sta 0x2109
+0x000fbc0d    e647         inc 0x47
+0x000fbc0f    e647         inc 0x47
+0x000fbc11    60           rts
+0x000fbc12    e220         sep #0x20
+0x000fbc14    e647         inc 0x47
+0x000fbc16    60           rts
+0x000fbc17    a00300       ldy #0x0003
+0x000fbc1a    a599         lda 0x99
+0x000fbc1c    298000       and #0x0080
+0x000fbc1f    d011         bne 0x0fbc32
+0x000fbc21    88           dey
+0x000fbc22    a599         lda 0x99
+0x000fbc24    294000       and #0x0040
+0x000fbc27    d009         bne 0x0fbc32
+0x000fbc29    88           dey
+0x000fbc2a    a599         lda 0x99
+0x000fbc2c    290080       and #0x8000
+0x000fbc2f    d001         bne 0x0fbc32
+0x000fbc31    88           dey
+0x000fbc32    e220         sep #0x20
+0x000fbc34    8c4001       sty 0x0140
+0x000fbc37    98           tya
+0x000fbc38    18           clc
+0x000fbc39    6987         adc #0x87
+0x000fbc3b    8544         sta 0x44
+0x000fbc3d    60           rts
+0x000fbc3e    22cb9e00     jsr 0x009ecb
+0x000fbc42    60           rts
+0x000fbc43    a59d         lda 0x9d
+0x000fbc45    290080       and #0x8000
+0x000fbc48    d014         bne 0x0fbc5e
+0x000fbc4a    a59d         lda 0x9d
+0x000fbc4c    294000       and #0x0040
+0x000fbc4f    f018         beq 0x0fbc69
+0x000fbc51    ea           nop
+0x000fbc52    ea           nop
+0x000fbc53    ea           nop
+0x000fbc54    ea           nop
+0x000fbc55    ad281f       lda 0x1f28
+0x000fbc58    2230820d     jsr 0x0d8230
+0x000fbc5c    800b         bra 0x0fbc69
+0x000fbc5e    ea           nop
+0x000fbc5f    ea           nop
+0x000fbc60    ea           nop
+0x000fbc61    ea           nop
+0x000fbc62    ad261f       lda 0x1f26
+0x000fbc65    22fb810d     jsr 0x0d81fb
+0x000fbc69    60           rts

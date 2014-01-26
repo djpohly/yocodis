@@ -1,9 +1,0 @@
-0x0002a6ac    9cbc10       stz 0x10bc
-0x0002a6af    ad6e10       lda 0x106e
-0x0002a6b2    c94000       cmp #0x0040
-0x0002a6b5    900c         bcc 0x02a6c3
-0x0002a6b7    c9c000       cmp #0x00c0
-0x0002a6ba    b007         bcs 0x02a6c3
-0x0002a6bc    a900ff       lda #0xff00
-0x0002a6bf    8dbc10       sta 0x10bc
-0x0002a6c2    60           rts

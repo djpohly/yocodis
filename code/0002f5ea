@@ -1,9 +1,0 @@
-0x0002f5ea    e220         sep #0x20
-0x0002f5ec    6400         stz 0x00
-0x0002f5ee    a534         lda 0x34
-0x0002f5f0    297f         and #0x7f
-0x0002f5f2    38           sec
-0x0002f5f3    e90a         sbc #0x0a
-0x0002f5f5    9004         bcc 0x02f5fb
-0x0002f5f7    e600         inc 0x00
-0x0002f5f9    80f8         bra 0x02f5f3

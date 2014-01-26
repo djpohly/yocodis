@@ -1,9 +1,0 @@
-0x000aebaa    ad2401       lda 0x0124
-0x000aebad    d010         bne 0x0aebbf
-0x000aebaf    a90200       lda #0x0002
-0x000aebb2    2005f5       jsr 0xf505
-0x000aebb5    a90300       lda #0x0003
-0x000aebb8    2005f5       jsr 0xf505
-0x000aebbb    e220         sep #0x20
-0x000aebbd    e647         inc 0x47
-0x000aebbf    60           rts

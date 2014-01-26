@@ -1,7 +1,0 @@
-0x000aac6c    08           php
-0x000aac6d    c220         rep #0x20
-0x000aac6f    ad4001       lda 0x0140
-0x000aac72    290300       and #0x0003
-0x000aac75    0a           asl a
-0x000aac76    aa           tax
-0x000aac77    7c7aac       jmp (0xac7a,x)

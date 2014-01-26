@@ -13,3 +13,34 @@
 0x0002c094    9c4808       stz 0x0848
 0x0002c097    ee4608       inc 0x0846
 0x0002c09a    60           rts
+0x0002c09b    a55c         lda 0x5c
+0x0002c09d    d022         bne 0x02c0c1
+0x0002c09f    ad4808       lda 0x0848
+0x0002c0a2    0a           asl a
+0x0002c0a3    0a           asl a
+0x0002c0a4    0a           asl a
+0x0002c0a5    0a           asl a
+0x0002c0a6    aa           tax
+0x0002c0a7    e220         sep #0x20
+0x0002c0a9    9e0107       stz 0x0701,x
+0x0002c0ac    c220         rep #0x20
+0x0002c0ae    a91e00       lda #0x001e
+0x0002c0b1    855c         sta 0x5c
+0x0002c0b3    ee4808       inc 0x0848
+0x0002c0b6    e07000       cpx #0x0070
+0x0002c0b9    9006         bcc 0x02c0c1
+0x0002c0bb    9c4808       stz 0x0848
+0x0002c0be    ee4608       inc 0x0846
+0x0002c0c1    60           rts
+0x0002c0c2    a55c         lda 0x5c
+0x0002c0c4    d01b         bne 0x02c0e1
+0x0002c0c6    a9c200       lda #0x00c2
+0x0002c0c9    8d2401       sta 0x0124
+0x0002c0cc    a90020       lda #0x2000
+0x0002c0cf    8d2501       sta 0x0125
+0x0002c0d2    a9e2c0       lda #0xc0e2
+0x0002c0d5    8d2701       sta 0x0127
+0x0002c0d8    a90200       lda #0x0002
+0x0002c0db    8d2901       sta 0x0129
+0x0002c0de    ee4608       inc 0x0846
+0x0002c0e1    60           rts

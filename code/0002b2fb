@@ -1,7 +1,0 @@
-0x0002b2fb    c220         rep #0x20
-0x0002b2fd    890008       bit #0x0800
-0x0002b300    f009         beq 0x02b30b
-0x0002b302    adde10       lda 0x10de
-0x0002b305    f003         beq 0x02b30a
-0x0002b307    cede10       dec 0x10de
-0x0002b30a    60           rts

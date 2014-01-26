@@ -1,4 +1,0 @@
-0x000aa640    a500         lda 0x00
-0x000aa642    d9d203       cmp 0x03d2,y
-0x000aa645    b003         bcs 0x0aa64a
-0x000aa647    4ca4a6       jmp 0xa6a4

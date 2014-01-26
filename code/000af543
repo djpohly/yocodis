@@ -1,5 +1,0 @@
-0x000af543    08           php
-0x000af544    e220         sep #0x20
-0x000af546    ad4808       lda 0x0848
-0x000af549    d003         bne 0x0af54e
-0x000af54b    4c33f6       jmp 0xf633

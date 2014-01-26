@@ -1,8 +1,0 @@
-0x000aa1be    ad3c01       lda 0x013c
-0x000aa1c1    c90a00       cmp #0x000a
-0x000aa1c4    900b         bcc 0x0aa1d1
-0x000aa1c6    e90a00       sbc #0x000a
-0x000aa1c9    c90a00       cmp #0x000a
-0x000aa1cc    9003         bcc 0x0aa1d1
-0x000aa1ce    a90900       lda #0x0009
-0x000aa1d1    60           rts

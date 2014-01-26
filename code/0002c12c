@@ -1,9 +1,0 @@
-0x0002c12c    ad7e07       lda 0x077e
-0x0002c12f    c90400       cmp #0x0004
-0x0002c132    900f         bcc 0x02c143
-0x0002c134    8d3e07       sta 0x073e
-0x0002c137    a90100       lda #0x0001
-0x0002c13a    8d1e07       sta 0x071e
-0x0002c13d    8d5e07       sta 0x075e
-0x0002c140    ee4608       inc 0x0846
-0x0002c143    60           rts

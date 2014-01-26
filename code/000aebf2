@@ -1,6 +1,0 @@
-0x000aebf2    a91000       lda #0x0010
-0x000aebf5    8d4808       sta 0x0848
-0x000aebf8    2043f5       jsr 0xf543
-0x000aebfb    e220         sep #0x20
-0x000aebfd    e647         inc 0x47
-0x000aebff    60           rts

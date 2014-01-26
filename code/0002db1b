@@ -1,5 +1,0 @@
-0x0002db1b    e220         sep #0x20
-0x0002db1d    a914         lda #0x14
-0x0002db1f    2230820d     jsr 0x0d8230
-0x0002db23    eea810       inc 0x10a8
-0x0002db26    60           rts

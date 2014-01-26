@@ -1,5 +1,0 @@
-0x0002f728    bf56f702     lda 0x02f756,x
-0x0002f72c    999e11       sta 0x119e,y
-0x0002f72f    88           dey
-0x0002f730    10e7         bpl 0x02f719
-0x0002f732    60           rts

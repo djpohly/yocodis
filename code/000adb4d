@@ -1,5 +1,0 @@
-0x000adb4d    e220         sep #0x20
-0x000adb4f    ac6403       ldy 0x0364
-0x000adb52    a900         lda #0x00
-0x000adb54    eb           swa
-0x000adb55    8005         bra 0x0adb5c

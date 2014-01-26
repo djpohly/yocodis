@@ -1,7 +1,0 @@
-0x000aa5c8    08           php
-0x000aa5c9    c220         rep #0x20
-0x000aa5cb    bccc03       ldy 0x03cc,x
-0x000aa5ce    8a           txa
-0x000aa5cf    18           clc
-0x000aa5d0    7dce03       adc 0x03ce,x
-0x000aa5d3    8021         bra 0x0aa5f6

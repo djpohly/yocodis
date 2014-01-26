@@ -1,6 +1,0 @@
-0x000aed59    e220         sep #0x20
-0x000aed5b    ad0002       lda 0x0200
-0x000aed5e    d006         bne 0x0aed66
-0x000aed60    a914         lda #0x14
-0x000aed62    855c         sta 0x5c
-0x000aed64    800b         bra 0x0aed71

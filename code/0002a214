@@ -1,6 +1,0 @@
-0x0002a214    ce7a10       dec 0x107a
-0x0002a217    1009         bpl 0x02a222
-0x0002a219    9c3011       stz 0x1130
-0x0002a21c    9c3211       stz 0x1132
-0x0002a21f    eea810       inc 0x10a8
-0x0002a222    60           rts

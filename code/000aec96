@@ -1,2 +1,0 @@
-0x000aec96    a916         lda #0x16
-0x000aec98    8002         bra 0x0aec9c

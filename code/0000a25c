@@ -7,3 +7,5 @@
 0x0000a268    aa           tax
 0x0000a269    f46ea2       pea 0xa26e
 0x0000a26c    7c71a2       jmp (0xa271,x)
+0x0000a26f    28           plp
+0x0000a270    6b           rtl

@@ -8,3 +8,55 @@
 0x0002985d    a910         lda #0x10
 0x0002985f    2230820d     jsr 0x0d8230
 0x00029863    60           rts
+0x00029864    a20100       ldx #0x0001
+0x00029867    8e9810       stx 0x1098
+0x0002986a    a20000       ldx #0x0000
+0x0002986d    8ec610       stx 0x10c6
+0x00029870    a20200       ldx #0x0002
+0x00029873    8ed410       stx 0x10d4
+0x00029876    a20200       ldx #0x0002
+0x00029879    8edc10       stx 0x10dc
+0x0002987c    20c1a7       jsr 0xa7c1
+0x0002987f    2080a8       jsr 0xa880
+0x00029882    20e6ca       jsr 0xcae6
+0x00029885    c220         rep #0x20
+0x00029887    ad7210       lda 0x1072
+0x0002988a    c9d000       cmp #0x00d0
+0x0002988d    900b         bcc 0x02989a
+0x0002988f    ee7610       inc 0x1076
+0x00029892    e220         sep #0x20
+0x00029894    a914         lda #0x14
+0x00029896    2230820d     jsr 0x0d8230
+0x0002989a    60           rts
+0x0002989b    c220         rep #0x20
+0x0002989d    20c1a7       jsr 0xa7c1
+0x000298a0    2080a8       jsr 0xa880
+0x000298a3    20e6ca       jsr 0xcae6
+0x000298a6    a20100       ldx #0x0001
+0x000298a9    8e9410       stx 0x1094
+0x000298ac    a20000       ldx #0x0000
+0x000298af    8ebe10       stx 0x10be
+0x000298b2    a20200       ldx #0x0002
+0x000298b5    8ecc10       stx 0x10cc
+0x000298b8    a20200       ldx #0x0002
+0x000298bb    8ed810       stx 0x10d8
+0x000298be    206fa7       jsr 0xa76f
+0x000298c1    20eaa7       jsr 0xa7ea
+0x000298c4    20fbca       jsr 0xcafb
+0x000298c7    c220         rep #0x20
+0x000298c9    ad6a10       lda 0x106a
+0x000298cc    c92001       cmp #0x0120
+0x000298cf    d003         bne 0x0298d4
+0x000298d1    ee7610       inc 0x1076
+0x000298d4    60           rts
+0x000298d5    c220         rep #0x20
+0x000298d7    a90f84       lda #0x840f
+0x000298da    22388700     jsr 0x008738
+0x000298de    ee7610       inc 0x1076
+0x000298e1    60           rts
+0x000298e2    e220         sep #0x20
+0x000298e4    a562         lda 0x62
+0x000298e6    d004         bne 0x0298ec
+0x000298e8    a985         lda #0x85
+0x000298ea    8544         sta 0x44
+0x000298ec    60           rts

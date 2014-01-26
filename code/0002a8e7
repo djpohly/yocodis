@@ -1,4 +1,0 @@
-0x0002a8e7    ae8810       ldx 0x1088
-0x0002a8ea    bf0fa902     lda 0x02a90f,x
-0x0002a8ee    8d8e10       sta 0x108e
-0x0002a8f1    60           rts

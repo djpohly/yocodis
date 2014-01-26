@@ -1,6 +1,0 @@
-0x000ae14c    8d6401       sta 0x0164
-0x000ae14f    9c6c01       stz 0x016c
-0x000ae152    a90200       lda #0x0002
-0x000ae155    8d5c01       sta 0x015c
-0x000ae158    2065e5       jsr 0xe565
-0x000ae15b    60           rts

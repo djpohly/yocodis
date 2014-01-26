@@ -1,3 +1,0 @@
-0x000aefaa    ee7803       inc 0x0378
-0x000aefad    9cb803       stz 0x03b8
-0x000aefb0    60           rts

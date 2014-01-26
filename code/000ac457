@@ -23,3 +23,6 @@
 0x000ac489    22b48e00     jsr 0x008eb4
 0x000ac48d    28           plp
 0x000ac48e    60           rts
+0x000ac48f    22358f00     jsr 0x008f35
+0x000ac493    28           plp
+0x000ac494    60           rts

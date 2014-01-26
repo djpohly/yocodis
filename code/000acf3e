@@ -35,3 +35,43 @@
 0x000acf98    20c5cf       jsr 0xcfc5
 0x000acf9b    28           plp
 0x000acf9c    60           rts
+0x000acf9d    ad5009       lda 0x0950
+0x000acfa0    0d5209       ora 0x0952
+0x000acfa3    0d5409       ora 0x0954
+0x000acfa6    0d500a       ora 0x0a50
+0x000acfa9    0d520a       ora 0x0a52
+0x000acfac    0d540a       ora 0x0a54
+0x000acfaf    f0e1         beq 0x0acf92
+0x000acfb1    9c5009       stz 0x0950
+0x000acfb4    9c5209       stz 0x0952
+0x000acfb7    9c5409       stz 0x0954
+0x000acfba    9c500a       stz 0x0a50
+0x000acfbd    9c520a       stz 0x0a52
+0x000acfc0    9c540a       stz 0x0a54
+0x000acfc3    80ca         bra 0x0acf8f
+0x000acfc5    add601       lda 0x01d6
+0x000acfc8    d035         bne 0x0acfff
+0x000acfca    a20000       ldx #0x0000
+0x000acfcd    ad5009       lda 0x0950
+0x000acfd0    0d500a       ora 0x0a50
+0x000acfd3    d019         bne 0x0acfee
+0x000acfd5    e8           inx
+0x000acfd6    e8           inx
+0x000acfd7    ad5209       lda 0x0952
+0x000acfda    0d520a       ora 0x0a52
+0x000acfdd    d00f         bne 0x0acfee
+0x000acfdf    e8           inx
+0x000acfe0    e8           inx
+0x000acfe1    ad5409       lda 0x0954
+0x000acfe4    0d540a       ora 0x0a54
+0x000acfe7    d005         bne 0x0acfee
+0x000acfe9    202fb8       jsr 0xb82f
+0x000acfec    8004         bra 0x0acff2
+0x000acfee    bf00d00a     lda 0x0ad000,x
+0x000acff2    eb           swa
+0x000acff3    c5e6         cmp 0xe6
+0x000acff5    f008         beq 0x0acfff
+0x000acff7    eb           swa
+0x000acff8    2041b8       jsr 0xb841
+0x000acffb    2200800d     jsr 0x0d8000
+0x000acfff    60           rts

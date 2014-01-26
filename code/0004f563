@@ -27,3 +27,61 @@
 0x0004f599    22a58700     jsr 0x0087a5
 0x0004f59d    28           plp
 0x0004f59e    6b           rtl
+0x0004f59f    08           php
+0x0004f5a0    e220         sep #0x20
+0x0004f5a2    ad170d       lda 0x0d17
+0x0004f5a5    f032         beq 0x04f5d9
+0x0004f5a7    a90a         lda #0x0a
+0x0004f5a9    0a           asl a
+0x0004f5aa    aa           tax
+0x0004f5ab    c220         rep #0x20
+0x0004f5ad    bf27ae0c     lda 0x0cae27,x
+0x0004f5b1    8500         sta 0x00
+0x0004f5b3    e220         sep #0x20
+0x0004f5b5    a90c         lda #0x0c
+0x0004f5b7    8502         sta 0x02
+0x0004f5b9    a29000       ldx #0x0090
+0x0004f5bc    860a         stx 0x0a
+0x0004f5be    a26300       ldx #0x0063
+0x0004f5c1    860c         stx 0x0c
+0x0004f5c3    e220         sep #0x20
+0x0004f5c5    a900         lda #0x00
+0x0004f5c7    8503         sta 0x03
+0x0004f5c9    a950         lda #0x50
+0x0004f5cb    8504         sta 0x04
+0x0004f5cd    a901         lda #0x01
+0x0004f5cf    8505         sta 0x05
+0x0004f5d1    640f         stz 0x0f
+0x0004f5d3    6410         stz 0x10
+0x0004f5d5    22a58700     jsr 0x0087a5
+0x0004f5d9    28           plp
+0x0004f5da    6b           rtl
+0x0004f5db    08           php
+0x0004f5dc    e220         sep #0x20
+0x0004f5de    ad140d       lda 0x0d14
+0x0004f5e1    f035         beq 0x04f618
+0x0004f5e3    ae1e0d       ldx 0x0d1e
+0x0004f5e6    bf1af604     lda 0x04f61a,x
+0x0004f5ea    0a           asl a
+0x0004f5eb    aa           tax
+0x0004f5ec    c220         rep #0x20
+0x0004f5ee    bf21bd0c     lda 0x0cbd21,x
+0x0004f5f2    8500         sta 0x00
+0x0004f5f4    e220         sep #0x20
+0x0004f5f6    a90c         lda #0x0c
+0x0004f5f8    8502         sta 0x02
+0x0004f5fa    ae280d       ldx 0x0d28
+0x0004f5fd    860a         stx 0x0a
+0x0004f5ff    a29800       ldx #0x0098
+0x0004f602    860c         stx 0x0c
+0x0004f604    a900         lda #0x00
+0x0004f606    8503         sta 0x03
+0x0004f608    a950         lda #0x50
+0x0004f60a    8504         sta 0x04
+0x0004f60c    a901         lda #0x01
+0x0004f60e    8505         sta 0x05
+0x0004f610    640f         stz 0x0f
+0x0004f612    6410         stz 0x10
+0x0004f614    22a58700     jsr 0x0087a5
+0x0004f618    28           plp
+0x0004f619    6b           rtl

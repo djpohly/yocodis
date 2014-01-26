@@ -16,3 +16,6 @@
 0x0002e468    a93a         lda #0x3a
 0x0002e46a    8d9210       sta 0x1092
 0x0002e46d    60           rts
+0x0002e46e    a939         lda #0x39
+0x0002e470    8d9210       sta 0x1092
+0x0002e473    60           rts

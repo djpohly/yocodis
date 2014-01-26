@@ -97,3 +97,21 @@
 0x00008b63    9d0019       sta 0x1900,x
 0x00008b66    28           plp
 0x00008b67    6b           rtl
+0x00008b68    8006         bra 0x008b70
+0x00008b6a    9f00007e     sta 0x7e0000,x
+0x00008b6e    e8           inx
+0x00008b6f    e8           inx
+0x00008b70    88           dey
+0x00008b71    88           dey
+0x00008b72    10f6         bpl 0x008b6a
+0x00008b74    6b           rtl
+0x00008b75    08           php
+0x00008b76    e220         sep #0x20
+0x00008b78    eb           swa
+0x00008b79    a544         lda 0x44
+0x00008b7b    8dcc01       sta 0x01cc
+0x00008b7e    eb           swa
+0x00008b7f    0980         ora #0x80
+0x00008b81    8544         sta 0x44
+0x00008b83    28           plp
+0x00008b84    6b           rtl

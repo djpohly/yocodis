@@ -1,6 +1,0 @@
-0x0002ed5c    c220         rep #0x20
-0x0002ed5e    2063f4       jsr 0xf463
-0x0002ed61    9006         bcc 0x02ed69
-0x0002ed63    209ff6       jsr 0xf69f
-0x0002ed66    2090f5       jsr 0xf590
-0x0002ed69    60           rts

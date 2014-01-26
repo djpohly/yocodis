@@ -1,3 +1,64 @@
 0x0002bc63    a20080       ldx #0x8000
 0x0002bc66    a00040       ldy #0x4000
 0x0002bc69    8026         bra 0x02bc91
+0x0002bc6b    a20088       ldx #0x8800
+0x0002bc6e    a00044       ldy #0x4400
+0x0002bc71    801e         bra 0x02bc91
+0x0002bc73    a20090       ldx #0x9000
+0x0002bc76    a00048       ldy #0x4800
+0x0002bc79    8016         bra 0x02bc91
+0x0002bc7b    a20098       ldx #0x9800
+0x0002bc7e    a0004c       ldy #0x4c00
+0x0002bc81    800e         bra 0x02bc91
+0x0002bc83    a20040       ldx #0x4000
+0x0002bc86    a00010       ldy #0x1000
+0x0002bc89    8006         bra 0x02bc91
+0x0002bc8b    a20048       ldx #0x4800
+0x0002bc8e    a00014       ldy #0x1400
+0x0002bc91    a90008       lda #0x0800
+0x0002bc94    227b8e00     jsr 0x008e7b
+0x0002bc98    ee4608       inc 0x0846
+0x0002bc9b    60           rts
+0x0002bc9c    a90080       lda #0x8000
+0x0002bc9f    0c4608       tsb 0x0846
+0x0002bca2    e220         sep #0x20
+0x0002bca4    a911         lda #0x11
+0x0002bca6    8d0821       sta 0x2108
+0x0002bca9    60           rts
+0x0002bcaa    08           php
+0x0002bcab    c220         rep #0x20
+0x0002bcad    9cd401       stz 0x01d4
+0x0002bcb0    adee10       lda 0x10ee
+0x0002bcb3    f035         beq 0x02bcea
+0x0002bcb5    ad0e09       lda 0x090e
+0x0002bcb8    c90300       cmp #0x0003
+0x0002bcbb    d02d         bne 0x02bcea
+0x0002bcbd    ad000a       lda 0x0a00
+0x0002bcc0    22309700     jsr 0x009730
+0x0002bcc4    0dce01       ora 0x01ce
+0x0002bcc7    8dce01       sta 0x01ce
+0x0002bcca    ac4601       ldy 0x0146
+0x0002bccd    d00d         bne 0x02bcdc
+0x0002bccf    290f00       and #0x000f
+0x0002bcd2    c90f00       cmp #0x000f
+0x0002bcd5    d013         bne 0x02bcea
+0x0002bcd7    a90100       lda #0x0001
+0x0002bcda    800b         bra 0x02bce7
+0x0002bcdc    29f000       and #0x00f0
+0x0002bcdf    c9f000       cmp #0x00f0
+0x0002bce2    d006         bne 0x02bcea
+0x0002bce4    a90200       lda #0x0002
+0x0002bce7    8dd401       sta 0x01d4
+0x0002bcea    28           plp
+0x0002bceb    60           rts
+0x0002bcec    08           php
+0x0002bced    c220         rep #0x20
+0x0002bcef    48           pha
+0x0002bcf0    a94f00       lda #0x004f
+0x0002bcf3    a20060       ldx #0x6000
+0x0002bcf6    a00007       ldy #0x0700
+0x0002bcf9    22688b00     jsr 0x008b68
+0x0002bcfd    68           pla
+0x0002bcfe    20b9fb       jsr 0xfbb9
+0x0002bd01    28           plp
+0x0002bd02    60           rts

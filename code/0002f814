@@ -1,6 +1,0 @@
-0x0002f814    ae0005       ldx 0x0500
-0x0002f817    ad0c01       lda 0x010c
-0x0002f81a    0d1401       ora 0x0114
-0x0002f81d    d003         bne 0x02f822
-0x0002f81f    fe3c11       inc 0x113c,x
-0x0002f822    60           rts

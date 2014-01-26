@@ -18,3 +18,109 @@
 0x0002db14    8d170d       sta 0x0d17
 0x0002db17    eea810       inc 0x10a8
 0x0002db1a    60           rts
+0x0002db1b    e220         sep #0x20
+0x0002db1d    a914         lda #0x14
+0x0002db1f    2230820d     jsr 0x0d8230
+0x0002db23    eea810       inc 0x10a8
+0x0002db26    60           rts
+0x0002db27    c220         rep #0x20
+0x0002db29    ad240d       lda 0x0d24
+0x0002db2c    c91600       cmp #0x0016
+0x0002db2f    d00a         bne 0x02db3b
+0x0002db31    e220         sep #0x20
+0x0002db33    eea810       inc 0x10a8
+0x0002db36    c220         rep #0x20
+0x0002db38    9c240d       stz 0x0d24
+0x0002db3b    208bdb       jsr 0xdb8b
+0x0002db3e    20badb       jsr 0xdbba
+0x0002db41    20e6db       jsr 0xdbe6
+0x0002db44    e220         sep #0x20
+0x0002db46    a558         lda 0x58
+0x0002db48    8903         bit #0x03
+0x0002db4a    d006         bne 0x02db52
+0x0002db4c    a904         lda #0x04
+0x0002db4e    2230820d     jsr 0x0d8230
+0x0002db52    e220         sep #0x20
+0x0002db54    60           rts
+0x0002db55    e220         sep #0x20
+0x0002db57    a20100       ldx #0x0001
+0x0002db5a    8e8111       stx 0x1181
+0x0002db5d    a20000       ldx #0x0000
+0x0002db60    8e8911       stx 0x1189
+0x0002db63    9c140d       stz 0x0d14
+0x0002db66    9c150d       stz 0x0d15
+0x0002db69    9c170d       stz 0x0d17
+0x0002db6c    eea810       inc 0x10a8
+0x0002db6f    60           rts
+0x0002db70    c220         rep #0x20
+0x0002db72    a95000       lda #0x0050
+0x0002db75    8f00e47e     sta 0x7ee400
+0x0002db79    a9ff01       lda #0x01ff
+0x0002db7c    8f02e47e     sta 0x7ee402
+0x0002db80    a9ff00       lda #0x00ff
+0x0002db83    8f04e47e     sta 0x7ee404
+0x0002db87    eea810       inc 0x10a8
+0x0002db8a    60           rts
+0x0002db8b    c220         rep #0x20
+0x0002db8d    ad1e0d       lda 0x0d1e
+0x0002db90    0a           asl a
+0x0002db91    aa           tax
+0x0002db92    bf1df604     lda 0x04f61d,x
+0x0002db96    aa           tax
+0x0002db97    ec000c       cpx 0x0c00
+0x0002db9a    d01a         bne 0x02dbb6
+0x0002db9c    ad1e0d       lda 0x0d1e
+0x0002db9f    c90200       cmp #0x0002
+0x0002dba2    d006         bne 0x02dbaa
+0x0002dba4    a9ffff       lda #0xffff
+0x0002dba7    8d1e0d       sta 0x0d1e
+0x0002dbaa    a9ffff       lda #0xffff
+0x0002dbad    8d000c       sta 0x0c00
+0x0002dbb0    ee1e0d       inc 0x0d1e
+0x0002dbb3    ee240d       inc 0x0d24
+0x0002dbb6    ee000c       inc 0x0c00
+0x0002dbb9    60           rts
+0x0002dbba    c220         rep #0x20
+0x0002dbbc    ad200d       lda 0x0d20
+0x0002dbbf    0a           asl a
+0x0002dbc0    aa           tax
+0x0002dbc1    bf65f604     lda 0x04f665,x
+0x0002dbc5    aa           tax
+0x0002dbc6    ec020c       cpx 0x0c02
+0x0002dbc9    d017         bne 0x02dbe2
+0x0002dbcb    ad200d       lda 0x0d20
+0x0002dbce    c90200       cmp #0x0002
+0x0002dbd1    d006         bne 0x02dbd9
+0x0002dbd3    a9ffff       lda #0xffff
+0x0002dbd6    8d200d       sta 0x0d20
+0x0002dbd9    a9ffff       lda #0xffff
+0x0002dbdc    8d020c       sta 0x0c02
+0x0002dbdf    ee200d       inc 0x0d20
+0x0002dbe2    ee020c       inc 0x0c02
+0x0002dbe5    60           rts
+0x0002dbe6    c220         rep #0x20
+0x0002dbe8    ad280d       lda 0x0d28
+0x0002dbeb    c9a000       cmp #0x00a0
+0x0002dbee    f01b         beq 0x02dc0b
+0x0002dbf0    ad060c       lda 0x0c06
+0x0002dbf3    c90500       cmp #0x0005
+0x0002dbf6    d010         bne 0x02dc08
+0x0002dbf8    18           clc
+0x0002dbf9    ad280d       lda 0x0d28
+0x0002dbfc    690100       adc #0x0001
+0x0002dbff    8d280d       sta 0x0d28
+0x0002dc02    a9ffff       lda #0xffff
+0x0002dc05    8d060c       sta 0x0c06
+0x0002dc08    ee060c       inc 0x0c06
+0x0002dc0b    60           rts
+0x0002dc0c    2235f704     jsr 0x04f735
+0x0002dc10    22a5f604     jsr 0x04f6a5
+0x0002dc14    22edf604     jsr 0x04f6ed
+0x0002dc18    2018a0       jsr 0xa018
+0x0002dc1b    c220         rep #0x20
+0x0002dc1d    ada810       lda 0x10a8
+0x0002dc20    29ff00       and #0x00ff
+0x0002dc23    0a           asl a
+0x0002dc24    aa           tax
+0x0002dc25    f42adc       pea 0xdc2a
+0x0002dc28    7c2cdc       jmp (0xdc2c,x)

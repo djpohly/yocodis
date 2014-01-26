@@ -1,7 +1,0 @@
-0x0002faea    7faafa02     adc 0x02faaa,x
-0x0002faee    1a           inc a
-0x0002faef    ca           dex
-0x0002faf0    10f8         bpl 0x02faea
-0x0002faf2    fa           plx
-0x0002faf3    28           plp
-0x0002faf4    60           rts

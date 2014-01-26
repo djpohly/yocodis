@@ -1,3 +1,0 @@
-0x0002ae17    20f1b1       jsr 0xb1f1
-0x0002ae1a    205cb2       jsr 0xb25c
-0x0002ae1d    60           rts

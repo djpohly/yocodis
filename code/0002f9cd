@@ -1,8 +1,0 @@
-0x0002f9cd    c90100       cmp #0x0001
-0x0002f9d0    9010         bcc 0x02f9e2
-0x0002f9d2    f015         beq 0x02f9e9
-0x0002f9d4    fe4211       inc 0x1142,x
-0x0002f9d7    fe3c11       inc 0x113c,x
-0x0002f9da    a91300       lda #0x0013
-0x0002f9dd    2230820d     jsr 0x0d8230
-0x0002f9e1    60           rts

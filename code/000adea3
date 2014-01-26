@@ -1,8 +1,0 @@
-0x000adea3    b99401       lda 0x0194,y
-0x000adea6    38           sec
-0x000adea7    f9a401       sbc 0x01a4,y
-0x000adeaa    99ac01       sta 0x01ac,y
-0x000adead    88           dey
-0x000adeae    10f3         bpl 0x0adea3
-0x000adeb0    28           plp
-0x000adeb1    60           rts

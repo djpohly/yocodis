@@ -1,6 +1,0 @@
-0x000a9a8f    a900         lda #0x00
-0x000a9a91    8f06e47e     sta 0x7ee406
-0x000a9a95    8f06e87e     sta 0x7ee806
-0x000a9a99    6469         stz 0x69
-0x000a9a9b    28           plp
-0x000a9a9c    6b           rtl

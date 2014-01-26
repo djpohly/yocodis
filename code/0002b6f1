@@ -1,2 +1,25 @@
 0x0002b6f1    2044c1       jsr 0xc144
 0x0002b6f4    60           rts
+0x0002b6f5    ad2401       lda 0x0124
+0x0002b6f8    0d2a01       ora 0x012a
+0x0002b6fb    d003         bne 0x02b700
+0x0002b6fd    ee7610       inc 0x1076
+0x0002b700    60           rts
+0x0002b701    e220         sep #0x20
+0x0002b703    64c3         stz 0xc3
+0x0002b705    6469         stz 0x69
+0x0002b707    c220         rep #0x20
+0x0002b709    9c4608       stz 0x0846
+0x0002b70c    ee7610       inc 0x1076
+0x0002b70f    60           rts
+0x0002b710    2001c0       jsr 0xc001
+0x0002b713    ad4608       lda 0x0846
+0x0002b716    1003         bpl 0x02b71b
+0x0002b718    ee7610       inc 0x1076
+0x0002b71b    60           rts
+0x0002b71c    a59d         lda 0x9d
+0x0002b71e    298010       and #0x1080
+0x0002b721    f006         beq 0x02b729
+0x0002b723    a90600       lda #0x0006
+0x0002b726    8d7610       sta 0x1076
+0x0002b729    60           rts

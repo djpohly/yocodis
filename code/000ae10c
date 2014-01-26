@@ -1,1 +1,32 @@
 0x000ae10c    60           rts
+0x000ae10d    ad500a       lda 0x0a50
+0x000ae110    d0bc         bne 0x0ae0ce
+0x000ae112    ad6c01       lda 0x016c
+0x000ae115    d035         bne 0x0ae14c
+0x000ae117    80b5         bra 0x0ae0ce
+0x000ae119    ad6c01       lda 0x016c
+0x000ae11c    d02e         bne 0x0ae14c
+0x000ae11e    22938500     jsr 0x008593
+0x000ae122    29f800       and #0x00f8
+0x000ae125    f001         beq 0x0ae128
+0x000ae127    60           rts
+0x000ae128    a90d00       lda #0x000d
+0x000ae12b    8dbc01       sta 0x01bc
+0x000ae12e    a90200       lda #0x0002
+0x000ae131    8d5c01       sta 0x015c
+0x000ae134    2065e5       jsr 0xe565
+0x000ae137    60           rts
+0x000ae138    ad500a       lda 0x0a50
+0x000ae13b    d091         bne 0x0ae0ce
+0x000ae13d    ad6c01       lda 0x016c
+0x000ae140    d00a         bne 0x0ae14c
+0x000ae142    22938500     jsr 0x008593
+0x000ae146    29fc00       and #0x00fc
+0x000ae149    f083         beq 0x0ae0ce
+0x000ae14b    60           rts
+0x000ae14c    8d6401       sta 0x0164
+0x000ae14f    9c6c01       stz 0x016c
+0x000ae152    a90200       lda #0x0002
+0x000ae155    8d5c01       sta 0x015c
+0x000ae158    2065e5       jsr 0xe565
+0x000ae15b    60           rts

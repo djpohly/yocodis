@@ -4,3 +4,29 @@
 0x0002b689    9c4608       stz 0x0846
 0x0002b68c    ee7610       inc 0x1076
 0x0002b68f    60           rts
+0x0002b690    2058be       jsr 0xbe58
+0x0002b693    ad4608       lda 0x0846
+0x0002b696    1003         bpl 0x02b69b
+0x0002b698    ee7610       inc 0x1076
+0x0002b69b    60           rts
+0x0002b69c    a90600       lda #0x0006
+0x0002b69f    8d7610       sta 0x1076
+0x0002b6a2    60           rts
+0x0002b6a3    a98300       lda #0x0083
+0x0002b6a6    8d2401       sta 0x0124
+0x0002b6a9    a90020       lda #0x2000
+0x0002b6ac    8d2501       sta 0x0125
+0x0002b6af    a9d5b6       lda #0xb6d5
+0x0002b6b2    8d2701       sta 0x0127
+0x0002b6b5    a98500       lda #0x0085
+0x0002b6b8    8d2a01       sta 0x012a
+0x0002b6bb    a90020       lda #0x2000
+0x0002b6be    8d2b01       sta 0x012b
+0x0002b6c1    a9e3b6       lda #0xb6e3
+0x0002b6c4    8d2d01       sta 0x012d
+0x0002b6c7    e220         sep #0x20
+0x0002b6c9    a902         lda #0x02
+0x0002b6cb    8d2901       sta 0x0129
+0x0002b6ce    8d2f01       sta 0x012f
+0x0002b6d1    ee7610       inc 0x1076
+0x0002b6d4    60           rts

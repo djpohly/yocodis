@@ -1,8 +1,0 @@
-0x000ae974    a00200       ldy #0x0002
-0x000ae977    b98500       lda 0x0085,y
-0x000ae97a    f016         beq 0x0ae992
-0x000ae97c    3008         bmi 0x0ae986
-0x000ae97e    38           sec
-0x000ae97f    e90200       sbc #0x0002
-0x000ae982    b00b         bcs 0x0ae98f
-0x000ae984    8006         bra 0x0ae98c

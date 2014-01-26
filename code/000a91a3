@@ -1,8 +1,0 @@
-0x000a91a3    a502         lda 0x02
-0x000a91a5    38           sec
-0x000a91a6    e90800       sbc #0x0008
-0x000a91a9    8500         sta 0x00
-0x000a91ab    a406         ldy 0x06
-0x000a91ad    b200         lda (0x00)
-0x000a91af    e220         sep #0x20
-0x000a91b1    8002         bra 0x0a91b5

@@ -4,3 +4,70 @@
 0x0002bf0f    855c         sta 0x5c
 0x0002bf11    ee4608       inc 0x0846
 0x0002bf14    60           rts
+0x0002bf15    a20600       ldx #0x0006
+0x0002bf18    9e0819       stz 0x1908,x
+0x0002bf1b    ca           dex
+0x0002bf1c    ca           dex
+0x0002bf1d    10f9         bpl 0x02bf18
+0x0002bf1f    a27e00       ldx #0x007e
+0x0002bf22    9e001a       stz 0x1a00,x
+0x0002bf25    ca           dex
+0x0002bf26    ca           dex
+0x0002bf27    10f9         bpl 0x02bf22
+0x0002bf29    ee0001       inc 0x0100
+0x0002bf2c    a91e00       lda #0x001e
+0x0002bf2f    855c         sta 0x5c
+0x0002bf31    ee4608       inc 0x0846
+0x0002bf34    e220         sep #0x20
+0x0002bf36    6467         stz 0x67
+0x0002bf38    60           rts
+0x0002bf39    a55c         lda 0x5c
+0x0002bf3b    d030         bne 0x02bf6d
+0x0002bf3d    a9c200       lda #0x00c2
+0x0002bf40    8d2401       sta 0x0124
+0x0002bf43    a90020       lda #0x2000
+0x0002bf46    8d2501       sta 0x0125
+0x0002bf49    a901bf       lda #0xbf01
+0x0002bf4c    8d2701       sta 0x0127
+0x0002bf4f    a90200       lda #0x0002
+0x0002bf52    8d2901       sta 0x0129
+0x0002bf55    9c0007       stz 0x0700
+0x0002bf58    9c1007       stz 0x0710
+0x0002bf5b    9c2007       stz 0x0720
+0x0002bf5e    9c3007       stz 0x0730
+0x0002bf61    ee4608       inc 0x0846
+0x0002bf64    e220         sep #0x20
+0x0002bf66    eb           swa
+0x0002bf67    04c3         tsb 0xc3
+0x0002bf69    a916         lda #0x16
+0x0002bf6b    8567         sta 0x67
+0x0002bf6d    60           rts
+0x0002bf6e    ad2401       lda 0x0124
+0x0002bf71    d006         bne 0x02bf79
+0x0002bf73    9c4808       stz 0x0848
+0x0002bf76    ee4608       inc 0x0846
+0x0002bf79    60           rts
+0x0002bf7a    ad2401       lda 0x0124
+0x0002bf7d    d03b         bne 0x02bfba
+0x0002bf7f    ae4808       ldx 0x0848
+0x0002bf82    e00400       cpx #0x0004
+0x0002bf85    b02d         bcs 0x02bfb4
+0x0002bf87    bfbbbf02     lda 0x02bfbb,x
+0x0002bf8b    2230820d     jsr 0x0d8230
+0x0002bf8f    a9c200       lda #0x00c2
+0x0002bf92    8d2401       sta 0x0124
+0x0002bf95    a90020       lda #0x2000
+0x0002bf98    8d2501       sta 0x0125
+0x0002bf9b    ad4808       lda 0x0848
+0x0002bf9e    0a           asl a
+0x0002bf9f    6d4808       adc 0x0848
+0x0002bfa2    0a           asl a
+0x0002bfa3    69bfbf       adc #0xbfbf
+0x0002bfa6    8d2701       sta 0x0127
+0x0002bfa9    a90200       lda #0x0002
+0x0002bfac    8d2901       sta 0x0129
+0x0002bfaf    ee4808       inc 0x0848
+0x0002bfb2    8006         bra 0x02bfba
+0x0002bfb4    9c4808       stz 0x0848
+0x0002bfb7    ee4608       inc 0x0846
+0x0002bfba    60           rts

@@ -1,7 +1,0 @@
-0x000aef2f    e220         sep #0x20
-0x000aef31    a982         lda #0x82
-0x000aef33    eb           swa
-0x000aef34    a90f         lda #0x0f
-0x000aef36    22388700     jsr 0x008738
-0x000aef3a    e647         inc 0x47
-0x000aef3c    60           rts

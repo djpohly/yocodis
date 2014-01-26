@@ -5,3 +5,5 @@
 0x000acb17    b003         bcs 0x0acb1c
 0x000acb19    a20001       ldx #0x0100
 0x000acb1c    60           rts
+0x000acb1d    ca           dex
+0x000acb1e    60           rts

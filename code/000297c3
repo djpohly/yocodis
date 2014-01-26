@@ -1,6 +1,0 @@
-0x000297c3    c220         rep #0x20
-0x000297c5    ce7a10       dec 0x107a
-0x000297c8    1007         bpl 0x0297d1
-0x000297ca    ee7610       inc 0x1076
-0x000297cd    9c7a10       stz 0x107a
-0x000297d0    60           rts

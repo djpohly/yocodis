@@ -1,5 +1,0 @@
-0x0002eea5    890002       bit #0x0200
-0x0002eea8    f085         beq 0x02ee2f
-0x0002eeaa    a90101       lda #0x0101
-0x0002eead    2200800d     jsr 0x0d8000
-0x0002eeb1    8007         bra 0x02eeba

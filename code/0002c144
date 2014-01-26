@@ -1,7 +1,0 @@
-0x0002c144    e220         sep #0x20
-0x0002c146    adb410       lda 0x10b4
-0x0002c149    c946         cmp #0x46
-0x0002c14b    9007         bcc 0x02c154
-0x0002c14d    9cbb10       stz 0x10bb
-0x0002c150    ee7610       inc 0x1076
-0x0002c153    60           rts

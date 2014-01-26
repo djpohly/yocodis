@@ -1,4 +1,0 @@
-0x0002a568    ce7a10       dec 0x107a
-0x0002a56b    1003         bpl 0x02a570
-0x0002a56d    eea810       inc 0x10a8
-0x0002a570    60           rts

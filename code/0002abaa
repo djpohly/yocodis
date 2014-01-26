@@ -1,2 +1,0 @@
-0x0002abaa    201faf       jsr 0xaf1f
-0x0002abad    8000         bra 0x02abaf

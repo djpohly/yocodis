@@ -5,3 +5,53 @@
 0x000297ab    a26000       ldx #0x0060
 0x000297ae    8e7a10       stx 0x107a
 0x000297b1    60           rts
+0x000297b2    c220         rep #0x20
+0x000297b4    ce7a10       dec 0x107a
+0x000297b7    1009         bpl 0x0297c2
+0x000297b9    ee7610       inc 0x1076
+0x000297bc    a22000       ldx #0x0020
+0x000297bf    8e7a10       stx 0x107a
+0x000297c2    60           rts
+0x000297c3    c220         rep #0x20
+0x000297c5    ce7a10       dec 0x107a
+0x000297c8    1007         bpl 0x0297d1
+0x000297ca    ee7610       inc 0x1076
+0x000297cd    9c7a10       stz 0x107a
+0x000297d0    60           rts
+0x000297d1    a558         lda 0x58
+0x000297d3    290300       and #0x0003
+0x000297d6    c90100       cmp #0x0001
+0x000297d9    9018         bcc 0x0297f3
+0x000297db    f00f         beq 0x0297ec
+0x000297dd    c90300       cmp #0x0003
+0x000297e0    9003         bcc 0x0297e5
+0x000297e2    f008         beq 0x0297ec
+0x000297e4    60           rts
+0x000297e5    a27100       ldx #0x0071
+0x000297e8    8e7210       stx 0x1072
+0x000297eb    60           rts
+0x000297ec    a27000       ldx #0x0070
+0x000297ef    8e7210       stx 0x1072
+0x000297f2    60           rts
+0x000297f3    a26f00       ldx #0x006f
+0x000297f6    8e7210       stx 0x1072
+0x000297f9    60           rts
+0x000297fa    e220         sep #0x20
+0x000297fc    ae7a10       ldx 0x107a
+0x000297ff    bf2b9802     lda 0x02982b,x
+0x00029803    f010         beq 0x029815
+0x00029805    18           clc
+0x00029806    6d7410       adc 0x1074
+0x00029809    c220         rep #0x20
+0x0002980b    29ff00       and #0x00ff
+0x0002980e    8d7410       sta 0x1074
+0x00029811    ee7a10       inc 0x107a
+0x00029814    60           rts
+0x00029815    ee7610       inc 0x1076
+0x00029818    a22000       ldx #0x0020
+0x0002981b    8e7a10       stx 0x107a
+0x0002981e    a22100       ldx #0x0021
+0x00029821    8e9210       stx 0x1092
+0x00029824    a24900       ldx #0x0049
+0x00029827    8e8e10       stx 0x108e
+0x0002982a    60           rts

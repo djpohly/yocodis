@@ -1,8 +1,0 @@
-0x000acfee    bf00d00a     lda 0x0ad000,x
-0x000acff2    eb           swa
-0x000acff3    c5e6         cmp 0xe6
-0x000acff5    f008         beq 0x0acfff
-0x000acff7    eb           swa
-0x000acff8    2041b8       jsr 0xb841
-0x000acffb    2200800d     jsr 0x0d8000
-0x000acfff    60           rts

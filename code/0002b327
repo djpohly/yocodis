@@ -1,5 +1,0 @@
-0x0002b327    ade010       lda 0x10e0
-0x0002b32a    c90300       cmp #0x0003
-0x0002b32d    b003         bcs 0x02b332
-0x0002b32f    eee010       inc 0x10e0
-0x0002b332    60           rts

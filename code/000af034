@@ -1,6 +1,0 @@
-0x000af034    ee7803       inc 0x0378
-0x000af037    e220         sep #0x20
-0x000af039    6469         stz 0x69
-0x000af03b    a940         lda #0x40
-0x000af03d    0c7203       tsb 0x0372
-0x000af040    60           rts

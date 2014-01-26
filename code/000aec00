@@ -1,7 +1,0 @@
-0x000aec00    ad5800       lda 0x0058
-0x000aec03    4a           lsr a
-0x000aec04    b015         bcs 0x0aec1b
-0x000aec06    ad4808       lda 0x0848
-0x000aec09    f005         beq 0x0aec10
-0x000aec0b    2043f5       jsr 0xf543
-0x000aec0e    800b         bra 0x0aec1b

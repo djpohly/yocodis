@@ -7,3 +7,23 @@
 0x00029d51    a24c00       ldx #0x004c
 0x00029d54    8e7a10       stx 0x107a
 0x00029d57    60           rts
+0x00029d58    20d2c9       jsr 0xc9d2
+0x00029d5b    60           rts
+0x00029d5c    20b3cb       jsr 0xcbb3
+0x00029d5f    60           rts
+0x00029d60    2035ce       jsr 0xce35
+0x00029d63    60           rts
+0x00029d64    2003d1       jsr 0xd103
+0x00029d67    60           rts
+0x00029d68    207ad4       jsr 0xd47a
+0x00029d6b    60           rts
+0x00029d6c    2019d9       jsr 0xd919
+0x00029d6f    60           rts
+0x00029d70    200cdc       jsr 0xdc0c
+0x00029d73    60           rts
+0x00029d74    2063df       jsr 0xdf63
+0x00029d77    60           rts
+0x00029d78    2025e2       jsr 0xe225
+0x00029d7b    60           rts
+0x00029d7c    2066e6       jsr 0xe666
+0x00029d7f    60           rts

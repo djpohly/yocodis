@@ -1,6 +1,0 @@
-0x000ae119    ad6c01       lda 0x016c
-0x000ae11c    d02e         bne 0x0ae14c
-0x000ae11e    22938500     jsr 0x008593
-0x000ae122    29f800       and #0x00f8
-0x000ae125    f001         beq 0x0ae128
-0x000ae127    60           rts

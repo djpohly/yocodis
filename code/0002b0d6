@@ -1,5 +1,0 @@
-0x0002b0d6    ad1211       lda 0x1112
-0x0002b0d9    38           sec
-0x0002b0da    e90200       sbc #0x0002
-0x0002b0dd    8d1211       sta 0x1112
-0x0002b0e0    60           rts

@@ -1,6 +1,0 @@
-0x000ae1d1    a28004       ldx #0x0480
-0x000ae1d4    9003         bcc 0x0ae1d9
-0x000ae1d6    a28008       ldx #0x0880
-0x000ae1d9    c220         rep #0x20
-0x000ae1db    a90100       lda #0x0001
-0x000ae1de    4caee2       jmp 0xe2ae

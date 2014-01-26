@@ -1,8 +1,0 @@
-0x000aeb41    e220         sep #0x20
-0x000aeb43    a565         lda 0x65
-0x000aeb45    3008         bmi 0x0aeb4f
-0x000aeb47    a917         lda #0x17
-0x000aeb49    8567         sta 0x67
-0x000aeb4b    e647         inc 0x47
-0x000aeb4d    c220         rep #0x20
-0x000aeb4f    60           rts

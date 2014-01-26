@@ -5,3 +5,105 @@
 0x0002acc1    9c0011       stz 0x1100
 0x0002acc4    9c0611       stz 0x1106
 0x0002acc7    60           rts
+0x0002acc8    ce0011       dec 0x1100
+0x0002accb    3001         bmi 0x02acce
+0x0002accd    60           rts
+0x0002acce    ad0611       lda 0x1106
+0x0002acd1    d008         bne 0x02acdb
+0x0002acd3    a21500       ldx #0x0015
+0x0002acd6    8e0011       stx 0x1100
+0x0002acd9    8006         bra 0x02ace1
+0x0002acdb    a20500       ldx #0x0005
+0x0002acde    8e0011       stx 0x1100
+0x0002ace1    e220         sep #0x20
+0x0002ace3    a907         lda #0x07
+0x0002ace5    2230820d     jsr 0x0d8230
+0x0002ace9    c220         rep #0x20
+0x0002aceb    ad9900       lda 0x0099
+0x0002acee    890001       bit #0x0100
+0x0002acf1    f01a         beq 0x02ad0d
+0x0002acf3    ade210       lda 0x10e2
+0x0002acf6    cd1c11       cmp 0x111c
+0x0002acf9    b005         bcs 0x02ad00
+0x0002acfb    eee210       inc 0x10e2
+0x0002acfe    8003         bra 0x02ad03
+0x0002ad00    9ce210       stz 0x10e2
+0x0002ad03    a20200       ldx #0x0002
+0x0002ad06    8e0611       stx 0x1106
+0x0002ad09    20c7b2       jsr 0xb2c7
+0x0002ad0c    60           rts
+0x0002ad0d    ade210       lda 0x10e2
+0x0002ad10    f005         beq 0x02ad17
+0x0002ad12    cee210       dec 0x10e2
+0x0002ad15    8006         bra 0x02ad1d
+0x0002ad17    ae1c11       ldx 0x111c
+0x0002ad1a    8ee210       stx 0x10e2
+0x0002ad1d    20c7b2       jsr 0xb2c7
+0x0002ad20    a20100       ldx #0x0001
+0x0002ad23    8e0611       stx 0x1106
+0x0002ad26    60           rts
+0x0002ad27    c220         rep #0x20
+0x0002ad29    9c0011       stz 0x1100
+0x0002ad2c    9c0611       stz 0x1106
+0x0002ad2f    ad0811       lda 0x1108
+0x0002ad32    d039         bne 0x02ad6d
+0x0002ad34    ad9900       lda 0x0099
+0x0002ad37    890003       bit #0x0300
+0x0002ad3a    d001         bne 0x02ad3d
+0x0002ad3c    60           rts
+0x0002ad3d    890001       bit #0x0100
+0x0002ad40    f017         beq 0x02ad59
+0x0002ad42    ade610       lda 0x10e6
+0x0002ad45    c90200       cmp #0x0002
+0x0002ad48    b00e         bcs 0x02ad58
+0x0002ad4a    eee610       inc 0x10e6
+0x0002ad4d    ee0811       inc 0x1108
+0x0002ad50    e220         sep #0x20
+0x0002ad52    a907         lda #0x07
+0x0002ad54    2230820d     jsr 0x0d8230
+0x0002ad58    60           rts
+0x0002ad59    ade610       lda 0x10e6
+0x0002ad5c    f00e         beq 0x02ad6c
+0x0002ad5e    cee610       dec 0x10e6
+0x0002ad61    ee0811       inc 0x1108
+0x0002ad64    e220         sep #0x20
+0x0002ad66    a907         lda #0x07
+0x0002ad68    2230820d     jsr 0x0d8230
+0x0002ad6c    60           rts
+0x0002ad6d    2061b0       jsr 0xb061
+0x0002ad70    60           rts
+0x0002ad71    c220         rep #0x20
+0x0002ad73    9c0011       stz 0x1100
+0x0002ad76    9c0611       stz 0x1106
+0x0002ad79    ad0c11       lda 0x110c
+0x0002ad7c    0dd601       ora 0x01d6
+0x0002ad7f    d033         bne 0x02adb4
+0x0002ad81    ad9900       lda 0x0099
+0x0002ad84    890003       bit #0x0300
+0x0002ad87    d001         bne 0x02ad8a
+0x0002ad89    60           rts
+0x0002ad8a    ad9900       lda 0x0099
+0x0002ad8d    890001       bit #0x0100
+0x0002ad90    f010         beq 0x02ada2
+0x0002ad92    ade810       lda 0x10e8
+0x0002ad95    c90300       cmp #0x0003
+0x0002ad98    b013         bcs 0x02adad
+0x0002ad9a    eee810       inc 0x10e8
+0x0002ad9d    ee0c11       inc 0x110c
+0x0002ada0    800b         bra 0x02adad
+0x0002ada2    ade810       lda 0x10e8
+0x0002ada5    f00c         beq 0x02adb3
+0x0002ada7    cee810       dec 0x10e8
+0x0002adaa    ee0c11       inc 0x110c
+0x0002adad    ade810       lda 0x10e8
+0x0002adb0    20cdb3       jsr 0xb3cd
+0x0002adb3    60           rts
+0x0002adb4    208db0       jsr 0xb08d
+0x0002adb7    60           rts
+0x0002adb8    c220         rep #0x20
+0x0002adba    ade010       lda 0x10e0
+0x0002adbd    29ff00       and #0x00ff
+0x0002adc0    0a           asl a
+0x0002adc1    aa           tax
+0x0002adc2    f4c7ad       pea 0xadc7
+0x0002adc5    7cc9ad       jmp (0xadc9,x)

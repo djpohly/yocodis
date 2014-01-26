@@ -1,7 +1,0 @@
-0x000ae933    e220         sep #0x20
-0x000ae935    ad3c01       lda 0x013c
-0x000ae938    c90a         cmp #0x0a
-0x000ae93a    f006         beq 0x0ae942
-0x000ae93c    2065f1       jsr 0xf165
-0x000ae93f    e647         inc 0x47
-0x000ae941    60           rts

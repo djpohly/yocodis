@@ -1,6 +1,0 @@
-0x000a983d    ad0405       lda 0x0504
-0x000a9840    490200       eor #0x0002
-0x000a9843    aa           tax
-0x000a9844    bd6e03       lda 0x036e,x
-0x000a9847    d003         bne 0x0a984c
-0x000a9849    4ccf97       jmp 0x97cf
