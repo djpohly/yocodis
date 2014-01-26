@@ -1,0 +1,12 @@
+; jumptable
+0x00029d2c    429d         .da 0x9d42
+0x00029d2e    589d         .da 0x9d58
+0x00029d30    5c9d         .da 0x9d5c
+0x00029d32    609d         .da 0x9d60
+0x00029d34    649d         .da 0x9d64
+0x00029d36    689d         .da 0x9d68
+0x00029d38    6c9d         .da 0x9d6c
+0x00029d3a    709d         .da 0x9d70
+0x00029d3c    749d         .da 0x9d74
+0x00029d3e    789d         .da 0x9d78
+0x00029d40    7c9d         .da 0x9d7c

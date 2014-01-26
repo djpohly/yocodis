@@ -1,0 +1,10 @@
+; jumptable
+0x0002ea43    55ea         .da 0xea55
+0x0002ea45    89ea         .da 0xea89
+0x0002ea47    b8ea         .da 0xeab8
+0x0002ea49    bfea         .da 0xeabf
+0x0002ea4b    d2ea         .da 0xead2
+0x0002ea4d    e0ea         .da 0xeae0
+0x0002ea4f    f3ea         .da 0xeaf3
+0x0002ea51    01eb         .da 0xeb01
+0x0002ea53    14eb         .da 0xeb14

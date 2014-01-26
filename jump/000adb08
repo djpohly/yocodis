@@ -1,0 +1,12 @@
+; jumptable
+0x000adb08    1edb         .da 0xdb1e
+0x000adb0a    2bdb         .da 0xdb2b
+0x000adb0c    eddb         .da 0xdbed
+0x000adb0e    f1db         .da 0xdbf1
+0x000adb10    34dc         .da 0xdc34
+0x000adb12    7edc         .da 0xdc7e
+0x000adb14    fedc         .da 0xdcfe
+0x000adb16    1edd         .da 0xdd1e
+0x000adb18    43dd         .da 0xdd43
+0x000adb1a    63dd         .da 0xdd63
+0x000adb1c    64dd         .da 0xdd64

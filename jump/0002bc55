@@ -1,0 +1,8 @@
+; jumptable
+0x0002bc55    63bc         .da 0xbc63
+0x0002bc57    6bbc         .da 0xbc6b
+0x0002bc59    73bc         .da 0xbc73
+0x0002bc5b    7bbc         .da 0xbc7b
+0x0002bc5d    83bc         .da 0xbc83
+0x0002bc5f    8bbc         .da 0xbc8b
+0x0002bc61    9cbc         .da 0xbc9c

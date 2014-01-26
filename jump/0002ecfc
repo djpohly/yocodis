@@ -1,0 +1,20 @@
+; jumptable
+0x0002ecfc    22ed         .da 0xed22
+0x0002ecfe    26ed         .da 0xed26
+0x0002ed00    2ded         .da 0xed2d
+0x0002ed02    37ed         .da 0xed37
+0x0002ed04    5ced         .da 0xed5c
+0x0002ed06    6aed         .da 0xed6a
+0x0002ed08    7fed         .da 0xed7f
+0x0002ed0a    80ed         .da 0xed80
+0x0002ed0c    afed         .da 0xedaf
+0x0002ed0e    0eed         .da 0xed0e ;invalid!
+0x0002ed10    10ed         .da 0xed10 ;invalid!
+0x0002ed12    12ed         .da 0xed12 ;invalid!
+0x0002ed14    c0ed         .da 0xedc0
+0x0002ed16    c4ed         .da 0xedc4
+0x0002ed18    c3ee         .da 0xeec3
+0x0002ed1a    deee         .da 0xeede
+0x0002ed1c    ecee         .da 0xeeec
+0x0002ed1e    21ef         .da 0xef21
+0x0002ed20    3cef         .da 0xef3c

@@ -1,0 +1,9 @@
+; jumptable
+0x000ac9fb    0bca         .da 0xca0b
+0x000ac9fd    1eca         .da 0xca1e
+0x000ac9ff    33ca         .da 0xca33
+0x000aca01    33ca         .da 0xca33
+0x000aca03    0bca         .da 0xca0b
+0x000aca05    1eca         .da 0xca1e
+0x000aca07    33ca         .da 0xca33
+0x000aca09    33ca         .da 0xca33

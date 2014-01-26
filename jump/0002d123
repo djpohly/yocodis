@@ -1,0 +1,17 @@
+; jumptable
+0x0002d123    43d1         .da 0xd143
+0x0002d125    57d1         .da 0xd157
+0x0002d127    94d1         .da 0xd194
+0x0002d129    e0d1         .da 0xd1e0
+0x0002d12b    1cd2         .da 0xd21c
+0x0002d12d    42d2         .da 0xd242
+0x0002d12f    8cd3         .da 0xd38c
+0x0002d131    cad3         .da 0xd3ca
+0x0002d133    e7d3         .da 0xd3e7
+0x0002d135    02d4         .da 0xd402
+0x0002d137    76d2         .da 0xd276
+0x0002d139    bfd2         .da 0xd2bf
+0x0002d13b    fad2         .da 0xd2fa
+0x0002d13d    1ed3         .da 0xd31e
+0x0002d13f    29d3         .da 0xd329
+0x0002d141    2dd3         .da 0xd32d

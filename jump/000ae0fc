@@ -1,0 +1,9 @@
+; jumptable
+0x000ae0fc    19e1         .da 0xe119
+0x000ae0fe    0de1         .da 0xe10d
+0x000ae100    0ce1         .da 0xe10c
+0x000ae102    38e1         .da 0xe138
+0x000ae104    19e1         .da 0xe119
+0x000ae106    12e1         .da 0xe112
+0x000ae108    0ce1         .da 0xe10c
+0x000ae10a    38e1         .da 0xe138

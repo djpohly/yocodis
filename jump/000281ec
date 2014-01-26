@@ -1,0 +1,7 @@
+; jumptable
+0x000281ec    f881         .da 0x81f8
+0x000281ee    f981         .da 0x81f9
+0x000281f0    3882         .da 0x8238
+0x000281f2    cb82         .da 0x82cb
+0x000281f4    cb82         .da 0x82cb
+0x000281f6    cb82         .da 0x82cb

@@ -1,0 +1,10 @@
+; jumptable
+0x0002c016    28c0         .da 0xc028
+0x0002c018    73c0         .da 0xc073
+0x0002c01a    9bc0         .da 0xc09b
+0x0002c01c    c2c0         .da 0xc0c2
+0x0002c01e    e8c0         .da 0xc0e8
+0x0002c020    f1c0         .da 0xc0f1
+0x0002c022    1ec1         .da 0xc11e
+0x0002c024    2cc1         .da 0xc12c
+0x0002c026    f3bf         .da 0xbff3

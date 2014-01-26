@@ -1,0 +1,6 @@
+; jumptable
+0x0002f9fd    07fa         .da 0xfa07
+0x0002f9ff    0efa         .da 0xfa0e
+0x0002fa01    1dfa         .da 0xfa1d
+0x0002fa03    24fa         .da 0xfa24
+0x0002fa05    32fa         .da 0xfa32

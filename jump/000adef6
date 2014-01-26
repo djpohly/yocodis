@@ -1,0 +1,11 @@
+; jumptable
+0x000adef6    0adf         .da 0xdf0a
+0x000adef8    5cdf         .da 0xdf5c
+0x000adefa    9bdf         .da 0xdf9b
+0x000adefc    b9df         .da 0xdfb9
+0x000adefe    27e0         .da 0xe027
+0x000adf00    6ce1         .da 0xe16c
+0x000adf02    cde2         .da 0xe2cd
+0x000adf04    fbe2         .da 0xe2fb
+0x000adf06    39e3         .da 0xe339
+0x000adf08    67e3         .da 0xe367

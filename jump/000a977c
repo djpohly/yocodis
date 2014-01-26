@@ -1,0 +1,11 @@
+; jumptable
+0x000a977c    a497         .da 0x97a4
+0x000a977e    cf97         .da 0x97cf
+0x000a9780    ef97         .da 0x97ef
+0x000a9782    fb97         .da 0x97fb
+0x000a9784    2a98         .da 0x982a
+0x000a9786    3d98         .da 0x983d
+0x000a9788    7698         .da 0x9876
+0x000a978a    8298         .da 0x9882
+0x000a978c    2a98         .da 0x982a
+0x000a978e    f898         .da 0x98f8

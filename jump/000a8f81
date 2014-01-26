@@ -1,0 +1,9 @@
+; jumptable
+0x000a8f81    918f         .da 0x8f91
+0x000a8f83    0490         .da 0x9004
+0x000a8f85    8490         .da 0x9084
+0x000a8f87    c190         .da 0x90c1
+0x000a8f89    0591         .da 0x9105
+0x000a8f8b    4e91         .da 0x914e
+0x000a8f8d    a391         .da 0x91a3
+0x000a8f8f    d291         .da 0x91d2

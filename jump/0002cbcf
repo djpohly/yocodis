@@ -1,0 +1,14 @@
+; jumptable
+0x0002cbcf    e9cb         .da 0xcbe9
+0x0002cbd1    facb         .da 0xcbfa
+0x0002cbd3    34cc         .da 0xcc34
+0x0002cbd5    2ccd         .da 0xcd2c
+0x0002cbd7    5fcd         .da 0xcd5f
+0x0002cbd9    92cd         .da 0xcd92
+0x0002cbdb    7acd         .da 0xcd7a
+0x0002cbdd    aecd         .da 0xcdae
+0x0002cbdf    76cc         .da 0xcc76
+0x0002cbe1    cbcc         .da 0xcccb
+0x0002cbe3    fecc         .da 0xccfe
+0x0002cbe5    0ccd         .da 0xcd0c
+0x0002cbe7    10cd         .da 0xcd10

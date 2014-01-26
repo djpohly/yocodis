@@ -1,0 +1,8 @@
+; jumptable
+0x000afaa7    b5fa         .da 0xfab5
+0x000afaa9    effa         .da 0xfaef
+0x000afaab    f4fa         .da 0xfaf4
+0x000afaad    f9fa         .da 0xfaf9
+0x000afaaf    cbfa         .da 0xfacb
+0x000afab1    13fb         .da 0xfb13
+0x000afab3    cffb         .da 0xfbcf

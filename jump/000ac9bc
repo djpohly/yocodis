@@ -1,0 +1,7 @@
+; jumptable
+0x000ac9bc    c8c9         .da 0xc9c8
+0x000ac9be    c8c9         .da 0xc9c8
+0x000ac9c0    e6c9         .da 0xc9e6
+0x000ac9c2    e6c9         .da 0xc9e6
+0x000ac9c4    e9c9         .da 0xc9e9
+0x000ac9c6    e9c9         .da 0xc9e9

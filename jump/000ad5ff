@@ -1,0 +1,4 @@
+; jumptable
+0x000ad5ff    05d6         .da 0xd605
+0x000ad601    16d6         .da 0xd616
+0x000ad603    6ed5         .da 0xd56e

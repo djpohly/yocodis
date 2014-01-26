@@ -1,0 +1,5 @@
+; jumptable
+0x0002adc9    d1ad         .da 0xadd1
+0x0002adcb    10ae         .da 0xae10
+0x0002adcd    17ae         .da 0xae17
+0x0002adcf    1eae         .da 0xae1e

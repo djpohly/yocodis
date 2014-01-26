@@ -1,0 +1,6 @@
+; jumptable
+0x000ac95f    69c9         .da 0xc969
+0x000ac961    7cc9         .da 0xc97c
+0x000ac963    aac9         .da 0xc9aa
+0x000ac965    aac9         .da 0xc9aa
+0x000ac967    aac9         .da 0xc9aa

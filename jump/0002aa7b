@@ -1,0 +1,14 @@
+; jumptable
+0x0002aa7b    95aa         .da 0xaa95
+0x0002aa7d    c5aa         .da 0xaac5
+0x0002aa7f    ccaa         .da 0xaacc
+0x0002aa82    e0aa         .da 0xaae0
+0x0002aa83    e7aa         .da 0xaae7
+0x0002aa85    f8aa         .da 0xaaf8
+0x0002aa87    fcaa         .da 0xaafc
+0x0002aa8a    00ab         .da 0xab00
+0x0002aa8b    01ab         .da 0xab01
+0x0002aa8d    02ab         .da 0xab02
+0x0002aa8f    4eab         .da 0xab4e
+0x0002aa92    96ab         .da 0xab96
+0x0002aa93    b7ab         .da 0xabb7

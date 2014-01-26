@@ -1,0 +1,6 @@
+; jumptable
+0x00029d09    139d         .da 0x9d13
+0x00029d0b    149d         .da 0x9d14
+0x00029d0d    159d         .da 0x9d15
+0x00029d0f    169d         .da 0x9d16
+0x00029d11    179d         .da 0x9d17
