@@ -1,0 +1,17 @@
+0x000ac55f    08           php
+0x000ac560    8b           phb
+0x000ac561    4b           phk
+0x000ac562    ab           plb
+0x000ac563    e220         sep #0x20
+0x000ac565    a97e         lda #0x7e
+0x000ac567    8522         sta 0x22
+0x000ac569    4b           phk
+0x000ac56a    68           pla
+0x000ac56b    8525         sta 0x25
+0x000ac56d    c220         rep #0x20
+0x000ac56f    ad5801       lda 0x0158
+0x000ac572    302a         bmi 0x0ac59e
+0x000ac574    ad5601       lda 0x0156
+0x000ac577    0a           asl a
+0x000ac578    aa           tax
+0x000ac579    7c7cc5       jmp (0xc57c,x)
