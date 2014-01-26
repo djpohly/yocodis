@@ -1,0 +1,8 @@
+0x000ac590    c220         rep #0x20
+0x000ac592    a90080       lda #0x8000
+0x000ac595    0c5801       tsb 0x0158
+0x000ac598    a90100       lda #0x0001
+0x000ac59b    8d0401       sta 0x0104
+0x000ac59e    ab           plb
+0x000ac59f    28           plp
+0x000ac5a0    6b           rtl
