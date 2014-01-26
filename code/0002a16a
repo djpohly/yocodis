@@ -1,0 +1,15 @@
+0x0002a16a    e220         sep #0x20
+0x0002a16c    a20020       ldx #0x2000
+0x0002a16f    8ee000       stx 0x00e0
+0x0002a172    a2200c       ldx #0x0c20
+0x0002a175    8ede00       stx 0x00de
+0x0002a178    a24025       ldx #0x2540
+0x0002a17b    8eda00       stx 0x00da
+0x0002a17e    a24025       ldx #0x2540
+0x0002a181    8ed600       stx 0x00d6
+0x0002a184    a97e         lda #0x7e
+0x0002a186    8ddc00       sta 0x00dc
+0x0002a189    a97e         lda #0x7e
+0x0002a18b    8dd800       sta 0x00d8
+0x0002a18e    22b48e00     jsr 0x008eb4
+0x0002a192    60           rts
