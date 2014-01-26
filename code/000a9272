@@ -1,0 +1,14 @@
+0x000a9272    e220         sep #0x20
+0x000a9274    a900         lda #0x00
+0x000a9276    eb           swa
+0x000a9277    a610         ldx 0x10
+0x000a9279    ca           dex
+0x000a927a    ad0405       lda 0x0504
+0x000a927d    d00d         bne 0x0a928c
+0x000a927f    bd1805       lda 0x0518,x
+0x000a9282    a8           tay
+0x000a9283    a90f         lda #0x0f
+0x000a9285    9102         sta (0x02),y
+0x000a9287    ca           dex
+0x000a9288    10f5         bpl 0x0a927f
+0x000a928a    800e         bra 0x0a929a

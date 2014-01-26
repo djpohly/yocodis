@@ -1,0 +1,35 @@
+0x000a90c1    a506         lda 0x06
+0x000a90c3    8508         sta 0x08
+0x000a90c5    0a           asl a
+0x000a90c6    0a           asl a
+0x000a90c7    0a           asl a
+0x000a90c8    6502         adc 0x02
+0x000a90ca    8504         sta 0x04
+0x000a90cc    e220         sep #0x20
+0x000a90ce    a20000       ldx #0x0000
+0x000a90d1    8a           txa
+0x000a90d2    eb           swa
+0x000a90d3    ad0805       lda 0x0508
+0x000a90d6    a8           tay
+0x000a90d7    b90805       lda 0x0508,y
+0x000a90da    c906         cmp #0x06
+0x000a90dc    b008         bcs 0x0a90e6
+0x000a90de    d204         cmp (0x04)
+0x000a90e0    f004         beq 0x0a90e6
+0x000a90e2    9d1905       sta 0x0519,x
+0x000a90e5    e8           inx
+0x000a90e6    88           dey
+0x000a90e7    d0ee         bne 0x0a90d7
+0x000a90e9    8a           txa
+0x000a90ea    a00000       ldy #0x0000
+0x000a90ed    22658a00     jsr 0x008a65
+0x000a90f1    aa           tax
+0x000a90f2    a504         lda 0x04
+0x000a90f4    38           sec
+0x000a90f5    e908         sbc #0x08
+0x000a90f7    8504         sta 0x04
+0x000a90f9    bd1905       lda 0x0519,x
+0x000a90fc    9204         sta (0x04)
+0x000a90fe    c608         dec 0x08
+0x000a9100    d0cc         bne 0x0a90ce
+0x000a9102    4c5c90       jmp 0x905c

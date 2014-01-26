@@ -1,0 +1,37 @@
+0x000a8fb3    8a           txa
+0x000a8fb4    eb           swa
+0x000a8fb5    ad0805       lda 0x0508
+0x000a8fb8    a8           tay
+0x000a8fb9    b90805       lda 0x0508,y
+0x000a8fbc    d204         cmp (0x04)
+0x000a8fbe    f004         beq 0x0a8fc4
+0x000a8fc0    9d1905       sta 0x0519,x
+0x000a8fc3    e8           inx
+0x000a8fc4    88           dey
+0x000a8fc5    d0f2         bne 0x0a8fb9
+0x000a8fc7    8a           txa
+0x000a8fc8    a00000       ldy #0x0000
+0x000a8fcb    22658a00     jsr 0x008a65
+0x000a8fcf    aa           tax
+0x000a8fd0    c604         dec 0x04
+0x000a8fd2    c600         dec 0x00
+0x000a8fd4    bd1905       lda 0x0519,x
+0x000a8fd7    9204         sta (0x04)
+0x000a8fd9    c608         dec 0x08
+0x000a8fdb    d0c4         bne 0x0a8fa1
+0x000a8fdd    c220         rep #0x20
+0x000a8fdf    ae0005       ldx 0x0500
+0x000a8fe2    bd6603       lda 0x0366,x
+0x000a8fe5    0a           asl a
+0x000a8fe6    6d0005       adc 0x0500
+0x000a8fe9    a8           tay
+0x000a8fea    ad5001       lda 0x0150
+0x000a8fed    29f000       and #0x00f0
+0x000a8ff0    090020       ora #0x2000
+0x000a8ff3    995003       sta 0x0350,y
+0x000a8ff6    bd6603       lda 0x0366,x
+0x000a8ff9    1a           inc a
+0x000a8ffa    9d6203       sta 0x0362,x
+0x000a8ffd    9d7003       sta 0x0370,x
+0x000a9000    200992       jsr 0x9209
+0x000a9003    60           rts

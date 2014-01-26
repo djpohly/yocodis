@@ -1,0 +1,31 @@
+0x000a9229    c8           iny
+0x000a922a    c00500       cpy #0x0005
+0x000a922d    90e8         bcc 0x0a9217
+0x000a922f    8a           txa
+0x000a9230    f078         beq 0x0a92aa
+0x000a9232    8610         stx 0x10
+0x000a9234    9c1805       stz 0x0518
+0x000a9237    a406         ldy 0x06
+0x000a9239    88           dey
+0x000a923a    f036         beq 0x0a9272
+0x000a923c    98           tya
+0x000a923d    991805       sta 0x0518,y
+0x000a9240    88           dey
+0x000a9241    10f9         bpl 0x0a923c
+0x000a9243    c220         rep #0x20
+0x000a9245    a21f00       ldx #0x001f
+0x000a9248    a00000       ldy #0x0000
+0x000a924b    a506         lda 0x06
+0x000a924d    22658a00     jsr 0x008a65
+0x000a9251    a8           tay
+0x000a9252    88           dey
+0x000a9253    1013         bpl 0x0a9268
+0x000a9255    e220         sep #0x20
+0x000a9257    ad1805       lda 0x0518
+0x000a925a    eb           swa
+0x000a925b    a406         ldy 0x06
+0x000a925d    88           dey
+0x000a925e    b91805       lda 0x0518,y
+0x000a9261    8d1805       sta 0x0518
+0x000a9264    c220         rep #0x20
+0x000a9266    8003         bra 0x0a926b

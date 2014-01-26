@@ -1,0 +1,11 @@
+0x000a9213    a00000       ldy #0x0000
+0x000a9216    bb           tyx
+0x000a9217    b9aa03       lda 0x03aa,y
+0x000a921a    38           sec
+0x000a921b    e90f         sbc #0x0f
+0x000a921d    900a         bcc 0x0a9229
+0x000a921f    99aa03       sta 0x03aa,y
+0x000a9222    e8           inx
+0x000a9223    e406         cpx 0x06
+0x000a9225    90f0         bcc 0x0a9217
+0x000a9227    8006         bra 0x0a922f

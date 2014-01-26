@@ -1,0 +1,16 @@
+0x000a8f91    a506         lda 0x06
+0x000a8f93    8508         sta 0x08
+0x000a8f95    18           clc
+0x000a8f96    6502         adc 0x02
+0x000a8f98    8504         sta 0x04
+0x000a8f9a    e90800       sbc #0x0008
+0x000a8f9d    8500         sta 0x00
+0x000a8f9f    e220         sep #0x20
+0x000a8fa1    a20000       ldx #0x0000
+0x000a8fa4    b200         lda (0x00)
+0x000a8fa6    c906         cmp #0x06
+0x000a8fa8    b009         bcs 0x0a8fb3
+0x000a8faa    d204         cmp (0x04)
+0x000a8fac    f005         beq 0x0a8fb3
+0x000a8fae    8d1905       sta 0x0519
+0x000a8fb1    801d         bra 0x0a8fd0

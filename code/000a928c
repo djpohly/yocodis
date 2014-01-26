@@ -1,0 +1,18 @@
+0x000a928c    bd1805       lda 0x0518,x
+0x000a928f    0a           asl a
+0x000a9290    0a           asl a
+0x000a9291    0a           asl a
+0x000a9292    a8           tay
+0x000a9293    a90f         lda #0x0f
+0x000a9295    9102         sta (0x02),y
+0x000a9297    ca           dex
+0x000a9298    10f2         bpl 0x0a928c
+0x000a929a    a00500       ldy #0x0005
+0x000a929d    8400         sty 0x00
+0x000a929f    b9a903       lda 0x03a9,y
+0x000a92a2    20d2c2       jsr 0xc2d2
+0x000a92a5    a400         ldy 0x00
+0x000a92a7    88           dey
+0x000a92a8    d0f3         bne 0x0a929d
+0x000a92aa    28           plp
+0x000a92ab    60           rts
