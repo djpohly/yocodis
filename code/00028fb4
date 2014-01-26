@@ -1,0 +1,16 @@
+0x00028fb4    e220         sep #0x20
+0x00028fb6    9c0042       stz 0x4200
+0x00028fb9    a24000       ldx #0x0040
+0x00028fbc    8e6a10       stx 0x106a
+0x00028fbf    a2c000       ldx #0x00c0
+0x00028fc2    8e6e10       stx 0x106e
+0x00028fc5    9c8810       stz 0x1088
+0x00028fc8    9c8a10       stz 0x108a
+0x00028fcb    a21b00       ldx #0x001b
+0x00028fce    8e8e10       stx 0x108e
+0x00028fd1    a20100       ldx #0x0001
+0x00028fd4    8e9010       stx 0x1090
+0x00028fd7    9cca10       stz 0x10ca
+0x00028fda    ee7610       inc 0x1076
+0x00028fdd    225a8500     jsr 0x00855a
+0x00028fe1    60           rts
