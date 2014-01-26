@@ -30,3 +30,59 @@
 0x000abf42    a915         lda #0x15
 0x000abf44    8547         sta 0x47
 0x000abf46    60           rts
+0x000abf47    08           php
+0x000abf48    c220         rep #0x20
+0x000abf4a    a900ff       lda #0xff00
+0x000abf4d    8506         sta 0x06
+0x000abf4f    8508         sta 0x08
+0x000abf51    6404         stz 0x04
+0x000abf53    a90888       lda #0x8808
+0x000abf56    8502         sta 0x02
+0x000abf58    a90100       lda #0x0001
+0x000abf5b    8500         sta 0x00
+0x000abf5d    2266850a     jsr 0x0a8566
+0x000abf61    e600         inc 0x00
+0x000abf63    a502         lda 0x02
+0x000abf65    18           clc
+0x000abf66    690010       adc #0x1000
+0x000abf69    8502         sta 0x02
+0x000abf6b    c908d8       cmp #0xd808
+0x000abf6e    90ed         bcc 0x0abf5d
+0x000abf70    28           plp
+0x000abf71    60           rts
+0x000abf72    08           php
+0x000abf73    c220         rep #0x20
+0x000abf75    201ada       jsr 0xda1a
+0x000abf78    9c2009       stz 0x0920
+0x000abf7b    9c2409       stz 0x0924
+0x000abf7e    9c2609       stz 0x0926
+0x000abf81    9c2809       stz 0x0928
+0x000abf84    a92800       lda #0x0028
+0x000abf87    8d2a09       sta 0x092a
+0x000abf8a    a96800       lda #0x0068
+0x000abf8d    8d2c09       sta 0x092c
+0x000abf90    9c2e09       stz 0x092e
+0x000abf93    a90700       lda #0x0007
+0x000abf96    8d3609       sta 0x0936
+0x000abf99    9c3809       stz 0x0938
+0x000abf9c    a9e800       lda #0x00e8
+0x000abf9f    8d3a09       sta 0x093a
+0x000abfa2    a9a000       lda #0x00a0
+0x000abfa5    8d3c09       sta 0x093c
+0x000abfa8    9c3e09       stz 0x093e
+0x000abfab    28           plp
+0x000abfac    60           rts
+0x000abfad    08           php
+0x000abfae    c220         rep #0x20
+0x000abfb0    ad2009       lda 0x0920
+0x000abfb3    3013         bmi 0x0abfc8
+0x000abfb5    ad3a01       lda 0x013a
+0x000abfb8    d00e         bne 0x0abfc8
+0x000abfba    ad2409       lda 0x0924
+0x000abfbd    29ff00       and #0x00ff
+0x000abfc0    0a           asl a
+0x000abfc1    aa           tax
+0x000abfc2    f4c7bf       pea 0xbfc7
+0x000abfc5    7ccabf       jmp (0xbfca,x)
+0x000abfc8    28           plp
+0x000abfc9    60           rts

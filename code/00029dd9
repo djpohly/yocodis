@@ -1,6 +1,0 @@
-0x00029dd9    a27000       ldx #0x0070
-0x00029ddc    8e7410       stx 0x1074
-0x00029ddf    a27800       ldx #0x0078
-0x00029de2    8e6c10       stx 0x106c
-0x00029de5    20769e       jsr 0x9e76
-0x00029de8    60           rts

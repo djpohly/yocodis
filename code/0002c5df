@@ -1,4 +1,0 @@
-0x0002c5df    e220         sep #0x20
-0x0002c5e1    a900         lda #0x00
-0x0002c5e3    8d0121       sta 0x2101
-0x0002c5e6    60           rts

@@ -1,4 +1,0 @@
-0x000ac802    c42a         cpy 0x2a
-0x000ac804    90de         bcc 0x0ac7e4
-0x000ac806    a00000       ldy #0x0000
-0x000ac809    80d9         bra 0x0ac7e4

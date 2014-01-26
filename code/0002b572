@@ -1,8 +1,0 @@
-0x0002b572    20e6b9       jsr 0xb9e6
-0x0002b575    c220         rep #0x20
-0x0002b577    ad7610       lda 0x1076
-0x0002b57a    29ff00       and #0x00ff
-0x0002b57d    0a           asl a
-0x0002b57e    aa           tax
-0x0002b57f    f484b5       pea 0xb584
-0x0002b582    7cbab5       jmp (0xb5ba,x)

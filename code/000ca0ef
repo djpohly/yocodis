@@ -1,5 +1,0 @@
-0x000ca0ef    c220         rep #0x20
-0x000ca0f1    a90f87       lda #0x870f
-0x000ca0f4    22388700     jsr 0x008738
-0x000ca0f8    ee7610       inc 0x1076
-0x000ca0fb    6b           rtl

@@ -18,3 +18,12 @@
 0x000acdf2    ab           plb
 0x000acdf3    28           plp
 0x000acdf4    60           rts
+0x000acdf5    0a           asl a
+0x000acdf6    aa           tax
+0x000acdf7    bf0dce0a     lda 0x0ace0d,x
+0x000acdfb    990000       sta 0x0000,y
+0x000acdfe    bf0fce0a     lda 0x0ace0f,x
+0x000ace02    990200       sta 0x0002,y
+0x000ace05    bf11ce0a     lda 0x0ace11,x
+0x000ace09    990400       sta 0x0004,y
+0x000ace0c    60           rts

@@ -1,3 +1,0 @@
-0x00008bfc    ee0001       inc 0x0100
-0x00008bff    28           plp
-0x00008c00    6b           rtl

@@ -1,4 +1,0 @@
-0x0002aa59    a921         lda #0x21
-0x0002aa5b    2230820d     jsr 0x0d8230
-0x0002aa5f    225a8500     jsr 0x00855a
-0x0002aa63    60           rts

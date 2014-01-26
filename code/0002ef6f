@@ -1,7 +1,0 @@
-0x0002ef6f    9c7c11       stz 0x117c
-0x0002ef72    9c7e11       stz 0x117e
-0x0002ef75    9c5411       stz 0x1154
-0x0002ef78    9c4411       stz 0x1144
-0x0002ef7b    9cae11       stz 0x11ae
-0x0002ef7e    9c9c11       stz 0x119c
-0x0002ef81    60           rts

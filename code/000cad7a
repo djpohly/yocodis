@@ -1,8 +1,0 @@
-0x000cad7a    e220         sep #0x20
-0x000cad7c    a900         lda #0x00
-0x000cad7e    eb           swa
-0x000cad7f    a00080       ldy #0x8000
-0x000cad82    a20080       ldx #0x8000
-0x000cad85    a97f         lda #0x7f
-0x000cad87    22b28900     jsr 0x0089b2
-0x000cad8b    6b           rtl

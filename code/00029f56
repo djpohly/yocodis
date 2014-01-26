@@ -15,3 +15,27 @@
 0x00029f79    a00008       ldy #0x0800
 0x00029f7c    22688b00     jsr 0x008b68
 0x00029f80    60           rts
+0x00029f81    e220         sep #0x20
+0x00029f83    a97e         lda #0x7e
+0x00029f85    48           pha
+0x00029f86    f40020       pea 0x2000
+0x00029f89    f40030       pea 0x3000
+0x00029f8c    f40010       pea 0x1000
+0x00029f8f    222a8902     jsr 0x02892a
+0x00029f93    60           rts
+0x00029f94    e220         sep #0x20
+0x00029f96    a97e         lda #0x7e
+0x00029f98    48           pha
+0x00029f99    f40040       pea 0x4000
+0x00029f9c    f40038       pea 0x3800
+0x00029f9f    f40010       pea 0x1000
+0x00029fa2    222a8902     jsr 0x02892a
+0x00029fa6    60           rts
+0x00029fa7    e220         sep #0x20
+0x00029fa9    a97e         lda #0x7e
+0x00029fab    48           pha
+0x00029fac    f40060       pea 0x6000
+0x00029faf    f40060       pea 0x6000
+0x00029fb2    f40010       pea 0x1000
+0x00029fb5    222a8902     jsr 0x02892a
+0x00029fb9    60           rts

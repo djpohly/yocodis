@@ -1,9 +1,0 @@
-0x00029cf5    e220         sep #0x20
-0x00029cf7    a545         lda 0x45
-0x00029cf9    6445         stz 0x45
-0x00029cfb    c220         rep #0x20
-0x00029cfd    29ff00       and #0x00ff
-0x00029d00    0a           asl a
-0x00029d01    aa           tax
-0x00029d02    f4079d       pea 0x9d07
-0x00029d05    7c099d       jmp (0x9d09,x)

@@ -16,3 +16,15 @@
 0x00009ec4    85da         sta 0xda
 0x00009ec6    22259b00     jsr 0x009b25
 0x00009eca    60           rts
+0x00009ecb    08           php
+0x00009ecc    c220         rep #0x20
+0x00009ece    20879f       jsr 0x9f87
+0x00009ed1    ad4608       lda 0x0846
+0x00009ed4    300b         bmi 0x009ee1
+0x00009ed6    29ff00       and #0x00ff
+0x00009ed9    0a           asl a
+0x00009eda    aa           tax
+0x00009edb    f4e09e       pea 0x9ee0
+0x00009ede    7ce39e       jmp (0x9ee3,x)
+0x00009ee1    28           plp
+0x00009ee2    6b           rtl

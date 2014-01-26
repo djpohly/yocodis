@@ -4,3 +4,59 @@
 0x000cad11    ad4001       lda 0x0140
 0x000cad14    f001         beq 0x0cad17
 0x000cad16    60           rts
+0x000cad17    c220         rep #0x20
+0x000cad19    ad3101       lda 0x0131
+0x000cad1c    d028         bne 0x0cad46
+0x000cad1e    ad4201       lda 0x0142
+0x000cad21    3a           dec a
+0x000cad22    290300       and #0x0003
+0x000cad25    8de810       sta 0x10e8
+0x000cad28    ae3c01       ldx 0x013c
+0x000cad2b    8ee210       stx 0x10e2
+0x000cad2e    ae3e01       ldx 0x013e
+0x000cad31    8ee410       stx 0x10e4
+0x000cad34    aef203       ldx 0x03f2
+0x000cad37    8ee610       stx 0x10e6
+0x000cad3a    aef803       ldx 0x03f8
+0x000cad3d    8eea10       stx 0x10ea
+0x000cad40    aefa03       ldx 0x03fa
+0x000cad43    8eec10       stx 0x10ec
+0x000cad46    60           rts
+0x000cad47    e220         sep #0x20
+0x000cad49    ad7610       lda 0x1076
+0x000cad4c    c906         cmp #0x06
+0x000cad4e    d017         bne 0x0cad67
+0x000cad50    a907         lda #0x07
+0x000cad52    8d0521       sta 0x2105
+0x000cad55    8d0521       sta 0x2105
+0x000cad58    a900         lda #0x00
+0x000cad5a    8d0b21       sta 0x210b
+0x000cad5d    a900         lda #0x00
+0x000cad5f    8d0c21       sta 0x210c
+0x000cad62    a900         lda #0x00
+0x000cad64    8d0721       sta 0x2107
+0x000cad67    60           rts
+0x000cad68    e220         sep #0x20
+0x000cad6a    a900         lda #0x00
+0x000cad6c    eb           swa
+0x000cad6d    a00008       ldy #0x0800
+0x000cad70    a20020       ldx #0x2000
+0x000cad73    a97e         lda #0x7e
+0x000cad75    22b28900     jsr 0x0089b2
+0x000cad79    6b           rtl
+0x000cad7a    e220         sep #0x20
+0x000cad7c    a900         lda #0x00
+0x000cad7e    eb           swa
+0x000cad7f    a00080       ldy #0x8000
+0x000cad82    a20080       ldx #0x8000
+0x000cad85    a97f         lda #0x7f
+0x000cad87    22b28900     jsr 0x0089b2
+0x000cad8b    6b           rtl
+0x000cad8c    e220         sep #0x20
+0x000cad8e    a900         lda #0x00
+0x000cad90    eb           swa
+0x000cad91    a00002       ldy #0x0200
+0x000cad94    a20019       ldx #0x1900
+0x000cad97    a90c         lda #0x0c
+0x000cad99    22b28900     jsr 0x0089b2
+0x000cad9d    6b           rtl

@@ -1,7 +1,0 @@
-0x000ca704    e220         sep #0x20
-0x000ca706    a562         lda 0x62
-0x000ca708    d007         bne 0x0ca711
-0x000ca70a    9c7610       stz 0x1076
-0x000ca70d    a98f         lda #0x8f
-0x000ca70f    8544         sta 0x44
-0x000ca711    6b           rtl

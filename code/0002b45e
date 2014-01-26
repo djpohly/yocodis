@@ -1,6 +1,0 @@
-0x0002b45e    c220         rep #0x20
-0x0002b460    ad9e10       lda 0x109e
-0x0002b463    c90300       cmp #0x0003
-0x0002b466    d003         bne 0x02b46b
-0x0002b468    20b492       jsr 0x92b4
-0x0002b46b    60           rts

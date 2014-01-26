@@ -19,3 +19,19 @@
 0x00028875    86e0         stx 0xe0
 0x00028877    22b48e00     jsr 0x008eb4
 0x0002887b    60           rts
+0x0002887c    8b           phb
+0x0002887d    c220         rep #0x20
+0x0002887f    a248ce       ldx #0xce48
+0x00028882    a00020       ldy #0x2000
+0x00028885    a9ff07       lda #0x07ff
+0x00028888    547e04       mvn 0x7e,0x04
+0x0002888b    ab           plb
+0x0002888c    60           rts
+0x0002888d    8b           phb
+0x0002888e    c220         rep #0x20
+0x00028890    a2aaf7       ldx #0xf7aa
+0x00028893    a06019       ldy #0x1960
+0x00028896    a91f00       lda #0x001f
+0x00028899    540200       mvn 0x02,0x00
+0x0002889c    ab           plb
+0x0002889d    60           rts

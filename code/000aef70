@@ -83,3 +83,63 @@
 0x000af03d    0c7203       tsb 0x0372
 0x000af040    60           rts
 0x000af041    60           rts
+0x000af042    08           php
+0x000af043    c220         rep #0x20
+0x000af045    8b           phb
+0x000af046    a2f2cc       ldx #0xccf2
+0x000af049    a00020       ldy #0x2000
+0x000af04c    a9ff07       lda #0x07ff
+0x000af04f    547e06       mvn 0x7e,0x06
+0x000af052    ab           plb
+0x000af053    28           plp
+0x000af054    60           rts
+0x000af055    08           php
+0x000af056    c220         rep #0x20
+0x000af058    a90020       lda #0x2000
+0x000af05b    a20040       ldx #0x4000
+0x000af05e    a00008       ldy #0x0800
+0x000af061    22688b00     jsr 0x008b68
+0x000af065    ad3c01       lda 0x013c
+0x000af068    f00e         beq 0x0af078
+0x000af06a    c90a00       cmp #0x000a
+0x000af06d    f040         beq 0x0af0af
+0x000af06f    accc01       ldy 0x01cc
+0x000af072    c00b00       cpy #0x000b
+0x000af075    d001         bne 0x0af078
+0x000af077    3a           dec a
+0x000af078    0a           asl a
+0x000af079    aa           tax
+0x000af07a    a90908       lda #0x0809
+0x000af07d    85de         sta 0xde
+0x000af07f    a9c3f0       lda #0xf0c3
+0x000af082    85d6         sta 0xd6
+0x000af084    a90a00       lda #0x000a
+0x000af087    85d8         sta 0xd8
+0x000af089    a97e00       lda #0x007e
+0x000af08c    85dc         sta 0xdc
+0x000af08e    8012         bra 0x0af0a2
+0x000af090    da           phx
+0x000af091    bf53f10a     lda 0x0af153,x
+0x000af095    18           clc
+0x000af096    690040       adc #0x4000
+0x000af099    85da         sta 0xda
+0x000af09b    22ae8e00     jsr 0x008eae
+0x000af09f    fa           plx
+0x000af0a0    e8           inx
+0x000af0a1    e8           inx
+0x000af0a2    e01200       cpx #0x0012
+0x000af0a5    90e9         bcc 0x0af090
+0x000af0a7    e220         sep #0x20
+0x000af0a9    a913         lda #0x13
+0x000af0ab    8567         sta 0x67
+0x000af0ad    28           plp
+0x000af0ae    60           rts
+0x000af0af    8b           phb
+0x000af0b0    a2beea       ldx #0xeabe
+0x000af0b3    a00040       ldy #0x4000
+0x000af0b6    a9ff07       lda #0x07ff
+0x000af0b9    547e06       mvn 0x7e,0x06
+0x000af0bc    ab           plb
+0x000af0bd    e220         sep #0x20
+0x000af0bf    a911         lda #0x11
+0x000af0c1    80e8         bra 0x0af0ab

@@ -133,3 +133,60 @@
 0x00029694    ee7610       inc 0x1076
 0x00029697    ee000c       inc 0x0c00
 0x0002969a    60           rts
+0x0002969b    c220         rep #0x20
+0x0002969d    c220         rep #0x20
+0x0002969f    8b           phb
+0x000296a0    a20080       ldx #0x8000
+0x000296a3    a00019       ldy #0x1900
+0x000296a6    a91f00       lda #0x001f
+0x000296a9    54020b       mvn 0x02,0x0b
+0x000296ac    ab           plb
+0x000296ad    c220         rep #0x20
+0x000296af    8b           phb
+0x000296b0    a20081       ldx #0x8100
+0x000296b3    a0001a       ldy #0x1a00
+0x000296b6    a91f00       lda #0x001f
+0x000296b9    54020b       mvn 0x02,0x0b
+0x000296bc    ab           plb
+0x000296bd    60           rts
+0x000296be    20d283       jsr 0x83d2
+0x000296c1    205184       jsr 0x8451
+0x000296c4    20ed98       jsr 0x98ed
+0x000296c7    201a99       jsr 0x991a
+0x000296ca    203386       jsr 0x8633
+0x000296cd    20ee99       jsr 0x99ee
+0x000296d0    202086       jsr 0x8620
+0x000296d3    200f9a       jsr 0x9a0f
+0x000296d6    22d78802     jsr 0x0288d7
+0x000296da    20389a       jsr 0x9a38
+0x000296dd    c220         rep #0x20
+0x000296df    9c7610       stz 0x1076
+0x000296e2    a90106       lda #0x0601
+0x000296e5    2200800d     jsr 0x0d8000
+0x000296e9    e220         sep #0x20
+0x000296eb    a900         lda #0x00
+0x000296ed    8d0121       sta 0x2101
+0x000296f0    a913         lda #0x13
+0x000296f2    8d6700       sta 0x0067
+0x000296f5    c220         rep #0x20
+0x000296f7    ad9a10       lda 0x109a
+0x000296fa    f00e         beq 0x02970a
+0x000296fc    a900c4       lda #0xc400
+0x000296ff    22388700     jsr 0x008738
+0x00029703    e220         sep #0x20
+0x00029705    a901         lda #0x01
+0x00029707    8545         sta 0x45
+0x00029709    6b           rtl
+0x0002970a    e220         sep #0x20
+0x0002970c    a985         lda #0x85
+0x0002970e    8544         sta 0x44
+0x00029710    6b           rtl
+0x00029711    e220         sep #0x20
+0x00029713    a545         lda 0x45
+0x00029715    6445         stz 0x45
+0x00029717    c220         rep #0x20
+0x00029719    29ff00       and #0x00ff
+0x0002971c    0a           asl a
+0x0002971d    aa           tax
+0x0002971e    f42397       pea 0x9723
+0x00029721    7c2597       jmp (0x9725,x)

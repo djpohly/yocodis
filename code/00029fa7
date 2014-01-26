@@ -1,8 +1,0 @@
-0x00029fa7    e220         sep #0x20
-0x00029fa9    a97e         lda #0x7e
-0x00029fab    48           pha
-0x00029fac    f40060       pea 0x6000
-0x00029faf    f40060       pea 0x6000
-0x00029fb2    f40010       pea 0x1000
-0x00029fb5    222a8902     jsr 0x02892a
-0x00029fb9    60           rts

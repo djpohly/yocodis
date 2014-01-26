@@ -1,9 +1,0 @@
-0x000ca0d8    c220         rep #0x20
-0x000ca0da    ad000c       lda 0x0c00
-0x000ca0dd    c96000       cmp #0x0060
-0x000ca0e0    d009         bne 0x0ca0eb
-0x000ca0e2    ee7610       inc 0x1076
-0x000ca0e5    a9ffff       lda #0xffff
-0x000ca0e8    8d000c       sta 0x0c00
-0x000ca0eb    ee000c       inc 0x0c00
-0x000ca0ee    6b           rtl
