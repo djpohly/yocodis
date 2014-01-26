@@ -1,0 +1,10 @@
+0x000ca0fc    e220         sep #0x20
+0x000ca0fe    a562         lda 0x62
+0x000ca100    d00a         bne 0x0ca10c
+0x000ca102    a993         lda #0x93
+0x000ca104    8544         sta 0x44
+0x000ca106    9c7610       stz 0x1076
+0x000ca109    9c000d       stz 0x0d00
+0x000ca10c    9c090d       stz 0x0d09
+0x000ca10f    c220         rep #0x20
+0x000ca111    6b           rtl
