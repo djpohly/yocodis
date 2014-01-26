@@ -1,0 +1,18 @@
+0x000294dc    8b           phb
+0x000294dd    c220         rep #0x20
+0x000294df    a2bb89       ldx #0x89bb
+0x000294e2    a00040       ldy #0x4000
+0x000294e5    a9ff07       lda #0x07ff
+0x000294e8    547e0c       mvn 0x7e,0x0c
+0x000294eb    ab           plb
+0x000294ec    e220         sep #0x20
+0x000294ee    a20080       ldx #0x8000
+0x000294f1    8ec400       stx 0x00c4
+0x000294f4    a908         lda #0x08
+0x000294f6    8dc600       sta 0x00c6
+0x000294f9    22239000     jsr 0x009023
+0x000294fd    223c9100     jsr 0x00913c
+0x00029501    ee7610       inc 0x1076
+0x00029504    9c7a10       stz 0x107a
+0x00029507    225a8500     jsr 0x00855a
+0x0002950b    60           rts

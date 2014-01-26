@@ -1,0 +1,19 @@
+0x000294ae    e220         sep #0x20
+0x000294b0    9c0042       stz 0x4200
+0x000294b3    c220         rep #0x20
+0x000294b5    ad3c01       lda 0x013c
+0x000294b8    c90b00       cmp #0x000b
+0x000294bb    901f         bcc 0x0294dc
+0x000294bd    8b           phb
+0x000294be    c220         rep #0x20
+0x000294c0    a2bb91       ldx #0x91bb
+0x000294c3    a00040       ldy #0x4000
+0x000294c6    a9ff07       lda #0x07ff
+0x000294c9    547e0c       mvn 0x7e,0x0c
+0x000294cc    ab           plb
+0x000294cd    e220         sep #0x20
+0x000294cf    a2608a       ldx #0x8a60
+0x000294d2    8ec400       stx 0x00c4
+0x000294d5    a908         lda #0x08
+0x000294d7    8dc600       sta 0x00c6
+0x000294da    801d         bra 0x0294f9
