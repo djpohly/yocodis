@@ -1,0 +1,23 @@
+0x00028751    e220         sep #0x20
+0x00028753    a902         lda #0x02
+0x00028755    8d6800       sta 0x0068
+0x00028758    8d6a00       sta 0x006a
+0x0002875b    a902         lda #0x02
+0x0002875d    8d3021       sta 0x2130
+0x00028760    a941         lda #0x41
+0x00028762    8d3121       sta 0x2131
+0x00028765    c220         rep #0x20
+0x00028767    ade610       lda 0x10e6
+0x0002876a    0a           asl a
+0x0002876b    aa           tax
+0x0002876c    bf3eb002     lda 0x02b03e,x
+0x00028770    8d0a11       sta 0x110a
+0x00028773    ade810       lda 0x10e8
+0x00028776    0a           asl a
+0x00028777    aa           tax
+0x00028778    bf44b002     lda 0x02b044,x
+0x0002877c    8d0e11       sta 0x110e
+0x0002877f    20e386       jsr 0x86e3
+0x00028782    20f486       jsr 0x86f4
+0x00028785    20dab2       jsr 0xb2da
+0x00028788    60           rts
