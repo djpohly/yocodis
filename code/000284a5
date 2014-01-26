@@ -1,0 +1,8 @@
+0x000284a5    c220         rep #0x20
+0x000284a7    9c8010       stz 0x1080
+0x000284aa    a2ff7f       ldx #0x7fff
+0x000284ad    8e8210       stx 0x1082
+0x000284b0    9c321b       stz 0x1b32
+0x000284b3    9c341b       stz 0x1b34
+0x000284b6    9c361b       stz 0x1b36
+0x000284b9    60           rts
