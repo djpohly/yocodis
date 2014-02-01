@@ -9,6 +9,12 @@ case $len in
 		data='.dw'
 		val='\4\3'
 		;;
+	3)
+		findextra='\(..\)'
+		replextra='  '
+		data='.dla'
+		val='\5\4\3'
+		;;
 	4)
 		findextra='\(..\)\(..\)'
 		replextra='\5\6'
