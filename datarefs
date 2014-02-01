@@ -1,0 +1,1002 @@
+--- 0002cb08 ---
+code/0002cafb:0x0002cb00    bf08cb02     lda 0x02cb08,x
+--- 0002cd28 ---
+code/0002cbe9:0x0002cd20    bf28cd02     lda 0x02cd28,x
+--- 0002cf60 ---
+code/0002ce67:0x0002cf58    bf60cf02     lda 0x02cf60,x
+--- 0002cf8b ---
+code/0002cf63:0x0002cf74    bf8bcf02     lda 0x02cf8b,x
+--- 0002d2b4 ---
+code/0002d143:0x0002d29c    bfb4d202     lda 0x02d2b4,x
+code/0002d2bf:0x0002d2e2    bfb4d202     lda 0x02d2b4,x
+--- 0002d360 ---
+code/0002d2bf:0x0002d349    bf60d302     lda 0x02d360,x
+--- 0002d388 ---
+code/0002d37b:0x0002d380    bf88d302     lda 0x02d388,x
+--- 0002d6a1 ---
+code/0002d4c0:0x0002d699    bfa1d602     lda 0x02d6a1,x
+--- 0002d6b2 ---
+code/0002d6a5:0x0002d6aa    bfb2d602     lda 0x02d6b2,x
+--- 0002d6c3 ---
+code/0002d6b6:0x0002d6bb    bfc3d602     lda 0x02d6c3,x
+--- 0002dadf ---
+code/0002d953:0x0002dad7    bfdfda02     lda 0x02dadf,x
+--- 0002de02 ---
+code/0002dc4c:0x0002ddbd    bf02de02     lda 0x02de02,x
+--- 0002e167 ---
+code/0002df97:0x0002e15f    bf67e102     lda 0x02e167,x
+--- 0002e176 ---
+code/0002e169:0x0002e16e    bf76e102     lda 0x02e176,x
+--- 0002e42b ---
+code/0002e261:0x0002e3e1    bf2be402     lda 0x02e42b,x
+--- 0002e474 ---
+code/0002bbbc:0x0002bc06    9f40477e     sta 0x7e4740,x
+code/0002e447:0x0002e451    bf74e402     lda 0x02e474,x
+--- 0002e4b1 ---
+code/0002e494:0x0002e4a9    bfb1e402     lda 0x02e4b1,x
+--- 0002e62e ---
+code/0002e4c1:0x0002e612    bf2ee602     lda 0x02e62e,x
+--- 0002f42b ---
+code/0002f384:0x0002f3eb    bf2bf402     lda 0x02f42b,x
+--- 0002f6c1 ---
+code/0002f453:0x0002f6b0    bfc1f602     lda 0x02f6c1,x
+--- 0002f6e9 ---
+code/0002f453:0x0002f6b6    bfe9f602     lda 0x02f6e9,x
+--- 0002f733 ---
+code/0002f711:0x0002f722    bf33f702     lda 0x02f733,x
+--- 0002f756 ---
+code/0002f711:0x0002f728    bf56f702     lda 0x02f756,x
+--- 0002fa50 ---
+code/0002fa07:0x0002fa37    bf50fa02     lda 0x02fa50,x
+code/0002fa9c:0x0002faa1    bf50fa02     lda 0x02fa50,x
+--- 0002fa6b ---
+code/0002fa07:0x0002fa29    bf6bfa02     lda 0x02fa6b,x
+code/0002fa5d:0x0002fa62    bf6bfa02     lda 0x02fa6b,x
+--- 0002fa92 ---
+code/0002fa76:0x0002fa89    bf92fa02     lda 0x02fa92,x
+--- 0002faaa ---
+code/0002f7c5:0x0002f93c    bfaafa02     lda 0x02faaa,x
+code/0002faaf:0x0002faea    7faafa02     adc 0x02faaa,x
+--- 0002fcc5 ---
+code/0002faaf:0x0002fca8    bfc5fc02     lda 0x02fcc5,x
+--- 0003fb2e ---
+code/000288af:0x00028aed    bf2efb03     lda 0x03fb2e,x
+--- 0003fb6f ---
+code/000288af:0x00028b19    bf6ffb03     lda 0x03fb6f,x
+code/000afaef:0x000afb3e    bf6ffb0a     lda 0x0afb6f,x
+--- 0003fc02 ---
+code/0002900d:0x00029172    bf02fc03     lda 0x03fc02,x
+--- 0004eb88 ---
+code/0000a291:0x0000a2f2    bf88eb04     lda 0x04eb88,x
+--- 0004eb8a ---
+code/0000a291:0x0000a2f8    bf8aeb04     lda 0x04eb8a,x
+--- 0004eb8c ---
+code/0000a291:0x0000a2fe    bf8ceb04     lda 0x04eb8c,x
+--- 0004eb8e ---
+code/0000a291:0x0000a304    bf8eeb04     lda 0x04eb8e,x
+--- 0004f14c ---
+code/0004f0d0:0x0004f118    bf4cf104     lda 0x04f14c,x
+--- 0004f153 ---
+code/0002cb0b:0x0002cb55    bf53f104     lda 0x04f153,x
+code/000aef70:0x000af091    bf53f10a     lda 0x0af153,x
+code/000af165:0x000af1c9    bf53f10a     lda 0x0af153,x
+--- 0004f1a0 ---
+code/0002cd2c:0x0002cd64    bfa0f104     lda 0x04f1a0,x
+code/0002cd2c:0x0002cdfa    bfa0f104     lda 0x04f1a0,x
+code/0004f161:0x0004f16c    bfa0f104     lda 0x04f1a0,x
+--- 0004f1a7 ---
+code/0002cd2c:0x0002cdd0    bfa7f104     lda 0x04f1a7,x
+--- 0004f1f4 ---
+code/0002f187:0x0002f1d5    d01d         bne 0x02f1f4
+code/0004f1b5:0x0004f1c0    bff4f104     lda 0x04f1f4,x
+--- 0004f1f8 ---
+code/0002cd2c:0x0002ce10    bff8f104     lda 0x04f1f8,x
+--- 0004f23f ---
+code/0004f200:0x0004f20b    bf3ff204     lda 0x04f23f,x
+--- 0004f244 ---
+code/0002cfa6:0x0002d069    bf44f204     lda 0x04f244,x
+--- 0004f293 ---
+code/0004f24e:0x0004f259    bf93f204     lda 0x04f293,x
+--- 0004f2cf ---
+code/0002cfa6:0x0002d095    bfcff204     lda 0x04f2cf,x
+--- 0004f347 ---
+code/0004f24e:0x0004f26c    bf47f304     lda 0x04f347,x
+--- 0004f3fe ---
+code/0004f3bf:0x0004f3ca    bffef304     lda 0x04f3fe,x
+--- 0004f401 ---
+code/0002d38c:0x0002d426    bf01f404     lda 0x04f401,x
+--- 0004f446 ---
+code/0004f407:0x0004f412    bf46f404     lda 0x04f446,x
+--- 0004f448 ---
+code/0002d38c:0x0002d455    bf48f404     lda 0x04f448,x
+--- 0004f4c5 ---
+code/0004f44c:0x0004f491    bfc5f404     lda 0x04f4c5,x
+--- 0004f4c9 ---
+code/0002d6c7:0x0002d7f1    bfc9f404     lda 0x04f4c9,x
+--- 0004f510 ---
+code/0004f4d1:0x0004f4dc    bf10f504     lda 0x04f510,x
+--- 0004f514 ---
+code/0002d6c7:0x0002d829    bf14f504     lda 0x04f514,x
+--- 0004f55d ---
+code/0004f51c:0x0004f527    bf5df504     lda 0x04f55d,x
+--- 0004f61a ---
+code/0004f563:0x0004f5e6    bf1af604     lda 0x04f61a,x
+--- 0004f61d ---
+code/0002dae3:0x0002db92    bf1df604     lda 0x04f61d,x
+--- 0004f662 ---
+code/0004f623:0x0004f62e    bf62f604     lda 0x04f662,x
+--- 0004f665 ---
+code/0002dae3:0x0002dbc1    bf65f604     lda 0x04f665,x
+--- 0004f6e4 ---
+code/0004f66b:0x0004f6b0    bfe4f604     lda 0x04f6e4,x
+--- 0004f6e7 ---
+code/0002de26:0x0002dec4    bfe7f604     lda 0x04f6e7,x
+--- 0004f72c ---
+code/0002f711:0x0002f726    8004         bra 0x02f72c
+code/0004f6ed:0x0004f6f8    bf2cf704     lda 0x04f72c,x
+--- 0004f72f ---
+code/0002de26:0x0002def3    bf2ff704     lda 0x04f72f,x
+--- 0004f774 ---
+code/0004f735:0x0004f740    bf74f704     lda 0x04f774,x
+--- 0004f777 ---
+code/0002de26:0x0002df1f    bf77f704     lda 0x04f777,x
+--- 0004f7bc ---
+code/0004f77d:0x0004f788    bfbcf704     lda 0x04f7bc,x
+--- 0004f7be ---
+code/0002e179:0x0002e1fd    bfbef704     lda 0x04f7be,x
+--- 0004f801 ---
+code/0004f7c2:0x0004f7cd    bf01f804     lda 0x04f801,x
+--- 0004f806 ---
+code/0002e4c1:0x0002e592    bf06f804     lda 0x04f806,x
+--- 0004f84f ---
+code/0004f810:0x0004f81b    bf4ff804     lda 0x04f84f,x
+--- 0004f852 ---
+code/0002e4c1:0x0002e5b8    bf52f804     lda 0x04f852,x
+--- 0004f8d1 ---
+code/0004f858:0x0004f89d    bfd1f804     lda 0x04f8d1,x
+code/000af70f:0x000af8b5    bfd1f80a     lda 0x0af8d1,x
+--- 0004f8d6 ---
+code/0002e6a2:0x0002e9a8    bfd6f804     lda 0x04f8d6,x
+--- 00058000 ---
+code/00008000:0x00008078    22008001     jsr 0x018000
+code/00008000:0x00008088    af008000     lda 0x008000
+code/00008eae:0x00009027    a20080       ldx #0x8000
+code/00008eae:0x00009059    9f00807e     sta 0x7e8000,x
+code/00008eae:0x00009086    9f00807e     sta 0x7e8000,x
+code/00008eae:0x000090a0    b90080       lda 0x8000,y
+code/00008eae:0x000090a3    9d0080       sta 0x8000,x
+code/00009f5b:0x00009f79    a90080       lda #0x8000
+code/00009f5b:0x00009f8a    c90080       cmp #0x8000
+code/0000a291:0x0000a38b    a90080       lda #0x8000
+code/00028000:0x000281bf    200080       jsr 0x8000
+code/00028000:0x000281d3    2200800d     jsr 0x0d8000
+code/000282fb:0x00028374    2200800d     jsr 0x0d8000
+code/000282fb:0x000284bc    a20080       ldx #0x8000
+code/000282fb:0x000284e2    a20080       ldx #0x8000
+code/000282fb:0x000284ed    a20080       ldx #0x8000
+code/000282fb:0x0002851c    f40080       pea 0x8000
+code/000282fb:0x0002852b    a20080       ldx #0x8000
+code/000282fb:0x00028543    f40080       pea 0x8000
+code/000282fb:0x0002856a    f40080       pea 0x8000
+code/000282fb:0x00028592    f40080       pea 0x8000
+code/000282fb:0x000285c5    af008004     lda 0x048000
+code/000282fb:0x00028686    a20080       ldx #0x8000
+code/000282fb:0x000286c1    a20080       ldx #0x8000
+code/000288af:0x000288c9    f40080       pea 0x8000
+code/000288af:0x00028913    a20080       ldx #0x8000
+code/000288af:0x0002899a    200080       jsr 0x8000
+code/000288af:0x00028c5c    690080       adc #0x8000
+code/00028c84:0x00028e72    f40080       pea 0x8000
+code/00028c84:0x00028ecd    2200800d     jsr 0x0d8000
+code/0002900d:0x00029180    bf00800c     lda 0x0c8000,x
+code/000291f7:0x000293f1    2200800d     jsr 0x0d8000
+code/00029422:0x000294ee    a20080       ldx #0x8000
+code/0002953e:0x00029610    a20080       ldx #0x8000
+code/0002953e:0x000296a0    a20080       ldx #0x8000
+code/0002953e:0x000296e5    2200800d     jsr 0x0d8000
+code/00029a0f:0x00029a65    a20080       ldx #0x8000
+code/00029a0f:0x00029aa2    a20080       ldx #0x8000
+code/00029a0f:0x00029ae6    a20080       ldx #0x8000
+code/00029a0f:0x00029b23    a20080       ldx #0x8000
+code/00029a0f:0x00029b5d    a20080       ldx #0x8000
+code/00029a0f:0x00029ba7    a20080       ldx #0x8000
+code/00029dc5:0x00029eeb    a20080       ldx #0x8000
+code/00029dc5:0x00029f05    a20080       ldx #0x8000
+code/00029dc5:0x00029f17    a20080       ldx #0x8000
+code/00029fcd:0x00029ff6    a20080       ldx #0x8000
+code/00029fcd:0x0002a15c    a20080       ldx #0x8000
+code/0002b061:0x0002b34f    890080       bit #0x8000
+code/0002b061:0x0002b3e3    2200800d     jsr 0x0d8000
+code/0002b061:0x0002b3ed    2200800d     jsr 0x0d8000
+code/0002b061:0x0002b3f7    2200800d     jsr 0x0d8000
+code/0002b061:0x0002b401    2200800d     jsr 0x0d8000
+code/0002b061:0x0002b41c    2200800d     jsr 0x0d8000
+code/0002b061:0x0002b426    2200800d     jsr 0x0d8000
+code/0002b061:0x0002b430    2200800d     jsr 0x0d8000
+code/0002b061:0x0002b43a    2200800d     jsr 0x0d8000
+code/0002b061:0x0002b4cf    2200800d     jsr 0x0d8000
+code/0002b8b7:0x0002b8cf    f40080       pea 0x8000
+code/0002b8b7:0x0002b8e1    f40080       pea 0x8000
+code/0002b8b7:0x0002b909    f40080       pea 0x8000
+code/0002b8b7:0x0002b931    f40080       pea 0x8000
+code/0002b8b7:0x0002b959    f40080       pea 0x8000
+code/0002bc63:0x0002bc63    a20080       ldx #0x8000
+code/0002bc63:0x0002bc9c    a90080       lda #0x8000
+code/0002bfd7:0x0002bffa    a90080       lda #0x8000
+code/0002c44e:0x0002c4a8    2200800d     jsr 0x0d8000
+code/0002c589:0x0002c6f2    f40080       pea 0x8000
+code/0002c589:0x0002c717    f40080       pea 0x8000
+code/0002e261:0x0002e410    2200800d     jsr 0x0d8000
+code/0002e6a2:0x0002e944    2200800d     jsr 0x0d8000
+code/0002ea89:0x0002eba7    f40080       pea 0x8000
+code/0002ea89:0x0002ebcc    f40080       pea 0x8000
+code/0002ea89:0x0002ebf1    f40080       pea 0x8000
+code/0002ea89:0x0002ec32    2200800d     jsr 0x0d8000
+code/0002ed22:0x0002ed39    290080       and #0x8000
+code/0002ed22:0x0002edd9    c90080       cmp #0x8000
+code/0002ed22:0x0002eead    2200800d     jsr 0x0d8000
+code/0002f7c5:0x0002f8c3    890080       bit #0x8000
+code/0002faaf:0x0002fad4    090080       ora #0x8000
+code/000a9339:0x000a94cd    a90080       lda #0x8000
+code/000a9339:0x000a94df    a90080       lda #0x8000
+code/000a9339:0x000a94f3    a20080       ldx #0x8000
+code/000a965d:0x000a96d1    200080       jsr 0x8000
+code/000a9984:0x000a998a    290080       and #0x8000
+code/000a9984:0x000a9bc5    a90080       lda #0x8000
+code/000aa237:0x000aa2aa    090080       ora #0x8000
+code/000aa237:0x000aa2c3    090080       ora #0x8000
+code/000aa237:0x000aa388    090080       ora #0x8000
+code/000aa237:0x000aa3a1    090080       ora #0x8000
+code/000aadb5:0x000aaf6f    a90080       lda #0x8000
+code/000aadb5:0x000aafc7    bf008005     lda 0x058000,x
+code/000aadb5:0x000aafe2    a90080       lda #0x8000
+code/000aadb5:0x000ab06c    a90080       lda #0x8000
+code/000ab162:0x000ab1ca    2200800d     jsr 0x0d8000
+code/000ab1ff:0x000ab32a    2200800d     jsr 0x0d8000
+code/000ab1ff:0x000ab348    2200800d     jsr 0x0d8000
+code/000ab519:0x000ab6dc    a90080       lda #0x8000
+code/000ab519:0x000ab7c9    2200800d     jsr 0x0d8000
+code/000ab904:0x000ab98c    2200800d     jsr 0x0d8000
+code/000ab904:0x000abac6    2200800d     jsr 0x0d8000
+code/000abcd6:0x000abd33    a90080       lda #0x8000
+code/000abfd4:0x000ac005    290080       and #0x8000
+code/000ac50d:0x000ac51a    a90080       lda #0x8000
+code/000ac50d:0x000ac52e    a90080       lda #0x8000
+code/000ac50d:0x000ac542    a90080       lda #0x8000
+code/000ac50d:0x000ac556    a90080       lda #0x8000
+code/000ac590:0x000ac592    a90080       lda #0x8000
+code/000acf3e:0x000acffb    2200800d     jsr 0x0d8000
+code/000ad53e:0x000ad574    090080       ora #0x8000
+code/000ad921:0x000ad944    a20080       ldx #0x8000
+code/000ad921:0x000ad96d    a20080       ldx #0x8000
+code/000ad921:0x000ada2d    a90080       lda #0x8000
+code/000ad921:0x000ada72    2200800d     jsr 0x0d8000
+code/000adb1e:0x000adb21    a90080       lda #0x8000
+code/000adbed:0x000add11    a90080       lda #0x8000
+code/000adbed:0x000add56    a90080       lda #0x8000
+code/000adbed:0x000add79    a90080       lda #0x8000
+code/000ae551:0x000ae726    2200800d     jsr 0x0d8000
+code/000ae551:0x000ae7bc    bf008005     lda 0x058000,x
+code/000ae551:0x000ae858    a90080       lda #0x8000
+code/000aeb05:0x000aeb13    2200800d     jsr 0x0d8000
+code/000aeb05:0x000aeb73    2200800d     jsr 0x0d8000
+code/000aec49:0x000aec7e    2200800d     jsr 0x0d8000
+code/000aec49:0x000aec91    2200800d     jsr 0x0d8000
+code/000af350:0x000af361    bf008009     lda 0x098000,x
+code/000af350:0x000af481    090080       ora #0x8000
+code/000af350:0x000af49a    090080       ora #0x8000
+code/000af70f:0x000af712    a90080       lda #0x8000
+code/000afaef:0x000afb22    a90080       lda #0x8000
+code/000ca00b:0x000ca058    2200800d     jsr 0x0d8000
+code/000ca0a0:0x000ca13a    a20080       ldx #0x8000
+code/000ca0a0:0x000ca177    a20080       ldx #0x8000
+code/000ca0a0:0x000ca353    2200800d     jsr 0x0d8000
+code/000ca5e6:0x000ca7aa    a20080       ldx #0x8000
+code/000ca5e6:0x000ca7db    a20080       ldx #0x8000
+code/000ca5e6:0x000ca7e4    a20080       ldx #0x8000
+code/000ca5e6:0x000ca83c    a00080       ldy #0x8000
+code/000ca5e6:0x000ca848    a20080       ldx #0x8000
+code/000ca5e6:0x000ca86f    a20080       ldx #0x8000
+code/000ca5e6:0x000ca875    a20080       ldx #0x8000
+code/000ca5e6:0x000ca8af    a20080       ldx #0x8000
+code/000ca5e6:0x000ca8e4    a20080       ldx #0x8000
+code/000ca5e6:0x000ca92f    a20080       ldx #0x8000
+code/000ca5e6:0x000ca966    a20080       ldx #0x8000
+code/000cad0a:0x000cad7f    a00080       ldy #0x8000
+code/000cad0a:0x000cad82    a20080       ldx #0x8000
+code/000cadb1:0x000cadb7    bf00807e     lda 0x7e8000,x
+code/000cadb1:0x000cadc8    bf00807e     lda 0x7e8000,x
+code/000d8000:0x000d801f    090080       ora #0x8000
+code/000d8000:0x000d8069    a20080       ldx #0x8000
+code/000d8000:0x000d8070    e90080       sbc #0x8000
+code/000d8000:0x000d8078    a20080       ldx #0x8000
+code/000d8000:0x000d807f    e90080       sbc #0x8000
+code/000fbb64:0x000fbb69    290080       and #0x8000
+code/000fbb64:0x000fbb89    2200800d     jsr 0x0d8000
+code/000fbb64:0x000fbc2c    290080       and #0x8000
+code/000fbb64:0x000fbc45    290080       and #0x8000
+--- 00069132 ---
+code/000a8f91:0x000a9124    b00c         bcs 0x0a9132
+code/000a8f91:0x000a9128    f008         beq 0x0a9132
+code/000a8f91:0x000a912c    f004         beq 0x0a9132
+code/000acb0c:0x000acb25    bf329106     lda 0x069132,x
+--- 00069192 ---
+code/0002be9b:0x0002beb5    bf929106     lda 0x069192,x
+code/0002c028:0x0002c03f    bf929106     lda 0x069192,x
+--- 00069332 ---
+code/000ac457:0x000ac4b6    bf329306     lda 0x069332,x
+--- 00069706 ---
+code/00029fcd:0x0002a149    a20697       ldx #0x9706
+code/000a9339:0x000a9496    bf069706     lda 0x069706,x
+--- 00069746 ---
+code/000a9339:0x000a94b1    bf469706     lda 0x069746,x
+--- 0006980e ---
+code/000ad921:0x000ad99d    bf0e9806     lda 0x06980e,x
+code/000ad921:0x000ad9cc    bf0e9806     lda 0x06980e,x
+--- 000699c8 ---
+code/000ad921:0x000ada07    bfc89906     lda 0x0699c8,x
+--- 0006a196 ---
+code/000abfd4:0x000ac053    bf96a106     lda 0x06a196,x
+code/000abfd4:0x000ac071    bf96a106     lda 0x06a196,x
+--- 0006a5e1 ---
+code/000afa15:0x000afa5a    bfe1a506     lda 0x06a5e1,x
+--- 0006a912 ---
+code/0002a6e2:0x0002a8f7    bf12a902     lda 0x02a912,x
+code/000ac457:0x000ac464    bf12a906     lda 0x06a912,x
+--- 0006a914 ---
+code/000ac457:0x000ac46f    bf14a906     lda 0x06a914,x
+--- 0006a916 ---
+code/0002a6e2:0x0002a904    bf16a902     lda 0x02a916,x
+code/000a8f91:0x000a917e    d0ea         bne 0x0a916a
+code/000a8f91:0x000a919e    d0c1         bne 0x0a9161
+code/000ac457:0x000ac47a    bf16a906     lda 0x06a916,x
+--- 0006a918 ---
+code/000ac457:0x000ac480    bf18a906     lda 0x06a918,x
+--- 0006ad64 ---
+code/000ac899:0x000ac8fc    bf64ad06     lda 0x06ad64,x
+--- 0006ad66 ---
+code/000ac899:0x000ac907    bf66ad06     lda 0x06ad66,x
+code/000ad642:0x000ad654    d00c         bne 0x0ad662
+code/000ad642:0x000ad668    d003         bne 0x0ad66d
+--- 0006ad68 ---
+code/000ac899:0x000ac912    bf68ad06     lda 0x06ad68,x
+code/000ad642:0x000ad688    9003         bcc 0x0ad68d
+code/000ca5e6:0x000ca78c    2268ad0c     jsr 0x0cad68
+--- 0006ad6a ---
+code/000ac899:0x000ac918    bf6aad06     lda 0x06ad6a,x
+code/000ad642:0x000ad6aa    9003         bcc 0x0ad6af
+--- 0006b29c ---
+code/000af350:0x000af512    bf9cb206     lda 0x06b29c,x
+--- 0006b29e ---
+code/000af350:0x000af51d    bf9eb206     lda 0x06b29e,x
+--- 0006b2a0 ---
+code/000af350:0x000af528    bfa0b206     lda 0x06b2a0,x
+--- 0006b2a2 ---
+code/000af350:0x000af52e    bfa2b206     lda 0x06b2a2,x
+--- 0006d4f2 ---
+code/000ae551:0x000ae70b    bff2d406     lda 0x06d4f2,x
+--- 0006fabe ---
+code/000ac457:0x000ac49b    bfbefa06     lda 0x06fabe,x
+--- 0006fcbe ---
+code/00009ba0:0x00009bda    bfbefc06     lda 0x06fcbe,x
+--- 0007e50e ---
+code/000aadb5:0x000aaf60    bf0ee507     lda 0x07e50e,x
+code/000ae551:0x000ae762    bf0ee507     lda 0x07e50e,x
+--- 0007e510 ---
+code/000aadb5:0x000aaf66    bf10e507     lda 0x07e510,x
+code/000ae551:0x000ae768    bf10e507     lda 0x07e510,x
+--- 0007e56c ---
+code/0002faaf:0x0002fc09    bf6ce507     lda 0x07e56c,x
+--- 0007e6f4 ---
+code/0002faaf:0x0002fbc6    bff4e607     lda 0x07e6f4,x
+--- 0007e6f6 ---
+code/0002faaf:0x0002fbd1    bff6e607     lda 0x07e6f6,x
+--- 0007e6f8 ---
+code/0002faaf:0x0002fbdc    bff8e607     lda 0x07e6f8,x
+--- 0007e6fa ---
+code/0002faaf:0x0002fbe2    bffae607     lda 0x07e6fa,x
+--- 00098000 ---
+code/00008000:0x00008078    22008001     jsr 0x018000
+code/00008000:0x00008088    af008000     lda 0x008000
+code/00008eae:0x00009027    a20080       ldx #0x8000
+code/00008eae:0x00009059    9f00807e     sta 0x7e8000,x
+code/00008eae:0x00009086    9f00807e     sta 0x7e8000,x
+code/00008eae:0x000090a0    b90080       lda 0x8000,y
+code/00008eae:0x000090a3    9d0080       sta 0x8000,x
+code/00009f5b:0x00009f79    a90080       lda #0x8000
+code/00009f5b:0x00009f8a    c90080       cmp #0x8000
+code/0000a291:0x0000a38b    a90080       lda #0x8000
+code/00028000:0x000281bf    200080       jsr 0x8000
+code/00028000:0x000281d3    2200800d     jsr 0x0d8000
+code/000282fb:0x00028374    2200800d     jsr 0x0d8000
+code/000282fb:0x000284bc    a20080       ldx #0x8000
+code/000282fb:0x000284e2    a20080       ldx #0x8000
+code/000282fb:0x000284ed    a20080       ldx #0x8000
+code/000282fb:0x0002851c    f40080       pea 0x8000
+code/000282fb:0x0002852b    a20080       ldx #0x8000
+code/000282fb:0x00028543    f40080       pea 0x8000
+code/000282fb:0x0002856a    f40080       pea 0x8000
+code/000282fb:0x00028592    f40080       pea 0x8000
+code/000282fb:0x000285c5    af008004     lda 0x048000
+code/000282fb:0x00028686    a20080       ldx #0x8000
+code/000282fb:0x000286c1    a20080       ldx #0x8000
+code/000288af:0x000288c9    f40080       pea 0x8000
+code/000288af:0x00028913    a20080       ldx #0x8000
+code/000288af:0x0002899a    200080       jsr 0x8000
+code/000288af:0x00028c5c    690080       adc #0x8000
+code/00028c84:0x00028e72    f40080       pea 0x8000
+code/00028c84:0x00028ecd    2200800d     jsr 0x0d8000
+code/0002900d:0x00029180    bf00800c     lda 0x0c8000,x
+code/000291f7:0x000293f1    2200800d     jsr 0x0d8000
+code/00029422:0x000294ee    a20080       ldx #0x8000
+code/0002953e:0x00029610    a20080       ldx #0x8000
+code/0002953e:0x000296a0    a20080       ldx #0x8000
+code/0002953e:0x000296e5    2200800d     jsr 0x0d8000
+code/00029a0f:0x00029a65    a20080       ldx #0x8000
+code/00029a0f:0x00029aa2    a20080       ldx #0x8000
+code/00029a0f:0x00029ae6    a20080       ldx #0x8000
+code/00029a0f:0x00029b23    a20080       ldx #0x8000
+code/00029a0f:0x00029b5d    a20080       ldx #0x8000
+code/00029a0f:0x00029ba7    a20080       ldx #0x8000
+code/00029dc5:0x00029eeb    a20080       ldx #0x8000
+code/00029dc5:0x00029f05    a20080       ldx #0x8000
+code/00029dc5:0x00029f17    a20080       ldx #0x8000
+code/00029fcd:0x00029ff6    a20080       ldx #0x8000
+code/00029fcd:0x0002a15c    a20080       ldx #0x8000
+code/0002b061:0x0002b34f    890080       bit #0x8000
+code/0002b061:0x0002b3e3    2200800d     jsr 0x0d8000
+code/0002b061:0x0002b3ed    2200800d     jsr 0x0d8000
+code/0002b061:0x0002b3f7    2200800d     jsr 0x0d8000
+code/0002b061:0x0002b401    2200800d     jsr 0x0d8000
+code/0002b061:0x0002b41c    2200800d     jsr 0x0d8000
+code/0002b061:0x0002b426    2200800d     jsr 0x0d8000
+code/0002b061:0x0002b430    2200800d     jsr 0x0d8000
+code/0002b061:0x0002b43a    2200800d     jsr 0x0d8000
+code/0002b061:0x0002b4cf    2200800d     jsr 0x0d8000
+code/0002b8b7:0x0002b8cf    f40080       pea 0x8000
+code/0002b8b7:0x0002b8e1    f40080       pea 0x8000
+code/0002b8b7:0x0002b909    f40080       pea 0x8000
+code/0002b8b7:0x0002b931    f40080       pea 0x8000
+code/0002b8b7:0x0002b959    f40080       pea 0x8000
+code/0002bc63:0x0002bc63    a20080       ldx #0x8000
+code/0002bc63:0x0002bc9c    a90080       lda #0x8000
+code/0002bfd7:0x0002bffa    a90080       lda #0x8000
+code/0002c44e:0x0002c4a8    2200800d     jsr 0x0d8000
+code/0002c589:0x0002c6f2    f40080       pea 0x8000
+code/0002c589:0x0002c717    f40080       pea 0x8000
+code/0002e261:0x0002e410    2200800d     jsr 0x0d8000
+code/0002e6a2:0x0002e944    2200800d     jsr 0x0d8000
+code/0002ea89:0x0002eba7    f40080       pea 0x8000
+code/0002ea89:0x0002ebcc    f40080       pea 0x8000
+code/0002ea89:0x0002ebf1    f40080       pea 0x8000
+code/0002ea89:0x0002ec32    2200800d     jsr 0x0d8000
+code/0002ed22:0x0002ed39    290080       and #0x8000
+code/0002ed22:0x0002edd9    c90080       cmp #0x8000
+code/0002ed22:0x0002eead    2200800d     jsr 0x0d8000
+code/0002f7c5:0x0002f8c3    890080       bit #0x8000
+code/0002faaf:0x0002fad4    090080       ora #0x8000
+code/000a9339:0x000a94cd    a90080       lda #0x8000
+code/000a9339:0x000a94df    a90080       lda #0x8000
+code/000a9339:0x000a94f3    a20080       ldx #0x8000
+code/000a965d:0x000a96d1    200080       jsr 0x8000
+code/000a9984:0x000a998a    290080       and #0x8000
+code/000a9984:0x000a9bc5    a90080       lda #0x8000
+code/000aa237:0x000aa2aa    090080       ora #0x8000
+code/000aa237:0x000aa2c3    090080       ora #0x8000
+code/000aa237:0x000aa388    090080       ora #0x8000
+code/000aa237:0x000aa3a1    090080       ora #0x8000
+code/000aadb5:0x000aaf6f    a90080       lda #0x8000
+code/000aadb5:0x000aafc7    bf008005     lda 0x058000,x
+code/000aadb5:0x000aafe2    a90080       lda #0x8000
+code/000aadb5:0x000ab06c    a90080       lda #0x8000
+code/000ab162:0x000ab1ca    2200800d     jsr 0x0d8000
+code/000ab1ff:0x000ab32a    2200800d     jsr 0x0d8000
+code/000ab1ff:0x000ab348    2200800d     jsr 0x0d8000
+code/000ab519:0x000ab6dc    a90080       lda #0x8000
+code/000ab519:0x000ab7c9    2200800d     jsr 0x0d8000
+code/000ab904:0x000ab98c    2200800d     jsr 0x0d8000
+code/000ab904:0x000abac6    2200800d     jsr 0x0d8000
+code/000abcd6:0x000abd33    a90080       lda #0x8000
+code/000abfd4:0x000ac005    290080       and #0x8000
+code/000ac50d:0x000ac51a    a90080       lda #0x8000
+code/000ac50d:0x000ac52e    a90080       lda #0x8000
+code/000ac50d:0x000ac542    a90080       lda #0x8000
+code/000ac50d:0x000ac556    a90080       lda #0x8000
+code/000ac590:0x000ac592    a90080       lda #0x8000
+code/000acf3e:0x000acffb    2200800d     jsr 0x0d8000
+code/000ad53e:0x000ad574    090080       ora #0x8000
+code/000ad921:0x000ad944    a20080       ldx #0x8000
+code/000ad921:0x000ad96d    a20080       ldx #0x8000
+code/000ad921:0x000ada2d    a90080       lda #0x8000
+code/000ad921:0x000ada72    2200800d     jsr 0x0d8000
+code/000adb1e:0x000adb21    a90080       lda #0x8000
+code/000adbed:0x000add11    a90080       lda #0x8000
+code/000adbed:0x000add56    a90080       lda #0x8000
+code/000adbed:0x000add79    a90080       lda #0x8000
+code/000ae551:0x000ae726    2200800d     jsr 0x0d8000
+code/000ae551:0x000ae7bc    bf008005     lda 0x058000,x
+code/000ae551:0x000ae858    a90080       lda #0x8000
+code/000aeb05:0x000aeb13    2200800d     jsr 0x0d8000
+code/000aeb05:0x000aeb73    2200800d     jsr 0x0d8000
+code/000aec49:0x000aec7e    2200800d     jsr 0x0d8000
+code/000aec49:0x000aec91    2200800d     jsr 0x0d8000
+code/000af350:0x000af361    bf008009     lda 0x098000,x
+code/000af350:0x000af481    090080       ora #0x8000
+code/000af350:0x000af49a    090080       ora #0x8000
+code/000af70f:0x000af712    a90080       lda #0x8000
+code/000afaef:0x000afb22    a90080       lda #0x8000
+code/000ca00b:0x000ca058    2200800d     jsr 0x0d8000
+code/000ca0a0:0x000ca13a    a20080       ldx #0x8000
+code/000ca0a0:0x000ca177    a20080       ldx #0x8000
+code/000ca0a0:0x000ca353    2200800d     jsr 0x0d8000
+code/000ca5e6:0x000ca7aa    a20080       ldx #0x8000
+code/000ca5e6:0x000ca7db    a20080       ldx #0x8000
+code/000ca5e6:0x000ca7e4    a20080       ldx #0x8000
+code/000ca5e6:0x000ca83c    a00080       ldy #0x8000
+code/000ca5e6:0x000ca848    a20080       ldx #0x8000
+code/000ca5e6:0x000ca86f    a20080       ldx #0x8000
+code/000ca5e6:0x000ca875    a20080       ldx #0x8000
+code/000ca5e6:0x000ca8af    a20080       ldx #0x8000
+code/000ca5e6:0x000ca8e4    a20080       ldx #0x8000
+code/000ca5e6:0x000ca92f    a20080       ldx #0x8000
+code/000ca5e6:0x000ca966    a20080       ldx #0x8000
+code/000cad0a:0x000cad7f    a00080       ldy #0x8000
+code/000cad0a:0x000cad82    a20080       ldx #0x8000
+code/000cadb1:0x000cadb7    bf00807e     lda 0x7e8000,x
+code/000cadb1:0x000cadc8    bf00807e     lda 0x7e8000,x
+code/000d8000:0x000d801f    090080       ora #0x8000
+code/000d8000:0x000d8069    a20080       ldx #0x8000
+code/000d8000:0x000d8070    e90080       sbc #0x8000
+code/000d8000:0x000d8078    a20080       ldx #0x8000
+code/000d8000:0x000d807f    e90080       sbc #0x8000
+code/000fbb64:0x000fbb69    290080       and #0x8000
+code/000fbb64:0x000fbb89    2200800d     jsr 0x0d8000
+code/000fbb64:0x000fbc2c    290080       and #0x8000
+code/000fbb64:0x000fbc45    290080       and #0x8000
+--- 0009ace7 ---
+code/000caa36:0x000caa4b    bfe7ac09     lda 0x09ace7,x
+code/000caa36:0x000caa83    bfe7ac09     lda 0x09ace7,x
+--- 000a8202 ---
+code/000a8000:0x000a81e1    1f02820a     ora 0x0a8202,x
+--- 000a8206 ---
+code/000a8000:0x000a81dd    3f06820a     and 0x0a8206,x
+--- 000a82ef ---
+code/000182e7:0x000182fe    d0ef         bne 0x0182ef
+code/000a820a:0x000a82c2    bfef820a     lda 0x0a82ef,x
+--- 000a82f0 ---
+code/000a820a:0x000a82cc    bff0820a     lda 0x0a82f0,x
+--- 000a8b71 ---
+code/000a8a12:0x000a8b24    bf718b0a     lda 0x0a8b71,x
+--- 000a8b91 ---
+code/000a8a12:0x000a8b65    bf918b0a     lda 0x0a8b91,x
+--- 000a9873 ---
+code/000a97a4:0x000a9852    bf73980a     lda 0x0a9873,x
+--- 000a98f4 ---
+code/000a9876:0x000a98bd    bff4980a     lda 0x0a98f4,x
+--- 000a9951 ---
+code/000a98f8:0x000a9930    bf51990a     lda 0x0a9951,x
+--- 000a9db4 ---
+code/000aa237:0x000aa26c    bfb49d0a     lda 0x0a9db4,x
+--- 000aa21f ---
+code/000aa12d:0x000aa208    bf1fa20a     lda 0x0aa21f,x
+--- 000aa221 ---
+code/000aa12d:0x000aa20f    bf21a20a     lda 0x0aa221,x
+code/000ca00b:0x000ca06a    2221a20c     jsr 0x0ca221
+--- 000aa223 ---
+code/000aa12d:0x000aa216    bf23a20a     lda 0x0aa223,x
+--- 000aa44a ---
+code/000aa237:0x000aa428    bf4aa40a     lda 0x0aa44a,x
+--- 000aacdc ---
+code/000aac82:0x000aacd1    7fdcac0a     adc 0x0aacdc,x
+--- 000ab0da ---
+code/000ab0d0:0x000ab0d5    bfdab00a     lda 0x0ab0da,x
+--- 000ab10f ---
+code/000ab0e2:0x000ab0fc    bf0fb10a     lda 0x0ab10f,x
+--- 000ab839 ---
+code/000ab82f:0x000ab834    bf39b80a     lda 0x0ab839,x
+--- 000ac0e2 ---
+code/0002c073:0x0002c0d2    a9e2c0       lda #0xc0e2
+code/000abfd4:0x000ac0d9    bfe2c00a     lda 0x0ac0e2,x
+--- 000ac130 ---
+code/000ac0f6:0x000ac102    bf30c10a     lda 0x0ac130,x
+--- 000ac137 ---
+code/000ac0f6:0x000ac11c    bf37c10a     lda 0x0ac137,x
+--- 000ac167 ---
+code/000ac13e:0x000ac150    bf67c10a     lda 0x0ac167,x
+--- 000ac204 ---
+code/000ac16e:0x000ac18a    bf04c20a     lda 0x0ac204,x
+--- 000ac206 ---
+code/000ac16e:0x000ac199    bf06c20a     lda 0x0ac206,x
+--- 000ac208 ---
+code/000ac16e:0x000ac1a6    7f08c20a     adc 0x0ac208,x
+--- 000ac20a ---
+code/000ac16e:0x000ac1b3    bf0ac20a     lda 0x0ac20a,x
+--- 000ac20c ---
+code/000ac16e:0x000ac1c8    bf0cc20a     lda 0x0ac20c,x
+--- 000ac25d ---
+code/000ac222:0x000ac240    bf5dc20a     lda 0x0ac25d,x
+--- 000ac25e ---
+code/000ac222:0x000ac245    bf5ec20a     lda 0x0ac25e,x
+--- 000ac31d ---
+code/000ac299:0x000ac2db    b040         bcs 0x0ac31d
+code/000ac299:0x000ac304    bf1dc30a     lda 0x0ac31d,x
+--- 000ac329 ---
+code/000ac299:0x000ac310    bf29c30a     lda 0x0ac329,x
+--- 000ac3f5 ---
+code/000ac37d:0x000ac3c8    bff5c30a     lda 0x0ac3f5,x
+--- 000ac3fd ---
+code/000ac37d:0x000ac3e6    bffdc30a     lda 0x0ac3fd,x
+--- 000ac445 ---
+code/000ac405:0x000ac41b    bf45c40a     lda 0x0ac445,x
+--- 000ac447 ---
+code/000ac405:0x000ac428    bf47c40a     lda 0x0ac447,x
+--- 000ac449 ---
+code/000ac405:0x000ac435    bf49c40a     lda 0x0ac449,x
+--- 000ac85f ---
+code/000ac7e0:0x000ac845    bf5fc80a     lda 0x0ac85f,x
+code/000ac7e0:0x000ac853    bf5fc80a     lda 0x0ac85f,x
+--- 000ac895 ---
+code/000ac865:0x000ac88b    bf95c80a     lda 0x0ac895,x
+--- 000ac99a ---
+code/0002953e:0x0002959a    209ac9       jsr 0xc99a
+code/0002e6a2:0x0002ea0e    209ac9       jsr 0xc99a
+code/000ac969:0x000ac98a    bf9ac90a     lda 0x0ac99a,x
+code/000adf0a:0x000ae0e8    bf9ac90a     lda 0x0ac99a,x
+code/000ae551:0x000ae660    bf9ac90a     lda 0x0ac99a,x
+--- 000acad2 ---
+code/000aca0b:0x000acac8    bfd2ca0a     lda 0x0acad2,x
+--- 000acb04 ---
+code/000acada:0x000acaef    bf04cb0a     lda 0x0acb04,x
+code/000acada:0x000acafa    bf04cb0a     lda 0x0acb04,x
+--- 000acbb4 ---
+code/000acb0c:0x000acb6f    bfb4cb0a     lda 0x0acbb4,x
+--- 000acbb6 ---
+code/000acb0c:0x000acb7a    bfb6cb0a     lda 0x0acbb6,x
+--- 000acd3d ---
+code/000acc96:0x000accda    bf3dcd0a     lda 0x0acd3d,x
+code/000acc96:0x000acd07    bf3dcd0a     lda 0x0acd3d,x
+--- 000acd3e ---
+code/000acc96:0x000acd0d    bf3ecd0a     lda 0x0acd3e,x
+--- 000ace0d ---
+code/000acdce:0x000acdf7    bf0dce0a     lda 0x0ace0d,x
+--- 000ace0f ---
+code/000acdce:0x000acdfe    bf0fce0a     lda 0x0ace0f,x
+--- 000ace11 ---
+code/000acdce:0x000ace05    bf11ce0a     lda 0x0ace11,x
+--- 000acebf ---
+code/000ace1f:0x000ace74    bfbfce0a     lda 0x0acebf,x
+--- 000acec1 ---
+code/000ace1f:0x000ace7b    bfc1ce0a     lda 0x0acec1,x
+--- 000acec3 ---
+code/000ace1f:0x000ace82    bfc3ce0a     lda 0x0acec3,x
+--- 000acf37 ---
+code/000acee9:0x000acf1b    ff37cf0a     sbc 0x0acf37,x
+--- 000ad000 ---
+code/000acf3e:0x000acfee    bf00d00a     lda 0x0ad000,x
+--- 000ad1fa ---
+code/000ad03a:0x000ad1b0    bffad10a     lda 0x0ad1fa,x
+code/000ad03a:0x000ad1db    bffad10a     lda 0x0ad1fa,x
+--- 000ad25d ---
+code/000ad222:0x000ad236    bf5dd20a     lda 0x0ad25d,x
+code/000ad222:0x000ad24c    bf5dd20a     lda 0x0ad25d,x
+--- 000ad2e6 ---
+code/000ad275:0x000ad2ab    bfe6d20a     lda 0x0ad2e6,x
+--- 000ad40d ---
+code/000ad378:0x000ad3eb    bf0dd40a     lda 0x0ad40d,x
+--- 000ad40e ---
+code/000ad378:0x000ad3f5    bf0ed40a     lda 0x0ad40e,x
+--- 000ad4a3 ---
+code/000ad44d:0x000ad45f    bfa3d40a     lda 0x0ad4a3,x
+--- 000ad4a5 ---
+code/000ad44d:0x000ad473    bfa5d40a     lda 0x0ad4a5,x
+--- 000ad4a7 ---
+code/000ad44d:0x000ad49a    bfa7d40a     lda 0x0ad4a7,x
+--- 000ad911 ---
+code/000ad8ae:0x000ad8e1    bf11d90a     lda 0x0ad911,x
+--- 000adbcd ---
+code/000adb1e:0x000adbb0    bfcddb0a     lda 0x0adbcd,x
+--- 000ae15c ---
+code/000adf0a:0x000ae08d    df5ce10a     cmp 0x0ae15c,x
+--- 000ae2b9 ---
+code/000ae16c:0x000ae1ac    bfb9e20a     lda 0x0ae2b9,x
+code/000ae16c:0x000ae203    bfb9e20a     lda 0x0ae2b9,x
+code/000ae16c:0x000ae23f    bfb9e20a     lda 0x0ae2b9,x
+code/000ae16c:0x000ae276    bfb9e20a     lda 0x0ae2b9,x
+--- 000ae531 ---
+code/000ae3b0:0x000ae521    bf31e50a     lda 0x0ae531,x
+--- 000ae533 ---
+code/000ae3b0:0x000ae528    bf33e50a     lda 0x0ae533,x
+--- 000ae8df ---
+code/000ae8b0:0x000ae8da    bfdfe80a     lda 0x0ae8df,x
+--- 000af153 ---
+code/0002cb0b:0x0002cb55    bf53f104     lda 0x04f153,x
+code/000aef70:0x000af091    bf53f10a     lda 0x0af153,x
+code/000af165:0x000af1c9    bf53f10a     lda 0x0af153,x
+--- 000af1f0 ---
+code/0002f187:0x0002f1e0    100e         bpl 0x02f1f0
+code/0002f187:0x0002f1eb    9003         bcc 0x02f1f0
+code/000af165:0x000af1a7    bff0f10a     lda 0x0af1f0,x
+code/000af165:0x000af1b2    bff0f10a     lda 0x0af1f0,x
+--- 000af310 ---
+code/000af280:0x000af2c9    bf10f30a     lda 0x0af310,x
+--- 000af324 ---
+code/000af280:0x000af289    bf24f30a     lda 0x0af324,x
+--- 000af326 ---
+code/000af280:0x000af28f    bf26f30a     lda 0x0af326,x
+--- 000af8cf ---
+code/0004f858:0x0004f898    f035         beq 0x04f8cf
+code/000af70f:0x000af8a7    bfcff80a     lda 0x0af8cf,x
+--- 000af8d1 ---
+code/0004f858:0x0004f89d    bfd1f804     lda 0x04f8d1,x
+code/000af70f:0x000af8b5    bfd1f80a     lda 0x0af8d1,x
+--- 000af8d3 ---
+code/000af70f:0x000af8c3    bfd3f80a     lda 0x0af8d3,x
+--- 000afa89 ---
+code/000afa15:0x000afa33    bf89fa0a     lda 0x0afa89,x
+--- 000afadf ---
+code/000afab5:0x000afad4    bfdffa0a     lda 0x0afadf,x
+--- 000afb5f ---
+code/000afaef:0x000afb28    bf5ffb0a     lda 0x0afb5f,x
+--- 000afb6f ---
+code/000288af:0x00028b19    bf6ffb03     lda 0x03fb6f,x
+code/000afaef:0x000afb3e    bf6ffb0a     lda 0x0afb6f,x
+--- 000afb9f ---
+code/000afaef:0x000afb50    bf9ffb0a     lda 0x0afb9f,x
+--- 000afbf5 ---
+code/000afbcf:0x000afbe8    bff5fb0a     lda 0x0afbf5,x
+--- 000b8f07 ---
+code/0004f0d0:0x0004f120    bf078f0b     lda 0x0b8f07,x
+--- 000b9e36 ---
+code/0004f161:0x0004f174    bf369e0b     lda 0x0b9e36,x
+code/0004f1b5:0x0004f1c8    bf369e0b     lda 0x0b9e36,x
+--- 000bae55 ---
+code/0002add1:0x0002ae26    d02d         bne 0x02ae55
+code/0004f200:0x0004f213    bf55ae0b     lda 0x0bae55,x
+code/0004f24e:0x0004f261    bf55ae0b     lda 0x0bae55,x
+code/000ae551:0x000ae55a    f001         beq 0x0ae55d
+--- 000bbc12 ---
+code/0004f3bf:0x0004f3d2    bf12bc0b     lda 0x0bbc12,x
+code/0004f407:0x0004f41a    bf12bc0b     lda 0x0bbc12,x
+code/0004f44c:0x0004f45a    bf12bc0b     lda 0x0bbc12,x
+code/000fbb64:0x000fbbe5    d02b         bne 0x0fbc12
+--- 000bd00d ---
+code/0002b6f1:0x0002b730    bf0dd00b     lda 0x0bd00d,x
+--- 000c8000 ---
+code/00008000:0x00008078    22008001     jsr 0x018000
+code/00008000:0x00008088    af008000     lda 0x008000
+code/00008eae:0x00009027    a20080       ldx #0x8000
+code/00008eae:0x00009059    9f00807e     sta 0x7e8000,x
+code/00008eae:0x00009086    9f00807e     sta 0x7e8000,x
+code/00008eae:0x000090a0    b90080       lda 0x8000,y
+code/00008eae:0x000090a3    9d0080       sta 0x8000,x
+code/00009f5b:0x00009f79    a90080       lda #0x8000
+code/00009f5b:0x00009f8a    c90080       cmp #0x8000
+code/0000a291:0x0000a38b    a90080       lda #0x8000
+code/00028000:0x000281bf    200080       jsr 0x8000
+code/00028000:0x000281d3    2200800d     jsr 0x0d8000
+code/000282fb:0x00028374    2200800d     jsr 0x0d8000
+code/000282fb:0x000284bc    a20080       ldx #0x8000
+code/000282fb:0x000284e2    a20080       ldx #0x8000
+code/000282fb:0x000284ed    a20080       ldx #0x8000
+code/000282fb:0x0002851c    f40080       pea 0x8000
+code/000282fb:0x0002852b    a20080       ldx #0x8000
+code/000282fb:0x00028543    f40080       pea 0x8000
+code/000282fb:0x0002856a    f40080       pea 0x8000
+code/000282fb:0x00028592    f40080       pea 0x8000
+code/000282fb:0x000285c5    af008004     lda 0x048000
+code/000282fb:0x00028686    a20080       ldx #0x8000
+code/000282fb:0x000286c1    a20080       ldx #0x8000
+code/000288af:0x000288c9    f40080       pea 0x8000
+code/000288af:0x00028913    a20080       ldx #0x8000
+code/000288af:0x0002899a    200080       jsr 0x8000
+code/000288af:0x00028c5c    690080       adc #0x8000
+code/00028c84:0x00028e72    f40080       pea 0x8000
+code/00028c84:0x00028ecd    2200800d     jsr 0x0d8000
+code/0002900d:0x00029180    bf00800c     lda 0x0c8000,x
+code/000291f7:0x000293f1    2200800d     jsr 0x0d8000
+code/00029422:0x000294ee    a20080       ldx #0x8000
+code/0002953e:0x00029610    a20080       ldx #0x8000
+code/0002953e:0x000296a0    a20080       ldx #0x8000
+code/0002953e:0x000296e5    2200800d     jsr 0x0d8000
+code/00029a0f:0x00029a65    a20080       ldx #0x8000
+code/00029a0f:0x00029aa2    a20080       ldx #0x8000
+code/00029a0f:0x00029ae6    a20080       ldx #0x8000
+code/00029a0f:0x00029b23    a20080       ldx #0x8000
+code/00029a0f:0x00029b5d    a20080       ldx #0x8000
+code/00029a0f:0x00029ba7    a20080       ldx #0x8000
+code/00029dc5:0x00029eeb    a20080       ldx #0x8000
+code/00029dc5:0x00029f05    a20080       ldx #0x8000
+code/00029dc5:0x00029f17    a20080       ldx #0x8000
+code/00029fcd:0x00029ff6    a20080       ldx #0x8000
+code/00029fcd:0x0002a15c    a20080       ldx #0x8000
+code/0002b061:0x0002b34f    890080       bit #0x8000
+code/0002b061:0x0002b3e3    2200800d     jsr 0x0d8000
+code/0002b061:0x0002b3ed    2200800d     jsr 0x0d8000
+code/0002b061:0x0002b3f7    2200800d     jsr 0x0d8000
+code/0002b061:0x0002b401    2200800d     jsr 0x0d8000
+code/0002b061:0x0002b41c    2200800d     jsr 0x0d8000
+code/0002b061:0x0002b426    2200800d     jsr 0x0d8000
+code/0002b061:0x0002b430    2200800d     jsr 0x0d8000
+code/0002b061:0x0002b43a    2200800d     jsr 0x0d8000
+code/0002b061:0x0002b4cf    2200800d     jsr 0x0d8000
+code/0002b8b7:0x0002b8cf    f40080       pea 0x8000
+code/0002b8b7:0x0002b8e1    f40080       pea 0x8000
+code/0002b8b7:0x0002b909    f40080       pea 0x8000
+code/0002b8b7:0x0002b931    f40080       pea 0x8000
+code/0002b8b7:0x0002b959    f40080       pea 0x8000
+code/0002bc63:0x0002bc63    a20080       ldx #0x8000
+code/0002bc63:0x0002bc9c    a90080       lda #0x8000
+code/0002bfd7:0x0002bffa    a90080       lda #0x8000
+code/0002c44e:0x0002c4a8    2200800d     jsr 0x0d8000
+code/0002c589:0x0002c6f2    f40080       pea 0x8000
+code/0002c589:0x0002c717    f40080       pea 0x8000
+code/0002e261:0x0002e410    2200800d     jsr 0x0d8000
+code/0002e6a2:0x0002e944    2200800d     jsr 0x0d8000
+code/0002ea89:0x0002eba7    f40080       pea 0x8000
+code/0002ea89:0x0002ebcc    f40080       pea 0x8000
+code/0002ea89:0x0002ebf1    f40080       pea 0x8000
+code/0002ea89:0x0002ec32    2200800d     jsr 0x0d8000
+code/0002ed22:0x0002ed39    290080       and #0x8000
+code/0002ed22:0x0002edd9    c90080       cmp #0x8000
+code/0002ed22:0x0002eead    2200800d     jsr 0x0d8000
+code/0002f7c5:0x0002f8c3    890080       bit #0x8000
+code/0002faaf:0x0002fad4    090080       ora #0x8000
+code/000a9339:0x000a94cd    a90080       lda #0x8000
+code/000a9339:0x000a94df    a90080       lda #0x8000
+code/000a9339:0x000a94f3    a20080       ldx #0x8000
+code/000a965d:0x000a96d1    200080       jsr 0x8000
+code/000a9984:0x000a998a    290080       and #0x8000
+code/000a9984:0x000a9bc5    a90080       lda #0x8000
+code/000aa237:0x000aa2aa    090080       ora #0x8000
+code/000aa237:0x000aa2c3    090080       ora #0x8000
+code/000aa237:0x000aa388    090080       ora #0x8000
+code/000aa237:0x000aa3a1    090080       ora #0x8000
+code/000aadb5:0x000aaf6f    a90080       lda #0x8000
+code/000aadb5:0x000aafc7    bf008005     lda 0x058000,x
+code/000aadb5:0x000aafe2    a90080       lda #0x8000
+code/000aadb5:0x000ab06c    a90080       lda #0x8000
+code/000ab162:0x000ab1ca    2200800d     jsr 0x0d8000
+code/000ab1ff:0x000ab32a    2200800d     jsr 0x0d8000
+code/000ab1ff:0x000ab348    2200800d     jsr 0x0d8000
+code/000ab519:0x000ab6dc    a90080       lda #0x8000
+code/000ab519:0x000ab7c9    2200800d     jsr 0x0d8000
+code/000ab904:0x000ab98c    2200800d     jsr 0x0d8000
+code/000ab904:0x000abac6    2200800d     jsr 0x0d8000
+code/000abcd6:0x000abd33    a90080       lda #0x8000
+code/000abfd4:0x000ac005    290080       and #0x8000
+code/000ac50d:0x000ac51a    a90080       lda #0x8000
+code/000ac50d:0x000ac52e    a90080       lda #0x8000
+code/000ac50d:0x000ac542    a90080       lda #0x8000
+code/000ac50d:0x000ac556    a90080       lda #0x8000
+code/000ac590:0x000ac592    a90080       lda #0x8000
+code/000acf3e:0x000acffb    2200800d     jsr 0x0d8000
+code/000ad53e:0x000ad574    090080       ora #0x8000
+code/000ad921:0x000ad944    a20080       ldx #0x8000
+code/000ad921:0x000ad96d    a20080       ldx #0x8000
+code/000ad921:0x000ada2d    a90080       lda #0x8000
+code/000ad921:0x000ada72    2200800d     jsr 0x0d8000
+code/000adb1e:0x000adb21    a90080       lda #0x8000
+code/000adbed:0x000add11    a90080       lda #0x8000
+code/000adbed:0x000add56    a90080       lda #0x8000
+code/000adbed:0x000add79    a90080       lda #0x8000
+code/000ae551:0x000ae726    2200800d     jsr 0x0d8000
+code/000ae551:0x000ae7bc    bf008005     lda 0x058000,x
+code/000ae551:0x000ae858    a90080       lda #0x8000
+code/000aeb05:0x000aeb13    2200800d     jsr 0x0d8000
+code/000aeb05:0x000aeb73    2200800d     jsr 0x0d8000
+code/000aec49:0x000aec7e    2200800d     jsr 0x0d8000
+code/000aec49:0x000aec91    2200800d     jsr 0x0d8000
+code/000af350:0x000af361    bf008009     lda 0x098000,x
+code/000af350:0x000af481    090080       ora #0x8000
+code/000af350:0x000af49a    090080       ora #0x8000
+code/000af70f:0x000af712    a90080       lda #0x8000
+code/000afaef:0x000afb22    a90080       lda #0x8000
+code/000ca00b:0x000ca058    2200800d     jsr 0x0d8000
+code/000ca0a0:0x000ca13a    a20080       ldx #0x8000
+code/000ca0a0:0x000ca177    a20080       ldx #0x8000
+code/000ca0a0:0x000ca353    2200800d     jsr 0x0d8000
+code/000ca5e6:0x000ca7aa    a20080       ldx #0x8000
+code/000ca5e6:0x000ca7db    a20080       ldx #0x8000
+code/000ca5e6:0x000ca7e4    a20080       ldx #0x8000
+code/000ca5e6:0x000ca83c    a00080       ldy #0x8000
+code/000ca5e6:0x000ca848    a20080       ldx #0x8000
+code/000ca5e6:0x000ca86f    a20080       ldx #0x8000
+code/000ca5e6:0x000ca875    a20080       ldx #0x8000
+code/000ca5e6:0x000ca8af    a20080       ldx #0x8000
+code/000ca5e6:0x000ca8e4    a20080       ldx #0x8000
+code/000ca5e6:0x000ca92f    a20080       ldx #0x8000
+code/000ca5e6:0x000ca966    a20080       ldx #0x8000
+code/000cad0a:0x000cad7f    a00080       ldy #0x8000
+code/000cad0a:0x000cad82    a20080       ldx #0x8000
+code/000cadb1:0x000cadb7    bf00807e     lda 0x7e8000,x
+code/000cadb1:0x000cadc8    bf00807e     lda 0x7e8000,x
+code/000d8000:0x000d801f    090080       ora #0x8000
+code/000d8000:0x000d8069    a20080       ldx #0x8000
+code/000d8000:0x000d8070    e90080       sbc #0x8000
+code/000d8000:0x000d8078    a20080       ldx #0x8000
+code/000d8000:0x000d807f    e90080       sbc #0x8000
+code/000fbb64:0x000fbb69    290080       and #0x8000
+code/000fbb64:0x000fbb89    2200800d     jsr 0x0d8000
+code/000fbb64:0x000fbc2c    290080       and #0x8000
+code/000fbb64:0x000fbc45    290080       and #0x8000
+--- 000c834a ---
+code/0002add1:0x0002ae66    bf4a830c     lda 0x0c834a,x
+code/0002add1:0x0002ae97    bf4a830c     lda 0x0c834a,x
+code/0002add1:0x0002aebb    bf4a830c     lda 0x0c834a,x
+code/0002add1:0x0002aedd    bf4a830c     lda 0x0c834a,x
+code/0002add1:0x0002aef9    bf4a830c     lda 0x0c834a,x
+code/0002add1:0x0002af24    bf4a830c     lda 0x0c834a,x
+code/0002add1:0x0002af4e    bf4a830c     lda 0x0c834a,x
+code/0002add1:0x0002af72    bf4a830c     lda 0x0c834a,x
+code/0002add1:0x0002af9a    bf4a830c     lda 0x0c834a,x
+code/0002add1:0x0002afc2    bf4a830c     lda 0x0c834a,x
+code/0002add1:0x0002afec    bf4a830c     lda 0x0c834a,x
+code/0002add1:0x0002b016    bf4a830c     lda 0x0c834a,x
+code/0002b061:0x0002b444    bf4a830c     lda 0x0c834a,x
+code/0002c589:0x0002c77d    bf4a830c     lda 0x0c834a,x
+code/0002c589:0x0002c79f    bf4a830c     lda 0x0c834a,x
+code/0002c589:0x0002c7d2    bf4a830c     lda 0x0c834a,x
+code/0002c589:0x0002c7f3    bf4a830c     lda 0x0c834a,x
+--- 000ca50e ---
+code/000ca3ec:0x000ca405    bf0ea50c     lda 0x0ca50e,x
+code/000ca493:0x000ca4db    bf0ea50c     lda 0x0ca50e,x
+--- 000ca56a ---
+code/000ca3ec:0x000ca414    bf6aa50c     lda 0x0ca56a,x
+code/000ca3ec:0x000ca448    bf6aa50c     lda 0x0ca56a,x
+code/000ca3ec:0x000ca463    bf6aa50c     lda 0x0ca56a,x
+code/000ca493:0x000ca4ea    bf6aa50c     lda 0x0ca56a,x
+code/000caa36:0x000caa43    bf6aa50c     lda 0x0ca56a,x
+--- 000cac5c ---
+code/000caa36:0x000cac4c    bf5cac0c     lda 0x0cac5c,x
+--- 000cae27 ---
+code/0004f44c:0x0004f499    bf27ae0c     lda 0x0cae27,x
+code/0004f4d1:0x0004f4e4    bf27ae0c     lda 0x0cae27,x
+code/0004f51c:0x0004f52f    bf27ae0c     lda 0x0cae27,x
+code/0004f563:0x0004f571    bf27ae0c     lda 0x0cae27,x
+code/0004f563:0x0004f5ad    bf27ae0c     lda 0x0cae27,x
+code/000ae16c:0x000ae283    d0f1         bne 0x0ae276
+--- 000cbd21 ---
+code/0002bc63:0x0002bd12    bf21bd02     lda 0x02bd21,x
+code/0004f563:0x0004f5ee    bf21bd0c     lda 0x0cbd21,x
+code/0004f623:0x0004f636    bf21bd0c     lda 0x0cbd21,x
+code/0004f66b:0x0004f679    bf21bd0c     lda 0x0cbd21,x
+--- 000cc838 ---
+code/0004f66b:0x0004f6b8    bf38c80c     lda 0x0cc838,x
+code/0004f6ed:0x0004f700    bf38c80c     lda 0x0cc838,x
+code/0004f735:0x0004f748    bf38c80c     lda 0x0cc838,x
+--- 000cd5d7 ---
+code/0004f77d:0x0004f790    bfd7d50c     lda 0x0cd5d7,x
+--- 000ce1b3 ---
+code/0004f7c2:0x0004f7d5    bfb3e10c     lda 0x0ce1b3,x
+code/0004f810:0x0004f823    bfb3e10c     lda 0x0ce1b3,x
+code/0004f858:0x0004f866    bfb3e10c     lda 0x0ce1b3,x
+--- 000ce53e ---
+code/0002e4c1:0x0002e52e    800e         bra 0x02e53e
+code/0004f858:0x0004f8a5    bf3ee50c     lda 0x0ce53e,x
+--- 000d83de ---
+code/000d8376:0x000d839e    bfde830d     lda 0x0d83de,x
+--- 000de663 ---
+code/000d80d6:0x000d80ee    bf63e60d     lda 0x0de663,x
+code/000d845f:0x000d8480    bf63e60d     lda 0x0de663,x
+--- 000de665 ---
+code/000d80d6:0x000d80f4    bf65e60d     lda 0x0de665,x
+code/000d845f:0x000d8486    bf65e60d     lda 0x0de665,x
+--- 000fbd45 ---
+code/000fbcae:0x000fbd39    bf45bd0f     lda 0x0fbd45,x
+--- 000fc979 ---
+code/0002900d:0x0002913d    bf79c90f     lda 0x0fc979,x
+code/00029bd9:0x00029be0    bf79c90f     lda 0x0fc979,x
+code/00029bd9:0x00029c12    bf79c90f     lda 0x0fc979,x
+code/00029bd9:0x00029c44    bf79c90f     lda 0x0fc979,x
+code/00029fcd:0x0002a027    bf79c90f     lda 0x0fc979,x
+code/00029fcd:0x0002a06e    bf79c90f     lda 0x0fc979,x
+code/00029fcd:0x0002a0aa    bf79c90f     lda 0x0fc979,x
+code/00029fcd:0x0002a0ee    bf79c90f     lda 0x0fc979,x
+--- 000fca1b ---
+code/0002900d:0x000290d2    bf1bca0f     lda 0x0fca1b,x
+code/0002900d:0x00029107    bf1bca0f     lda 0x0fca1b,x
+--- 000fcf62 ---
+code/0002900d:0x000290a0    bf62cf0f     lda 0x0fcf62,x
+--- 000fd5dd ---
+code/0002ea89:0x0002eb20    bfddd50f     lda 0x0fd5dd,x
+code/0002ea89:0x0002eb47    bfddd50f     lda 0x0fd5dd,x
