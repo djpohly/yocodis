@@ -1,0 +1,23 @@
+#!/bin/bash
+
+len=$1
+
+case $len in
+	2)
+		findextra=
+		replextra='    '
+		data='.dw'
+		val='\4\3'
+		;;
+	4)
+		findextra='\(..\)\(..\)'
+		replextra='\5\6'
+		data='.dd'
+		val='\6\5\4\3'
+		;;
+	*)
+		echo length $len not supported 1>&2
+		exit 1
+esac
+
+sed 's,^  \(..\)/\(....\)    \(..\)\(..\)'"$findextra"'.*,0x00\1\2    \3\4'"$replextra"'     '"$data $val,"
