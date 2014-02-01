@@ -1,0 +1,16 @@
+#!/bin/bash
+
+addr=$1
+
+last=$(get-addr-file "$addr" || echo 00008000)
+while next=$(get-next-file "$addr"); do
+	line=($(tail -1 $last))
+	a=${line[0]}
+	b=${line[1]}
+	addr=$(rax2 $a+$((${#b}/2)) | xargs printf '%08x\n')
+	if [ $addr != ${next#*/} ]; then
+		echo $addr
+		break
+	fi
+	last=$next
+done

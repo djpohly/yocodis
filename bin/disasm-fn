@@ -1,0 +1,8 @@
+#!/bin/bash
+
+addr=$1
+bits=$2
+until r2 -qi ../disinit.r2 -a snes -b "$bits" -c "pd 200 @0x$addr" ../mapped.bin 2>/dev/null |
+	sed '/rt[lsi]\|jmp\|bra/q;$q1'; do
+	true
+done | sed 's/ *;.*$//'
