@@ -1,16 +1,3 @@
---- 02cb08 ---
-code/02cafb:0x02cb00    bf08cb02     lda 0x02cb08,x
---- 02cd28 ---
-code/02cbe9:0x02cd20    bf28cd02     lda 0x02cd28,x
---- 02cf60 ---
-code/02ce67:0x02cf58    bf60cf02     lda 0x02cf60,x
---- 02cf8b ---
-code/02cf63:0x02cf74    bf8bcf02     lda 0x02cf8b,x
---- 02d2b4 ---
-code/02d143:0x02d29c    bfb4d202     lda 0x02d2b4,x
-code/02d2bf:0x02d2e2    bfb4d202     lda 0x02d2b4,x
---- 02d360 ---
-code/02d2bf:0x02d349    bf60d302     lda 0x02d360,x
 --- 02d388 ---
 code/02d37b:02d380    bf88d302     lda $02d388,x
 --- 02d6a1 ---
