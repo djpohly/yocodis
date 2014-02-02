@@ -3,7 +3,7 @@
 addr=$1
 
 shopt -s nullglob
-{ echo "zzzsearch/00$addr"; ls code/* jump/* longjump/* unref/* unref-jump/*; } |
+{ echo "zzzsearch/$addr"; ls code/* jump/* longjump/* unref/* unref-jump/*; } |
 	sort -t/ -k2 |
 	grep -A1 "^zzzsearch/" |
 	grep -v "^zzzsearch/"
