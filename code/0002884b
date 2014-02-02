@@ -1,37 +1,37 @@
-0x0002884b    c220         rep #0x20
-0x0002884d    8b           phb
-0x0002884e    4b           phk
-0x0002884f    ab           plb
-0x00028850    aa           tax
-0x00028851    bd0000       lda 0x0000,x
-0x00028854    8dde00       sta 0x00de
-0x00028857    bd0200       lda 0x0002,x
-0x0002885a    8dda00       sta 0x00da
-0x0002885d    bd0400       lda 0x0004,x
-0x00028860    8dd600       sta 0x00d6
-0x00028863    e220         sep #0x20
-0x00028865    bd0600       lda 0x0006,x
-0x00028868    8ddc00       sta 0x00dc
-0x0002886b    bd0700       lda 0x0007,x
-0x0002886e    8dd800       sta 0x00d8
-0x00028871    ab           plb
-0x00028872    a2002c       ldx #0x2c00
-0x00028875    86e0         stx 0xe0
-0x00028877    22b48e00     jsr 0x008eb4
-0x0002887b    60           rts
-0x0002887c    8b           phb
-0x0002887d    c220         rep #0x20
-0x0002887f    a248ce       ldx #0xce48
-0x00028882    a00020       ldy #0x2000
-0x00028885    a9ff07       lda #0x07ff
-0x00028888    547e04       mvn 0x7e,0x04
-0x0002888b    ab           plb
-0x0002888c    60           rts
-0x0002888d    8b           phb
-0x0002888e    c220         rep #0x20
-0x00028890    a2aaf7       ldx #0xf7aa
-0x00028893    a06019       ldy #0x1960
-0x00028896    a91f00       lda #0x001f
-0x00028899    540200       mvn 0x02,0x00
-0x0002889c    ab           plb
-0x0002889d    60           rts
+02884b    c220         rep #$20
+02884d    8b           phb
+02884e    4b           phk
+02884f    ab           plb
+028850    aa           tax
+028851    bd0000       lda $0000,x
+028854    8dde00       sta $00de
+028857    bd0200       lda $0002,x
+02885a    8dda00       sta $00da
+02885d    bd0400       lda $0004,x
+028860    8dd600       sta $00d6
+028863    e220         sep #$20
+028865    bd0600       lda $0006,x
+028868    8ddc00       sta $00dc
+02886b    bd0700       lda $0007,x
+02886e    8dd800       sta $00d8
+028871    ab           plb
+028872    a2002c       ldx #$2c00
+028875    86e0         stx $e0
+028877    22b48e00     jsr $008eb4
+02887b    60           rts
+02887c    8b           phb
+02887d    c220         rep #$20
+02887f    a248ce       ldx #$ce48
+028882    a00020       ldy #$2000
+028885    a9ff07       lda #$07ff
+028888    547e04       mvn $7e,$04
+02888b    ab           plb
+02888c    60           rts
+02888d    8b           phb
+02888e    c220         rep #$20
+028890    a2aaf7       ldx #$f7aa
+028893    a06019       ldy #$1960
+028896    a91f00       lda #$001f
+028899    540200       mvn $02,$00
+02889c    ab           plb
+02889d    60           rts

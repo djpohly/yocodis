@@ -1,11 +1,11 @@
-0x0000a25c    08           php
-0x0000a25d    c220         rep #0x20
-0x0000a25f    ad4608       lda 0x0846
-0x0000a262    300b         bmi 0x00a26f
-0x0000a264    29ff00       and #0x00ff
-0x0000a267    0a           asl a
-0x0000a268    aa           tax
-0x0000a269    f46ea2       pea 0xa26e
-0x0000a26c    7c71a2       jmp (0xa271,x)
-0x0000a26f    28           plp
-0x0000a270    6b           rtl
+00a25c    08           php
+00a25d    c220         rep #$20
+00a25f    ad4608       lda $0846
+00a262    300b         bmi $00a26f
+00a264    29ff00       and #$00ff
+00a267    0a           asl a
+00a268    aa           tax
+00a269    f46ea2       pea $a26e
+00a26c    7c71a2       jmp ($a271,x)
+00a26f    28           plp
+00a270    6b           rtl

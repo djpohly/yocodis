@@ -1,7 +1,9 @@
 #!/bin/bash
 
 addr=$1
-{ echo "zzzsearch/$addr"; ls code/* jump/* longjump/*; } |
+
+shopt -s nullglob
+{ echo "zzzsearch/00$addr"; ls code/* jump/* longjump/*; } |
 	sort -t/ -k2 |
 	grep -B1 "^zzzsearch/" |
 	grep -v "^zzzsearch/"

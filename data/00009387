@@ -1,33 +1,33 @@
 ; sine table
-0x00009387    00060d13
-0x0000938b    191f252c
-0x0000938f    32383e44
-0x00009393    4a50565c
-0x00009397    62676d73
-0x0000939b    787e8388
-0x0000939f    8e93989d
-0x000093a3    a2a7abb0
-0x000093a7    b4b9bdc1
-0x000093ab    c5c9cdd0
-0x000093af    d4d7dbde
-0x000093b3    e1e4e7e9
-0x000093b7    eceef0f2
-0x000093bb    f4f6f7f9
-0x000093bf    fafbfcfd
-0x000093c3    fefeffff
-0x000093c7    fffffffe
-0x000093cb    fefdfcfb
-0x000093cf    faf9f7f6
-0x000093d3    f4f2f0ee
-0x000093d7    ece9e7e4
-0x000093db    e1dedbd7
-0x000093df    d4d0cdc9
-0x000093e3    c5c1bdb9
-0x000093e7    b4b0aba7
-0x000093eb    a29d9893
-0x000093ef    8e88837e
-0x000093f3    78736d67
-0x000093f7    625c5650
-0x000093fb    4a443e38
-0x000093ff    322c251f
-0x00009403    19130d06
+009387    00060d13     .db $00,$06,$0d,$13
+00938b    191f252c     .db $19,$1f,$25,$2c
+00938f    32383e44     .db $32,$38,$3e,$44
+009393    4a50565c     .db $4a,$50,$56,$5c
+009397    62676d73     .db $62,$67,$6d,$73
+00939b    787e8388     .db $78,$7e,$83,$88
+00939f    8e93989d     .db $8e,$93,$98,$9d
+0093a3    a2a7abb0     .db $a2,$a7,$ab,$b0
+0093a7    b4b9bdc1     .db $b4,$b9,$bd,$c1
+0093ab    c5c9cdd0     .db $c5,$c9,$cd,$d0
+0093af    d4d7dbde     .db $d4,$d7,$db,$de
+0093b3    e1e4e7e9     .db $e1,$e4,$e7,$e9
+0093b7    eceef0f2     .db $ec,$ee,$f0,$f2
+0093bb    f4f6f7f9     .db $f4,$f6,$f7,$f9
+0093bf    fafbfcfd     .db $fa,$fb,$fc,$fd
+0093c3    fefeffff     .db $fe,$fe,$ff,$ff
+0093c7    fffffffe     .db $ff,$ff,$ff,$fe
+0093cb    fefdfcfb     .db $fe,$fd,$fc,$fb
+0093cf    faf9f7f6     .db $fa,$f9,$f7,$f6
+0093d3    f4f2f0ee     .db $f4,$f2,$f0,$ee
+0093d7    ece9e7e4     .db $ec,$e9,$e7,$e4
+0093db    e1dedbd7     .db $e1,$de,$db,$d7
+0093df    d4d0cdc9     .db $d4,$d0,$cd,$c9
+0093e3    c5c1bdb9     .db $c5,$c1,$bd,$b9
+0093e7    b4b0aba7     .db $b4,$b0,$ab,$a7
+0093eb    a29d9893     .db $a2,$9d,$98,$93
+0093ef    8e88837e     .db $8e,$88,$83,$7e
+0093f3    78736d67     .db $78,$73,$6d,$67
+0093f7    625c5650     .db $62,$5c,$56,$50
+0093fb    4a443e38     .db $4a,$44,$3e,$38
+0093ff    322c251f     .db $32,$2c,$25,$1f
+009403    19130d06     .db $19,$13,$0d,$06

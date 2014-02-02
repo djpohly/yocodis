@@ -1,98 +1,98 @@
-0x000182e7    a901         lda #0x01
-0x000182e9    8d221e       sta 0x1e22
-0x000182ec    a00000       ldy #0x0000
-0x000182ef    a9a4         lda #0xa4
-0x000182f1    99501e       sta 0x1e50,y
-0x000182f4    c8           iny
-0x000182f5    a918         lda #0x18
-0x000182f7    99501e       sta 0x1e50,y
-0x000182fa    c8           iny
-0x000182fb    c0c000       cpy #0x00c0
-0x000182fe    d0ef         bne 0x0182ef
-0x00018300    200f84       jsr 0x840f
-0x00018303    a20000       ldx #0x0000
-0x00018306    da           phx
-0x00018307    a00000       ldy #0x0000
-0x0001830a    c220         rep #0x20
-0x0001830c    fa           plx
-0x0001830d    bda983       lda 0x83a9,x
-0x00018310    da           phx
-0x00018311    48           pha
-0x00018312    a20000       ldx #0x0000
-0x00018315    b9af83       lda 0x83af,y
-0x00018318    d005         bne 0x01831f
-0x0001831a    bdcf83       lda 0x83cf,x
-0x0001831d    8059         bra 0x018378
-0x0001831f    8d2e1e       sta 0x1e2e
-0x00018322    bdcf83       lda 0x83cf,x
-0x00018325    291f00       and #0x001f
-0x00018328    38           sec
-0x00018329    ed2e1e       sbc 0x1e2e
-0x0001832c    c90400       cmp #0x0004
-0x0001832f    1003         bpl 0x018334
-0x00018331    a90400       lda #0x0004
-0x00018334    48           pha
-0x00018335    bdcf83       lda 0x83cf,x
-0x00018338    4a           lsr a
-0x00018339    4a           lsr a
-0x0001833a    4a           lsr a
-0x0001833b    4a           lsr a
-0x0001833c    4a           lsr a
-0x0001833d    291f00       and #0x001f
-0x00018340    38           sec
-0x00018341    ed2e1e       sbc 0x1e2e
-0x00018344    c90500       cmp #0x0005
-0x00018347    1003         bpl 0x01834c
-0x00018349    a90500       lda #0x0005
-0x0001834c    0a           asl a
-0x0001834d    0a           asl a
-0x0001834e    0a           asl a
-0x0001834f    0a           asl a
-0x00018350    0a           asl a
-0x00018351    48           pha
-0x00018352    bdcf83       lda 0x83cf,x
-0x00018355    4a           lsr a
-0x00018356    4a           lsr a
-0x00018357    eb           swa
-0x00018358    291f00       and #0x001f
-0x0001835b    38           sec
-0x0001835c    ed2e1e       sbc 0x1e2e
-0x0001835f    c90600       cmp #0x0006
-0x00018362    1003         bpl 0x018367
-0x00018364    a90600       lda #0x0006
-0x00018367    eb           swa
-0x00018368    0a           asl a
-0x00018369    0a           asl a
-0x0001836a    8d2e1e       sta 0x1e2e
-0x0001836d    68           pla
-0x0001836e    0d2e1e       ora 0x1e2e
-0x00018371    8d2e1e       sta 0x1e2e
-0x00018374    68           pla
-0x00018375    0d2e1e       ora 0x1e2e
-0x00018378    8e2e1e       stx 0x1e2e
-0x0001837b    fa           plx
-0x0001837c    9d501e       sta 0x1e50,x
-0x0001837f    e8           inx
-0x00018380    e8           inx
-0x00018381    da           phx
-0x00018382    ae2e1e       ldx 0x1e2e
-0x00018385    e8           inx
-0x00018386    e8           inx
-0x00018387    e04000       cpx #0x0040
-0x0001838a    d089         bne 0x018315
-0x0001838c    e220         sep #0x20
-0x0001838e    200f84       jsr 0x840f
-0x00018391    fa           plx
-0x00018392    c8           iny
-0x00018393    c8           iny
-0x00018394    c02000       cpy #0x0020
-0x00018397    f003         beq 0x01839c
-0x00018399    4c0a83       jmp 0x830a
-0x0001839c    fa           plx
-0x0001839d    e8           inx
-0x0001839e    e8           inx
-0x0001839f    e00600       cpx #0x0006
-0x000183a2    f004         beq 0x0183a8
-0x000183a4    da           phx
-0x000183a5    4c0783       jmp 0x8307
-0x000183a8    60           rts
+0182e7    a901         lda #$01
+0182e9    8d221e       sta $1e22
+0182ec    a00000       ldy #$0000
+0182ef    a9a4         lda #$a4
+0182f1    99501e       sta $1e50,y
+0182f4    c8           iny
+0182f5    a918         lda #$18
+0182f7    99501e       sta $1e50,y
+0182fa    c8           iny
+0182fb    c0c000       cpy #$00c0
+0182fe    d0ef         bne $0182ef
+018300    200f84       jsr $840f
+018303    a20000       ldx #$0000
+018306    da           phx
+018307    a00000       ldy #$0000
+01830a    c220         rep #$20
+01830c    fa           plx
+01830d    bda983       lda $83a9,x
+018310    da           phx
+018311    48           pha
+018312    a20000       ldx #$0000
+018315    b9af83       lda $83af,y
+018318    d005         bne $01831f
+01831a    bdcf83       lda $83cf,x
+01831d    8059         bra $018378
+01831f    8d2e1e       sta $1e2e
+018322    bdcf83       lda $83cf,x
+018325    291f00       and #$001f
+018328    38           sec
+018329    ed2e1e       sbc $1e2e
+01832c    c90400       cmp #$0004
+01832f    1003         bpl $018334
+018331    a90400       lda #$0004
+018334    48           pha
+018335    bdcf83       lda $83cf,x
+018338    4a           lsr a
+018339    4a           lsr a
+01833a    4a           lsr a
+01833b    4a           lsr a
+01833c    4a           lsr a
+01833d    291f00       and #$001f
+018340    38           sec
+018341    ed2e1e       sbc $1e2e
+018344    c90500       cmp #$0005
+018347    1003         bpl $01834c
+018349    a90500       lda #$0005
+01834c    0a           asl a
+01834d    0a           asl a
+01834e    0a           asl a
+01834f    0a           asl a
+018350    0a           asl a
+018351    48           pha
+018352    bdcf83       lda $83cf,x
+018355    4a           lsr a
+018356    4a           lsr a
+018357    eb           swa
+018358    291f00       and #$001f
+01835b    38           sec
+01835c    ed2e1e       sbc $1e2e
+01835f    c90600       cmp #$0006
+018362    1003         bpl $018367
+018364    a90600       lda #$0006
+018367    eb           swa
+018368    0a           asl a
+018369    0a           asl a
+01836a    8d2e1e       sta $1e2e
+01836d    68           pla
+01836e    0d2e1e       ora $1e2e
+018371    8d2e1e       sta $1e2e
+018374    68           pla
+018375    0d2e1e       ora $1e2e
+018378    8e2e1e       stx $1e2e
+01837b    fa           plx
+01837c    9d501e       sta $1e50,x
+01837f    e8           inx
+018380    e8           inx
+018381    da           phx
+018382    ae2e1e       ldx $1e2e
+018385    e8           inx
+018386    e8           inx
+018387    e04000       cpx #$0040
+01838a    d089         bne $018315
+01838c    e220         sep #$20
+01838e    200f84       jsr $840f
+018391    fa           plx
+018392    c8           iny
+018393    c8           iny
+018394    c02000       cpy #$0020
+018397    f003         beq $01839c
+018399    4c0a83       jmp $830a
+01839c    fa           plx
+01839d    e8           inx
+01839e    e8           inx
+01839f    e00600       cpx #$0006
+0183a2    f004         beq $0183a8
+0183a4    da           phx
+0183a5    4c0783       jmp $8307
+0183a8    60           rts

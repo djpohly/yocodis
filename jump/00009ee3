@@ -1,5 +1,5 @@
 ; jumptable
-0x00009ee3    eb9e         .da 0x9eeb
-0x00009ee5    029f         .da 0x9f02
-0x00009ee7    5b9f         .da 0x9f5b
-0x00009ee9    799f         .da 0x9f79
+009ee3    eb9e         .da $009eeb
+009ee5    029f         .da $009f02
+009ee7    5b9f         .da $009f5b
+009ee9    799f         .da $009f79

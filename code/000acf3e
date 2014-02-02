@@ -1,77 +1,77 @@
-0x000acf3e    08           php
-0x000acf3f    c220         rep #0x20
-0x000acf41    ad5201       lda 0x0152
-0x000acf44    d057         bne 0x0acf9d
-0x000acf46    2c4c09       bit 0x094c
-0x000acf49    5003         bvc 0x0acf4e
-0x000acf4b    9c5409       stz 0x0954
-0x000acf4e    2c4c0a       bit 0x0a4c
-0x000acf51    500b         bvc 0x0acf5e
-0x000acf53    ad540a       lda 0x0a54
-0x000acf56    f006         beq 0x0acf5e
-0x000acf58    9c540a       stz 0x0a54
-0x000acf5b    9c5c01       stz 0x015c
-0x000acf5e    2c4c09       bit 0x094c
-0x000acf61    1006         bpl 0x0acf69
-0x000acf63    9c0005       stz 0x0500
-0x000acf66    2006d0       jsr 0xd006
-0x000acf69    2c4c0a       bit 0x0a4c
-0x000acf6c    1009         bpl 0x0acf77
-0x000acf6e    a90001       lda #0x0100
-0x000acf71    8d0005       sta 0x0500
-0x000acf74    2006d0       jsr 0xd006
-0x000acf77    6400         stz 0x00
-0x000acf79    a20000       ldx #0x0000
-0x000acf7c    205fd1       jsr 0xd15f
-0x000acf7f    a20001       ldx #0x0100
-0x000acf82    205fd1       jsr 0xd15f
-0x000acf85    a500         lda 0x00
-0x000acf87    0d4c09       ora 0x094c
-0x000acf8a    0d4c0a       ora 0x0a4c
-0x000acf8d    f009         beq 0x0acf98
-0x000acf8f    2088d1       jsr 0xd188
-0x000acf92    9c4c09       stz 0x094c
-0x000acf95    9c4c0a       stz 0x0a4c
-0x000acf98    20c5cf       jsr 0xcfc5
-0x000acf9b    28           plp
-0x000acf9c    60           rts
-0x000acf9d    ad5009       lda 0x0950
-0x000acfa0    0d5209       ora 0x0952
-0x000acfa3    0d5409       ora 0x0954
-0x000acfa6    0d500a       ora 0x0a50
-0x000acfa9    0d520a       ora 0x0a52
-0x000acfac    0d540a       ora 0x0a54
-0x000acfaf    f0e1         beq 0x0acf92
-0x000acfb1    9c5009       stz 0x0950
-0x000acfb4    9c5209       stz 0x0952
-0x000acfb7    9c5409       stz 0x0954
-0x000acfba    9c500a       stz 0x0a50
-0x000acfbd    9c520a       stz 0x0a52
-0x000acfc0    9c540a       stz 0x0a54
-0x000acfc3    80ca         bra 0x0acf8f
-0x000acfc5    add601       lda 0x01d6
-0x000acfc8    d035         bne 0x0acfff
-0x000acfca    a20000       ldx #0x0000
-0x000acfcd    ad5009       lda 0x0950
-0x000acfd0    0d500a       ora 0x0a50
-0x000acfd3    d019         bne 0x0acfee
-0x000acfd5    e8           inx
-0x000acfd6    e8           inx
-0x000acfd7    ad5209       lda 0x0952
-0x000acfda    0d520a       ora 0x0a52
-0x000acfdd    d00f         bne 0x0acfee
-0x000acfdf    e8           inx
-0x000acfe0    e8           inx
-0x000acfe1    ad5409       lda 0x0954
-0x000acfe4    0d540a       ora 0x0a54
-0x000acfe7    d005         bne 0x0acfee
-0x000acfe9    202fb8       jsr 0xb82f
-0x000acfec    8004         bra 0x0acff2
-0x000acfee    bf00d00a     lda 0x0ad000,x
-0x000acff2    eb           swa
-0x000acff3    c5e6         cmp 0xe6
-0x000acff5    f008         beq 0x0acfff
-0x000acff7    eb           swa
-0x000acff8    2041b8       jsr 0xb841
-0x000acffb    2200800d     jsr 0x0d8000
-0x000acfff    60           rts
+0acf3e    08           php
+0acf3f    c220         rep #$20
+0acf41    ad5201       lda $0152
+0acf44    d057         bne $0acf9d
+0acf46    2c4c09       bit $094c
+0acf49    5003         bvc $0acf4e
+0acf4b    9c5409       stz $0954
+0acf4e    2c4c0a       bit $0a4c
+0acf51    500b         bvc $0acf5e
+0acf53    ad540a       lda $0a54
+0acf56    f006         beq $0acf5e
+0acf58    9c540a       stz $0a54
+0acf5b    9c5c01       stz $015c
+0acf5e    2c4c09       bit $094c
+0acf61    1006         bpl $0acf69
+0acf63    9c0005       stz $0500
+0acf66    2006d0       jsr $d006
+0acf69    2c4c0a       bit $0a4c
+0acf6c    1009         bpl $0acf77
+0acf6e    a90001       lda #$0100
+0acf71    8d0005       sta $0500
+0acf74    2006d0       jsr $d006
+0acf77    6400         stz $00
+0acf79    a20000       ldx #$0000
+0acf7c    205fd1       jsr $d15f
+0acf7f    a20001       ldx #$0100
+0acf82    205fd1       jsr $d15f
+0acf85    a500         lda $00
+0acf87    0d4c09       ora $094c
+0acf8a    0d4c0a       ora $0a4c
+0acf8d    f009         beq $0acf98
+0acf8f    2088d1       jsr $d188
+0acf92    9c4c09       stz $094c
+0acf95    9c4c0a       stz $0a4c
+0acf98    20c5cf       jsr $cfc5
+0acf9b    28           plp
+0acf9c    60           rts
+0acf9d    ad5009       lda $0950
+0acfa0    0d5209       ora $0952
+0acfa3    0d5409       ora $0954
+0acfa6    0d500a       ora $0a50
+0acfa9    0d520a       ora $0a52
+0acfac    0d540a       ora $0a54
+0acfaf    f0e1         beq $0acf92
+0acfb1    9c5009       stz $0950
+0acfb4    9c5209       stz $0952
+0acfb7    9c5409       stz $0954
+0acfba    9c500a       stz $0a50
+0acfbd    9c520a       stz $0a52
+0acfc0    9c540a       stz $0a54
+0acfc3    80ca         bra $0acf8f
+0acfc5    add601       lda $01d6
+0acfc8    d035         bne $0acfff
+0acfca    a20000       ldx #$0000
+0acfcd    ad5009       lda $0950
+0acfd0    0d500a       ora $0a50
+0acfd3    d019         bne $0acfee
+0acfd5    e8           inx
+0acfd6    e8           inx
+0acfd7    ad5209       lda $0952
+0acfda    0d520a       ora $0a52
+0acfdd    d00f         bne $0acfee
+0acfdf    e8           inx
+0acfe0    e8           inx
+0acfe1    ad5409       lda $0954
+0acfe4    0d540a       ora $0a54
+0acfe7    d005         bne $0acfee
+0acfe9    202fb8       jsr $b82f
+0acfec    8004         bra $0acff2
+0acfee    bf00d00a     lda $0ad000,x
+0acff2    eb           swa
+0acff3    c5e6         cmp $e6
+0acff5    f008         beq $0acfff
+0acff7    eb           swa
+0acff8    2041b8       jsr $b841
+0acffb    2200800d     jsr $0d8000
+0acfff    60           rts

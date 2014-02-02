@@ -1,21 +1,21 @@
-0x0002e447    c220         rep #0x20
-0x0002e449    a558         lda 0x58
-0x0002e44b    291f00       and #0x001f
-0x0002e44e    aa           tax
-0x0002e44f    e220         sep #0x20
-0x0002e451    bf74e402     lda 0x02e474,x
-0x0002e455    18           clc
-0x0002e456    69c0         adc #0xc0
-0x0002e458    8d7210       sta 0x1072
-0x0002e45b    a558         lda 0x58
-0x0002e45d    890f         bit #0x0f
-0x0002e45f    d012         bne 0x02e473
-0x0002e461    ad9210       lda 0x1092
-0x0002e464    c939         cmp #0x39
-0x0002e466    d006         bne 0x02e46e
-0x0002e468    a93a         lda #0x3a
-0x0002e46a    8d9210       sta 0x1092
-0x0002e46d    60           rts
-0x0002e46e    a939         lda #0x39
-0x0002e470    8d9210       sta 0x1092
-0x0002e473    60           rts
+02e447    c220         rep #$20
+02e449    a558         lda $58
+02e44b    291f00       and #$001f
+02e44e    aa           tax
+02e44f    e220         sep #$20
+02e451    bf74e402     lda $02e474,x
+02e455    18           clc
+02e456    69c0         adc #$c0
+02e458    8d7210       sta $1072
+02e45b    a558         lda $58
+02e45d    890f         bit #$0f
+02e45f    d012         bne $02e473
+02e461    ad9210       lda $1092
+02e464    c939         cmp #$39
+02e466    d006         bne $02e46e
+02e468    a93a         lda #$3a
+02e46a    8d9210       sta $1092
+02e46d    60           rts
+02e46e    a939         lda #$39
+02e470    8d9210       sta $1092
+02e473    60           rts

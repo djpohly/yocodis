@@ -1,53 +1,53 @@
-0x000083fe    22d88102     jsr 0x0281d8
-0x00008402    6b           rtl
-0x00008403    22db8e02     jsr 0x028edb
-0x00008407    6b           rtl
-0x00008408    22e8a902     jsr 0x02a9e8
-0x0000840c    6b           rtl
-0x0000840d    22b3c402     jsr 0x02c4b3
-0x00008411    6b           rtl
-0x00008412    22119702     jsr 0x029711
-0x00008416    6b           rtl
-0x00008417    22f59c02     jsr 0x029cf5
-0x0000841b    6b           rtl
-0x0000841c    2277ec02     jsr 0x02ec77
-0x00008420    6b           rtl
-0x00008421    225fc50a     jsr 0x0ac55f
-0x00008425    6b           rtl
-0x00008426    6b           rtl
-0x00008427    6b           rtl
-0x00008428    6b           rtl
-0x00008429    225fc50a     jsr 0x0ac55f
-0x0000842d    6b           rtl
-0x0000842e    22f69302     jsr 0x0293f6
-0x00008432    6b           rtl
-0x00008433    2271b502     jsr 0x02b571
-0x00008437    6b           rtl
-0x00008438    6b           rtl
-0x00008439    6b           rtl
-0x0000843a    6b           rtl
-0x0000843b    6b           rtl
-0x0000843c    2263a30c     jsr 0x0ca363
-0x00008440    6b           rtl
-0x00008441    08           php
-0x00008442    22508700     jsr 0x008750
-0x00008446    22728700     jsr 0x008772
-0x0000844a    a546         lda 0x46
-0x0000844c    297f         and #0x7f
-0x0000844e    4b           phk
-0x0000844f    f46c84       pea 0x846c
-0x00008452    c220         rep #0x20
-0x00008454    29ff00       and #0x00ff
-0x00008457    48           pha
-0x00008458    0a           asl a
-0x00008459    6301         adc 0x01,s
-0x0000845b    aa           tax
-0x0000845c    68           pla
-0x0000845d    e220         sep #0x20
-0x0000845f    bf918400     lda 0x008491,x
-0x00008463    48           pha
-0x00008464    c220         rep #0x20
-0x00008466    bf8f8400     lda 0x00848f,x
-0x0000846a    3a           dec a
-0x0000846b    48           pha
-0x0000846c    6b           rtl
+0083fe    22d88102     jsr $0281d8
+008402    6b           rtl
+008403    22db8e02     jsr $028edb
+008407    6b           rtl
+008408    22e8a902     jsr $02a9e8
+00840c    6b           rtl
+00840d    22b3c402     jsr $02c4b3
+008411    6b           rtl
+008412    22119702     jsr $029711
+008416    6b           rtl
+008417    22f59c02     jsr $029cf5
+00841b    6b           rtl
+00841c    2277ec02     jsr $02ec77
+008420    6b           rtl
+008421    225fc50a     jsr $0ac55f
+008425    6b           rtl
+008426    6b           rtl
+008427    6b           rtl
+008428    6b           rtl
+008429    225fc50a     jsr $0ac55f
+00842d    6b           rtl
+00842e    22f69302     jsr $0293f6
+008432    6b           rtl
+008433    2271b502     jsr $02b571
+008437    6b           rtl
+008438    6b           rtl
+008439    6b           rtl
+00843a    6b           rtl
+00843b    6b           rtl
+00843c    2263a30c     jsr $0ca363
+008440    6b           rtl
+008441    08           php
+008442    22508700     jsr $008750
+008446    22728700     jsr $008772
+00844a    a546         lda $46
+00844c    297f         and #$7f
+00844e    4b           phk
+00844f    f46c84       pea $846c
+008452    c220         rep #$20
+008454    29ff00       and #$00ff
+008457    48           pha
+008458    0a           asl a
+008459    6301         adc $01,s
+00845b    aa           tax
+00845c    68           pla
+00845d    e220         sep #$20
+00845f    bf918400     lda $008491,x
+008463    48           pha
+008464    c220         rep #$20
+008466    bf8f8400     lda $00848f,x
+00846a    3a           dec a
+00846b    48           pha
+00846c    6b           rtl

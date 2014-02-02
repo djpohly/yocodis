@@ -1,18 +1,18 @@
-0x000afab5    a90400       lda #0x0004
-0x000afab8    8d2409       sta 0x0924
-0x000afabb    9c2609       stz 0x0926
-0x000afabe    9c2a09       stz 0x092a
-0x000afac1    9c2c09       stz 0x092c
-0x000afac4    9c2809       stz 0x0928
-0x000afac7    9c2e09       stz 0x092e
-0x000afaca    60           rts
-0x000afacb    a558         lda 0x58
-0x000afacd    4a           lsr a
-0x000aface    4a           lsr a
-0x000afacf    4a           lsr a
-0x000afad0    290f00       and #0x000f
-0x000afad3    aa           tax
-0x000afad4    bfdffa0a     lda 0x0afadf,x
-0x000afad8    29ff00       and #0x00ff
-0x000afadb    8d2609       sta 0x0926
-0x000afade    60           rts
+0afab5    a90400       lda #$0004
+0afab8    8d2409       sta $0924
+0afabb    9c2609       stz $0926
+0afabe    9c2a09       stz $092a
+0afac1    9c2c09       stz $092c
+0afac4    9c2809       stz $0928
+0afac7    9c2e09       stz $092e
+0afaca    60           rts
+0afacb    a558         lda $58
+0afacd    4a           lsr a
+0aface    4a           lsr a
+0afacf    4a           lsr a
+0afad0    290f00       and #$000f
+0afad3    aa           tax
+0afad4    bfdffa0a     lda $0afadf,x
+0afad8    29ff00       and #$00ff
+0afadb    8d2609       sta $0926
+0afade    60           rts

@@ -1,47 +1,47 @@
-0x000ac50d    28           plp
-0x000ac50e    60           rts
-0x000ac50f    ad5a01       lda 0x015a
-0x000ac512    c90800       cmp #0x0008
-0x000ac515    9009         bcc 0x0ac520
-0x000ac517    9c5a01       stz 0x015a
-0x000ac51a    a90080       lda #0x8000
-0x000ac51d    1c5801       trb 0x0158
-0x000ac520    4c0dc5       jmp 0xc50d
-0x000ac523    ad5a01       lda 0x015a
-0x000ac526    c90800       cmp #0x0008
-0x000ac529    9009         bcc 0x0ac534
-0x000ac52b    9c5a01       stz 0x015a
-0x000ac52e    a90080       lda #0x8000
-0x000ac531    1c5801       trb 0x0158
-0x000ac534    4c0dc5       jmp 0xc50d
-0x000ac537    ad5a01       lda 0x015a
-0x000ac53a    c90800       cmp #0x0008
-0x000ac53d    9009         bcc 0x0ac548
-0x000ac53f    9c5a01       stz 0x015a
-0x000ac542    a90080       lda #0x8000
-0x000ac545    1c5801       trb 0x0158
-0x000ac548    4c0dc5       jmp 0xc50d
-0x000ac54b    ad5a01       lda 0x015a
-0x000ac54e    c90800       cmp #0x0008
-0x000ac551    9009         bcc 0x0ac55c
-0x000ac553    9c5a01       stz 0x015a
-0x000ac556    a90080       lda #0x8000
-0x000ac559    1c5801       trb 0x0158
-0x000ac55c    4c0dc5       jmp 0xc50d
-0x000ac55f    08           php
-0x000ac560    8b           phb
-0x000ac561    4b           phk
-0x000ac562    ab           plb
-0x000ac563    e220         sep #0x20
-0x000ac565    a97e         lda #0x7e
-0x000ac567    8522         sta 0x22
-0x000ac569    4b           phk
-0x000ac56a    68           pla
-0x000ac56b    8525         sta 0x25
-0x000ac56d    c220         rep #0x20
-0x000ac56f    ad5801       lda 0x0158
-0x000ac572    302a         bmi 0x0ac59e
-0x000ac574    ad5601       lda 0x0156
-0x000ac577    0a           asl a
-0x000ac578    aa           tax
-0x000ac579    7c7cc5       jmp (0xc57c,x)
+0ac50d    28           plp
+0ac50e    60           rts
+0ac50f    ad5a01       lda $015a
+0ac512    c90800       cmp #$0008
+0ac515    9009         bcc $0ac520
+0ac517    9c5a01       stz $015a
+0ac51a    a90080       lda #$8000
+0ac51d    1c5801       trb $0158
+0ac520    4c0dc5       jmp $c50d
+0ac523    ad5a01       lda $015a
+0ac526    c90800       cmp #$0008
+0ac529    9009         bcc $0ac534
+0ac52b    9c5a01       stz $015a
+0ac52e    a90080       lda #$8000
+0ac531    1c5801       trb $0158
+0ac534    4c0dc5       jmp $c50d
+0ac537    ad5a01       lda $015a
+0ac53a    c90800       cmp #$0008
+0ac53d    9009         bcc $0ac548
+0ac53f    9c5a01       stz $015a
+0ac542    a90080       lda #$8000
+0ac545    1c5801       trb $0158
+0ac548    4c0dc5       jmp $c50d
+0ac54b    ad5a01       lda $015a
+0ac54e    c90800       cmp #$0008
+0ac551    9009         bcc $0ac55c
+0ac553    9c5a01       stz $015a
+0ac556    a90080       lda #$8000
+0ac559    1c5801       trb $0158
+0ac55c    4c0dc5       jmp $c50d
+0ac55f    08           php
+0ac560    8b           phb
+0ac561    4b           phk
+0ac562    ab           plb
+0ac563    e220         sep #$20
+0ac565    a97e         lda #$7e
+0ac567    8522         sta $22
+0ac569    4b           phk
+0ac56a    68           pla
+0ac56b    8525         sta $25
+0ac56d    c220         rep #$20
+0ac56f    ad5801       lda $0158
+0ac572    302a         bmi $0ac59e
+0ac574    ad5601       lda $0156
+0ac577    0a           asl a
+0ac578    aa           tax
+0ac579    7c7cc5       jmp ($c57c,x)

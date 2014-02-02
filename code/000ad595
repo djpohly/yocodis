@@ -1,16 +1,16 @@
-0x000ad595    ae0005       ldx 0x0500
-0x000ad598    de6209       dec 0x0962,x
-0x000ad59b    d003         bne 0x0ad5a0
-0x000ad59d    fe6009       inc 0x0960,x
-0x000ad5a0    a0c000       ldy #0x00c0
-0x000ad5a3    206ed6       jsr 0xd66e
-0x000ad5a6    60           rts
-0x000ad5a7    ae0005       ldx 0x0500
-0x000ad5aa    bd6009       lda 0x0960,x
-0x000ad5ad    300b         bmi 0x0ad5ba
-0x000ad5af    29ff00       and #0x00ff
-0x000ad5b2    0a           asl a
-0x000ad5b3    aa           tax
-0x000ad5b4    f4b9d5       pea 0xd5b9
-0x000ad5b7    7cbbd5       jmp (0xd5bb,x)
-0x000ad5ba    60           rts
+0ad595    ae0005       ldx $0500
+0ad598    de6209       dec $0962,x
+0ad59b    d003         bne $0ad5a0
+0ad59d    fe6009       inc $0960,x
+0ad5a0    a0c000       ldy #$00c0
+0ad5a3    206ed6       jsr $d66e
+0ad5a6    60           rts
+0ad5a7    ae0005       ldx $0500
+0ad5aa    bd6009       lda $0960,x
+0ad5ad    300b         bmi $0ad5ba
+0ad5af    29ff00       and #$00ff
+0ad5b2    0a           asl a
+0ad5b3    aa           tax
+0ad5b4    f4b9d5       pea $d5b9
+0ad5b7    7cbbd5       jmp ($d5bb,x)
+0ad5ba    60           rts

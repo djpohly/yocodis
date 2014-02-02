@@ -1,14 +1,14 @@
-0x000ab8b1    c220         rep #0x20
-0x000ab8b3    a547         lda 0x47
-0x000ab8b5    29ff00       and #0x00ff
-0x000ab8b8    0a           asl a
-0x000ab8b9    aa           tax
-0x000ab8ba    fcd4b8       jsr (0xb8d4,x)
-0x000ab8bd    229c8f00     jsr 0x008f9c
-0x000ab8c1    22a48a00     jsr 0x008aa4
-0x000ab8c5    2096cc       jsr 0xcc96
-0x000ab8c8    2022d2       jsr 0xd222
-0x000ab8cb    2031c9       jsr 0xc931
-0x000ab8ce    2084ca       jsr 0xca84
-0x000ab8d1    c220         rep #0x20
-0x000ab8d3    6b           rtl
+0ab8b1    c220         rep #$20
+0ab8b3    a547         lda $47
+0ab8b5    29ff00       and #$00ff
+0ab8b8    0a           asl a
+0ab8b9    aa           tax
+0ab8ba    fcd4b8       jsr ($b8d4,x)
+0ab8bd    229c8f00     jsr $008f9c
+0ab8c1    22a48a00     jsr $008aa4
+0ab8c5    2096cc       jsr $cc96
+0ab8c8    2022d2       jsr $d222
+0ab8cb    2031c9       jsr $c931
+0ab8ce    2084ca       jsr $ca84
+0ab8d1    c220         rep #$20
+0ab8d3    6b           rtl

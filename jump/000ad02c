@@ -1,8 +1,8 @@
 ; jumptable
-0x000ad02c    3ad0         .da 0xd03a
-0x000ad02e    55d0         .da 0xd055
-0x000ad030    70d0         .da 0xd070
-0x000ad032    d9d0         .da 0xd0d9
-0x000ad034    ffd0         .da 0xd0ff
-0x000ad036    22d1         .da 0xd122
-0x000ad038    45d1         .da 0xd145
+0ad02c    3ad0         .da $0ad03a
+0ad02e    55d0         .da $0ad055
+0ad030    70d0         .da $0ad070
+0ad032    d9d0         .da $0ad0d9
+0ad034    ffd0         .da $0ad0ff
+0ad036    22d1         .da $0ad122
+0ad038    45d1         .da $0ad145

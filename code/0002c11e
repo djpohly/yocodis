@@ -1,41 +1,41 @@
-0x0002c11e    ad2401       lda 0x0124
-0x0002c121    055c         ora 0x5c
-0x0002c123    d006         bne 0x02c12b
-0x0002c125    ee7e07       inc 0x077e
-0x0002c128    ee4608       inc 0x0846
-0x0002c12b    60           rts
-0x0002c12c    ad7e07       lda 0x077e
-0x0002c12f    c90400       cmp #0x0004
-0x0002c132    900f         bcc 0x02c143
-0x0002c134    8d3e07       sta 0x073e
-0x0002c137    a90100       lda #0x0001
-0x0002c13a    8d1e07       sta 0x071e
-0x0002c13d    8d5e07       sta 0x075e
-0x0002c140    ee4608       inc 0x0846
-0x0002c143    60           rts
-0x0002c144    e220         sep #0x20
-0x0002c146    adb410       lda 0x10b4
-0x0002c149    c946         cmp #0x46
-0x0002c14b    9007         bcc 0x02c154
-0x0002c14d    9cbb10       stz 0x10bb
-0x0002c150    ee7610       inc 0x1076
-0x0002c153    60           rts
-0x0002c154    a901         lda #0x01
-0x0002c156    8dbb10       sta 0x10bb
-0x0002c159    eeb410       inc 0x10b4
-0x0002c15c    adb410       lda 0x10b4
-0x0002c15f    1a           inc a
-0x0002c160    8db610       sta 0x10b6
-0x0002c163    18           clc
-0x0002c164    6976         adc #0x76
-0x0002c166    8db710       sta 0x10b7
-0x0002c169    a987         lda #0x87
-0x0002c16b    38           sec
-0x0002c16c    edb610       sbc 0x10b6
-0x0002c16f    8db910       sta 0x10b9
-0x0002c172    18           clc
-0x0002c173    6976         adc #0x76
-0x0002c175    8dba10       sta 0x10ba
-0x0002c178    ee1e11       inc 0x111e
-0x0002c17b    ce2211       dec 0x1122
-0x0002c17e    60           rts
+02c11e    ad2401       lda $0124
+02c121    055c         ora $5c
+02c123    d006         bne $02c12b
+02c125    ee7e07       inc $077e
+02c128    ee4608       inc $0846
+02c12b    60           rts
+02c12c    ad7e07       lda $077e
+02c12f    c90400       cmp #$0004
+02c132    900f         bcc $02c143
+02c134    8d3e07       sta $073e
+02c137    a90100       lda #$0001
+02c13a    8d1e07       sta $071e
+02c13d    8d5e07       sta $075e
+02c140    ee4608       inc $0846
+02c143    60           rts
+02c144    e220         sep #$20
+02c146    adb410       lda $10b4
+02c149    c946         cmp #$46
+02c14b    9007         bcc $02c154
+02c14d    9cbb10       stz $10bb
+02c150    ee7610       inc $1076
+02c153    60           rts
+02c154    a901         lda #$01
+02c156    8dbb10       sta $10bb
+02c159    eeb410       inc $10b4
+02c15c    adb410       lda $10b4
+02c15f    1a           inc a
+02c160    8db610       sta $10b6
+02c163    18           clc
+02c164    6976         adc #$76
+02c166    8db710       sta $10b7
+02c169    a987         lda #$87
+02c16b    38           sec
+02c16c    edb610       sbc $10b6
+02c16f    8db910       sta $10b9
+02c172    18           clc
+02c173    6976         adc #$76
+02c175    8dba10       sta $10ba
+02c178    ee1e11       inc $111e
+02c17b    ce2211       dec $1122
+02c17e    60           rts

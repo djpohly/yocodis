@@ -2,13 +2,13 @@
 
 addr=$1
 
-last=$(get-addr-file "$addr" || echo 00008000)
+last=$(get-addr-file "$addr" || echo code/00008000)
 while next=$(get-next-file "$addr"); do
 	line=($(tail -1 $last))
 	a=${line[0]}
 	b=${line[1]}
-	addr=$(rax2 $a+$((${#b}/2)) | xargs printf '%08x\n')
-	if [ $addr != ${next#*/} ]; then
+	addr=$(rax2 0x$a+$((${#b}/2)) | xargs printf '%06x\n')
+	if [ $addr != ${next#*/00} ]; then
 		echo $addr
 		break
 	fi

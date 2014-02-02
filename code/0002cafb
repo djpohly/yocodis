@@ -1,5 +1,5 @@
-0x0002cafb    e220         sep #0x20
-0x0002cafd    ae8810       ldx 0x1088
-0x0002cb00    bf08cb02     lda 0x02cb08,x
-0x0002cb04    8d8e10       sta 0x108e
-0x0002cb07    60           rts
+02cafb    e220         sep #$20
+02cafd    ae8810       ldx $1088
+02cb00    bf08cb02     lda $02cb08,x
+02cb04    8d8e10       sta $108e
+02cb07    60           rts

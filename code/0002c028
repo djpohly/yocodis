@@ -1,16 +1,16 @@
-0x0002c028    a90200       lda #0x0002
-0x0002c02b    8d4c08       sta 0x084c
-0x0002c02e    a951c0       lda #0xc051
-0x0002c031    8500         sta 0x00
-0x0002c033    a90200       lda #0x0002
-0x0002c036    8502         sta 0x02
-0x0002c038    22b6d90a     jsr 0x0ad9b6
-0x0002c03c    a23e00       ldx #0x003e
-0x0002c03f    bf929106     lda 0x069192,x
-0x0002c043    9e6019       stz 0x1960,x
-0x0002c046    9d601b       sta 0x1b60,x
-0x0002c049    ca           dex
-0x0002c04a    ca           dex
-0x0002c04b    10f2         bpl 0x02c03f
-0x0002c04d    ee4608       inc 0x0846
-0x0002c050    60           rts
+02c028    a90200       lda #$0002
+02c02b    8d4c08       sta $084c
+02c02e    a951c0       lda #$c051
+02c031    8500         sta $00
+02c033    a90200       lda #$0002
+02c036    8502         sta $02
+02c038    22b6d90a     jsr $0ad9b6
+02c03c    a23e00       ldx #$003e
+02c03f    bf929106     lda $069192,x
+02c043    9e6019       stz $1960,x
+02c046    9d601b       sta $1b60,x
+02c049    ca           dex
+02c04a    ca           dex
+02c04b    10f2         bpl $02c03f
+02c04d    ee4608       inc $0846
+02c050    60           rts

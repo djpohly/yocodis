@@ -1,28 +1,28 @@
-0x00009fe2    08           php
-0x00009fe3    c220         rep #0x20
-0x00009fe5    a500         lda 0x00
-0x00009fe7    29ff00       and #0x00ff
-0x00009fea    0a           asl a
-0x00009feb    aa           tax
-0x00009fec    bfcca000     lda 0x00a0cc,x
-0x00009ff0    85d6         sta 0xd6
-0x00009ff2    a90000       lda #0x0000
-0x00009ff5    85d8         sta 0xd8
-0x00009ff7    a90700       lda #0x0007
-0x00009ffa    140c         trb 0x0c
-0x00009ffc    140a         trb 0x0a
-0x00009ffe    a60c         ldx 0x0c
-0x0000a000    a40a         ldy 0x0a
-0x0000a002    22179700     jsr 0x009717
-0x0000a006    18           clc
-0x0000a007    6504         adc 0x04
-0x0000a009    85da         sta 0xda
-0x0000a00b    a501         lda 0x01
-0x0000a00d    290f00       and #0x000f
-0x0000a010    0a           asl a
-0x0000a011    aa           tax
-0x0000a012    29ff00       and #0x00ff
-0x0000a015    0a           asl a
-0x0000a016    aa           tax
-0x0000a017    f41ca0       pea 0xa01c
-0x0000a01a    7c24a0       jmp (0xa024,x)
+009fe2    08           php
+009fe3    c220         rep #$20
+009fe5    a500         lda $00
+009fe7    29ff00       and #$00ff
+009fea    0a           asl a
+009feb    aa           tax
+009fec    bfcca000     lda $00a0cc,x
+009ff0    85d6         sta $d6
+009ff2    a90000       lda #$0000
+009ff5    85d8         sta $d8
+009ff7    a90700       lda #$0007
+009ffa    140c         trb $0c
+009ffc    140a         trb $0a
+009ffe    a60c         ldx $0c
+00a000    a40a         ldy $0a
+00a002    22179700     jsr $009717
+00a006    18           clc
+00a007    6504         adc $04
+00a009    85da         sta $da
+00a00b    a501         lda $01
+00a00d    290f00       and #$000f
+00a010    0a           asl a
+00a011    aa           tax
+00a012    29ff00       and #$00ff
+00a015    0a           asl a
+00a016    aa           tax
+00a017    f41ca0       pea $a01c
+00a01a    7c24a0       jmp ($a024,x)

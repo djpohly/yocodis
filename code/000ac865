@@ -1,24 +1,24 @@
-0x000ac865    08           php
-0x000ac866    c220         rep #0x20
-0x000ac868    a0ffff       ldy #0xffff
-0x000ac86b    a55c         lda 0x5c
-0x000ac86d    38           sec
-0x000ac86e    e93c00       sbc #0x003c
-0x000ac871    c8           iny
-0x000ac872    b0fa         bcs 0x0ac86e
-0x000ac874    693c00       adc #0x003c
-0x000ac877    d01a         bne 0x0ac893
-0x000ac879    8400         sty 0x00
-0x000ac87b    98           tya
-0x000ac87c    0a           asl a
-0x000ac87d    690600       adc #0x0006
-0x000ac880    48           pha
-0x000ac881    20efc8       jsr 0xc8ef
-0x000ac884    68           pla
-0x000ac885    1a           inc a
-0x000ac886    20efc8       jsr 0xc8ef
-0x000ac889    a600         ldx 0x00
-0x000ac88b    bf95c80a     lda 0x0ac895,x
-0x000ac88f    2230820d     jsr 0x0d8230
-0x000ac893    28           plp
-0x000ac894    60           rts
+0ac865    08           php
+0ac866    c220         rep #$20
+0ac868    a0ffff       ldy #$ffff
+0ac86b    a55c         lda $5c
+0ac86d    38           sec
+0ac86e    e93c00       sbc #$003c
+0ac871    c8           iny
+0ac872    b0fa         bcs $0ac86e
+0ac874    693c00       adc #$003c
+0ac877    d01a         bne $0ac893
+0ac879    8400         sty $00
+0ac87b    98           tya
+0ac87c    0a           asl a
+0ac87d    690600       adc #$0006
+0ac880    48           pha
+0ac881    20efc8       jsr $c8ef
+0ac884    68           pla
+0ac885    1a           inc a
+0ac886    20efc8       jsr $c8ef
+0ac889    a600         ldx $00
+0ac88b    bf95c80a     lda $0ac895,x
+0ac88f    2230820d     jsr $0d8230
+0ac893    28           plp
+0ac894    60           rts

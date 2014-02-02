@@ -1,47 +1,47 @@
-0x000d8376    08           php
-0x000d8377    e220         sep #0x20
-0x000d8379    c210         rep #0x10
-0x000d837b    a2aabb       ldx #0xbbaa
-0x000d837e    ec4021       cpx 0x2140
-0x000d8381    d059         bne 0x0d83dc
-0x000d8383    a902         lda #0x02
-0x000d8385    8d4121       sta 0x2141
-0x000d8388    9c4221       stz 0x2142
-0x000d838b    8d4321       sta 0x2143
-0x000d838e    a9cc         lda #0xcc
-0x000d8390    8d4021       sta 0x2140
-0x000d8393    cd4021       cmp 0x2140
-0x000d8396    d0fb         bne 0x0d8393
-0x000d8398    a900         lda #0x00
-0x000d839a    a20000       ldx #0x0000
-0x000d839d    48           pha
-0x000d839e    bfde830d     lda 0x0d83de,x
-0x000d83a2    8d4121       sta 0x2141
-0x000d83a5    68           pla
-0x000d83a6    8d4021       sta 0x2140
-0x000d83a9    cd4021       cmp 0x2140
-0x000d83ac    d0fb         bne 0x0d83a9
-0x000d83ae    e8           inx
-0x000d83af    1a           inc a
-0x000d83b0    c905         cmp #0x05
-0x000d83b2    90e9         bcc 0x0d839d
-0x000d83b4    a2bbfd       ldx #0xfdbb
-0x000d83b7    9c4121       stz 0x2141
-0x000d83ba    8d4021       sta 0x2140
-0x000d83bd    cd4021       cmp 0x2140
-0x000d83c0    d0fb         bne 0x0d83bd
-0x000d83c2    1a           inc a
-0x000d83c3    ca           dex
-0x000d83c4    d0f1         bne 0x0d83b7
-0x000d83c6    48           pha
-0x000d83c7    9c4121       stz 0x2141
-0x000d83ca    9c4221       stz 0x2142
-0x000d83cd    a902         lda #0x02
-0x000d83cf    8d4321       sta 0x2143
-0x000d83d2    68           pla
-0x000d83d3    1a           inc a
-0x000d83d4    8d4021       sta 0x2140
-0x000d83d7    cd4021       cmp 0x2140
-0x000d83da    d0fb         bne 0x0d83d7
-0x000d83dc    28           plp
-0x000d83dd    6b           rtl
+0d8376    08           php
+0d8377    e220         sep #$20
+0d8379    c210         rep #$10
+0d837b    a2aabb       ldx #$bbaa
+0d837e    ec4021       cpx $2140
+0d8381    d059         bne $0d83dc
+0d8383    a902         lda #$02
+0d8385    8d4121       sta $2141
+0d8388    9c4221       stz $2142
+0d838b    8d4321       sta $2143
+0d838e    a9cc         lda #$cc
+0d8390    8d4021       sta $2140
+0d8393    cd4021       cmp $2140
+0d8396    d0fb         bne $0d8393
+0d8398    a900         lda #$00
+0d839a    a20000       ldx #$0000
+0d839d    48           pha
+0d839e    bfde830d     lda $0d83de,x
+0d83a2    8d4121       sta $2141
+0d83a5    68           pla
+0d83a6    8d4021       sta $2140
+0d83a9    cd4021       cmp $2140
+0d83ac    d0fb         bne $0d83a9
+0d83ae    e8           inx
+0d83af    1a           inc a
+0d83b0    c905         cmp #$05
+0d83b2    90e9         bcc $0d839d
+0d83b4    a2bbfd       ldx #$fdbb
+0d83b7    9c4121       stz $2141
+0d83ba    8d4021       sta $2140
+0d83bd    cd4021       cmp $2140
+0d83c0    d0fb         bne $0d83bd
+0d83c2    1a           inc a
+0d83c3    ca           dex
+0d83c4    d0f1         bne $0d83b7
+0d83c6    48           pha
+0d83c7    9c4121       stz $2141
+0d83ca    9c4221       stz $2142
+0d83cd    a902         lda #$02
+0d83cf    8d4321       sta $2143
+0d83d2    68           pla
+0d83d3    1a           inc a
+0d83d4    8d4021       sta $2140
+0d83d7    cd4021       cmp $2140
+0d83da    d0fb         bne $0d83d7
+0d83dc    28           plp
+0d83dd    6b           rtl

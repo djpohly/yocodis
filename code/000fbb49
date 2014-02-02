@@ -1,8 +1,8 @@
-0x000fbb49    c220         rep #0x20
-0x000fbb4b    a547         lda 0x47
-0x000fbb4d    29ff00       and #0x00ff
-0x000fbb50    0a           asl a
-0x000fbb51    aa           tax
-0x000fbb52    fc5abb       jsr (0xbb5a,x)
-0x000fbb55    229c8f00     jsr 0x008f9c
-0x000fbb59    6b           rtl
+0fbb49    c220         rep #$20
+0fbb4b    a547         lda $47
+0fbb4d    29ff00       and #$00ff
+0fbb50    0a           asl a
+0fbb51    aa           tax
+0fbb52    fc5abb       jsr ($bb5a,x)
+0fbb55    229c8f00     jsr $008f9c
+0fbb59    6b           rtl

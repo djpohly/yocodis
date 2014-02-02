@@ -1,29 +1,29 @@
-0x0004f623    08           php
-0x0004f624    e220         sep #0x20
-0x0004f626    ad150d       lda 0x0d15
-0x0004f629    f035         beq 0x04f660
-0x0004f62b    ae200d       ldx 0x0d20
-0x0004f62e    bf62f604     lda 0x04f662,x
-0x0004f632    0a           asl a
-0x0004f633    aa           tax
-0x0004f634    c220         rep #0x20
-0x0004f636    bf21bd0c     lda 0x0cbd21,x
-0x0004f63a    8500         sta 0x00
-0x0004f63c    e220         sep #0x20
-0x0004f63e    a90c         lda #0x0c
-0x0004f640    8502         sta 0x02
-0x0004f642    a29800       ldx #0x0098
-0x0004f645    860a         stx 0x0a
-0x0004f647    a26000       ldx #0x0060
-0x0004f64a    860c         stx 0x0c
-0x0004f64c    a900         lda #0x00
-0x0004f64e    8503         sta 0x03
-0x0004f650    a950         lda #0x50
-0x0004f652    8504         sta 0x04
-0x0004f654    a901         lda #0x01
-0x0004f656    8505         sta 0x05
-0x0004f658    640f         stz 0x0f
-0x0004f65a    6410         stz 0x10
-0x0004f65c    22a58700     jsr 0x0087a5
-0x0004f660    28           plp
-0x0004f661    6b           rtl
+04f623    08           php
+04f624    e220         sep #$20
+04f626    ad150d       lda $0d15
+04f629    f035         beq $04f660
+04f62b    ae200d       ldx $0d20
+04f62e    bf62f604     lda $04f662,x
+04f632    0a           asl a
+04f633    aa           tax
+04f634    c220         rep #$20
+04f636    bf21bd0c     lda $0cbd21,x
+04f63a    8500         sta $00
+04f63c    e220         sep #$20
+04f63e    a90c         lda #$0c
+04f640    8502         sta $02
+04f642    a29800       ldx #$0098
+04f645    860a         stx $0a
+04f647    a26000       ldx #$0060
+04f64a    860c         stx $0c
+04f64c    a900         lda #$00
+04f64e    8503         sta $03
+04f650    a950         lda #$50
+04f652    8504         sta $04
+04f654    a901         lda #$01
+04f656    8505         sta $05
+04f658    640f         stz $0f
+04f65a    6410         stz $10
+04f65c    22a58700     jsr $0087a5
+04f660    28           plp
+04f661    6b           rtl

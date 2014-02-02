@@ -1,57 +1,57 @@
-0x00009653    08           php
-0x00009654    c220         rep #0x20
-0x00009656    6439         stz 0x39
-0x00009658    643b         stz 0x3b
-0x0000965a    e220         sep #0x20
-0x0000965c    a01800       ldy #0x0018
-0x0000965f    0634         asl 0x34
-0x00009661    2635         rol 0x35
-0x00009663    2636         rol 0x36
-0x00009665    2639         rol 0x39
-0x00009667    263a         rol 0x3a
-0x00009669    263b         rol 0x3b
-0x0000966b    38           sec
-0x0000966c    a539         lda 0x39
-0x0000966e    e537         sbc 0x37
-0x00009670    853c         sta 0x3c
-0x00009672    a53a         lda 0x3a
-0x00009674    e538         sbc 0x38
-0x00009676    853d         sta 0x3d
-0x00009678    a53b         lda 0x3b
-0x0000967a    e900         sbc #0x00
-0x0000967c    900c         bcc 0x00968a
-0x0000967e    853b         sta 0x3b
-0x00009680    a53d         lda 0x3d
-0x00009682    853a         sta 0x3a
-0x00009684    a53c         lda 0x3c
-0x00009686    8539         sta 0x39
-0x00009688    e634         inc 0x34
-0x0000968a    88           dey
-0x0000968b    d0d2         bne 0x00965f
-0x0000968d    28           plp
-0x0000968e    6b           rtl
-0x0000968f    08           php
-0x00009690    c220         rep #0x20
-0x00009692    6438         stz 0x38
-0x00009694    643a         stz 0x3a
-0x00009696    643c         stz 0x3c
-0x00009698    a00f00       ldy #0x000f
-0x0000969b    4636         lsr 0x36
-0x0000969d    900d         bcc 0x0096ac
-0x0000969f    18           clc
-0x000096a0    a534         lda 0x34
-0x000096a2    6538         adc 0x38
-0x000096a4    8538         sta 0x38
-0x000096a6    a53c         lda 0x3c
-0x000096a8    653a         adc 0x3a
-0x000096aa    853a         sta 0x3a
-0x000096ac    0634         asl 0x34
-0x000096ae    263c         rol 0x3c
-0x000096b0    88           dey
-0x000096b1    10e8         bpl 0x00969b
-0x000096b3    a538         lda 0x38
-0x000096b5    8534         sta 0x34
-0x000096b7    a53a         lda 0x3a
-0x000096b9    8536         sta 0x36
-0x000096bb    28           plp
-0x000096bc    6b           rtl
+009653    08           php
+009654    c220         rep #$20
+009656    6439         stz $39
+009658    643b         stz $3b
+00965a    e220         sep #$20
+00965c    a01800       ldy #$0018
+00965f    0634         asl $34
+009661    2635         rol $35
+009663    2636         rol $36
+009665    2639         rol $39
+009667    263a         rol $3a
+009669    263b         rol $3b
+00966b    38           sec
+00966c    a539         lda $39
+00966e    e537         sbc $37
+009670    853c         sta $3c
+009672    a53a         lda $3a
+009674    e538         sbc $38
+009676    853d         sta $3d
+009678    a53b         lda $3b
+00967a    e900         sbc #$00
+00967c    900c         bcc $00968a
+00967e    853b         sta $3b
+009680    a53d         lda $3d
+009682    853a         sta $3a
+009684    a53c         lda $3c
+009686    8539         sta $39
+009688    e634         inc $34
+00968a    88           dey
+00968b    d0d2         bne $00965f
+00968d    28           plp
+00968e    6b           rtl
+00968f    08           php
+009690    c220         rep #$20
+009692    6438         stz $38
+009694    643a         stz $3a
+009696    643c         stz $3c
+009698    a00f00       ldy #$000f
+00969b    4636         lsr $36
+00969d    900d         bcc $0096ac
+00969f    18           clc
+0096a0    a534         lda $34
+0096a2    6538         adc $38
+0096a4    8538         sta $38
+0096a6    a53c         lda $3c
+0096a8    653a         adc $3a
+0096aa    853a         sta $3a
+0096ac    0634         asl $34
+0096ae    263c         rol $3c
+0096b0    88           dey
+0096b1    10e8         bpl $00969b
+0096b3    a538         lda $38
+0096b5    8534         sta $34
+0096b7    a53a         lda $3a
+0096b9    8536         sta $36
+0096bb    28           plp
+0096bc    6b           rtl

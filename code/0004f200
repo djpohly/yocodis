@@ -1,29 +1,29 @@
-0x0004f200    08           php
-0x0004f201    e220         sep #0x20
-0x0004f203    ad140d       lda 0x0d14
-0x0004f206    f035         beq 0x04f23d
-0x0004f208    ae1e0d       ldx 0x0d1e
-0x0004f20b    bf3ff204     lda 0x04f23f,x
-0x0004f20f    0a           asl a
-0x0004f210    aa           tax
-0x0004f211    c220         rep #0x20
-0x0004f213    bf55ae0b     lda 0x0bae55,x
-0x0004f217    8500         sta 0x00
-0x0004f219    e220         sep #0x20
-0x0004f21b    a90b         lda #0x0b
-0x0004f21d    8502         sta 0x02
-0x0004f21f    ae280d       ldx 0x0d28
-0x0004f222    860a         stx 0x0a
-0x0004f224    ae260d       ldx 0x0d26
-0x0004f227    860c         stx 0x0c
-0x0004f229    a900         lda #0x00
-0x0004f22b    8503         sta 0x03
-0x0004f22d    a950         lda #0x50
-0x0004f22f    8504         sta 0x04
-0x0004f231    a901         lda #0x01
-0x0004f233    8505         sta 0x05
-0x0004f235    640f         stz 0x0f
-0x0004f237    6410         stz 0x10
-0x0004f239    22a58700     jsr 0x0087a5
-0x0004f23d    28           plp
-0x0004f23e    6b           rtl
+04f200    08           php
+04f201    e220         sep #$20
+04f203    ad140d       lda $0d14
+04f206    f035         beq $04f23d
+04f208    ae1e0d       ldx $0d1e
+04f20b    bf3ff204     lda $04f23f,x
+04f20f    0a           asl a
+04f210    aa           tax
+04f211    c220         rep #$20
+04f213    bf55ae0b     lda $0bae55,x
+04f217    8500         sta $00
+04f219    e220         sep #$20
+04f21b    a90b         lda #$0b
+04f21d    8502         sta $02
+04f21f    ae280d       ldx $0d28
+04f222    860a         stx $0a
+04f224    ae260d       ldx $0d26
+04f227    860c         stx $0c
+04f229    a900         lda #$00
+04f22b    8503         sta $03
+04f22d    a950         lda #$50
+04f22f    8504         sta $04
+04f231    a901         lda #$01
+04f233    8505         sta $05
+04f235    640f         stz $0f
+04f237    6410         stz $10
+04f239    22a58700     jsr $0087a5
+04f23d    28           plp
+04f23e    6b           rtl

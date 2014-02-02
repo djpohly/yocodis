@@ -1,17 +1,17 @@
-0x000185d5    c220         rep #0x20
-0x000185d7    a20000       ldx #0x0000
-0x000185da    bdfa85       lda 0x85fa,x
-0x000185dd    9d001c       sta 0x1c00,x
-0x000185e0    e8           inx
-0x000185e1    e8           inx
-0x000185e2    e00002       cpx #0x0200
-0x000185e5    d0f3         bne 0x0185da
-0x000185e7    a20000       ldx #0x0000
-0x000185ea    bdfa87       lda 0x87fa,x
-0x000185ed    9d001e       sta 0x1e00,x
-0x000185f0    e8           inx
-0x000185f1    e8           inx
-0x000185f2    e02000       cpx #0x0020
-0x000185f5    d0f3         bne 0x0185ea
-0x000185f7    e220         sep #0x20
-0x000185f9    60           rts
+0185d5    c220         rep #$20
+0185d7    a20000       ldx #$0000
+0185da    bdfa85       lda $85fa,x
+0185dd    9d001c       sta $1c00,x
+0185e0    e8           inx
+0185e1    e8           inx
+0185e2    e00002       cpx #$0200
+0185e5    d0f3         bne $0185da
+0185e7    a20000       ldx #$0000
+0185ea    bdfa87       lda $87fa,x
+0185ed    9d001e       sta $1e00,x
+0185f0    e8           inx
+0185f1    e8           inx
+0185f2    e02000       cpx #$0020
+0185f5    d0f3         bne $0185ea
+0185f7    e220         sep #$20
+0185f9    60           rts

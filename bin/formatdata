@@ -26,4 +26,4 @@ case $len in
 		exit 1
 esac
 
-sed 's,^  \(..\)/\(....\)    \(..\)\(..\)'"$findextra"'.*,0x00\1\2    \3\4'"$replextra"'     '"$data $val,"
+sed 's,^\(..\)\(....\)    \(..\)\(..\)'"$findextra"'.*,\1\2    \3\4'"$replextra"'     '"$data \$$val,"

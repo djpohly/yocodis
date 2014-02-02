@@ -1,4 +1,4 @@
 ; jumptable
-0x0002acb1    b7ac         .da 0xacb7
-0x0002acb3    27ad         .da 0xad27
-0x0002acb5    71ad         .da 0xad71
+02acb1    b7ac         .da $02acb7
+02acb3    27ad         .da $02ad27
+02acb5    71ad         .da $02ad71

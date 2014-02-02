@@ -1,73 +1,73 @@
-0x00008323    22838102     jsr 0x028183
-0x00008327    6b           rtl
-0x00008328    22418e02     jsr 0x028e41
-0x0000832c    6b           rtl
-0x0000832d    2235a902     jsr 0x02a935
-0x00008331    6b           rtl
-0x00008332    224ec402     jsr 0x02c44e
-0x00008336    6b           rtl
-0x00008337    22be9602     jsr 0x0296be
-0x0000833b    6b           rtl
-0x0000833c    22669c02     jsr 0x029c66
-0x00008340    6b           rtl
-0x00008341    2267eb02     jsr 0x02eb67
-0x00008345    6b           rtl
-0x00008346    2241af0a     jsr 0x0aaf41
-0x0000834a    6b           rtl
-0x0000834b    22a3b60a     jsr 0x0ab6a3
-0x0000834f    6b           rtl
-0x00008350    22a3b60a     jsr 0x0ab6a3
-0x00008354    6b           rtl
-0x00008355    2272e60a     jsr 0x0ae672
-0x00008359    6b           rtl
-0x0000835a    2249e70a     jsr 0x0ae749
-0x0000835e    6b           rtl
-0x0000835f    22289302     jsr 0x029328
-0x00008363    6b           rtl
-0x00008364    226cb402     jsr 0x02b46c
-0x00008368    6b           rtl
-0x00008369    6b           rtl
-0x0000836a    227cba0f     jsr 0x0fba7c
-0x0000836e    6b           rtl
-0x0000836f    a90000       lda #0x0000
-0x00008372    22798c00     jsr 0x008c79
-0x00008376    6b           rtl
-0x00008377    220ba00c     jsr 0x0ca00b
-0x0000837b    208783       jsr 0x8387
-0x0000837e    6b           rtl
-0x0000837f    226fa20c     jsr 0x0ca26f
-0x00008383    208783       jsr 0x8387
-0x00008386    6b           rtl
-0x00008387    08           php
-0x00008388    c220         rep #0x20
-0x0000838a    a2bc00       ldx #0x00bc
-0x0000838d    9e4209       stz 0x0942,x
-0x00008390    9e420a       stz 0x0a42,x
-0x00008393    ca           dex
-0x00008394    ca           dex
-0x00008395    10f6         bpl 0x00838d
-0x00008397    9c5201       stz 0x0152
-0x0000839a    28           plp
-0x0000839b    60           rts
-0x0000839c    08           php
-0x0000839d    a544         lda 0x44
-0x0000839f    301f         bmi 0x0083c0
-0x000083a1    4b           phk
-0x000083a2    f4bf83       pea 0x83bf
-0x000083a5    c220         rep #0x20
-0x000083a7    29ff00       and #0x00ff
-0x000083aa    48           pha
-0x000083ab    0a           asl a
-0x000083ac    6301         adc 0x01,s
-0x000083ae    aa           tax
-0x000083af    68           pla
-0x000083b0    e220         sep #0x20
-0x000083b2    bfc48300     lda 0x0083c4,x
-0x000083b6    48           pha
-0x000083b7    c220         rep #0x20
-0x000083b9    bfc28300     lda 0x0083c2,x
-0x000083bd    3a           dec a
-0x000083be    48           pha
-0x000083bf    6b           rtl
-0x000083c0    28           plp
-0x000083c1    60           rts
+008323    22838102     jsr $028183
+008327    6b           rtl
+008328    22418e02     jsr $028e41
+00832c    6b           rtl
+00832d    2235a902     jsr $02a935
+008331    6b           rtl
+008332    224ec402     jsr $02c44e
+008336    6b           rtl
+008337    22be9602     jsr $0296be
+00833b    6b           rtl
+00833c    22669c02     jsr $029c66
+008340    6b           rtl
+008341    2267eb02     jsr $02eb67
+008345    6b           rtl
+008346    2241af0a     jsr $0aaf41
+00834a    6b           rtl
+00834b    22a3b60a     jsr $0ab6a3
+00834f    6b           rtl
+008350    22a3b60a     jsr $0ab6a3
+008354    6b           rtl
+008355    2272e60a     jsr $0ae672
+008359    6b           rtl
+00835a    2249e70a     jsr $0ae749
+00835e    6b           rtl
+00835f    22289302     jsr $029328
+008363    6b           rtl
+008364    226cb402     jsr $02b46c
+008368    6b           rtl
+008369    6b           rtl
+00836a    227cba0f     jsr $0fba7c
+00836e    6b           rtl
+00836f    a90000       lda #$0000
+008372    22798c00     jsr $008c79
+008376    6b           rtl
+008377    220ba00c     jsr $0ca00b
+00837b    208783       jsr $8387
+00837e    6b           rtl
+00837f    226fa20c     jsr $0ca26f
+008383    208783       jsr $8387
+008386    6b           rtl
+008387    08           php
+008388    c220         rep #$20
+00838a    a2bc00       ldx #$00bc
+00838d    9e4209       stz $0942,x
+008390    9e420a       stz $0a42,x
+008393    ca           dex
+008394    ca           dex
+008395    10f6         bpl $00838d
+008397    9c5201       stz $0152
+00839a    28           plp
+00839b    60           rts
+00839c    08           php
+00839d    a544         lda $44
+00839f    301f         bmi $0083c0
+0083a1    4b           phk
+0083a2    f4bf83       pea $83bf
+0083a5    c220         rep #$20
+0083a7    29ff00       and #$00ff
+0083aa    48           pha
+0083ab    0a           asl a
+0083ac    6301         adc $01,s
+0083ae    aa           tax
+0083af    68           pla
+0083b0    e220         sep #$20
+0083b2    bfc48300     lda $0083c4,x
+0083b6    48           pha
+0083b7    c220         rep #$20
+0083b9    bfc28300     lda $0083c2,x
+0083bd    3a           dec a
+0083be    48           pha
+0083bf    6b           rtl
+0083c0    28           plp
+0083c1    60           rts

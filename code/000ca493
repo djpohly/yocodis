@@ -1,50 +1,50 @@
-0x000ca493    c220         rep #0x20
-0x000ca495    a558         lda 0x58
-0x000ca497    290300       and #0x0003
-0x000ca49a    d020         bne 0x0ca4bc
-0x000ca49c    a9136a       lda #0x6a13
-0x000ca49f    853c         sta 0x3c
-0x000ca4a1    a98da4       lda #0xa48d
-0x000ca4a4    8500         sta 0x00
-0x000ca4a6    a90c00       lda #0x000c
-0x000ca4a9    8502         sta 0x02
-0x000ca4ab    ad0e0c       lda 0x0c0e
-0x000ca4ae    8534         sta 0x34
-0x000ca4b0    22858b00     jsr 0x008b85
-0x000ca4b4    ce0e0c       dec 0x0c0e
-0x000ca4b7    1003         bpl 0x0ca4bc
-0x000ca4b9    ee7610       inc 0x1076
-0x000ca4bc    6b           rtl
-0x000ca4bd    c220         rep #0x20
-0x000ca4bf    ad000c       lda 0x0c00
-0x000ca4c2    c92000       cmp #0x0020
-0x000ca4c5    d009         bne 0x0ca4d0
-0x000ca4c7    ee7610       inc 0x1076
-0x000ca4ca    a9ffff       lda #0xffff
-0x000ca4cd    8d000c       sta 0x0c00
-0x000ca4d0    ee000c       inc 0x0c00
-0x000ca4d3    6b           rtl
-0x000ca4d4    c220         rep #0x20
-0x000ca4d6    ad8a10       lda 0x108a
-0x000ca4d9    0a           asl a
-0x000ca4da    aa           tax
-0x000ca4db    bf0ea50c     lda 0x0ca50e,x
-0x000ca4df    aa           tax
-0x000ca4e0    ec000c       cpx 0x0c00
-0x000ca4e3    d025         bne 0x0ca50a
-0x000ca4e5    e220         sep #0x20
-0x000ca4e7    ae8a10       ldx 0x108a
-0x000ca4ea    bf6aa50c     lda 0x0ca56a,x
-0x000ca4ee    c912         cmp #0x12
-0x000ca4f0    f00d         beq 0x0ca4ff
-0x000ca4f2    c220         rep #0x20
-0x000ca4f4    ee8a10       inc 0x108a
-0x000ca4f7    a9ffff       lda #0xffff
-0x000ca4fa    8d000c       sta 0x0c00
-0x000ca4fd    800b         bra 0x0ca50a
-0x000ca4ff    c220         rep #0x20
-0x000ca501    ee7610       inc 0x1076
-0x000ca504    a9ffff       lda #0xffff
-0x000ca507    8d000c       sta 0x0c00
-0x000ca50a    ee000c       inc 0x0c00
-0x000ca50d    6b           rtl
+0ca493    c220         rep #$20
+0ca495    a558         lda $58
+0ca497    290300       and #$0003
+0ca49a    d020         bne $0ca4bc
+0ca49c    a9136a       lda #$6a13
+0ca49f    853c         sta $3c
+0ca4a1    a98da4       lda #$a48d
+0ca4a4    8500         sta $00
+0ca4a6    a90c00       lda #$000c
+0ca4a9    8502         sta $02
+0ca4ab    ad0e0c       lda $0c0e
+0ca4ae    8534         sta $34
+0ca4b0    22858b00     jsr $008b85
+0ca4b4    ce0e0c       dec $0c0e
+0ca4b7    1003         bpl $0ca4bc
+0ca4b9    ee7610       inc $1076
+0ca4bc    6b           rtl
+0ca4bd    c220         rep #$20
+0ca4bf    ad000c       lda $0c00
+0ca4c2    c92000       cmp #$0020
+0ca4c5    d009         bne $0ca4d0
+0ca4c7    ee7610       inc $1076
+0ca4ca    a9ffff       lda #$ffff
+0ca4cd    8d000c       sta $0c00
+0ca4d0    ee000c       inc $0c00
+0ca4d3    6b           rtl
+0ca4d4    c220         rep #$20
+0ca4d6    ad8a10       lda $108a
+0ca4d9    0a           asl a
+0ca4da    aa           tax
+0ca4db    bf0ea50c     lda $0ca50e,x
+0ca4df    aa           tax
+0ca4e0    ec000c       cpx $0c00
+0ca4e3    d025         bne $0ca50a
+0ca4e5    e220         sep #$20
+0ca4e7    ae8a10       ldx $108a
+0ca4ea    bf6aa50c     lda $0ca56a,x
+0ca4ee    c912         cmp #$12
+0ca4f0    f00d         beq $0ca4ff
+0ca4f2    c220         rep #$20
+0ca4f4    ee8a10       inc $108a
+0ca4f7    a9ffff       lda #$ffff
+0ca4fa    8d000c       sta $0c00
+0ca4fd    800b         bra $0ca50a
+0ca4ff    c220         rep #$20
+0ca501    ee7610       inc $1076
+0ca504    a9ffff       lda #$ffff
+0ca507    8d000c       sta $0c00
+0ca50a    ee000c       inc $0c00
+0ca50d    6b           rtl

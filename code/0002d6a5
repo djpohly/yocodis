@@ -1,5 +1,5 @@
-0x0002d6a5    e220         sep #0x20
-0x0002d6a7    ae8a10       ldx 0x108a
-0x0002d6aa    bfb2d602     lda 0x02d6b2,x
-0x0002d6ae    8d9010       sta 0x1090
-0x0002d6b1    60           rts
+02d6a5    e220         sep #$20
+02d6a7    ae8a10       ldx $108a
+02d6aa    bfb2d602     lda $02d6b2,x
+02d6ae    8d9010       sta $1090
+02d6b1    60           rts

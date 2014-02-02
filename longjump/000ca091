@@ -1,6 +1,6 @@
 ; jumptable
-0x000ca091    a0a00c       .dla 0x0ca0a0
-0x000ca094    b8a00c       .dla 0x0ca0b8
-0x000ca097    d8a00c       .dla 0x0ca0d8
-0x000ca09a    efa00c       .dla 0x0ca0ef
-0x000ca09d    fca00c       .dla 0x0ca0fc
+0ca091    a0a00c       .dla $0ca0a0
+0ca094    b8a00c       .dla $0ca0b8
+0ca097    d8a00c       .dla $0ca0d8
+0ca09a    efa00c       .dla $0ca0ef
+0ca09d    fca00c       .dla $0ca0fc

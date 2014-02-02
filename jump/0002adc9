@@ -1,5 +1,5 @@
 ; jumptable
-0x0002adc9    d1ad         .da 0xadd1
-0x0002adcb    10ae         .da 0xae10
-0x0002adcd    17ae         .da 0xae17
-0x0002adcf    1eae         .da 0xae1e
+02adc9    d1ad         .da $02add1
+02adcb    10ae         .da $02ae10
+02adcd    17ae         .da $02ae17
+02adcf    1eae         .da $02ae1e

@@ -1,6 +1,6 @@
 ; jumptable
-0x000abfca    d4bf         .da 0xbfd4
-0x000abfcc    e1bf         .da 0xbfe1
-0x000abfce    e2bf         .da 0xbfe2
-0x000abfd0    2ac0         .da 0xc02a
-0x000abfd2    34c0         .da 0xc034
+0abfca    d4bf         .da $0abfd4
+0abfcc    e1bf         .da $0abfe1
+0abfce    e2bf         .da $0abfe2
+0abfd0    2ac0         .da $0ac02a
+0abfd2    34c0         .da $0ac034

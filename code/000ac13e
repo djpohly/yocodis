@@ -1,18 +1,18 @@
-0x000ac13e    08           php
-0x000ac13f    c220         rep #0x20
-0x000ac141    206ec1       jsr 0xc16e
-0x000ac144    ad0405       lda 0x0504
-0x000ac147    490200       eor #0x0002
-0x000ac14a    aa           tax
-0x000ac14b    bd6403       lda 0x0364,x
-0x000ac14e    3a           dec a
-0x000ac14f    aa           tax
-0x000ac150    bf67c10a     lda 0x0ac167,x
-0x000ac154    29ff00       and #0x00ff
-0x000ac157    8536         sta 0x36
-0x000ac159    228f9600     jsr 0x00968f
-0x000ac15d    ae0405       ldx 0x0504
-0x000ac160    a534         lda 0x34
-0x000ac162    9da203       sta 0x03a2,x
-0x000ac165    28           plp
-0x000ac166    60           rts
+0ac13e    08           php
+0ac13f    c220         rep #$20
+0ac141    206ec1       jsr $c16e
+0ac144    ad0405       lda $0504
+0ac147    490200       eor #$0002
+0ac14a    aa           tax
+0ac14b    bd6403       lda $0364,x
+0ac14e    3a           dec a
+0ac14f    aa           tax
+0ac150    bf67c10a     lda $0ac167,x
+0ac154    29ff00       and #$00ff
+0ac157    8536         sta $36
+0ac159    228f9600     jsr $00968f
+0ac15d    ae0405       ldx $0504
+0ac160    a534         lda $34
+0ac162    9da203       sta $03a2,x
+0ac165    28           plp
+0ac166    60           rts

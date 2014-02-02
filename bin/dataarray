@@ -10,9 +10,8 @@ while read a b i; do
 	bytes=$bytes$b
 done
 
-seg=$(rax2 0x${ofs%%/*})
-ofs=$(rax2 0x${ofs#*/})
+ofs=$(rax2 0x${ofs})
 for i in $(seq 0 $stridehex $((${#bytes} - 1))); do
-	printf '  %02x/%04x    %s\n' $seg $ofs ${bytes:$i:$stridehex}
+	printf '%06x    %s\n' $ofs ${bytes:$i:$stridehex}
 	let ofs+=stride
 done

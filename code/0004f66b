@@ -1,57 +1,57 @@
-0x0004f66b    08           php
-0x0004f66c    e220         sep #0x20
-0x0004f66e    ad170d       lda 0x0d17
-0x0004f671    f030         beq 0x04f6a3
-0x0004f673    a906         lda #0x06
-0x0004f675    0a           asl a
-0x0004f676    aa           tax
-0x0004f677    c220         rep #0x20
-0x0004f679    bf21bd0c     lda 0x0cbd21,x
-0x0004f67d    8500         sta 0x00
-0x0004f67f    e220         sep #0x20
-0x0004f681    a90c         lda #0x0c
-0x0004f683    8502         sta 0x02
-0x0004f685    a2b800       ldx #0x00b8
-0x0004f688    860a         stx 0x0a
-0x0004f68a    a2a000       ldx #0x00a0
-0x0004f68d    860c         stx 0x0c
-0x0004f68f    a900         lda #0x00
-0x0004f691    8503         sta 0x03
-0x0004f693    a950         lda #0x50
-0x0004f695    8504         sta 0x04
-0x0004f697    a901         lda #0x01
-0x0004f699    8505         sta 0x05
-0x0004f69b    640f         stz 0x0f
-0x0004f69d    6410         stz 0x10
-0x0004f69f    22a58700     jsr 0x0087a5
-0x0004f6a3    28           plp
-0x0004f6a4    6b           rtl
-0x0004f6a5    08           php
-0x0004f6a6    e220         sep #0x20
-0x0004f6a8    ad140d       lda 0x0d14
-0x0004f6ab    f035         beq 0x04f6e2
-0x0004f6ad    ae1e0d       ldx 0x0d1e
-0x0004f6b0    bfe4f604     lda 0x04f6e4,x
-0x0004f6b4    0a           asl a
-0x0004f6b5    aa           tax
-0x0004f6b6    c220         rep #0x20
-0x0004f6b8    bf38c80c     lda 0x0cc838,x
-0x0004f6bc    8500         sta 0x00
-0x0004f6be    e220         sep #0x20
-0x0004f6c0    a90c         lda #0x0c
-0x0004f6c2    8502         sta 0x02
-0x0004f6c4    a28800       ldx #0x0088
-0x0004f6c7    860a         stx 0x0a
-0x0004f6c9    a26800       ldx #0x0068
-0x0004f6cc    860c         stx 0x0c
-0x0004f6ce    a900         lda #0x00
-0x0004f6d0    8503         sta 0x03
-0x0004f6d2    a950         lda #0x50
-0x0004f6d4    8504         sta 0x04
-0x0004f6d6    a901         lda #0x01
-0x0004f6d8    8505         sta 0x05
-0x0004f6da    640f         stz 0x0f
-0x0004f6dc    6410         stz 0x10
-0x0004f6de    22a58700     jsr 0x0087a5
-0x0004f6e2    28           plp
-0x0004f6e3    6b           rtl
+04f66b    08           php
+04f66c    e220         sep #$20
+04f66e    ad170d       lda $0d17
+04f671    f030         beq $04f6a3
+04f673    a906         lda #$06
+04f675    0a           asl a
+04f676    aa           tax
+04f677    c220         rep #$20
+04f679    bf21bd0c     lda $0cbd21,x
+04f67d    8500         sta $00
+04f67f    e220         sep #$20
+04f681    a90c         lda #$0c
+04f683    8502         sta $02
+04f685    a2b800       ldx #$00b8
+04f688    860a         stx $0a
+04f68a    a2a000       ldx #$00a0
+04f68d    860c         stx $0c
+04f68f    a900         lda #$00
+04f691    8503         sta $03
+04f693    a950         lda #$50
+04f695    8504         sta $04
+04f697    a901         lda #$01
+04f699    8505         sta $05
+04f69b    640f         stz $0f
+04f69d    6410         stz $10
+04f69f    22a58700     jsr $0087a5
+04f6a3    28           plp
+04f6a4    6b           rtl
+04f6a5    08           php
+04f6a6    e220         sep #$20
+04f6a8    ad140d       lda $0d14
+04f6ab    f035         beq $04f6e2
+04f6ad    ae1e0d       ldx $0d1e
+04f6b0    bfe4f604     lda $04f6e4,x
+04f6b4    0a           asl a
+04f6b5    aa           tax
+04f6b6    c220         rep #$20
+04f6b8    bf38c80c     lda $0cc838,x
+04f6bc    8500         sta $00
+04f6be    e220         sep #$20
+04f6c0    a90c         lda #$0c
+04f6c2    8502         sta $02
+04f6c4    a28800       ldx #$0088
+04f6c7    860a         stx $0a
+04f6c9    a26800       ldx #$0068
+04f6cc    860c         stx $0c
+04f6ce    a900         lda #$00
+04f6d0    8503         sta $03
+04f6d2    a950         lda #$50
+04f6d4    8504         sta $04
+04f6d6    a901         lda #$01
+04f6d8    8505         sta $05
+04f6da    640f         stz $0f
+04f6dc    6410         stz $10
+04f6de    22a58700     jsr $0087a5
+04f6e2    28           plp
+04f6e3    6b           rtl

@@ -1,17 +1,17 @@
-0x000afbcf    a90c00       lda #0x000c
-0x000afbd2    8d2609       sta 0x0926
-0x000afbd5    9c2a09       stz 0x092a
-0x000afbd8    9c2c09       stz 0x092c
-0x000afbdb    9c2809       stz 0x0928
-0x000afbde    9c2e09       stz 0x092e
-0x000afbe1    60           rts
-0x000afbe2    08           php
-0x000afbe3    c220         rep #0x20
-0x000afbe5    a28e00       ldx #0x008e
-0x000afbe8    bff5fb0a     lda 0x0afbf5,x
-0x000afbec    9d0007       sta 0x0700,x
-0x000afbef    ca           dex
-0x000afbf0    ca           dex
-0x000afbf1    10f5         bpl 0x0afbe8
-0x000afbf3    28           plp
-0x000afbf4    60           rts
+0afbcf    a90c00       lda #$000c
+0afbd2    8d2609       sta $0926
+0afbd5    9c2a09       stz $092a
+0afbd8    9c2c09       stz $092c
+0afbdb    9c2809       stz $0928
+0afbde    9c2e09       stz $092e
+0afbe1    60           rts
+0afbe2    08           php
+0afbe3    c220         rep #$20
+0afbe5    a28e00       ldx #$008e
+0afbe8    bff5fb0a     lda $0afbf5,x
+0afbec    9d0007       sta $0700,x
+0afbef    ca           dex
+0afbf0    ca           dex
+0afbf1    10f5         bpl $0afbe8
+0afbf3    28           plp
+0afbf4    60           rts

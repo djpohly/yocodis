@@ -1,22 +1,22 @@
-0x000ab0e2    da           phx
-0x000ab0e3    add601       lda 0x01d6
-0x000ab0e6    d025         bne 0x0ab10d
-0x000ab0e8    a20000       ldx #0x0000
-0x000ab0eb    a90600       lda #0x0006
-0x000ab0ee    cd6403       cmp 0x0364
-0x000ab0f1    b002         bcs 0x0ab0f5
-0x000ab0f3    e8           inx
-0x000ab0f4    e8           inx
-0x000ab0f5    cd6603       cmp 0x0366
-0x000ab0f8    b002         bcs 0x0ab0fc
-0x000ab0fa    e8           inx
-0x000ab0fb    e8           inx
-0x000ab0fc    bf0fb10a     lda 0x0ab10f,x
-0x000ab100    e220         sep #0x20
-0x000ab102    eb           swa
-0x000ab103    cdfa00       cmp 0x00fa
-0x000ab106    f005         beq 0x0ab10d
-0x000ab108    eb           swa
-0x000ab109    22fb810d     jsr 0x0d81fb
-0x000ab10d    fa           plx
-0x000ab10e    60           rts
+0ab0e2    da           phx
+0ab0e3    add601       lda $01d6
+0ab0e6    d025         bne $0ab10d
+0ab0e8    a20000       ldx #$0000
+0ab0eb    a90600       lda #$0006
+0ab0ee    cd6403       cmp $0364
+0ab0f1    b002         bcs $0ab0f5
+0ab0f3    e8           inx
+0ab0f4    e8           inx
+0ab0f5    cd6603       cmp $0366
+0ab0f8    b002         bcs $0ab0fc
+0ab0fa    e8           inx
+0ab0fb    e8           inx
+0ab0fc    bf0fb10a     lda $0ab10f,x
+0ab100    e220         sep #$20
+0ab102    eb           swa
+0ab103    cdfa00       cmp $00fa
+0ab106    f005         beq $0ab10d
+0ab108    eb           swa
+0ab109    22fb810d     jsr $0d81fb
+0ab10d    fa           plx
+0ab10e    60           rts
