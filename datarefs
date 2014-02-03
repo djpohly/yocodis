@@ -1,169 +1,35 @@
---- 07e6f4 ---
-code/02faaf.asm:02fbc6    bff4e607     lda $07e6f4,x
---- 07e6f6 ---
-code/02faaf.asm:02fbd1    bff6e607     lda $07e6f6,x
---- 07e6f8 ---
-code/02faaf.asm:02fbdc    bff8e607     lda $07e6f8,x
---- 07e6fa ---
-code/02faaf.asm:02fbe2    bffae607     lda $07e6fa,x
+--- 078000 ---
+data/009740.asm:009760    0080         .dw $8000
+data/07e50e.asm:07e50e    008007       .dla $078000
+--- 078e7a ---
+data/07e50e.asm:07e511    7a8e07       .dla $078e7a
+--- 079794 ---
+data/07e50e.asm:07e514    949707       .dla $079794
+--- 079e3a ---
+data/069cc0.asm:069cd2    3a9e         .da $069e3a
+data/07e50e.asm:07e517    3a9e07       .dla $079e3a
+--- 07a83c ---
+data/07e50e.asm:07e51a    3ca807       .dla $07a83c
+--- 07b062 ---
+data/07e50e.asm:07e51d    62b007       .dla $07b062
+--- 07b826 ---
+data/07e50e.asm:07e520    26b807       .dla $07b826
+--- 07c08a ---
+data/07e50e.asm:07e523    8ac007       .dla $07c08a
+--- 07c8e8 ---
+data/07e50e.asm:07e526    e8c807       .dla $07c8e8
+--- 07d1ce ---
+data/07e50e.asm:07e529    ced107       .dla $07d1ce
+--- 07e574 ---
+data/07e56c.asm:07e56c    74e5         .da $07e574
+--- 07e5d4 ---
+data/07e56c.asm:07e56e    d4e5         .da $07e5d4
+--- 07e634 ---
+data/07e56c.asm:07e570    34e6         .da $07e634
+--- 07e694 ---
+data/07e56c.asm:07e572    94e6         .da $07e694
 --- 098000 ---
-code/008000.asm:008078    22008001     jsr $018000
-code/008000.asm:008088    af008000     lda $008000
-code/008eae.asm:009027    a20080       ldx #$8000
-code/008eae.asm:009059    9f00807e     sta $7e8000,x
-code/008eae.asm:009086    9f00807e     sta $7e8000,x
-code/008eae.asm:0090a0    b90080       lda $8000,y
-code/008eae.asm:0090a3    9d0080       sta $8000,x
-code/009f5b.asm:009f79    a90080       lda #$8000
-code/009f5b.asm:009f8a    c90080       cmp #$8000
-code/00a291.asm:00a38b    a90080       lda #$8000
-code/028000.asm:0281bf    200080       jsr $8000
-code/028000.asm:0281d3    2200800d     jsr $0d8000
-code/0282fb.asm:028374    2200800d     jsr $0d8000
-code/0282fb.asm:0284bc    a20080       ldx #$8000
-code/0282fb.asm:0284e2    a20080       ldx #$8000
-code/0282fb.asm:0284ed    a20080       ldx #$8000
-code/0282fb.asm:02851c    f40080       pea $8000
-code/0282fb.asm:02852b    a20080       ldx #$8000
-code/0282fb.asm:028543    f40080       pea $8000
-code/0282fb.asm:02856a    f40080       pea $8000
-code/0282fb.asm:028592    f40080       pea $8000
-code/0282fb.asm:0285c5    af008004     lda $048000
-code/0282fb.asm:028686    a20080       ldx #$8000
-code/0282fb.asm:0286c1    a20080       ldx #$8000
-code/0288af.asm:0288c9    f40080       pea $8000
-code/0288af.asm:028913    a20080       ldx #$8000
-code/0288af.asm:02899a    200080       jsr $8000
-code/0288af.asm:028c5c    690080       adc #$8000
-code/028c84.asm:028e72    f40080       pea $8000
-code/028c84.asm:028ecd    2200800d     jsr $0d8000
-code/02900d.asm:029180    bf00800c     lda $0c8000,x
-code/0291f7.asm:0293f1    2200800d     jsr $0d8000
-code/029422.asm:0294ee    a20080       ldx #$8000
-code/02953e.asm:029610    a20080       ldx #$8000
-code/02953e.asm:0296a0    a20080       ldx #$8000
-code/02953e.asm:0296e5    2200800d     jsr $0d8000
-code/029a0f.asm:029a65    a20080       ldx #$8000
-code/029a0f.asm:029aa2    a20080       ldx #$8000
-code/029a0f.asm:029ae6    a20080       ldx #$8000
-code/029a0f.asm:029b23    a20080       ldx #$8000
-code/029a0f.asm:029b5d    a20080       ldx #$8000
-code/029a0f.asm:029ba7    a20080       ldx #$8000
-code/029dc5.asm:029eeb    a20080       ldx #$8000
-code/029dc5.asm:029f05    a20080       ldx #$8000
-code/029dc5.asm:029f17    a20080       ldx #$8000
-code/029fcd.asm:029ff6    a20080       ldx #$8000
-code/029fcd.asm:02a15c    a20080       ldx #$8000
-code/02b061.asm:02b34f    890080       bit #$8000
-code/02b061.asm:02b3e3    2200800d     jsr $0d8000
-code/02b061.asm:02b3ed    2200800d     jsr $0d8000
-code/02b061.asm:02b3f7    2200800d     jsr $0d8000
-code/02b061.asm:02b401    2200800d     jsr $0d8000
-code/02b061.asm:02b41c    2200800d     jsr $0d8000
-code/02b061.asm:02b426    2200800d     jsr $0d8000
-code/02b061.asm:02b430    2200800d     jsr $0d8000
-code/02b061.asm:02b43a    2200800d     jsr $0d8000
-code/02b061.asm:02b4cf    2200800d     jsr $0d8000
-code/02b8b7.asm:02b8cf    f40080       pea $8000
-code/02b8b7.asm:02b8e1    f40080       pea $8000
-code/02b8b7.asm:02b909    f40080       pea $8000
-code/02b8b7.asm:02b931    f40080       pea $8000
-code/02b8b7.asm:02b959    f40080       pea $8000
-code/02bc63.asm:02bc63    a20080       ldx #$8000
-code/02bc63.asm:02bc9c    a90080       lda #$8000
-code/02bfd7.asm:02bffa    a90080       lda #$8000
-code/02c44e.asm:02c4a8    2200800d     jsr $0d8000
-code/02c589.asm:02c6f2    f40080       pea $8000
-code/02c589.asm:02c717    f40080       pea $8000
-code/02e261.asm:02e410    2200800d     jsr $0d8000
-code/02e6a2.asm:02e944    2200800d     jsr $0d8000
-code/02ea89.asm:02eba7    f40080       pea $8000
-code/02ea89.asm:02ebcc    f40080       pea $8000
-code/02ea89.asm:02ebf1    f40080       pea $8000
-code/02ea89.asm:02ec32    2200800d     jsr $0d8000
-code/02ed22.asm:02ed39    290080       and #$8000
-code/02ed22.asm:02edd9    c90080       cmp #$8000
-code/02ed22.asm:02eead    2200800d     jsr $0d8000
-code/02f7c5.asm:02f8c3    890080       bit #$8000
-code/02faaf.asm:02fad4    090080       ora #$8000
-code/0a9339.asm:0a94cd    a90080       lda #$8000
-code/0a9339.asm:0a94df    a90080       lda #$8000
-code/0a9339.asm:0a94f3    a20080       ldx #$8000
-code/0a965d.asm:0a96d1    200080       jsr $8000
-code/0a9984.asm:0a998a    290080       and #$8000
-code/0a9984.asm:0a9bc5    a90080       lda #$8000
-code/0aa237.asm:0aa2aa    090080       ora #$8000
-code/0aa237.asm:0aa2c3    090080       ora #$8000
-code/0aa237.asm:0aa388    090080       ora #$8000
-code/0aa237.asm:0aa3a1    090080       ora #$8000
-code/0aadb5.asm:0aaf6f    a90080       lda #$8000
-code/0aadb5.asm:0aafc7    bf008005     lda $058000,x
-code/0aadb5.asm:0aafe2    a90080       lda #$8000
-code/0aadb5.asm:0ab06c    a90080       lda #$8000
-code/0ab162.asm:0ab1ca    2200800d     jsr $0d8000
-code/0ab1ff.asm:0ab32a    2200800d     jsr $0d8000
-code/0ab1ff.asm:0ab348    2200800d     jsr $0d8000
-code/0ab519.asm:0ab6dc    a90080       lda #$8000
-code/0ab519.asm:0ab7c9    2200800d     jsr $0d8000
-code/0ab904.asm:0ab98c    2200800d     jsr $0d8000
-code/0ab904.asm:0abac6    2200800d     jsr $0d8000
-code/0abcd6.asm:0abd33    a90080       lda #$8000
-code/0abfd4.asm:0ac005    290080       and #$8000
-code/0ac50d.asm:0ac51a    a90080       lda #$8000
-code/0ac50d.asm:0ac52e    a90080       lda #$8000
-code/0ac50d.asm:0ac542    a90080       lda #$8000
-code/0ac50d.asm:0ac556    a90080       lda #$8000
-code/0ac590.asm:0ac592    a90080       lda #$8000
-code/0acf3e.asm:0acffb    2200800d     jsr $0d8000
-code/0ad53e.asm:0ad574    090080       ora #$8000
-code/0ad921.asm:0ad944    a20080       ldx #$8000
-code/0ad921.asm:0ad96d    a20080       ldx #$8000
-code/0ad921.asm:0ada2d    a90080       lda #$8000
-code/0ad921.asm:0ada72    2200800d     jsr $0d8000
-code/0adb1e.asm:0adb21    a90080       lda #$8000
-code/0adbed.asm:0add11    a90080       lda #$8000
-code/0adbed.asm:0add56    a90080       lda #$8000
-code/0adbed.asm:0add79    a90080       lda #$8000
-code/0ae551.asm:0ae726    2200800d     jsr $0d8000
-code/0ae551.asm:0ae7bc    bf008005     lda $058000,x
-code/0ae551.asm:0ae858    a90080       lda #$8000
-code/0aeb05.asm:0aeb13    2200800d     jsr $0d8000
-code/0aeb05.asm:0aeb73    2200800d     jsr $0d8000
-code/0aec49.asm:0aec7e    2200800d     jsr $0d8000
-code/0aec49.asm:0aec91    2200800d     jsr $0d8000
 code/0af350.asm:0af361    bf008009     lda $098000,x
-code/0af350.asm:0af481    090080       ora #$8000
-code/0af350.asm:0af49a    090080       ora #$8000
-code/0af70f.asm:0af712    a90080       lda #$8000
-code/0afaef.asm:0afb22    a90080       lda #$8000
-code/0ca00b.asm:0ca058    2200800d     jsr $0d8000
-code/0ca0a0.asm:0ca13a    a20080       ldx #$8000
-code/0ca0a0.asm:0ca177    a20080       ldx #$8000
-code/0ca0a0.asm:0ca353    2200800d     jsr $0d8000
-code/0ca5e6.asm:0ca7aa    a20080       ldx #$8000
-code/0ca5e6.asm:0ca7db    a20080       ldx #$8000
-code/0ca5e6.asm:0ca7e4    a20080       ldx #$8000
-code/0ca5e6.asm:0ca83c    a00080       ldy #$8000
-code/0ca5e6.asm:0ca848    a20080       ldx #$8000
-code/0ca5e6.asm:0ca86f    a20080       ldx #$8000
-code/0ca5e6.asm:0ca875    a20080       ldx #$8000
-code/0ca5e6.asm:0ca8af    a20080       ldx #$8000
-code/0ca5e6.asm:0ca8e4    a20080       ldx #$8000
-code/0ca5e6.asm:0ca92f    a20080       ldx #$8000
-code/0ca5e6.asm:0ca966    a20080       ldx #$8000
-code/0cad0a.asm:0cad7f    a00080       ldy #$8000
-code/0cad0a.asm:0cad82    a20080       ldx #$8000
-code/0cadb1.asm:0cadb7    bf00807e     lda $7e8000,x
-code/0cadb1.asm:0cadc8    bf00807e     lda $7e8000,x
-code/0d8000.asm:0d801f    090080       ora #$8000
-code/0d8000.asm:0d8069    a20080       ldx #$8000
-code/0d8000.asm:0d8070    e90080       sbc #$8000
-code/0d8000.asm:0d8078    a20080       ldx #$8000
-code/0d8000.asm:0d807f    e90080       sbc #$8000
-code/0fbb64.asm:0fbb69    290080       and #$8000
-code/0fbb64.asm:0fbb89    2200800d     jsr $0d8000
-code/0fbb64.asm:0fbc2c    290080       and #$8000
-code/0fbb64.asm:0fbc45    290080       and #$8000
 --- 09ace7 ---
 code/0caa36.asm:0caa4b    bfe7ac09     lda $09ace7,x
 code/0caa36.asm:0caa83    bfe7ac09     lda $09ace7,x
@@ -172,7 +38,6 @@ code/0a8000.asm:0a81e1    1f02820a     ora $0a8202,x
 --- 0a8206 ---
 code/0a8000.asm:0a81dd    3f06820a     and $0a8206,x
 --- 0a82ef ---
-code/0182e7.asm:0182fe    d0ef         bne $0182ef
 code/0a820a.asm:0a82c2    bfef820a     lda $0a82ef,x
 --- 0a82f0 ---
 code/0a820a.asm:0a82cc    bff0820a     lda $0a82f0,x
@@ -192,7 +57,6 @@ code/0aa237.asm:0aa26c    bfb49d0a     lda $0a9db4,x
 code/0aa12d.asm:0aa208    bf1fa20a     lda $0aa21f,x
 --- 0aa221 ---
 code/0aa12d.asm:0aa20f    bf21a20a     lda $0aa221,x
-code/0ca00b.asm:0ca06a    2221a20c     jsr $0ca221
 --- 0aa223 ---
 code/0aa12d.asm:0aa216    bf23a20a     lda $0aa223,x
 --- 0aa44a ---
