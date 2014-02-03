@@ -1,11 +1,5 @@
 --- 06b29c ---
 code/0af350.asm:0af512    bf9cb206     lda $06b29c,x
---- 06d4f2 ---
-code/0ae551.asm:0ae70b    bff2d406     lda $06d4f2,x
---- 06fabe ---
-code/0ac457.asm:0ac49b    bfbefa06     lda $06fabe,x
---- 06fcbe ---
-code/009ba0.asm:009bda    bfbefc06     lda $06fcbe,x
 --- 07e50e ---
 code/0aadb5.asm:0aaf60    bf0ee507     lda $07e50e,x
 code/0ae551.asm:0ae762    bf0ee507     lda $07e50e,x
