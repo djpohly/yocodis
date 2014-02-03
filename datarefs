@@ -1,6 +1,3 @@
---- 058000 ---
-code/0aadb5.asm:0aafc7    bf008005     lda $058000,x
-code/0ae551.asm:0ae7bc    bf008005     lda $058000,x
 --- 069132 ---
 code/0a8f91.asm:0a9124    b00c         bcs $0a9132
 code/0a8f91.asm:0a9128    f008         beq $0a9132
