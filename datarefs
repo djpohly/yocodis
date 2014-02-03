@@ -1,10 +1,3 @@
---- 03fb2e ---
-code/0288af.asm:028aed    bf2efb03     lda $03fb2e,x
---- 03fb6f ---
-code/0288af.asm:028b19    bf6ffb03     lda $03fb6f,x
-code/0afaef.asm:0afb3e    bf6ffb0a     lda $0afb6f,x
---- 03fc02 ---
-code/02900d.asm:029172    bf02fc03     lda $03fc02,x
 --- 04eb88 ---
 code/00a291.asm:00a2f2    bf88eb04     lda $04eb88,x
 --- 04eb8a ---
