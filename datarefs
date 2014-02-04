@@ -1,97 +1,3 @@
---- 078000 ---
-data/009740.asm:009760    0080         .dw $8000
-data/07e50e.asm:07e50e    008007       .dla $078000
---- 078e7a ---
-data/07e50e.asm:07e511    7a8e07       .dla $078e7a
---- 079794 ---
-data/07e50e.asm:07e514    949707       .dla $079794
---- 079e3a ---
-data/069cc0.asm:069cd2    3a9e         .da $069e3a
-data/07e50e.asm:07e517    3a9e07       .dla $079e3a
---- 07a83c ---
-data/07e50e.asm:07e51a    3ca807       .dla $07a83c
---- 07b062 ---
-data/07e50e.asm:07e51d    62b007       .dla $07b062
---- 07b826 ---
-data/07e50e.asm:07e520    26b807       .dla $07b826
---- 07c08a ---
-data/07e50e.asm:07e523    8ac007       .dla $07c08a
---- 07c8e8 ---
-data/07e50e.asm:07e526    e8c807       .dla $07c8e8
---- 07d1ce ---
-data/07e50e.asm:07e529    ced107       .dla $07d1ce
---- 07e574 ---
-data/07e56c.asm:07e56c    74e5         .da $07e574
---- 07e5d4 ---
-data/07e56c.asm:07e56e    d4e5         .da $07e5d4
---- 07e634 ---
-data/07e56c.asm:07e570    34e6         .da $07e634
---- 07e694 ---
-data/07e56c.asm:07e572    94e6         .da $07e694
---- 098000 ---
-code/0af350.asm:0af361    bf008009     lda $098000,x
---- 09ace7 ---
-code/0caa36.asm:0caa4b    bfe7ac09     lda $09ace7,x
-code/0caa36.asm:0caa83    bfe7ac09     lda $09ace7,x
---- 0a8202 ---
-code/0a8000.asm:0a81e1    1f02820a     ora $0a8202,x
---- 0a8206 ---
-code/0a8000.asm:0a81dd    3f06820a     and $0a8206,x
---- 0a82ef ---
-code/0a820a.asm:0a82c2    bfef820a     lda $0a82ef,x
---- 0a82f0 ---
-code/0a820a.asm:0a82cc    bff0820a     lda $0a82f0,x
---- 0a8b71 ---
-code/0a8a12.asm:0a8b24    bf718b0a     lda $0a8b71,x
---- 0a8b91 ---
-code/0a8a12.asm:0a8b65    bf918b0a     lda $0a8b91,x
---- 0a9873 ---
-code/0a97a4.asm:0a9852    bf73980a     lda $0a9873,x
---- 0a98f4 ---
-code/0a9876.asm:0a98bd    bff4980a     lda $0a98f4,x
---- 0a9951 ---
-code/0a98f8.asm:0a9930    bf51990a     lda $0a9951,x
---- 0a9db4 ---
-code/0aa237.asm:0aa26c    bfb49d0a     lda $0a9db4,x
---- 0aa21f ---
-code/0aa12d.asm:0aa208    bf1fa20a     lda $0aa21f,x
---- 0aa221 ---
-code/0aa12d.asm:0aa20f    bf21a20a     lda $0aa221,x
---- 0aa223 ---
-code/0aa12d.asm:0aa216    bf23a20a     lda $0aa223,x
---- 0aa44a ---
-code/0aa237.asm:0aa428    bf4aa40a     lda $0aa44a,x
---- 0aacdc ---
-code/0aac82.asm:0aacd1    7fdcac0a     adc $0aacdc,x
---- 0ab0da ---
-code/0ab0d0.asm:0ab0d5    bfdab00a     lda $0ab0da,x
---- 0ab10f ---
-code/0ab0e2.asm:0ab0fc    bf0fb10a     lda $0ab10f,x
---- 0ab839 ---
-code/0ab82f.asm:0ab834    bf39b80a     lda $0ab839,x
---- 0ac0e2 ---
-code/02c073.asm:02c0d2    a9e2c0       lda #$c0e2
-code/0abfd4.asm:0ac0d9    bfe2c00a     lda $0ac0e2,x
---- 0ac130 ---
-code/0ac0f6.asm:0ac102    bf30c10a     lda $0ac130,x
---- 0ac137 ---
-code/0ac0f6.asm:0ac11c    bf37c10a     lda $0ac137,x
---- 0ac167 ---
-code/0ac13e.asm:0ac150    bf67c10a     lda $0ac167,x
---- 0ac204 ---
-code/0ac16e.asm:0ac18a    bf04c20a     lda $0ac204,x
---- 0ac206 ---
-code/0ac16e.asm:0ac199    bf06c20a     lda $0ac206,x
---- 0ac208 ---
-code/0ac16e.asm:0ac1a6    7f08c20a     adc $0ac208,x
---- 0ac20a ---
-code/0ac16e.asm:0ac1b3    bf0ac20a     lda $0ac20a,x
---- 0ac20c ---
-code/0ac16e.asm:0ac1c8    bf0cc20a     lda $0ac20c,x
---- 0ac25d ---
-code/0ac222.asm:0ac240    bf5dc20a     lda $0ac25d,x
---- 0ac25e ---
-code/0ac222.asm:0ac245    bf5ec20a     lda $0ac25e,x
 --- 0ac31d ---
 code/0ac299.asm:0ac2db    b040         bcs $0ac31d
 code/0ac299.asm:0ac304    bf1dc30a     lda $0ac31d,x
@@ -475,3 +381,23 @@ code/02900d.asm:0290a0    bf62cf0f     lda $0fcf62,x
 --- 0fd5dd ---
 code/02ea89.asm:02eb20    bfddd50f     lda $0fd5dd,x
 code/02ea89.asm:02eb47    bfddd50f     lda $0fd5dd,x
+--- 078000 ---
+data/07e50e.asm:07e50e    008007       .dla $078000
+--- 078e7a ---
+data/07e50e.asm:07e511    7a8e07       .dla $078e7a
+--- 079794 ---
+data/07e50e.asm:07e514    949707       .dla $079794
+--- 079e3a ---
+data/07e50e.asm:07e517    3a9e07       .dla $079e3a
+--- 07a83c ---
+data/07e50e.asm:07e51a    3ca807       .dla $07a83c
+--- 07b062 ---
+data/07e50e.asm:07e51d    62b007       .dla $07b062
+--- 07b826 ---
+data/07e50e.asm:07e520    26b807       .dla $07b826
+--- 07c08a ---
+data/07e50e.asm:07e523    8ac007       .dla $07c08a
+--- 07c8e8 ---
+data/07e50e.asm:07e526    e8c807       .dla $07c8e8
+--- 07d1ce ---
+data/07e50e.asm:07e529    ced107       .dla $07d1ce
