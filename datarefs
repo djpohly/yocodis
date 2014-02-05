@@ -1,10 +1,3 @@
---- 0ce1b3 ---
-code/04f7c2.asm:04f7d5    bfb3e10c     lda $0ce1b3,x
-code/04f810.asm:04f823    bfb3e10c     lda $0ce1b3,x
-code/04f858.asm:04f866    bfb3e10c     lda $0ce1b3,x
---- 0ce53e ---
-code/02e4c1.asm:02e52e    800e         bra $02e53e
-code/04f858.asm:04f8a5    bf3ee50c     lda $0ce53e,x
 --- 0d83de ---
 code/0d8376.asm:0d839e    bfde830d     lda $0d83de,x
 --- 0de663 ---
