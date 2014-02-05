@@ -4,7 +4,7 @@ last=/dev/null
 for f in code/*; do
 	tail -1 $last | (
 		read a b i p
-		next=$(rax2 $a+$((${#b}/2)) | xargs printf 'code/%06x.asm\n')
+		next=$(rax2 0x$a+$((${#b}/2)) | xargs printf 'code/%06x.asm\n')
 		[ $next = $f ] && echo $last $f
 	)
 	last=$f
