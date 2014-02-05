@@ -1,13 +1,3 @@
---- 0b8f07 ---
-code/04f0d0.asm:04f120    bf078f0b     lda $0b8f07,x
---- 0b9e36 ---
-code/04f161.asm:04f174    bf369e0b     lda $0b9e36,x
-code/04f1b5.asm:04f1c8    bf369e0b     lda $0b9e36,x
---- 0bae55 ---
-code/02add1.asm:02ae26    d02d         bne $02ae55
-code/04f200.asm:04f213    bf55ae0b     lda $0bae55,x
-code/04f24e.asm:04f261    bf55ae0b     lda $0bae55,x
-code/0ae551.asm:0ae55a    f001         beq $0ae55d
 --- 0bbc12 ---
 code/04f3bf.asm:04f3d2    bf12bc0b     lda $0bbc12,x
 code/04f407.asm:04f41a    bf12bc0b     lda $0bbc12,x
