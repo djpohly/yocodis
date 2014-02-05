@@ -1,10 +1,3 @@
---- 0bbc12 ---
-code/04f3bf.asm:04f3d2    bf12bc0b     lda $0bbc12,x
-code/04f407.asm:04f41a    bf12bc0b     lda $0bbc12,x
-code/04f44c.asm:04f45a    bf12bc0b     lda $0bbc12,x
-code/0fbb64.asm:0fbbe5    d02b         bne $0fbc12
---- 0bd00d ---
-code/02b6f1.asm:02b730    bf0dd00b     lda $0bd00d,x
 --- 0ce1b3 ---
 code/04f7c2.asm:04f7d5    bfb3e10c     lda $0ce1b3,x
 code/04f810.asm:04f823    bfb3e10c     lda $0ce1b3,x
