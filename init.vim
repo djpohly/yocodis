@@ -25,7 +25,7 @@ endfunction
 function! GotoInputOffset()
   let ofs = input('Offset: ')
   if ofs != ''
-    call GotoOffset(ofs)
+    call GotoOffset(printf('%06x', str2nr(ofs, 16)))
   endif
 endfunction
 
