@@ -59,3 +59,9 @@
 02c1a1    aa           tax
 02c1a2    f4a7c1       pea $c1a7
 02c1a5    7cb2c1       jmp ($c1b2,x)
+02c1a8    c220         rep #$20
+02c1aa    ada005       lda $05a0
+02c1ad    3a           dec a
+02c1ae    10dd         bpl $02c18d
+02c1b0    28           plp
+02c1b1    60           rts
