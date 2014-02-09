@@ -7,3 +7,4 @@
 02e676    aa           tax
 02e677    f47ce6       pea $e67c
 02e67a    7c7ee6       jmp ($e67e,x)
+02e67d    60           rts

@@ -330,3 +330,5 @@
 0aef57    aa           tax
 0aef58    f45def       pea $ef5d
 0aef5b    7c60ef       jmp ($ef60,x)
+0aef5e    28           plp
+0aef5f    6b           rtl

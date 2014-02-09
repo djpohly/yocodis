@@ -19,3 +19,4 @@
 0ac9f3    aa           tax
 0ac9f4    f4f9c9       pea $c9f9
 0ac9f7    7cfbc9       jmp ($c9fb,x)
+0ac9fa    60           rts

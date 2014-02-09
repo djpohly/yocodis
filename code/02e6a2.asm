@@ -344,3 +344,4 @@
 02ea3b    aa           tax
 02ea3c    f441ea       pea $ea41
 02ea3f    7c43ea       jmp ($ea43,x)
+02ea42    60           rts

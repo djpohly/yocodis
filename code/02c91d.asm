@@ -79,3 +79,4 @@
 02c9e2    aa           tax
 02c9e3    f4e8c9       pea $c9e8
 02c9e6    7ceac9       jmp ($c9ea,x)
+02c9e9    60           rts

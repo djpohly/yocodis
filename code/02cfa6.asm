@@ -141,3 +141,4 @@
 02d11b    aa           tax
 02d11c    f421d1       pea $d121
 02d11f    7c23d1       jmp ($d123,x)
+02d122    60           rts

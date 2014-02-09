@@ -124,3 +124,4 @@
 02dc24    aa           tax
 02dc25    f42adc       pea $dc2a
 02dc28    7c2cdc       jmp ($dc2c,x)
+02dc2b    60           rts

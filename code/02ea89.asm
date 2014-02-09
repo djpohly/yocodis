@@ -194,3 +194,4 @@
 02ec83    aa           tax
 02ec84    f489ec       pea $ec89
 02ec87    7c8bec       jmp ($ec8b,x)
+02ec8a    6b           rtl
