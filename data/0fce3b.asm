@@ -1,0 +1,15 @@
+0fce3b    00fc039b34
+0fce40    000008be34
+0fce45    000502dc34
+0fce4a    00f808bd34
+0fce4f    00fdfaaa34
+0fce54    00f5faa934
+0fce59    00edfaa834
+0fce5e    00fdf29a34
+0fce63    00f5f29934
+0fce68    00edf29834
+0fce6d    000002ba34
+0fce72    00f802b934
+0fce77    000008ca34
+0fce7c    00f808c934
+0fce81    80

@@ -1,0 +1,11 @@
+0fd0c6    0004007b32
+0fd0cb    00fc007a32
+0fd0d0    0004f86b32
+0fd0d5    00fcf86a32
+0fd0da    00ff0a7d32
+0fd0df    00f80a7c32
+0fd0e4    00ff026d32
+0fd0e9    00f8026c32
+0fd0ee    00f509213a
+0fd0f3    00f501113a
+0fd0f8    80

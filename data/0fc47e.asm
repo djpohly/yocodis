@@ -1,0 +1,16 @@
+0fc47e    00edfd0e35
+0fc483    00f6f3dd34
+0fc488    00ff029b34
+0fc48d    000603dc34
+0fc492    00fefbaa34
+0fc497    00f6fba934
+0fc49c    00eefba834
+0fc4a1    00fef39a34
+0fc4a6    00eef39834
+0fc4ab    000009bc34
+0fc4b0    00f809bb34
+0fc4b5    000103ba34
+0fc4ba    00f903b934
+0fc4bf    00f202ab34
+0fc4c4    00f003b830
+0fc4c9    80

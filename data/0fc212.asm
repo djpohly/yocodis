@@ -1,0 +1,7 @@
+0fc212    0001fc533c
+0fc217    00fffc533c
+0fc21c    00fef8513c
+0fc221    00faf8503c
+0fc226    00fe0051bc
+0fc22b    00fa0050bc
+0fc230    80

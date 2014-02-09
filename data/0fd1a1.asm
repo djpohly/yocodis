@@ -1,0 +1,12 @@
+0fd1a1    0004017b32
+0fd1a6    00fc017a32
+0fd1ab    0004f96b32
+0fd1b0    00fcf96a32
+0fd1b5    00f5ff2332
+0fd1ba    00ff0a5f32
+0fd1bf    00f70b5e32
+0fd1c4    00ff024f32
+0fd1c9    00f7034e32
+0fd1ce    00f409213a
+0fd1d3    00f401113a
+0fd1d8    80

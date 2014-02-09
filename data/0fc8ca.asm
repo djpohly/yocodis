@@ -1,0 +1,9 @@
+0fc8ca    0000fa8072
+0fc8cf    00f8fa8032
+0fc8d4    0000f20f72
+0fc8d9    00f8f20f32
+0fc8de    00000ac532
+0fc8e3    00f80ac432
+0fc8e8    000002b532
+0fc8ed    00f802b432
+0fc8f2    80

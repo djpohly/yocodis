@@ -1,0 +1,15 @@
+0fbf9c    00f1f685f2
+0fbfa1    00f9f684f2
+0fbfa6    00f1fe75f2
+0fbfab    00f9fe74f2
+0fbfb0    00fbf887f2
+0fbfb5    0003f886f2
+0fbfba    00fb0077f2
+0fbfbf    00030076f2
+0fbfc4    00fc08617c
+0fbfc9    00f80951fc
+0fbfce    00000950fc
+0fbfd3    00f801517c
+0fbfd8    000001507c
+0fbfdd    00fcfb617c
+0fbfe2    80
