@@ -1,0 +1,58 @@
+#!/bin/bash
+
+codedir=$1
+jumpdir=$2
+addr=$3
+bits=$4
+
+if [ $# -lt 4 ]; then
+	echo "Usage: $(basename "$0") codedir jumpdir addr startbits" 1>&2
+	exit 1
+fi
+
+do_disasm() {
+	addr=$1
+	bits=$2
+	printf '\r%s... ' "$addr" 1>&2
+	is-known "$addr" && return 0
+	disasm-fn $addr $bits > "$codedir/$addr.asm"
+	#less "$codedir/$addr.asm"
+	recurse_disasm "$addr" "$bits"
+}
+
+recurse_disasm() {
+	addr=$1
+	bits=$2
+	grep -w '[rs]ep\|js[rl]\|jm[pl]\|br[al]\|beq\|bne\|b[cv][cs]\|bmi\|bpl' "$codedir/$addr.asm" | while read a b i p; do
+		case $i in
+			rep)
+				[ $(( 0x${p#\#\$} & 0x20 )) -ne 0 ] && bits=16
+				continue
+				;;
+			sep)
+				[ $(( 0x${p#\#\$} & 0x20 )) -ne 0 ] && bits=8
+				continue
+				;;
+		esac
+		case $p in
+			\$0?????)
+				do_disasm "${p#\$}" "$bits"
+				;;
+			\$????)
+				do_disasm "${a:0:2}${p#\$}" "$bits"
+				;;
+			\(\$????,[xy]\))
+				jumpaddr=${a:0:2}${p:2:4}
+				printf 'Jump table at %s\n' "$jumpaddr" 1>&2
+				touch "$jumpdir/$jumpaddr.asm"
+				;;
+			*)
+				printf 'Unrecognized pattern %s at %s, punting\n' "$i $p" "$a" 1>&2
+				return 1
+				;;
+		esac
+	done
+}
+
+do_disasm "$addr" "$bits"
+echo done 1>&2
