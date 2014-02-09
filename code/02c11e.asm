@@ -39,3 +39,23 @@
 02c178    ee1e11       inc $111e
 02c17b    ce2211       dec $1122
 02c17e    60           rts
+02c17f    08           php
+02c180    c220         rep #$20
+02c182    ad4c08       lda $084c
+02c185    c90200       cmp #$0002
+02c188    9026         bcc $02c1b0
+02c18a    a90700       lda #$0007
+02c18d    8da005       sta $05a0
+02c190    0a           asl a
+02c191    0a           asl a
+02c192    0a           asl a
+02c193    0a           asl a
+02c194    a8           tay
+02c195    b90007       lda $0700,y
+02c198    3010         bmi $02c1aa
+02c19a    ada005       lda $05a0
+02c19d    29ff00       and #$00ff
+02c1a0    0a           asl a
+02c1a1    aa           tax
+02c1a2    f4a7c1       pea $c1a7
+02c1a5    7cb2c1       jmp ($c1b2,x)

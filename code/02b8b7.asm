@@ -133,3 +133,69 @@
 02ba11    adba10       lda $10ba
 02ba14    8f08e87e     sta $7ee808
 02ba18    60           rts
+02ba19    c220         rep #$20
+02ba1b    a558         lda $58
+02ba1d    4a           lsr a
+02ba1e    b004         bcs $02ba24
+02ba20    e681         inc $81
+02ba22    c67d         dec $7d
+02ba24    60           rts
+02ba25    c220         rep #$20
+02ba27    ce7c10       dec $107c
+02ba2a    1015         bpl $02ba41
+02ba2c    e220         sep #$20
+02ba2e    a567         lda $67
+02ba30    4904         eor #$04
+02ba32    8567         sta $67
+02ba34    a28000       ldx #$0080
+02ba37    8904         bit #$04
+02ba39    d003         bne $02ba3e
+02ba3b    a24000       ldx #$0040
+02ba3e    8e7c10       stx $107c
+02ba41    60           rts
+02ba42    c220         rep #$20
+02ba44    ad0e09       lda $090e
+02ba47    c90300       cmp #$0003
+02ba4a    d010         bne $02ba5c
+02ba4c    9c0210       stz $1002
+02ba4f    206fba       jsr $ba6f
+02ba52    a21200       ldx #$0012
+02ba55    8e0210       stx $1002
+02ba58    2097ba       jsr $ba97
+02ba5b    60           rts
+02ba5c    a20200       ldx #$0002
+02ba5f    8e0210       stx $1002
+02ba62    2097ba       jsr $ba97
+02ba65    a21000       ldx #$0010
+02ba68    8e0210       stx $1002
+02ba6b    206fba       jsr $ba6f
+02ba6e    60           rts
+02ba6f    c220         rep #$20
+02ba71    a20200       ldx #$0002
+02ba74    bf0dd80b     lda $0bd80d,x
+02ba78    8500         sta $00
+02ba7a    a90b00       lda #$000b
+02ba7d    8d0200       sta $0002
+02ba80    ad0210       lda $1002
+02ba83    8d0300       sta $0003
+02ba86    6404         stz $04
+02ba88    ad2011       lda $1120
+02ba8b    850a         sta $0a
+02ba8d    ad1e11       lda $111e
+02ba90    850c         sta $0c
+02ba92    22a58700     jsr $0087a5
+02ba96    60           rts
+02ba97    a20000       ldx #$0000
+02ba9a    bf0dd80b     lda $0bd80d,x
+02ba9e    8500         sta $00
+02baa0    a90b00       lda #$000b
+02baa3    8d0200       sta $0002
+02baa6    ad0210       lda $1002
+02baa9    8d0300       sta $0003
+02baac    6404         stz $04
+02baae    ad2411       lda $1124
+02bab1    850a         sta $0a
+02bab3    ad2211       lda $1122
+02bab6    850c         sta $0c
+02bab8    22a58700     jsr $0087a5
+02babc    60           rts
