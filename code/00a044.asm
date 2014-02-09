@@ -37,3 +37,37 @@
 00a08d    60           rts
 00a08e    18           clc
 00a08f    60           rts
+00a090    a414         ldy $14
+00a092    a5d6         lda $d6
+00a094    8004         bra $00a09a
+00a096    18           clc
+00a097    690e00       adc #$000e
+00a09a    88           dey
+00a09b    10f9         bpl $00a096
+00a09d    85d6         sta $d6
+00a09f    a516         lda $16
+00a0a1    38           sec
+00a0a2    e514         sbc $14
+00a0a4    8518         sta $18
+00a0a6    a6da         ldx $da
+00a0a8    da           phx
+00a0a9    a410         ldy $10
+00a0ab    b7d6         lda [$d6],y
+00a0ad    9f00007e     sta $7e0000,x
+00a0b1    e8           inx
+00a0b2    e8           inx
+00a0b3    c8           iny
+00a0b4    c8           iny
+00a0b5    c412         cpy $12
+00a0b7    90f2         bcc $00a0ab
+00a0b9    a5d6         lda $d6
+00a0bb    18           clc
+00a0bc    690e00       adc #$000e
+00a0bf    85d6         sta $d6
+00a0c1    68           pla
+00a0c2    18           clc
+00a0c3    694000       adc #$0040
+00a0c6    aa           tax
+00a0c7    c618         dec $18
+00a0c9    d0dd         bne $00a0a8
+00a0cb    60           rts

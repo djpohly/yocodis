@@ -218,3 +218,4 @@
 0281e4    aa           tax
 0281e5    f4ea81       pea $81ea
 0281e8    7cec81       jmp ($81ec,x)
+0281eb    6b           rtl

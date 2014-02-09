@@ -26,3 +26,7 @@
 00a016    aa           tax
 00a017    f41ca0       pea $a01c
 00a01a    7c24a0       jmp ($a024,x)
+00a01d    9003         bcc $00a022
+00a01f    2090a0       jsr $a090
+00a022    28           plp
+00a023    6b           rtl

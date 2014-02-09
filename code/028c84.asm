@@ -239,3 +239,4 @@
 028ee7    aa           tax
 028ee8    f4ed8e       pea $8eed
 028eeb    7cef8e       jmp ($8eef,x)
+028eee    6b           rtl

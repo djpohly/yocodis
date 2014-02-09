@@ -94,3 +94,4 @@
 028ff5    aa           tax
 028ff6    f4fb8f       pea $8ffb
 028ff9    7cfd8f       jmp ($8ffd,x)
+028ffc    6b           rtl
