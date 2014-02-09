@@ -298,3 +298,5 @@
 0082e2    3a           dec a
 0082e3    48           pha
 0082e4    6b           rtl
+0082e5    28           plp
+0082e6    60           rts
