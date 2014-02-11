@@ -22,6 +22,7 @@ int decompress2(uint8_t *buf, int ca)
 	int cd = 0;
 	uint16_t a;
 	int16_t sa;
+	int y;
 lbl_009042:
 	if (cd != 0)
 		goto lbl_009050;
@@ -33,43 +34,37 @@ lbl_009050:
 	cd--;
 	int carry = cc & 1;
 	cc >>= 1;
-	if (!carry)
-		goto lbl_009061;
-	if (read_bytes(buf + x, 1))
-		return 1;
-	x++;
-	goto lbl_0090ae;
-lbl_009061:
+	if (carry) {
+		if (read_bytes(buf + x, 1))
+			return 1;
+		x++;
+		goto lbl_0090ae;
+	}
 	if (read_bytes(&a, 2))
 		return 1;
 	int ce = (a & 0xf) + 2;
 	int d0 = a >> 4;
 	sa = x - d0;
-	if (sa >= 0)
-		goto lbl_009098;
-	d0 = -sa - 1;
+	if (sa < 0) {
+		d0 = -sa - 1;
 lbl_009086:
-	buf[x] = 0;
-	x++;
-	ce--;
-	if (ce < 0)
-		goto lbl_0090ad;
-	d0--;
-	if (d0 >= 0)
-		goto lbl_009086;
-	int y = 0;
-	goto lbl_00909b;
-lbl_009098:
-	y = sa;
-lbl_00909b:
+		buf[x] = 0;
+		x++;
+		ce--;
+		if (ce < 0)
+			goto lbl_0090ae;
+		d0--;
+		if (d0 >= 0)
+			goto lbl_009086;
+		y = 0;
+	} else {
+		y = sa;
+	}
 lbl_0090a0:
-	buf[x] = buf[y];
-	x++;
-	y++;
+	buf[x++] = buf[y++];
 	ce--;
 	if (ce >= 0)
 		goto lbl_0090a0;
-lbl_0090ad:
 lbl_0090ae:
 	if (x < ca)
 		goto lbl_009042;
