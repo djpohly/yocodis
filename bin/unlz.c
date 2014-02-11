@@ -48,16 +48,12 @@ int decompress2(uint8_t *buf, int ca)
 		int chunklen = (a & 0xf) + 3;
 		int disp = a >> 4;
 		int ofs = x - disp;
-		if (ofs < 0) {
-			int b = -ofs;
-			while (b > 0) {
-				buf[x++] = 0;
-				chunklen--;
-				if (chunklen <= 0)
-					goto lbl_0090ae;
-				b--;
-			}
-			ofs = 0;
+		while (ofs < 0) {
+			buf[x++] = 0;
+			chunklen--;
+			if (chunklen <= 0)
+				goto lbl_0090ae;
+			ofs++;
 		}
 		for (; chunklen > 0; chunklen--)
 			buf[x++] = buf[ofs++];
