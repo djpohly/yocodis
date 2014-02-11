@@ -22,7 +22,7 @@ int decompress2(uint8_t *buf, int ca)
 	assert(ca > 0);
 	int x = 0;
 	int bit = 128;
-	uint16_t a;
+	uint16_t code;
 	int16_t sa;
 	while (x < ca) {
 		uint8_t flags;
@@ -41,20 +41,12 @@ int decompress2(uint8_t *buf, int ca)
 		}
 
 		// 0 bit - pointer to a run
-		if (read_bytes(&a, 2))
+		if (read_bytes(&code, 2))
 			return 1;
-		int left = (a & 0xf) + 3;
-		int disp = a >> 4;
-		int ofs = x - disp;
-		while (ofs < 0) {
-			buf[x++] = 0;
-			left--;
-			if (left <= 0)
-				break;
-			ofs++;
-		}
-		for (; left > 0; left--)
-			buf[x++] = buf[ofs++];
+		int left;
+		int ofs = x - (code >> 4);
+		for (left = (code & 0xf) + 3; left > 0; left--, ofs++)
+			buf[x++] = ofs < 0 ? 0 : buf[ofs];
 	}
 	return 0;
 }
