@@ -52,12 +52,12 @@ int decompress2(uint8_t *buf, int ca)
 			buf[x++] = 0;
 			chunklen--;
 			if (chunklen <= 0)
-				goto lbl_0090ae;
+				goto outer_continue;
 			ofs++;
 		}
 		for (; chunklen > 0; chunklen--)
 			buf[x++] = buf[ofs++];
-lbl_0090ae:
+outer_continue:
 		;
 	}
 	return 0;
