@@ -47,22 +47,20 @@ int decompress2(uint8_t *buf, int ca)
 		int d0 = a >> 4;
 		sa = x - d0;
 		if (sa < 0) {
-			d0 = -sa - 1;
-			do {
+			d0 = -sa;
+			while (d0 > 0) {
 				buf[x++] = 0;
 				ce--;
 				if (ce <= 0)
 					goto lbl_0090ae;
 				d0--;
-			} while (d0 >= 0);
+			}
 			y = 0;
 		} else {
 			y = sa;
 		}
-		do {
+		for (; ce > 0; ce--)
 			buf[x++] = buf[y++];
-			ce--;
-		} while (ce > 0);
 lbl_0090ae:
 		;
 	}
