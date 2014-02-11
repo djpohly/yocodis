@@ -50,12 +50,12 @@
 02b764    a2aefa       ldx #$faae
 02b767    a0c060       ldy #$60c0
 02b76a    a97f00       lda #$007f
-02b76d    547e03       mvn $7e,$03
+02b76d    547e03       mvn $03,$7e
 02b770    800c         bra $02b77e
 02b772    a22efa       ldx #$fa2e
 02b775    a0c060       ldy #$60c0
 02b778    a97f00       lda #$007f
-02b77b    547e03       mvn $7e,$03
+02b77b    547e03       mvn $03,$7e
 02b77e    a94020       lda #$2040
 02b781    8d6263       sta $6362
 02b784    a95020       lda #$2050
@@ -165,7 +165,7 @@
 02b886    a2caf7       ldx #$f7ca
 02b889    a0a01a       ldy #$1aa0
 02b88c    a91f00       lda #$001f
-02b88f    540200       mvn $02,$00
+02b88f    540200       mvn $00,$02
 02b892    ab           plb
 02b893    60           rts
 02b894    c220         rep #$20

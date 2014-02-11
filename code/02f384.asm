@@ -3,21 +3,21 @@
 02f387    a26af6       ldx #$f66a
 02f38a    a02019       ldy #$1920
 02f38d    a93f00       lda #$003f
-02f390    540200       mvn $02,$00
+02f390    540200       mvn $00,$02
 02f393    a2aaf6       ldx #$f6aa
 02f396    a0401a       ldy #$1a40
 02f399    a93f00       lda #$003f
-02f39c    540200       mvn $02,$00
+02f39c    540200       mvn $00,$02
 02f39f    a2cb9f       ldx #$9fcb
 02f3a2    a0c019       ldy #$19c0
 02f3a5    a91f00       lda #$001f
-02f3a8    54020c       mvn $02,$0c
+02f3a8    54020c       mvn $0c,$02
 02f3ab    a90100       lda #$0001
 02f3ae    8dd619       sta $19d6
 02f3b1    a2aaf6       ldx #$f6aa
 02f3b4    a0801a       ldy #$1a80
 02f3b7    a91f00       lda #$001f
-02f3ba    540200       mvn $02,$00
+02f3ba    540200       mvn $00,$02
 02f3bd    ab           plb
 02f3be    ee0001       inc $0100
 02f3c1    60           rts

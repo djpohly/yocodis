@@ -45,7 +45,7 @@
 02c5ea    a248de       ldx #$de48
 02c5ed    a00020       ldy #$2000
 02c5f0    a9ff07       lda #$07ff
-02c5f3    547e04       mvn $7e,$04
+02c5f3    547e04       mvn $04,$7e
 02c5f6    ab           plb
 02c5f7    60           rts
 02c5f8    08           php
@@ -54,7 +54,7 @@
 02c5fc    a248d6       ldx #$d648
 02c5ff    a00040       ldy #$4000
 02c602    a9ff07       lda #$07ff
-02c605    547e04       mvn $7e,$04
+02c605    547e04       mvn $04,$7e
 02c608    ab           plb
 02c609    9c0005       stz $0500
 02c60c    20effb       jsr $fbef
@@ -128,11 +128,11 @@
 02c6c0    a2eaf6       ldx #$f6ea
 02c6c3    a04019       ldy #$1940
 02c6c6    a91f00       lda #$001f
-02c6c9    540200       mvn $02,$00
+02c6c9    540200       mvn $00,$02
 02c6cc    a2aaf6       ldx #$f6aa
 02c6cf    a0801a       ldy #$1a80
 02c6d2    a91f00       lda #$001f
-02c6d5    540200       mvn $02,$00
+02c6d5    540200       mvn $00,$02
 02c6d8    ab           plb
 02c6d9    60           rts
 02c6da    e220         sep #$20

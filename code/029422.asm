@@ -18,7 +18,7 @@
 029441    a28cf2       ldx #$f28c
 029444    a04069       ldy #$6940
 029447    a93f03       lda #$033f
-02944a    547e0c       mvn $7e,$0c
+02944a    547e0c       mvn $0c,$7e
 02944d    ab           plb
 02944e    eea810       inc $10a8
 029451    225a8500     jsr $00855a
@@ -35,7 +35,7 @@
 02946d    a28cfa       ldx #$fa8c
 029470    a04069       ldy #$6940
 029473    a9bf03       lda #$03bf
-029476    547e0c       mvn $7e,$0c
+029476    547e0c       mvn $0c,$7e
 029479    ab           plb
 02947a    eea810       inc $10a8
 02947d    225a8500     jsr $00855a
@@ -52,7 +52,7 @@
 029499    a2ccf5       ldx #$f5cc
 02949c    a04069       ldy #$6940
 02949f    a9bf04       lda #$04bf
-0294a2    547e0c       mvn $7e,$0c
+0294a2    547e0c       mvn $0c,$7e
 0294a5    ab           plb
 0294a6    eea810       inc $10a8
 0294a9    225a8500     jsr $00855a
@@ -68,7 +68,7 @@
 0294c0    a2bb91       ldx #$91bb
 0294c3    a00040       ldy #$4000
 0294c6    a9ff07       lda #$07ff
-0294c9    547e0c       mvn $7e,$0c
+0294c9    547e0c       mvn $0c,$7e
 0294cc    ab           plb
 0294cd    e220         sep #$20
 0294cf    a2608a       ldx #$8a60
@@ -81,7 +81,7 @@
 0294df    a2bb89       ldx #$89bb
 0294e2    a00040       ldy #$4000
 0294e5    a9ff07       lda #$07ff
-0294e8    547e0c       mvn $7e,$0c
+0294e8    547e0c       mvn $0c,$7e
 0294eb    ab           plb
 0294ec    e220         sep #$20
 0294ee    a20080       ldx #$8000

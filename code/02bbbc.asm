@@ -10,11 +10,11 @@
 02bbd2    a214d2       ldx #$d214
 02bbd5    a00040       ldy #$4000
 02bbd8    a9ff05       lda #$05ff
-02bbdb    547e05       mvn $7e,$05
+02bbdb    547e05       mvn $05,$7e
 02bbde    a214da       ldx #$da14
 02bbe1    a00048       ldy #$4800
 02bbe4    a9ff05       lda #$05ff
-02bbe7    547e05       mvn $7e,$05
+02bbe7    547e05       mvn $05,$7e
 02bbea    ab           plb
 02bbeb    a23e00       ldx #$003e
 02bbee    bfc0457e     lda $7e45c0,x

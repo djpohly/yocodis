@@ -403,7 +403,7 @@
 0091a1    9b           txy
 0091a2    a2d600       ldx #$00d6
 0091a5    a90f00       lda #$000f
-0091a8    547e00       mvn $7e,$00
+0091a8    547e00       mvn $00,$7e
 0091ab    e220         sep #$20
 0091ad    bb           tyx
 0091ae    e4ce         cpx $ce

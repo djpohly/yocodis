@@ -35,7 +35,7 @@
 009b16    a2aac9       ldx #$c9aa
 009b19    a000a6       ldy #$a600
 009b1c    a9ff01       lda #$01ff
-009b1f    547e08       mvn $7e,$08
+009b1f    547e08       mvn $08,$7e
 009b22    ab           plb
 009b23    80bf         bra $009ae4
 009b25    08           php

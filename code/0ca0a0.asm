@@ -95,7 +95,7 @@
 0ca18c    a24685       ldx #$8546
 0ca18f    a00060       ldy #$6000
 0ca192    a9ff07       lda #$07ff
-0ca195    547e04       mvn $7e,$04
+0ca195    547e04       mvn $04,$7e
 0ca198    ab           plb
 0ca199    e220         sep #$20
 0ca19b    a901         lda #$01
@@ -118,7 +118,7 @@
 0ca1c6    a22af4       ldx #$f42a
 0ca1c9    a00019       ldy #$1900
 0ca1cc    a91f00       lda #$001f
-0ca1cf    540c00       mvn $0c,$00
+0ca1cf    540c00       mvn $00,$0c
 0ca1d2    ab           plb
 0ca1d3    a2ff7f       ldx #$7fff
 0ca1d6    8e0219       stx $1902
@@ -127,7 +127,7 @@
 0ca1dc    a226f6       ldx #$f626
 0ca1df    a0001a       ldy #$1a00
 0ca1e2    a91f00       lda #$001f
-0ca1e5    540c09       mvn $0c,$09
+0ca1e5    540c09       mvn $09,$0c
 0ca1e8    ab           plb
 0ca1e9    e220         sep #$20
 0ca1eb    9c7043       stz $4370

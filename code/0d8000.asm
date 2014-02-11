@@ -37,7 +37,7 @@
 0d8048    38           sec
 0d8049    e9f1ea       sbc #$eaf1
 0d804c    8b           phb
-0d804d    547f0d       mvn $7f,$0d
+0d804d    547f0d       mvn $0d,$7f
 0d8050    ab           plb
 0d8051    a90000       lda #$0000
 0d8054    8520         sta $20
@@ -53,21 +53,21 @@
 0d806f    38           sec
 0d8070    e90080       sbc #$8000
 0d8073    8b           phb
-0d8074    547f0f       mvn $7f,$0f
+0d8074    547f0f       mvn $0f,$7f
 0d8077    ab           plb
 0d8078    a20080       ldx #$8000
 0d807b    a9dffe       lda #$fedf
 0d807e    38           sec
 0d807f    e90080       sbc #$8000
 0d8082    8b           phb
-0d8083    547f0e       mvn $7f,$0e
+0d8083    547f0e       mvn $0e,$7f
 0d8086    ab           plb
 0d8087    a28ae6       ldx #$e68a
 0d808a    a9f0ea       lda #$eaf0
 0d808d    38           sec
 0d808e    e98ae6       sbc #$e68a
 0d8091    8b           phb
-0d8092    547f0d       mvn $7f,$0d
+0d8092    547f0d       mvn $0d,$7f
 0d8095    ab           plb
 0d8096    a90000       lda #$0000
 0d8099    8520         sta $20

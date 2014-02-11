@@ -244,11 +244,11 @@
 0aafcb    aa           tax
 0aafcc    a00020       ldy #$2000
 0aafcf    a9ff07       lda #$07ff
-0aafd2    547e05       mvn $7e,$05
+0aafd2    547e05       mvn $05,$7e
 0aafd5    a2bef2       ldx #$f2be
 0aafd8    a00040       ldy #$4000
 0aafdb    a9ff07       lda #$07ff
-0aafde    547e06       mvn $7e,$06
+0aafde    547e06       mvn $06,$7e
 0aafe1    ab           plb
 0aafe2    a90080       lda #$8000
 0aafe5    85c4         sta $c4

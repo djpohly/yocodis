@@ -199,7 +199,7 @@
 0af4d4    690000       adc #$0000
 0af4d7    a8           tay
 0af4d8    a9ff00       lda #$00ff
-0af4db    547f0a       mvn $7f,$0a
+0af4db    547f0a       mvn $0a,$7f
 0af4de    ab           plb
 0af4df    9c8609       stz $0986
 0af4e2    28           plp
@@ -214,7 +214,7 @@
 0af4f2    aa           tax
 0af4f3    a00003       ldy #$0300
 0af4f6    a9ff00       lda #$00ff
-0af4f9    540a7f       mvn $0a,$7f
+0af4f9    540a7f       mvn $7f,$0a
 0af4fc    ab           plb
 0af4fd    9c8609       stz $0986
 0af500    2045f6       jsr $f645

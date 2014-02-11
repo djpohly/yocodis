@@ -89,7 +89,7 @@
 0af046    a2f2cc       ldx #$ccf2
 0af049    a00020       ldy #$2000
 0af04c    a9ff07       lda #$07ff
-0af04f    547e06       mvn $7e,$06
+0af04f    547e06       mvn $06,$7e
 0af052    ab           plb
 0af053    28           plp
 0af054    60           rts
@@ -138,7 +138,7 @@
 0af0b0    a2beea       ldx #$eabe
 0af0b3    a00040       ldy #$4000
 0af0b6    a9ff07       lda #$07ff
-0af0b9    547e06       mvn $7e,$06
+0af0b9    547e06       mvn $06,$7e
 0af0bc    ab           plb
 0af0bd    e220         sep #$20
 0af0bf    a911         lda #$11

@@ -20,7 +20,7 @@
 0ca5c8    a2e6f5       ldx #$f5e6
 0ca5cb    a0c01b       ldy #$1bc0
 0ca5ce    a93f00       lda #$003f
-0ca5d1    540c09       mvn $0c,$09
+0ca5d1    540c09       mvn $09,$0c
 0ca5d4    ab           plb
 0ca5d5    9c0e0c       stz $0c0e
 0ca5d8    ee7610       inc $1076

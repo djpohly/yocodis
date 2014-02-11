@@ -258,11 +258,11 @@
 0ae7c0    aa           tax
 0ae7c1    a00020       ldy #$2000
 0ae7c4    a9ff07       lda #$07ff
-0ae7c7    547e05       mvn $7e,$05
+0ae7c7    547e05       mvn $05,$7e
 0ae7ca    a23289       ldx #$8932
 0ae7cd    a00040       ldy #$4000
 0ae7d0    a9ff07       lda #$07ff
-0ae7d3    547e06       mvn $7e,$06
+0ae7d3    547e06       mvn $06,$7e
 0ae7d6    ab           plb
 0ae7d7    a94f20       lda #$204f
 0ae7da    a20060       ldx #$6000

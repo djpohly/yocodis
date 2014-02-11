@@ -61,7 +61,7 @@
 029e57    a22ab4       ldx #$b42a
 029e5a    a00020       ldy #$2000
 029e5d    a9ff0f       lda #$0fff
-029e60    547e00       mvn $7e,$00
+029e60    547e00       mvn $00,$7e
 029e63    ab           plb
 029e64    60           rts
 029e65    8b           phb
@@ -69,7 +69,7 @@
 029e68    a22ac4       ldx #$c42a
 029e6b    a00020       ldy #$2000
 029e6e    a9ff0f       lda #$0fff
-029e71    547e00       mvn $7e,$00
+029e71    547e00       mvn $00,$7e
 029e74    ab           plb
 029e75    60           rts
 029e76    8b           phb
@@ -77,7 +77,7 @@
 029e79    a22aa4       ldx #$a42a
 029e7c    a00020       ldy #$2000
 029e7f    a9ff0f       lda #$0fff
-029e82    547e00       mvn $7e,$00
+029e82    547e00       mvn $00,$7e
 029e85    ab           plb
 029e86    60           rts
 029e87    8b           phb
@@ -85,7 +85,7 @@
 029e8a    a22ad4       ldx #$d42a
 029e8d    a00020       ldy #$2000
 029e90    a9ff0f       lda #$0fff
-029e93    547e00       mvn $7e,$00
+029e93    547e00       mvn $00,$7e
 029e96    ab           plb
 029e97    60           rts
 029e98    8b           phb
@@ -93,7 +93,7 @@
 029e9b    a22ae4       ldx #$e42a
 029e9e    a00020       ldy #$2000
 029ea1    a9ff0f       lda #$0fff
-029ea4    547e00       mvn $7e,$00
+029ea4    547e00       mvn $00,$7e
 029ea7    ab           plb
 029ea8    60           rts
 029ea9    e220         sep #$20
@@ -152,6 +152,6 @@
 029f27    a2c8b0       ldx #$b0c8
 029f2a    a08240       ldy #$4082
 029f2d    a9f701       lda #$01f7
-029f30    547e04       mvn $7e,$04
+029f30    547e04       mvn $04,$7e
 029f33    ab           plb
 029f34    60           rts

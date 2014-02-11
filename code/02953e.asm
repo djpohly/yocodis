@@ -139,14 +139,14 @@
 0296a0    a20080       ldx #$8000
 0296a3    a00019       ldy #$1900
 0296a6    a91f00       lda #$001f
-0296a9    54020b       mvn $02,$0b
+0296a9    54020b       mvn $0b,$02
 0296ac    ab           plb
 0296ad    c220         rep #$20
 0296af    8b           phb
 0296b0    a20081       ldx #$8100
 0296b3    a0001a       ldy #$1a00
 0296b6    a91f00       lda #$001f
-0296b9    54020b       mvn $02,$0b
+0296b9    54020b       mvn $0b,$02
 0296bc    ab           plb
 0296bd    60           rts
 0296be    20d283       jsr $83d2

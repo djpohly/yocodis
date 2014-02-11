@@ -76,6 +76,6 @@
 0299f1    a22ab4       ldx #$b42a
 0299f4    a00020       ldy #$2000
 0299f7    a9ff07       lda #$07ff
-0299fa    547e00       mvn $7e,$00
+0299fa    547e00       mvn $00,$7e
 0299fd    ab           plb
 0299fe    60           rts

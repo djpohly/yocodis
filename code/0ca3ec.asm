@@ -61,7 +61,7 @@
 0ca47c    a246f5       ldx #$f546
 0ca47f    a0201b       ldy #$1b20
 0ca482    a91f00       lda #$001f
-0ca485    540c09       mvn $0c,$09
+0ca485    540c09       mvn $09,$0c
 0ca488    ab           plb
 0ca489    ee7610       inc $1076
 0ca48c    6b           rtl
