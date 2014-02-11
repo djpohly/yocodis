@@ -21,32 +21,30 @@ int decompress2(uint8_t *buf, int ca)
 {
 	assert(ca > 0);
 	int x = 0;
-	int bit = 128;
-	uint16_t code;
-	int16_t sa;
 	while (x < ca) {
-		uint8_t flags;
-		bit <<= 1;
-		if (bit == 256) {
-			if (read_bytes(&flags, 1))
-				return 1;
-			bit = 1;
-		}
-		if (flags & bit) {
-			// 1 bit - literal byte
-			if (read_bytes(buf + x, 1))
-				return 1;
-			x++;
-			continue;
-		}
-
-		// 0 bit - pointer to a run
-		if (read_bytes(&code, 2))
+		// Read flag bits for the next 8 entries
+		uint8_t flags, bit;
+		if (read_bytes(&flags, 1))
 			return 1;
-		int left;
-		int ofs = x - (code >> 4);
-		for (left = (code & 0xf) + 3; left > 0; left--, ofs++)
-			buf[x++] = ofs < 0 ? 0 : buf[ofs];
+
+		for (bit = 1; bit && x < ca; bit <<= 1) {
+			if (flags & bit) {
+				// Bit is set: literal byte
+				if (read_bytes(buf + x, 1))
+					return 1;
+				x++;
+				continue;
+			}
+
+			// Bit is clear: copy a run from earlier
+			uint16_t code, left;
+			if (read_bytes(&code, 2))
+				return 1;
+
+			int ofs = x - (code >> 4);
+			for (left = (code & 0xf) + 3; left > 0; left--, ofs++)
+				buf[x++] = ofs < 0 ? 0 : buf[ofs];
+		}
 	}
 	return 0;
 }
