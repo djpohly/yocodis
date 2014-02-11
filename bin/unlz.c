@@ -43,20 +43,18 @@ int decompress2(uint8_t *buf, int ca)
 		// 0 bit - pointer to a run
 		if (read_bytes(&a, 2))
 			return 1;
-		int chunklen = (a & 0xf) + 3;
+		int left = (a & 0xf) + 3;
 		int disp = a >> 4;
 		int ofs = x - disp;
 		while (ofs < 0) {
 			buf[x++] = 0;
-			chunklen--;
-			if (chunklen <= 0)
-				goto outer_continue;
+			left--;
+			if (left <= 0)
+				break;
 			ofs++;
 		}
-		for (; chunklen > 0; chunklen--)
+		for (; left > 0; left--)
 			buf[x++] = buf[ofs++];
-outer_continue:
-		;
 	}
 	return 0;
 }
