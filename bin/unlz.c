@@ -24,7 +24,6 @@ int decompress2(uint8_t *buf, int ca)
 	int cd = 0;
 	uint16_t a;
 	int16_t sa;
-	int y;
 	while (x < ca) {
 		uint8_t cc;
 		if (cd == 0) {
@@ -36,31 +35,32 @@ int decompress2(uint8_t *buf, int ca)
 		int carry = cc & 1;
 		cc >>= 1;
 		if (carry) {
+			// 1 bit - literal byte
 			if (read_bytes(buf + x, 1))
 				return 1;
 			x++;
 			continue;
 		}
+
+		// 0 bit - pointer to a run
 		if (read_bytes(&a, 2))
 			return 1;
-		int ce = (a & 0xf) + 3;
-		int d0 = a >> 4;
-		sa = x - d0;
-		if (sa < 0) {
-			d0 = -sa;
-			while (d0 > 0) {
+		int chunklen = (a & 0xf) + 3;
+		int disp = a >> 4;
+		int ofs = x - disp;
+		if (ofs < 0) {
+			int b = -ofs;
+			while (b > 0) {
 				buf[x++] = 0;
-				ce--;
-				if (ce <= 0)
+				chunklen--;
+				if (chunklen <= 0)
 					goto lbl_0090ae;
-				d0--;
+				b--;
 			}
-			y = 0;
-		} else {
-			y = sa;
+			ofs = 0;
 		}
-		for (; ce > 0; ce--)
-			buf[x++] = buf[y++];
+		for (; chunklen > 0; chunklen--)
+			buf[x++] = buf[ofs++];
 lbl_0090ae:
 		;
 	}
