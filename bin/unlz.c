@@ -43,7 +43,7 @@ int decompress2(uint8_t *buf, int ca)
 		}
 		if (read_bytes(&a, 2))
 			return 1;
-		int ce = (a & 0xf) + 2;
+		int ce = (a & 0xf) + 3;
 		int d0 = a >> 4;
 		sa = x - d0;
 		if (sa < 0) {
@@ -51,7 +51,7 @@ int decompress2(uint8_t *buf, int ca)
 			do {
 				buf[x++] = 0;
 				ce--;
-				if (ce < 0)
+				if (ce <= 0)
 					goto lbl_0090ae;
 				d0--;
 			} while (d0 >= 0);
@@ -62,7 +62,7 @@ int decompress2(uint8_t *buf, int ca)
 		do {
 			buf[x++] = buf[y++];
 			ce--;
-		} while (ce >= 0);
+		} while (ce > 0);
 lbl_0090ae:
 		;
 	}
