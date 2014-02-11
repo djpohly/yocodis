@@ -21,20 +21,18 @@ int decompress2(uint8_t *buf, int ca)
 {
 	assert(ca > 0);
 	int x = 0;
-	int cd = 0;
+	int bit = 128;
 	uint16_t a;
 	int16_t sa;
 	while (x < ca) {
-		uint8_t cc;
-		if (cd == 0) {
-			if (read_bytes(&cc, 1))
+		uint8_t flags;
+		bit <<= 1;
+		if (bit == 256) {
+			if (read_bytes(&flags, 1))
 				return 1;
-			cd = 8;
+			bit = 1;
 		}
-		cd--;
-		int carry = cc & 1;
-		cc >>= 1;
-		if (carry) {
+		if (flags & bit) {
 			// 1 bit - literal byte
 			if (read_bytes(buf + x, 1))
 				return 1;
