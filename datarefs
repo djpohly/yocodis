@@ -1,0 +1,514 @@
+code/02884b.asm-02888d    8b           phb
+code/02884b.asm-02888e    c220         rep #$20
+code/02884b.asm-028890    a2aaf7       ldx #$f7aa
+code/02884b.asm-028893    a06019       ldy #$1960
+code/02884b.asm-028896    a91f00       lda #$001f
+code/02884b.asm:028899    540200       mvn $00,$02
+
+code/0288af.asm-028955    8b           phb
+code/0288af.asm-028956    c220         rep #$20
+code/0288af.asm-028958    a24af4       ldx #$f44a
+code/0288af.asm-02895b    a00019       ldy #$1900
+code/0288af.asm-02895e    a91f00       lda #$001f
+code/0288af.asm:028961    540200       mvn $00,$02
+code/0288af.asm-028964    a22af6       ldx #$f62a
+code/0288af.asm-028967    a02019       ldy #$1920
+code/0288af.asm-02896a    a91f00       lda #$001f
+code/0288af.asm:02896d    540200       mvn $00,$02
+
+code/0288af.asm-028973    9c3419       stz $1934
+code/0288af.asm-028976    9c3619       stz $1936
+code/0288af.asm-028979    a26af4       ldx #$f46a
+code/0288af.asm-02897c    a04019       ldy #$1940
+code/0288af.asm-02897f    a9bf01       lda #$01bf
+code/0288af.asm:028982    540200       mvn $00,$02
+code/0288af.asm-028985    a24af4       ldx #$f44a
+code/0288af.asm-028988    a0001a       ldy #$1a00
+code/0288af.asm-02898b    a91f00       lda #$001f
+code/0288af.asm:02898e    540200       mvn $00,$02
+
+code/0288af.asm-0289ef    8b           phb
+code/0288af.asm-0289f0    c220         rep #$20
+code/0288af.asm-0289f2    a22af4       ldx #$f42a
+code/0288af.asm-0289f5    a0001b       ldy #$1b00
+code/0288af.asm-0289f8    a97f00       lda #$007f
+code/0288af.asm:0289fb    540200       mvn $00,$02
+code/0288af.asm-0289fe    a22af6       ldx #$f62a
+code/0288af.asm-028a01    a0201b       ldy #$1b20
+code/0288af.asm-028a04    a91f00       lda #$001f
+code/0288af.asm:028a07    540200       mvn $00,$02
+
+code/0288af.asm-028a0c    8b           phb
+code/0288af.asm-028a0d    c220         rep #$20
+code/0288af.asm-028a0f    a22af4       ldx #$f42a
+code/0288af.asm-028a12    a00019       ldy #$1900
+code/0288af.asm-028a15    a91f00       lda #$001f
+code/0288af.asm:028a18    540200       mvn $00,$02
+
+code/0288af.asm-028a1d    8b           phb
+code/0288af.asm-028a1e    c220         rep #$20
+code/0288af.asm-028a20    a22af4       ldx #$f42a
+code/0288af.asm-028a23    a00019       ldy #$1900
+code/0288af.asm-028a26    a9ff01       lda #$01ff
+code/0288af.asm:028a29    540200       mvn $00,$02
+code/0288af.asm-028a2c    a22af6       ldx #$f62a
+code/0288af.asm-028a2f    a02019       ldy #$1920
+code/0288af.asm-028a32    a91f00       lda #$001f
+code/0288af.asm:028a35    540200       mvn $00,$02
+
+code/0288af.asm-028a3a    8b           phb
+code/0288af.asm-028a3b    c220         rep #$20
+code/0288af.asm-028a3d    a26af6       ldx #$f66a
+code/0288af.asm-028a40    a02019       ldy #$1920
+code/0288af.asm-028a43    a93f00       lda #$003f
+code/0288af.asm:028a46    540200       mvn $00,$02
+code/0288af.asm-028a49    a2aaf6       ldx #$f6aa
+code/0288af.asm-028a4c    a0401a       ldy #$1a40
+code/0288af.asm-028a4f    a93f00       lda #$003f
+code/0288af.asm:028a52    540200       mvn $00,$02
+
+code/0288af.asm-028c17    c220         rep #$20
+code/0288af.asm-028c19    af048004     lda $048004
+code/0288af.asm-028c1d    aa           tax
+code/0288af.asm-028c1e    a0c044       ldy #$44c0
+code/0288af.asm-028c21    a97f03       lda #$037f
+code/0288af.asm:028c24    547e04       mvn $04,$7e
+
+code/029422.asm-02943e    8b           phb
+code/029422.asm-02943f    c220         rep #$20
+code/029422.asm-029441    a28cf2       ldx #$f28c
+code/029422.asm-029444    a04069       ldy #$6940
+code/029422.asm-029447    a93f03       lda #$033f
+code/029422.asm:02944a    547e0c       mvn $0c,$7e
+
+code/029422.asm-02946a    8b           phb
+code/029422.asm-02946b    c220         rep #$20
+code/029422.asm-02946d    a28cfa       ldx #$fa8c
+code/029422.asm-029470    a04069       ldy #$6940
+code/029422.asm-029473    a9bf03       lda #$03bf
+code/029422.asm:029476    547e0c       mvn $0c,$7e
+
+code/029422.asm-029496    8b           phb
+code/029422.asm-029497    c220         rep #$20
+code/029422.asm-029499    a2ccf5       ldx #$f5cc
+code/029422.asm-02949c    a04069       ldy #$6940
+code/029422.asm-02949f    a9bf04       lda #$04bf
+code/029422.asm:0294a2    547e0c       mvn $0c,$7e
+
+code/029422.asm-0294bd    8b           phb
+code/029422.asm-0294be    c220         rep #$20
+code/029422.asm-0294c0    a2bb91       ldx #$91bb
+code/029422.asm-0294c3    a00040       ldy #$4000
+code/029422.asm-0294c6    a9ff07       lda #$07ff
+code/029422.asm:0294c9    547e0c       mvn $0c,$7e
+
+code/029422.asm-0294dc    8b           phb
+code/029422.asm-0294dd    c220         rep #$20
+code/029422.asm-0294df    a2bb89       ldx #$89bb
+code/029422.asm-0294e2    a00040       ldy #$4000
+code/029422.asm-0294e5    a9ff07       lda #$07ff
+code/029422.asm:0294e8    547e0c       mvn $0c,$7e
+
+code/02953e.asm-02969d    c220         rep #$20
+code/02953e.asm-02969f    8b           phb
+code/02953e.asm-0296a0    a20080       ldx #$8000
+code/02953e.asm-0296a3    a00019       ldy #$1900
+code/02953e.asm-0296a6    a91f00       lda #$001f
+code/02953e.asm:0296a9    54020b       mvn $0b,$02
+
+code/02953e.asm-0296ad    c220         rep #$20
+code/02953e.asm-0296af    8b           phb
+code/02953e.asm-0296b0    a20081       ldx #$8100
+code/02953e.asm-0296b3    a0001a       ldy #$1a00
+code/02953e.asm-0296b6    a91f00       lda #$001f
+code/02953e.asm:0296b9    54020b       mvn $0b,$02
+
+code/029933.asm-0299ee    8b           phb
+code/029933.asm-0299ef    c220         rep #$20
+code/029933.asm-0299f1    a22ab4       ldx #$b42a
+code/029933.asm-0299f4    a00020       ldy #$2000
+code/029933.asm-0299f7    a9ff07       lda #$07ff
+code/029933.asm:0299fa    547e00       mvn $00,$7e
+
+code/029a0f.asm-029a0f    8b           phb
+code/029a0f.asm-029a10    c220         rep #$20
+code/029a0f.asm-029a12    a22af4       ldx #$f42a
+code/029a0f.asm-029a15    a00019       ldy #$1900
+code/029a0f.asm-029a18    a9ff01       lda #$01ff
+code/029a0f.asm:029a1b    540200       mvn $00,$02
+code/029a0f.asm-029a1e    a26af7       ldx #$f76a
+code/029a0f.asm-029a21    a02019       ldy #$1920
+code/029a0f.asm-029a24    a93f00       lda #$003f
+code/029a0f.asm:029a27    540200       mvn $00,$02
+code/029a0f.asm-029a2a    a24af7       ldx #$f74a
+code/029a0f.asm-029a2d    a08019       ldy #$1980
+code/029a0f.asm-029a30    a91f00       lda #$001f
+code/029a0f.asm:029a33    540200       mvn $00,$02
+
+code/029dc5.asm-029e54    8b           phb
+code/029dc5.asm-029e55    c220         rep #$20
+code/029dc5.asm-029e57    a22ab4       ldx #$b42a
+code/029dc5.asm-029e5a    a00020       ldy #$2000
+code/029dc5.asm-029e5d    a9ff0f       lda #$0fff
+code/029dc5.asm:029e60    547e00       mvn $00,$7e
+
+code/029dc5.asm-029e65    8b           phb
+code/029dc5.asm-029e66    c220         rep #$20
+code/029dc5.asm-029e68    a22ac4       ldx #$c42a
+code/029dc5.asm-029e6b    a00020       ldy #$2000
+code/029dc5.asm-029e6e    a9ff0f       lda #$0fff
+code/029dc5.asm:029e71    547e00       mvn $00,$7e
+
+code/029dc5.asm-029e76    8b           phb
+code/029dc5.asm-029e77    c220         rep #$20
+code/029dc5.asm-029e79    a22aa4       ldx #$a42a
+code/029dc5.asm-029e7c    a00020       ldy #$2000
+code/029dc5.asm-029e7f    a9ff0f       lda #$0fff
+code/029dc5.asm:029e82    547e00       mvn $00,$7e
+
+code/029dc5.asm-029e87    8b           phb
+code/029dc5.asm-029e88    c220         rep #$20
+code/029dc5.asm-029e8a    a22ad4       ldx #$d42a
+code/029dc5.asm-029e8d    a00020       ldy #$2000
+code/029dc5.asm-029e90    a9ff0f       lda #$0fff
+code/029dc5.asm:029e93    547e00       mvn $00,$7e
+
+code/029dc5.asm-029e98    8b           phb
+code/029dc5.asm-029e99    c220         rep #$20
+code/029dc5.asm-029e9b    a22ae4       ldx #$e42a
+code/029dc5.asm-029e9e    a00020       ldy #$2000
+code/029dc5.asm-029ea1    a9ff0f       lda #$0fff
+code/029dc5.asm:029ea4    547e00       mvn $00,$7e
+
+code/029dc5.asm-029ee8    c220         rep #$20
+code/029dc5.asm-029eea    8b           phb
+code/029dc5.asm-029eeb    a20080       ldx #$8000
+code/029dc5.asm-029eee    a08048       ldy #$4880
+code/029dc5.asm-029ef1    a97f07       lda #$077f
+code/029dc5.asm:029ef4    547e7e       mvn $7e,$7e
+
+code/029dc5.asm-029f02    c220         rep #$20
+code/029dc5.asm-029f04    8b           phb
+code/029dc5.asm-029f05    a20080       ldx #$8000
+code/029dc5.asm-029f08    a08040       ldy #$4080
+code/029dc5.asm-029f0b    a9ff07       lda #$07ff
+code/029dc5.asm:029f0e    547e7e       mvn $7e,$7e
+
+code/029dc5.asm-029f14    c220         rep #$20
+code/029dc5.asm-029f16    8b           phb
+code/029dc5.asm-029f17    a20080       ldx #$8000
+code/029dc5.asm-029f1a    a08040       ldy #$4080
+code/029dc5.asm-029f1d    a9ff07       lda #$07ff
+code/029dc5.asm:029f20    547e7e       mvn $7e,$7e
+
+code/029dc5.asm-029f24    c220         rep #$20
+code/029dc5.asm-029f26    8b           phb
+code/029dc5.asm-029f27    a2c8b0       ldx #$b0c8
+code/029dc5.asm-029f2a    a08240       ldy #$4082
+code/029dc5.asm-029f2d    a9f701       lda #$01f7
+code/029dc5.asm:029f30    547e04       mvn $04,$7e
+
+code/029fcd.asm-02a007    8b           phb
+code/029fcd.asm-02a008    c220         rep #$20
+code/029fcd.asm-02a00a    a24af7       ldx #$f74a
+code/029fcd.asm-02a00d    a08019       ldy #$1980
+code/029fcd.asm-02a010    a91f00       lda #$001f
+code/029fcd.asm:02a013    540200       mvn $00,$02
+
+code/029fcd.asm-02a146    8b           phb
+code/029fcd.asm-02a147    c220         rep #$20
+code/029fcd.asm-02a149    a20697       ldx #$9706
+code/029fcd.asm-02a14c    a0c019       ldy #$19c0
+code/029fcd.asm-02a14f    a93f00       lda #$003f
+code/029fcd.asm:02a152    540206       mvn $06,$02
+
+code/029fcd.asm-02a159    c220         rep #$20
+code/029fcd.asm-02a15b    8b           phb
+code/029fcd.asm-02a15c    a20080       ldx #$8000
+code/029fcd.asm-02a15f    a00019       ldy #$1900
+code/029fcd.asm-02a162    a9ff01       lda #$01ff
+code/029fcd.asm:02a165    54020b       mvn $0b,$02
+
+code/02b6f1.asm-02b75f    c90300       cmp #$0003
+code/02b6f1.asm-02b762    f00e         beq $02b772
+code/02b6f1.asm-02b764    a2aefa       ldx #$faae
+code/02b6f1.asm-02b767    a0c060       ldy #$60c0
+code/02b6f1.asm-02b76a    a97f00       lda #$007f
+code/02b6f1.asm:02b76d    547e03       mvn $03,$7e
+code/02b6f1.asm-02b770    800c         bra $02b77e
+code/02b6f1.asm-02b772    a22efa       ldx #$fa2e
+code/02b6f1.asm-02b775    a0c060       ldy #$60c0
+code/02b6f1.asm-02b778    a97f00       lda #$007f
+code/02b6f1.asm:02b77b    547e03       mvn $03,$7e
+
+code/02b6f1.asm-02b883    ca           dex
+code/02b6f1.asm-02b884    10f2         bpl $02b878
+code/02b6f1.asm-02b886    a2caf7       ldx #$f7ca
+code/02b6f1.asm-02b889    a0a01a       ldy #$1aa0
+code/02b6f1.asm-02b88c    a91f00       lda #$001f
+code/02b6f1.asm:02b88f    540200       mvn $00,$02
+
+code/02bbbc.asm-02bbcd    223c9100     jsr $00913c
+code/02bbbc.asm-02bbd1    8b           phb
+code/02bbbc.asm-02bbd2    a214d2       ldx #$d214
+code/02bbbc.asm-02bbd5    a00040       ldy #$4000
+code/02bbbc.asm-02bbd8    a9ff05       lda #$05ff
+code/02bbbc.asm:02bbdb    547e05       mvn $05,$7e
+code/02bbbc.asm-02bbde    a214da       ldx #$da14
+code/02bbbc.asm-02bbe1    a00048       ldy #$4800
+code/02bbbc.asm-02bbe4    a9ff05       lda #$05ff
+code/02bbbc.asm:02bbe7    547e05       mvn $05,$7e
+
+code/02c589.asm-02c5e7    8b           phb
+code/02c589.asm-02c5e8    c220         rep #$20
+code/02c589.asm-02c5ea    a248de       ldx #$de48
+code/02c589.asm-02c5ed    a00020       ldy #$2000
+code/02c589.asm-02c5f0    a9ff07       lda #$07ff
+code/02c589.asm:02c5f3    547e04       mvn $04,$7e
+
+code/02c589.asm-02c5f9    8b           phb
+code/02c589.asm-02c5fa    c220         rep #$20
+code/02c589.asm-02c5fc    a248d6       ldx #$d648
+code/02c589.asm-02c5ff    a00040       ldy #$4000
+code/02c589.asm-02c602    a9ff07       lda #$07ff
+code/02c589.asm:02c605    547e04       mvn $04,$7e
+
+code/02c589.asm-02c6bd    8b           phb
+code/02c589.asm-02c6be    c220         rep #$20
+code/02c589.asm-02c6c0    a2eaf6       ldx #$f6ea
+code/02c589.asm-02c6c3    a04019       ldy #$1940
+code/02c589.asm-02c6c6    a91f00       lda #$001f
+code/02c589.asm:02c6c9    540200       mvn $00,$02
+code/02c589.asm-02c6cc    a2aaf6       ldx #$f6aa
+code/02c589.asm-02c6cf    a0801a       ldy #$1a80
+code/02c589.asm-02c6d2    a91f00       lda #$001f
+code/02c589.asm:02c6d5    540200       mvn $00,$02
+
+code/02ea55.asm-02ea55    8b           phb
+code/02ea55.asm-02ea56    c220         rep #$20
+code/02ea55.asm-02ea58    a20019       ldx #$1900
+code/02ea55.asm-02ea5b    a0001b       ldy #$1b00
+code/02ea55.asm-02ea5e    a9ff01       lda #$01ff
+code/02ea55.asm:02ea61    540202       mvn $02,$02
+
+code/02f384.asm-02f384    8b           phb
+code/02f384.asm-02f385    c220         rep #$20
+code/02f384.asm-02f387    a26af6       ldx #$f66a
+code/02f384.asm-02f38a    a02019       ldy #$1920
+code/02f384.asm-02f38d    a93f00       lda #$003f
+code/02f384.asm:02f390    540200       mvn $00,$02
+code/02f384.asm-02f393    a2aaf6       ldx #$f6aa
+code/02f384.asm-02f396    a0401a       ldy #$1a40
+code/02f384.asm-02f399    a93f00       lda #$003f
+code/02f384.asm:02f39c    540200       mvn $00,$02
+code/02f384.asm-02f39f    a2cb9f       ldx #$9fcb
+code/02f384.asm-02f3a2    a0c019       ldy #$19c0
+code/02f384.asm-02f3a5    a91f00       lda #$001f
+code/02f384.asm:02f3a8    54020c       mvn $0c,$02
+code/02f384.asm-02f3ab    a90100       lda #$0001
+code/02f384.asm-02f3ae    8dd619       sta $19d6
+code/02f384.asm-02f3b1    a2aaf6       ldx #$f6aa
+code/02f384.asm-02f3b4    a0801a       ldy #$1a80
+code/02f384.asm-02f3b7    a91f00       lda #$001f
+code/02f384.asm:02f3ba    540200       mvn $00,$02
+
+code/0a8000.asm-0a806a    8510         sta $10
+code/0a8000.asm-0a806c    8b           phb
+code/0a8000.asm-0a806d    a26004       ldx #$0460
+code/0a8000.asm-0a8070    a01200       ldy #$0012
+code/0a8000.asm-0a8073    a90d00       lda #$000d
+code/0a8000.asm:0a8076    54120a       mvn $0a,$12
+
+code/0a8000.asm-0a811e    8510         sta $10
+code/0a8000.asm-0a8120    8b           phb
+code/0a8000.asm-0a8121    a26003       ldx #$0360
+code/0a8000.asm-0a8124    a01200       ldy #$0012
+code/0a8000.asm-0a8127    a90d00       lda #$000d
+code/0a8000.asm:0a812a    54120a       mvn $0a,$12
+
+code/0aa237.asm-0aa348    c220         rep #$20
+code/0aa237.asm-0aa34a    8b           phb
+code/0aa237.asm-0aa34b    a20003       ldx #$0300
+code/0aa237.asm-0aa34e    a00004       ldy #$0400
+code/0aa237.asm-0aa351    a9ef00       lda #$00ef
+code/0aa237.asm:0aa354    540a0a       mvn $0a,$0a
+
+code/0aa237.asm-0aa3c8    c220         rep #$20
+code/0aa237.asm-0aa3ca    8b           phb
+code/0aa237.asm-0aa3cb    a24003       ldx #$0340
+code/0aa237.asm-0aa3ce    a04004       ldy #$0440
+code/0aa237.asm-0aa3d1    a9af00       lda #$00af
+code/0aa237.asm:0aa3d4    540a0a       mvn $0a,$0a
+
+code/0aa237.asm-0aa435    c220         rep #$20
+code/0aa237.asm-0aa437    8b           phb
+code/0aa237.asm-0aa438    a20003       ldx #$0300
+code/0aa237.asm-0aa43b    a00004       ldy #$0400
+code/0aa237.asm-0aa43e    a9ff00       lda #$00ff
+code/0aa237.asm:0aa441    540a0a       mvn $0a,$0a
+
+code/0aadb5.asm-0aafc6    aa           tax
+code/0aadb5.asm-0aafc7    bf008005     lda $058000,x
+code/0aadb5.asm-0aafcb    aa           tax
+code/0aadb5.asm-0aafcc    a00020       ldy #$2000
+code/0aadb5.asm-0aafcf    a9ff07       lda #$07ff
+code/0aadb5.asm:0aafd2    547e05       mvn $05,$7e
+code/0aadb5.asm-0aafd5    a2bef2       ldx #$f2be
+code/0aadb5.asm-0aafd8    a00040       ldy #$4000
+code/0aadb5.asm-0aafdb    a9ff07       lda #$07ff
+code/0aadb5.asm:0aafde    547e06       mvn $06,$7e
+
+code/0ab519.asm-0ab739    2253d90a     jsr $0ad953
+code/0ab519.asm-0ab73d    8b           phb
+code/0ab519.asm-0ab73e    a214d0       ldx #$d014
+code/0ab519.asm-0ab741    a00020       ldy #$2000
+code/0ab519.asm-0ab744    a9ff0f       lda #$0fff
+code/0ab519.asm:0ab747    547e05       mvn $05,$7e
+code/0ab519.asm-0ab74a    a23281       ldx #$8132
+code/0ab519.asm-0ab74d    a00040       ldy #$4000
+code/0ab519.asm-0ab750    a9ff07       lda #$07ff
+code/0ab519.asm:0ab753    547e06       mvn $06,$7e
+
+code/0ae551.asm-0ae7bb    aa           tax
+code/0ae551.asm-0ae7bc    bf008005     lda $058000,x
+code/0ae551.asm-0ae7c0    aa           tax
+code/0ae551.asm-0ae7c1    a00020       ldy #$2000
+code/0ae551.asm-0ae7c4    a9ff07       lda #$07ff
+code/0ae551.asm:0ae7c7    547e05       mvn $05,$7e
+code/0ae551.asm-0ae7ca    a23289       ldx #$8932
+code/0ae551.asm-0ae7cd    a00040       ldy #$4000
+code/0ae551.asm-0ae7d0    a9ff07       lda #$07ff
+code/0ae551.asm:0ae7d3    547e06       mvn $06,$7e
+
+code/0aef70.asm-0af043    c220         rep #$20
+code/0aef70.asm-0af045    8b           phb
+code/0aef70.asm-0af046    a2f2cc       ldx #$ccf2
+code/0aef70.asm-0af049    a00020       ldy #$2000
+code/0aef70.asm-0af04c    a9ff07       lda #$07ff
+code/0aef70.asm:0af04f    547e06       mvn $06,$7e
+
+code/0aef70.asm-0af0ae    60           rts
+code/0aef70.asm-0af0af    8b           phb
+code/0aef70.asm-0af0b0    a2beea       ldx #$eabe
+code/0aef70.asm-0af0b3    a00040       ldy #$4000
+code/0aef70.asm-0af0b6    a9ff07       lda #$07ff
+code/0aef70.asm:0af0b9    547e06       mvn $06,$7e
+
+code/0af350.asm-0af4d0    2900ff       and #$ff00
+code/0af350.asm-0af4d3    18           clc
+code/0af350.asm-0af4d4    690000       adc #$0000
+code/0af350.asm-0af4d7    a8           tay
+code/0af350.asm-0af4d8    a9ff00       lda #$00ff
+code/0af350.asm:0af4db    547f0a       mvn $0a,$7f
+
+code/0af350.asm-0af4ee    18           clc
+code/0af350.asm-0af4ef    690000       adc #$0000
+code/0af350.asm-0af4f2    aa           tax
+code/0af350.asm-0af4f3    a00003       ldy #$0300
+code/0af350.asm-0af4f6    a9ff00       lda #$00ff
+code/0af350.asm:0af4f9    540a7f       mvn $7f,$0a
+
+code/0ca0a0.asm-0ca189    c220         rep #$20
+code/0ca0a0.asm-0ca18b    8b           phb
+code/0ca0a0.asm-0ca18c    a24685       ldx #$8546
+code/0ca0a0.asm-0ca18f    a00060       ldy #$6000
+code/0ca0a0.asm-0ca192    a9ff07       lda #$07ff
+code/0ca0a0.asm:0ca195    547e04       mvn $04,$7e
+
+code/0ca0a0.asm-0ca1c3    c220         rep #$20
+code/0ca0a0.asm-0ca1c5    8b           phb
+code/0ca0a0.asm-0ca1c6    a22af4       ldx #$f42a
+code/0ca0a0.asm-0ca1c9    a00019       ldy #$1900
+code/0ca0a0.asm-0ca1cc    a91f00       lda #$001f
+code/0ca0a0.asm:0ca1cf    540c00       mvn $00,$0c
+
+code/0ca0a0.asm-0ca1d9    c220         rep #$20
+code/0ca0a0.asm-0ca1db    8b           phb
+code/0ca0a0.asm-0ca1dc    a226f6       ldx #$f626
+code/0ca0a0.asm-0ca1df    a0001a       ldy #$1a00
+code/0ca0a0.asm-0ca1e2    a91f00       lda #$001f
+code/0ca0a0.asm:0ca1e5    540c09       mvn $09,$0c
+
+code/0ca3ec.asm-0ca479    c220         rep #$20
+code/0ca3ec.asm-0ca47b    8b           phb
+code/0ca3ec.asm-0ca47c    a246f5       ldx #$f546
+code/0ca3ec.asm-0ca47f    a0201b       ldy #$1b20
+code/0ca3ec.asm-0ca482    a91f00       lda #$001f
+code/0ca3ec.asm:0ca485    540c09       mvn $09,$0c
+
+code/0ca598.asm-0ca5c5    c220         rep #$20
+code/0ca598.asm-0ca5c7    8b           phb
+code/0ca598.asm-0ca5c8    a2e6f5       ldx #$f5e6
+code/0ca598.asm-0ca5cb    a0c01b       ldy #$1bc0
+code/0ca598.asm-0ca5ce    a93f00       lda #$003f
+code/0ca598.asm:0ca5d1    540c09       mvn $09,$0c
+
+code/0ca5e6.asm-0ca7a7    c220         rep #$20
+code/0ca5e6.asm-0ca7a9    8b           phb
+code/0ca5e6.asm-0ca7aa    a20080       ldx #$8000
+code/0ca5e6.asm-0ca7ad    a00020       ldy #$2000
+code/0ca5e6.asm-0ca7b0    a9ff1f       lda #$1fff
+code/0ca5e6.asm:0ca7b3    547e7e       mvn $7e,$7e
+
+code/0ca5e6.asm-0ca836    c220         rep #$20
+code/0ca5e6.asm-0ca838    8b           phb
+code/0ca5e6.asm-0ca839    a20020       ldx #$2000
+code/0ca5e6.asm-0ca83c    a00080       ldy #$8000
+code/0ca5e6.asm-0ca83f    a9ff1f       lda #$1fff
+code/0ca5e6.asm:0ca842    547e7e       mvn $7e,$7e
+
+code/0caa36.asm-0caab2    c220         rep #$20
+code/0caa36.asm-0caab4    8b           phb
+code/0caa36.asm-0caab5    a246f5       ldx #$f546
+code/0caa36.asm-0caab8    a02019       ldy #$1920
+code/0caa36.asm-0caabb    a91f00       lda #$001f
+code/0caa36.asm:0caabe    540c09       mvn $09,$0c
+
+code/0caa36.asm-0caac2    c220         rep #$20
+code/0caa36.asm-0caac4    8b           phb
+code/0caa36.asm-0caac5    a2c6f6       ldx #$f6c6
+code/0caa36.asm-0caac8    a0a019       ldy #$19a0
+code/0caa36.asm-0caacb    a91f00       lda #$001f
+code/0caa36.asm:0caace    540c09       mvn $09,$0c
+
+code/0caa36.asm-0caad2    c220         rep #$20
+code/0caa36.asm-0caad4    8b           phb
+code/0caa36.asm-0caad5    a226f6       ldx #$f626
+code/0caa36.asm-0caad8    a0001a       ldy #$1a00
+code/0caa36.asm-0caadb    a9cf01       lda #$01cf
+code/0caa36.asm:0caade    540c09       mvn $09,$0c
+
+code/0caa36.asm-0cac4b    aa           tax
+code/0caa36.asm-0cac4c    bf5cac0c     lda $0cac5c,x
+code/0caa36.asm-0cac50    aa           tax
+code/0caa36.asm-0cac51    a0401a       ldy #$1a40
+code/0caa36.asm-0cac54    a91f00       lda #$001f
+code/0caa36.asm:0cac57    540c0c       mvn $0c,$0c
+
+code/0d8000.asm-0d8042    a00000       ldy #$0000
+code/0d8000.asm-0d8045    a974fc       lda #$fc74
+code/0d8000.asm-0d8048    38           sec
+code/0d8000.asm-0d8049    e9f1ea       sbc #$eaf1
+code/0d8000.asm-0d804c    8b           phb
+code/0d8000.asm:0d804d    547f0d       mvn $0d,$7f
+
+code/0d8000.asm-0d8069    a20080       ldx #$8000
+code/0d8000.asm-0d806c    a97bba       lda #$ba7b
+code/0d8000.asm-0d806f    38           sec
+code/0d8000.asm-0d8070    e90080       sbc #$8000
+code/0d8000.asm-0d8073    8b           phb
+code/0d8000.asm:0d8074    547f0f       mvn $0f,$7f
+
+code/0d8000.asm-0d8078    a20080       ldx #$8000
+code/0d8000.asm-0d807b    a9dffe       lda #$fedf
+code/0d8000.asm-0d807e    38           sec
+code/0d8000.asm-0d807f    e90080       sbc #$8000
+code/0d8000.asm-0d8082    8b           phb
+code/0d8000.asm:0d8083    547f0e       mvn $0e,$7f
+
+code/0d8000.asm-0d8087    a28ae6       ldx #$e68a
+code/0d8000.asm-0d808a    a9f0ea       lda #$eaf0
+code/0d8000.asm-0d808d    38           sec
+code/0d8000.asm-0d808e    e98ae6       sbc #$e68a
+code/0d8000.asm-0d8091    8b           phb
+code/0d8000.asm:0d8092    547f0d       mvn $0d,$7f
