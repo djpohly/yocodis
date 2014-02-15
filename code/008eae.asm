@@ -1,3 +1,5 @@
+; Copies the $de x $df word array at [$d6] into the top left corner of a 64x64
+; byte array at [$da].  Does not touch the rest of the 64x64 space.
 008eae    08           php
 008eaf    c220         rep #$20
 008eb1    64e0         stz $e0
