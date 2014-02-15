@@ -10,13 +10,13 @@ nno <Leader>k :!is-ref <C-R>=expand('<cword>')<CR> && echo referenced || echo 
 
 function! GotoOffset(ofs)
   .
-  while expand('<cword>') < a:ofs
+  while getline('.')[0] != '0' || expand('<cword>') < a:ofs
     +
   endwhile
-  -
   if expand('<cword>') == a:ofs
     return
   endif
+  -
   .!dataarray 1
   while expand('<cword>') < a:ofs
     +
@@ -26,7 +26,7 @@ endfunction
 function! GotoInputOffset()
   let ofs = input('Offset: ')
   if ofs != ''
-    call GotoOffset(printf('%06x', str2nr(ofs, 16)))
+    call GotoOffset(('00000' . ofs)[-6:])
   endif
 endfunction
 
