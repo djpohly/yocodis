@@ -1,4 +1,3 @@
-nno <Leader>n :!echo '<C-R>/' | tr -d '\\><' | xargs get-next-file<CR>
 nno <Leader>b :.!dataarray 1<CR>
 nno <Leader>a Vip:!dataarray 2 | formatdata 2 | sed 's/^\(..\)\(.*\)\.dw \$/\1\2.da $\1/'<CR>
 nno <Leader>A Vip:!dataarray 3 | formatjump 3<CR>
@@ -32,3 +31,5 @@ endfunction
 
 nno <Leader>g :call GotoOffset(expand('<cword>'))<CR>
 nno <Leader>G :call GotoInputOffset()<CR>
+nno <Leader>u :call GotoOffset(system('find-unknown ' . shellescape(expand('<cword>')))[0:5])<CR>
+nno <Leader>n :call GotoOffset(system('get-next-addr ' . shellescape(expand('<cword>')))[0:5])<CR>

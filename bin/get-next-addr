@@ -1,0 +1,3 @@
+#!/bin/bash
+
+get-next-file "$@" | sed 's,.*/\|\..*,,g'
