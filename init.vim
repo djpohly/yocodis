@@ -6,6 +6,7 @@ nno <Leader>2 Vip:!dataarray 2 | formatdata 2<CR>
 nno <Leader>4 Vip:!dataarray 4 | formatbytes<CR>
 nno <Leader>5 Vip:!dataarray 5<CR>
 nno <Leader>w {jVipo:w! data/<C-R>=expand('<cword>')<CR>.asm<CR>
+nno <Leader>k :!is-ref <C-R>=expand('<cword>')<CR> && echo referenced || echo unreferenced<CR>
 
 function! GotoOffset(ofs)
   .
