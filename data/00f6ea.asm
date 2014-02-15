@@ -14,4 +14,3 @@
 00f704    ff42         .dw $42ff
 00f706    ff5b         .dw $5bff
 00f708    ff7f         .dw $7fff
-00f70a    0000         .dw $0000
