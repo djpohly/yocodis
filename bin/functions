@@ -4,28 +4,28 @@ fileaddr() {
 	sed 's,.*/\|\..*,,g'
 }
 
-get_addr_file() {
-	addr=$(printf 000000%s "$1" | tail -c6)
+get_addr_file() (
+	local addr=$(printf 000000%s "$1" | tail -c6)
 
 	shopt -s nullglob
 	{ echo "zzzsearch/$addr.asm"; ls code/* data/* jump/* longjump/* unref/* unref-data/* unref-jump/* filler/*; } |
 		sort -t/ -k2 |
 		grep -B1 "^zzzsearch/" |
 		grep -v "^zzzsearch/"
-}
+)
 
-get_next_file() {
-	addr=$(printf 000000%s "$1" | tail -c6)
+get_next_file() (
+	local addr=$(printf 000000%s "$1" | tail -c6)
 
 	shopt -s nullglob
 	{ echo "zzzsearch/$addr.asm"; ls code/* data/* jump/* longjump/* unref/* unref-data/* unref-jump/* filler/*; } |
 		sort -t/ -k2 |
 		grep -A1 "^zzzsearch/" |
 		grep -v "^zzzsearch/"
-}
+)
 
 next_addr() {
-	file=$1
+	local file=$1
 
 	tail -1 "$file" | {
 		read a b i
@@ -34,7 +34,7 @@ next_addr() {
 }
 
 is_known() {
-	addr=$1
+	local addr=$1 f nextaddr
 
 	f=$(get_addr_file "$addr") &&
 	nextaddr=$(next_addr "$f") &&
@@ -42,7 +42,7 @@ is_known() {
 }
 
 is_ref() {
-	addr=$1
+	local addr=$1 f nextaddr
 
 	f=$(get_addr_file "$addr") &&
 	[[ "$f" != unref* ]] &&
@@ -51,7 +51,7 @@ is_ref() {
 }
 
 find_unknown() {
-	addr=$1
+	local addr=$1 last next
 
 	last=$(get_addr_file "$addr") || last=code/008000.asm
 	while next=$(get_next_file "$addr"); do
