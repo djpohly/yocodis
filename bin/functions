@@ -1,0 +1,65 @@
+#!/bin/bash
+
+fileaddr() {
+	sed 's,.*/\|\..*,,g'
+}
+
+get_addr_file() {
+	addr=$(printf 000000%s "$1" | tail -c6)
+
+	shopt -s nullglob
+	{ echo "zzzsearch/$addr.asm"; ls code/* data/* jump/* longjump/* unref/* unref-data/* unref-jump/* filler/*; } |
+		sort -t/ -k2 |
+		grep -B1 "^zzzsearch/" |
+		grep -v "^zzzsearch/"
+}
+
+get_next_file() {
+	addr=$(printf 000000%s "$1" | tail -c6)
+
+	shopt -s nullglob
+	{ echo "zzzsearch/$addr.asm"; ls code/* data/* jump/* longjump/* unref/* unref-data/* unref-jump/* filler/*; } |
+		sort -t/ -k2 |
+		grep -A1 "^zzzsearch/" |
+		grep -v "^zzzsearch/"
+}
+
+next_addr() {
+	file=$1
+
+	tail -1 "$file" | {
+		read a b i
+		rax2 "0x$a+$((${#b}/2))" | xargs printf '%06x\n'
+	}
+}
+
+is_known() {
+	addr=$1
+
+	f=$(get_addr_file "$addr") &&
+	nextaddr=$(next_addr "$f") &&
+	[[ "$addr" < "$nextaddr" ]]
+}
+
+is_ref() {
+	addr=$1
+
+	f=$(get_addr_file "$addr") &&
+	[[ "$f" != unref* ]] &&
+	nextaddr=$(next_addr "$f") &&
+	[[ "$addr" < "$nextaddr" ]]
+}
+
+find_unknown() {
+	addr=$1
+
+	last=$(get_addr_file "$addr") || last=code/008000.asm
+	while next=$(get_next_file "$addr"); do
+		addr=$(next_addr "$last")
+		if [ "$addr.asm" != "${next#*/}" ]; then
+			echo $addr
+			return
+		fi
+		last=$next
+	done
+}
