@@ -10,11 +10,14 @@ if [ $# -lt 4 ]; then
 	exit 1
 fi
 
+. "$(dirname "$0")/functions"
+
 do_disasm() {
 	addr=$1
 	bits=$2
+
 	printf '\r%s... ' "$addr" 1>&2
-	is-known "$addr" && return 0
+	is_known "$addr" && return 0
 	disasm-fn $addr $bits > "$codedir/$addr.asm"
 	#less "$codedir/$addr.asm"
 	recurse_disasm "$addr" "$bits"
@@ -23,6 +26,7 @@ do_disasm() {
 recurse_disasm() {
 	addr=$1
 	bits=$2
+
 	grep -w '[rs]ep\|js[rl]\|jm[pl]\|br[al]\|beq\|bne\|b[cv][cs]\|bmi\|bpl' "$codedir/$addr.asm" | while read a b i p; do
 		case $i in
 			rep)

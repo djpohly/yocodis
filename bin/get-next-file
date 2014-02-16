@@ -1,9 +1,0 @@
-#!/bin/bash
-
-addr=$(printf %s "000000$1" | tail -c6)
-
-shopt -s nullglob
-{ echo "zzzsearch/$addr.asm"; ls code/* data/* jump/* longjump/* unref/* unref-data/* unref-jump/* filler/*; } |
-	sort -t/ -k2 |
-	grep -A1 "^zzzsearch/" |
-	grep -v "^zzzsearch/"

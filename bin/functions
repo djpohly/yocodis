@@ -63,3 +63,5 @@ find_unknown() {
 		last=$next
 	done
 }
+
+export -f fileaddr get_addr_file get_next_file next_addr is_known is_ref find_unknown

@@ -1,12 +1,18 @@
 #!/bin/bash
 
+codedir=$1
+
+if [[ $# < 1 ]]; then
+	echo "Usage: $(basename "$0") dir" 1>&2
+	exit 1
+fi
+
+. "$(dirname "$0")/functions"
+
 last=/dev/null
-for f in code/*; do
-	tail -1 $last | (
-		read a b i p
-		next=$(rax2 0x$a+$((${#b}/2)) | xargs printf 'code/%06x.asm\n')
-		[ $next = $f ] && echo $last $f
-	)
+for f in "$codedir"/*; do
+	next=$codedir/$(next_addr "$last").asm
+	[[ "$next" == "$f" ]] && echo $last $f
 	last=$f
 done | tac | while read a b; do
 	cat $b >> $a && rm $b

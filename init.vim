@@ -5,7 +5,7 @@ nno <Leader>2 Vip:!dataarray 2 | formatdata 2<CR>
 nno <Leader>4 Vip:!dataarray 4 | formatbytes<CR>
 nno <Leader>5 Vip:!dataarray 5<CR>
 nno <Leader>w {jVipo:w! data/<C-R>=expand('<cword>')<CR>.asm<CR>
-nno <Leader>k :!is-ref <C-R>=expand('<cword>')<CR> && echo referenced || echo unreferenced<CR>
+nno <Leader>k :!is_ref <C-R>=expand('<cword>')<CR> && echo referenced || echo unreferenced<CR>
 
 function! GotoOffset(ofs)
   .
@@ -31,5 +31,5 @@ endfunction
 
 nno <Leader>g :call GotoOffset(expand('<cword>'))<CR>
 nno <Leader>G :call GotoInputOffset()<CR>
-nno <Leader>u :call GotoOffset(system('find-unknown ' . shellescape(expand('<cword>')))[0:5])<CR>
-nno <Leader>n :call GotoOffset(system('get-next-addr ' . shellescape(expand('<cword>')))[0:5])<CR>
+nno <Leader>u :call GotoOffset(system('find_unknown ' . shellescape(expand('<cword>')))[0:5])<CR>
+nno <Leader>n :call GotoOffset(system('get_next_file ' . shellescape(expand('<cword>')) . ' | fileaddr')[0:5])<CR>
