@@ -1,1 +1,2 @@
-figure out the mystery of data addresses stored at $0127
+write utility to check for double-decoded addresses
+- for each file, if next byte from last line > get-next-addr, it's doubled.
