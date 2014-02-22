@@ -1,4 +1,1 @@
-write utility to check for double-decoded addresses
-- for each file, if next byte from last line > get-next-addr, it's doubled.
-
-018911--01bbff: what IS this???
+write `compile' script to generate full disasm file
