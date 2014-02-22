@@ -1,4 +1,3 @@
-; jumptable
 0a8f81    918f         .da $0a8f91
 0a8f83    0490         .da $0a9004
 0a8f85    8490         .da $0a9084

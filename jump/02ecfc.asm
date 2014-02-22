@@ -1,4 +1,3 @@
-; jumptable
 02ecfc    22ed         .da $02ed22
 02ecfe    26ed         .da $02ed26
 02ed00    2ded         .da $02ed2d

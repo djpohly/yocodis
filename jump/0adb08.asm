@@ -1,4 +1,3 @@
-; jumptable
 0adb08    1edb         .da $0adb1e
 0adb0a    2bdb         .da $0adb2b
 0adb0c    eddb         .da $0adbed

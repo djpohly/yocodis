@@ -1,4 +1,3 @@
-; jumptable
 02e67e    a2e6         .da $02e6a2
 02e680    b3e6         .da $02e6b3
 02e682    ede6         .da $02e6ed

@@ -1,4 +1,3 @@
-; jumptable
 02be6d    9bbe         .da $02be9b
 02be6f    cfbe         .da $02becf
 02be71    fabe         .da $02befa

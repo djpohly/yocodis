@@ -1,4 +1,3 @@
-; jumptable
 02f7b1    c5f7         .da $02f7c5
 02f7b3    eaf7         .da $02f7ea
 02f7b5    14f8         .da $02f814

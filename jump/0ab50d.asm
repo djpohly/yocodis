@@ -1,4 +1,3 @@
-; jumptable
 0ab50d    19b5         .da $0ab519
 0ab50f    b6b5         .da $0ab5b6
 0ab511    cdb5         .da $0ab5cd

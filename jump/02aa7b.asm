@@ -1,4 +1,3 @@
-; jumptable
 02aa7b    95aa         .da $02aa95
 02aa7d    c5aa         .da $02aac5
 02aa7f    ccaa         .da $02aacc

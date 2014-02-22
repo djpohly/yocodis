@@ -1,4 +1,3 @@
-; jumptable
 0ae906    2ae9         .da $0ae92a
 0ae908    33e9         .da $0ae933
 0ae90a    47e9         .da $0ae947

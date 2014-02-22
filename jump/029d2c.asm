@@ -1,4 +1,3 @@
-; jumptable
 029d2c    429d         .da $029d42
 029d2e    589d         .da $029d58
 029d30    5c9d         .da $029d5c

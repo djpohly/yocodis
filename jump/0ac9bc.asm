@@ -1,4 +1,3 @@
-; jumptable
 0ac9bc    c8c9         .da $0ac9c8
 0ac9be    c8c9         .da $0ac9c8
 0ac9c0    e6c9         .da $0ac9e6

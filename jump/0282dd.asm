@@ -1,4 +1,3 @@
-; jumptable
 0282dd    fb82         .da $0282fb
 0282df    fc82         .da $0282fc
 0282e1    0683         .da $028306

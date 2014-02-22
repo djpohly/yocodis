@@ -1,4 +1,3 @@
-; jumptable
 02a1a4    d2a1         .da $02a1d2
 02a1a6    14a2         .da $02a214
 02a1a8    23a2         .da $02a223

@@ -1,4 +1,3 @@
-; jumptable
 0ca3b0    eda30c       .dla $0ca3ed
 0ca3b3    f7a30c       .dla $0ca3f7
 0ca3b6    71a40c       .dla $0ca471

@@ -1,4 +1,3 @@
-; jumptable
 0ae0fc    19e1         .da $0ae119
 0ae0fe    0de1         .da $0ae10d
 0ae100    0ce1         .da $0ae10c

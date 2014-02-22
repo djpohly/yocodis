@@ -1,4 +1,3 @@
-; jumptable
 0a9790    a497         .da $0a97a4
 0a9792    cf97         .da $0a97cf
 0a9794    ef97         .da $0a97ef

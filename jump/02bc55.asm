@@ -1,4 +1,3 @@
-; jumptable
 02bc55    63bc         .da $02bc63
 02bc57    6bbc         .da $02bc6b
 02bc59    73bc         .da $02bc73

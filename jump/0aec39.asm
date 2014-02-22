@@ -1,4 +1,4 @@
-; jumptable (8-bit A)
+; 8-bit A
 0aec39    49ec         .da $0aec49
 0aec3b    49ec         .da $0aec49
 0aec3d    49ec         .da $0aec49

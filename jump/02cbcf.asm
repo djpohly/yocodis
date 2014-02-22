@@ -1,4 +1,3 @@
-; jumptable
 02cbcf    e9cb         .da $02cbe9
 02cbd1    facb         .da $02cbfa
 02cbd3    34cc         .da $02cc34

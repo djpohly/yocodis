@@ -1,4 +1,3 @@
-; jumptable
 02c016    28c0         .da $02c028
 02c018    73c0         .da $02c073
 02c01a    9bc0         .da $02c09b

@@ -1,4 +1,3 @@
-; jumptable
 02ce51    67ce         .da $02ce67
 02ce53    77ce         .da $02ce77
 02ce55    acce         .da $02ceac

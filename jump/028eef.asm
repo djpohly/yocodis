@@ -1,4 +1,3 @@
-; jumptable
 028eef    fb8e         .da $028efb
 028ef1    fc8e         .da $028efc
 028ef3    5f8f         .da $028f5f

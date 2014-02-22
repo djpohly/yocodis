@@ -1,4 +1,3 @@
-; jumptable
 00a271    91a2         .da $00a291
 00a273    9fa2         .da $00a29f
 00a275    a4a2         .da $00a2a4

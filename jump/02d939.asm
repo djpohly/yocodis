@@ -1,4 +1,3 @@
-; jumptable
 02d939    53d9         .da $02d953
 02d93b    63d9         .da $02d963
 02d93d    9bd9         .da $02d99b

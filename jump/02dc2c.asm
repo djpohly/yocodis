@@ -1,4 +1,3 @@
-; jumptable
 02dc2c    4cdc         .da $02dc4c
 02dc2e    5cdc         .da $02dc5c
 02dc30    91dc         .da $02dc91

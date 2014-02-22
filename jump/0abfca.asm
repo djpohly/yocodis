@@ -1,4 +1,3 @@
-; jumptable
 0abfca    d4bf         .da $0abfd4
 0abfcc    e1bf         .da $0abfe1
 0abfce    e2bf         .da $0abfe2
