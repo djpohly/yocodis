@@ -39,7 +39,7 @@
 02d010    8d040c       sta $0c04
 02d013    e220         sep #$20
 02d015    a906         lda #$06
-02d017    2230820d     jsr $0d8230
+02d017    2230820d     jsl $0d8230
 02d01b    c220         rep #$20
 02d01d    ee040c       inc $0c04
 02d020    60           rts
@@ -130,9 +130,9 @@
 02d0fc    8d080c       sta $0c08
 02d0ff    ee080c       inc $0c08
 02d102    60           rts
-02d103    224cf404     jsr $04f44c
-02d107    2207f404     jsr $04f407
-02d10b    22bff304     jsr $04f3bf
+02d103    224cf404     jsl $04f44c
+02d107    2207f404     jsl $04f407
+02d10b    22bff304     jsl $04f3bf
 02d10f    2018a0       jsr $a018
 02d112    c220         rep #$20
 02d114    ada810       lda $10a8

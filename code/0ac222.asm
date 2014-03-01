@@ -19,7 +19,7 @@
 0ac244    a8           tay
 0ac245    bf5ec20a     lda $0ac25e,x
 0ac249    1a           inc a
-0ac24a    22658a00     jsr $008a65
+0ac24a    22658a00     jsl $008a65
 0ac24e    a00000       ldy #$0000
 0ac251    c930         cmp #$30
 0ac253    9006         bcc $0ac25b

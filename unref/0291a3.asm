@@ -13,7 +13,7 @@
 0291c0    850a         sta $0a
 0291c2    a93f00       lda #$003f
 0291c5    850c         sta $0c
-0291c7    229d8700     jsr $00879d
+0291c7    229d8700     jsl $00879d
 0291cb    adaf10       lda $10af
 0291ce    0a           asl a
 0291cf    aa           tax
@@ -30,5 +30,5 @@
 0291eb    850a         sta $0a
 0291ed    a9b200       lda #$00b2
 0291f0    850c         sta $0c
-0291f2    22a58700     jsr $0087a5
+0291f2    22a58700     jsl $0087a5
 0291f6    60           rts

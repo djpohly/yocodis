@@ -12,7 +12,7 @@
 0ac7f6    b12c         lda ($2c),y
 0ac7f8    8523         sta $23
 0ac7fa    5a           phy
-0ac7fb    226c8f00     jsr $008f6c
+0ac7fb    226c8f00     jsl $008f6c
 0ac7ff    7a           ply
 0ac800    c8           iny
 0ac801    c8           iny
@@ -33,12 +33,12 @@
 0ac821    85d6         sta $d6
 0ac823    a90600       lda #$0006
 0ac826    85d8         sta $d8
-0ac828    22ee8e00     jsr $008eee
+0ac828    22ee8e00     jsl $008eee
 0ac82c    a9e843       lda #$43e8
 0ac82f    85da         sta $da
 0ac831    a91a85       lda #$851a
 0ac834    85d6         sta $d6
-0ac836    22ee8e00     jsr $008eee
+0ac836    22ee8e00     jsl $008eee
 0ac83a    ee0c01       inc $010c
 0ac83d    28           plp
 0ac83e    60           rts

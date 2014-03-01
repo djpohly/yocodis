@@ -20,10 +20,10 @@
 0ac484    85e0         sta $e0
 0ac486    8a           txa
 0ac487    f006         beq $0ac48f
-0ac489    22b48e00     jsr $008eb4
+0ac489    22b48e00     jsl $008eb4
 0ac48d    28           plp
 0ac48e    60           rts
-0ac48f    22358f00     jsr $008f35
+0ac48f    22358f00     jsl $008f35
 0ac493    28           plp
 0ac494    60           rts
 0ac495    08           php
@@ -34,8 +34,8 @@
 0ac4a2    ca           dex
 0ac4a3    ca           dex
 0ac4a4    10f5         bpl $0ac49b
-0ac4a6    22d49b00     jsr $009bd4
-0ac4aa    2290940a     jsr $0a9490
+0ac4a6    22d49b00     jsl $009bd4
+0ac4aa    2290940a     jsl $0a9490
 0ac4ae    20a694       jsr $94a6
 0ac4b1    ad5601       lda $0156
 0ac4b4    0a           asl a

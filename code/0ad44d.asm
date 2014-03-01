@@ -9,7 +9,7 @@
 0ad45e    aa           tax
 0ad45f    bfa3d40a     lda $0ad4a3,x
 0ad463    8536         sta $36
-0ad465    228f9600     jsr $00968f
+0ad465    228f9600     jsl $00968f
 0ad469    ac9e05       ldy $059e
 0ad46c    b90009       lda $0900,y
 0ad46f    0a           asl a
@@ -18,12 +18,12 @@
 0ad472    aa           tax
 0ad473    bfa5d40a     lda $0ad4a5,x
 0ad477    8536         sta $36
-0ad479    228f9600     jsr $00968f
+0ad479    228f9600     jsl $00968f
 0ad47d    a535         lda $35
 0ad47f    8534         sta $34
 0ad481    a9a401       lda #$01a4
 0ad484    8536         sta $36
-0ad486    228f9600     jsr $00968f
+0ad486    228f9600     jsl $00968f
 0ad48a    a535         lda $35
 0ad48c    60           rts
 0ad48d    08           php

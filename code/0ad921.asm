@@ -8,13 +8,13 @@
 0ad932    a20700       ldx #$0007
 0ad935    85c4         sta $c4
 0ad937    86c6         stx $c6
-0ad939    22239000     jsr $009023
-0ad93d    223c9100     jsr $00913c
+0ad939    22239000     jsl $009023
+0ad93d    223c9100     jsl $00913c
 0ad941    a00068       ldy #$6800
 0ad944    a20080       ldx #$8000
 0ad947    a5ca         lda $ca
-0ad949    227b8e00     jsr $008e7b
-0ad94d    228f8600     jsr $00868f
+0ad949    227b8e00     jsl $008e7b
+0ad94d    228f8600     jsl $00868f
 0ad951    28           plp
 0ad952    60           rts
 0ad953    a0006c       ldy #$6c00
@@ -25,13 +25,13 @@
 0ad95d    85c4         sta $c4
 0ad95f    a90800       lda #$0008
 0ad962    85c6         sta $c6
-0ad964    22239000     jsr $009023
-0ad968    223c9100     jsr $00913c
+0ad964    22239000     jsl $009023
+0ad968    223c9100     jsl $00913c
 0ad96c    7a           ply
 0ad96d    a20080       ldx #$8000
 0ad970    a5ca         lda $ca
-0ad972    227b8e00     jsr $008e7b
-0ad976    228f8600     jsr $00868f
+0ad972    227b8e00     jsl $008e7b
+0ad976    228f8600     jsl $00868f
 0ad97a    28           plp
 0ad97b    6b           rtl
 0ad97c    08           php
@@ -150,15 +150,15 @@
 0ada4f    8d7801       sta $0178
 0ada52    a90a00       lda #$000a
 0ada55    a00000       ldy #$0000
-0ada58    22658a00     jsr $008a65
+0ada58    22658a00     jsl $008a65
 0ada5c    8d3c01       sta $013c
 0ada5f    a90a00       lda #$000a
 0ada62    a00000       ldy #$0000
-0ada65    22658a00     jsr $008a65
+0ada65    22658a00     jsl $008a65
 0ada69    8d3e01       sta $013e
 0ada6c    9c4201       stz $0142
 0ada6f    a98000       lda #$0080
-0ada72    2200800d     jsr $0d8000
+0ada72    2200800d     jsl $0d8000
 0ada76    a90200       lda #$0002
 0ada79    8df203       sta $03f2
 0ada7c    a9100e       lda #$0e10
@@ -184,7 +184,7 @@
 0adaa9    d02c         bne $0adad7
 0adaab    9c7201       stz $0172
 0adaae    a90f81       lda #$810f
-0adab1    22388700     jsr $008738
+0adab1    22388700     jsl $008738
 0adab5    8020         bra $0adad7
 0adab7    e220         sep #$20
 0adab9    a562         lda $62

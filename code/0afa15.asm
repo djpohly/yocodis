@@ -16,7 +16,7 @@
 0afa3a    d003         bne $0afa3f
 0afa3c    a083fa       ldy #$fa83
 0afa3f    8400         sty $00
-0afa41    229d8700     jsr $00879d
+0afa41    229d8700     jsl $00879d
 0afa45    a50c         lda $0c
 0afa47    18           clc
 0afa48    691000       adc #$0010
@@ -41,6 +41,6 @@
 0afa71    38           sec
 0afa72    ed2c09       sbc $092c
 0afa75    850a         sta $0a
-0afa77    229d8700     jsr $00879d
+0afa77    229d8700     jsl $00879d
 0afa7b    28           plp
 0afa7c    60           rts

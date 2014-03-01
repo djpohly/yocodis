@@ -1,10 +1,10 @@
 02cb0b    c220         rep #$20
 02cb0d    a90f84       lda #$840f
-02cb10    22388700     jsr $008738
+02cb10    22388700     jsl $008738
 02cb14    eea810       inc $10a8
 02cb17    e220         sep #$20
 02cb19    a983         lda #$83
-02cb1b    22fb810d     jsr $0d81fb
+02cb1b    22fb810d     jsl $0d81fb
 02cb1f    60           rts
 02cb20    c220         rep #$20
 02cb22    a95000       lda #$0050
@@ -61,8 +61,8 @@
 02cbab    8f04e47e     sta $7ee404
 02cbaf    eea810       inc $10a8
 02cbb2    60           rts
-02cbb3    2261f104     jsr $04f161
-02cbb7    22b5f104     jsr $04f1b5
+02cbb3    2261f104     jsl $04f161
+02cbb7    22b5f104     jsl $04f1b5
 02cbbb    2018a0       jsr $a018
 02cbbe    c220         rep #$20
 02cbc0    ada810       lda $10a8

@@ -51,7 +51,7 @@
 02cef1    eea810       inc $10a8
 02cef4    e220         sep #$20
 02cef6    a914         lda #$14
-02cef8    2230820d     jsr $0d8230
+02cef8    2230820d     jsl $0d8230
 02cefc    60           rts
 02cefd    c220         rep #$20
 02ceff    9c9810       stz $1098

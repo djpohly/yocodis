@@ -2,7 +2,7 @@
 0d83e4    e220         sep #$20
 0d83e6    add601       lda $01d6
 0d83e9    d004         bne $0d83ef
-0d83eb    2287810d     jsr $0d8187
+0d83eb    2287810d     jsl $0d8187
 0d83ef    28           plp
 0d83f0    6b           rtl
 0d83f1    08           php

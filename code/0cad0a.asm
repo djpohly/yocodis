@@ -42,7 +42,7 @@
 0cad6d    a00008       ldy #$0800
 0cad70    a20020       ldx #$2000
 0cad73    a97e         lda #$7e
-0cad75    22b28900     jsr $0089b2
+0cad75    22b28900     jsl $0089b2
 0cad79    6b           rtl
 0cad7a    e220         sep #$20
 0cad7c    a900         lda #$00
@@ -50,7 +50,7 @@
 0cad7f    a00080       ldy #$8000
 0cad82    a20080       ldx #$8000
 0cad85    a97f         lda #$7f
-0cad87    22b28900     jsr $0089b2
+0cad87    22b28900     jsl $0089b2
 0cad8b    6b           rtl
 0cad8c    e220         sep #$20
 0cad8e    a900         lda #$00
@@ -58,5 +58,5 @@
 0cad91    a00002       ldy #$0200
 0cad94    a20019       ldx #$1900
 0cad97    a90c         lda #$0c
-0cad99    22b28900     jsr $0089b2
+0cad99    22b28900     jsl $0089b2
 0cad9d    6b           rtl

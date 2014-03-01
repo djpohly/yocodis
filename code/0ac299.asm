@@ -58,7 +58,7 @@
 0ac30f    aa           tax
 0ac310    bf29c30a     lda $0ac329,x
 0ac314    85d6         sta $d6
-0ac316    22ae8e00     jsr $008eae
+0ac316    22ae8e00     jsl $008eae
 0ac31a    ee0c01       inc $010c
 0ac31d    28           plp
 0ac31e    60           rts

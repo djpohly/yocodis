@@ -46,20 +46,20 @@
 02f83a    4a           lsr a
 02f83b    8506         sta $06
 02f83d    b99d00       lda $009d,y
-02f840    22629700     jsr $009762
+02f840    22629700     jsl $009762
 02f844    9013         bcc $02f859
 02f846    9d4011       sta $1140,x
 02f849    de3c11       dec $113c,x
 02f84c    20eefb       jsr $fbee
 02f84f    20effb       jsr $fbef
 02f852    a90700       lda #$0007
-02f855    2230820d     jsr $0d8230
+02f855    2230820d     jsl $0d8230
 02f859    60           rts
 02f85a    ae0005       ldx $0500
 02f85d    fe3e11       inc $113e,x
 02f860    fe3c11       inc $113c,x
 02f863    a91300       lda #$0013
-02f866    2230820d     jsr $0d8230
+02f866    2230820d     jsl $0d8230
 02f86a    60           rts
 02f86b    ae0005       ldx $0500
 02f86e    fe3c11       inc $113c,x
@@ -102,7 +102,7 @@
 02f8ce    a90100       lda #$0001
 02f8d1    9d3c11       sta $113c,x
 02f8d4    a91300       lda #$0013
-02f8d7    2230820d     jsr $0d8230
+02f8d7    2230820d     jsl $0d8230
 02f8db    60           rts
 02f8dc    9e4e11       stz $114e,x
 02f8df    e220         sep #$20
@@ -151,11 +151,11 @@
 02f945    a90100       lda #$0001
 02f948    8506         sta $06
 02f94a    a508         lda $08
-02f94c    22a09700     jsr $0097a0
+02f94c    22a09700     jsl $0097a0
 02f950    ae0005       ldx $0500
 02f953    9d4a11       sta $114a,x
 02f956    a90700       lda #$0007
-02f959    2230820d     jsr $0d8230
+02f959    2230820d     jsl $0d8230
 02f95d    60           rts
 02f95e    bd4a11       lda $114a,x
 02f961    bc4c11       ldy $114c,x
@@ -201,7 +201,7 @@
 02f9bf    a90200       lda #$0002
 02f9c2    9d4411       sta $1144,x
 02f9c5    a91300       lda #$0013
-02f9c8    2230820d     jsr $0d8230
+02f9c8    2230820d     jsl $0d8230
 02f9cc    60           rts
 02f9cd    c90100       cmp #$0001
 02f9d0    9010         bcc $02f9e2
@@ -209,7 +209,7 @@
 02f9d4    fe4211       inc $1142,x
 02f9d7    fe3c11       inc $113c,x
 02f9da    a91300       lda #$0013
-02f9dd    2230820d     jsr $0d8230
+02f9dd    2230820d     jsl $0d8230
 02f9e1    60           rts
 02f9e2    bd4411       lda $1144,x
 02f9e5    3a           dec a
@@ -221,5 +221,5 @@
 02f9f0    b0f6         bcs $02f9e8
 02f9f2    9d4411       sta $1144,x
 02f9f5    a90700       lda #$0007
-02f9f8    2230820d     jsr $0d8230
+02f9f8    2230820d     jsl $0d8230
 02f9fc    60           rts

@@ -19,6 +19,6 @@
 0ac886    20efc8       jsr $c8ef
 0ac889    a600         ldx $00
 0ac88b    bf95c80a     lda $0ac895,x
-0ac88f    2230820d     jsr $0d8230
+0ac88f    2230820d     jsl $0d8230
 0ac893    28           plp
 0ac894    60           rts

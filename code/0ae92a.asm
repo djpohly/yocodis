@@ -92,7 +92,7 @@
 0ae9ed    a983         lda #$83
 0ae9ef    eb           swa
 0ae9f0    a90f         lda #$0f
-0ae9f2    22388700     jsr $008738
+0ae9f2    22388700     jsl $008738
 0ae9f6    e647         inc $47
 0ae9f8    60           rts
 0ae9f9    e220         sep #$20
@@ -101,7 +101,7 @@
 0ae9ff    60           rts
 0aea00    e220         sep #$20
 0aea02    a98b         lda #$8b
-0aea04    22758b00     jsr $008b75
+0aea04    22758b00     jsl $008b75
 0aea08    60           rts
 0aea09    a98000       lda #$0080
 0aea0c    8d2a01       sta $012a
@@ -115,7 +115,7 @@
 0aea22    a9c3         lda #$c3
 0aea24    eb           swa
 0aea25    a9f2         lda #$f2
-0aea27    22448700     jsr $008744
+0aea27    22448700     jsl $008744
 0aea2b    a902         lda #$02
 0aea2d    0467         tsb $67
 0aea2f    e647         inc $47

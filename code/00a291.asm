@@ -22,13 +22,13 @@
 00a2c2    a20060       ldx #$6000
 00a2c5    a00008       ldy #$0800
 00a2c8    a94f00       lda #$004f
-00a2cb    22688b00     jsr $008b68
+00a2cb    22688b00     jsl $008b68
 00a2cf    ee4608       inc $0846
 00a2d2    60           rts
 00a2d3    a20060       ldx #$6000
 00a2d6    a00060       ldy #$6000
 00a2d9    a90008       lda #$0800
-00a2dc    227b8e00     jsr $008e7b
+00a2dc    227b8e00     jsl $008e7b
 00a2e0    ee4608       inc $0846
 00a2e3    60           rts
 00a2e4    6487         stz $87

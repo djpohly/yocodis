@@ -27,7 +27,7 @@
 0a8fc5    d0f2         bne $0a8fb9
 0a8fc7    8a           txa
 0a8fc8    a00000       ldy #$0000
-0a8fcb    22658a00     jsr $008a65
+0a8fcb    22658a00     jsl $008a65
 0a8fcf    aa           tax
 0a8fd0    c604         dec $04
 0a8fd2    c600         dec $00
@@ -82,7 +82,7 @@
 0a903a    d0f2         bne $0a902e
 0a903c    8a           txa
 0a903d    a00000       ldy #$0000
-0a9040    22658a00     jsr $008a65
+0a9040    22658a00     jsl $008a65
 0a9044    aa           tax
 0a9045    a504         lda $04
 0a9047    38           sec
@@ -135,7 +135,7 @@
 0a90a8    d0ee         bne $0a9098
 0a90aa    8a           txa
 0a90ab    a00000       ldy #$0000
-0a90ae    22658a00     jsr $008a65
+0a90ae    22658a00     jsl $008a65
 0a90b2    aa           tax
 0a90b3    c604         dec $04
 0a90b5    bd1905       lda $0519,x
@@ -167,7 +167,7 @@
 0a90e7    d0ee         bne $0a90d7
 0a90e9    8a           txa
 0a90ea    a00000       ldy #$0000
-0a90ed    22658a00     jsr $008a65
+0a90ed    22658a00     jsl $008a65
 0a90f1    aa           tax
 0a90f2    a504         lda $04
 0a90f4    38           sec
@@ -205,7 +205,7 @@
 0a9133    d0ea         bne $0a911f
 0a9135    8a           txa
 0a9136    a00000       ldy #$0000
-0a9139    22658a00     jsr $008a65
+0a9139    22658a00     jsl $008a65
 0a913d    aa           tax
 0a913e    c604         dec $04
 0a9140    c600         dec $00
@@ -243,7 +243,7 @@
 0a917e    d0ea         bne $0a916a
 0a9180    8a           txa
 0a9181    a00000       ldy #$0000
-0a9184    22658a00     jsr $008a65
+0a9184    22658a00     jsl $008a65
 0a9188    aa           tax
 0a9189    a504         lda $04
 0a918b    38           sec
@@ -272,7 +272,7 @@
 0a91b9    5a           phy
 0a91ba    ad0805       lda $0508
 0a91bd    a00000       ldy #$0000
-0a91c0    22658a00     jsr $008a65
+0a91c0    22658a00     jsl $008a65
 0a91c4    a8           tay
 0a91c5    b90905       lda $0509,y
 0a91c8    7a           ply
@@ -298,7 +298,7 @@
 0a91e9    5a           phy
 0a91ea    ad0805       lda $0508
 0a91ed    a00000       ldy #$0000
-0a91f0    22658a00     jsr $008a65
+0a91f0    22658a00     jsl $008a65
 0a91f4    a8           tay
 0a91f5    b90905       lda $0509,y
 0a91f8    7a           ply
@@ -348,7 +348,7 @@
 0a9245    a21f00       ldx #$001f
 0a9248    a00000       ldy #$0000
 0a924b    a506         lda $06
-0a924d    22658a00     jsr $008a65
+0a924d    22658a00     jsl $008a65
 0a9251    a8           tay
 0a9252    88           dey
 0a9253    1013         bpl $0a9268
@@ -446,7 +446,7 @@
 0a9300    8510         sta $10
 0a9302    a512         lda $12
 0a9304    a00000       ldy #$0000
-0a9307    22658a00     jsr $008a65
+0a9307    22658a00     jsl $008a65
 0a930b    a8           tay
 0a930c    d002         bne $0a9310
 0a930e    a512         lda $12

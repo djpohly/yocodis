@@ -2,7 +2,7 @@
 0ca00d    9c0b42       stz $420b
 0ca010    9c0b42       stz $420b
 0ca013    9c0c42       stz $420c
-0ca016    2212a10c     jsr $0ca112
+0ca016    2212a10c     jsl $0ca112
 0ca01a    9c8500       stz $0085
 0ca01d    9c8700       stz $0087
 0ca020    a914         lda #$14
@@ -26,13 +26,13 @@
 0ca050    690001       adc #$0100
 0ca053    85e6         sta $e6
 0ca055    a90100       lda #$0001
-0ca058    2200800d     jsr $0d8000
+0ca058    2200800d     jsl $0d8000
 0ca05c    a900c7       lda #$c700
-0ca05f    22388700     jsr $008738
+0ca05f    22388700     jsl $008738
 0ca063    6b           rtl
 0ca064    e220         sep #$20
-0ca066    2251a20c     jsr $0ca251
-0ca06a    2221a20c     jsr $0ca221
+0ca066    2251a20c     jsl $0ca251
+0ca06a    2221a20c     jsl $0ca221
 0ca06e    c220         rep #$20
 0ca070    ad7610       lda $1076
 0ca073    4b           phk

@@ -12,7 +12,7 @@
 0ad23a    8500         sta $00
 0ad23c    a96800       lda #$0068
 0ad23f    850c         sta $0c
-0ad241    229d8700     jsr $00879d
+0ad241    229d8700     jsl $00879d
 0ad245    ad0e0a       lda $0a0e
 0ad248    f011         beq $0ad25b
 0ad24a    0a           asl a
@@ -21,6 +21,6 @@
 0ad250    8500         sta $00
 0ad252    a98800       lda #$0088
 0ad255    850c         sta $0c
-0ad257    229d8700     jsr $00879d
+0ad257    229d8700     jsl $00879d
 0ad25b    28           plp
 0ad25c    60           rts

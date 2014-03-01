@@ -1,6 +1,6 @@
 0abcd6    ad5201       lda $0152
 0abcd9    d053         bne $0abd2e
-0abcdb    226f8d0a     jsr $0a8d6f
+0abcdb    226f8d0a     jsl $0a8d6f
 0abcdf    ae0005       ldx $0500
 0abce2    bdc003       lda $03c0,x
 0abce5    d020         bne $0abd07
@@ -8,7 +8,7 @@
 0abcea    d005         bne $0abcf1
 0abcec    bd5209       lda $0952,x
 0abcef    d005         bne $0abcf6
-0abcf1    2231960a     jsr $0a9631
+0abcf1    2231960a     jsl $0a9631
 0abcf5    60           rts
 0abcf6    a90700       lda #$0007
 0abcf9    9d7803       sta $0378,x
@@ -59,7 +59,7 @@
 0abd6c    1dcc03       ora $03cc,x
 0abd6f    1da803       ora $03a8,x
 0abd72    f005         beq $0abd79
-0abd74    22fca50a     jsr $0aa5fc
+0abd74    22fca50a     jsl $0aa5fc
 0abd78    60           rts
 0abd79    20d4a8       jsr $a8d4
 0abd7c    ae0005       ldx $0500
@@ -70,7 +70,7 @@
 0abd89    bd6003       lda $0360,x
 0abd8c    1d6203       ora $0362,x
 0abd8f    f00c         beq $0abd9d
-0abd91    226f8d0a     jsr $0a8d6f
+0abd91    226f8d0a     jsl $0a8d6f
 0abd95    ae0005       ldx $0500
 0abd98    bdc003       lda $03c0,x
 0abd9b    d010         bne $0abdad
@@ -164,7 +164,7 @@
 0abe5b    64b9         stz $b9
 0abe5d    64bb         stz $bb
 0abe5f    64bd         stz $bd
-0abe61    2231960a     jsr $0a9631
+0abe61    2231960a     jsl $0a9631
 0abe65    68           pla
 0abe66    85bd         sta $bd
 0abe68    68           pla
@@ -201,8 +201,8 @@
 0abea9    0a           asl a
 0abeaa    aa           tax
 0abeab    fcc5be       jsr ($bec5,x)
-0abeae    229c8f00     jsr $008f9c
-0abeb2    22a48a00     jsr $008aa4
+0abeae    229c8f00     jsl $008f9c
+0abeb2    22a48a00     jsl $008aa4
 0abeb6    2096cc       jsr $cc96
 0abeb9    2022d2       jsr $d222
 0abebc    2031c9       jsr $c931

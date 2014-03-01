@@ -37,7 +37,7 @@
 0aa49b    c40c         cpy $0c
 0aa49d    d0f5         bne $0aa494
 0aa49f    8408         sty $08
-0aa4a1    22938500     jsr $008593
+0aa4a1    22938500     jsl $008593
 0aa4a5    c220         rep #$20
 0aa4a7    a504         lda $04
 0aa4a9    18           clc
@@ -61,7 +61,7 @@
 0aa4cc    8a           txa
 0aa4cd    0a           asl a
 0aa4ce    a00000       ldy #$0000
-0aa4d1    22658a00     jsr $008a65
+0aa4d1    22658a00     jsl $008a65
 0aa4d5    4a           lsr a
 0aa4d6    aa           tax
 0aa4d7    c604         dec $04
@@ -154,7 +154,7 @@
 0aa58c    48           pha
 0aa58d    2099c2       jsr $c299
 0aa590    68           pla
-0aa591    22ef930a     jsr $0a93ef
+0aa591    22ef930a     jsl $0a93ef
 0aa595    28           plp
 0aa596    6b           rtl
 0aa597    6404         stz $04

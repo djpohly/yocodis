@@ -17,7 +17,7 @@
 0acf0f    60           rts
 0acf10    08           php
 0acf11    e220         sep #$20
-0acf13    22938500     jsr $008593
+0acf13    22938500     jsl $008593
 0acf17    a20500       ldx #$0005
 0acf1a    38           sec
 0acf1b    ff37cf0a     sbc $0acf37,x

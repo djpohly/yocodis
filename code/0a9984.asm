@@ -47,9 +47,9 @@
 0a99e4    ad5001       lda $0150
 0a99e7    994003       sta $0340,y
 0a99ea    c220         rep #$20
-0a99ec    22128a0a     jsr $0a8a12
-0a99f0    2286840a     jsr $0a8486
-0a99f4    22f3840a     jsr $0a84f3
+0a99ec    22128a0a     jsl $0a8a12
+0a99f0    2286840a     jsl $0a8486
+0a99f4    22f3840a     jsl $0a84f3
 0a99f8    ad6e03       lda $036e
 0a99fb    0d7003       ora $0370
 0a99fe    f005         beq $0a9a05
@@ -226,7 +226,7 @@
 0a9b6a    90f4         bcc $0a9b60
 0a9b6c    a900         lda #$00
 0a9b6e    9f00fc7e     sta $7efc00,x
-0a9b72    229d9a0a     jsr $0a9a9d
+0a9b72    229d9a0a     jsl $0a9a9d
 0a9b76    28           plp
 0a9b77    6b           rtl
 0a9b78    08           php

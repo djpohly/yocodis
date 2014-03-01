@@ -154,7 +154,7 @@
 0ae081    ad000a       lda $0a00
 0ae084    0a           asl a
 0ae085    aa           tax
-0ae086    22938500     jsr $008593
+0ae086    22938500     jsl $008593
 0ae08a    29ff00       and #$00ff
 0ae08d    df5ce10a     cmp $0ae15c,x
 0ae091    b03b         bcs $0ae0ce

@@ -7,7 +7,7 @@
 0af946    800d         bra $0af955
 0af948    2059f9       jsr $f959
 0af94b    a90a00       lda #$000a
-0af94e    2230820d     jsr $0d8230
+0af94e    2230820d     jsl $0d8230
 0af952    a93c00       lda #$003c
 0af955    855c         sta $5c
 0af957    28           plp
@@ -32,6 +32,6 @@
 0af980    8534         sta $34
 0af982    b234         lda ($34)
 0af984    8534         sta $34
-0af986    225f9b00     jsr $009b5f
+0af986    225f9b00     jsl $009b5f
 0af98a    28           plp
 0af98b    60           rts

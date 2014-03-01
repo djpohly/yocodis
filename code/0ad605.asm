@@ -1,4 +1,4 @@
-0ad605    22ef830a     jsr $0a83ef
+0ad605    22ef830a     jsl $0a83ef
 0ad609    ae0005       ldx $0500
 0ad60c    a95000       lda #$0050
 0ad60f    9d6209       sta $0962,x

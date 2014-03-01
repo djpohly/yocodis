@@ -5,7 +5,7 @@
 0aeb0e    c5e6         cmp $e6
 0aeb10    f005         beq $0aeb17
 0aeb12    eb           swa
-0aeb13    2200800d     jsr $0d8000
+0aeb13    2200800d     jsl $0d8000
 0aeb17    ad2401       lda $0124
 0aeb1a    d00a         bne $0aeb26
 0aeb1c    a93c00       lda #$003c
@@ -23,7 +23,7 @@
 0aeb35    a9c7         lda #$c7
 0aeb37    eb           swa
 0aeb38    a9f6         lda #$f6
-0aeb3a    22448700     jsr $008744
+0aeb3a    22448700     jsl $008744
 0aeb3e    e647         inc $47
 0aeb40    60           rts
 0aeb41    e220         sep #$20
@@ -49,7 +49,7 @@
 0aeb6e    c5e6         cmp $e6
 0aeb70    f005         beq $0aeb77
 0aeb72    eb           swa
-0aeb73    2200800d     jsr $0d8000
+0aeb73    2200800d     jsl $0d8000
 0aeb77    a91e00       lda #$001e
 0aeb7a    855c         sta $5c
 0aeb7c    e220         sep #$20
@@ -113,14 +113,14 @@
 0aec0b    2043f5       jsr $f543
 0aec0e    800b         bra $0aec1b
 0aec10    20e4f4       jsr $f4e4
-0aec13    220d9a0a     jsr $0a9a0d
+0aec13    220d9a0a     jsl $0a9a0d
 0aec17    e220         sep #$20
 0aec19    e647         inc $47
-0aec1b    224d800a     jsr $0a804d
+0aec1b    224d800a     jsl $0a804d
 0aec1f    60           rts
-0aec20    2246ef0a     jsr $0aef46
-0aec24    225a8a0a     jsr $0a8a5a
-0aec28    224d800a     jsr $0a804d
+0aec20    2246ef0a     jsl $0aef46
+0aec24    225a8a0a     jsl $0a8a5a
+0aec28    224d800a     jsl $0a804d
 0aec2c    2046f6       jsr $f646
 0aec2f    ad7803       lda $0378
 0aec32    0a           asl a

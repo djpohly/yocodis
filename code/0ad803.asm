@@ -21,7 +21,7 @@
 0ad82f    4a           lsr a
 0ad830    1a           inc a
 0ad831    9d7003       sta $0370,x
-0ad834    2286840a     jsr $0a8486
+0ad834    2286840a     jsl $0a8486
 0ad838    ae0005       ldx $0500
 0ad83b    9e7003       stz $0370,x
 0ad83e    28           plp
@@ -36,7 +36,7 @@
 0ad850    ad5201       lda $0152
 0ad853    1015         bpl $0ad86a
 0ad855    a90600       lda #$0006
-0ad858    2230820d     jsr $0d8230
+0ad858    2230820d     jsl $0d8230
 0ad85c    6481         stz $81
 0ad85e    6483         stz $83
 0ad860    6485         stz $85
@@ -48,15 +48,15 @@
 0ad86c    290700       and #$0007
 0ad86f    d007         bne $0ad878
 0ad871    a90500       lda #$0005
-0ad874    2230820d     jsr $0d8230
-0ad878    22938500     jsr $008593
+0ad874    2230820d     jsl $0d8230
+0ad878    22938500     jsl $008593
 0ad87c    290e00       and #$000e
 0ad87f    aa           tax
 0ad880    bf9ed80a     lda $0ad89e,x
 0ad884    8581         sta $81
 0ad886    8585         sta $85
 0ad888    8591         sta $91
-0ad88a    22938500     jsr $008593
+0ad88a    22938500     jsl $008593
 0ad88e    290e00       and #$000e
 0ad891    aa           tax
 0ad892    bf9ed80a     lda $0ad89e,x

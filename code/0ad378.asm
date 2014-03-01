@@ -15,10 +15,10 @@
 0ad396    28           plp
 0ad397    60           rts
 0ad398    a90500       lda #$0005
-0ad39b    22658a00     jsr $008a65
+0ad39b    22658a00     jsl $008a65
 0ad39f    8500         sta $00
 0ad3a1    a90500       lda #$0005
-0ad3a4    22658a00     jsr $008a65
+0ad3a4    22658a00     jsl $008a65
 0ad3a8    0a           asl a
 0ad3a9    0a           asl a
 0ad3aa    0a           asl a
@@ -40,7 +40,7 @@
 0ad3cc    9d7303       sta $0373,x
 0ad3cf    8a           txa
 0ad3d0    f004         beq $0ad3d6
-0ad3d2    22998b0a     jsr $0a8b99
+0ad3d2    22998b0a     jsl $0a8b99
 0ad3d6    28           plp
 0ad3d7    60           rts
 0ad3d8    08           php

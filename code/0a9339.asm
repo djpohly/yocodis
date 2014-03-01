@@ -135,7 +135,7 @@
 0a943b    e90000       sbc #$0000
 0a943e    9007         bcc $0a9447
 0a9440    a90a00       lda #$000a
-0a9443    2215820d     jsr $0d8215
+0a9443    2215820d     jsl $0d8215
 0a9447    a534         lda $34
 0a9449    18           clc
 0a944a    7df803       adc $03f8,x
@@ -211,13 +211,13 @@
 0a94e2    85c7         sta $c7
 0a94e4    a97e00       lda #$007e
 0a94e7    85c9         sta $c9
-0a94e9    22b59000     jsr $0090b5
-0a94ed    22b59100     jsr $0091b5
+0a94e9    22b59000     jsl $0090b5
+0a94ed    22b59100     jsl $0091b5
 0a94f1    a5ca         lda $ca
 0a94f3    a20080       ldx #$8000
 0a94f6    a00060       ldy #$6000
-0a94f9    227b8e00     jsr $008e7b
-0a94fd    228f8600     jsr $00868f
+0a94f9    227b8e00     jsl $008e7b
+0a94fd    228f8600     jsl $00868f
 0a9501    28           plp
 0a9502    6b           rtl
 0a9503    08           php
@@ -239,7 +239,7 @@
 0a9524    d014         bne $0a953a
 0a9526    ad0805       lda $0508
 0a9529    a00000       ldy #$0000
-0a952c    22658a00     jsr $008a65
+0a952c    22658a00     jsl $008a65
 0a9530    a8           tay
 0a9531    b90905       lda $0509,y
 0a9534    9204         sta ($04)
@@ -269,7 +269,7 @@
 0a9561    d0ee         bne $0a9551
 0a9563    8a           txa
 0a9564    a00000       ldy #$0000
-0a9567    22658a00     jsr $008a65
+0a9567    22658a00     jsl $008a65
 0a956b    aa           tax
 0a956c    e604         inc $04
 0a956e    e606         inc $06
@@ -348,7 +348,7 @@
 0a9606    9d8003       sta $0380,x
 0a9609    2051cb       jsr $cb51
 0a960c    a90a00       lda #$000a
-0a960f    2215820d     jsr $0d8215
+0a960f    2215820d     jsl $0d8215
 0a9613    ae0005       ldx $0500
 0a9616    bd8403       lda $0384,x
 0a9619    d00b         bne $0a9626

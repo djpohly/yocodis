@@ -51,7 +51,7 @@
 02deb0    60           rts
 02deb1    e220         sep #$20
 02deb3    a908         lda #$08
-02deb5    2230820d     jsr $0d8230
+02deb5    2230820d     jsl $0d8230
 02deb9    eea810       inc $10a8
 02debc    60           rts
 02debd    c220         rep #$20
@@ -121,7 +121,7 @@
 02df5c    8d060c       sta $0c06
 02df5f    ee060c       inc $0c06
 02df62    60           rts
-02df63    227df704     jsr $04f77d
+02df63    227df704     jsl $04f77d
 02df67    2018a0       jsr $a018
 02df6a    c220         rep #$20
 02df6c    ada810       lda $10a8

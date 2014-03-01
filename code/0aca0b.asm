@@ -56,7 +56,7 @@
 0aca8f    bd2209       lda $0922,x
 0aca92    8da005       sta $05a0
 0aca95    bc2609       ldy $0926,x
-0aca98    22f5d90a     jsr $0ad9f5
+0aca98    22f5d90a     jsl $0ad9f5
 0aca9c    6403         stz $03
 0aca9e    bd2809       lda $0928,x
 0acaa1    8504         sta $04
@@ -65,7 +65,7 @@
 0acaa8    bd2c09       lda $092c,x
 0acaab    850a         sta $0a
 0acaad    da           phx
-0acaae    22a58700     jsr $0087a5
+0acaae    22a58700     jsl $0087a5
 0acab2    fa           plx
 0acab3    8a           txa
 0acab4    490001       eor #$0100
@@ -80,6 +80,6 @@
 0acac3    300b         bmi $0acad0
 0acac5    be0009       ldx $0900,y
 0acac8    bfd2ca0a     lda $0acad2,x
-0acacc    2215820d     jsr $0d8215
+0acacc    2215820d     jsl $0d8215
 0acad0    28           plp
 0acad1    60           rts

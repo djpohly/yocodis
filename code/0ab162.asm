@@ -16,7 +16,7 @@
 0ab183    a9c7         lda #$c7
 0ab185    eb           swa
 0ab186    a9f6         lda #$f6
-0ab188    22448700     jsr $008744
+0ab188    22448700     jsl $008744
 0ab18c    e647         inc $47
 0ab18e    60           rts
 0ab18f    e220         sep #$20
@@ -46,7 +46,7 @@
 0ab1c5    c5e6         cmp $e6
 0ab1c7    f005         beq $0ab1ce
 0ab1c9    eb           swa
-0ab1ca    2200800d     jsr $0d8000
+0ab1ca    2200800d     jsl $0d8000
 0ab1ce    a91e00       lda #$001e
 0ab1d1    855c         sta $5c
 0ab1d3    e220         sep #$20

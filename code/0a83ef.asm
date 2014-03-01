@@ -65,7 +65,7 @@
 0a8468    c410         cpy $10
 0a846a    b006         bcs $0a8472
 0a846c    5a           phy
-0a846d    2266850a     jsr $0a8566
+0a846d    2266850a     jsl $0a8566
 0a8471    7a           ply
 0a8472    c8           iny
 0a8473    c01000       cpy #$0010
@@ -124,7 +124,7 @@
 0a84dc    b90003       lda $0300,y
 0a84df    8500         sta $00
 0a84e1    5a           phy
-0a84e2    2266850a     jsr $0a8566
+0a84e2    2266850a     jsl $0a8566
 0a84e6    7a           ply
 0a84e7    c8           iny
 0a84e8    e8           inx
@@ -179,7 +179,7 @@
 0a8548    b90003       lda $0300,y
 0a854b    8500         sta $00
 0a854d    5a           phy
-0a854e    2266850a     jsr $0a8566
+0a854e    2266850a     jsl $0a8566
 0a8552    7a           ply
 0a8553    c8           iny
 0a8554    c8           iny

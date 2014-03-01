@@ -69,7 +69,7 @@
 02ab35    f001         beq $02ab38
 02ab37    60           rts
 02ab38    e220         sep #$20
-02ab3a    22858500     jsr $008585
+02ab3a    22858500     jsl $008585
 02ab3e    9c6100       stz $0061
 02ab41    9c6900       stz $0069
 02ab44    9c6a00       stz $006a
@@ -77,7 +77,7 @@
 02ab4a    9cbb10       stz $10bb
 02ab4d    60           rts
 02ab4e    e220         sep #$20
-02ab50    22858500     jsr $008585
+02ab50    22858500     jsl $008585
 02ab54    c220         rep #$20
 02ab56    9c4801       stz $0148
 02ab59    9c4901       stz $0149
@@ -175,10 +175,10 @@
 02ac2c    a90008       lda #$0800
 02ac2f    a20040       ldx #$4000
 02ac32    a00038       ldy #$3800
-02ac35    227b8e00     jsr $008e7b
+02ac35    227b8e00     jsl $008e7b
 02ac39    e220         sep #$20
 02ac3b    a907         lda #$07
-02ac3d    2230820d     jsr $0d8230
+02ac3d    2230820d     jsl $0d8230
 02ac41    38           sec
 02ac42    60           rts
 02ac43    c220         rep #$20
@@ -203,7 +203,7 @@
 02ac72    f0e2         beq $02ac56
 02ac74    e220         sep #$20
 02ac76    a907         lda #$07
-02ac78    2230820d     jsr $0d8230
+02ac78    2230820d     jsl $0d8230
 02ac7c    c220         rep #$20
 02ac7e    ade010       lda $10e0
 02ac81    20f987       jsr $87f9
@@ -216,7 +216,7 @@
 02ac91    a90008       lda #$0800
 02ac94    a20040       ldx #$4000
 02ac97    a00038       ldy #$3800
-02ac9a    227b8e00     jsr $008e7b
+02ac9a    227b8e00     jsl $008e7b
 02ac9e    38           sec
 02ac9f    60           rts
 02aca0    c220         rep #$20

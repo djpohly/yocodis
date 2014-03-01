@@ -8,7 +8,7 @@
 0af175    a94800       lda #$0048
 0af178    8d4608       sta $0846
 0af17b    a00000       ldy #$0000
-0af17e    22658a00     jsr $008a65
+0af17e    22658a00     jsl $008a65
 0af182    8d4808       sta $0848
 0af185    28           plp
 0af186    60           rts
@@ -54,7 +54,7 @@
 0af1dd    290300       and #$0003
 0af1e0    d007         bne $0af1e9
 0af1e2    a91800       lda #$0018
-0af1e5    2230820d     jsr $0d8230
+0af1e5    2230820d     jsl $0d8230
 0af1e9    28           plp
 0af1ea    60           rts
 0af1eb    9c4608       stz $0846

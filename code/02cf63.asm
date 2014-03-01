@@ -13,5 +13,5 @@
 02cf80    60           rts
 02cf81    9c7a10       stz $107a
 02cf84    a906         lda #$06
-02cf86    2230820d     jsr $0d8230
+02cf86    2230820d     jsl $0d8230
 02cf8a    60           rts

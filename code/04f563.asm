@@ -24,7 +24,7 @@
 04f593    8505         sta $05
 04f595    640f         stz $0f
 04f597    6410         stz $10
-04f599    22a58700     jsr $0087a5
+04f599    22a58700     jsl $0087a5
 04f59d    28           plp
 04f59e    6b           rtl
 04f59f    08           php
@@ -53,7 +53,7 @@
 04f5cf    8505         sta $05
 04f5d1    640f         stz $0f
 04f5d3    6410         stz $10
-04f5d5    22a58700     jsr $0087a5
+04f5d5    22a58700     jsl $0087a5
 04f5d9    28           plp
 04f5da    6b           rtl
 04f5db    08           php
@@ -82,6 +82,6 @@
 04f60e    8505         sta $05
 04f610    640f         stz $0f
 04f612    6410         stz $10
-04f614    22a58700     jsr $0087a5
+04f614    22a58700     jsl $0087a5
 04f618    28           plp
 04f619    6b           rtl

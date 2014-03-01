@@ -19,7 +19,7 @@
 02d2ef    60           rts
 02d2f0    eea810       inc $10a8
 02d2f3    a915         lda #$15
-02d2f5    2230820d     jsr $0d8230
+02d2f5    2230820d     jsl $0d8230
 02d2f9    60           rts
 02d2fa    c220         rep #$20
 02d2fc    20c1a7       jsr $a7c1
@@ -63,5 +63,5 @@
 02d355    60           rts
 02d356    9c7a10       stz $107a
 02d359    a901         lda #$01
-02d35b    2230820d     jsr $0d8230
+02d35b    2230820d     jsl $0d8230
 02d35f    60           rts

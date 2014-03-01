@@ -63,7 +63,7 @@
 0aa808    ae0005       ldx $0500
 0aa80b    decc03       dec $03cc,x
 0aa80e    a90b         lda #$0b
-0aa810    2230820d     jsr $0d8230
+0aa810    2230820d     jsl $0d8230
 0aa814    60           rts
 0aa815    08           php
 0aa816    ae0005       ldx $0500

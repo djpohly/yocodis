@@ -108,7 +108,7 @@
 0adce4    0a           asl a
 0adce5    0a           asl a
 0adce6    48           pha
-0adce7    22938500     jsr $008593
+0adce7    22938500     jsl $008593
 0adceb    4a           lsr a
 0adcec    68           pla
 0adced    9001         bcc $0adcf0

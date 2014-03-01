@@ -33,7 +33,7 @@
 028f52    20048e       jsr $8e04
 028f55    c220         rep #$20
 028f57    9c3101       stz $0131
-028f5a    225a8500     jsr $00855a
+028f5a    225a8500     jsl $00855a
 028f5e    60           rts
 028f5f    e220         sep #$20
 028f61    9c0042       stz $4200
@@ -59,13 +59,13 @@
 028f95    8dba10       sta $10ba
 028f98    ee7610       inc $1076
 028f9b    a905         lda #$05
-028f9d    22de9700     jsr $0097de
+028f9d    22de9700     jsl $0097de
 028fa1    e220         sep #$20
 028fa3    a983         lda #$83
-028fa5    22fb810d     jsr $0d81fb
+028fa5    22fb810d     jsl $0d81fb
 028fa9    a921         lda #$21
-028fab    2230820d     jsr $0d8230
-028faf    225a8500     jsr $00855a
+028fab    2230820d     jsl $0d8230
+028faf    225a8500     jsl $00855a
 028fb3    60           rts
 028fb4    e220         sep #$20
 028fb6    9c0042       stz $4200
@@ -81,7 +81,7 @@
 028fd4    8e9010       stx $1090
 028fd7    9cca10       stz $10ca
 028fda    ee7610       inc $1076
-028fdd    225a8500     jsr $00855a
+028fdd    225a8500     jsl $00855a
 028fe1    60           rts
 028fe2    60           rts
 028fe3    206b91       jsr $916b

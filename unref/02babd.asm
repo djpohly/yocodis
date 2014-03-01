@@ -23,5 +23,5 @@
 02baef    850a         sta $0a
 02baf1    ad0410       lda $1004
 02baf4    850c         sta $0c
-02baf6    229d8700     jsr $00879d
+02baf6    229d8700     jsl $00879d
 02bafa    60           rts

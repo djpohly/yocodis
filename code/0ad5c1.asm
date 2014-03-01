@@ -1,4 +1,4 @@
-0ad5c1    22ef830a     jsr $0a83ef
+0ad5c1    22ef830a     jsl $0a83ef
 0ad5c5    ae0005       ldx $0500
 0ad5c8    9e6209       stz $0962,x
 0ad5cb    fe6009       inc $0960,x

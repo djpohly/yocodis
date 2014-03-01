@@ -8,7 +8,7 @@
 0fbc7a    690002       adc #$0200
 0fbc7d    aa           tax
 0fbc7e    a522         lda $22
-0fbc80    22858a00     jsr $008a85
+0fbc80    22858a00     jsl $008a85
 0fbc84    a520         lda $20
 0fbc86    18           clc
 0fbc87    690008       adc #$0800

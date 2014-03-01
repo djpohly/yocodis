@@ -16,7 +16,7 @@
 02b595    20fbba       jsr $bafb
 02b598    2021be       jsr $be21
 02b59b    207fc1       jsr $c17f
-02b59e    22a48a00     jsr $008aa4
+02b59e    22a48a00     jsl $008aa4
 02b5a2    c220         rep #$20
 02b5a4    ad1401       lda $0114
 02b5a7    f010         beq $02b5b9
@@ -24,5 +24,5 @@
 02b5ac    a20060       ldx #$6000
 02b5af    a00008       ldy #$0800
 02b5b2    a90007       lda #$0700
-02b5b5    227b8e00     jsr $008e7b
+02b5b5    227b8e00     jsl $008e7b
 02b5b9    6b           rtl

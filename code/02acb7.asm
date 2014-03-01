@@ -17,7 +17,7 @@
 02acde    8e0011       stx $1100
 02ace1    e220         sep #$20
 02ace3    a907         lda #$07
-02ace5    2230820d     jsr $0d8230
+02ace5    2230820d     jsl $0d8230
 02ace9    c220         rep #$20
 02aceb    ad9900       lda $0099
 02acee    890001       bit #$0100
@@ -60,7 +60,7 @@
 02ad4d    ee0811       inc $1108
 02ad50    e220         sep #$20
 02ad52    a907         lda #$07
-02ad54    2230820d     jsr $0d8230
+02ad54    2230820d     jsl $0d8230
 02ad58    60           rts
 02ad59    ade610       lda $10e6
 02ad5c    f00e         beq $02ad6c
@@ -68,7 +68,7 @@
 02ad61    ee0811       inc $1108
 02ad64    e220         sep #$20
 02ad66    a907         lda #$07
-02ad68    2230820d     jsr $0d8230
+02ad68    2230820d     jsl $0d8230
 02ad6c    60           rts
 02ad6d    2061b0       jsr $b061
 02ad70    60           rts

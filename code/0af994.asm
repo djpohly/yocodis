@@ -36,6 +36,6 @@
 0af9df    8500         sta $00
 0af9e1    a90a00       lda #$000a
 0af9e4    8502         sta $02
-0af9e6    229d8700     jsr $00879d
+0af9e6    229d8700     jsl $00879d
 0af9ea    28           plp
 0af9eb    60           rts

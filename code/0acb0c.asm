@@ -15,11 +15,11 @@
 0acb2c    ca           dex
 0acb2d    ca           dex
 0acb2e    10f5         bpl $0acb25
-0acb30    22d49b00     jsr $009bd4
-0acb34    2290940a     jsr $0a9490
+0acb30    22d49b00     jsl $009bd4
+0acb34    2290940a     jsl $0a9490
 0acb38    20a694       jsr $94a6
 0acb3b    a02003       ldy #$0320
-0acb3e    227cd90a     jsr $0ad97c
+0acb3e    227cd90a     jsl $0ad97c
 0acb42    a2fe01       ldx #$01fe
 0acb45    bd001b       lda $1b00,x
 0acb48    9d0019       sta $1900,x

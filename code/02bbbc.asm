@@ -4,8 +4,8 @@
 02bbc2    85c4         sta $c4
 02bbc4    a90800       lda #$0008
 02bbc7    85c6         sta $c6
-02bbc9    22239000     jsr $009023
-02bbcd    223c9100     jsr $00913c
+02bbc9    22239000     jsl $009023
+02bbcd    223c9100     jsl $00913c
 02bbd1    8b           phb
 02bbd2    a214d2       ldx #$d214
 02bbd5    a00040       ldy #$4000

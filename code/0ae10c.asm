@@ -6,7 +6,7 @@
 0ae117    80b5         bra $0ae0ce
 0ae119    ad6c01       lda $016c
 0ae11c    d02e         bne $0ae14c
-0ae11e    22938500     jsr $008593
+0ae11e    22938500     jsl $008593
 0ae122    29f800       and #$00f8
 0ae125    f001         beq $0ae128
 0ae127    60           rts
@@ -20,7 +20,7 @@
 0ae13b    d091         bne $0ae0ce
 0ae13d    ad6c01       lda $016c
 0ae140    d00a         bne $0ae14c
-0ae142    22938500     jsr $008593
+0ae142    22938500     jsl $008593
 0ae146    29fc00       and #$00fc
 0ae149    f083         beq $0ae0ce
 0ae14b    60           rts

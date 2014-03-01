@@ -79,7 +79,7 @@
 02ccbf    8e8e10       stx $108e
 02ccc2    e220         sep #$20
 02ccc4    a902         lda #$02
-02ccc6    2230820d     jsr $0d8230
+02ccc6    2230820d     jsl $0d8230
 02ccca    60           rts
 02cccb    c220         rep #$20
 02cccd    9c8511       stz $1185
@@ -92,7 +92,7 @@
 02cce0    d008         bne $02ccea
 02cce2    e220         sep #$20
 02cce4    a902         lda #$02
-02cce6    2230820d     jsr $0d8230
+02cce6    2230820d     jsl $0d8230
 02ccea    c220         rep #$20
 02ccec    ad6a10       lda $106a
 02ccef    c91001       cmp #$0110

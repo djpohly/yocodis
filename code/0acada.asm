@@ -9,9 +9,9 @@
 0acaea    800e         bra $0acafa
 0acaec    ae0009       ldx $0900
 0acaef    bf04cb0a     lda $0acb04,x
-0acaf3    2230820d     jsr $0d8230
+0acaf3    2230820d     jsl $0d8230
 0acaf7    ae000a       ldx $0a00
 0acafa    bf04cb0a     lda $0acb04,x
-0acafe    2230820d     jsr $0d8230
+0acafe    2230820d     jsl $0d8230
 0acb02    28           plp
 0acb03    60           rts

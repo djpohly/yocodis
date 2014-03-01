@@ -63,14 +63,14 @@
 02c9b6    8ddc00       sta $00dc
 02c9b9    a97e         lda #$7e
 02c9bb    8dd800       sta $00d8
-02c9be    22b48e00     jsr $008eb4
+02c9be    22b48e00     jsl $008eb4
 02c9c2    c220         rep #$20
 02c9c4    a90008       lda #$0800
 02c9c7    a20020       ldx #$2000
 02c9ca    a00030       ldy #$3000
-02c9cd    227b8e00     jsr $008e7b
+02c9cd    227b8e00     jsl $008e7b
 02c9d1    60           rts
-02c9d2    220df104     jsr $04f10d
+02c9d2    220df104     jsl $04f10d
 02c9d6    2018a0       jsr $a018
 02c9d9    c220         rep #$20
 02c9db    ada810       lda $10a8

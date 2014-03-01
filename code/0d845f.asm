@@ -18,7 +18,7 @@
 0d8484    8520         sta $20
 0d8486    bf65e60d     lda $0de665,x
 0d848a    8522         sta $22
-0d848c    22f1840d     jsr $0d84f1
+0d848c    22f1840d     jsl $0d84f1
 0d8490    e220         sep #$20
 0d8492    eed601       inc $01d6
 0d8495    60           rts

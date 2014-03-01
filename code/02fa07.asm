@@ -24,5 +24,5 @@
 02fa44    98           tya
 02fa45    9d4c11       sta $114c,x
 02fa48    a90700       lda #$0007
-02fa4b    2230820d     jsr $0d8230
+02fa4b    2230820d     jsl $0d8230
 02fa4f    60           rts

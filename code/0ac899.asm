@@ -38,7 +38,7 @@
 0ac8e0    a90008       lda #$0800
 0ac8e3    a20030       ldx #$3000
 0ac8e6    a00018       ldy #$1800
-0ac8e9    227b8e00     jsr $008e7b
+0ac8e9    227b8e00     jsl $008e7b
 0ac8ed    28           plp
 0ac8ee    60           rts
 0ac8ef    08           php
@@ -64,10 +64,10 @@
 0ac91e    a5d6         lda $d6
 0ac920    c94f20       cmp #$204f
 0ac923    f006         beq $0ac92b
-0ac925    22b48e00     jsr $008eb4
+0ac925    22b48e00     jsl $008eb4
 0ac929    28           plp
 0ac92a    60           rts
-0ac92b    22358f00     jsr $008f35
+0ac92b    22358f00     jsl $008f35
 0ac92f    28           plp
 0ac930    60           rts
 0ac931    08           php

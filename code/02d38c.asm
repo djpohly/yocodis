@@ -89,11 +89,11 @@
 02d473    ee200d       inc $0d20
 02d476    ee020c       inc $0c02
 02d479    60           rts
-02d47a    2263f504     jsr $04f563
-02d47e    229ff504     jsr $04f59f
-02d482    2286f404     jsr $04f486
-02d486    221cf504     jsr $04f51c
-02d48a    22d1f404     jsr $04f4d1
+02d47a    2263f504     jsl $04f563
+02d47e    229ff504     jsl $04f59f
+02d482    2286f404     jsl $04f486
+02d486    221cf504     jsl $04f51c
+02d48a    22d1f404     jsl $04f4d1
 02d48e    2018a0       jsr $a018
 02d491    c220         rep #$20
 02d493    ada810       lda $10a8

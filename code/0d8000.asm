@@ -22,7 +22,7 @@
 0d8028    68           pla
 0d8029    29ff00       and #$00ff
 0d802c    85e7         sta $e7
-0d802e    22fb810d     jsr $0d81fb
+0d802e    22fb810d     jsl $0d81fb
 0d8032    7a           ply
 0d8033    28           plp
 0d8034    6b           rtl
@@ -44,8 +44,8 @@
 0d8056    e220         sep #$20
 0d8058    a97f         lda #$7f
 0d805a    8522         sta $22
-0d805c    2240810d     jsr $0d8140
-0d8060    226e820d     jsr $0d826e
+0d805c    2240810d     jsl $0d8140
+0d8060    226e820d     jsl $0d826e
 0d8064    c220         rep #$20
 0d8066    a00000       ldy #$0000
 0d8069    a20080       ldx #$8000
@@ -74,8 +74,8 @@
 0d809b    e220         sep #$20
 0d809d    a97f         lda #$7f
 0d809f    8522         sta $22
-0d80a1    2240810d     jsr $0d8140
-0d80a5    226e820d     jsr $0d826e
+0d80a1    2240810d     jsl $0d8140
+0d80a5    226e820d     jsl $0d826e
 0d80a9    9c4021       stz $2140
 0d80ac    9c4121       stz $2141
 0d80af    9c4221       stz $2142

@@ -33,7 +33,7 @@
 0ca0ee    6b           rtl
 0ca0ef    c220         rep #$20
 0ca0f1    a90f87       lda #$870f
-0ca0f4    22388700     jsr $008738
+0ca0f4    22388700     jsl $008738
 0ca0f8    ee7610       inc $1076
 0ca0fb    6b           rtl
 0ca0fc    e220         sep #$20
@@ -52,7 +52,7 @@
 0ca118    8ec400       stx $00c4
 0ca11b    a909         lda #$09
 0ca11d    8dc600       sta $00c6
-0ca120    22239000     jsr $009023
+0ca120    22239000     jsl $009023
 0ca124    a901         lda #$01
 0ca126    8d7043       sta $4370
 0ca129    a918         lda #$18
@@ -72,8 +72,8 @@
 0ca14f    8ec400       stx $00c4
 0ca152    a908         lda #$08
 0ca154    8dc600       sta $00c6
-0ca157    22239000     jsr $009023
-0ca15b    223c9100     jsr $00913c
+0ca157    22239000     jsl $009023
+0ca15b    223c9100     jsl $00913c
 0ca15f    e220         sep #$20
 0ca161    a901         lda #$01
 0ca163    8d7043       sta $4370
@@ -171,7 +171,7 @@
 0ca245    6405         stz $05
 0ca247    640f         stz $0f
 0ca249    6410         stz $10
-0ca24b    22a58700     jsr $0087a5
+0ca24b    22a58700     jsl $0087a5
 0ca24f    28           plp
 0ca250    6b           rtl
 0ca251    e220         sep #$20
@@ -204,11 +204,11 @@
 0ca292    a90300       lda #$0003
 0ca295    8d9e10       sta $109e
 0ca298    e220         sep #$20
-0ca29a    2289a70c     jsr $0ca789
-0ca29e    2207a90c     jsr $0ca907
-0ca2a2    2287a80c     jsr $0ca887
-0ca2a6    22abaa0c     jsr $0caaab
-0ca2aa    222aab0c     jsr $0cab2a
+0ca29a    2289a70c     jsl $0ca789
+0ca29e    2207a90c     jsl $0ca907
+0ca2a2    2287a80c     jsl $0ca887
+0ca2a6    22abaa0c     jsl $0caaab
+0ca2aa    222aab0c     jsl $0cab2a
 0ca2ae    9c7d00       stz $007d
 0ca2b1    9c7f00       stz $007f
 0ca2b4    a911         lda #$11
@@ -270,7 +270,7 @@
 0ca34e    c5e6         cmp $e6
 0ca350    f005         beq $0ca357
 0ca352    eb           swa
-0ca353    2200800d     jsr $0d8000
+0ca353    2200800d     jsl $0d8000
 0ca357    a900c7       lda #$c700
-0ca35a    22388700     jsr $008738
+0ca35a    22388700     jsl $008738
 0ca35e    6b           rtl

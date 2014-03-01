@@ -13,7 +13,7 @@
 02c460    204686       jsr $8646
 02c463    20bdc6       jsr $c6bd
 02c466    2094b8       jsr $b894
-02c469    22d78802     jsr $0288d7
+02c469    22d78802     jsl $0288d7
 02c46d    20dac6       jsr $c6da
 02c470    e220         sep #$20
 02c472    a90f         lda #$0f
@@ -36,7 +36,7 @@
 02c4a0    8e3a11       stx $113a
 02c4a3    6458         stz $58
 02c4a5    a90101       lda #$0101
-02c4a8    2200800d     jsr $0d8000
+02c4a8    2200800d     jsl $0d8000
 02c4ac    9c0c01       stz $010c
 02c4af    9c1401       stz $0114
 02c4b2    6b           rtl

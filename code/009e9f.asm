@@ -5,7 +5,7 @@
 009ea9    8534         sta $34
 009eab    adfa03       lda $03fa
 009eae    8536         sta $36
-009eb0    22259b00     jsr $009b25
+009eb0    22259b00     jsl $009b25
 009eb4    adfc03       lda $03fc
 009eb7    8534         sta $34
 009eb9    adfe03       lda $03fe
@@ -14,7 +14,7 @@
 009ec0    18           clc
 009ec1    694000       adc #$0040
 009ec4    85da         sta $da
-009ec6    22259b00     jsr $009b25
+009ec6    22259b00     jsl $009b25
 009eca    60           rts
 009ecb    08           php
 009ecc    c220         rep #$20

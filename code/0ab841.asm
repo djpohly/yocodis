@@ -24,6 +24,6 @@
 0ab86f    cdfa00       cmp $00fa
 0ab872    f005         beq $0ab879
 0ab874    eb           swa
-0ab875    22fb810d     jsr $0d81fb
+0ab875    22fb810d     jsl $0d81fb
 0ab879    28           plp
 0ab87a    60           rts

@@ -69,7 +69,7 @@
 02dd07    8e7a10       stx $107a
 02dd0a    e220         sep #$20
 02dd0c    a911         lda #$11
-02dd0e    2230820d     jsr $0d8230
+02dd0e    2230820d     jsl $0d8230
 02dd12    60           rts
 02dd13    c220         rep #$20
 02dd15    a23300       ldx #$0033
@@ -100,7 +100,7 @@
 02dd59    8e8e10       stx $108e
 02dd5c    e220         sep #$20
 02dd5e    a90d         lda #$0d
-02dd60    2230820d     jsr $0d8230
+02dd60    2230820d     jsl $0d8230
 02dd64    60           rts
 02dd65    c220         rep #$20
 02dd67    ad6a10       lda $106a
@@ -127,7 +127,7 @@
 02dd9d    eea810       inc $10a8
 02dda0    e220         sep #$20
 02dda2    a914         lda #$14
-02dda4    2230820d     jsr $0d8230
+02dda4    2230820d     jsl $0d8230
 02dda8    60           rts
 02dda9    200bcb       jsr $cb0b
 02ddac    60           rts

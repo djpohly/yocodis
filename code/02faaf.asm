@@ -142,7 +142,7 @@
 02fbe0    85de         sta $de
 02fbe2    bffae607     lda $07e6fa,x
 02fbe6    85e0         sta $e0
-02fbe8    22b48e00     jsr $008eb4
+02fbe8    22b48e00     jsl $008eb4
 02fbec    28           plp
 02fbed    60           rts
 02fbee    60           rts
@@ -164,7 +164,7 @@
 02fc12    85d8         sta $d8
 02fc14    a90608       lda #$0806
 02fc17    85de         sta $de
-02fc19    22ae8e00     jsr $008eae
+02fc19    22ae8e00     jsl $008eae
 02fc1d    ee0c01       inc $010c
 02fc20    28           plp
 02fc21    60           rts
@@ -181,7 +181,7 @@
 02fc3a    85d6         sta $d6
 02fc3c    a90608       lda #$0806
 02fc3f    85de         sta $de
-02fc41    22358f00     jsr $008f35
+02fc41    22358f00     jsl $008f35
 02fc45    ee0c01       inc $010c
 02fc48    28           plp
 02fc49    60           rts

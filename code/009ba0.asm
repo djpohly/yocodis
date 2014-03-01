@@ -8,7 +8,7 @@
 009bac    18           clc
 009bad    694000       adc #$0040
 009bb0    85d6         sta $d6
-009bb2    22759500     jsr $009575
+009bb2    22759500     jsl $009575
 009bb6    a6de         ldx $de
 009bb8    ca           dex
 009bb9    a00000       ldy #$0000
@@ -42,7 +42,7 @@
 009bec    c220         rep #$20
 009bee    a6de         ldx $de
 009bf0    8019         bra $009c0b
-009bf2    22119c00     jsr $009c11
+009bf2    22119c00     jsl $009c11
 009bf6    e6d6         inc $d6
 009bf8    e6da         inc $da
 009bfa    e6da         inc $da
@@ -72,7 +72,7 @@
 009c28    a94f20       lda #$204f
 009c2b    a20060       ldx #$6000
 009c2e    a00008       ldy #$0800
-009c31    22688b00     jsr $008b68
+009c31    22688b00     jsl $008b68
 009c35    a90000       lda #$0000
 009c38    85d8         sta $d8
 009c3a    a97e00       lda #$007e
@@ -83,7 +83,7 @@
 009c47    85da         sta $da
 009c49    a91404       lda #$0414
 009c4c    85de         sta $de
-009c4e    22ae8e00     jsr $008eae
+009c4e    22ae8e00     jsl $008eae
 009c52    a9a661       lda #$61a6
 009c55    209f9e       jsr $9e9f
 009c58    ad3c01       lda $013c
@@ -93,6 +93,6 @@
 009c62    85de         sta $de
 009c64    a91c61       lda #$611c
 009c67    85da         sta $da
-009c69    22a09b00     jsr $009ba0
+009c69    22a09b00     jsl $009ba0
 009c6d    28           plp
 009c6e    6b           rtl

@@ -57,7 +57,7 @@
 02e030    eea810       inc $10a8
 02e033    e220         sep #$20
 02e035    a917         lda #$17
-02e037    2230820d     jsr $0d8230
+02e037    2230820d     jsl $0d8230
 02e03b    60           rts
 02e03c    c220         rep #$20
 02e03e    206fa7       jsr $a76f
@@ -103,7 +103,7 @@
 02e0ad    8658         stx $58
 02e0af    e220         sep #$20
 02e0b1    a902         lda #$02
-02e0b3    2230820d     jsr $0d8230
+02e0b3    2230820d     jsl $0d8230
 02e0b7    60           rts
 02e0b8    c220         rep #$20
 02e0ba    a20000       ldx #$0000

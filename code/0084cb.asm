@@ -1,38 +1,38 @@
-0084cb    22cc8202     jsr $0282cc
+0084cb    22cc8202     jsl $0282cc
 0084cf    6b           rtl
-0084d0    22e38f02     jsr $028fe3
+0084d0    22e38f02     jsl $028fe3
 0084d4    6b           rtl
-0084d5    2264aa02     jsr $02aa64
+0084d5    2264aa02     jsl $02aa64
 0084d9    6b           rtl
-0084da    223fc502     jsr $02c53f
+0084da    223fc502     jsl $02c53f
 0084de    6b           rtl
-0084df    227c9702     jsr $02977c
+0084df    227c9702     jsl $02977c
 0084e3    6b           rtl
-0084e4    22189d02     jsr $029d18
+0084e4    22189d02     jsl $029d18
 0084e8    6b           rtl
-0084e9    22dfec02     jsr $02ecdf
+0084e9    22dfec02     jsl $02ecdf
 0084ed    6b           rtl
-0084ee    2215b10a     jsr $0ab115
+0084ee    2215b10a     jsl $0ab115
 0084f2    6b           rtl
-0084f3    22b1b80a     jsr $0ab8b1
+0084f3    22b1b80a     jsl $0ab8b1
 0084f7    6b           rtl
-0084f8    22a2be0a     jsr $0abea2
+0084f8    22a2be0a     jsl $0abea2
 0084fc    6b           rtl
-0084fd    22f1e80a     jsr $0ae8f1
+0084fd    22f1e80a     jsl $0ae8f1
 008501    6b           rtl
-008502    2282ea0a     jsr $0aea82
+008502    2282ea0a     jsl $0aea82
 008506    6b           rtl
-008507    220c9502     jsr $02950c
+008507    220c9502     jsl $02950c
 00850b    6b           rtl
-00850c    2272b502     jsr $02b572
+00850c    2272b502     jsl $02b572
 008510    6b           rtl
 008511    6b           rtl
-008512    2249bb0f     jsr $0fbb49
+008512    2249bb0f     jsl $0fbb49
 008516    6b           rtl
 008517    6b           rtl
-008518    2264a00c     jsr $0ca064
+008518    2264a00c     jsl $0ca064
 00851c    6b           rtl
-00851d    2266a30c     jsr $0ca366
+00851d    2266a30c     jsl $0ca366
 008521    6b           rtl
 008522    c220         rep #$20
 008524    48           pha

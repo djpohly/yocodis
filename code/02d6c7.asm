@@ -224,9 +224,9 @@
 02d912    8d2a0d       sta $0d2a
 02d915    ee080c       inc $0c08
 02d918    60           rts
-02d919    2223f604     jsr $04f623
-02d91d    226bf604     jsr $04f66b
-02d921    22dbf504     jsr $04f5db
+02d919    2223f604     jsl $04f623
+02d91d    226bf604     jsl $04f66b
+02d921    22dbf504     jsl $04f5db
 02d925    2018a0       jsr $a018
 02d928    c220         rep #$20
 02d92a    ada810       lda $10a8

@@ -8,7 +8,7 @@
 0ac102    bf30c10a     lda $0ac130,x
 0ac106    29ff00       and #$00ff
 0ac109    8536         sta $36
-0ac10b    228f9600     jsr $00968f
+0ac10b    228f9600     jsl $00968f
 0ac10f    a534         lda $34
 0ac111    8da203       sta $03a2
 0ac114    68           pla
@@ -19,7 +19,7 @@
 0ac11c    bf37c10a     lda $0ac137,x
 0ac120    29ff00       and #$00ff
 0ac123    8536         sta $36
-0ac125    228f9600     jsr $00968f
+0ac125    228f9600     jsl $00968f
 0ac129    a534         lda $34
 0ac12b    8da403       sta $03a4
 0ac12e    28           plp

@@ -18,7 +18,7 @@
 029c02    850a         sta $0a
 029c04    ad6a10       lda $106a
 029c07    850c         sta $0c
-029c09    22a58700     jsr $0087a5
+029c09    22a58700     jsl $0087a5
 029c0d    ad9210       lda $1092
 029c10    0a           asl a
 029c11    aa           tax
@@ -38,7 +38,7 @@
 029c34    850a         sta $0a
 029c36    ad7210       lda $1072
 029c39    850c         sta $0c
-029c3b    22a58700     jsr $0087a5
+029c3b    22a58700     jsl $0087a5
 029c3f    a90500       lda #$0005
 029c42    0a           asl a
 029c43    aa           tax
@@ -53,7 +53,7 @@
 029c5a    850a         sta $0a
 029c5c    a93000       lda #$0030
 029c5f    850c         sta $0c
-029c61    229d8700     jsr $00879d
+029c61    229d8700     jsl $00879d
 029c65    60           rts
 029c66    e220         sep #$20
 029c68    a931         lda #$31
@@ -99,11 +99,11 @@
 029cdb    20239e       jsr $9e23
 029cde    c220         rep #$20
 029ce0    a90900       lda #$0009
-029ce3    22de9700     jsr $0097de
-029ce7    22d0f004     jsr $04f0d0
+029ce3    22de9700     jsl $0097de
+029ce7    22d0f004     jsl $04f0d0
 029ceb    c220         rep #$20
 029ced    a900c4       lda #$c400
-029cf0    22388700     jsr $008738
+029cf0    22388700     jsl $008738
 029cf4    6b           rtl
 029cf5    e220         sep #$20
 029cf7    a545         lda $45

@@ -59,7 +59,7 @@
 0acc75    c90700       cmp #$0007
 0acc78    d007         bne $0acc81
 0acc7a    a91300       lda #$0013
-0acc7d    2230820d     jsr $0d8230
+0acc7d    2230820d     jsl $0d8230
 0acc81    28           plp
 0acc82    60           rts
 0acc83    c220         rep #$20
@@ -111,7 +111,7 @@
 0acce8    651b         adc $1b
 0accea    850a         sta $0a
 0accec    640b         stz $0b
-0accee    229d8700     jsr $00879d
+0accee    229d8700     jsl $00879d
 0accf2    e220         sep #$20
 0accf4    a900         lda #$00
 0accf6    eb           swa
@@ -133,7 +133,7 @@
 0acd13    a96a         lda #$6a
 0acd15    850a         sta $0a
 0acd17    640b         stz $0b
-0acd19    229d8700     jsr $00879d
+0acd19    229d8700     jsl $00879d
 0acd1d    a51a         lda $1a
 0acd1f    38           sec
 0acd20    e51b         sbc $1b
@@ -147,6 +147,6 @@
 0acd2f    c220         rep #$20
 0acd31    af51cd0a     lda $0acd51
 0acd35    8500         sta $00
-0acd37    229d8700     jsr $00879d
+0acd37    229d8700     jsl $00879d
 0acd3b    28           plp
 0acd3c    60           rts

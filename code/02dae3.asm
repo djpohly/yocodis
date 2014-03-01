@@ -20,7 +20,7 @@
 02db1a    60           rts
 02db1b    e220         sep #$20
 02db1d    a914         lda #$14
-02db1f    2230820d     jsr $0d8230
+02db1f    2230820d     jsl $0d8230
 02db23    eea810       inc $10a8
 02db26    60           rts
 02db27    c220         rep #$20
@@ -39,7 +39,7 @@
 02db48    8903         bit #$03
 02db4a    d006         bne $02db52
 02db4c    a904         lda #$04
-02db4e    2230820d     jsr $0d8230
+02db4e    2230820d     jsl $0d8230
 02db52    e220         sep #$20
 02db54    60           rts
 02db55    e220         sep #$20
@@ -113,9 +113,9 @@
 02dc05    8d060c       sta $0c06
 02dc08    ee060c       inc $0c06
 02dc0b    60           rts
-02dc0c    2235f704     jsr $04f735
-02dc10    22a5f604     jsr $04f6a5
-02dc14    22edf604     jsr $04f6ed
+02dc0c    2235f704     jsl $04f735
+02dc10    22a5f604     jsl $04f6a5
+02dc14    22edf604     jsl $04f6ed
 02dc18    2018a0       jsr $a018
 02dc1b    c220         rep #$20
 02dc1d    ada810       lda $10a8

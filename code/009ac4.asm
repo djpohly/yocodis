@@ -9,13 +9,13 @@
 009ad5    85c7         sta $c7
 009ad7    a97e00       lda #$007e
 009ada    85c9         sta $c9
-009adc    22b59000     jsr $0090b5
-009ae0    22b59100     jsr $0091b5
+009adc    22b59000     jsl $0090b5
+009ae0    22b59100     jsl $0091b5
 009ae4    a90010       lda #$1000
 009ae7    a200a0       ldx #$a000
 009aea    7a           ply
-009aeb    227b8e00     jsr $008e7b
-009aef    228f8600     jsr $00868f
+009aeb    227b8e00     jsl $008e7b
+009aef    228f8600     jsl $00868f
 009af3    28           plp
 009af4    6b           rtl
 009af5    08           php
@@ -29,8 +29,8 @@
 009b06    85c7         sta $c7
 009b08    a97e00       lda #$007e
 009b0b    85c9         sta $c9
-009b0d    22b59000     jsr $0090b5
-009b11    22b59100     jsr $0091b5
+009b0d    22b59000     jsl $0090b5
+009b11    22b59100     jsl $0091b5
 009b15    8b           phb
 009b16    a2aac9       ldx #$c9aa
 009b19    a000a6       ldy #$a600
@@ -41,7 +41,7 @@
 009b25    08           php
 009b26    da           phx
 009b27    c220         rep #$20
-009b29    22759500     jsr $009575
+009b29    22759500     jsl $009575
 009b2d    a00000       ldy #$0000
 009b30    a6de         ldx $de
 009b32    1025         bpl $009b59

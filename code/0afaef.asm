@@ -9,7 +9,7 @@
 0afb05    a90500       lda #$0005
 0afb08    8d2409       sta $0924
 0afb0b    a90d00       lda #$000d
-0afb0e    2230820d     jsr $0d8230
+0afb0e    2230820d     jsl $0d8230
 0afb12    60           rts
 0afb13    ad2e09       lda $092e
 0afb16    3a           dec a

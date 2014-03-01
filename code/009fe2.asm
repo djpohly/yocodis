@@ -13,7 +13,7 @@
 009ffc    140a         trb $0a
 009ffe    a60c         ldx $0c
 00a000    a40a         ldy $0a
-00a002    22179700     jsr $009717
+00a002    22179700     jsl $009717
 00a006    18           clc
 00a007    6504         adc $04
 00a009    85da         sta $da

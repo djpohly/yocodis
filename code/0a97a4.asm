@@ -52,9 +52,9 @@
 0a9825    1a           inc a
 0a9826    8da003       sta $03a0
 0a9829    60           rts
-0a982a    22128a0a     jsr $0a8a12
-0a982e    2286840a     jsr $0a8486
-0a9832    22f3840a     jsr $0a84f3
+0a982a    22128a0a     jsl $0a8a12
+0a982e    2286840a     jsl $0a8486
+0a9832    22f3840a     jsl $0a84f3
 0a9836    ae0405       ldx $0504
 0a9839    fe7c03       inc $037c,x
 0a983c    60           rts

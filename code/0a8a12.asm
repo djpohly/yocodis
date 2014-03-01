@@ -32,7 +32,7 @@
 0a8a4a    85da         sta $da
 0a8a4c    a94f20       lda #$204f
 0a8a4f    85d6         sta $d6
-0a8a51    22358f00     jsr $008f35
+0a8a51    22358f00     jsl $008f35
 0a8a55    ee0c01       inc $010c
 0a8a58    28           plp
 0a8a59    6b           rtl
@@ -103,7 +103,7 @@
 0a8ada    850c         sta $0c
 0a8adc    c512         cmp $12
 0a8ade    f004         beq $0a8ae4
-0a8ae0    22c28800     jsr $0088c2
+0a8ae0    22c28800     jsl $0088c2
 0a8ae4    a50c         lda $0c
 0a8ae6    18           clc
 0a8ae7    6920         adc #$20
@@ -123,7 +123,7 @@
 0a8b04    850a         sta $0a
 0a8b06    c513         cmp $13
 0a8b08    f004         beq $0a8b0e
-0a8b0a    22c28800     jsr $0088c2
+0a8b0a    22c28800     jsl $0088c2
 0a8b0e    a50a         lda $0a
 0a8b10    18           clc
 0a8b11    6920         adc #$20
@@ -143,7 +143,7 @@
 0a8b2e    850c         sta $0c
 0a8b30    a513         lda $13
 0a8b32    850a         sta $0a
-0a8b34    22c28800     jsr $0088c2
+0a8b34    22c28800     jsl $0088c2
 0a8b38    e61e         inc $1e
 0a8b3a    c220         rep #$20
 0a8b3c    ad0005       lda $0500

@@ -24,6 +24,6 @@
 04f1e8    8505         sta $05
 04f1ea    640f         stz $0f
 04f1ec    6410         stz $10
-04f1ee    22a58700     jsr $0087a5
+04f1ee    22a58700     jsl $0087a5
 04f1f2    28           plp
 04f1f3    6b           rtl

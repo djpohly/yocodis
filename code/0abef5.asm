@@ -18,11 +18,11 @@
 0abf21    64c3         stz $c3
 0abf23    c220         rep #$20
 0abf25    20e9ce       jsr $cee9
-0abf28    2263bc0a     jsr $0abc63
+0abf28    2263bc0a     jsl $0abc63
 0abf2c    203ecf       jsr $cf3e
 0abf2f    2075d2       jsr $d275
-0abf32    225a8a0a     jsr $0a8a5a
-0abf36    224d800a     jsr $0a804d
+0abf32    225a8a0a     jsl $0a8a5a
+0abf36    224d800a     jsl $0a804d
 0abf3a    60           rts
 0abf3b    e220         sep #$20
 0abf3d    a901         lda #$01
@@ -40,7 +40,7 @@
 0abf56    8502         sta $02
 0abf58    a90100       lda #$0001
 0abf5b    8500         sta $00
-0abf5d    2266850a     jsr $0a8566
+0abf5d    2266850a     jsl $0a8566
 0abf61    e600         inc $00
 0abf63    a502         lda $02
 0abf65    18           clc

@@ -103,7 +103,7 @@
 0ad725    a8           tay
 0ad726    e220         sep #$20
 0ad728    202daf       jsr $af2d
-0ad72b    2266850a     jsr $0a8566
+0ad72b    2266850a     jsl $0a8566
 0ad72f    7a           ply
 0ad730    c8           iny
 0ad731    c8           iny

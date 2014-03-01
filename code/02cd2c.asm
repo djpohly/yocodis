@@ -100,8 +100,8 @@
 02ce2e    ee200d       inc $0d20
 02ce31    ee020c       inc $0c02
 02ce34    60           rts
-02ce35    2200f204     jsr $04f200
-02ce39    224ef204     jsr $04f24e
+02ce35    2200f204     jsl $04f200
+02ce39    224ef204     jsl $04f24e
 02ce3d    2018a0       jsr $a018
 02ce40    c220         rep #$20
 02ce42    ada810       lda $10a8

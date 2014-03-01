@@ -63,9 +63,9 @@
 02e21e    ee240d       inc $0d24
 02e221    ee000c       inc $0c00
 02e224    60           rts
-02e225    22c2f704     jsr $04f7c2
-02e229    2210f804     jsr $04f810
-02e22d    2258f804     jsr $04f858
+02e225    22c2f704     jsl $04f7c2
+02e229    2210f804     jsl $04f810
+02e22d    2258f804     jsl $04f858
 02e231    2018a0       jsr $a018
 02e234    ada810       lda $10a8
 02e237    29ff00       and #$00ff

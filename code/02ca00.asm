@@ -72,7 +72,7 @@
 02cac0    8e8e10       stx $108e
 02cac3    e220         sep #$20
 02cac5    a90c         lda #$0c
-02cac7    2230820d     jsr $0d8230
+02cac7    2230820d     jsl $0d8230
 02cacb    60           rts
 02cacc    c220         rep #$20
 02cace    ce7a10       dec $107a

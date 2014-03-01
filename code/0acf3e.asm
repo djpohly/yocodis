@@ -73,5 +73,5 @@
 0acff5    f008         beq $0acfff
 0acff7    eb           swa
 0acff8    2041b8       jsr $b841
-0acffb    2200800d     jsr $0d8000
+0acffb    2200800d     jsl $0d8000
 0acfff    60           rts

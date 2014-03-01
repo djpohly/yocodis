@@ -8,10 +8,10 @@
 0ace2f    85de         sta $de
 0ace31    a9a462       lda #$62a4
 0ace34    85da         sta $da
-0ace36    22358f00     jsr $008f35
+0ace36    22358f00     jsl $008f35
 0ace3a    a98a62       lda #$628a
 0ace3d    85da         sta $da
-0ace3f    22358f00     jsr $008f35
+0ace3f    22358f00     jsl $008f35
 0ace43    ee1401       inc $0114
 0ace46    28           plp
 0ace47    60           rts
@@ -60,7 +60,7 @@
 0aceaf    85d8         sta $d8
 0aceb1    a90900       lda #$0009
 0aceb4    85de         sta $de
-0aceb6    22ea9b00     jsr $009bea
+0aceb6    22ea9b00     jsl $009bea
 0aceba    ee1401       inc $0114
 0acebd    28           plp
 0acebe    60           rts

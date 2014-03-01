@@ -24,7 +24,7 @@
 0aad2f    a506         lda $06
 0aad31    f07a         beq $0aadad
 0aad33    8534         sta $34
-0aad35    222c9500     jsr $00952c
+0aad35    222c9500     jsl $00952c
 0aad39    e220         sep #$20
 0aad3b    a20500       ldx #$0005
 0aad3e    ca           dex
@@ -43,13 +43,13 @@
 0aad56    9026         bcc $0aad7e
 0aad58    3a           dec a
 0aad59    c220         rep #$20
-0aad5b    22309700     jsr $009730
+0aad5b    22309700     jsl $009730
 0aad5f    8534         sta $34
 0aad61    e220         sep #$20
 0aad63    a90a         lda #$0a
 0aad65    996216       sta $1662,y
 0aad68    c8           iny
-0aad69    222c9500     jsr $00952c
+0aad69    222c9500     jsl $00952c
 0aad6d    a20500       ldx #$0005
 0aad70    ca           dex
 0aad71    b538         lda $38,x
@@ -75,7 +75,7 @@
 0aad97    29ff00       and #$00ff
 0aad9a    8504         sta $04
 0aad9c    5a           phy
-0aad9d    22ca8800     jsr $0088ca
+0aad9d    22ca8800     jsl $0088ca
 0aada1    7a           ply
 0aada2    a50c         lda $0c
 0aada4    38           sec

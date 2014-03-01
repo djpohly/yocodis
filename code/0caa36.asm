@@ -25,7 +25,7 @@
 0caa68    6405         stz $05
 0caa6a    640f         stz $0f
 0caa6c    6410         stz $10
-0caa6e    22a58700     jsr $0087a5
+0caa6e    22a58700     jsl $0087a5
 0caa72    28           plp
 0caa73    6b           rtl
 0caa74    08           php
@@ -51,12 +51,12 @@
 0caa9f    6405         stz $05
 0caaa1    640f         stz $0f
 0caaa3    6410         stz $10
-0caaa5    22a58700     jsr $0087a5
+0caaa5    22a58700     jsl $0087a5
 0caaa9    28           plp
 0caaaa    6b           rtl
 0caaab    08           php
 0caaac    c220         rep #$20
-0caaae    228cad0c     jsr $0cad8c
+0caaae    228cad0c     jsl $0cad8c
 0caab2    c220         rep #$20
 0caab4    8b           phb
 0caab5    a246f5       ldx #$f546
@@ -82,7 +82,7 @@
 0caae5    8601         stx $01
 0caae7    a2c000       ldx #$00c0
 0caaea    20e4ac       jsr $ace4
-0caaed    2244ac0c     jsr $0cac44
+0caaed    2244ac0c     jsl $0cac44
 0caaf1    a9136a       lda #$6a13
 0caaf4    8d0019       sta $1900
 0caaf7    a2136a       ldx #$6a13
@@ -118,7 +118,7 @@
 0cab40    a20001       ldx #$0100
 0cab43    8679         stx $79
 0cab45    867b         stx $7b
-0cab47    22529200     jsr $009252
+0cab47    22529200     jsl $009252
 0cab4b    a980         lda #$80
 0cab4d    8d1a21       sta $211a
 0cab50    6b           rtl
@@ -156,7 +156,7 @@
 0cab9d    ee9e10       inc $109e
 0caba0    e220         sep #$20
 0caba2    a907         lda #$07
-0caba4    2230820d     jsr $0d8230
+0caba4    2230820d     jsl $0d8230
 0caba8    a980         lda #$80
 0cabaa    8d0b0d       sta $0d0b
 0cabad    c220         rep #$20
@@ -176,7 +176,7 @@
 0cabcf    ce9e10       dec $109e
 0cabd2    e220         sep #$20
 0cabd4    a907         lda #$07
-0cabd6    2230820d     jsr $0d8230
+0cabd6    2230820d     jsl $0d8230
 0cabda    a980         lda #$80
 0cabdc    8d0b0d       sta $0d0b
 0cabdf    c220         rep #$20
@@ -206,13 +206,13 @@
 0cac19    9c090d       stz $0d09
 0cac1c    9c0a0d       stz $0d0a
 0cac1f    a90a         lda #$0a
-0cac21    2230820d     jsr $0d8230
+0cac21    2230820d     jsl $0d8230
 0cac25    6b           rtl
 0cac26    e220         sep #$20
 0cac28    ad0b0d       lda $0d0b
 0cac2b    f014         beq $0cac41
 0cac2d    c220         rep #$20
-0cac2f    2244ac0c     jsr $0cac44
+0cac2f    2244ac0c     jsl $0cac44
 0cac33    a9136a       lda #$6a13
 0cac36    8d5c1a       sta $1a5c
 0cac39    ee0001       inc $0100

@@ -55,12 +55,12 @@
 0adb92    ad6403       lda $0364
 0adb95    c220         rep #$20
 0adb97    8d6c01       sta $016c
-0adb9a    22938500     jsr $008593
+0adb9a    22938500     jsl $008593
 0adb9e    291f00       and #$001f
 0adba1    18           clc
 0adba2    691e00       adc #$001e
 0adba5    8d6a01       sta $016a
-0adba8    22938500     jsr $008593
+0adba8    22938500     jsl $008593
 0adbac    291e00       and #$001e
 0adbaf    aa           tax
 0adbb0    bfcddb0a     lda $0adbcd,x

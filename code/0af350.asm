@@ -242,10 +242,10 @@
 0af532    85e0         sta $e0
 0af534    8a           txa
 0af535    f006         beq $0af53d
-0af537    22b48e00     jsr $008eb4
+0af537    22b48e00     jsl $008eb4
 0af53b    28           plp
 0af53c    60           rts
-0af53d    22358f00     jsr $008f35
+0af53d    22358f00     jsl $008f35
 0af541    28           plp
 0af542    60           rts
 0af543    08           php
@@ -421,7 +421,7 @@
 0af69e    85dc         sta $dc
 0af6a0    a90200       lda #$0002
 0af6a3    85de         sta $de
-0af6a5    22a09b00     jsr $009ba0
+0af6a5    22a09b00     jsl $009ba0
 0af6a9    a98720       lda #$2087
 0af6ac    97da         sta [$da],y
 0af6ae    97d6         sta [$d6],y
@@ -430,7 +430,7 @@
 0af6b5    6436         stz $36
 0af6b7    a9f665       lda #$65f6
 0af6ba    85da         sta $da
-0af6bc    22a09b00     jsr $009ba0
+0af6bc    22a09b00     jsl $009ba0
 0af6c0    ee1401       inc $0114
 0af6c3    28           plp
 0af6c4    60           rts

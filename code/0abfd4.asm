@@ -62,7 +62,7 @@
 0ac061    850c         sta $0c
 0ac063    ad3c09       lda $093c
 0ac066    850a         sta $0a
-0ac068    22a58700     jsr $0087a5
+0ac068    22a58700     jsl $0087a5
 0ac06c    ad2609       lda $0926
 0ac06f    0a           asl a
 0ac070    aa           tax
@@ -77,7 +77,7 @@
 0ac086    e220         sep #$20
 0ac088    a940         lda #$40
 0ac08a    8503         sta $03
-0ac08c    22a58700     jsr $0087a5
+0ac08c    22a58700     jsl $0087a5
 0ac090    28           plp
 0ac091    60           rts
 0ac092    08           php

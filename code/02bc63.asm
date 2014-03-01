@@ -16,7 +16,7 @@
 02bc8b    a20048       ldx #$4800
 02bc8e    a00014       ldy #$1400
 02bc91    a90008       lda #$0800
-02bc94    227b8e00     jsr $008e7b
+02bc94    227b8e00     jsl $008e7b
 02bc98    ee4608       inc $0846
 02bc9b    60           rts
 02bc9c    a90080       lda #$8000
@@ -34,7 +34,7 @@
 02bcb8    c90300       cmp #$0003
 02bcbb    d02d         bne $02bcea
 02bcbd    ad000a       lda $0a00
-02bcc0    22309700     jsr $009730
+02bcc0    22309700     jsl $009730
 02bcc4    0dce01       ora $01ce
 02bcc7    8dce01       sta $01ce
 02bcca    ac4601       ldy $0146
@@ -57,7 +57,7 @@
 02bcf0    a94f00       lda #$004f
 02bcf3    a20060       ldx #$6000
 02bcf6    a00007       ldy #$0700
-02bcf9    22688b00     jsr $008b68
+02bcf9    22688b00     jsl $008b68
 02bcfd    68           pla
 02bcfe    20b9fb       jsr $fbb9
 02bd01    28           plp

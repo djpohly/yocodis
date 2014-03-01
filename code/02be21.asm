@@ -9,7 +9,7 @@
 02be2e    aa           tax
 02be2f    bc0007       ldy $0700,x
 02be32    301c         bmi $02be50
-02be34    22f5d90a     jsr $0ad9f5
+02be34    22f5d90a     jsl $0ad9f5
 02be38    bd0807       lda $0708,x
 02be3b    8503         sta $03
 02be3d    bd0207       lda $0702,x
@@ -18,7 +18,7 @@
 02be45    850c         sta $0c
 02be47    bd0607       lda $0706,x
 02be4a    850a         sta $0a
-02be4c    22a58700     jsr $0087a5
+02be4c    22a58700     jsl $0087a5
 02be50    ada005       lda $05a0
 02be53    3a           dec a
 02be54    10d1         bpl $02be27

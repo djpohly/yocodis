@@ -34,7 +34,7 @@
 008aed    c8           iny
 008aee    b735         lda [$35],y
 008af0    aa           tax
-008af1    22118b00     jsr $008b11
+008af1    22118b00     jsl $008b11
 008af5    e8           inx
 008af6    e8           inx
 008af7    c638         dec $38
@@ -171,7 +171,7 @@
 008bea    c8           iny
 008beb    b700         lda [$00],y
 008bed    aa           tax
-008bee    22018c00     jsr $008c01
+008bee    22018c00     jsl $008c01
 008bf2    e8           inx
 008bf3    e8           inx
 008bf4    c638         dec $38
@@ -251,6 +251,6 @@
 008c81    bf8f8c00     lda $008c8f,x
 008c85    a8           tay
 008c86    a90000       lda #$0000
-008c89    22bf8c00     jsr $008cbf
+008c89    22bf8c00     jsl $008cbf
 008c8d    28           plp
 008c8e    6b           rtl
