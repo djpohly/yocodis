@@ -8,7 +8,7 @@ get_addr_file() (
 	local addr=$(printf 000000%s "$1" | tail -c6)
 
 	shopt -s nullglob
-	{ echo "zzzsearch/$addr.asm"; ls code/* data/* jump/* longjump/* unref/* unref-data/* unref-jump/* filler/*; } |
+	{ echo "zzzsearch/$addr.asm"; ls code/* data/* jump/* unref/* unref-data/* unref-jump/* filler/*; } |
 		sort -t/ -k2 |
 		grep -B1 "^zzzsearch/" |
 		grep -v "^zzzsearch/"
@@ -18,7 +18,7 @@ get_next_file() (
 	local addr=$(printf 000000%s "$1" | tail -c6)
 
 	shopt -s nullglob
-	{ echo "zzzsearch/$addr.asm"; ls code/* data/* jump/* longjump/* unref/* unref-data/* unref-jump/* filler/*; } |
+	{ echo "zzzsearch/$addr.asm"; ls code/* data/* jump/* unref/* unref-data/* unref-jump/* filler/*; } |
 		sort -t/ -k2 |
 		grep -A1 "^zzzsearch/" |
 		grep -v "^zzzsearch/"
