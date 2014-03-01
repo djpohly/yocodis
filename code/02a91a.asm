@@ -87,5 +87,5 @@
 02a9f3    0a           asl a
 02a9f4    aa           tax
 02a9f5    f4faa9       pea $a9fa
-02a9f8    7cfca9       jmp ($a9fc,x)
+02a9f8    7cfca9       jmp ($02a9fc,x)
 02a9fb    6b           rtl

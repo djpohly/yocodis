@@ -29,5 +29,5 @@
 0ad586    0a           asl a
 0ad587    aa           tax
 0ad588    f48dd5       pea $d58d
-0ad58b    7c8fd5       jmp ($d58f,x)
+0ad58b    7c8fd5       jmp ($0ad58f,x)
 0ad58e    60           rts

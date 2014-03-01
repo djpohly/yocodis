@@ -13,4 +13,4 @@
 0ac6c3    a9dac6       lda #$c6da
 0ac6c6    852e         sta $2e
 0ac6c8    20e0c7       jsr $c7e0
-0ac6cb    4c90c5       jmp $c590
+0ac6cb    4c90c5       jmp $0ac590

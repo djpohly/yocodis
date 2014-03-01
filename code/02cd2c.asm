@@ -109,5 +109,5 @@
 02ce48    0a           asl a
 02ce49    aa           tax
 02ce4a    f44fce       pea $ce4f
-02ce4d    7c51ce       jmp ($ce51,x)
+02ce4d    7c51ce       jmp ($02ce51,x)
 02ce50    60           rts

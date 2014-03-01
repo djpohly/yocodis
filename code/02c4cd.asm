@@ -52,7 +52,7 @@
 02c54d    0a           asl a
 02c54e    aa           tax
 02c54f    f454c5       pea $c554
-02c552    7c7dc5       jmp ($c57d,x)
+02c552    7c7dc5       jmp ($02c57d,x)
 02c555    c220         rep #$20
 02c557    ad0c01       lda $010c
 02c55a    f00b         beq $02c567

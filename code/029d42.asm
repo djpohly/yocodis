@@ -44,5 +44,5 @@
 029da8    0a           asl a
 029da9    aa           tax
 029daa    f4af9d       pea $9daf
-029dad    7cb19d       jmp ($9db1,x)
+029dad    7cb19d       jmp ($029db1,x)
 029db0    60           rts

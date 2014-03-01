@@ -225,5 +225,5 @@
 02aca8    0a           asl a
 02aca9    aa           tax
 02acaa    f4afac       pea $acaf
-02acad    7cb1ac       jmp ($acb1,x)
+02acad    7cb1ac       jmp ($02acb1,x)
 02acb0    60           rts

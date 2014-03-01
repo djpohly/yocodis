@@ -11,12 +11,12 @@
 0ac9e1    98           tya
 0ac9e2    9d2609       sta $0926,x
 0ac9e5    60           rts
-0ac9e6    4c69c9       jmp $c969
+0ac9e6    4c69c9       jmp $0ac969
 0ac9e9    ae0005       ldx $0500
 0ac9ec    bd2209       lda $0922,x
 0ac9ef    29ff00       and #$00ff
 0ac9f2    0a           asl a
 0ac9f3    aa           tax
 0ac9f4    f4f9c9       pea $c9f9
-0ac9f7    7cfbc9       jmp ($c9fb,x)
+0ac9f7    7cfbc9       jmp ($0ac9fb,x)
 0ac9fa    60           rts

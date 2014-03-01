@@ -63,7 +63,7 @@
 0a9843    aa           tax
 0a9844    bd6e03       lda $036e,x
 0a9847    d003         bne $0a984c
-0a9849    4ccf97       jmp $97cf
+0a9849    4ccf97       jmp $0a97cf
 0a984c    206ec1       jsr $c16e
 0a984f    aef203       ldx $03f2
 0a9852    bf73980a     lda $0a9873,x

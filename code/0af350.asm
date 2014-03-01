@@ -252,7 +252,7 @@
 0af544    e220         sep #$20
 0af546    ad4808       lda $0848
 0af549    d003         bne $0af54e
-0af54b    4c33f6       jmp $f633
+0af54b    4c33f6       jmp $0af633
 0af54e    aff0007f     lda $7f00f0
 0af552    38           sec
 0af553    e920         sbc #$20

@@ -12,4 +12,4 @@
 0ad024    290700       and #$0007
 0ad027    0a           asl a
 0ad028    aa           tax
-0ad029    7c2cd0       jmp ($d02c,x)
+0ad029    7c2cd0       jmp ($0ad02c,x)

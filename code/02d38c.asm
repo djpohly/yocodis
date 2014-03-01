@@ -101,5 +101,5 @@
 02d499    0a           asl a
 02d49a    aa           tax
 02d49b    f4a0d4       pea $d4a0
-02d49e    7ca2d4       jmp ($d4a2,x)
+02d49e    7ca2d4       jmp ($02d4a2,x)
 02d4a1    60           rts

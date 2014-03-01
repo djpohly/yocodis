@@ -126,4 +126,4 @@
 0aec32    0a           asl a
 0aec33    aa           tax
 0aec34    e220         sep #$20
-0aec36    7c39ec       jmp ($ec39,x)
+0aec36    7c39ec       jmp ($0aec39,x)

@@ -32,6 +32,6 @@
 02be63    0a           asl a
 02be64    aa           tax
 02be65    f46abe       pea $be6a
-02be68    7c6dbe       jmp ($be6d,x)
+02be68    7c6dbe       jmp ($02be6d,x)
 02be6b    28           plp
 02be6c    60           rts

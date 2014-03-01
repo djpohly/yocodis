@@ -25,6 +25,6 @@
 009ed9    0a           asl a
 009eda    aa           tax
 009edb    f4e09e       pea $9ee0
-009ede    7ce39e       jmp ($9ee3,x)
+009ede    7ce39e       jmp ($009ee3,x)
 009ee1    28           plp
 009ee2    6b           rtl

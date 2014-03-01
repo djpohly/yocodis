@@ -58,7 +58,7 @@
 02c1a0    0a           asl a
 02c1a1    aa           tax
 02c1a2    f4a7c1       pea $c1a7
-02c1a5    7cb2c1       jmp ($c1b2,x)
+02c1a5    7cb2c1       jmp ($02c1b2,x)
 02c1a8    c220         rep #$20
 02c1aa    ada005       lda $05a0
 02c1ad    3a           dec a

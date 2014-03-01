@@ -17,7 +17,7 @@
 0aea5a    a5bb         lda $bb
 0aea5c    298010       and #$1080
 0aea5f    d003         bne $0aea64
-0aea61    4cbfe9       jmp $e9bf
+0aea61    4cbfe9       jmp $0ae9bf
 0aea64    e220         sep #$20
 0aea66    a983         lda #$83
 0aea68    eb           swa
@@ -28,7 +28,7 @@
 0aea72    e220         sep #$20
 0aea74    a562         lda $62
 0aea76    f003         beq $0aea7b
-0aea78    4cbfe9       jmp $e9bf
+0aea78    4cbfe9       jmp $0ae9bf
 0aea7b    a993         lda #$93
 0aea7d    22758b00     jsr $008b75
 0aea81    60           rts

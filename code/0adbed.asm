@@ -354,7 +354,7 @@
 0adedd    0a           asl a
 0adede    aa           tax
 0adedf    f4e4de       pea $dee4
-0adee2    7cf6de       jmp ($def6,x)
+0adee2    7cf6de       jmp ($0adef6,x)
 0adee5    c220         rep #$20
 0adee7    ad6001       lda $0160
 0adeea    85b9         sta $b9

@@ -34,7 +34,7 @@
 02803a    e8           inx
 02803b    c06000       cpy #$0060
 02803e    b003         bcs $028043
-028040    4c0980       jmp $8009
+028040    4c0980       jmp $028009
 028043    ab           plb
 028044    28           plp
 028045    60           rts
@@ -217,5 +217,5 @@
 0281e3    0a           asl a
 0281e4    aa           tax
 0281e5    f4ea81       pea $81ea
-0281e8    7cec81       jmp ($81ec,x)
+0281e8    7cec81       jmp ($0281ec,x)
 0281eb    6b           rtl

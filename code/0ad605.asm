@@ -18,5 +18,5 @@
 0ad633    0a           asl a
 0ad634    aa           tax
 0ad635    f43ad6       pea $d63a
-0ad638    7c3cd6       jmp ($d63c,x)
+0ad638    7c3cd6       jmp ($0ad63c,x)
 0ad63b    60           rts

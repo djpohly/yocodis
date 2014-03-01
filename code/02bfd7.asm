@@ -24,6 +24,6 @@
 02c00c    0a           asl a
 02c00d    aa           tax
 02c00e    f413c0       pea $c013
-02c011    7c16c0       jmp ($c016,x)
+02c011    7c16c0       jmp ($02c016,x)
 02c014    28           plp
 02c015    60           rts

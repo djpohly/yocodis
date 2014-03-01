@@ -488,7 +488,7 @@
 0aab63    e8           inx
 0aab64    e41a         cpx $1a
 0aab66    90c7         bcc $0aab2f
-0aab68    4ceaab       jmp $abea
+0aab68    4ceaab       jmp $0aabea
 0aab6b    a500         lda $00
 0aab6d    290f00       and #$000f
 0aab70    18           clc
@@ -626,4 +626,4 @@
 0aac72    290300       and #$0003
 0aac75    0a           asl a
 0aac76    aa           tax
-0aac77    7c7aac       jmp ($ac7a,x)
+0aac77    7c7aac       jmp ($0aac7a,x)

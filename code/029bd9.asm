@@ -113,5 +113,5 @@
 029d00    0a           asl a
 029d01    aa           tax
 029d02    f4079d       pea $9d07
-029d05    7c099d       jmp ($9d09,x)
+029d05    7c099d       jmp ($029d09,x)
 029d08    6b           rtl

@@ -213,7 +213,7 @@
 0adaef    0a           asl a
 0adaf0    aa           tax
 0adaf1    f4f6da       pea $daf6
-0adaf4    7c08db       jmp ($db08,x)
+0adaf4    7c08db       jmp ($0adb08,x)
 0adaf7    c220         rep #$20
 0adaf9    ad6001       lda $0160
 0adafc    85b7         sta $b7

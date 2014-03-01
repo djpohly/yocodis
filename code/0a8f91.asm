@@ -142,7 +142,7 @@
 0a90b8    9204         sta ($04)
 0a90ba    c608         dec $08
 0a90bc    d0d1         bne $0a908f
-0a90be    4cdd8f       jmp $8fdd
+0a90be    4cdd8f       jmp $0a8fdd
 0a90c1    a506         lda $06
 0a90c3    8508         sta $08
 0a90c5    0a           asl a
@@ -177,7 +177,7 @@
 0a90fc    9204         sta ($04)
 0a90fe    c608         dec $08
 0a9100    d0cc         bne $0a90ce
-0a9102    4c5c90       jmp $905c
+0a9102    4c5c90       jmp $0a905c
 0a9105    a506         lda $06
 0a9107    8508         sta $08
 0a9109    18           clc
@@ -213,7 +213,7 @@
 0a9145    9204         sta ($04)
 0a9147    c608         dec $08
 0a9149    d0cb         bne $0a9116
-0a914b    4cdd8f       jmp $8fdd
+0a914b    4cdd8f       jmp $0a8fdd
 0a914e    a506         lda $06
 0a9150    8508         sta $08
 0a9152    0a           asl a
@@ -257,7 +257,7 @@
 0a919a    9204         sta ($04)
 0a919c    c608         dec $08
 0a919e    d0c1         bne $0a9161
-0a91a0    4c5c90       jmp $905c
+0a91a0    4c5c90       jmp $0a905c
 0a91a3    a502         lda $02
 0a91a5    38           sec
 0a91a6    e90800       sbc #$0008
@@ -280,7 +280,7 @@
 0a91ca    9102         sta ($02),y
 0a91cc    98           tya
 0a91cd    d0e4         bne $0a91b3
-0a91cf    4cdd8f       jmp $8fdd
+0a91cf    4cdd8f       jmp $0a8fdd
 0a91d2    a502         lda $02
 0a91d4    3a           dec a
 0a91d5    8500         sta $00
@@ -313,12 +313,12 @@
 0a9201    9102         sta ($02),y
 0a9203    98           tya
 0a9204    d0dd         bne $0a91e3
-0a9206    4c5c90       jmp $905c
+0a9206    4c5c90       jmp $0a905c
 0a9209    08           php
 0a920a    e220         sep #$20
 0a920c    a506         lda $06
 0a920e    d003         bne $0a9213
-0a9210    4caa92       jmp $92aa
+0a9210    4caa92       jmp $0a92aa
 0a9213    a00000       ldy #$0000
 0a9216    bb           tyx
 0a9217    b9aa03       lda $03aa,y

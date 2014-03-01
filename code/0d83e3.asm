@@ -16,6 +16,6 @@
 0d8405    0a           asl a
 0d8406    aa           tax
 0d8407    f40c84       pea $840c
-0d840a    7c0f84       jmp ($840f,x)
+0d840a    7c0f84       jmp ($0d840f,x)
 0d840d    28           plp
 0d840e    6b           rtl

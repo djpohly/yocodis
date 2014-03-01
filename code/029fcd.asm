@@ -188,5 +188,5 @@
 02a19b    0a           asl a
 02a19c    aa           tax
 02a19d    f4a2a1       pea $a1a2
-02a1a0    7ca4a1       jmp ($a1a4,x)
+02a1a0    7ca4a1       jmp ($02a1a4,x)
 02a1a3    60           rts

@@ -6,7 +6,7 @@
 02b57d    0a           asl a
 02b57e    aa           tax
 02b57f    f484b5       pea $b584
-02b582    7cbab5       jmp ($b5ba,x)
+02b582    7cbab5       jmp ($02b5ba,x)
 02b585    c220         rep #$20
 02b587    ad4c08       lda $084c
 02b58a    d009         bne $02b595

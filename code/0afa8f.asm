@@ -7,6 +7,6 @@
 0afa9d    0a           asl a
 0afa9e    aa           tax
 0afa9f    f4a4fa       pea $faa4
-0afaa2    7ca7fa       jmp ($faa7,x)
+0afaa2    7ca7fa       jmp ($0afaa7,x)
 0afaa5    28           plp
 0afaa6    60           rts

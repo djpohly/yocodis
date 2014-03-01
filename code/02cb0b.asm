@@ -70,5 +70,5 @@
 02cbc6    0a           asl a
 02cbc7    aa           tax
 02cbc8    f4cdcb       pea $cbcd
-02cbcb    7ccfcb       jmp ($cbcf,x)
+02cbcb    7ccfcb       jmp ($02cbcf,x)
 02cbce    60           rts

@@ -48,5 +48,5 @@
 02c4be    0a           asl a
 02c4bf    aa           tax
 02c4c0    f4c5c4       pea $c4c5
-02c4c3    7cc7c4       jmp ($c4c7,x)
+02c4c3    7cc7c4       jmp ($02c4c7,x)
 02c4c6    6b           rtl

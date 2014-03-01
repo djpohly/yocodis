@@ -72,5 +72,5 @@
 02e23a    0a           asl a
 02e23b    aa           tax
 02e23c    f441e2       pea $e241
-02e23f    7c43e2       jmp ($e243,x)
+02e23f    7c43e2       jmp ($02e243,x)
 02e242    60           rts

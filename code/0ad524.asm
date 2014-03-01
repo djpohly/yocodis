@@ -5,5 +5,5 @@
 0ad52f    0a           asl a
 0ad530    aa           tax
 0ad531    f436d5       pea $d536
-0ad534    7c38d5       jmp ($d538,x)
+0ad534    7c38d5       jmp ($0ad538,x)
 0ad537    60           rts

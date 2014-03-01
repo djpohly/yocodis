@@ -12,5 +12,5 @@
 0ad5b2    0a           asl a
 0ad5b3    aa           tax
 0ad5b4    f4b9d5       pea $d5b9
-0ad5b7    7cbbd5       jmp ($d5bb,x)
+0ad5b7    7cbbd5       jmp ($0ad5bb,x)
 0ad5ba    60           rts

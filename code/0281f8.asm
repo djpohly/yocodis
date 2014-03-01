@@ -83,5 +83,5 @@
 0282d4    0a           asl a
 0282d5    aa           tax
 0282d6    f4db82       pea $82db
-0282d9    7cdd82       jmp ($82dd,x)
+0282d9    7cdd82       jmp ($0282dd,x)
 0282dc    6b           rtl

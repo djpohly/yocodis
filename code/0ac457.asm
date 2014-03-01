@@ -71,4 +71,4 @@
 0ac4f1    ad5601       lda $0156
 0ac4f4    0a           asl a
 0ac4f5    aa           tax
-0ac4f6    7cf9c4       jmp ($c4f9,x)
+0ac4f6    7cf9c4       jmp ($0ac4f9,x)

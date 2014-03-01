@@ -67,7 +67,7 @@
 0aeced    e647         inc $47
 0aecef    60           rts
 0aecf0    224d800a     jsr $0a804d
-0aecf4    4c62e9       jmp $e962
+0aecf4    4c62e9       jmp $0ae962
 0aecf7    224d800a     jsr $0a804d
 0aecfb    a90000       lda #$0000
 0aecfe    2005f5       jsr $f505
@@ -329,6 +329,6 @@
 0aef56    0a           asl a
 0aef57    aa           tax
 0aef58    f45def       pea $ef5d
-0aef5b    7c60ef       jmp ($ef60,x)
+0aef5b    7c60ef       jmp ($0aef60,x)
 0aef5e    28           plp
 0aef5f    6b           rtl

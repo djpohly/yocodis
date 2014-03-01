@@ -21,4 +21,4 @@
 0ac73d    a998c7       lda #$c798
 0ac740    852e         sta $2e
 0ac742    20e0c7       jsr $c7e0
-0ac745    4c90c5       jmp $c590
+0ac745    4c90c5       jmp $0ac590

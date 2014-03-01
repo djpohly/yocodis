@@ -56,7 +56,7 @@
 0a8a81    eb           swa
 0a8a82    bd6403       lda $0364,x
 0a8a85    d003         bne $0a8a8a
-0a8a87    4c3a8b       jmp $8b3a
+0a8a87    4c3a8b       jmp $0a8b3a
 0a8a8a    c220         rep #$20
 0a8a8c    0a           asl a
 0a8a8d    0a           asl a
@@ -150,7 +150,7 @@
 0a8b3f    f009         beq $0a8b4a
 0a8b41    a20000       ldx #$0000
 0a8b44    8e0005       stx $0500
-0a8b47    4c738a       jmp $8a73
+0a8b47    4c738a       jmp $0a8a73
 0a8b4a    e220         sep #$20
 0a8b4c    a51e         lda $1e
 0a8b4e    f01f         beq $0a8b6f

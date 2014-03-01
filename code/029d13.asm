@@ -10,5 +10,5 @@
 029d23    0a           asl a
 029d24    aa           tax
 029d25    f42a9d       pea $9d2a
-029d28    7c2c9d       jmp ($9d2c,x)
+029d28    7c2c9d       jmp ($029d2c,x)
 029d2b    6b           rtl

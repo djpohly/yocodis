@@ -7,7 +7,7 @@
 0ad4f2    0a           asl a
 0ad4f3    aa           tax
 0ad4f4    f4f9d4       pea $d4f9
-0ad4f7    7c18d5       jmp ($d518,x)
+0ad4f7    7c18d5       jmp ($0ad518,x)
 0ad4fa    c220         rep #$20
 0ad4fc    ad0005       lda $0500
 0ad4ff    490001       eor #$0100

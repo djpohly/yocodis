@@ -106,7 +106,7 @@
 0a8c7b    9d6c03       sta $036c,x
 0a8c7e    c940         cmp #$40
 0a8c80    b003         bcs $0a8c85
-0a8c82    4c2d8d       jmp $8d2d
+0a8c82    4c2d8d       jmp $0a8d2d
 0a8c85    c220         rep #$20
 0a8c87    bd6a03       lda $036a,x
 0a8c8a    3a           dec a
@@ -157,7 +157,7 @@
 0a8cd9    bc6603       ldy $0366,x
 0a8cdc    88           dey
 0a8cdd    d003         bne $0a8ce2
-0a8cdf    4c608c       jmp $8c60
+0a8cdf    4c608c       jmp $0a8c60
 0a8ce2    bd6d03       lda $036d,x
 0a8ce5    d006         bne $0a8ced
 0a8ce7    a915         lda #$15

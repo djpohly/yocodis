@@ -3,7 +3,7 @@
 0aadb9    c220         rep #$20
 0aadbb    ad4001       lda $0140
 0aadbe    f003         beq $0aadc3
-0aadc0    4cd2ae       jmp $aed2
+0aadc0    4cd2ae       jmp $0aaed2
 0aadc3    bda803       lda $03a8,x
 0aadc6    1a           inc a
 0aadc7    290700       and #$0007
@@ -84,7 +84,7 @@
 0aae63    a418         ldy $18
 0aae65    88           dey
 0aae66    3003         bmi $0aae6b
-0aae68    4cd5ad       jmp $add5
+0aae68    4cd5ad       jmp $0aadd5
 0aae6b    ae0005       ldx $0500
 0aae6e    bdc203       lda $03c2,x
 0aae71    18           clc

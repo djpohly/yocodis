@@ -35,7 +35,7 @@
 02ecea    0a           asl a
 02eceb    aa           tax
 02ecec    f4f1ec       pea $ecf1
-02ecef    7cfcec       jmp ($ecfc,x)
+02ecef    7cfcec       jmp ($02ecfc,x)
 02ecf2    2041f1       jsr $f141
 02ecf5    2082ef       jsr $ef82
 02ecf8    203fb4       jsr $b43f

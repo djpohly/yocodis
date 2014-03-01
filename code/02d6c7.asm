@@ -234,5 +234,5 @@
 02d930    0a           asl a
 02d931    aa           tax
 02d932    f437d9       pea $d937
-02d935    7c39d9       jmp ($d939,x)
+02d935    7c39d9       jmp ($02d939,x)
 02d938    60           rts

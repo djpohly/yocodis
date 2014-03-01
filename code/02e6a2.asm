@@ -343,5 +343,5 @@
 02ea3a    0a           asl a
 02ea3b    aa           tax
 02ea3c    f441ea       pea $ea41
-02ea3f    7c43ea       jmp ($ea43,x)
+02ea3f    7c43ea       jmp ($02ea43,x)
 02ea42    60           rts

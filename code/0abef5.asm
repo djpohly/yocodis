@@ -83,6 +83,6 @@
 0abfc0    0a           asl a
 0abfc1    aa           tax
 0abfc2    f4c7bf       pea $bfc7
-0abfc5    7ccabf       jmp ($bfca,x)
+0abfc5    7ccabf       jmp ($0abfca,x)
 0abfc8    28           plp
 0abfc9    60           rts

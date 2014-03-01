@@ -6,6 +6,6 @@
 00a267    0a           asl a
 00a268    aa           tax
 00a269    f46ea2       pea $a26e
-00a26c    7c71a2       jmp ($a271,x)
+00a26c    7c71a2       jmp ($00a271,x)
 00a26f    28           plp
 00a270    6b           rtl

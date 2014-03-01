@@ -23,4 +23,4 @@
 0ac648    a98bc6       lda #$c68b
 0ac64b    852e         sta $2e
 0ac64d    20e0c7       jsr $c7e0
-0ac650    4c90c5       jmp $c590
+0ac650    4c90c5       jmp $0ac590

@@ -50,6 +50,6 @@
 02bc4b    0a           asl a
 02bc4c    aa           tax
 02bc4d    f452bc       pea $bc52
-02bc50    7c55bc       jmp ($bc55,x)
+02bc50    7c55bc       jmp ($02bc55,x)
 02bc53    28           plp
 02bc54    60           rts

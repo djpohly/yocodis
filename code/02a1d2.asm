@@ -471,5 +471,5 @@
 02a6d5    0a           asl a
 02a6d6    aa           tax
 02a6d7    f4dca6       pea $a6dc
-02a6da    7cdea6       jmp ($a6de,x)
+02a6da    7cdea6       jmp ($02a6de,x)
 02a6dd    60           rts

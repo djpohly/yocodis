@@ -491,7 +491,7 @@
 009246    e220         sep #$20
 009248    e4ce         cpx $ce
 00924a    b003         bcs $00924f
-00924c    4cc891       jmp $91c8
+00924c    4cc891       jmp $0091c8
 00924f    ab           plb
 009250    28           plp
 009251    6b           rtl

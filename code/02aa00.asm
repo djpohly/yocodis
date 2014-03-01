@@ -46,5 +46,5 @@
 02aa72    0a           asl a
 02aa73    aa           tax
 02aa74    f479aa       pea $aa79
-02aa77    7c7baa       jmp ($aa7b,x)
+02aa77    7c7baa       jmp ($02aa7b,x)
 02aa7a    6b           rtl

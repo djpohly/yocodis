@@ -2,4 +2,4 @@
 02c253    29ff00       and #$00ff
 02c256    0a           asl a
 02c257    aa           tax
-02c258    7c5bc2       jmp ($c25b,x)
+02c258    7c5bc2       jmp ($02c25b,x)

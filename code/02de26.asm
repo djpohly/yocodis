@@ -129,5 +129,5 @@
 02df72    0a           asl a
 02df73    aa           tax
 02df74    f479df       pea $df79
-02df77    7c7bdf       jmp ($df7b,x)
+02df77    7c7bdf       jmp ($02df7b,x)
 02df7a    60           rts

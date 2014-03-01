@@ -199,4 +199,4 @@
 0ae0f4    ad000a       lda $0a00
 0ae0f7    0a           asl a
 0ae0f8    aa           tax
-0ae0f9    7cfce0       jmp ($e0fc,x)
+0ae0f9    7cfce0       jmp ($0ae0fc,x)

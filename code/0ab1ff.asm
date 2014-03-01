@@ -336,6 +336,6 @@
 0ab503    0a           asl a
 0ab504    aa           tax
 0ab505    f40ab5       pea $b50a
-0ab508    7c0db5       jmp ($b50d,x)
+0ab508    7c0db5       jmp ($0ab50d,x)
 0ab50b    28           plp
 0ab50c    6b           rtl
