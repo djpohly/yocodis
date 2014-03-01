@@ -20,5 +20,5 @@
 0ac5bb    852c         sta $2c
 0ac5bd    a9f8c5       lda #$c5f8
 0ac5c0    852e         sta $2e
-0ac5c2    20e0c7       jsr $c7e0
+0ac5c2    20e0c7       jsr $0ac7e0
 0ac5c5    4c90c5       jmp $0ac590

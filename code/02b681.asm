@@ -1,10 +1,10 @@
-02b681    2038bc       jsr $bc38
+02b681    2038bc       jsr $02bc38
 02b684    ad4608       lda $0846
 02b687    1006         bpl $02b68f
 02b689    9c4608       stz $0846
 02b68c    ee7610       inc $1076
 02b68f    60           rts
-02b690    2058be       jsr $be58
+02b690    2058be       jsr $02be58
 02b693    ad4608       lda $0846
 02b696    1003         bpl $02b69b
 02b698    ee7610       inc $1076

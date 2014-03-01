@@ -18,7 +18,7 @@
 009eca    60           rts
 009ecb    08           php
 009ecc    c220         rep #$20
-009ece    20879f       jsr $9f87
+009ece    20879f       jsr $009f87
 009ed1    ad4608       lda $0846
 009ed4    300b         bmi $009ee1
 009ed6    29ff00       and #$00ff

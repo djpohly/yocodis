@@ -41,7 +41,7 @@
 0aa7d0    18           clc
 0aa7d1    6902         adc #$02
 0aa7d3    9d8003       sta $0380,x
-0aa7d6    2051cb       jsr $cb51
+0aa7d6    2051cb       jsr $0acb51
 0aa7d9    ae0005       ldx $0500
 0aa7dc    bd8003       lda $0380,x
 0aa7df    38           sec
@@ -49,10 +49,10 @@
 0aa7e2    b002         bcs $0aa7e6
 0aa7e4    a900         lda #$00
 0aa7e6    9d8003       sta $0380,x
-0aa7e9    2051cb       jsr $cb51
+0aa7e9    2051cb       jsr $0acb51
 0aa7ec    801a         bra $0aa808
 0aa7ee    a510         lda $10
-0aa7f0    2006a5       jsr $a506
+0aa7f0    2006a5       jsr $0aa506
 0aa7f3    9d2c05       sta $052c,x
 0aa7f6    b9d103       lda $03d1,y
 0aa7f9    9d2d05       sta $052d,x
@@ -94,7 +94,7 @@
 0aa848    690003       adc #$0300
 0aa84b    8514         sta $14
 0aa84d    a00200       ldy #$0002
-0aa850    20eaa4       jsr $a4ea
+0aa850    20eaa4       jsr $0aa4ea
 0aa853    e220         sep #$20
 0aa855    b214         lda ($14)
 0aa857    eb           swa
@@ -133,7 +133,7 @@
 0aa89a    690003       adc #$0300
 0aa89d    8514         sta $14
 0aa89f    a00200       ldy #$0002
-0aa8a2    20eaa4       jsr $a4ea
+0aa8a2    20eaa4       jsr $0aa4ea
 0aa8a5    e220         sep #$20
 0aa8a7    b214         lda ($14)
 0aa8a9    eb           swa
@@ -161,7 +161,7 @@
 0aa8d4    08           php
 0aa8d5    c220         rep #$20
 0aa8d7    ae0005       ldx $0500
-0aa8da    2031aa       jsr $aa31
+0aa8da    2031aa       jsr $0aaa31
 0aa8dd    a95103       lda #$0351
 0aa8e0    18           clc
 0aa8e1    6d0005       adc $0500

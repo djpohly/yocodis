@@ -3,7 +3,7 @@
 02c0ed    ee4608       inc $0846
 02c0f0    60           rts
 02c0f1    a91000       lda #$0010
-02c0f4    20b9fb       jsr $fbb9
+02c0f4    20b9fb       jsr $02fbb9
 02c0f7    a9c100       lda #$00c1
 02c0fa    8d2401       sta $0124
 02c0fd    a90020       lda #$2000

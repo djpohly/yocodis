@@ -37,7 +37,7 @@
 0acc42    1008         bpl $0acc4c
 0acc44    de4009       dec $0940,x
 0acc47    303a         bmi $0acc83
-0acc49    201fd4       jsr $d41f
+0acc49    201fd4       jsr $0ad41f
 0acc4c    e600         inc $00
 0acc4e    8a           txa
 0acc4f    490001       eor #$0100
@@ -78,7 +78,7 @@
 0acca3    851a         sta $1a
 0acca5    a9e800       lda #$00e8
 0acca8    850c         sta $0c
-0accaa    20c3cc       jsr $ccc3
+0accaa    20c3cc       jsr $0accc3
 0accad    ad4409       lda $0944
 0accb0    30fb         bmi $0accad
 0accb2    8518         sta $18
@@ -86,7 +86,7 @@
 0accb7    851a         sta $1a
 0accb9    a91800       lda #$0018
 0accbc    850c         sta $0c
-0accbe    20c3cc       jsr $ccc3
+0accbe    20c3cc       jsr $0accc3
 0accc1    28           plp
 0accc2    60           rts
 0accc3    08           php

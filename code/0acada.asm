@@ -1,6 +1,6 @@
 0acada    08           php
 0acadb    c220         rep #$20
-0acadd    200ccb       jsr $cb0c
+0acadd    200ccb       jsr $0acb0c
 0acae0    8a           txa
 0acae1    3009         bmi $0acaec
 0acae3    490001       eor #$0100

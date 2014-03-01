@@ -6,9 +6,9 @@
 0acef5    d00e         bne $0acf05
 0acef7    de4609       dec $0946,x
 0acefa    1009         bpl $0acf05
-0acefc    208dd4       jsr $d48d
-0aceff    2010cf       jsr $cf10
-0acf02    2048ce       jsr $ce48
+0acefc    208dd4       jsr $0ad48d
+0aceff    2010cf       jsr $0acf10
+0acf02    2048ce       jsr $0ace48
 0acf05    ad0005       lda $0500
 0acf08    490001       eor #$0100
 0acf0b    aa           tax

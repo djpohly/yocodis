@@ -10,9 +10,9 @@
 0a9676    9d7a03       sta $037a,x
 0a9679    60           rts
 0a967a    e220         sep #$20
-0a967c    20b1d3       jsr $d3b1
+0a967c    20b1d3       jsr $0ad3b1
 0a967f    ae0005       ldx $0500
-0a9682    202c80       jsr $802c
+0a9682    202c80       jsr $0a802c
 0a9685    b9b700       lda $00b7,y
 0a9688    2984         and #$84
 0a968a    f018         beq $0a96a4
@@ -27,7 +27,7 @@
 0a96a1    9d7a03       sta $037a,x
 0a96a4    60           rts
 0a96a5    ae0005       ldx $0500
-0a96a8    202c80       jsr $802c
+0a96a8    202c80       jsr $0a802c
 0a96ab    b9b700       lda $00b7,y
 0a96ae    298400       and #$0084
 0a96b1    d010         bne $0a96c3
@@ -44,7 +44,7 @@
 0a96ca    de7503       dec $0375,x
 0a96cd    d03f         bne $0a970e
 0a96cf    c220         rep #$20
-0a96d1    200080       jsr $8000
+0a96d1    200080       jsr $0a8000
 0a96d4    39b700       and $00b7,y
 0a96d7    f035         beq $0a970e
 0a96d9    9d7603       sta $0376,x
@@ -74,7 +74,7 @@
 0a970b    9d7a03       sta $037a,x
 0a970e    60           rts
 0a970f    ae0005       ldx $0500
-0a9712    20478c       jsr $8c47
+0a9712    20478c       jsr $0a8c47
 0a9715    b00b         bcs $0a9722
 0a9717    bd6c03       lda $036c,x
 0a971a    d018         bne $0a9734
@@ -117,6 +117,6 @@
 0a9771    aa           tax
 0a9772    fc9097       jsr ($9790,x)
 0a9775    e220         sep #$20
-0a9777    2092c0       jsr $c092
+0a9777    2092c0       jsr $0ac092
 0a977a    28           plp
 0a977b    6b           rtl

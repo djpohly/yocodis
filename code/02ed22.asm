@@ -1,50 +1,50 @@
-02ed22    20c1ab       jsr $abc1
+02ed22    20c1ab       jsr $02abc1
 02ed25    60           rts
 02ed26    a90c00       lda #$000c
 02ed29    8d7610       sta $1076
 02ed2c    60           rts
-02ed2d    206fef       jsr $ef6f
+02ed2d    206fef       jsr $02ef6f
 02ed30    a20300       ldx #$0003
 02ed33    8e7610       stx $1076
 02ed36    60           rts
 02ed37    a59d         lda $9d
 02ed39    290080       and #$8000
 02ed3c    d017         bne $02ed55
-02ed3e    2087f1       jsr $f187
+02ed3e    2087f1       jsr $02f187
 02ed41    ad9c11       lda $119c
 02ed44    d00b         bne $02ed51
-02ed46    2031f2       jsr $f231
+02ed46    2031f2       jsr $02f231
 02ed49    ad9c11       lda $119c
 02ed4c    d003         bne $02ed51
-02ed4e    207cf2       jsr $f27c
+02ed4e    207cf2       jsr $02f27c
 02ed51    9c9c11       stz $119c
 02ed54    60           rts
 02ed55    a91200       lda #$0012
 02ed58    8d7610       sta $1076
 02ed5b    60           rts
 02ed5c    c220         rep #$20
-02ed5e    2063f4       jsr $f463
+02ed5e    2063f4       jsr $02f463
 02ed61    9006         bcc $02ed69
-02ed63    209ff6       jsr $f69f
-02ed66    2090f5       jsr $f590
+02ed63    209ff6       jsr $02f69f
+02ed66    2090f5       jsr $02f590
 02ed69    60           rts
 02ed6a    2279f702     jsl $02f779
 02ed6e    a21009       ldx #$0910
 02ed71    8eac11       stx $11ac
 02ed74    22c2f302     jsl $02f3c2
-02ed78    2053f4       jsr $f453
+02ed78    2053f4       jsr $02f453
 02ed7b    ee7610       inc $1076
 02ed7e    60           rts
 02ed7f    60           rts
 02ed80    a00000       ldy #$0000
 02ed83    a28000       ldx #$0080
 02ed86    8e0000       stx $0000
-02ed89    20a28c       jsr $8ca2
+02ed89    20a28c       jsr $028ca2
 02ed8c    f00f         beq $02ed9d
 02ed8e    a00000       ldy #$0000
 02ed91    a28000       ldx #$0080
 02ed94    8e0000       stx $0000
-02ed97    20a28c       jsr $8ca2
+02ed97    20a28c       jsr $028ca2
 02ed9a    f001         beq $02ed9d
 02ed9c    60           rts
 02ed9d    e220         sep #$20
@@ -60,7 +60,7 @@
 02edb3    22758b00     jsl $008b75
 02edb7    a903         lda #$03
 02edb9    8d4001       sta $0140
-02edbc    200d93       jsr $930d
+02edbc    200d93       jsr $02930d
 02edbf    60           rts
 02edc0    ee7610       inc $1076
 02edc3    60           rts
@@ -139,7 +139,7 @@
 02ee7b    a599         lda $99
 02ee7d    22a09700     jsl $0097a0
 02ee81    8d0202       sta $0202
-02ee84    2017f0       jsr $f017
+02ee84    2017f0       jsr $02f017
 02ee87    a90700       lda #$0007
 02ee8a    2230820d     jsl $0d8230
 02ee8e    60           rts
@@ -177,7 +177,7 @@
 02eede    e220         sep #$20
 02eee0    a562         lda $62
 02eee2    d007         bne $02eeeb
-02eee4    2018f1       jsr $f118
+02eee4    2018f1       jsr $02f118
 02eee7    a993         lda #$93
 02eee9    8544         sta $44
 02eeeb    60           rts

@@ -9,12 +9,12 @@
 0acddb    adf204       lda $04f2
 0acdde    0a           asl a
 0acddf    6df204       adc $04f2
-0acde2    20f5cd       jsr $cdf5
+0acde2    20f5cd       jsr $0acdf5
 0acde5    a09266       ldy #$6692
 0acde8    adf203       lda $03f2
 0acdeb    0a           asl a
 0acdec    6df203       adc $03f2
-0acdef    20f5cd       jsr $cdf5
+0acdef    20f5cd       jsr $0acdf5
 0acdf2    ab           plb
 0acdf3    28           plp
 0acdf4    60           rts

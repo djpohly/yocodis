@@ -6,7 +6,7 @@
 0ac176    6df203       adc $03f2
 0ac179    0a           asl a
 0ac17a    aa           tax
-0ac17b    20bea1       jsr $a1be
+0ac17b    20bea1       jsr $0aa1be
 0ac17e    8534         sta $34
 0ac180    0a           asl a
 0ac181    0a           asl a

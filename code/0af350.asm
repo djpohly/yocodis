@@ -217,7 +217,7 @@
 0af4f9    540a7f       mvn $7f,$0a
 0af4fc    ab           plb
 0af4fd    9c8609       stz $0986
-0af500    2045f6       jsr $f645
+0af500    2045f6       jsr $0af645
 0af503    28           plp
 0af504    60           rts
 0af505    08           php
@@ -398,7 +398,7 @@
 0af66e    9003         bcc $0af673
 0af670    a90f0e       lda #$0e0f
 0af673    8d4b01       sta $014b
-0af676    207bf6       jsr $f67b
+0af676    207bf6       jsr $0af67b
 0af679    28           plp
 0af67a    60           rts
 0af67b    08           php

@@ -1,6 +1,6 @@
 0adbed    ee5c01       inc $015c
 0adbf0    60           rts
-0adbf1    209edd       jsr $dd9e
+0adbf1    209edd       jsr $0add9e
 0adbf4    e220         sep #$20
 0adbf6    a907         lda #$07
 0adbf8    8512         sta $12
@@ -70,8 +70,8 @@
 0adc86    290f0f       and #$0f0f
 0adc89    c90808       cmp #$0808
 0adc8c    d06f         bne $0adcfd
-0adc8e    209edd       jsr $dd9e
-0adc91    200ede       jsr $de0e
+0adc8e    209edd       jsr $0add9e
+0adc91    200ede       jsr $0ade0e
 0adc94    acb601       ldy $01b6
 0adc97    ad6601       lda $0166
 0adc9a    f003         beq $0adc9f
@@ -120,7 +120,7 @@
 0adcf7    6d5c01       adc $015c
 0adcfa    8d5c01       sta $015c
 0adcfd    60           rts
-0adcfe    2068e3       jsr $e368
+0adcfe    2068e3       jsr $0ae368
 0add01    b90003       lda $0300,y
 0add04    29ff00       and #$00ff
 0add07    c90f00       cmp #$000f
@@ -150,7 +150,7 @@
 0add3c    a90400       lda #$0004
 0add3f    8d5c01       sta $015c
 0add42    60           rts
-0add43    2083dd       jsr $dd83
+0add43    2083dd       jsr $0add83
 0add46    e220         sep #$20
 0add48    b90003       lda $0300,y
 0add4b    c90f         cmp #$0f

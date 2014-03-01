@@ -1,35 +1,35 @@
 0282fb    60           rts
-0282fc    20578a       jsr $8a57
+0282fc    20578a       jsr $028a57
 0282ff    e220         sep #$20
 028301    a910         lda #$10
 028303    8567         sta $67
 028305    60           rts
-028306    20708a       jsr $8a70
-028309    20b189       jsr $89b1
-02830c    20ff8b       jsr $8bff
+028306    20708a       jsr $028a70
+028309    20b189       jsr $0289b1
+02830c    20ff8b       jsr $028bff
 02830f    60           rts
-028310    20708a       jsr $8a70
-028313    20da8a       jsr $8ada
-028316    20ff8b       jsr $8bff
+028310    20708a       jsr $028a70
+028313    20da8a       jsr $028ada
+028316    20ff8b       jsr $028bff
 028319    60           rts
-02831a    20708a       jsr $8a70
-02831d    209389       jsr $8993
-028320    20578a       jsr $8a57
-028323    20ff8b       jsr $8bff
+02831a    20708a       jsr $028a70
+02831d    209389       jsr $028993
+028320    20578a       jsr $028a57
+028323    20ff8b       jsr $028bff
 028326    e220         sep #$20
 028328    a911         lda #$11
 02832a    8567         sta $67
 02832c    60           rts
-02832d    20708a       jsr $8a70
-028330    20d089       jsr $89d0
-028333    20ff8b       jsr $8bff
+02832d    20708a       jsr $028a70
+028330    20d089       jsr $0289d0
+028333    20ff8b       jsr $028bff
 028336    60           rts
-028337    20018b       jsr $8b01
-02833a    20708a       jsr $8a70
-02833d    20ff8b       jsr $8bff
+028337    20018b       jsr $028b01
+02833a    20708a       jsr $028a70
+02833d    20ff8b       jsr $028bff
 028340    60           rts
-028341    20558b       jsr $8b55
-028344    20ff8b       jsr $8bff
+028341    20558b       jsr $028b55
+028344    20ff8b       jsr $028bff
 028347    60           rts
 028348    c220         rep #$20
 02834a    ce7a10       dec $107a
@@ -46,7 +46,7 @@
 028363    22fb810d     jsl $0d81fb
 028367    ee7610       inc $1076
 02836a    60           rts
-02836b    20858b       jsr $8b85
+02836b    20858b       jsr $028b85
 02836e    60           rts
 02836f    c220         rep #$20
 028371    a90100       lda #$0001
@@ -76,8 +76,8 @@
 0283af    eeaa10       inc $10aa
 0283b2    a20300       ldx #$0003
 0283b5    8eab10       stx $10ab
-0283b8    20cf8b       jsr $8bcf
-0283bb    203f8c       jsr $8c3f
+0283b8    20cf8b       jsr $028bcf
+0283bb    203f8c       jsr $028c3f
 0283be    60           rts
 0283bf    c220         rep #$20
 0283c1    ce7a10       dec $107a

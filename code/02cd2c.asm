@@ -23,8 +23,8 @@
 02cd6a    d003         bne $02cd6f
 02cd6c    eea810       inc $10a8
 02cd6f    c220         rep #$20
-02cd71    20c9cd       jsr $cdc9
-02cd74    20f5cd       jsr $cdf5
+02cd71    20c9cd       jsr $02cdc9
+02cd74    20f5cd       jsr $02cdf5
 02cd77    e220         sep #$20
 02cd79    60           rts
 02cd7a    e220         sep #$20
@@ -44,7 +44,7 @@
 02cd9f    a9ffff       lda #$ffff
 02cda2    8d000c       sta $0c00
 02cda5    ee000c       inc $0c00
-02cda8    20f5cd       jsr $cdf5
+02cda8    20f5cd       jsr $02cdf5
 02cdab    e220         sep #$20
 02cdad    60           rts
 02cdae    c220         rep #$20
@@ -102,7 +102,7 @@
 02ce34    60           rts
 02ce35    2200f204     jsl $04f200
 02ce39    224ef204     jsl $04f24e
-02ce3d    2018a0       jsr $a018
+02ce3d    2018a0       jsr $02a018
 02ce40    c220         rep #$20
 02ce42    ada810       lda $10a8
 02ce45    29ff00       and #$00ff

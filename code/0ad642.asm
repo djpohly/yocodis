@@ -7,9 +7,9 @@
 0ad651    290300       and #$0003
 0ad654    d00c         bne $0ad662
 0ad656    a0c001       ldy #$01c0
-0ad659    202eb6       jsr $b62e
+0ad659    202eb6       jsr $0ab62e
 0ad65c    a0e001       ldy #$01e0
-0ad65f    202eb6       jsr $b62e
+0ad65f    202eb6       jsr $0ab62e
 0ad662    ae0005       ldx $0500
 0ad665    de6209       dec $0962,x
 0ad668    d003         bne $0ad66d
@@ -102,7 +102,7 @@
 0ad724    5a           phy
 0ad725    a8           tay
 0ad726    e220         sep #$20
-0ad728    202daf       jsr $af2d
+0ad728    202daf       jsr $0aaf2d
 0ad72b    2266850a     jsl $0a8566
 0ad72f    7a           ply
 0ad730    c8           iny

@@ -5,7 +5,7 @@
 0ac22b    9003         bcc $0ac230
 0ac22d    a90200       lda #$0002
 0ac230    48           pha
-0ac231    20bea1       jsr $a1be
+0ac231    20bea1       jsr $0aa1be
 0ac234    48           pha
 0ac235    0a           asl a
 0ac236    6301         adc $01,s

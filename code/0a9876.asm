@@ -1,4 +1,4 @@
-0a9876    208499       jsr $9984
+0a9876    208499       jsr $0a9984
 0a9879    b006         bcs $0a9881
 0a987b    a90700       lda #$0007
 0a987e    9d7c03       sta $037c,x
@@ -54,5 +54,5 @@
 0a98eb    8a           txa
 0a98ec    1a           inc a
 0a98ed    8da003       sta $03a0
-0a98f0    20e2b0       jsr $b0e2
+0a98f0    20e2b0       jsr $0ab0e2
 0a98f3    60           rts

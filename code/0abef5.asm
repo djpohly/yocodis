@@ -10,17 +10,17 @@
 0abf0d    d016         bne $0abf25
 0abf0f    cd7804       cmp $0478
 0abf12    d011         bne $0abf25
-0abf14    20d8d3       jsr $d3d8
+0abf14    20d8d3       jsr $0ad3d8
 0abf17    9c2409       stz $0924
 0abf1a    9c240a       stz $0a24
 0abf1d    e220         sep #$20
 0abf1f    e647         inc $47
 0abf21    64c3         stz $c3
 0abf23    c220         rep #$20
-0abf25    20e9ce       jsr $cee9
+0abf25    20e9ce       jsr $0acee9
 0abf28    2263bc0a     jsl $0abc63
-0abf2c    203ecf       jsr $cf3e
-0abf2f    2075d2       jsr $d275
+0abf2c    203ecf       jsr $0acf3e
+0abf2f    2075d2       jsr $0ad275
 0abf32    225a8a0a     jsl $0a8a5a
 0abf36    224d800a     jsl $0a804d
 0abf3a    60           rts
@@ -52,7 +52,7 @@
 0abf71    60           rts
 0abf72    08           php
 0abf73    c220         rep #$20
-0abf75    201ada       jsr $da1a
+0abf75    201ada       jsr $0ada1a
 0abf78    9c2009       stz $0920
 0abf7b    9c2409       stz $0924
 0abf7e    9c2609       stz $0926

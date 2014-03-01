@@ -3,7 +3,7 @@
 0aef77    d031         bne $0aefaa
 0aef79    ad8609       lda $0986
 0aef7c    f003         beq $0aef81
-0aef7e    20c6f4       jsr $f4c6
+0aef7e    20c6f4       jsr $0af4c6
 0aef81    ad6c03       lda $036c
 0aef84    d01c         bne $0aefa2
 0aef86    ad8209       lda $0982
@@ -19,19 +19,19 @@
 0aef9e    f011         beq $0aefb1
 0aefa0    801d         bra $0aefbf
 0aefa2    2231960a     jsl $0a9631
-0aefa6    20c5f6       jsr $f6c5
+0aefa6    20c5f6       jsr $0af6c5
 0aefa9    60           rts
 0aefaa    ee7803       inc $0378
 0aefad    9cb803       stz $03b8
 0aefb0    60           rts
 0aefb1    a90200       lda #$0002
 0aefb4    8d2409       sta $0924
-0aefb7    2035f6       jsr $f635
+0aefb7    2035f6       jsr $0af635
 0aefba    a90600       lda #$0006
 0aefbd    8011         bra $0aefd0
 0aefbf    a90300       lda #$0003
 0aefc2    8d2409       sta $0924
-0aefc5    203df6       jsr $f63d
+0aefc5    203df6       jsr $0af63d
 0aefc8    a90700       lda #$0007
 0aefcb    8003         bra $0aefd0
 0aefcd    a90500       lda #$0005
@@ -43,9 +43,9 @@
 0aefdc    60           rts
 0aefdd    ada803       lda $03a8
 0aefe0    f004         beq $0aefe6
-0aefe2    203993       jsr $9339
+0aefe2    203993       jsr $0a9339
 0aefe5    60           rts
-0aefe6    20be93       jsr $93be
+0aefe6    20be93       jsr $0a93be
 0aefe9    ee7803       inc $0378
 0aefec    60           rts
 0aefed    adc003       lda $03c0
@@ -56,7 +56,7 @@
 0aeffa    f005         beq $0af001
 0aeffc    22fca50a     jsl $0aa5fc
 0af000    60           rts
-0af001    20d4a8       jsr $a8d4
+0af001    20d4a8       jsr $0aa8d4
 0af004    ee7803       inc $0378
 0af007    60           rts
 0af008    ad6003       lda $0360

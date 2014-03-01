@@ -7,7 +7,7 @@
 0ae935    ad3c01       lda $013c
 0ae938    c90a         cmp #$0a
 0ae93a    f006         beq $0ae942
-0ae93c    2065f1       jsr $f165
+0ae93c    2065f1       jsr $0af165
 0ae93f    e647         inc $47
 0ae941    60           rts
 0ae942    a90c         lda #$0c
@@ -15,12 +15,12 @@
 0ae946    60           rts
 0ae947    ad4608       lda $0846
 0ae94a    f004         beq $0ae950
-0ae94c    208cf1       jsr $f18c
+0ae94c    208cf1       jsr $0af18c
 0ae94f    60           rts
 0ae950    e220         sep #$20
 0ae952    e647         inc $47
 0ae954    60           rts
-0ae955    2080f2       jsr $f280
+0ae955    2080f2       jsr $0af280
 0ae958    a93c00       lda #$003c
 0ae95b    855c         sta $5c
 0ae95d    e220         sep #$20

@@ -13,10 +13,10 @@
 0ac87c    0a           asl a
 0ac87d    690600       adc #$0006
 0ac880    48           pha
-0ac881    20efc8       jsr $c8ef
+0ac881    20efc8       jsr $0ac8ef
 0ac884    68           pla
 0ac885    1a           inc a
-0ac886    20efc8       jsr $c8ef
+0ac886    20efc8       jsr $0ac8ef
 0ac889    a600         ldx $00
 0ac88b    bf95c80a     lda $0ac895,x
 0ac88f    2230820d     jsl $0d8230

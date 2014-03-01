@@ -43,9 +43,9 @@
 0ad986    ab           plb
 0ad987    c220         rep #$20
 0ad989    ad0009       lda $0900
-0ad98c    2098d9       jsr $d998
+0ad98c    2098d9       jsr $0ad998
 0ad98f    ad000a       lda $0a00
-0ad992    2098d9       jsr $d998
+0ad992    2098d9       jsr $0ad998
 0ad995    ab           plb
 0ad996    28           plp
 0ad997    6b           rtl

@@ -28,7 +28,7 @@
 02ecd6    22fb810d     jsl $0d81fb
 02ecda    225a8500     jsl $00855a
 02ecde    60           rts
-02ecdf    20758d       jsr $8d75
+02ecdf    20758d       jsr $028d75
 02ece2    c220         rep #$20
 02ece4    ad7610       lda $1076
 02ece7    29ff00       and #$00ff
@@ -36,7 +36,7 @@
 02eceb    aa           tax
 02ecec    f4f1ec       pea $ecf1
 02ecef    7cfcec       jmp ($02ecfc,x)
-02ecf2    2041f1       jsr $f141
-02ecf5    2082ef       jsr $ef82
-02ecf8    203fb4       jsr $b43f
+02ecf2    2041f1       jsr $02f141
+02ecf5    2082ef       jsr $02ef82
+02ecf8    203fb4       jsr $02b43f
 02ecfb    6b           rtl

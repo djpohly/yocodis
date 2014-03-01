@@ -1,10 +1,10 @@
 0ae2cd    aeba01       ldx $01ba
 0ae2d0    d009         bne $0ae2db
-0ae2d2    2042e6       jsr $e642
+0ae2d2    2042e6       jsr $0ae642
 0ae2d5    9004         bcc $0ae2db
 0ae2d7    9c5c01       stz $015c
 0ae2da    60           rts
-0ae2db    2068e3       jsr $e368
+0ae2db    2068e3       jsr $0ae368
 0ae2de    e220         sep #$20
 0ae2e0    b90003       lda $0300,y
 0ae2e3    c90e         cmp #$0e
@@ -19,7 +19,7 @@
 0ae2fa    60           rts
 0ae2fb    aeba01       ldx $01ba
 0ae2fe    d009         bne $0ae309
-0ae300    2042e6       jsr $e642
+0ae300    2042e6       jsr $0ae642
 0ae303    9004         bcc $0ae309
 0ae305    9c5c01       stz $015c
 0ae308    60           rts
@@ -50,11 +50,11 @@
 0ae338    60           rts
 0ae339    aeba01       ldx $01ba
 0ae33c    d009         bne $0ae347
-0ae33e    2042e6       jsr $e642
+0ae33e    2042e6       jsr $0ae642
 0ae341    9004         bcc $0ae347
 0ae343    9c5c01       stz $015c
 0ae346    60           rts
-0ae347    2068e3       jsr $e368
+0ae347    2068e3       jsr $0ae368
 0ae34a    e220         sep #$20
 0ae34c    b90003       lda $0300,y
 0ae34f    c90e         cmp #$0e

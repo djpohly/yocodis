@@ -44,8 +44,8 @@
 02c536    2230820d     jsl $0d8230
 02c53a    225a8500     jsl $00855a
 02c53e    60           rts
-02c53f    202cc7       jsr $c72c
-02c542    20758d       jsr $8d75
+02c53f    202cc7       jsr $02c72c
+02c542    20758d       jsr $028d75
 02c545    c220         rep #$20
 02c547    ad7610       lda $1076
 02c54a    29ff00       and #$00ff

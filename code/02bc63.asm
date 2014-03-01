@@ -59,7 +59,7 @@
 02bcf6    a00007       ldy #$0700
 02bcf9    22688b00     jsl $008b68
 02bcfd    68           pla
-02bcfe    20b9fb       jsr $fbb9
+02bcfe    20b9fb       jsr $02fbb9
 02bd01    28           plp
 02bd02    60           rts
 02bd03    c220         rep #$20

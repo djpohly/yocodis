@@ -58,8 +58,8 @@
 029aaa    8d7443       sta $4374
 029aad    a980         lda #$80
 029aaf    8d0b42       sta $420b
-029ab2    20b99a       jsr $9ab9
-029ab5    20349b       jsr $9b34
+029ab2    20b99a       jsr $029ab9
+029ab5    20349b       jsr $029b34
 029ab8    60           rts
 029ab9    e220         sep #$20
 029abb    a2f4be       ldx #$bef4

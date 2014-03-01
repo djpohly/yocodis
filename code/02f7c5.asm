@@ -24,9 +24,9 @@
 02f806    f001         beq $02f809
 02f808    1a           inc a
 02f809    1a           inc a
-02f80a    20b9fb       jsr $fbb9
-02f80d    20eefb       jsr $fbee
-02f810    20effb       jsr $fbef
+02f80a    20b9fb       jsr $02fbb9
+02f80d    20eefb       jsr $02fbee
+02f810    20effb       jsr $02fbef
 02f813    60           rts
 02f814    ae0005       ldx $0500
 02f817    ad0c01       lda $010c
@@ -50,8 +50,8 @@
 02f844    9013         bcc $02f859
 02f846    9d4011       sta $1140,x
 02f849    de3c11       dec $113c,x
-02f84c    20eefb       jsr $fbee
-02f84f    20effb       jsr $fbef
+02f84c    20eefb       jsr $02fbee
+02f84f    20effb       jsr $02fbef
 02f852    a90700       lda #$0007
 02f855    2230820d     jsl $0d8230
 02f859    60           rts
@@ -68,8 +68,8 @@
 02f877    9b           txy
 02f878    f001         beq $02f87b
 02f87a    1a           inc a
-02f87b    20b9fb       jsr $fbb9
-02f87e    2022fc       jsr $fc22
+02f87b    20b9fb       jsr $02fbb9
+02f87e    2022fc       jsr $02fc22
 02f881    60           rts
 02f882    ae0005       ldx $0500
 02f885    bc5211       ldy $1152,x
@@ -161,7 +161,7 @@
 02f961    bc4c11       ldy $114c,x
 02f964    c00400       cpy #$0004
 02f967    f064         beq $02f9cd
-02f969    20e2fa       jsr $fae2
+02f969    20e2fa       jsr $02fae2
 02f96c    8500         sta $00
 02f96e    bd4411       lda $1144,x
 02f971    18           clc

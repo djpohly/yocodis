@@ -48,10 +48,10 @@
 0ac845    bf5fc80a     lda $0ac85f,x
 0ac849    29ff00       and #$00ff
 0ac84c    1a           inc a
-0ac84d    20efc8       jsr $c8ef
+0ac84d    20efc8       jsr $0ac8ef
 0ac850    ae5e09       ldx $095e
 0ac853    bf5fc80a     lda $0ac85f,x
 0ac857    29ff00       and #$00ff
-0ac85a    20efc8       jsr $c8ef
+0ac85a    20efc8       jsr $0ac8ef
 0ac85d    28           plp
 0ac85e    60           rts

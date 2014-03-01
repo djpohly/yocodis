@@ -92,7 +92,7 @@
 0a829f    e220         sep #$20
 0a82a1    b90003       lda $0300,y
 0a82a4    8500         sta $00
-0a82a6    20ad82       jsr $82ad
+0a82a6    20ad82       jsr $0a82ad
 0a82a9    ee0605       inc $0506
 0a82ac    60           rts
 0a82ad    da           phx

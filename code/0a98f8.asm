@@ -1,4 +1,4 @@
-0a98f8    206ec1       jsr $c16e
+0a98f8    206ec1       jsr $0ac16e
 0a98fb    ad0405       lda $0504
 0a98fe    490200       eor #$0002
 0a9901    aa           tax

@@ -1,11 +1,11 @@
 0ae16c    aeba01       ldx $01ba
 0ae16f    d009         bne $0ae17a
-0ae171    2042e6       jsr $e642
+0ae171    2042e6       jsr $0ae642
 0ae174    9004         bcc $0ae17a
 0ae176    9c5c01       stz $015c
 0ae179    60           rts
-0ae17a    2045e4       jsr $e445
-0ae17d    2080e5       jsr $e580
+0ae17a    2045e4       jsr $0ae445
+0ae17d    2080e5       jsr $0ae580
 0ae180    acb601       ldy $01b6
 0ae183    ad6601       lda $0166
 0ae186    f003         beq $0ae18b

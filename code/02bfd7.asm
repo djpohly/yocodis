@@ -1,7 +1,7 @@
 02bfd7    ad4808       lda $0848
 02bfda    18           clc
 02bfdb    691200       adc #$0012
-02bfde    20ecbc       jsr $bcec
+02bfde    20ecbc       jsr $02bcec
 02bfe1    ee4808       inc $0848
 02bfe4    ee4608       inc $0846
 02bfe7    60           rts

@@ -74,7 +74,7 @@
 0aae4a    6d0005       adc $0500
 0aae4d    a8           tay
 0aae4e    e220         sep #$20
-0aae50    202daf       jsr $af2d
+0aae50    202daf       jsr $0aaf2d
 0aae53    2266850a     jsl $0a8566
 0aae57    ee0c01       inc $010c
 0aae5a    c220         rep #$20
@@ -120,7 +120,7 @@
 0aaea9    e220         sep #$20
 0aaeab    bd6003       lda $0360,x
 0aaeae    8510         sta $10
-0aaeb0    202daf       jsr $af2d
+0aaeb0    202daf       jsr $0aaf2d
 0aaeb3    c8           iny
 0aaeb4    c610         dec $10
 0aaeb6    d0f8         bne $0aaeb0
@@ -160,7 +160,7 @@
 0aaefb    e220         sep #$20
 0aaefd    bd6203       lda $0362,x
 0aaf00    8512         sta $12
-0aaf02    202daf       jsr $af2d
+0aaf02    202daf       jsr $0aaf2d
 0aaf05    c8           iny
 0aaf06    c8           iny
 0aaf07    c8           iny
@@ -194,11 +194,11 @@
 0aaf3e    8500         sta $00
 0aaf40    60           rts
 0aaf41    9c0005       stz $0500
-0aaf44    2038da       jsr $da38
+0aaf44    2038da       jsr $0ada38
 0aaf47    a90000       lda #$0000
 0aaf4a    22798c00     jsl $008c79
-0aaf4e    2037a2       jsr $a237
-0aaf51    2072bf       jsr $bf72
+0aaf4e    2037a2       jsr $0aa237
+0aaf51    2072bf       jsr $0abf72
 0aaf54    22ca940a     jsl $0a94ca
 0aaf58    ad5601       lda $0156
 0aaf5b    0a           asl a
@@ -235,7 +235,7 @@
 0aafb3    228f8600     jsl $00868f
 0aafb7    a00000       ldy #$0000
 0aafba    22c49a00     jsl $009ac4
-0aafbe    2021d9       jsr $d921
+0aafbe    2021d9       jsr $0ad921
 0aafc1    8b           phb
 0aafc2    ad5601       lda $0156
 0aafc5    0a           asl a
@@ -275,7 +275,7 @@
 0ab01f    a90a00       lda #$000a
 0ab022    8502         sta $02
 0ab024    22c68900     jsl $0089c6
-0ab028    2095c4       jsr $c495
+0ab028    2095c4       jsr $0ac495
 0ab02b    a25e00       ldx #$005e
 0ab02e    9e6019       stz $1960,x
 0ab031    ca           dex
@@ -290,10 +290,10 @@
 0ab047    8d2701       sta $0127
 0ab04a    a90a00       lda #$000a
 0ab04d    8d2901       sta $0129
-0ab050    207dc3       jsr $c37d
-0ab053    20b8c3       jsr $c3b8
-0ab056    2005c4       jsr $c405
-0ab059    2047bf       jsr $bf47
+0ab050    207dc3       jsr $0ac37d
+0ab053    20b8c3       jsr $0ac3b8
+0ab056    2005c4       jsr $0ac405
+0ab059    2047bf       jsr $0abf47
 0ab05c    228f8600     jsl $00868f
 0ab060    9c0401       stz $0104
 0ab063    9c0c01       stz $010c

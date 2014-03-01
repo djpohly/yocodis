@@ -144,7 +144,7 @@
 02b1a2    a907         lda #$07
 02b1a4    2230820d     jsl $0d8230
 02b1a8    60           rts
-02b1a9    20e5b0       jsr $b0e5
+02b1a9    20e5b0       jsr $02b0e5
 02b1ac    60           rts
 02b1ad    c220         rep #$20
 02b1af    ad1411       lda $1114
@@ -172,7 +172,7 @@
 02b1e6    a907         lda #$07
 02b1e8    2230820d     jsl $0d8230
 02b1ec    60           rts
-02b1ed    2011b1       jsr $b111
+02b1ed    2011b1       jsr $02b111
 02b1f0    60           rts
 02b1f1    c220         rep #$20
 02b1f3    ad9900       lda $0099
@@ -260,7 +260,7 @@
 02b2c2    60           rts
 02b2c3    9c1a11       stz $111a
 02b2c6    60           rts
-02b2c7    20dab2       jsr $b2da
+02b2c7    20dab2       jsr $02b2da
 02b2ca    c220         rep #$20
 02b2cc    a90008       lda #$0800
 02b2cf    a20060       ldx #$6000
@@ -429,7 +429,7 @@
 02b460    ad9e10       lda $109e
 02b463    c90300       cmp #$0003
 02b466    d003         bne $02b46b
-02b468    20b492       jsr $92b4
+02b468    20b492       jsr $0292b4
 02b46b    60           rts
 02b46c    e220         sep #$20
 02b46e    a900         lda #$00
@@ -438,17 +438,17 @@
 02b476    8d0721       sta $2107
 02b479    a910         lda #$10
 02b47b    8d0821       sta $2108
-02b47e    202ab7       jsr $b72a
-02b481    2028b8       jsr $b828
-02b484    203bb8       jsr $b83b
-02b487    2045b7       jsr $b745
-02b48a    204eb8       jsr $b84e
+02b47e    202ab7       jsr $02b72a
+02b481    2028b8       jsr $02b828
+02b484    203bb8       jsr $02b83b
+02b487    2045b7       jsr $02b745
+02b48a    204eb8       jsr $02b84e
 02b48d    c220         rep #$20
-02b48f    203fb9       jsr $b93f
+02b48f    203fb9       jsr $02b93f
 02b492    a00066       ldy #$6600
 02b495    2256d90a     jsl $0ad956
-02b499    201d8a       jsr $8a1d
-02b49c    2061b8       jsr $b861
+02b499    201d8a       jsr $028a1d
+02b49c    2061b8       jsr $02b861
 02b49f    c220         rep #$20
 02b4a1    a00001       ldy #$0100
 02b4a4    227cd90a     jsl $0ad97c
@@ -465,7 +465,7 @@
 02b4c0    88           dey
 02b4c1    10f6         bpl $02b4b9
 02b4c3    22d78802     jsl $0288d7
-02b4c7    20b7b8       jsr $b8b7
+02b4c7    20b7b8       jsr $02b8b7
 02b4ca    c220         rep #$20
 02b4cc    a90301       lda #$0103
 02b4cf    2200800d     jsl $0d8000
@@ -486,7 +486,7 @@
 02b4fd    8e8300       stx $0083
 02b500    9c1401       stz $0114
 02b503    9c4c08       stz $084c
-02b506    2003bd       jsr $bd03
+02b506    2003bd       jsr $02bd03
 02b509    a90100       lda #$0001
 02b50c    8d7610       sta $1076
 02b50f    e220         sep #$20
@@ -514,5 +514,5 @@
 02b543    a900         lda #$00
 02b545    22388700     jsl $008738
 02b549    22789b0a     jsl $0a9b78
-02b54d    20bcbb       jsr $bbbc
+02b54d    20bcbb       jsr $02bbbc
 02b550    6b           rtl

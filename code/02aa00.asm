@@ -38,8 +38,8 @@
 02aa5b    2230820d     jsl $0d8230
 02aa5f    225a8500     jsl $00855a
 02aa63    60           rts
-02aa64    20758d       jsr $8d75
-02aa67    203fb4       jsr $b43f
+02aa64    20758d       jsr $028d75
+02aa67    203fb4       jsr $02b43f
 02aa6a    c220         rep #$20
 02aa6c    ad7610       lda $1076
 02aa6f    29ff00       and #$00ff

@@ -3,7 +3,7 @@
 0ad59b    d003         bne $0ad5a0
 0ad59d    fe6009       inc $0960,x
 0ad5a0    a0c000       ldy #$00c0
-0ad5a3    206ed6       jsr $d66e
+0ad5a3    206ed6       jsr $0ad66e
 0ad5a6    60           rts
 0ad5a7    ae0005       ldx $0500
 0ad5aa    bd6009       lda $0960,x

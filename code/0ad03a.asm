@@ -1,7 +1,7 @@
 0ad03a    ae9e05       ldx $059e
 0ad03d    f003         beq $0ad042
 0ad03f    9c5c01       stz $015c
-0ad042    204dd4       jsr $d44d
+0ad042    204dd4       jsr $0ad44d
 0ad045    ae9e05       ldx $059e
 0ad048    18           clc
 0ad049    7d5009       adc $0950,x
@@ -13,7 +13,7 @@
 0ad055    ae9e05       ldx $059e
 0ad058    f003         beq $0ad05d
 0ad05a    9c5c01       stz $015c
-0ad05d    204dd4       jsr $d44d
+0ad05d    204dd4       jsr $0ad44d
 0ad060    ae9e05       ldx $059e
 0ad063    18           clc
 0ad064    7d5209       adc $0952,x
@@ -38,7 +38,7 @@
 0ad090    9c5c01       stz $015c
 0ad093    28           plp
 0ad094    60           rts
-0ad095    204dd4       jsr $d44d
+0ad095    204dd4       jsr $0ad44d
 0ad098    ae9e05       ldx $059e
 0ad09b    18           clc
 0ad09c    7d5409       adc $0954,x
@@ -60,13 +60,13 @@
 0ad0c5    9003         bcc $0ad0ca
 0ad0c7    a91900       lda #$0019
 0ad0ca    9d8003       sta $0380,x
-0ad0cd    2051cb       jsr $cb51
+0ad0cd    2051cb       jsr $0acb51
 0ad0d0    a90200       lda #$0002
 0ad0d3    2215820d     jsl $0d8215
 0ad0d7    28           plp
 0ad0d8    60           rts
 0ad0d9    a90300       lda #$0003
-0ad0dc    2047d1       jsr $d147
+0ad0dc    2047d1       jsr $0ad147
 0ad0df    ae9e05       ldx $059e
 0ad0e2    bd8003       lda $0380,x
 0ad0e5    18           clc
@@ -75,13 +75,13 @@
 0ad0eb    9003         bcc $0ad0f0
 0ad0ed    a91900       lda #$0019
 0ad0f0    9d8003       sta $0380,x
-0ad0f3    2051cb       jsr $cb51
+0ad0f3    2051cb       jsr $0acb51
 0ad0f6    a90a00       lda #$000a
 0ad0f9    2215820d     jsl $0d8215
 0ad0fd    28           plp
 0ad0fe    60           rts
 0ad0ff    a90300       lda #$0003
-0ad102    2047d1       jsr $d147
+0ad102    2047d1       jsr $0ad147
 0ad105    ae9e05       ldx $059e
 0ad108    bd8003       lda $0380,x
 0ad10b    38           sec
@@ -89,13 +89,13 @@
 0ad10e    b003         bcs $0ad113
 0ad110    a90000       lda #$0000
 0ad113    9d8003       sta $0380,x
-0ad116    2051cb       jsr $cb51
+0ad116    2051cb       jsr $0acb51
 0ad119    a92300       lda #$0023
 0ad11c    2215820d     jsl $0d8215
 0ad120    28           plp
 0ad121    60           rts
 0ad122    a90700       lda #$0007
-0ad125    2047d1       jsr $d147
+0ad125    2047d1       jsr $0ad147
 0ad128    ae9e05       ldx $059e
 0ad12b    bd8003       lda $0380,x
 0ad12e    38           sec
@@ -103,7 +103,7 @@
 0ad131    b003         bcs $0ad136
 0ad133    a90000       lda #$0000
 0ad136    9d8003       sta $0380,x
-0ad139    2051cb       jsr $cb51
+0ad139    2051cb       jsr $0acb51
 0ad13c    a92300       lda #$0023
 0ad13f    2215820d     jsl $0d8215
 0ad143    28           plp

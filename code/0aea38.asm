@@ -40,8 +40,8 @@
 0aea8b    fca3ea       jsr ($eaa3,x)
 0aea8e    229c8f00     jsl $008f9c
 0aea92    22a48a00     jsl $008aa4
-0aea96    204ef7       jsr $f74e
-0aea99    208ffa       jsr $fa8f
-0aea9c    2015fa       jsr $fa15
-0aea9f    20dcc4       jsr $c4dc
+0aea96    204ef7       jsr $0af74e
+0aea99    208ffa       jsr $0afa8f
+0aea9c    2015fa       jsr $0afa15
+0aea9f    20dcc4       jsr $0ac4dc
 0aeaa2    6b           rtl

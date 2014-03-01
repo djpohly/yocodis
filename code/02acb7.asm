@@ -30,7 +30,7 @@
 02ad00    9ce210       stz $10e2
 02ad03    a20200       ldx #$0002
 02ad06    8e0611       stx $1106
-02ad09    20c7b2       jsr $b2c7
+02ad09    20c7b2       jsr $02b2c7
 02ad0c    60           rts
 02ad0d    ade210       lda $10e2
 02ad10    f005         beq $02ad17
@@ -38,7 +38,7 @@
 02ad15    8006         bra $02ad1d
 02ad17    ae1c11       ldx $111c
 02ad1a    8ee210       stx $10e2
-02ad1d    20c7b2       jsr $b2c7
+02ad1d    20c7b2       jsr $02b2c7
 02ad20    a20100       ldx #$0001
 02ad23    8e0611       stx $1106
 02ad26    60           rts
@@ -70,7 +70,7 @@
 02ad66    a907         lda #$07
 02ad68    2230820d     jsl $0d8230
 02ad6c    60           rts
-02ad6d    2061b0       jsr $b061
+02ad6d    2061b0       jsr $02b061
 02ad70    60           rts
 02ad71    c220         rep #$20
 02ad73    9c0011       stz $1100
@@ -96,9 +96,9 @@
 02ada7    cee810       dec $10e8
 02adaa    ee0c11       inc $110c
 02adad    ade810       lda $10e8
-02adb0    20cdb3       jsr $b3cd
+02adb0    20cdb3       jsr $02b3cd
 02adb3    60           rts
-02adb4    208db0       jsr $b08d
+02adb4    208db0       jsr $02b08d
 02adb7    60           rts
 02adb8    c220         rep #$20
 02adba    ade010       lda $10e0

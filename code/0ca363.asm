@@ -1,11 +1,11 @@
 0ca363    c220         rep #$20
 0ca365    6b           rtl
 0ca366    e220         sep #$20
-0ca368    2047ad       jsr $ad47
-0ca36b    2051ab       jsr $ab51
+0ca368    2047ad       jsr $0cad47
+0ca36b    2051ab       jsr $0cab51
 0ca36e    2200ac0c     jsl $0cac00
 0ca372    2226ac0c     jsl $0cac26
-0ca376    2012a7       jsr $a712
+0ca376    2012a7       jsr $0ca712
 0ca379    227fa90c     jsl $0ca97f
 0ca37d    22e0a90c     jsl $0ca9e0
 0ca381    22b1a90c     jsl $0ca9b1

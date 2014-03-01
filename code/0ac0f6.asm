@@ -1,6 +1,6 @@
 0ac0f6    08           php
 0ac0f7    c220         rep #$20
-0ac0f9    206ec1       jsr $c16e
+0ac0f9    206ec1       jsr $0ac16e
 0ac0fc    48           pha
 0ac0fd    ad6603       lda $0366
 0ac100    3a           dec a

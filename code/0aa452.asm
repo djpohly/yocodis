@@ -152,7 +152,7 @@
 0aa586    8c2a05       sty $052a
 0aa589    bd2d05       lda $052d,x
 0aa58c    48           pha
-0aa58d    2099c2       jsr $c299
+0aa58d    2099c2       jsr $0ac299
 0aa590    68           pla
 0aa591    22ef930a     jsl $0a93ef
 0aa595    28           plp
@@ -168,7 +168,7 @@
 0aa5ab    8502         sta $02
 0aa5ad    bd2f05       lda $052f,x
 0aa5b0    8503         sta $03
-0aa5b2    20ad82       jsr $82ad
+0aa5b2    20ad82       jsr $0a82ad
 0aa5b5    ee0605       inc $0506
 0aa5b8    e8           inx
 0aa5b9    e8           inx
@@ -192,7 +192,7 @@
 0aa5da    bdd203       lda $03d2,x
 0aa5dd    8502         sta $02
 0aa5df    e220         sep #$20
-0aa5e1    20ad82       jsr $82ad
+0aa5e1    20ad82       jsr $0a82ad
 0aa5e4    ee0605       inc $0506
 0aa5e7    e8           inx
 0aa5e8    e8           inx
@@ -211,8 +211,8 @@
 0aa5fb    60           rts
 0aa5fc    08           php
 0aa5fd    c220         rep #$20
-0aa5ff    206cac       jsr $ac6c
-0aa602    20b5ad       jsr $adb5
+0aa5ff    206cac       jsr $0aac6c
+0aa602    20b5ad       jsr $0aadb5
 0aa605    ae0005       ldx $0500
 0aa608    bdcc03       lda $03cc,x
 0aa60b    d003         bne $0aa610
@@ -288,7 +288,7 @@
 0aa69b    c910         cmp #$10
 0aa69d    9005         bcc $0aa6a4
 0aa69f    a987         lda #$87
-0aa6a1    20b2a7       jsr $a7b2
+0aa6a1    20b2a7       jsr $0aa7b2
 0aa6a4    c220         rep #$20
 0aa6a6    ae0005       ldx $0500
 0aa6a9    bdc003       lda $03c0,x
@@ -350,8 +350,8 @@
 0aa724    900a         bcc $0aa730
 0aa726    c910         cmp #$10
 0aa728    9006         bcc $0aa730
-0aa72a    20dfaa       jsr $aadf
-0aa72d    2015a8       jsr $a815
+0aa72a    20dfaa       jsr $0aaadf
+0aa72d    2015a8       jsr $0aa815
 0aa730    28           plp
 0aa731    6b           rtl
 0aa732    bdcc03       lda $03cc,x
@@ -377,6 +377,6 @@
 0aa75b    c220         rep #$20
 0aa75d    a92000       lda #$0020
 0aa760    9da803       sta $03a8,x
-0aa763    2015a8       jsr $a815
+0aa763    2015a8       jsr $0aa815
 0aa766    28           plp
 0aa767    6b           rtl

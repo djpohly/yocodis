@@ -109,7 +109,7 @@
 0ac0d0    60           rts
 0ac0d1    08           php
 0ac0d2    c220         rep #$20
-0ac0d4    20bea1       jsr $a1be
+0ac0d4    20bea1       jsr $0aa1be
 0ac0d7    0a           asl a
 0ac0d8    aa           tax
 0ac0d9    bfe2c00a     lda $0ac0e2,x

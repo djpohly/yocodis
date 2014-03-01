@@ -22,13 +22,13 @@
 02ae05    a907         lda #$07
 02ae07    2230820d     jsl $0d8230
 02ae0b    60           rts
-02ae0c    20b9b0       jsr $b0b9
+02ae0c    20b9b0       jsr $02b0b9
 02ae0f    60           rts
-02ae10    2069b1       jsr $b169
-02ae13    20adb1       jsr $b1ad
+02ae10    2069b1       jsr $02b169
+02ae13    20adb1       jsr $02b1ad
 02ae16    60           rts
-02ae17    20f1b1       jsr $b1f1
-02ae1a    205cb2       jsr $b25c
+02ae17    20f1b1       jsr $02b1f1
+02ae1a    205cb2       jsr $02b25c
 02ae1d    60           rts
 02ae1e    c220         rep #$20
 02ae20    ad0c11       lda $110c
@@ -50,9 +50,9 @@
 02ae49    f009         beq $02ae54
 02ae4b    cef810       dec $10f8
 02ae4e    ee0c11       inc $110c
-02ae51    2006b4       jsr $b406
+02ae51    2006b4       jsr $02b406
 02ae54    60           rts
-02ae55    203db1       jsr $b13d
+02ae55    203db1       jsr $02b13d
 02ae58    60           rts
 02ae59    c220         rep #$20
 02ae5b    ad0611       lda $1106

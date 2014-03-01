@@ -1,5 +1,5 @@
 02c91d    c220         rep #$20
-02c91f    204afc       jsr $fc4a
+02c91f    204afc       jsr $02fc4a
 02c922    e220         sep #$20
 02c924    a20100       ldx #$0001
 02c927    a988         lda #$88
@@ -71,7 +71,7 @@
 02c9cd    227b8e00     jsl $008e7b
 02c9d1    60           rts
 02c9d2    220df104     jsl $04f10d
-02c9d6    2018a0       jsr $a018
+02c9d6    2018a0       jsr $02a018
 02c9d9    c220         rep #$20
 02c9db    ada810       lda $10a8
 02c9de    29ff00       and #$00ff

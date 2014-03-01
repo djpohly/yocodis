@@ -2,7 +2,7 @@
 0aacff    bda803       lda $03a8,x
 0aad02    f006         beq $0aad0a
 0aad04    9ea803       stz $03a8,x
-0aad07    2051cb       jsr $cb51
+0aad07    2051cb       jsr $0acb51
 0aad0a    28           plp
 0aad0b    60           rts
 0aad0c    ada803       lda $03a8
@@ -14,8 +14,8 @@
 0aad1a    a90300       lda #$0003
 0aad1d    8534         sta $34
 0aad1f    6436         stz $36
-0aad21    2094f9       jsr $f994
-0aad24    2045f6       jsr $f645
+0aad21    2094f9       jsr $0af994
+0aad24    2045f6       jsr $0af645
 0aad27    28           plp
 0aad28    60           rts
 0aad29    08           php

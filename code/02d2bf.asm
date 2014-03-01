@@ -1,6 +1,6 @@
-02d2bf    20c1a7       jsr $a7c1
-02d2c2    20bca8       jsr $a8bc
-02d2c5    207bd3       jsr $d37b
+02d2bf    20c1a7       jsr $02a7c1
+02d2c2    20bca8       jsr $02a8bc
+02d2c5    207bd3       jsr $02d37b
 02d2c8    c220         rep #$20
 02d2ca    a21c00       ldx #$001c
 02d2cd    8e8e10       stx $108e
@@ -22,9 +22,9 @@
 02d2f5    2230820d     jsl $0d8230
 02d2f9    60           rts
 02d2fa    c220         rep #$20
-02d2fc    20c1a7       jsr $a7c1
-02d2ff    20bca8       jsr $a8bc
-02d302    207bd3       jsr $d37b
+02d2fc    20c1a7       jsr $02a7c1
+02d2ff    20bca8       jsr $02a8bc
+02d302    207bd3       jsr $02d37b
 02d305    c220         rep #$20
 02d307    ad7210       lda $1072
 02d30a    c9e0ff       cmp #$ffe0
@@ -40,7 +40,7 @@
 02d323    1003         bpl $02d328
 02d325    eea810       inc $10a8
 02d328    60           rts
-02d329    200bcb       jsr $cb0b
+02d329    200bcb       jsr $02cb0b
 02d32c    60           rts
 02d32d    e220         sep #$20
 02d32f    a562         lda $62

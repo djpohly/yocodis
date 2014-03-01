@@ -52,12 +52,12 @@
 02d75c    c220         rep #$20
 02d75e    60           rts
 02d75f    c220         rep #$20
-02d761    20e2d7       jsr $d7e2
-02d764    204ed8       jsr $d84e
-02d767    2022d8       jsr $d822
-02d76a    2074d8       jsr $d874
-02d76d    20c9d8       jsr $d8c9
-02d770    20f1d8       jsr $d8f1
+02d761    20e2d7       jsr $02d7e2
+02d764    204ed8       jsr $02d84e
+02d767    2022d8       jsr $02d822
+02d76a    2074d8       jsr $02d874
+02d76d    20c9d8       jsr $02d8c9
+02d770    20f1d8       jsr $02d8f1
 02d773    e220         sep #$20
 02d775    60           rts
 02d776    c220         rep #$20
@@ -89,7 +89,7 @@
 02d7c1    eea810       inc $10a8
 02d7c4    a9ffff       lda #$ffff
 02d7c7    8d000c       sta $0c00
-02d7ca    2022d8       jsr $d822
+02d7ca    2022d8       jsr $02d822
 02d7cd    ee000c       inc $0c00
 02d7d0    e220         sep #$20
 02d7d2    60           rts
@@ -227,7 +227,7 @@
 02d919    2223f604     jsl $04f623
 02d91d    226bf604     jsl $04f66b
 02d921    22dbf504     jsl $04f5db
-02d925    2018a0       jsr $a018
+02d925    2018a0       jsr $02a018
 02d928    c220         rep #$20
 02d92a    ada810       lda $10a8
 02d92d    29ff00       and #$00ff

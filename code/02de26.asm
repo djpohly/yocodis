@@ -26,10 +26,10 @@
 02de6a    eea810       inc $10a8
 02de6d    c220         rep #$20
 02de6f    9c240d       stz $0d24
-02de72    20bdde       jsr $debd
-02de75    2018df       jsr $df18
-02de78    20ecde       jsr $deec
-02de7b    2044df       jsr $df44
+02de72    20bdde       jsr $02debd
+02de75    2018df       jsr $02df18
+02de78    20ecde       jsr $02deec
+02de7b    2044df       jsr $02df44
 02de7e    e220         sep #$20
 02de80    60           rts
 02de81    e220         sep #$20
@@ -122,7 +122,7 @@
 02df5f    ee060c       inc $0c06
 02df62    60           rts
 02df63    227df704     jsl $04f77d
-02df67    2018a0       jsr $a018
+02df67    2018a0       jsr $02a018
 02df6a    c220         rep #$20
 02df6c    ada810       lda $10a8
 02df6f    29ff00       and #$00ff

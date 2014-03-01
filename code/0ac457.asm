@@ -36,7 +36,7 @@
 0ac4a4    10f5         bpl $0ac49b
 0ac4a6    22d49b00     jsl $009bd4
 0ac4aa    2290940a     jsl $0a9490
-0ac4ae    20a694       jsr $94a6
+0ac4ae    20a694       jsr $0a94a6
 0ac4b1    ad5601       lda $0156
 0ac4b4    0a           asl a
 0ac4b5    aa           tax

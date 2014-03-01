@@ -22,7 +22,7 @@
 02e1b3    eea810       inc $10a8
 02e1b6    c220         rep #$20
 02e1b8    9c240d       stz $0d24
-02e1bb    20f6e1       jsr $e1f6
+02e1bb    20f6e1       jsr $02e1f6
 02e1be    e220         sep #$20
 02e1c0    60           rts
 02e1c1    e220         sep #$20
@@ -66,7 +66,7 @@
 02e225    22c2f704     jsl $04f7c2
 02e229    2210f804     jsl $04f810
 02e22d    2258f804     jsl $04f858
-02e231    2018a0       jsr $a018
+02e231    2018a0       jsr $02a018
 02e234    ada810       lda $10a8
 02e237    29ff00       and #$00ff
 02e23a    0a           asl a

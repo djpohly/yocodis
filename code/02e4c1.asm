@@ -39,10 +39,10 @@
 02e52b    eea810       inc $10a8
 02e52e    800e         bra $02e53e
 02e530    c220         rep #$20
-02e532    208be5       jsr $e58b
-02e535    20b1e5       jsr $e5b1
-02e538    20dde5       jsr $e5dd
-02e53b    2003e6       jsr $e603
+02e532    208be5       jsr $02e58b
+02e535    20b1e5       jsr $02e5b1
+02e538    20dde5       jsr $02e5dd
+02e53b    2003e6       jsr $02e603
 02e53e    ee040c       inc $0c04
 02e541    e220         sep #$20
 02e543    60           rts

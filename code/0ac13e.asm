@@ -1,6 +1,6 @@
 0ac13e    08           php
 0ac13f    c220         rep #$20
-0ac141    206ec1       jsr $c16e
+0ac141    206ec1       jsr $0ac16e
 0ac144    ad0405       lda $0504
 0ac147    490200       eor #$0002
 0ac14a    aa           tax

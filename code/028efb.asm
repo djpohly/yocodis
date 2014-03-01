@@ -30,7 +30,7 @@
 028f4a    f006         beq $028f52
 028f4c    a20300       ldx #$0003
 028f4f    8e9e10       stx $109e
-028f52    20048e       jsr $8e04
+028f52    20048e       jsr $028e04
 028f55    c220         rep #$20
 028f57    9c3101       stz $0131
 028f5a    225a8500     jsl $00855a
@@ -84,9 +84,9 @@
 028fdd    225a8500     jsl $00855a
 028fe1    60           rts
 028fe2    60           rts
-028fe3    206b91       jsr $916b
-028fe6    209990       jsr $9099
-028fe9    20aa8d       jsr $8daa
+028fe3    206b91       jsr $02916b
+028fe6    209990       jsr $029099
+028fe9    20aa8d       jsr $028daa
 028fec    c220         rep #$20
 028fee    ad7610       lda $1076
 028ff1    29ff00       and #$00ff

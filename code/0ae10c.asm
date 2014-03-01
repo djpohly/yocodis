@@ -14,7 +14,7 @@
 0ae12b    8dbc01       sta $01bc
 0ae12e    a90200       lda #$0002
 0ae131    8d5c01       sta $015c
-0ae134    2065e5       jsr $e565
+0ae134    2065e5       jsr $0ae565
 0ae137    60           rts
 0ae138    ad500a       lda $0a50
 0ae13b    d091         bne $0ae0ce
@@ -28,5 +28,5 @@
 0ae14f    9c6c01       stz $016c
 0ae152    a90200       lda #$0002
 0ae155    8d5c01       sta $015c
-0ae158    2065e5       jsr $e565
+0ae158    2065e5       jsr $0ae565
 0ae15b    60           rts

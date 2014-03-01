@@ -1,4 +1,4 @@
-0fbb64    20aebc       jsr $bcae
+0fbb64    20aebc       jsr $0fbcae
 0fbb67    a59d         lda $9d
 0fbb69    290080       and #$8000
 0fbb6c    d014         bne $0fbb82

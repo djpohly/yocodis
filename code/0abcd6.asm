@@ -46,12 +46,12 @@
 0abd4c    ae0005       ldx $0500
 0abd4f    bda803       lda $03a8,x
 0abd52    f004         beq $0abd58
-0abd54    203993       jsr $9339
+0abd54    203993       jsr $0a9339
 0abd57    60           rts
 0abd58    fe7803       inc $0378,x
-0abd5b    20be93       jsr $93be
+0abd5b    20be93       jsr $0a93be
 0abd5e    60           rts
-0abd5f    20f0cb       jsr $cbf0
+0abd5f    20f0cb       jsr $0acbf0
 0abd62    ae0005       ldx $0500
 0abd65    bdc003       lda $03c0,x
 0abd68    38           sec
@@ -61,11 +61,11 @@
 0abd72    f005         beq $0abd79
 0abd74    22fca50a     jsl $0aa5fc
 0abd78    60           rts
-0abd79    20d4a8       jsr $a8d4
+0abd79    20d4a8       jsr $0aa8d4
 0abd7c    ae0005       ldx $0500
 0abd7f    fe7803       inc $0378,x
 0abd82    60           rts
-0abd83    20f0cb       jsr $cbf0
+0abd83    20f0cb       jsr $0acbf0
 0abd86    ae0005       ldx $0500
 0abd89    bd6003       lda $0360,x
 0abd8c    1d6203       ora $0362,x
@@ -74,7 +74,7 @@
 0abd95    ae0005       ldx $0500
 0abd98    bdc003       lda $03c0,x
 0abd9b    d010         bne $0abdad
-0abd9d    200395       jsr $9503
+0abd9d    200395       jsr $0a9503
 0abda0    ae0005       ldx $0500
 0abda3    a90600       lda #$0006
 0abda6    9d7803       sta $0378,x
@@ -87,7 +87,7 @@
 0abdb8    60           rts
 0abdb9    60           rts
 0abdba    60           rts
-0abdbb    20f0cb       jsr $cbf0
+0abdbb    20f0cb       jsr $0acbf0
 0abdbe    ae0005       ldx $0500
 0abdc1    a90500       lda #$0005
 0abdc4    dd6203       cmp $0362,x
@@ -143,8 +143,8 @@
 0abe2f    ae0005       ldx $0500
 0abe32    bd5209       lda $0952,x
 0abe35    f007         beq $0abe3e
-0abe37    20b1d3       jsr $d3b1
-0abe3a    2078d3       jsr $d378
+0abe37    20b1d3       jsr $0ad3b1
+0abe3a    2078d3       jsr $0ad378
 0abe3d    60           rts
 0abe3e    9e7803       stz $0378,x
 0abe41    9c5c01       stz $015c
@@ -203,9 +203,9 @@
 0abeab    fcc5be       jsr ($bec5,x)
 0abeae    229c8f00     jsl $008f9c
 0abeb2    22a48a00     jsl $008aa4
-0abeb6    2096cc       jsr $cc96
-0abeb9    2022d2       jsr $d222
-0abebc    2031c9       jsr $c931
-0abebf    2084ca       jsr $ca84
+0abeb6    2096cc       jsr $0acc96
+0abeb9    2022d2       jsr $0ad222
+0abebc    2031c9       jsr $0ac931
+0abebf    2084ca       jsr $0aca84
 0abec2    c220         rep #$20
 0abec4    6b           rtl

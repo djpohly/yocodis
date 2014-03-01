@@ -1,5 +1,5 @@
 02e666    2292f804     jsl $04f892
-02e66a    2018a0       jsr $a018
+02e66a    2018a0       jsr $02a018
 02e66d    c220         rep #$20
 02e66f    ada810       lda $10a8
 02e672    29ff00       and #$00ff

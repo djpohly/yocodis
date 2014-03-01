@@ -27,7 +27,7 @@
 0aca45    60           rts
 0aca46    08           php
 0aca47    c220         rep #$20
-0aca49    201ada       jsr $da1a
+0aca49    201ada       jsr $0ada1a
 0aca4c    9c2009       stz $0920
 0aca4f    ad0009       lda $0900
 0aca52    8d2209       sta $0922
@@ -75,7 +75,7 @@
 0acabb    60           rts
 0acabc    08           php
 0acabd    e220         sep #$20
-0acabf    200ccb       jsr $cb0c
+0acabf    200ccb       jsr $0acb0c
 0acac2    9b           txy
 0acac3    300b         bmi $0acad0
 0acac5    be0009       ldx $0900,y

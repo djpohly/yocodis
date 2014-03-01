@@ -1,32 +1,32 @@
-029dc5    20549e       jsr $9e54
+029dc5    20549e       jsr $029e54
 029dc8    60           rts
-029dc9    20549e       jsr $9e54
+029dc9    20549e       jsr $029e54
 029dcc    60           rts
-029dcd    20549e       jsr $9e54
+029dcd    20549e       jsr $029e54
 029dd0    60           rts
-029dd1    20659e       jsr $9e65
+029dd1    20659e       jsr $029e65
 029dd4    60           rts
-029dd5    20549e       jsr $9e54
+029dd5    20549e       jsr $029e54
 029dd8    60           rts
 029dd9    a27000       ldx #$0070
 029ddc    8e7410       stx $1074
 029ddf    a27800       ldx #$0078
 029de2    8e6c10       stx $106c
-029de5    20769e       jsr $9e76
+029de5    20769e       jsr $029e76
 029de8    60           rts
-029de9    20659e       jsr $9e65
+029de9    20659e       jsr $029e65
 029dec    60           rts
-029ded    20879e       jsr $9e87
+029ded    20879e       jsr $029e87
 029df0    60           rts
-029df1    20989e       jsr $9e98
+029df1    20989e       jsr $029e98
 029df4    60           rts
-029df5    207c88       jsr $887c
-029df8    206aa1       jsr $a16a
+029df5    207c88       jsr $02887c
+029df8    206aa1       jsr $02a16a
 029dfb    c220         rep #$20
-029dfd    2057a1       jsr $a157
-029e00    208d88       jsr $888d
-029e03    2046a1       jsr $a146
-029e06    20af88       jsr $88af
+029dfd    2057a1       jsr $02a157
+029e00    208d88       jsr $02888d
+029e03    2046a1       jsr $02a146
+029e06    20af88       jsr $0288af
 029e09    a20100       ldx #$0001
 029e0c    8e8911       stx $1189
 029e0f    a2d000       ldx #$00d0
@@ -42,19 +42,19 @@
 029e29    ad9c10       lda $109c
 029e2c    c90900       cmp #$0009
 029e2f    b00a         bcs $029e3b
-029e31    20819f       jsr $9f81
-029e34    203386       jsr $8633
-029e37    204686       jsr $8646
+029e31    20819f       jsr $029f81
+029e34    203386       jsr $028633
+029e37    204686       jsr $028646
 029e3a    60           rts
 029e3b    e220         sep #$20
 029e3d    a93a         lda #$3a
 029e3f    8d0821       sta $2108
 029e42    a962         lda #$62
 029e44    8d0921       sta $2109
-029e47    20569f       jsr $9f56
-029e4a    20819f       jsr $9f81
-029e4d    20949f       jsr $9f94
-029e50    20a79f       jsr $9fa7
+029e47    20569f       jsr $029f56
+029e4a    20819f       jsr $029f81
+029e4d    20949f       jsr $029f94
+029e50    20a79f       jsr $029fa7
 029e53    60           rts
 029e54    8b           phb
 029e55    c220         rep #$20

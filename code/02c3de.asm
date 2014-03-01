@@ -22,5 +22,5 @@
 02c40f    bf3ec402     lda $02c43e,x
 02c413    2230820d     jsl $0d8230
 02c417    a91100       lda #$0011
-02c41a    20b9fb       jsr $fbb9
+02c41a    20b9fb       jsr $02fbb9
 02c41d    60           rts

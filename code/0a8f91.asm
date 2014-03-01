@@ -49,7 +49,7 @@
 0a8ff9    1a           inc a
 0a8ffa    9d6203       sta $0362,x
 0a8ffd    9d7003       sta $0370,x
-0a9000    200992       jsr $9209
+0a9000    200992       jsr $0a9209
 0a9003    60           rts
 0a9004    a506         lda $06
 0a9006    8508         sta $08
@@ -111,7 +111,7 @@
 0a9079    1a           inc a
 0a907a    9d6003       sta $0360,x
 0a907d    9d6e03       sta $036e,x
-0a9080    200992       jsr $9209
+0a9080    200992       jsr $0a9209
 0a9083    60           rts
 0a9084    a506         lda $06
 0a9086    8508         sta $08
@@ -392,7 +392,7 @@
 0a929a    a00500       ldy #$0005
 0a929d    8400         sty $00
 0a929f    b9a903       lda $03a9,y
-0a92a2    20d2c2       jsr $c2d2
+0a92a2    20d2c2       jsr $0ac2d2
 0a92a5    a400         ldy $00
 0a92a7    88           dey
 0a92a8    d0f3         bne $0a929d

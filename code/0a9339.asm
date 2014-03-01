@@ -336,7 +336,7 @@
 0a95ea    a90400       lda #$0004
 0a95ed    1a           inc a
 0a95ee    8506         sta $06
-0a95f0    20ac92       jsr $92ac
+0a95f0    20ac92       jsr $0a92ac
 0a95f3    ae0005       ldx $0500
 0a95f6    a508         lda $08
 0a95f8    050a         ora $0a
@@ -346,7 +346,7 @@
 0a9602    18           clc
 0a9603    7d8003       adc $0380,x
 0a9606    9d8003       sta $0380,x
-0a9609    2051cb       jsr $cb51
+0a9609    2051cb       jsr $0acb51
 0a960c    a90a00       lda #$000a
 0a960f    2215820d     jsl $0d8215
 0a9613    ae0005       ldx $0500

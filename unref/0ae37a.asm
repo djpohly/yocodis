@@ -1,6 +1,6 @@
 0ae37a    08           php
 0ae37b    c220         rep #$20
-0ae37d    2068e3       jsr $e368
+0ae37d    2068e3       jsr $0ae368
 0ae380    ad6601       lda $0166
 0ae383    f005         beq $0ae38a
 0ae385    adb801       lda $01b8

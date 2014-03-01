@@ -1,12 +1,12 @@
 02c589    60           rts
-02c58a    20c1ab       jsr $abc1
+02c58a    20c1ab       jsr $02abc1
 02c58d    60           rts
 02c58e    a90900       lda #$0009
 02c591    cd3c11       cmp $113c
 02c594    d005         bne $02c59b
 02c596    cd5c11       cmp $115c
 02c599    f004         beq $02c59f
-02c59b    2088f7       jsr $f788
+02c59b    2088f7       jsr $02f788
 02c59e    60           rts
 02c59f    a96000       lda #$0060
 02c5a2    855c         sta $5c
@@ -21,14 +21,14 @@
 02c5b3    a00000       ldy #$0000
 02c5b6    a28000       ldx #$0080
 02c5b9    8600         stx $00
-02c5bb    20a28c       jsr $8ca2
+02c5bb    20a28c       jsr $028ca2
 02c5be    f00b         beq $02c5cb
 02c5c0    a00000       ldy #$0000
 02c5c3    a28000       ldx #$0080
 02c5c6    8600         stx $00
-02c5c8    20a28c       jsr $8ca2
+02c5c8    20a28c       jsr $028ca2
 02c5cb    60           rts
-02c5cc    201dc9       jsr $c91d
+02c5cc    201dc9       jsr $02c91d
 02c5cf    e220         sep #$20
 02c5d1    22858500     jsl $008585
 02c5d5    6469         stz $69
@@ -57,10 +57,10 @@
 02c605    547e04       mvn $04,$7e
 02c608    ab           plb
 02c609    9c0005       stz $0500
-02c60c    20effb       jsr $fbef
+02c60c    20effb       jsr $02fbef
 02c60f    a92000       lda #$0020
 02c612    8d0005       sta $0500
-02c615    20effb       jsr $fbef
+02c615    20effb       jsr $02fbef
 02c618    9c0c01       stz $010c
 02c61b    28           plp
 02c61c    60           rts
@@ -71,16 +71,16 @@
 02c626    a00008       ldy #$0800
 02c629    22688b00     jsl $008b68
 02c62d    a90000       lda #$0000
-02c630    20b9fb       jsr $fbb9
+02c630    20b9fb       jsr $02fbb9
 02c633    a90100       lda #$0001
-02c636    20b9fb       jsr $fbb9
+02c636    20b9fb       jsr $02fbb9
 02c639    a90200       lda #$0002
-02c63c    20b9fb       jsr $fbb9
+02c63c    20b9fb       jsr $02fbb9
 02c63f    9c0005       stz $0500
-02c642    20eefb       jsr $fbee
+02c642    20eefb       jsr $02fbee
 02c645    a92000       lda #$0020
 02c648    8d0005       sta $0500
-02c64b    20eefb       jsr $fbee
+02c64b    20eefb       jsr $02fbee
 02c64e    9c1401       stz $0114
 02c651    28           plp
 02c652    60           rts
@@ -236,7 +236,7 @@
 02c7db    8502         sta $02
 02c7dd    6404         stz $04
 02c7df    ae0005       ldx $0500
-02c7e2    2084c8       jsr $c884
+02c7e2    2084c8       jsr $02c884
 02c7e5    229d8700     jsl $00879d
 02c7e9    a558         lda $58
 02c7eb    890800       bit #$0008

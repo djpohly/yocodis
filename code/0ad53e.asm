@@ -15,7 +15,7 @@
 0ad561    9e6209       stz $0962,x
 0ad564    fe6009       inc $0960,x
 0ad567    a0c001       ldy #$01c0
-0ad56a    206ed6       jsr $d66e
+0ad56a    206ed6       jsr $0ad66e
 0ad56d    60           rts
 0ad56e    ae0005       ldx $0500
 0ad571    bd6009       lda $0960,x

@@ -12,8 +12,8 @@
 0aa252    b0fb         bcs $0aa24f
 0aa254    690a00       adc #$000a
 0aa257    8d5601       sta $0156
-0aa25a    20d2a1       jsr $a1d2
-0aa25d    20bea1       jsr $a1be
+0aa25a    20d2a1       jsr $0aa1d2
+0aa25d    20bea1       jsr $0aa1be
 0aa260    8500         sta $00
 0aa262    0a           asl a
 0aa263    0a           asl a
@@ -80,7 +80,7 @@
 0aa2dd    8d0805       sta $0508
 0aa2e0    5a           phy
 0aa2e1    a20000       ldx #$0000
-0aa2e4    2052a4       jsr $a452
+0aa2e4    2052a4       jsr $0aa452
 0aa2e7    ad4401       lda $0144
 0aa2ea    f029         beq $0aa315
 0aa2ec    c220         rep #$20
@@ -140,7 +140,7 @@
 0aa35a    08           php
 0aa35b    c220         rep #$20
 0aa35d    9c4401       stz $0144
-0aa360    20d2a1       jsr $a1d2
+0aa360    20d2a1       jsr $0aa1d2
 0aa363    a90500       lda #$0005
 0aa366    8d6003       sta $0360
 0aa369    8d6403       sta $0364
@@ -182,7 +182,7 @@
 0aa3b5    a905         lda #$05
 0aa3b7    8d0805       sta $0508
 0aa3ba    a20000       ldx #$0000
-0aa3bd    2052a4       jsr $a452
+0aa3bd    2052a4       jsr $0aa452
 0aa3c0    a928         lda #$28
 0aa3c2    8d7303       sta $0373
 0aa3c5    8d7403       sta $0374
@@ -194,7 +194,7 @@
 0aa3d4    540a0a       mvn $0a,$0a
 0aa3d7    ab           plb
 0aa3d8    a20001       ldx #$0100
-0aa3db    2052a4       jsr $a452
+0aa3db    2052a4       jsr $0aa452
 0aa3de    a90000       lda #$0000
 0aa3e1    a2bc00       ldx #$00bc
 0aa3e4    9d4209       sta $0942,x
@@ -221,15 +221,15 @@
 0aa415    b0fb         bcs $0aa412
 0aa417    690a00       adc #$000a
 0aa41a    8d5601       sta $0156
-0aa41d    20d2a1       jsr $a1d2
-0aa420    2050f3       jsr $f350
+0aa41d    20d2a1       jsr $0aa1d2
+0aa420    2050f3       jsr $0af350
 0aa423    e220         sep #$20
 0aa425    a20700       ldx #$0007
 0aa428    bf4aa40a     lda $0aa44a,x
 0aa42c    9d0805       sta $0508,x
 0aa42f    ca           dex
 0aa430    10f6         bpl $0aa428
-0aa432    20a4f4       jsr $f4a4
+0aa432    20a4f4       jsr $0af4a4
 0aa435    c220         rep #$20
 0aa437    8b           phb
 0aa438    a20003       ldx #$0300
@@ -237,6 +237,6 @@
 0aa43e    a9ff00       lda #$00ff
 0aa441    540a0a       mvn $0a,$0a
 0aa444    ab           plb
-0aa445    20c6f4       jsr $f4c6
+0aa445    20c6f4       jsr $0af4c6
 0aa448    28           plp
 0aa449    60           rts

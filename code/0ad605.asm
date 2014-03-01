@@ -4,8 +4,8 @@
 0ad60f    9d6209       sta $0962,x
 0ad612    fe6009       inc $0960,x
 0ad615    60           rts
-0ad616    2003d8       jsr $d803
-0ad619    20aed8       jsr $d8ae
+0ad616    2003d8       jsr $0ad803
+0ad619    20aed8       jsr $0ad8ae
 0ad61c    ae0005       ldx $0500
 0ad61f    de6209       dec $0962,x
 0ad622    1003         bpl $0ad627

@@ -56,7 +56,7 @@
 0a9a00    cea603       dec $03a6
 0a9a03    d006         bne $0a9a0b
 0a9a05    9ca603       stz $03a6
-0a9a08    205499       jsr $9954
+0a9a08    205499       jsr $0a9954
 0a9a0b    28           plp
 0a9a0c    6b           rtl
 0a9a0d    08           php

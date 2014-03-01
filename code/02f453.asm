@@ -192,8 +192,8 @@
 02f5dc    863a         stx $3a
 02f5de    aea511       ldx $11a5
 02f5e1    8638         stx $38
-02f5e3    2004f5       jsr $f504
-02f5e6    20eaf5       jsr $f5ea
+02f5e3    2004f5       jsr $02f504
+02f5e6    20eaf5       jsr $02f5ea
 02f5e9    60           rts
 02f5ea    e220         sep #$20
 02f5ec    6400         stz $00

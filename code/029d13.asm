@@ -3,7 +3,7 @@
 029d15    60           rts
 029d16    60           rts
 029d17    60           rts
-029d18    2029a1       jsr $a129
+029d18    2029a1       jsr $02a129
 029d1b    c220         rep #$20
 029d1d    ad7610       lda $1076
 029d20    29ff00       and #$00ff

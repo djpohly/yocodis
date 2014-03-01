@@ -1,9 +1,9 @@
 0ad378    08           php
 0ad379    c220         rep #$20
 0ad37b    a00000       ldy #$0000
-0ad37e    2098d3       jsr $d398
+0ad37e    2098d3       jsr $0ad398
 0ad381    aa           tax
-0ad382    2098d3       jsr $d398
+0ad382    2098d3       jsr $0ad398
 0ad385    a8           tay
 0ad386    e220         sep #$20
 0ad388    bd0003       lda $0300,x

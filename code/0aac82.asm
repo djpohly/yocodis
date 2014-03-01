@@ -6,8 +6,8 @@
 0aac8e    8500         sta $00
 0aac90    c90100       cmp #$0001
 0aac93    d008         bne $0aac9d
-0aac95    201994       jsr $9419
-0aac98    207dc3       jsr $c37d
+0aac95    201994       jsr $0a9419
+0aac98    207dc3       jsr $0ac37d
 0aac9b    8018         bra $0aacb5
 0aac9d    e220         sep #$20
 0aac9f    4a           lsr a
@@ -34,6 +34,6 @@
 0aacd0    18           clc
 0aacd1    7fdcac0a     adc $0aacdc,x
 0aacd5    850c         sta $0c
-0aacd7    2029ad       jsr $ad29
+0aacd7    2029ad       jsr $0aad29
 0aacda    28           plp
 0aacdb    60           rts

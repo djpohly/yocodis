@@ -13,7 +13,7 @@
 0ad291    b007         bcs $0ad29a
 0ad293    1a           inc a
 0ad294    995a09       sta $095a,y
-0ad297    20a5d2       jsr $d2a5
+0ad297    20a5d2       jsr $0ad2a5
 0ad29a    ad0205       lda $0502
 0ad29d    490001       eor #$0100
 0ad2a0    a8           tay

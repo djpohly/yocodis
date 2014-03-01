@@ -38,7 +38,7 @@
 02f14f    8500         sta $00
 02f151    a90c00       lda #$000c
 02f154    8502         sta $02
-02f156    20f4f2       jsr $f2f4
+02f156    20f4f2       jsr $02f2f4
 02f159    229d8700     jsl $00879d
 02f15d    ad4411       lda $1144
 02f160    c90700       cmp #$0007
@@ -53,7 +53,7 @@
 02f178    8502         sta $02
 02f17a    a93800       lda #$0038
 02f17d    850a         sta $0a
-02f17f    2067f3       jsr $f367
+02f17f    2067f3       jsr $02f367
 02f182    229d8700     jsl $00879d
 02f186    60           rts
 02f187    c220         rep #$20
@@ -138,9 +138,9 @@
 02f243    8e9c11       stx $119c
 02f246    892040       bit #$4020
 02f249    d004         bne $02f24f
-02f24b    2053f2       jsr $f253
+02f24b    2053f2       jsr $02f253
 02f24e    60           rts
-02f24f    2069f2       jsr $f269
+02f24f    2069f2       jsr $02f269
 02f252    60           rts
 02f253    c220         rep #$20
 02f255    ad4411       lda $1144
@@ -184,7 +184,7 @@
 02f2b3    a21009       ldx #$0910
 02f2b6    8eac11       stx $11ac
 02f2b9    22c2f302     jsl $02f3c2
-02f2bd    2053f4       jsr $f453
+02f2bd    2053f4       jsr $02f453
 02f2c0    c220         rep #$20
 02f2c2    ee4411       inc $1144
 02f2c5    ad4411       lda $1144
@@ -203,9 +203,9 @@
 02f2e5    ee7610       inc $1076
 02f2e8    ee5411       inc $1154
 02f2eb    60           rts
-02f2ec    2069f2       jsr $f269
+02f2ec    2069f2       jsr $02f269
 02f2ef    60           rts
-02f2f0    2053f2       jsr $f253
+02f2f0    2053f2       jsr $02f253
 02f2f3    60           rts
 02f2f4    c220         rep #$20
 02f2f6    ad4a11       lda $114a

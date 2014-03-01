@@ -63,7 +63,7 @@
 02cbb2    60           rts
 02cbb3    2261f104     jsl $04f161
 02cbb7    22b5f104     jsl $04f1b5
-02cbbb    2018a0       jsr $a018
+02cbbb    2018a0       jsr $02a018
 02cbbe    c220         rep #$20
 02cbc0    ada810       lda $10a8
 02cbc3    29ff00       and #$00ff

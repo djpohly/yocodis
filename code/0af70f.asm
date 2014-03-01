@@ -153,7 +153,7 @@
 0af855    ad1442       lda $4214
 0af858    c500         cmp $00
 0af85a    f003         beq $0af85f
-0af85c    2061f8       jsr $f861
+0af85c    2061f8       jsr $0af861
 0af85f    28           plp
 0af860    60           rts
 0af861    08           php
@@ -163,11 +163,11 @@
 0af869    a97042       lda #$4270
 0af86c    85da         sta $da
 0af86e    a00200       ldy #$0002
-0af871    2084f8       jsr $f884
+0af871    2084f8       jsr $0af884
 0af874    a97642       lda #$4276
 0af877    85da         sta $da
 0af879    a00000       ldy #$0000
-0af87c    2084f8       jsr $f884
+0af87c    2084f8       jsr $0af884
 0af87f    ee0c01       inc $010c
 0af882    28           plp
 0af883    60           rts

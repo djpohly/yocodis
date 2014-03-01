@@ -158,17 +158,17 @@
 02ba47    c90300       cmp #$0003
 02ba4a    d010         bne $02ba5c
 02ba4c    9c0210       stz $1002
-02ba4f    206fba       jsr $ba6f
+02ba4f    206fba       jsr $02ba6f
 02ba52    a21200       ldx #$0012
 02ba55    8e0210       stx $1002
-02ba58    2097ba       jsr $ba97
+02ba58    2097ba       jsr $02ba97
 02ba5b    60           rts
 02ba5c    a20200       ldx #$0002
 02ba5f    8e0210       stx $1002
-02ba62    2097ba       jsr $ba97
+02ba62    2097ba       jsr $02ba97
 02ba65    a21000       ldx #$0010
 02ba68    8e0210       stx $1002
-02ba6b    206fba       jsr $ba6f
+02ba6b    206fba       jsr $02ba6f
 02ba6e    60           rts
 02ba6f    c220         rep #$20
 02ba71    a20200       ldx #$0002
