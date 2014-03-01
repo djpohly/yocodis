@@ -107,7 +107,7 @@
 0a975c    3007         bmi $0a9765
 0a975e    0a           asl a
 0a975f    aa           tax
-0a9760    fc7c97       jsr ($977c,x)
+0a9760    fc7c97       jsr ($0a977c,x)
 0a9763    c220         rep #$20
 0a9765    a90200       lda #$0002
 0a9768    8d0405       sta $0504
@@ -115,7 +115,7 @@
 0a976e    3005         bmi $0a9775
 0a9770    0a           asl a
 0a9771    aa           tax
-0a9772    fc9097       jsr ($9790,x)
+0a9772    fc9097       jsr ($0a9790,x)
 0a9775    e220         sep #$20
 0a9777    2092c0       jsr $0ac092
 0a977a    28           plp

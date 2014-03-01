@@ -501,6 +501,6 @@
 0a8f77    0a           asl a
 0a8f78    6d0405       adc $0504
 0a8f7b    aa           tax
-0a8f7c    fc818f       jsr ($8f81,x)
+0a8f7c    fc818f       jsr ($0a8f81,x)
 0a8f7f    28           plp
 0a8f80    60           rts

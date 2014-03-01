@@ -200,7 +200,7 @@
 0abea6    29ff00       and #$00ff
 0abea9    0a           asl a
 0abeaa    aa           tax
-0abeab    fcc5be       jsr ($bec5,x)
+0abeab    fcc5be       jsr ($0abec5,x)
 0abeae    229c8f00     jsl $008f9c
 0abeb2    22a48a00     jsl $008aa4
 0abeb6    2096cc       jsr $0acc96

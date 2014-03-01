@@ -373,6 +373,6 @@
 0a9647    bd7a03       lda $037a,x
 0a964a    0a           asl a
 0a964b    aa           tax
-0a964c    fc5196       jsr ($9651,x)
+0a964c    fc5196       jsr ($0a9651,x)
 0a964f    28           plp
 0a9650    6b           rtl

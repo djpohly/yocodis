@@ -255,7 +255,7 @@
 0aa659    b9d003       lda $03d0,y
 0aa65c    0a           asl a
 0aa65d    aa           tax
-0aa65e    fc68a7       jsr ($a768,x)
+0aa65e    fc68a7       jsr ($0aa768,x)
 0aa661    c602         dec $02
 0aa663    f00e         beq $0aa673
 0aa665    c8           iny

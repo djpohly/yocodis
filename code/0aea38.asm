@@ -37,7 +37,7 @@
 0aea86    29ff00       and #$00ff
 0aea89    0a           asl a
 0aea8a    aa           tax
-0aea8b    fca3ea       jsr ($eaa3,x)
+0aea8b    fca3ea       jsr ($0aeaa3,x)
 0aea8e    229c8f00     jsl $008f9c
 0aea92    22a48a00     jsl $008aa4
 0aea96    204ef7       jsr $0af74e
